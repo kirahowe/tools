@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sheet Music Player</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Sheet Music Player</h1>
+        <p class="subtitle">
+          Upload a photo or scan of sheet music. We'll recognise the notes and play them back.
+        </p>
+      </header>
+
+      <section class="controls">
+        <label class="file-input">
+          <input id="file" type="file" accept="image/*,application/pdf" />
+          <span>Choose image…</span>
+        </label>
+
+        <button id="play"  disabled>Play</button>
+        <button id="pause" disabled>Pause</button>
+        <button id="stop"  disabled>Stop</button>
+
+        <label class="tempo">
+          Tempo
+          <input id="tempo" type="range" min="40" max="240" value="100" />
+          <output id="tempo-out">100%</output>
+        </label>
+      </section>
+
+      <section id="status" class="status idle">Ready.</section>
+
+      <section id="score" class="score" aria-label="Rendered score"></section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

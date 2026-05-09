@@ -1,0 +1,24 @@
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      OMR_ENGINE: oemer-local
+      PORT: "8080"
+    # Oemer is CPU-bound. Bumping limits avoids OOM during inference.
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "5173:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+    depends_on:
+      - api

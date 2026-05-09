@@ -1,0 +1,14 @@
+# Clojure
+backend/target/
+backend/.cpcache/
+backend/.clj-kondo/
+backend/.lsp/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
