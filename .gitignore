@@ -1,0 +1,11 @@
+# Runtime assets downloaded by tools/fetch_vendor.py — never commit these.
+vendor/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Test artifacts
+test/artifacts/

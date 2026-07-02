@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sheet Music Scanner</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Sheet Music Scanner</h1>
+        <p class="subtitle">
+          Take a picture of sheet music and hear it played back. Recognition runs
+          entirely in your browser — the image never leaves your device.
+        </p>
+      </header>
+
+      <section class="controls">
+        <label class="file-input">
+          <input id="camera" type="file" accept="image/*" capture="environment" />
+          <span>📷 Take photo</span>
+        </label>
+        <label class="file-input">
+          <input id="file" type="file" accept="image/*" />
+          <span>Choose image…</span>
+        </label>
+
+        <label class="deskew" title="Straightens curved staff lines on phone photos. Slower; turn off for clean scans.">
+          <input id="deskew" type="checkbox" checked />
+          Photo mode (dewarp)
+        </label>
+      </section>
+
+      <section class="controls playback">
+        <button id="play" disabled>Play</button>
+        <button id="pause" disabled>Pause</button>
+        <button id="stop" disabled>Stop</button>
+
+        <label class="tempo">
+          Tempo
+          <input id="tempo" type="range" min="40" max="240" value="100" />
+          <output id="tempo-out">100%</output>
+        </label>
+      </section>
+
+      <section id="status" class="status idle">
+        Ready. Pick an image of sheet music to begin.
+        <br /><small>First run downloads the recognition engine (~170&nbsp;MB, cached for next time).</small>
+      </section>
+      <div id="progress" class="progress" hidden><div id="progress-bar"></div></div>
+
+      <img id="preview" class="preview" alt="" hidden />
+      <section id="score" class="score" aria-label="Rendered score"></section>
+
+      <footer>
+        <small>
+          OMR by <a href="https://github.com/BreezeWhite/oemer">oemer</a> running on
+          Pyodide + ONNX Runtime Web (WebAssembly) · score rendering by
+          <a href="https://opensheetmusicdisplay.org/">OSMD</a> · audio by
+          <a href="https://tonejs.github.io/">Tone.js</a>
+        </small>
+      </footer>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

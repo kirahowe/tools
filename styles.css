@@ -1,0 +1,132 @@
+:root {
+  --fg: #1a1a1a;
+  --bg: #fafaf7;
+  --muted: #6b6b6b;
+  --accent: #2962ff;
+  --error: #c62828;
+  --warn: #b26a00;
+  --ok: #2e7d32;
+  --border: #e3e3df;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.controls button,
+.file-input span {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-input {
+  position: relative;
+  display: inline-block;
+}
+.file-input input { display: none; }
+
+.deskew {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tempo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.status {
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  background: white;
+}
+.status.working { border-color: var(--warn); color: var(--warn); }
+.status.error   { border-color: var(--error); color: var(--error); }
+.status.ok      { border-color: var(--ok); color: var(--ok); }
+.status small   { color: var(--muted); }
+
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.15s ease-out;
+}
+
+.preview {
+  max-width: 240px;
+  max-height: 320px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.score {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: white;
+  padding: 1rem;
+  min-height: 200px;
+  overflow-x: auto;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+}
