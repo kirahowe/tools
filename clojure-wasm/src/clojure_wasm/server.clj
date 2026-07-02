@@ -66,6 +66,50 @@
     (load-string (slurp (io/resource "public/bootstrap.clj")))
     @(requiring-resolve 'browser.repl/eval-str)))
 
+(def ^:private server-eval-cell
+  "Loads the notebook engine (a .cljc with reader conditionals, so it goes
+  through browser.repl/eval-str — the same loading path the browser uses)
+  and resolves the kind-aware cell evaluator."
+  (delay
+    (let [res (@server-eval (slurp (io/resource "public/notebook-engine.cljc")))]
+      (when (str/starts-with? res "{\"tag\":\"err\"")
+        (throw (ex-info (str "notebook engine failed to load: " res) {}))))
+    @(requiring-resolve 'notebook.engine/eval-cell)))
+
+;; --- notebook storage (dev-grade: JSON files on disk) -----------------------
+
+(def ^:private notebooks-dir (io/file "data" "notebooks"))
+
+(defn notebook-id? [s]
+  (boolean (re-matches #"[a-z0-9][a-z0-9-]{0,63}" (str s))))
+
+(defn- notebook-routes [{:keys [method uri body]}]
+  (if (= uri "/api/notebooks")
+    (let [ids (->> (.listFiles notebooks-dir)
+                   (keep #(second (re-matches #"(.+)\.json" (.getName ^java.io.File %))))
+                   sort)]
+      {:status 200 :content-type "application/json"
+       :body (str "[" (str/join "," (map #(str "\"" % "\"") ids)) "]")})
+    (let [id (subs uri (count "/api/notebooks/"))
+          file (io/file notebooks-dir (str id ".json"))]
+      (cond
+        (not (notebook-id? id))
+        {:status 400 :content-type "text/plain" :body "bad notebook id (want [a-z0-9-])"}
+
+        (contains? #{"PUT" "POST"} method)
+        (do (.mkdirs notebooks-dir)
+            (spit file body)
+            {:status 200 :content-type "application/json" :body "{\"ok\":true}"})
+
+        (and (= method "GET") (.isFile file))
+        {:status 200 :content-type "application/json" :body (slurp file)}
+
+        (= method "GET")
+        {:status 404 :content-type "text/plain" :body "no such notebook"}
+
+        :else
+        {:status 405 :content-type "text/plain" :body "method not allowed"}))))
+
 (defn handle-request
   "Data-in/data-out request handler: {:method :uri :body} ->
   {:status :content-type :body}. Separated from HttpServer wiring so it
@@ -81,6 +125,16 @@
        :body (@server-eval (or body ""))}
       {:status 403 :content-type "text/plain"
        :body "server-side eval is disabled (NO_SERVER_EVAL is set)"})
+
+    (and (= method "POST") (= uri "/api/eval-cell"))
+    (if (allow-eval?)
+      {:status 200 :content-type "application/json"
+       :body (@server-eval-cell (or body ""))}
+      {:status 403 :content-type "text/plain"
+       :body "server-side eval is disabled (NO_SERVER_EVAL is set)"})
+
+    (or (= uri "/api/notebooks") (str/starts-with? uri "/api/notebooks/"))
+    (notebook-routes {:method method :uri uri :body body})
 
     (not (contains? #{"GET" "HEAD"} method))
     {:status 405 :content-type "text/plain" :body "method not allowed"}

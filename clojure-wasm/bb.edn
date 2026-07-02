@@ -37,4 +37,5 @@
                          (Thread/sleep 500)
                          (recur (inc n))))
                      (shell {:dir "e2e"} "node repl.test.mjs")
+                     (shell {:dir "e2e"} "node notebook.test.mjs")
                      (finally (p/destroy-tree srv)))))}}}

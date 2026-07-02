@@ -1,5 +1,6 @@
 (ns clojure-wasm.server-test
   (:require
+   [clojure.java.io :as io]
    [clojure.string :as str]
    [clojure.test :refer [deftest is testing]]
    [clojure-wasm.server :as server]))
@@ -46,3 +47,27 @@
       (is (= 200 (:status res)))
       (is (= "application/json" (:content-type res)))
       (is (str/includes? (:body res) "\"val\":\"42\"")))))
+
+(deftest eval-cell-endpoint-is-kind-aware
+  (let [res (server/handle-request {:method "POST" :uri "/api/eval-cell" :body "[{:a 1} {:a 2}]"})]
+    (is (= 200 (:status res)))
+    (is (str/includes? (:body res) "\"kind\":\"table\""))
+    (is (str/includes? (:body res) "<table"))))
+
+(deftest notebook-storage-roundtrip
+  (let [id "server-test-notebook"
+        doc "{\"title\":\"t\",\"cells\":[{\"type\":\"code\",\"source\":\"(+ 1 2)\"}]}"]
+    (try
+      (is (= 200 (:status (server/handle-request {:method "PUT" :uri (str "/api/notebooks/" id) :body doc}))))
+      (let [res (server/handle-request {:method "GET" :uri (str "/api/notebooks/" id)})]
+        (is (= 200 (:status res)))
+        (is (= doc (:body res))))
+      (is (str/includes? (:body (server/handle-request {:method "GET" :uri "/api/notebooks"}))
+                         (str "\"" id "\"")))
+      (finally
+        (io/delete-file (io/file "data" "notebooks" (str id ".json")) true)))))
+
+(deftest notebook-bad-ids-rejected
+  (is (= 400 (:status (server/handle-request {:method "PUT" :uri "/api/notebooks/../evil" :body "{}"}))))
+  (is (= 400 (:status (server/handle-request {:method "GET" :uri "/api/notebooks/No.Caps.Or.Dots"}))))
+  (is (= 404 (:status (server/handle-request {:method "GET" :uri "/api/notebooks/does-not-exist"})))))

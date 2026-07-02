@@ -12,6 +12,18 @@ the roadmap toward that goal.
 
 ![screenshot](docs/screenshot.png)
 
+There is also a **notebook prototype** (`/notebook.html`) — Clay-flavored
+cells with kindly-style rendering (tables, hiccup, vega-lite, markdown),
+save/share links, and a *pluggable kernel*: the same document runs on the
+in-tab browser JVM, on the dev server's JVM (a stand-in for hosted-clay's
+sprites), or on scittle/SCI. See [PROTOTYPES.md](./PROTOTYPES.md) for the
+hosting-options comparison and
+[docs/dtype-next.md](./docs/dtype-next.md) for whether the noj data-science
+stack can follow (includes a runnable JVM capability probe:
+`?example=jvm-probe`).
+
+![notebook screenshot](docs/notebook.png)
+
 ## Quickstart
 
 Requires [babashka](https://babashka.org), the

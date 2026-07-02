@@ -1,0 +1,22 @@
+{
+  "id": null,
+  "title": "jvm-probe",
+  "cells": [
+    {
+      "type": "md",
+      "source": "# JVM capability probe\n\nRun this on the **browser JVM kernel** to see which low-level JVM features CheerpJ actually implements. This matters because [dtype-next](https://github.com/cnuernber/dtype-next) — the foundation under tech.ml.dataset → tablecloth → [noj](https://scicloj.github.io/noj/) — leans on exactly these features for its buffer machinery:\n\n- **on-heap primitive arrays** — dtype-next's default containers; if these work, a lot works\n- **DirectByteBuffer / off-heap** — `tech.v3.datatype.native-buffer`\n- **sun.misc.Unsafe** — raw off-heap reads/writes on hot paths\n- **mmap** — how TMD reads Arrow/Parquet without copying\n- **threads** — parallel reductions\n- **runtime bytecode generation** — how Clojure itself (and dtype-next's `insn` usage) makes code fast\n\nRun all, then compare against a local JVM (`?kernel=server`)."
+    },
+    {
+      "type": "code",
+      "source": "(kind/table\n [{:property \"java.vm.name\"    :value (System/getProperty \"java.vm.name\")}\n  {:property \"java.vm.vendor\"  :value (System/getProperty \"java.vm.vendor\")}\n  {:property \"java.version\"    :value (System/getProperty \"java.version\")}\n  {:property \"os.name\"         :value (System/getProperty \"os.name\")}\n  {:property \"clojure\"         :value (clojure-version)}\n  {:property \"processors\"      :value (.availableProcessors (Runtime/getRuntime))}\n  {:property \"max heap (MB)\"   :value (quot (.maxMemory (Runtime/getRuntime)) (* 1024 1024))}])"
+    },
+    {
+      "type": "code",
+      "source": "(defn probe [check f]\n  (try {:check check :status \"ok\" :detail (str (f))}\n       (catch Throwable t\n         {:check check :status \"FAIL\" :detail (str (class t) \": \" (ex-message t))})))\n\n(kind/table\n [(probe \"on-heap double[] (1e6 write+sum)\"\n         #(let [a (double-array 1000000)]\n            (dotimes [i 1000000] (aset a i (double i)))\n            (areduce a i s 0.0 (+ s (aget a i)))))\n  (probe \"DirectByteBuffer (allocateDirect)\"\n         #(let [b (java.nio.ByteBuffer/allocateDirect 64)]\n            (.putDouble b 0 42.0)\n            (.getDouble b 0)))\n  (probe \"sun.misc.Unsafe off-heap alloc/read/write\"\n         #(let [f (.getDeclaredField sun.misc.Unsafe \"theUnsafe\")\n                _ (.setAccessible f true)\n                u (.get f nil)\n                a (.allocateMemory u 64)]\n            (try (.putLong u a 123456)\n                 (.getLong u a)\n                 (finally (.freeMemory u a)))))\n  (probe \"mmap (FileChannel/map)\"\n         #(let [f (java.io.File/createTempFile \"probe\" \".bin\")\n                raf (java.io.RandomAccessFile. f \"rw\")\n                ch (.getChannel raf)]\n            (try (let [mb (.map ch java.nio.channels.FileChannel$MapMode/READ_WRITE 0 64)]\n                   (.putInt mb 0 7)\n                   (.getInt mb 0))\n                 (finally (.close ch) (.delete f)))))\n  (probe \"threads (future + deref)\"\n         #(deref (future (reduce + (range 1000))) 10000 :timeout))\n  (probe \"pmap (thread pool)\"\n         #(vec (pmap inc (range 8))))\n  (probe \"runtime bytecode (eval defrecord)\"\n         #(do (eval '(defrecord ProbePoint [x y]))\n              (str (eval '(->ProbePoint 1 2)))))\n  (probe \"proxy (runtime subclass)\"\n         #(str (proxy [java.util.ArrayList] [] (toString [] \"proxied!\"))))\n  (probe \"reflection\"\n         #(count (.getMethods (class {}))))])"
+    },
+    {
+      "type": "md",
+      "source": "## Reading the results\n\n- If **on-heap arrays + threads + runtime bytecode** pass, the pure-JVM core of dtype-next has what it needs; tablecloth-style work on heap-backed columns is plausible.\n- If **Unsafe / DirectByteBuffer / mmap** fail, `native-buffer`-backed paths (Arrow, Parquet, mmap'd CSV) won't work as-is — datasets would need to stay on-heap and files load through streams instead of mmap.\n- Native/JNI-backed deps are a separate cliff regardless (they'd need recompiling to WASM against CheerpJ's JNI).\n\nSee `docs/dtype-next.md` in the repo for the full analysis."
+    }
+  ]
+}

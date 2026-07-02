@@ -1,4 +1,5 @@
 .cpcache/
+data/
 .clj-kondo/.cache/
 resources/public/jars/*.jar
 e2e/node_modules/
