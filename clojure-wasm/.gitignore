@@ -1,0 +1,5 @@
+.cpcache/
+.clj-kondo/.cache/
+resources/public/jars/*.jar
+e2e/node_modules/
+e2e/package-lock.json

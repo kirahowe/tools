@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clojure in the browser — a real JVM via CheerpJ</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%CE%BB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/main.css">
+  <script type="module" src="/vendor/datastar.js"></script>
+  <!-- CheerpJ runtime loader (WASM JVM). Served only from Leaning Tech's CDN. -->
+  <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
+  <script type="module" src="/repl.js"></script>
+</head>
+<!--
+  Datastar owns presentation state via signals. repl.js pushes state changes
+  by dispatching CustomEvents on <body>; the data-on-* handlers below patch
+  the corresponding signals, and everything else reacts declaratively.
+-->
+<body
+  data-signals="{status: 'booting', phase: 'Loading…', ns: 'user', busy: false, mode: 'wasm'}"
+  data-on:replstatus="$status = evt.detail"
+  data-on:replphase="$phase = evt.detail"
+  data-on:replns="$ns = evt.detail"
+  data-on:replbusy="$busy = evt.detail"
+  data-on:replmode="$mode = evt.detail">
+
+  <header>
+    <div class="title-row">
+      <h1>Clojure in the browser</h1>
+      <span class="pill"
+            data-class="{ok: $status === 'ready', err: $status === 'error'}"
+            data-text="$status"></span>
+      <span class="pill warn" data-show="$mode === 'server'"
+            title="Evaluating on the dev server's JVM instead of the in-browser JVM">server mode</span>
+    </div>
+    <p class="subtitle">
+      A real JVM — OpenJDK compiled to WebAssembly via
+      <a href="https://cheerpj.com" target="_blank" rel="noreferrer">CheerpJ</a> —
+      running unmodified Clojure, entirely in this tab. No server round-trips.
+    </p>
+    <p class="phase" data-text="$phase" data-show="$phase !== ''"></p>
+  </header>
+
+  <main>
+    <div id="transcript" aria-live="polite"></div>
+
+    <div class="input-area">
+      <div class="chips" id="examples">
+        <button class="chip" data-example="(+ 1 2)">(+ 1 2)</button>
+        <button class="chip" data-example="(->> (range 10) (map #(* % %)) (filter odd?))">threading</button>
+        <button class="chip" data-example="(defn greet [n] (str &quot;Hello, &quot; n &quot;!&quot;)) (greet &quot;browser JVM&quot;)">defn</button>
+        <button class="chip" data-example="(macroexpand '(when :real-macros? :yes))">macroexpand</button>
+        <button class="chip" data-example="(System/getProperty &quot;java.vm.name&quot;)">interop</button>
+      </div>
+      <div class="input-row">
+        <span class="prompt" data-text="$ns + '=>'">user=&gt;</span>
+        <textarea id="code" rows="3" spellcheck="false" autocomplete="off"
+                  placeholder="(+ 1 2)   —   Ctrl/⌘+Enter to evaluate"></textarea>
+        <button id="run" data-attr:disabled="$status !== 'ready' || $busy">
+          <span data-show="!$busy">Run</span>
+          <span data-show="$busy" class="spin">⏳</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      First boot downloads the CheerpJ runtime + Clojure jars and compiles
+      <code>clojure.core</code> inside your tab — expect ~30&ndash;120s, fast after caching.
+      Reactivity by <a href="https://data-star.dev" target="_blank" rel="noreferrer">datastar</a>;
+      no React harmed. Append <code>?mode=server</code> to eval on the dev server JVM instead,
+      or <code>?java=17</code> to boot a Java 17 runtime.
+    </p>
+  </footer>
+</body>
+</html>

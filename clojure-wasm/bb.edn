@@ -1,0 +1,40 @@
+{:paths ["src" "resources"]
+ :tasks
+ {:requires ([babashka.fs :as fs]
+             [babashka.http-client :as http]
+             [cheshire.core :as json]
+             [clojure.java.io :as io])
+
+  jars {:doc "Download the jars the browser JVM loads (per resources/public/jars/manifest.json)"
+        :task (let [manifest (json/parse-string (slurp "resources/public/jars/manifest.json") true)]
+                (doseq [{:keys [file url]} (:jars manifest)
+                        :let [dest (str "resources/public/jars/" file)]]
+                  (if (fs/exists? dest)
+                    (println "✓" file "(already present)")
+                    (do (println "↓" url)
+                        (io/copy (:body (http/get url {:as :stream})) (io/file dest))
+                        (println "✓" file)))))}
+
+  dev {:doc "Run the dev server on http://localhost:8080 (PORT/HOST env to override)"
+       :task (shell "clojure -M -m clojure-wasm.server")}
+
+  test {:doc "Run unit tests via Cognitect test-runner"
+        :task (shell "clojure -X:test")}
+
+  lint {:doc "Run clj-kondo on src + test"
+        :task (shell "clj-kondo --lint src test")}
+
+  e2e {:doc "Playwright e2e (server mode by default; E2E_MODE=wasm for the full browser-JVM run)"
+       :requires ([babashka.process :as p])
+       :task (do (shell {:dir "e2e"} "npm install")
+                 (let [srv (p/process {:out :inherit :err :inherit}
+                                      "clojure -M -m clojure-wasm.server")]
+                   (try
+                     (loop [n 0]
+                       (when (and (< n 60)
+                                  (not (try (= 200 (:status (http/get "http://127.0.0.1:8080/healthz")))
+                                            (catch Exception _ false))))
+                         (Thread/sleep 500)
+                         (recur (inc n))))
+                     (shell {:dir "e2e"} "node repl.test.mjs")
+                     (finally (p/destroy-tree srv)))))}}}

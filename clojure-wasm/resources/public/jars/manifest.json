@@ -1,0 +1,17 @@
+{
+  "comment": "Single source of truth for the jars the browser JVM loads. `bb jars` downloads them here; repl.js builds the CheerpJ classpath from the file names.",
+  "jars": [
+    {
+      "file": "clojure-1.12.5.jar",
+      "url": "https://repo1.maven.org/maven2/org/clojure/clojure/1.12.5/clojure-1.12.5.jar"
+    },
+    {
+      "file": "spec.alpha-0.5.238.jar",
+      "url": "https://repo1.maven.org/maven2/org/clojure/spec.alpha/0.5.238/spec.alpha-0.5.238.jar"
+    },
+    {
+      "file": "core.specs.alpha-0.4.74.jar",
+      "url": "https://repo1.maven.org/maven2/org/clojure/core.specs.alpha/0.4.74/core.specs.alpha-0.4.74.jar"
+    }
+  ]
+}
