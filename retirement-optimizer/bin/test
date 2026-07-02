@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Run the test suite.
+#
+# Preferred: the Clojure CLI (https://clojure.org/guides/install_clojure):
+#   bin/test            (equivalent to: clojure -M:test)
+#
+# Fallback for environments without the CLI: plain java, with CLOJURE_JARS
+# pointing at a directory containing clojure-*.jar, spec.alpha-*.jar and
+# core.specs.alpha-*.jar from Maven Central.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+if command -v clojure >/dev/null 2>&1; then
+  exec clojure -M:test
+fi
+
+: "${CLOJURE_JARS:?Clojure CLI not found. Install it, or set CLOJURE_JARS to a directory of Clojure jars.}"
+CP="src:test"
+for j in "$CLOJURE_JARS"/*.jar; do CP="$CP:$j"; done
+exec java -cp "$CP" clojure.main -m retirement.test-runner

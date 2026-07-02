@@ -1,0 +1,33 @@
+name: retirement-optimizer tests
+
+on:
+  push:
+    paths:
+      - "retirement-optimizer/**"
+      - ".github/workflows/retirement-optimizer-tests.yml"
+  pull_request:
+    paths:
+      - "retirement-optimizer/**"
+      - ".github/workflows/retirement-optimizer-tests.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: retirement-optimizer
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: DeLaGuardo/setup-clojure@13.4
+        with:
+          cli: latest
+      - name: Cache deps
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: clj-${{ hashFiles('retirement-optimizer/deps.edn') }}
+      - run: bin/test
