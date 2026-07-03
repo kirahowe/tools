@@ -1,10 +1,13 @@
 (ns retirement.accounts-test
   (:require [clojure.test :refer [deftest is testing]]
             [retirement.accounts :as acct]
+            [retirement.taxdata :as data]
             [retirement.test-util :refer [approx=]]))
 
 (def nonreg {:id :t :type :non-registered :balance 100000.0 :acb 60000.0
              :holdings {:equity 1.0}})
+
+(def table (data/resolve-table (data/tables) 2025))
 
 (deftest classes
   (is (= :registered (acct/account-class {:type :rrsp})))
@@ -14,15 +17,17 @@
 
 (deftest rrif-minimums
   (testing "RRSP has no minimum before conversion"
-    (is (zero? (acct/rrif-minimum {:type :rrsp :balance 100000.0} 70)))
-    (is (zero? (acct/rrif-minimum {:type :rrsp :balance 100000.0} 71))))
+    (is (zero? (acct/rrif-minimum {:type :rrsp :balance 100000.0} 70 table)))
+    (is (zero? (acct/rrif-minimum {:type :rrsp :balance 100000.0} 71 table))))
   (testing "converted RRSP owes its first minimum at 72"
-    (is (approx= (* 100000 0.054) (acct/rrif-minimum {:type :rrsp :balance 100000.0} 72))))
+    (is (approx= (* 100000 0.054)
+                 (acct/rrif-minimum {:type :rrsp :balance 100000.0} 72 table))))
   (testing "an account already held as a RRIF has minimums at any age"
-    (is (approx= (* 100000 0.04) (acct/rrif-minimum {:type :rrif :balance 100000.0} 65))))
+    (is (approx= (* 100000 0.04)
+                 (acct/rrif-minimum {:type :rrif :balance 100000.0} 65 table))))
   (testing "TFSA and non-registered never have minimums"
-    (is (zero? (acct/rrif-minimum {:type :tfsa :balance 100000.0} 80)))
-    (is (zero? (acct/rrif-minimum nonreg 80)))))
+    (is (zero? (acct/rrif-minimum {:type :tfsa :balance 100000.0} 80 table)))
+    (is (zero? (acct/rrif-minimum nonreg 80 table)))))
 
 (deftest withdraw-non-registered-tracks-acb
   (let [{:keys [account amount realized-gain taxable-ordinary]}

@@ -26,7 +26,7 @@ or other tools without ceremony.
 
 (def inputs
   {:person {:age 65
-            :province :on                        ; :on | :bc | :ab
+            :province :on                        ; :on | :ns | :bc | :ab
             :cpp {:start-age 70 :at-65 12000}    ; your expected CPP at 65
             :oas {:start-age 65}}
    :accounts [{:id :rrsp    :type :rrsp           :balance 500000
@@ -91,22 +91,47 @@ not tickers. That's the right granularity for a 30-year projection.
   TFSA withdrawals don't count as income — the engine will happily discover
   GIS-preserving strategies (defer CPP, live off TFSA/taxable) on its own.
 
-### Tax engine
+### Tax engine — per-year EDN snapshots, pluggable at runtime
 
-Data-driven (all constants live in `retirement.taxdata` as plain maps):
-federal + provincial progressive brackets, basic personal amount (with the
-federal high-income phase-out), age amount (65+, income-tested), pension
-income credit, eligible/non-eligible dividend gross-up and credits, 50%
-capital-gains inclusion, Ontario surtax and health premium. Bracket
-thresholds and credit amounts are indexed to the plan's (possibly stochastic)
-inflation path, except amounts that are unindexed in law (Ontario's $150k/
-$220k thresholds, the health premium, the federal $2,000 pension amount).
-The July 2025 federal rate cut is modeled (14.5% effective for 2025, 14%
+Every tax year is a **self-contained EDN file** in
+`resources/retirement/taxdata/<year>.edn` holding federal + provincial
+brackets and credits, benefit amounts, and RRIF factors. The library ships
+`2025.edn` and `2026.edn`. Selection and indexing:
+
+- a plan year uses the **latest table whose `:year` ≤ the plan year**;
+- dollar thresholds are then **indexed by the plan's (possibly stochastic)
+  inflation path** from that table's year, except items marked
+  `:indexed? false` / `:threshold-indexed? false` because they're frozen
+  in law (Ontario's $150k/$220k thresholds and health premium, the federal
+  $2,000 pension amount, Nova Scotia's $30,828 age-amount threshold, ...).
+
+So 2027+ works today by indexation, and becomes exact the moment a
+published `2027.edn` is dropped in — no code changes. Tables can also be
+**plugged per run** through the `:tax-tables` input, deep-merged per year
+over the built-ins, so a patch can be one number and an addition can be a
+whole province or year:
+
+```clojure
+{:tax-tables {2025 {:provinces {:on {:bpa {:max 13000.0}}      ; patch one credit
+                                :pe {...}}}                     ; add a province
+              2027 (taxdata/read-table "2027.edn")}}            ; add a year
+```
+
+What's modeled: progressive brackets, basic personal amount (flat, or with
+the federal-style high-income phase-out), age amount (65+, income-tested),
+pension income credit, eligible/non-eligible dividend gross-up and credits,
+50% capital-gains inclusion, Ontario surtax and health premium. The July
+2025 federal rate cut is carried in the data (14.5% effective 2025, 14%
 from 2026).
 
-**Ontario figures are verified** against CRA/TD1/ESDC 2025 published values;
-BC and Alberta are best-effort and marked `:approximate?` in the data — the
-schema makes any province a ~15-line data addition.
+**Ontario and Nova Scotia figures are verified** against CRA/TD1/ESDC/EY
+published values — including Nova Scotia's Budget 2025 restructuring (flat
+$11,744 BPA replacing the old phase-out, $5,734 age amount with unindexed
+threshold, non-eligible dividend credit cut to 1.5%, no surtax) and NS's
+published 2026 indexation (1.6%). The 2026 federal figures are the
+published CRA amounts. BC and Alberta are best-effort and marked
+`:approximate?` in the data; 2026 ON/BC/AB are 2025 values carried forward
+at ~2% and likewise flagged.
 
 ### The yearly solve (Part 1)
 
@@ -270,7 +295,8 @@ choices; the data-driven design keeps each one an isolated, testable change.
 
 ## Extending
 
-- **A province**: add a data map to `retirement.taxdata/provinces`.
+- **A province or a new tax year**: pure data — pass it via `:tax-tables`
+  at runtime, or add/edit an EDN file under `resources/retirement/taxdata/`.
 - **A strategy**: implement `retirement.strategy/pre-withdrawals` and/or
   `allocate` for a new `:type`, then pass it in `:strategy` or to
   `optimize`'s `:candidates`.
@@ -281,10 +307,13 @@ choices; the data-driven design keeps each one an isolated, testable change.
 ## Development
 
 ```
+resources/retirement/taxdata/
+  2025.edn       tax-year snapshot: federal + provinces + benefits + RRIF
+  2026.edn       (add 2027.edn etc. as figures are published)
 src/retirement/
-  taxdata.clj    tax & benefit constants (data)
-  tax.clj        tax engine
-  benefits.clj   CPP / OAS / GIS
+  taxdata.clj    EDN loading, table resolution, pluggable overrides
+  tax.clj        tax engine (fully table-parameterized)
+  benefits.clj   CPP / OAS / GIS (config-parameterized)
   accounts.clj   account mechanics, RRIF minimums, ACB
   inputs.clj     schema, defaults, validation
   strategy.clj   withdrawal strategies (open multimethods)
@@ -294,8 +323,9 @@ src/retirement/
   core.clj       public API
 ```
 
-`bin/test` runs the suite (61 tests / 387 assertions), including
-hand-computed CRA tax cases, benefit adjustment factors, ACB accounting,
-cash conservation per plan-year, strategy-behaviour pins, Cholesky
-round-trips, determinism (parallel == sequential), and Monte Carlo
-monotonicity properties.
+`bin/test` runs the suite (73 tests / 500+ assertions), including
+hand-computed CRA tax cases for Ontario and Nova Scotia, published-2026
+federal figures, benefit adjustment factors, ACB accounting, cash
+conservation per plan-year, strategy-behaviour pins, table
+resolution/override semantics, Cholesky round-trips, determinism
+(parallel == sequential), and Monte Carlo monotonicity properties.

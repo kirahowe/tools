@@ -17,8 +17,10 @@
 
   Simplifications (documented in README): net income == taxable income
   (no deductions modeled); OAS recovery tax is applied in the same year as
-  the income that triggers it."
-  (:require [retirement.taxdata :as data]))
+  the income that triggers it.
+
+  All functions take the tax-year table (see `retirement.taxdata`)
+  explicitly — nothing here reaches for global data.")
 
 (defn index-value
   "Scale a dollar threshold by the inflation factor unless marked unindexed."
@@ -74,13 +76,17 @@
           :else (- mx (* (- mx mn) (/ (- net-income s) (- e s)))))))))
 
 (defn age-amount
-  "Age credit base amount (65+), reduced by 15% of net income over threshold."
-  [{:keys [max threshold rate]} factor age net-income]
+  "Age credit base amount (65+), reduced by `rate` of net income over the
+  threshold. Some provinces (e.g. Nova Scotia) don't index the threshold —
+  mark those with :threshold-indexed? false."
+  [{:keys [max threshold rate threshold-indexed?] :or {threshold-indexed? true}}
+   factor age net-income]
   (if (and age (>= age 65))
-    (clojure.core/max
-     0.0
-     (- (index-value max factor)
-        (* rate (clojure.core/max 0.0 (- net-income (index-value threshold factor))))))
+    (let [thr (index-value threshold factor threshold-indexed?)]
+      (clojure.core/max
+       0.0
+       (- (index-value max factor)
+          (* rate (clojure.core/max 0.0 (- net-income thr))))))
     0.0))
 
 (defn pension-amount
@@ -157,20 +163,20 @@
 (defn income-tax
   "Total income tax for one person-year.
 
-  `year` selects the correct federal rate schedule, `factor` is the
-  cumulative inflation index relative to `retirement.taxdata/base-year`,
-  `province` is a key in `retirement.taxdata/provinces`, and `income` is the
-  income description map (see namespace doc). `oas-received` (in :ordinary
-  already) is needed to cap the clawback.
+  `table` is the tax-year table to apply (see `retirement.taxdata`),
+  `factor` is the cumulative inflation index relative to that table's
+  :year, `province` is a key in the table's :provinces, and `income` is
+  the income description map (see namespace doc). `oas-received` (in
+  :ordinary already) is needed to cap the clawback.
 
   Returns a detail map; :total includes federal + provincial + OAS clawback."
-  [{:keys [year factor province income oas-received]
+  [{:keys [table factor province income oas-received]
     :or {oas-received 0.0}}]
-  (let [fed (data/federal-for-year year)
-        prov (get data/provinces province)
+  (let [fed (:federal table)
+        prov (get-in table [:provinces province])
         _ (when-not prov
             (throw (ex-info (str "Unknown province: " province
-                                 ". Known: " (sort (keys data/provinces)))
+                                 ". Known: " (sort (keys (:provinces table))))
                             {:province province})))
         ti (taxable-income fed income)
         federal (federal-tax fed factor income)

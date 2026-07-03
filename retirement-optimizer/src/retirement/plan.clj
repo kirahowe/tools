@@ -69,7 +69,7 @@
 
 (defn- evaluate-year
   "Compute taxes, GIS and net cash for a given withdrawal map."
-  [{:keys [year age province base-factor cpp oas pension-cash
+  [{:keys [table factor age province cpp oas pension-cash
            pension-income-fixed ordinary-fixed dists facts]}
    wd-map]
   (let [character (withdrawal-character facts wd-map age)
@@ -78,12 +78,13 @@
                 :capital-gains (:capital-gains character)
                 :age age
                 :pension-income (+ pension-income-fixed (:pension character))}
-        tax-detail (tax/income-tax {:year year :factor base-factor
+        tax-detail (tax/income-tax {:table table :factor factor
                                     :province province :income income
                                     :oas-received oas})
-        gis (benefits/gis-annual (pos? oas)
+        gis (benefits/gis-annual (get-in table [:benefits :gis])
+                                 (pos? oas)
                                  (- (:net-income tax-detail) oas)
-                                 base-factor)
+                                 factor)
         net-cash (+ cpp oas gis pension-cash
                     (:total character)
                     (:eligible-dividends dists) (:interest dists)
@@ -169,28 +170,40 @@
                    0.0))
                pensions)))
 
+(defn- table-factor
+  "Cumulative inflation factor for the plan year relative to the resolved
+  tax table's :year. Pre-plan years use assumed mean inflation (which
+  cancels exactly when the table year equals the plan start year)."
+  [{:keys [initial-base-factor assumptions]} table year-index]
+  (/ (* initial-base-factor year-index)
+     (Math/pow (+ 1.0 (get-in assumptions [:inflation :mean]))
+               (- (:year table) data/anchor-year))))
+
 (defn- simulate-year
-  [{:keys [person goal assumptions strategy initial-base-factor start-year] :as _cfg}
+  [{:keys [person goal assumptions strategy tables start-year] :as cfg}
    {:keys [accounts year-index tfsa-room tfsa-withdrawn-last] :as _state}
    year
    returns]
   (let [age (- year (:birth-year person))
-        base-factor (* initial-base-factor year-index)
+        table (data/resolve-table tables year)
+        factor (table-factor cfg table year-index)
         spend-target (* (:annual-spending goal) year-index)
-        cpp (benefits/cpp-annual (:cpp person) age year-index)
-        oas (benefits/oas-annual (:oas person) age base-factor)
+        cpp (benefits/cpp-annual (get-in table [:benefits :cpp])
+                                 (:cpp person) age year-index)
+        oas (benefits/oas-annual (get-in table [:benefits :oas])
+                                 (:oas person) age factor)
         pension (pension-income-annual (:pensions person) age year-index)
         ;; TFSA room accrues each year after the first, plus last year's
         ;; withdrawals are restored.
         tfsa-room (+ tfsa-room
                      (if (> year start-year)
-                       (+ (* (get-in data/benefits [:tfsa :annual-limit]) base-factor)
+                       (+ (* (get-in table [:benefits :tfsa :annual-limit]) factor)
                           tfsa-withdrawn-last)
                        0.0))
         facts (account-facts accounts age)
         forced (into {}
                      (keep (fn [account]
-                             (let [m (acct/rrif-minimum account age)]
+                             (let [m (acct/rrif-minimum account age table)]
                                (when (pos? m) [(:id account) m]))))
                      accounts)
         dists (reduce (fn [acc account]
@@ -198,21 +211,22 @@
                                            account (:distributions assumptions))))
                       {:eligible-dividends 0.0 :interest 0.0}
                       accounts)
-        fed (data/federal-for-year year)
+        fed (:federal table)
         available-after (fn [wd]
                           (into {}
                                 (map (fn [{:keys [id balance]}]
                                        [id (max 0.0 (- balance (get wd id 0.0)))]))
                                 accounts))
         base-ctx {:accounts accounts :age age :year year :fed fed
-                  :base-factor base-factor :year-index year-index
+                  :factor factor :year-index year-index
                   :ordinary-baseline (+ cpp oas pension (:interest dists)
                                         (sum-vals forced))}
         pre (strategy/pre-withdrawals strategy
                                       (assoc base-ctx :available (available-after forced)))
         fixed-wd (merge-with + forced pre)
-        year-ctx {:year year :age age :province (:province person)
-                  :base-factor base-factor :cpp cpp :oas oas
+        year-ctx {:table table :factor factor :age age
+                  :province (:province person)
+                  :cpp cpp :oas oas
                   :ordinary-fixed (+ cpp oas pension (:interest dists))
                   :pension-cash pension
                   :pension-income-fixed pension
@@ -259,12 +273,12 @@
   as income on the final return, unrealized non-registered gains are
   deemed disposed, TFSA passes tax-free. Modeled as a standalone final
   return (not stacked on that year's other income)."
-  [accounts age year base-factor year-index province]
+  [accounts age table factor year-index province]
   (let [registered (reduce + 0.0 (map :balance (filter acct/registered? accounts)))
         gains (acct/unrealized-gains accounts)
         gross (acct/total-balance accounts)
         tax-detail (tax/income-tax
-                    {:year year :factor base-factor :province province
+                    {:table table :factor factor :province province
                      :income {:ordinary registered
                               :capital-gains gains
                               :age age
@@ -279,7 +293,7 @@
   "Run a normalized config against an explicit market path (one map of
   {:equity :bonds :cash :inflation} per plan year). Used directly by the
   Monte Carlo engine; most callers want `run-plan`."
-  [{:keys [person goal start-year n-years initial-base-factor] :as cfg} market-path]
+  [{:keys [person goal start-year n-years tables] :as cfg} market-path]
   (when (< (count market-path) n-years)
     (throw (ex-info "market path shorter than the plan horizon"
                     {:path-years (count market-path) :n-years n-years})))
@@ -299,8 +313,9 @@
         ;; state's year-index has advanced through the final year's
         ;; inflation, so it deflates the end-of-final-year estate.
         estate-index (:year-index state)
-        estate (estate-value (:accounts state) end-age end-year
-                             (* initial-base-factor estate-index)
+        end-table (data/resolve-table tables end-year)
+        estate (estate-value (:accounts state) end-age end-table
+                             (table-factor cfg end-table estate-index)
                              estate-index
                              (:province person))
         total-shortfall-real (reduce + 0.0 (map #(/ (:shortfall %) (:index %)) rows))

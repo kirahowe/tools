@@ -40,7 +40,25 @@
     (is (problem-mentioning
          (assoc-in basic-inputs [:accounts 0 :acb] 100) ":acb")))
   (testing "start-year before tax data base year"
-    (is (problem-mentioning (assoc basic-inputs :start-year 2020) ":start-year"))))
+    (is (problem-mentioning (assoc basic-inputs :start-year 2020) ":start-year")))
+  (testing "malformed :tax-tables reported, not thrown"
+    (is (problem-mentioning (assoc basic-inputs :tax-tables {2025 :nope})
+                            ":tax-tables"))
+    (is (problem-mentioning (assoc basic-inputs :tax-tables {2027 {:federal {}}})
+                            ":tax-tables")))
+  (testing "a province added via :tax-tables becomes valid"
+    (let [pei {:name "PEI" :brackets [{:up-to nil :rate 0.1}]
+               :credit-rate 0.096 :bpa {:max 14250.0}
+               :age-amount {:max 3764.0 :threshold 33740.0 :rate 0.15}
+               :pension-amount {:amount 1000.0 :indexed? false}
+               :dividend-credits {:eligible 0.105 :non-eligible 0.013}}
+          with-pei (-> basic-inputs
+                       (assoc-in [:person :province] :pe)
+                       (assoc :tax-tables {2025 {:provinces {:pe pei}}
+                                           2026 {:provinces {:pe pei}}}))]
+      (is (problem-mentioning (assoc-in basic-inputs [:person :province] :pe)
+                              ":province"))
+      (is (empty? (inputs/validate with-pei))))))
 
 (deftest normalize-defaults
   (let [cfg (inputs/normalize basic-inputs)]

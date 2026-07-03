@@ -88,8 +88,10 @@
                 :start-year 2026}
         result (plan/run-plan inputs)
         row (first (:years result))]
-    (testing "taxable income lands on the indexed first-bracket ceiling"
-      (is (approx= (* 57375.0 1.021)
+    (testing "taxable income lands on the published 2026 first-bracket top"
+      ;; The 2026 plan year resolves the 2026 tax table at factor 1.0, so
+      ;; the ceiling is exactly the published $58,523 threshold.
+      (is (approx= 58523.0
                    (get-in row [:tax :taxable-income])
                    1.0)))
     (testing "the excess over spending is re-sheltered"
@@ -176,6 +178,30 @@
     (is (< (:after-tax estate) (:gross estate)))
     (testing "terminal tax bites hard on a large RRIF"
       (is (> (:terminal-tax estate) (* 0.3 (:gross estate)))))))
+
+(deftest nova-scotia-plan-runs-without-ontario-only-levies
+  (let [inputs (assoc-in basic-inputs [:person :province] :ns)
+        result (plan/run-plan inputs)]
+    (doseq [row (:years result)]
+      (is (zero? (get-in row [:tax :surtax])))
+      (is (zero? (get-in row [:tax :health-premium]))))
+    (testing "provincial tax is actually levied"
+      (is (pos? (get-in (last (:years result)) [:tax :provincial]))))))
+
+(deftest runtime-tax-table-override-changes-the-plan
+  ;; Patch the 2026 table with a brutal 90% flat bottom bracket; the same
+  ;; scenario must now pay dramatically more tax.
+  (let [inputs {:person (merge {:age 65 :province :on :end-age 70} no-benefits)
+                :accounts [{:id :rrif :type :rrif :balance 1000000.0
+                            :holdings {:equity 0.5 :bonds 0.5}}]
+                :goal {:type :spend-down :annual-spending 50000}
+                :start-year 2026}
+        normal (plan/run-plan inputs)
+        taxed (plan/run-plan
+               (assoc inputs :tax-tables
+                      {2026 {:federal {:brackets [{:up-to nil :rate 0.9}]}}}))]
+    (is (> (get-in (first (:years taxed)) [:tax :federal])
+           (* 3 (get-in (first (:years normal)) [:tax :federal]))))))
 
 (deftest deterministic-given-same-inputs
   (is (= (plan/run-plan basic-inputs) (plan/run-plan basic-inputs))))

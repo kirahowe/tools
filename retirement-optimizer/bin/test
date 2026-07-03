@@ -15,6 +15,6 @@ if command -v clojure >/dev/null 2>&1; then
 fi
 
 : "${CLOJURE_JARS:?Clojure CLI not found. Install it, or set CLOJURE_JARS to a directory of Clojure jars.}"
-CP="src:test"
+CP="src:resources:test"
 for j in "$CLOJURE_JARS"/*.jar; do CP="$CP:$j"; done
 exec java -cp "$CP" clojure.main -m retirement.test-runner

@@ -29,8 +29,8 @@
     :accounts           account vector (start-of-year, input order)
     :available          {account-id available-balance} net of forced/pre
     :age :year          ints
-    :fed                federal tax table for the year
-    :base-factor        CPI factor vs the tax-data base year
+    :fed                the resolved tax table's :federal section
+    :factor             CPI factor vs the resolved tax table's year
     :year-index         CPI factor vs the plan start year
     :ordinary-baseline  taxable ordinary income already locked in
                         (CPP + OAS + pensions + interest + forced minimums)"
@@ -64,12 +64,12 @@
 
 (defn resolve-ceiling
   "Resolve a :bracket-fill ceiling to nominal dollars for the year."
-  [ceiling {:keys [fed base-factor year-index]}]
+  [ceiling {:keys [fed factor year-index]}]
   (cond
     (number? ceiling) (* (double ceiling) year-index)
-    (= ceiling :first-bracket-top) (* (get-in fed [:brackets 0 :up-to]) base-factor)
-    (= ceiling :second-bracket-top) (* (get-in fed [:brackets 1 :up-to]) base-factor)
-    (= ceiling :oas-clawback) (* (get-in fed [:oas-clawback :threshold]) base-factor)
+    (= ceiling :first-bracket-top) (* (get-in fed [:brackets 0 :up-to]) factor)
+    (= ceiling :second-bracket-top) (* (get-in fed [:brackets 1 :up-to]) factor)
+    (= ceiling :oas-clawback) (* (get-in fed [:oas-clawback :threshold]) factor)
     :else (throw (ex-info (str "Unknown bracket-fill ceiling: " (pr-str ceiling))
                           {:ceiling ceiling}))))
 

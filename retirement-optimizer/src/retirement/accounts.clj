@@ -38,14 +38,15 @@
 
 (defn rrif-minimum
   "Mandatory minimum withdrawal for this account at `age` (start-of-year
-  balance). RRSPs converted at 71 owe their first minimum at 72; accounts
-  already held as RRIFs owe one at any age."
-  [{:keys [type balance] :as account} age]
+  balance), under the given tax-year table's :rrif-factors. RRSPs converted
+  at 71 owe their first minimum at 72; accounts already held as RRIFs owe
+  one at any age."
+  [{:keys [type balance] :as account} age table]
   (cond
     (not (rrif? account age)) 0.0
     (and (= type :rrsp) (< age 72)) 0.0
     :else (min (double balance)
-               (* balance (data/rrif-minimum-factor age)))))
+               (* balance (data/rrif-minimum-factor table age)))))
 
 (defn gain-fraction
   "Fraction of each non-registered withdrawal that is realized capital gain."

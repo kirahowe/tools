@@ -7,7 +7,8 @@
             [retirement.optimize-test]
             [retirement.plan-test]
             [retirement.simulate-test]
-            [retirement.tax-test]))
+            [retirement.tax-test]
+            [retirement.taxdata-test]))
 
 (def test-namespaces
   ['retirement.accounts-test
@@ -16,7 +17,8 @@
    'retirement.optimize-test
    'retirement.plan-test
    'retirement.simulate-test
-   'retirement.tax-test])
+   'retirement.tax-test
+   'retirement.taxdata-test])
 
 (defn -main [& _args]
   (let [{:keys [fail error]} (apply t/run-tests test-namespaces)]

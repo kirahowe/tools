@@ -5,7 +5,7 @@
 
     {:person {:birth-year 1961          ; or :age (at start-year)
               :end-age 95               ; plan horizon (default 95)
-              :province :on             ; :on | :bc | :ab
+              :province :on             ; :on | :ns | :bc | :ab (or plugged)
               :cpp {:start-age 70 :at-65 12000}   ; expected annual CPP at 65,
                                                   ; in start-year dollars
               :oas {:start-age 65 :fraction 1.0}  ; fraction = residency years/40
@@ -22,7 +22,11 @@
             :legacy 0}                   ; real after-tax estate target
      :strategy {:type :sequential :order [:non-registered :registered :tfsa]}
      :start-year 2026
-     :assumptions {...}}                 ; deep-merged over default-assumptions
+     :assumptions {...}                  ; deep-merged over default-assumptions
+     :tax-tables {2025 {...} 2027 {...}}} ; optional per-year tax table
+                                          ; patches/additions, deep-merged
+                                          ; over the built-in EDN snapshots
+                                          ; (see retirement.taxdata)
 
   All money amounts are in start-year (today's) dollars unless stated
   otherwise; the engine converts to nominal internally."
@@ -54,11 +58,7 @@
 
 (def account-types #{:rrsp :rrif :tfsa :non-registered})
 
-(defn deep-merge
-  [a b]
-  (if (and (map? a) (map? b))
-    (merge-with deep-merge a b)
-    (if (nil? b) a b)))
+(def deep-merge data/deep-merge)
 
 (defn- holdings-ok? [holdings]
   (and (map? holdings)
@@ -85,20 +85,31 @@
 
 (defn validate
   "Returns a vector of human-readable problems; empty when valid."
-  [{:keys [person accounts goal start-year] :as inputs}]
+  [{:keys [person accounts goal start-year tax-tables] :as inputs}]
   (let [{:keys [birth-year age end-age province cpp]} person
         {:keys [type annual-spending legacy]} goal
         start-year (or start-year 2026)
-        ids (map :id accounts)]
+        ids (map :id accounts)
+        tables-result (try {:tables (data/tables tax-tables)}
+                           (catch Exception e {:error (ex-message e)}))
+        known-provinces (when-let [ts (:tables tables-result)]
+                          (set (keys (:provinces (data/resolve-table
+                                                  ts
+                                                  (if (integer? start-year)
+                                                    start-year
+                                                    2026))))))]
     (-> []
         (cond->
          (nil? person) (conj "missing :person")
          (nil? goal) (conj "missing :goal")
          (and person (nil? birth-year) (nil? age))
          (conj ":person needs :birth-year or :age")
-         (and person province (not (contains? data/provinces province)))
+         (:error tables-result)
+         (conj (str ":tax-tables invalid: " (:error tables-result)))
+         (and person province known-provinces
+              (not (contains? known-provinces province)))
          (conj (str ":person :province must be one of "
-                    (sort (keys data/provinces)) ", got " (pr-str province)))
+                    (sort known-provinces) ", got " (pr-str province)))
          (and goal (not (contains? #{:spend-down :legacy nil} type)))
          (conj ":goal :type must be :spend-down or :legacy")
          (and goal (not (and (number? annual-spending)
@@ -110,9 +121,9 @@
          (conj ":goal :legacy must be non-negative")
          (not (integer? start-year))
          (conj ":start-year must be an integer year")
-         (and (integer? start-year) (< start-year data/base-year))
-         (conj (str ":start-year must be >= " data/base-year
-                    " (the tax data base year)"))
+         (and (integer? start-year) (< start-year data/anchor-year))
+         (conj (str ":start-year must be >= " data/anchor-year
+                    " (the earliest tax data year)"))
          (and person birth-year end-age start-year
               (<= (+ birth-year (or end-age 95)) start-year))
          (conj ":person :end-age is reached before :start-year")
@@ -155,10 +166,11 @@
      :goal (merge {:type :spend-down :legacy 0.0} (:goal inputs))
      :strategy (or (:strategy inputs) default-strategy)
      :assumptions assumptions
+     :tables (data/tables (:tax-tables inputs))
      :start-year start-year
      :start-age start-age
      :n-years (inc (- end-age start-age))
-     ;; CPI factor from the tax-data base year to the plan start year,
-     ;; using assumed mean inflation for the intervening years.
+     ;; CPI factor from the anchor year to the plan start year, using
+     ;; assumed mean inflation for the intervening years.
      :initial-base-factor (Math/pow (+ 1.0 (get-in assumptions [:inflation :mean]))
-                                    (- start-year data/base-year))}))
+                                    (- start-year data/anchor-year))}))
