@@ -93,6 +93,7 @@ const els = {
   tempo: $("tempo"),
   tempoOut: $("tempo-out"),
   deskew: $("deskew"),
+  quality: $("quality"),
   status: $("status"),
   progress: $("progress"),
   progressBar: $("progress-bar"),
@@ -190,7 +191,7 @@ function ensureWorker() {
   return state.workerReady;
 }
 
-function recognize(imageBytes, name, deskew) {
+function recognize(imageBytes, name, deskew, modelSet, step) {
   return new Promise((resolve, reject) => {
     const worker = state.worker;
     const onMsg = (e) => {
@@ -204,7 +205,7 @@ function recognize(imageBytes, name, deskew) {
       }
     };
     worker.addEventListener("message", onMsg);
-    worker.postMessage({ type: "omr", imageBytes, name, deskew }, [imageBytes]);
+    worker.postMessage({ type: "omr", imageBytes, name, deskew, modelSet, step }, [imageBytes]);
   });
 }
 
@@ -335,7 +336,8 @@ async function onFileChange(e) {
 
     const bytes = await file.arrayBuffer();
     const t0 = performance.now();
-    const musicxml = await recognize(bytes, file.name, els.deskew.checked);
+    const [modelSet, step] = els.quality.value.split(":");
+    const musicxml = await recognize(bytes, file.name, els.deskew.checked, modelSet, Number(step));
     state.lastMusicXML = musicxml;
     const secs = ((performance.now() - t0) / 1000).toFixed(0);
 

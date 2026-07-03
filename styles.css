@@ -73,12 +73,21 @@ header h1 {
   cursor: pointer;
 }
 
-.tempo {
+.tempo,
+.quality {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.quality select {
+  font: inherit;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: white;
 }
 
 .status {

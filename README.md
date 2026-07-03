@@ -86,21 +86,77 @@ MusicXML → rendered score → playback schedule) in Chromium via Playwright:
 
 ```bash
 npm install playwright        # or reuse an existing install via NODE_PATH
-node test/e2e.js test/tabi.jpg            # clean-ish photo, no dewarp
-node test/e2e.js test/tabi.jpg --deskew   # with dewarping (slower)
+node test/e2e.js test/tabi.jpg            # default engine, no dewarp
+node test/e2e.js test/tabi.jpg --deskew   # with dewarping
+node test/e2e.js test/tabi.jpg --engine std:256   # Fast engine
 ```
 
 Artifacts (the produced MusicXML and a screenshot) land in
 `test/artifacts/`. The sample image `test/tabi.jpg` is the phone-taken demo
 photo from the oemer repository (MIT).
 
+## Performance & download size (measured)
+
+Time on a 4-core machine, headless Chromium, multi-threaded wasm, on the
+sample phone photo (whole pipeline, image → MusicXML):
+
+| stage | time |
+|---|---|
+| engine bring-up (Pyodide + packages + oemer) | ~15 s |
+| pass 1: unet_big (staff/symbols), 232 patches | ~180 s |
+| pass 2: seg_net (noteheads/clefs), 232 patches | ~350 s |
+| post-processing + dewarp + MusicXML | ~55 s |
+| **total** | **~10 min** |
+
+Inference is ~90% of the wall clock, so the **Engine** selector trades it
+against fidelity:
+
+- **Max fidelity** (default) — oemer's fp32 models, dense window overlap
+  (step 128). The reference configuration.
+- **Light** — same fp32 unet_big, int8-quantized seg_net (99.96% pixel
+  agreement, but boundary pixels matter: ~92% of note pitches match Max
+  end-to-end on the sample page; durations ~99%). Same speed, 28 MB
+  smaller download.
+- **Fast** — Light models with step 256 (no window overlap): measured
+  3.2× faster in the browser (587 s → 183 s on the sample page), ~90% of
+  pitches match Max. Fine for a quick listen, not for transcription.
+
+Notes from the tuning experiments (so nobody re-treads dead ends):
+
+- int8 quantization is a **download** win, not a speed win — QDQ overhead
+  cancels the compute savings (measured: seg_net 3.7 s/batch fp32 vs 4.0 s
+  int8 natively). unet_big *cannot* be int8-quantized naively: its
+  staffline/symbol channels collapse to ~0.5% recall regardless of
+  calibration method or first/last-layer exclusion.
+- Threads: wasm inference uses `min(8, hardwareConcurrency)` threads when
+  cross-origin isolated (COOP/COEP), 1 otherwise — that difference alone
+  is worth ~3–4×, which is why `serve.py` sets the headers.
+- WebGPU is attempted first and silently falls back to wasm. On machines
+  with a real GPU this is the biggest untapped speedup; the models are
+  opset 9, which limits current WebGPU op coverage — converting to opset
+  13+ (see `tools/quantize_models.py` for the pattern) is the starting
+  point if you pick this up.
+
+Download, first visit (all cached for later visits — models in the Cache
+API, the rest in the HTTP cache):
+
+| component | size |
+|---|---|
+| models (Max: both fp32; Light saves 28 MB) | 109.2 MB |
+| Pyodide packages (numpy, OpenCV, scipy, sklearn…) | 38 MB |
+| Pyodide core (wasm + stdlib) | 12.3 MB |
+| ONNX Runtime Web (wasm) | 13.9 MB |
+| OSMD + Tone.js + oemer wheel | 2.9 MB |
+| **total** | **~176 MB** (~160 MB over the wire with CDN compression; Light: ~148 MB) |
+
+(matplotlib and friends are stubbed out in the worker, saving ~9 MB of
+wheels that oemer imports but never uses.)
+
 ## Expectations & caveats
 
-- **Speed.** Recognition is minutes-per-page, not seconds: the two U-Nets
-  slide over ~200 patches each, then oemer's post-processing does a lot of
-  pixel-level work in Python. Multi-threaded wasm (COOP/COEP headers) and
-  WebGPU (tried automatically, falls back to wasm) help. A phone photo at
-  ~3–4 MP is the design point; bigger images are resized to that anyway.
+- **Speed.** Recognition is minutes-per-page, not seconds — see the table
+  above. A phone photo at ~3–4 MP is the design point; bigger images are
+  resized to that anyway.
 - **Memory.** Expect the worker to peak around 1–1.5 GB. Desktop browsers
   are fine; older phones may not be.
 - **Accuracy.** oemer is good on clean scans and decent on phone photos,

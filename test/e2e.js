@@ -17,6 +17,7 @@ const ARTIFACTS = path.join(__dirname, "artifacts");
 const argv = process.argv.slice(2);
 const image = argv.find((a) => !a.startsWith("--"));
 const deskew = argv.includes("--deskew");
+const engine = argv.includes("--engine") ? argv[argv.indexOf("--engine") + 1] : null;
 const port = Number(argv[argv.indexOf("--port") + 1]) || 8765;
 
 if (!image) {
@@ -61,8 +62,9 @@ async function main() {
     console.log("page booted; crossOriginIsolated =", await page.evaluate(() => crossOriginIsolated));
 
     if (!deskew) await page.uncheck("#deskew");
+    if (engine) await page.selectOption("#quality", engine);
     await page.setInputFiles("#file", path.resolve(image));
-    console.log(`submitted ${image} (deskew=${deskew}); waiting for OMR…`);
+    console.log(`submitted ${image} (deskew=${deskew}, engine=${engine || "default"}); waiting for OMR…`);
 
     // Poll status until done/failed, logging transitions.
     const t0 = Date.now();

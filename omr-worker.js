@@ -36,9 +36,23 @@ async function init() {
 
   status("loading-packages");
   await pyodide.loadPackage(
-    ["numpy", "opencv-python", "scipy", "scikit-learn", "matplotlib", "pillow", "typing-extensions", "micropip"],
+    ["numpy", "opencv-python", "scipy", "scikit-learn", "pillow", "typing-extensions", "micropip"],
     { messageCallback: (m) => post({ type: "log", line: m }) }
   );
+
+  // oemer imports matplotlib.pyplot at module level but only calls it from
+  // debug helpers; a no-op stub saves ~10 MB of wheels and import time.
+  pyodide.runPython(`
+import sys, types
+def _noop(*a, **k): return None
+_mpl = types.ModuleType("matplotlib")
+_plt = types.ModuleType("matplotlib.pyplot")
+for _m in (_mpl, _plt): _m.__getattr__ = lambda name: _noop
+_mpl.pyplot = _plt
+_mpl.use = _noop
+sys.modules["matplotlib"] = _mpl
+sys.modules["matplotlib.pyplot"] = _plt
+`);
 
   status("installing-oemer");
   const requirement = assets.oemerRequirement.startsWith("http") || !assets.oemerRequirement.includes("/")
@@ -69,7 +83,7 @@ import omr_bridge
   importScripts(abs(assets.ortScript));
   ort.env.wasm.wasmPaths = abs(assets.ortWasmPaths);
   ort.env.wasm.numThreads = self.crossOriginIsolated
-    ? Math.min(4, navigator.hardwareConcurrency || 1)
+    ? Math.min(8, navigator.hardwareConcurrency || 1)
     : 1;
 
   post({ type: "ready" });
@@ -77,8 +91,8 @@ import omr_bridge
 
 // ---------- model loading ---------------------------------------------------
 
-async function fetchModel(name) {
-  const url = abs(assets.models[name]);
+async function fetchModel(name, modelSet) {
+  const url = abs(assets.modelSets[modelSet][name]);
   const cache = await caches.open("smp-models-v1").catch(() => null);
 
   if (cache) {
@@ -109,9 +123,10 @@ async function fetchModel(name) {
   return bytes;
 }
 
-async function getSession(name) {
-  if (sessions[name]) return sessions[name];
-  const bytes = await fetchModel(name);
+async function getSession(name, modelSet) {
+  const key = `${name}:${modelSet}`;
+  if (sessions[key]) return sessions[key];
+  const bytes = await fetchModel(name, modelSet);
   status("creating-session", name);
   let session = null;
   try {
@@ -119,7 +134,7 @@ async function getSession(name) {
   } catch (_) {
     session = await ort.InferenceSession.create(bytes.buffer, { executionProviders: ["wasm"] });
   }
-  sessions[name] = session;
+  sessions[key] = session;
   return session;
 }
 
@@ -127,11 +142,11 @@ async function getSession(name) {
 
 const BATCH = 8;
 
-async function runModel(name, stage) {
-  const session = await getSession(name);
+async function runModel(name, stage, step, modelSet) {
+  const session = await getSession(name, modelSet);
   status(stage, "preparing patches");
 
-  const info = bridge.prepare(name).toJs(); // [n, win, outCh]
+  const info = bridge.prepare(name, step).toJs(); // [n, win, outCh]
   const [n, win, outCh] = info;
 
   const patchesProxy = bridge.get_patches(name);
@@ -170,7 +185,7 @@ async function runModel(name, stage) {
   bridge.merge(name);
 }
 
-async function recognize(imageBytes, name, deskew) {
+async function recognize(imageBytes, name, deskew, step, modelSet) {
   status("reading-image");
   // oemer titles the score after the file's basename; keep the user's name
   // but strip anything path- or filesystem-hostile.
@@ -180,8 +195,8 @@ async function recognize(imageBytes, name, deskew) {
   pyodide.FS.writeFile(path, new Uint8Array(imageBytes));
   bridge.load_image(path);
 
-  await runModel("unet_big", "segmenting-staff");
-  await runModel("seg_net", "segmenting-symbols");
+  await runModel("unet_big", "segmenting-staff", step, modelSet);
+  await runModel("seg_net", "segmenting-symbols", step, modelSet);
 
   status("postprocess");
   const musicxml = bridge.finalize(path, deskew);
@@ -199,7 +214,11 @@ self.onmessage = async (e) => {
       baseURL = msg.origin;
       await init();
     } else if (msg.type === "omr") {
-      const musicxml = await recognize(msg.imageBytes, msg.name, !!msg.deskew);
+      const musicxml = await recognize(
+        msg.imageBytes, msg.name, !!msg.deskew,
+        Number(msg.step) || 128,
+        msg.modelSet === "max" ? "max" : "std"
+      );
       post({ type: "result", musicxml });
     }
   } catch (err) {

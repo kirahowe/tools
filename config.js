@@ -26,10 +26,20 @@ self.SMP_CONFIG = {
     ortWasmPaths: "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.27.0/dist/",
     osmdScript: "https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@2.0.0/build/opensheetmusicdisplay.min.js",
     toneScript: "https://cdn.jsdelivr.net/npm/tone@15.1.22/build/Tone.js",
-    // oemer's official model checkpoints (GitHub serves these with CORS).
-    models: {
-      unet_big: "https://github.com/BreezeWhite/oemer/releases/download/checkpoints/1st_model.onnx",
-      seg_net: "https://github.com/BreezeWhite/oemer/releases/download/checkpoints/2nd_model.onnx",
+    // "std" uses an int8-quantized seg_net shipped with this repo (28 MB
+    // smaller download, ~99.96% agreement with fp32 — see
+    // tools/quantize_models.py). unet_big stays fp32 in both sets: it loses
+    // stafflines when quantized. fp32 checkpoints are oemer's official
+    // release assets (GitHub serves them with CORS).
+    modelSets: {
+      max: {
+        unet_big: "https://github.com/BreezeWhite/oemer/releases/download/checkpoints/1st_model.onnx",
+        seg_net: "https://github.com/BreezeWhite/oemer/releases/download/checkpoints/2nd_model.onnx",
+      },
+      std: {
+        unet_big: "https://github.com/BreezeWhite/oemer/releases/download/checkpoints/1st_model.onnx",
+        seg_net: "models/seg_net_int8.onnx",
+      },
     },
     // Installed by micropip from PyPI.
     oemerRequirement: "oemer==0.1.8",
@@ -42,9 +52,15 @@ self.SMP_CONFIG = {
     ortWasmPaths: "vendor/onnxruntime-web/dist/",
     osmdScript: "vendor/opensheetmusicdisplay/build/opensheetmusicdisplay.min.js",
     toneScript: "vendor/tone/build/Tone.js",
-    models: {
-      unet_big: "vendor/models/1st_model.onnx",
-      seg_net: "vendor/models/2nd_model.onnx",
+    modelSets: {
+      max: {
+        unet_big: "vendor/models/1st_model.onnx",
+        seg_net: "vendor/models/2nd_model.onnx",
+      },
+      std: {
+        unet_big: "vendor/models/1st_model.onnx",
+        seg_net: "models/seg_net_int8.onnx",
+      },
     },
     oemerRequirement: "vendor/wheels/oemer-0.1.8-py3-none-any.whl",
   },

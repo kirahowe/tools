@@ -30,6 +30,15 @@
           <input id="deskew" type="checkbox" checked />
           Photo mode (dewarp)
         </label>
+
+        <label class="quality" title="Trade recognition fidelity against speed and download size.">
+          Engine
+          <select id="quality">
+            <option value="max:128" selected>Max fidelity (109 MB models)</option>
+            <option value="std:128">Light (81 MB models, ~92% of Max)</option>
+            <option value="std:256">Fast (~2× faster, ~90% of Max)</option>
+          </select>
+        </label>
       </section>
 
       <section class="controls playback">
