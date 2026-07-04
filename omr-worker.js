@@ -206,13 +206,19 @@ async function recognize(imageBytes, name, deskew, step, modelSet) {
 
 // ---------- message loop ----------------------------------------------------
 
-self.onmessage = async (e) => {
-  const msg = e.data;
+async function handle(msg) {
   try {
     if (msg.type === "init") {
       assets = msg.assets;
       baseURL = msg.origin;
       await init();
+    } else if (msg.type === "preload") {
+      // Download models + build sessions ahead of the first scan. The page
+      // only exists behind an explicit opt-in, so eager fetching is expected.
+      const modelSet = msg.modelSet === "max" ? "max" : "std";
+      await getSession("unet_big", modelSet);
+      await getSession("seg_net", modelSet);
+      post({ type: "preloaded" });
     } else if (msg.type === "omr") {
       const musicxml = await recognize(
         msg.imageBytes, msg.name, !!msg.deskew,
@@ -225,4 +231,11 @@ self.onmessage = async (e) => {
     console.error(err);
     post({ type: "error", message: String(err && err.message || err), stack: err && err.stack });
   }
+}
+
+// Serialize messages: a scan submitted while the preload is still running
+// simply queues behind it.
+let chain = Promise.resolve();
+self.onmessage = (e) => {
+  chain = chain.then(() => handle(e.data));
 };

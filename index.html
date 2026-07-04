@@ -7,72 +7,84 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main>
+    <main class="landing">
       <header>
         <h1>Sheet Music Scanner</h1>
         <p class="subtitle">
-          Take a picture of sheet music and hear it played back. Recognition runs
-          entirely in your browser — the image never leaves your device.
+          Point your camera at a page of sheet music and hear it played back —
+          entirely in your browser.
         </p>
       </header>
 
-      <section class="controls">
-        <label class="file-input">
-          <input id="camera" type="file" accept="image/*" capture="environment" />
-          <span>📷 Take photo</span>
-        </label>
-        <label class="file-input">
-          <input id="file" type="file" accept="image/*" />
-          <span>Choose image…</span>
-        </label>
-
-        <label class="deskew" title="Straightens curved staff lines on phone photos. Slower; turn off for clean scans.">
-          <input id="deskew" type="checkbox" checked />
-          Photo mode (dewarp)
-        </label>
-
-        <label class="quality" title="Trade recognition fidelity against speed and download size.">
-          Engine
-          <select id="quality">
-            <option value="max:128" selected>Max fidelity (109 MB models)</option>
-            <option value="std:128">Light (81 MB models, ~92% of Max)</option>
-            <option value="std:256">Fast (~2× faster, ~90% of Max)</option>
-          </select>
-        </label>
+      <section class="card">
+        <h2>What this is</h2>
+        <p>
+          A neural optical-music-recognition system
+          (<a href="https://github.com/BreezeWhite/oemer">oemer</a>) running on
+          WebAssembly — Python scientific stack, neural networks and all —
+          plus score rendering and synthesized playback. There is no server:
+          <strong>your photo never leaves your device</strong>, and after the
+          first visit it works offline.
+        </p>
       </section>
 
-      <section class="controls playback">
-        <button id="play" disabled>Play</button>
-        <button id="pause" disabled>Pause</button>
-        <button id="stop" disabled>Stop</button>
-
-        <label class="tempo">
-          Tempo
-          <input id="tempo" type="range" min="40" max="240" value="100" />
-          <output id="tempo-out">100%</output>
-        </label>
+      <section class="card">
+        <h2>What you should know before using it</h2>
+        <ul>
+          <li>
+            <strong>It's a big one-time download.</strong> Opening the scanner
+            fetches about <strong>175&nbsp;MB</strong>: the recognition models
+            (~109&nbsp;MB), a Python runtime with numpy/OpenCV/scipy
+            (~50&nbsp;MB), and the neural-network engine (~15&nbsp;MB).
+            Everything is cached by your browser, so this happens
+            <em>once</em>, not per scan. Don't do this on a metered
+            connection.
+          </li>
+          <li>
+            <strong>It's slow.</strong> Recognition takes minutes per page —
+            roughly 3–10 minutes depending on your machine and the engine
+            setting. You'll see live progress the whole way.
+          </li>
+          <li>
+            <strong>It's memory-hungry.</strong> Expect ~1.5&nbsp;GB of RAM
+            while recognising. Desktop browsers and recent Android phones
+            handle it; <strong>iPhones generally don't</strong>.
+          </li>
+          <li>
+            <strong>It's imperfect.</strong> Clean scans work best; phone
+            photos work decently ("photo mode" straightens curved staff
+            lines). Expect occasional wrong pitches or rhythms, especially on
+            dense scores. Playback is a simple synth — repeats, dynamics and
+            articulations aren't modelled.
+          </li>
+        </ul>
       </section>
 
-      <section id="status" class="status idle">
-        Ready. Pick an image of sheet music to begin.
-        <br /><small>First run downloads the recognition engine (~170&nbsp;MB, cached for next time).</small>
+      <section class="card">
+        <h2>What happens if you continue</h2>
+        <p>
+          The moment the scanner page opens, your browser starts downloading
+          the ~175&nbsp;MB engine and shows its progress. Nothing downloads
+          until then, and nothing is sent anywhere at any point. When the
+          engine is ready, you take or choose a picture, wait out the
+          progress bar, and the recognised score appears — press
+          <em>Play</em> to hear it, with a cursor following along.
+        </p>
+        <p class="cta">
+          <a id="enter" class="button" href="./scan.html">
+            I understand — open the scanner (downloads ~175&nbsp;MB)
+          </a>
+        </p>
       </section>
-      <div id="progress" class="progress" hidden><div id="progress-bar"></div></div>
-
-      <img id="preview" class="preview" alt="" hidden />
-      <section id="score" class="score" aria-label="Rendered score"></section>
 
       <footer>
         <small>
-          OMR by <a href="https://github.com/BreezeWhite/oemer">oemer</a> running on
+          OMR by <a href="https://github.com/BreezeWhite/oemer">oemer</a> ·
           Pyodide + ONNX Runtime Web (WebAssembly) · score rendering by
           <a href="https://opensheetmusicdisplay.org/">OSMD</a> · audio by
           <a href="https://tonejs.github.io/">Tone.js</a>
         </small>
       </footer>
     </main>
-
-    <script src="./config.js"></script>
-    <script src="./app.js" type="module"></script>
   </body>
 </html>

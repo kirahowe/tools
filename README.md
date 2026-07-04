@@ -60,6 +60,13 @@ Everything is static files — there is no build step.
 python3 serve.py            # http://localhost:8000
 ```
 
+`index.html` is a landing page that explains what the tool does, its
+limitations, and exactly what the ~175 MB opt-in download involves —
+nothing heavy loads there. The scanner itself lives at `scan.html`; opening
+it is the opt-in, and it immediately brings up the engine and fetches the
+default models (with progress) so recognition can start as soon as an
+image is chosen.
+
 By default all runtime assets are fetched lazily from public CDNs:
 Pyodide and its wheels from jsDelivr, the oemer wheel from PyPI, and the
 two model checkpoints (~110 MB, cached in the browser after the first run)

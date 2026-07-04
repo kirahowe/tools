@@ -177,6 +177,12 @@ function ensureWorker() {
       const extra = msg.detail ? ` <small>${msg.detail}</small>` : "";
       setStatus(`${label}${extra}`, "working");
       setProgress(msg.pct ?? null);
+    } else if (msg.type === "preloaded" && !state.busy) {
+      setProgress(null);
+      setStatus("Engine ready — take or choose a picture of sheet music.", "ok");
+    } else if (msg.type === "error" && !state.busy) {
+      setProgress(null);
+      setStatus(`Engine failed to start: ${msg.message}`, "error");
     } else if (msg.type === "log") {
       console.log("[omr]", msg.line);
     }
@@ -378,6 +384,20 @@ async function boot() {
 
   // Expose a couple of hooks for automated testing.
   window.__smp = { state, extractEvents, buildSchedule, renderScore };
+
+  // The landing page warned about the download; opening this page IS the
+  // opt-in, so bring the engine up and fetch the default models right away.
+  try {
+    const workerReady = ensureWorker();
+    state.worker.postMessage({
+      type: "preload",
+      modelSet: els.quality.value.split(":")[0],
+    });
+    await workerReady;
+  } catch (err) {
+    console.error(err);
+    setStatus(`Engine failed to start: ${err.message}`, "error");
+  }
 }
 
 boot();

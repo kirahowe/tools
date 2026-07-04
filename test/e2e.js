@@ -58,8 +58,17 @@ async function main() {
     console.log(`opening http://localhost:${port}/ …`);
     await page.goto(`http://localhost:${port}/`, { waitUntil: "load" });
 
+    // Landing page: no engine, no worker, just the opt-in link.
+    const heading = await page.locator("h1").textContent();
+    if (!/Sheet Music Scanner/.test(heading)) throw new Error("landing page missing");
+    const hasWorker = await page.evaluate(() => typeof window.__smp !== "undefined");
+    if (hasWorker) throw new Error("landing page must not boot the app");
+    console.log("landing page ok; clicking through to the scanner…");
+    await page.click("#enter");
+    await page.waitForURL(/scan\.html/, { timeout: 15000 });
+
     await page.waitForFunction(() => window.__smp, null, { timeout: 30000 });
-    console.log("page booted; crossOriginIsolated =", await page.evaluate(() => crossOriginIsolated));
+    console.log("scanner booted; crossOriginIsolated =", await page.evaluate(() => crossOriginIsolated));
 
     if (!deskew) await page.uncheck("#deskew");
     if (engine) await page.selectOption("#quality", engine);
