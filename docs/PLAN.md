@@ -9,12 +9,63 @@ milestone order are unchanged.
 
 | Decision | Choice | Why |
 |---|---|---|
-| Language | **TypeScript on Bun** | Spec allows Go/Rust/Bun and says ship fastest. Bun has sqlite (`bun:sqlite`), subprocess (`Bun.spawn`), and fs watching built in — the dependency list §3 demands is literally zero packages. `bun build --compile` gives the single binary. Tradeoff acknowledged: ~90MB binary vs Go's ~10MB; irrelevant for a local dev tool. Nothing below is Bun-specific in shape — if this offends, say so before M1 and it becomes Go with `fsnotify` at near-zero translation cost. |
+| Language | **Go** | Chosen after review discussion (Bun ruled out for vendor-independence reasons; Babashka considered and viable but loses on distribution — see below). Single static binary, boring reliable subprocess handling, `fsnotify` for watching, `modernc.org/sqlite` (pure Go, keeps cross-compile trivial) for state. |
+| TUI (M4) | **Charm — bubbletea + lipgloss + bubbles** | No hand-rolled TUI. The status pane is a bubbletea list model fed by the daemon socket; still ~200 lines, but they're model/update/view, not ANSI plumbing. Charm deps enter the tree only when M4 starts. |
 | jj version | **pin minimum 0.43** | Everything was verified against 0.43.0. `comp init` hard-fails on older with an install hint. |
 | Name | **compositor / `comp`** for now | Spec says rename; naming is not on M1's critical path. Candidates parked: `greenroom` (where acts wait before going live), `soundstage`, `mixer`. Decide before anything is published. |
-| Repo layout | project at repo root | This repo currently contains only a LICENSE. If it's meant to stay a multi-tool monorepo, everything moves under `compositor/` — one `git mv`, zero code changes. |
+| Repo layout | **`compositor/` subdirectory** | The repo is named `tools` and plausibly a monorepo; a Go module wants a stable path anyway (`github.com/kirahowe/tools/compositor`). Docs live with the tool at `compositor/docs/`. |
 | Workspace homes | `~/.local/state/compositor/<project-hash>/ws/<sid>`, dev workspace at `.../ws/dev` | Outside the repo so agents can't see each other or the composite, and the repo's own watchers don't recurse into them (review F14). |
 | State dir | same root: `state.sqlite`, `daemon.sock`, `daemon.log` | One place to `rm -rf` when developing. |
+
+### 1a. Language rationale (the one decision that needed you)
+
+Three candidates were on the table. This tool is, at its core, a subprocess
+conductor — its hot path is spawning and parsing `jj` and `tmux`, watching a
+filesystem, and holding a little SQLite state. Every candidate can do that;
+they differ on distribution and on how much of the runtime you inherit.
+
+- **Bun / TS — dropped, for the reason you raised.** The zero-dependency
+  story was the whole appeal (sqlite, subprocess, fs-watch all built in),
+  but a tool whose pitch is *"the user brings their own everything; we own
+  almost nothing"* should not itself be married to a runtime now owned by one
+  of the agent vendors it wraps. That's not a technical objection — Bun is
+  fine software — it's a coherence one. A vendor-neutral compositor sitting
+  on top of `claude` and `codex` shouldn't have a vendor's runtime as its
+  foundation. Not insane to keep; just off-brand, and easy to avoid.
+
+- **Babashka — seriously considered, not insane at all.** For a
+  shell-orchestration tool it's arguably the *most* natural fit: `babashka.process`
+  and `babashka.fs` are built for exactly this, `bb` starts instantly (no JVM
+  warmup), `.bb` scripts read like the shell they replace, and the whole M1
+  spike would be genuinely shorter to write than in Go. Two things cost it
+  the job, both about shipping rather than writing:
+  1. **Distribution.** `bb` is a runtime the user must install and keep on
+     PATH; we can't hand them a single self-contained binary. GraalVM
+     `native-image` can produce one, but now the "simple" choice carries a
+     heavyweight, finicky build step — and the moment the daemon wants real
+     concurrency (the snapshot loop, the socket server, fsnotify, N session
+     watchers all live at once), you're doing structured concurrency on the
+     JVM through a Clojure lens, which is not where bb is most comfortable.
+  2. **The daemon is long-lived and stateful**, not a script. bb shines for
+     the *scripts* (`comp` subcommands could genuinely be `.bb` files); it's
+     a weaker fit for the always-up server with a mutex around jj, a debouncer,
+     and a socket. Splitting the codebase (bb for the CLI, something else for
+     the daemon) is worse than picking one language.
+  If the priority were "smallest possible M1 by tonight" over "one binary I
+  can drop on any machine," bb would be the pick. Flagged as a real fork in
+  the road, not dismissed — say the word and the CLI subcommands become bb
+  scripts.
+
+- **Go — chosen.** Wins precisely where bb loses: `go build` → one static
+  binary, no runtime on the user's machine, trivial cross-compile (with the
+  pure-Go sqlite driver, no cgo). Goroutines + channels are the boring-correct
+  substrate for the daemon's concurrent watchers and socket server — the one
+  part of this tool that is genuinely concurrent and long-lived. Subprocess
+  handling (`os/exec`) is unglamorous and reliable, which is all we need since
+  the intelligence lives in jj and tmux, not in us. And Charm means the M4 TUI
+  is a solved problem. It's more lines than either alternative; that's the
+  price of the single-binary, no-runtime, real-concurrency combination, and
+  for a tool meant to be *handed to people* it's worth paying.
 
 ## 2. Architecture (unchanged from spec, with F14's supervisor answer)
 
@@ -180,29 +231,42 @@ numbering, tmux window names, state-machine timestamps.
 ## 6. Module layout
 
 ```
-src/
-  cli.ts          # arg parsing, socket client, output formatting (vocabulary lives here)
-  daemon.ts       # loop, socket server, debouncer
-  jj.ts           # THE wrapper: mutex, --no-pager, immutability config, -T parsing
-  graph.ts        # megamerge lifecycle: apply set → rebase -s command; conflict probes
-  sessions.ts     # create/keep/drop/toggle state machine
-  reconcile.ts    # repo→(SQLite, world) repair; used by undo, boot, crash recovery
-  tmux.ts         # socket-scoped tmux driver
-  hooks.ts        # agent-done hook provisioning per agent flavor
-  db.ts           # bun:sqlite schema + migrations
-  config.ts       # project config load/validate
-docs/
-  SPEC.md  REVIEW.md  PLAN.md
-  experiments/verify-jj-claims.sh
+compositor/                    # Go module: github.com/kirahowe/tools/compositor
+  main.go                      # dispatch: `comp` (client) vs `comp _daemon` (server)
+  internal/
+    jj/       jj.go            # THE wrapper: mutex, --no-pager, immutability config, -T→JSON
+    tmux/     tmux.go          # socket-scoped tmux driver (-L compositor)
+    graph/    graph.go         # megamerge lifecycle: apply set → rebase -s; conflict probes
+    session/  session.go       # create/keep/drop/toggle state machine
+    daemon/   daemon.go        # loop, unix socket server, fsnotify debouncer
+              reconcile.go     # repo→(SQLite, world) repair; undo, boot, crash recovery
+    hooks/    hooks.go         # agent-done hook provisioning per agent flavor
+    store/    store.go         # modernc.org/sqlite schema + migrations
+    config/   config.go        # project config load/validate
+    tui/      tui.go           # M4 only: bubbletea list model (Charm)
+  docs/
+    SPEC.md  REVIEW.md  PLAN.md
+    experiments/verify-jj-claims.sh
 ```
 
-Estimated size: ~1500–2000 lines through M3. The daemon loop itself should
-stay under 100.
+The client/daemon split is one binary that branches on argv[1]: user-facing
+`comp <cmd>` marshals a request over the unix socket; `comp _daemon` is the
+long-running server tmux window 0 runs. Both compile from `main.go`.
+
+Estimated size: ~2000–2500 lines of Go through M3 (Go is chattier than the
+TS sketch; the count is honest). The daemon loop body itself still stays
+under ~100 lines — everything hard is in `jj/` and `reconcile.go`.
+
+**Dependencies** (the whole tree): `github.com/fsnotify/fsnotify`,
+`modernc.org/sqlite` (pure-Go, no cgo — static binary + trivial
+cross-compile), and at M4 `github.com/charmbracelet/{bubbletea,lipgloss,bubbles}`.
+Nothing else. tmux and jj are invoked as subprocesses, never linked.
 
 ## 7. Milestones
 
-**M0 — skeleton (half a day).** `jj.ts` wrapper + `tmux.ts` + `db.ts` +
-`comp init` (including F3 config write and the F11 gitignore check).
+**M0 — skeleton (half a day).** `internal/jj` wrapper + `internal/tmux` +
+`internal/store` + `comp init` (including F3 config write and the F11
+gitignore check). `go mod init`, one `go build`, static binary out.
 Exit: `comp init` on a sample Vite app yields a running dev server in the
 dev workspace, megamerge parented on trunk only.
 
@@ -228,8 +292,9 @@ Exit: the §8 conflict scenario end-to-end — collide, stack, watch the
 composite go clean; hand-tweak in the browser-facing app, absorb, see the
 hunk in the right session's take.
 
-**M4 — the status pane (1 day).** The ~200-line list TUI in a tmux pane.
-Renders from `comp ls --json` over the socket. Nothing else.
+**M4 — the status pane (1 day).** A bubbletea list model (Charm) in a tmux
+pane, rendering from `comp ls --json` over the socket — still ~200 lines,
+but model/update/view, no ANSI by hand. Nothing else.
 
 Deliberately not scheduled (matching §13 plus review): per-session preview
 servers, exact pairwise conflict attribution, lockfile regeneration,
