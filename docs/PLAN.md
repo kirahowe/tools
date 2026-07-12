@@ -9,11 +9,12 @@ milestone order are unchanged.
 
 | Decision | Choice | Why |
 |---|---|---|
-| Language | **Babashka (recommended)**, Go as fallback | Bun ruled out (vendor independence — see §1a). bb reconsidered after two objections against it turned out to be hallucinations; it now leads on author-fluency, ecosystem match with `clef`, an already-owned `gen-script`→homebrew release pipeline, and a nicer jj/tmux-wrapping core. Go stays fully specced as the fallback. Decision is the author's — see §1a. |
-| TUI (M4) | bb: **`gum`** (shell out) or minimal ANSI; Go: **Charm bubbletea** | Either way, no hand-rolled terminal emulation. The pane is a ~200-line list rendering `comp ls --json`. In bb, shelling out to Charm's `gum` (or a small ANSI render) keeps it trivial; in Go it's a bubbletea model. Deps enter only at M4. |
+| Language | **Babashka (decided)** | Bun ruled out (vendor independence — see §1a). bb chosen: first-class concurrency (core.async, built in), an objectively superior data-wrangling language for parsing jj's JSON templates, ecosystem match with `clef`, and an already-owned `gen-script`→homebrew release pipeline. §1a records the full reasoning and the Go comparison. |
+| TUI (M4) | **`gum`** (shell out) or minimal ANSI | No hand-rolled terminal emulation. The pane is a ~200-line list rendering `comp ls --json`; shelling out to Charm's `gum` (itself a single binary) keeps it trivial. Enters the picture only at M4. |
+| Concurrency | **core.async** — channels + real threads | Built into bb (no pod). The daemon's serialized jj access is a single-consumer channel (no explicit lock); per-session watch events and the socket loop are their own threads. See §1a and `docs/concurrency-notes.md`. |
 | jj version | **pin minimum 0.43** | Everything was verified against 0.43.0. `comp init` hard-fails on older with an install hint. |
 | Name | **compositor / `comp`** for now | Spec says rename; naming is not on M1's critical path. Candidates parked: `greenroom` (where acts wait before going live), `soundstage`, `mixer`. Decide before anything is published. |
-| Repo layout | **`compositor/` subdirectory** | The repo is named `tools` and plausibly a monorepo; a Go module wants a stable path anyway (`github.com/kirahowe/tools/compositor`). Docs live with the tool at `compositor/docs/`. |
+| Repo layout | **`compositor/` subdirectory** | The repo is named `tools` and plausibly a monorepo; the tool gets its own directory with its `bb.edn` at the root. Docs live with it at `compositor/docs/`. |
 | Workspace homes | `~/.local/state/compositor/<project-hash>/ws/<sid>`, dev workspace at `.../ws/dev` | Outside the repo so agents can't see each other or the composite, and the repo's own watchers don't recurse into them (review F14). |
 | State dir | same root: `state.sqlite`, `daemon.sock`, `daemon.log` | One place to `rm -rf` when developing. |
 
@@ -67,22 +68,40 @@ they differ on distribution and on how much of the runtime you inherit.
   **localhost TCP socket** for the daemon, not a unix-domain socket, to
   sidestep bb's uncertain UDS support.
 
-- **Go — the fallback, no longer the default.** Its genuine edges over bb
-  survive the correction but shrank: a true single static binary (no runtime,
-  no pod), trivial cross-compile with the cgo-free sqlite driver, goroutines
-  as the boring-correct substrate for the daemon's concurrency, and a
-  first-class TUI in Charm. Every one of those is real; none is decisive for
-  a *local, personal, brew-installed* dev tool whose author is fluent in bb
-  and already ships Clojure this way. Go wins if this tool later needs to be
-  dropped on arbitrary machines with nothing installed, or if the daemon's
-  concurrency grows beyond what atoms+futures carry comfortably.
+- **core.async settles the last open question.** The one place Go still led
+  was the daemon's concurrency, and I'd vaguely pictured bb doing it with
+  futures+atoms. It doesn't have to: **core.async is built into babashka**
+  (namespace `clojure.core.async`, aliased `async`, no pod). The one caveat —
+  bb's `go` macro maps to a real OS `thread` and its channel ops are blocking
+  (`<!`→`<!!`), so go blocks don't *park* — is a non-issue at our scale: the
+  daemon runs a bounded handful of threads (one jj consumer, one watcher feed
+  per session, one socket loop), nowhere near the thousands-of-go-blocks
+  regime where the lack of parking bites. And it maps our design *better*
+  than a mutex would (see below and `docs/concurrency-notes.md`).
 
-**Recommendation: Babashka**, for this tool and this author — the ecosystem
-matches `clef` (same repo family), the release pipeline already exists, and
-the core is genuinely nicer to write. Go remains a clean, fully-specced
-fallback (the module layout below translates directly). This is close enough
-that it's the author's call; the plan below is written language-neutral in
-its recipes so either choice reuses all of §3–§8 unchanged.
+- **Go — considered and set aside.** Its real edges: a true single static
+  binary (no runtime, no pod), trivial cross-compile, and goroutines. None is
+  decisive for a *local, personal, brew-installed* dev tool whose author
+  ships Clojure this way — and with core.async, the concurrency argument is
+  neutral-to-bb. Go would only re-enter if this needed to run on arbitrary
+  bare machines with nothing installed.
+
+**Decided: Babashka.** Clojure's concurrency primitives are first-class and
+its data handling is the right tool for a program whose whole job is parsing
+and reshaping VCS state; the `clef` ecosystem and release pipeline are
+already in hand. The recipes in §3–§8 are substrate-level (jj/tmux command
+sequences) and were validated at the shell before any code — the language
+choice sits above them.
+
+**The concurrency shape (bb/core.async).** The plan's "serialize all jj
+behind one mutex" (§7, F11) becomes, idiomatically: one `chan` is the jj work
+queue; a single long-lived `thread` drains it and runs every `jj` invocation.
+Serialization falls out of *single consumer* — there is no lock to hold or
+forget, and FIFO ordering is guaranteed by the queue. fs-watch callbacks
+`>!!` debounced snapshot requests onto per-session channels; a `thread` per
+session (or one `alts!!` loop) folds them in; the client↔daemon socket accept
+loop is its own `thread`. Everything that mutates the repo is funnelled
+through the one jj channel, so the composite can never be written mid-rewrite.
 
 ## 2. Architecture (unchanged from spec, with F14's supervisor answer)
 
@@ -241,63 +260,76 @@ interface Project {
 ```
 
 `applied` and `conflictsWith` are treated as *derived* caches — `reconcile()`
-recomputes them from the repo (megamerge parent list; conflict probes).
-SQLite is authoritative only for things the repo can't know: intent text,
+recomputes them from the repo (megamerge parent list; conflict probes). The
+store is authoritative only for things the repo can't know: intent text,
 numbering, tmux window names, state-machine timestamps.
+
+> **Data model notation.** The interfaces above are written as TypeScript for
+> readability; the implementation is Clojure maps with namespaced keys
+> (`:session/change-id`, `:session/state`, …). A `clojure.spec` for each is
+> the real contract.
 
 ## 6. Module layout
 
-Shown in the Go fallback shape; the bb structure is the same decomposition in
-`.clj` namespaces (`compositor/src/compositor/{jj,tmux,graph,session,daemon,
-reconcile,hooks,store,config,tui}.clj`, a `bb.edn` with `clef`-style tasks,
-and `gen-script` emitting the uberscript the Homebrew tap installs). Same
-modules, same responsibilities — only the file extensions and the dependency
-notes below differ.
-
 ```
-compositor/                    # Go module: github.com/kirahowe/tools/compositor
-  main.go                      # dispatch: `comp` (client) vs `comp _daemon` (server)
-  internal/
-    jj/       jj.go            # THE wrapper: mutex, --no-pager, immutability config, -T→JSON
-    tmux/     tmux.go          # socket-scoped tmux driver (-L compositor)
-    graph/    graph.go         # megamerge lifecycle: apply set → rebase -s; conflict probes
-    session/  session.go       # create/keep/drop/toggle state machine
-    daemon/   daemon.go        # loop, unix socket server, fsnotify debouncer
-              reconcile.go     # repo→(SQLite, world) repair; undo, boot, crash recovery
-    hooks/    hooks.go         # agent-done hook provisioning per agent flavor
-    store/    store.go         # modernc.org/sqlite schema + migrations
-    config/   config.go        # project config load/validate
-    tui/      tui.go           # M4 only: bubbletea list model (Charm)
+compositor/
+  bb.edn                       # deps, tasks (clef-style), bbin/bin, gen-script
+  src/compositor/
+    main.clj                   # entry: dispatch `comp <cmd>` (client) vs `comp _daemon`
+    jj.clj                     # THE wrapper: single-consumer chan, --no-pager,
+                               #   immutability config, -T templates → data via JSON
+    tmux.clj                   # socket-scoped tmux driver (-L compositor)
+    graph.clj                  # megamerge lifecycle: apply set → rebase -s; conflict probes
+    session.clj                # create/keep/drop/toggle state machine
+    daemon.clj                 # core.async loop, socket accept thread, watch debouncer
+    reconcile.clj              # repo→(store, world) repair; undo, boot, crash recovery
+    hooks.clj                  # agent-done hook provisioning per agent flavor
+    store.clj                  # state persistence (EDN file for M0–M1; sqlite pod at M2)
+    config.clj                 # project config load/validate (clojure.spec)
+    tui.clj                    # M4 only: renders `comp ls --json` via gum
+  test/compositor/             # bb test namespaces (unit) + integration.sh (jj/tmux)
+  clef-style ./compositor      # the generated uberscript (gen-script output, committed)
   docs/
-    SPEC.md  REVIEW.md  PLAN.md
+    SPEC.md  REVIEW.md  PLAN.md  concurrency-notes.md
     experiments/verify-jj-claims.sh
 ```
 
-The client/daemon split is one binary that branches on argv[1]: user-facing
-`comp <cmd>` marshals a request over the unix socket; `comp _daemon` is the
-long-running server tmux window 0 runs. Both compile from `main.go`.
+**Store note:** the plan (§5) specifies SQLite. For the M0–M1 spike the store
+is a single EDN file behind a tiny protocol (`read-state`/`write-state`) — it
+removes a runtime pod download from the critical path and the state model is
+still in flux. It swaps to the `pod-babashka-go-sqlite3` pod at M2, when the
+schema stabilizes, with no caller changes. The protocol boundary is the point.
 
-Estimated size: ~2000–2500 lines of Go through M3 (Go is chattier than the
-TS sketch; the count is honest). The daemon loop body itself still stays
-under ~100 lines — everything hard is in `jj/` and `reconcile.go`.
+The client/daemon split is one program that branches on the first arg:
+user-facing `comp <cmd>` marshals a request over the socket; `comp _daemon`
+is the long-running server tmux window 0 runs. Both are the same `main.clj`
+entrypoint / generated uberscript.
 
-**Dependencies** (the whole tree):
-- *Go fallback:* `github.com/fsnotify/fsnotify`, `modernc.org/sqlite`
-  (pure-Go, no cgo — static binary + trivial cross-compile), and at M4
-  `github.com/charmbracelet/{bubbletea,lipgloss,bubbles}`.
-- *bb (recommended):* the `org.babashka/fswatcher` pod (watching, as in
-  quickblog), bb's built-in SQLite (`pod-babashka-go-sqlite3`), a
-  **localhost TCP socket** for the client↔daemon link (not UDS), and at M4
-  `gum` (shell-out) or a small ANSI render.
+Estimated size: ~1200–1600 lines of Clojure through M3 (bb is terser than the
+Go sketch — data-first parsing and no struct boilerplate). The daemon loop
+body stays well under 100 lines — everything hard is in `jj.clj` and
+`reconcile.clj`.
 
-Either way, tmux and jj are invoked as subprocesses, never linked — the
-intelligence lives in them, not in us.
+**Dependencies** (the whole tree): `clojure.core.async` (built into bb, no
+pod) for the daemon; the `org.babashka/fswatcher` pod for watching (as in
+quickblog); at M2 the `pod-babashka-go-sqlite3` pod for state; at M4 the
+`gum` binary for the TUI. Client↔daemon link is a **localhost TCP socket**
+(not a unix-domain socket — bb's UDS support is uncertain, and localhost TCP
+is trivially served). tmux and jj are invoked as subprocesses, never linked —
+the intelligence lives in them, not in us.
+
+> **Runtime pods need `github.com` at install time.** `fswatcher` and the
+> sqlite pod are fetched from the pod registry (GitHub-hosted). On a locked-
+> down network they must be pre-fetched/vendored. This does not affect M0–M1:
+> the store is an EDN file, and M1's watch loop can start on a
+> `babashka.fs`/polling watcher, upgrading to the fswatcher pod when
+> available. Noted so it isn't a surprise in a restricted environment.
 
 ## 7. Milestones
 
-**M0 — skeleton (half a day).** `jj` wrapper + `tmux` driver + `store` +
-`comp init` (including F3 config write and the F11 gitignore check). Project
-scaffold: bb `bb.edn` + `gen-script` (or `go mod init` + `go build`).
+**M0 — skeleton (half a day).** `jj.clj` wrapper + `tmux.clj` driver +
+`store.clj` + `comp init` (including F3 config write and the F11 gitignore
+check). Scaffold: `bb.edn` with tasks + `gen-script`.
 Exit: `comp init` on a sample Vite app yields a running dev server in the
 dev workspace, megamerge parented on trunk only.
 
@@ -324,9 +356,8 @@ composite go clean; hand-tweak in the browser-facing app, absorb, see the
 hunk in the right session's take.
 
 **M4 — the status pane (1 day).** A ~200-line list rendering `comp ls
---json` in a tmux pane — bb shells out to `gum` (or a small ANSI render),
-Go uses a bubbletea model. No hand-rolled terminal emulation either way.
-Nothing else.
+--json` in a tmux pane, shelling out to `gum` (or a small ANSI render). No
+hand-rolled terminal emulation. Nothing else.
 
 Deliberately not scheduled (matching §13 plus review): per-session preview
 servers, exact pairwise conflict attribution, lockfile regeneration,
