@@ -1,0 +1,36 @@
+{:paths ["src" "resources"]
+ :deps {}
+ ;; Everything the daemon needs at runtime is either built into bb
+ ;; (clojure.core.async, cheshire, babashka.process, babashka.fs) or a pod
+ ;; loaded on demand (org.babashka/fswatcher, pod-babashka-go-sqlite3 at M2).
+ ;; No Maven deps => the generated uberscript is self-contained.
+
+ :bbin/bin {comp {:main-opts ["-m" "compositor.main"]}}
+
+ :tasks
+ {:requires ([babashka.fs :as fs])
+
+  comp        {:doc  "Run compositor from source: bb comp <cmd> ..."
+               :task (apply clojure.core/require '[compositor.main])
+               :override-builtin true}
+
+  test        {:doc  "Run unit tests"
+               :task (do (require '[clojure.test :as t])
+                         (require '[compositor.jj-test]
+                                  '[compositor.graph-test]
+                                  '[compositor.config-test])
+                         (let [{:keys [fail error]}
+                               (t/run-tests 'compositor.jj-test
+                                            'compositor.graph-test
+                                            'compositor.config-test)]
+                           (System/exit (if (pos? (+ fail error)) 1 0))))}
+
+  integration {:doc  "Shell-level jj/tmux integration test (needs jj + tmux)"
+               :task (shell "bash" "test/integration.sh")}
+
+  lint        {:doc  "clj-kondo static analysis"
+               :task (shell "clj-kondo" "--lint" "src" "test")}
+
+  gen-script  {:doc  "Emit the standalone ./compositor uberscript"
+               :task (shell "bb" "-e"
+                            "(require '[compositor.gen-script :as g]) (g/-main)")}}}
