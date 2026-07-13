@@ -10,7 +10,7 @@ milestone order are unchanged.
 | Decision | Choice | Why |
 |---|---|---|
 | Language | **Babashka (decided)** | Bun ruled out (vendor independence — see §1a). bb chosen: first-class concurrency (core.async, built in), an objectively superior data-wrangling language for parsing jj's JSON templates, ecosystem match with `clef`, and an already-owned `gen-script`→homebrew release pipeline. §1a records the full reasoning and the Go comparison. |
-| TUI (M4) | **`gum`** (shell out) or minimal ANSI | No hand-rolled terminal emulation. The pane is a ~200-line list rendering `comp ls --json`; shelling out to Charm's `gum` (itself a single binary) keeps it trivial. Enters the picture only at M4. |
+| TUI (M4) | **charm.clj** (Bubble Tea for Clojure) | The status pane is a *live, self-refreshing* dashboard, not one-shot prompts — Elm-style model/update/view is the right shape, and charm.clj ships a scrollable list. It's in-process and reacts to the same core.async messages the daemon emits, needs no extra binary (bb ≥ 1.12.215 bundles JLine3; borkdude made bb charm.clj-compatible on purpose), and already depends on core.async like us. Beta API — acceptable at M4. (gum was the earlier pick; it's for prompts, not live views — see §6.) |
 | Concurrency | **core.async** — channels + real threads | Built into bb (no pod). The daemon's serialized jj access is a single-consumer channel (no explicit lock); per-session watch events and the socket loop are their own threads. See §1a and `docs/concurrency-notes.md`. |
 | jj version | **pin minimum 0.43** | Everything was verified against 0.43.0. `comp init` hard-fails on older with an install hint. |
 | Name | **compositor / `comp`** for now | Spec says rename; naming is not on M1's critical path. Candidates parked: `greenroom` (where acts wait before going live), `soundstage`, `mixer`. Decide before anything is published. |
@@ -286,7 +286,7 @@ compositor/
     hooks.clj                  # agent-done hook provisioning per agent flavor
     store.clj                  # state persistence (EDN file for M0–M1; sqlite pod at M2)
     config.clj                 # project config load/validate (clojure.spec)
-    tui.clj                    # M4 only: renders `comp ls --json` via gum
+    tui.clj                    # M4 only: charm.clj list model (Bubble Tea for Clojure)
   test/compositor/             # bb test namespaces (unit) + integration.sh (jj/tmux)
   clef-style ./compositor      # the generated uberscript (gen-script output, committed)
   docs/
@@ -312,8 +312,10 @@ body stays well under 100 lines — everything hard is in `jj.clj` and
 
 **Dependencies** (the whole tree): `clojure.core.async` (built into bb, no
 pod) for the daemon; the `org.babashka/fswatcher` pod for watching (as in
-quickblog); at M2 the `pod-babashka-go-sqlite3` pod for state; at M4 the
-`gum` binary for the TUI. Client↔daemon link is a **localhost TCP socket**
+quickblog); at M2 the `pod-babashka-go-sqlite3` pod for state; at M4
+`charm.clj` (a git/Clojars dep via `babashka.deps/add-deps`; needs bb ≥
+1.12.215 for the bundled JLine3, no pod or extra binary). Client↔daemon link
+is a **localhost TCP socket**
 (not a unix-domain socket — bb's UDS support is uncertain, and localhost TCP
 is trivially served). tmux and jj are invoked as subprocesses, never linked —
 the intelligence lives in them, not in us.
@@ -355,9 +357,11 @@ Exit: the §8 conflict scenario end-to-end — collide, stack, watch the
 composite go clean; hand-tweak in the browser-facing app, absorb, see the
 hunk in the right session's take.
 
-**M4 — the status pane (1 day).** A ~200-line list rendering `comp ls
---json` in a tmux pane, shelling out to `gum` (or a small ANSI render). No
-hand-rolled terminal emulation. Nothing else.
+**M4 — the status pane (1 day).** A charm.clj model/update/view in a tmux
+pane: a scrollable session list (id, intent, state, applied toggle, collision
+badge, "needs you" marker) that re-renders on daemon messages. Reads the same
+data as `comp ls`; ~200 lines of Elm-shaped Clojure, no hand-rolled terminal
+emulation. Nothing else.
 
 Deliberately not scheduled (matching §13 plus review): per-session preview
 servers, exact pairwise conflict attribution, lockfile regeneration,

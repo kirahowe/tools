@@ -17,7 +17,9 @@ for the daemon's concurrency model.
 
 ## Requirements
 
-- [babashka](https://babashka.org) (`bb`) ≥ 1.3
+- [babashka](https://babashka.org) (`bb`) ≥ 1.3 (≥ 1.12.215 for the M4 status
+  pane, which uses [charm.clj](https://github.com/TimoKramer/charm.clj) on bb's
+  bundled JLine3)
 - [jujutsu](https://github.com/jj-vcs/jj) (`jj`) ≥ 0.43
 - `tmux` ≥ 3.4
 - your agent CLI (`claude` / `codex`) and a dev server in the target project
