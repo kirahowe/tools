@@ -17,12 +17,21 @@ for the daemon's concurrency model.
 
 ## Requirements
 
-- [babashka](https://babashka.org) (`bb`) ≥ 1.3 (≥ 1.12.215 for the M4 status
-  pane, which uses [charm.clj](https://github.com/TimoKramer/charm.clj) on bb's
-  bundled JLine3)
+- [babashka](https://babashka.org) (`bb`) — latest (≥ 1.12.218; pinned via
+  `:min-bb-version` in `bb.edn`). 1.12.215+ is what makes the M4 status pane
+  ([charm.clj](https://github.com/TimoKramer/charm.clj)) work on bb's bundled
+  JLine3; we just track latest so it's never a question.
 - [jujutsu](https://github.com/jj-vcs/jj) (`jj`) ≥ 0.43
 - `tmux` ≥ 3.4
 - your agent CLI (`claude` / `codex`) and a dev server in the target project
+
+Install/upgrade babashka to the latest:
+
+```
+brew install borkdude/brew/babashka        # macOS/Linux (Homebrew)
+# or:  bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)
+bb --version                                # expect ≥ 1.12.218
+```
 
 ## Try it
 

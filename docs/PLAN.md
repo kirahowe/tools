@@ -310,11 +310,17 @@ Go sketch — data-first parsing and no struct boilerplate). The daemon loop
 body stays well under 100 lines — everything hard is in `jj.clj` and
 `reconcile.clj`.
 
+**Runtime: track the latest babashka.** Pinned via `:min-bb-version` in
+`bb.edn` (currently `1.12.218`, the latest). Rationale: the M4 TUI needs the
+JLine3 that landed in 1.12.215, and there's no reason to lag — bb is a single
+binary the user installs, so "latest" costs nothing and avoids version
+archaeology later. Bump the pin when a newer bb ships.
+
 **Dependencies** (the whole tree): `clojure.core.async` (built into bb, no
 pod) for the daemon; the `org.babashka/fswatcher` pod for watching (as in
 quickblog); at M2 the `pod-babashka-go-sqlite3` pod for state; at M4
-`charm.clj` (a git/Clojars dep via `babashka.deps/add-deps`; needs bb ≥
-1.12.215 for the bundled JLine3, no pod or extra binary). Client↔daemon link
+`charm.clj` (a git/Clojars dep via `babashka.deps/add-deps`; no pod or extra
+binary — bb's bundled JLine3 carries it). Client↔daemon link
 is a **localhost TCP socket**
 (not a unix-domain socket — bb's UDS support is uncertain, and localhost TCP
 is trivially served). tmux and jj are invoked as subprocesses, never linked —
