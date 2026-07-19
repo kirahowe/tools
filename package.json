@@ -4,6 +4,9 @@
   "description": "A monorepo of small web tools, deployed to tools.kirahowe.com/<tool> via Cloudflare Pages.",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
@@ -18,8 +21,8 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.0.0",
-    "esbuild": "^0.25.0",
-    "typescript": "^5.5.0",
+    "esbuild": "^0.28.0",
+    "typescript": "^7.0.0",
     "wrangler": "^4.0.0"
   }
 }
