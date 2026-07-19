@@ -1,3 +1,3 @@
-name = "annotate-for-llm"
+name = "tools"
 compatibility_date = "2024-11-01"
-pages_build_output_dir = "public"
+pages_build_output_dir = "dist"

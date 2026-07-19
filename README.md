@@ -1,127 +1,85 @@
-# Annotate for LLM
+# tools
 
-Load any public web page, highlight the exact passages you want to comment on,
-and export your notes in a format an LLM understands — with each note tied to the
-**precise span of text** it refers to.
+A monorepo of small, self-contained web tools, deployed together to a single
+Cloudflare Pages project and served under one subdomain, each at its own path:
 
-The motivating use case: paste a URL to a book chapter, mark up the parts you want
-changed, then hand the export to an assistant so it knows exactly which sentences
-each note applies to and can revise the text in place.
+- **`tools.kirahowe.com/annotate`** — [Annotate for LLM](tools/annotate) — annotate
+  any public web page and export the notes so an LLM knows exactly which passages
+  each note refers to.
 
-- **No framework** — plain HTML/CSS and vanilla TypeScript.
-- **Deployable & mobile-first** — a static, installable PWA.
-- **No server to run** — the only server-side piece is a tiny on-demand fetch
-  proxy that runs as a Cloudflare Pages Function (scales to zero, free tier).
+![landing](docs/screenshot-landing.png)
 
-![desktop](docs/screenshot-desktop.png)
+## How it's organised
 
-## Why there's a (serverless) proxy
+```
+tools/<name>/        a web tool: TypeScript in src/, static assets in public/
+  src/app.ts         entry point (bundled to /<name>/app.js)
+  public/            index.html, styles.css, manifest, sw.js, icons (%BASE% templated)
+  tool.json          title/description/emoji for the landing page
+functions/<name>/    Cloudflare Pages Functions for that tool -> /<name>/api/…
+web/                 the umbrella landing page + shared _headers
+build.mjs            builds every tool into dist/<name>/, assembles the landing page
+dist/                build output Cloudflare serves (git-ignored)
+```
 
-Everything that matters — extracting readable text, anchoring notes to exact
-character offsets, highlighting, exporting, and saving your notes — runs entirely
-in your browser. The *one* thing a browser can't do is fetch an arbitrary other
-website: cross-origin requests are blocked by CORS, and that's enforced by the
-browser itself (WebAssembly, service workers, etc. can't get around it).
+Each tool is **mounted at `/<name>`**. The build injects that base path so a tool
+works from a sub-path without a `<base>` tag:
 
-So a single serverless function (`functions/api/fetch.ts`) fetches the page for
-you on Cloudflare's edge and hands back the HTML. It runs on demand and scales to
-zero — there's no process to keep alive. If you'd rather not run it at all, the
-**Paste** button lets you drop in text or HTML directly, fully offline.
+- TypeScript is bundled with `__BASE__` defined to `"/<name>"` (used for the
+  `/<name>/api/…` fetch and the service-worker scope).
+- Static files have the `%BASE%` token replaced with `/<name>` (asset URLs, the
+  web manifest's `start_url`/`scope`, the service worker's cache list).
 
-## Quick start (local)
+Cloudflare Pages Functions are routed by file path, so `functions/annotate/api/fetch.ts`
+automatically serves `/annotate/api/fetch` — no config per tool.
+
+## Local development
 
 ```bash
 npm install
-npm run build       # bundles the frontend to public/app.js
-npm run preview     # serves public/ + the function via wrangler at localhost:8788
+npm run watch      # rebuild tools into dist/ on change (one terminal)
+npm run preview    # wrangler pages dev dist  (another terminal: serves dist/ + functions/)
 ```
 
-For active development, run the watcher in one terminal and the preview in another:
+Or a one-off build: `npm run build` (output in `dist/`).
 
-```bash
-npm run watch       # rebuilds public/app.js on change
-npm run preview     # wrangler pages dev
-```
+Type checking: `npm run typecheck` (browser code) and `npm run typecheck:functions`.
 
-## Deploy to Cloudflare Pages
+## Deploying (Cloudflare Pages)
 
-**Option A — connect the Git repo (recommended).** In the Cloudflare dashboard,
-create a Pages project from this repo with:
+One Pages project serves the whole repo. Connect the repo in the Cloudflare
+dashboard with:
 
 - **Build command:** `npm run build`
-- **Build output directory:** `public`
+- **Build output directory:** `dist`
 
-Functions in `functions/` are picked up automatically. Every push deploys.
+Functions in `functions/` are picked up automatically; every push deploys. Or
+deploy from your machine with `npm run deploy`.
 
-**Option B — deploy from your machine:**
+Point the custom domain `tools.kirahowe.com` at the project (Pages → Custom
+domains). If the DNS zone is on Cloudflare it's one click; otherwise add a
+`CNAME tools → <project>.pages.dev`.
 
-```bash
-npm run deploy      # npm run build && wrangler pages deploy public
-```
+## Adding a new web tool
 
-The app is a PWA, so once loaded on a phone you can "Add to Home Screen" and it
-works offline for any documents you've already opened.
+1. `mkdir -p tools/<name>/src tools/<name>/public` and add an `app.ts`, an
+   `index.html`, and a `tool.json`. Copy `tools/annotate` as a template — it's
+   already base-path aware.
+2. Reference assets with `%BASE%/…` in HTML/manifest, and use `${__BASE__}` for
+   any same-origin API calls in TypeScript.
+3. Put any serverless endpoints in `functions/<name>/…`.
+4. `npm run build` — it appears in `dist/<name>/` and on the landing page
+   automatically.
 
-> The same static frontend also works on hosts without serverless functions
-> (e.g. GitHub Pages) — you just lose URL fetching and rely on **Paste** mode.
+## Philosophy
 
-## Using it
-
-1. Paste a public page URL and press **Load** (or use **Paste** for raw text/HTML).
-2. Select any text — an **Add note** button appears — and write your comment.
-3. Notes are listed on the right (a drawer on mobile) and saved on your device.
-4. Press **Export** and copy the result into your LLM.
-
-Tip: `?url=https://…` loads a page immediately, which makes a handy bookmarklet.
-
-## Export formats
-
-- **Inline document** — the full text reproduced verbatim, with each annotated
-  span wrapped in `⟦ ⟧` and marked with a footnote reference (`[^1]`) whose note
-  is listed at the end. Best for asking an LLM to revise the document in place.
-- **Notes list** — a readable list; each note carries its exact quote, the
-  surrounding context, and a location (nearest heading + block + char range).
-- **JSON** — structured output (W3C Web Annotation–style `TextQuoteSelector` +
-  `TextPositionSelector`) including the full document text and character offsets,
-  for programmatic use.
-
-## How anchoring stays precise
-
-Each annotation records the exact quoted text plus a prefix/suffix of surrounding
-context and character offsets into a single canonical plain-text version of the
-document. On reload the note is re-located by searching for that quote (scored by
-context and position), so annotations survive re-fetches and minor page edits; if
-the quote can't be found the note is shown as *orphaned* rather than silently
-pointing at the wrong place.
-
-Highlights are painted with the [CSS Custom Highlight API](https://developer.mozilla.org/docs/Web/API/CSS_Custom_Highlight_API),
-which draws over the text **without inserting elements** — keeping the DOM
-(and therefore the offsets) exactly as measured. Where the API is unavailable the
-app still works; only the inline tint is skipped.
-
-## Project layout
-
-```
-functions/api/fetch.ts   Cloudflare Pages Function: the CORS fetch proxy
-src/
-  app.ts                 UI wiring: load, select→note, sidebar, export, persistence
-  textmap.ts             canonical text + exact DOM-range ↔ offset mapping
-  anchor.ts              re-locate stored annotations in the current text
-  highlight.ts           CSS Custom Highlight API rendering
-  extract.ts             Readability extraction + DOMPurify sanitizing
-  exporters.ts           the three export formats
-  storage.ts             localStorage persistence
-  types.ts               shared types
-public/                  index.html, styles.css, manifest, service worker, icons
-build.mjs                esbuild bundling for the frontend
-```
-
-## Security notes
-
-- Fetched HTML is sanitized with **DOMPurify** before it's ever rendered.
-- The proxy only allows `http`/`https`, caps responses at 8 MB, times out, and
-  blocks private/loopback/link-local addresses (basic SSRF protection).
-- A strict `Content-Security-Policy` (see `public/_headers`) is applied.
+This repo is the **sandbox** where small tools start life cheaply. The rule for
+what lives here vs. its own repo is the *release lifecycle*: things that deploy
+together and share no independent versioning stay here; a tool that needs its own
+versioned releases (e.g. a CLI shipping binaries via GitHub Actions), its own
+issue tracker, or a heavier backend **graduates** to a dedicated repo (and, if it
+has a UI, its own subdomain). Dead experiments just get deleted — git history
+keeps them.
 
 ## License
 

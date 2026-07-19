@@ -58,7 +58,7 @@ async function loadFromUrl(rawUrl: string): Promise<void> {
 
   setBusy(true, "Fetching page…");
   try {
-    const res = await fetch(`/api/fetch?url=${encodeURIComponent(withScheme)}`);
+    const res = await fetch(`${__BASE__}/api/fetch?url=${encodeURIComponent(withScheme)}`);
     const data = (await res.json()) as { html?: string; finalUrl?: string; error?: string };
     if (!res.ok || !data.html) {
       throw new Error(data.error || `Could not load (HTTP ${res.status}).`);
@@ -661,9 +661,11 @@ function init(): void {
 function registerServiceWorker(): void {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/sw.js").catch(() => {
-        /* offline support is optional */
-      });
+      navigator.serviceWorker
+        .register(`${__BASE__}/sw.js`, { scope: `${__BASE__}/` })
+        .catch(() => {
+          /* offline support is optional */
+        });
     });
   }
 }

@@ -1,15 +1,16 @@
 {
-  "name": "annotate-for-llm",
+  "name": "kirahowe-tools",
   "version": "1.0.0",
-  "description": "Load any public web page, annotate specific spans of text, and export the notes in a format an LLM understands. Static PWA + a serverless fetch proxy.",
+  "description": "A monorepo of small web tools, deployed to tools.kirahowe.com/<tool> via Cloudflare Pages.",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
-    "preview": "wrangler pages dev public",
-    "deploy": "npm run build && wrangler pages deploy public",
-    "typecheck": "tsc --noEmit"
+    "preview": "npm run build && wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "typecheck": "tsc --noEmit",
+    "typecheck:functions": "tsc -p functions/tsconfig.json"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",

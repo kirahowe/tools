@@ -3,18 +3,22 @@
 // It caches the app shell (HTML/CSS/JS/icons) so the annotator loads without a
 // network, and — because documents and notes are stored locally — you can keep
 // annotating cached documents offline too. It deliberately never touches the
-// /api/ proxy or cross-origin requests.
+// api proxy or cross-origin requests.
+//
+// %BASE% is replaced at build time with this tool's mount path, e.g. "/annotate",
+// so the service worker is scoped to just this tool and won't touch sibling tools.
 
 const CACHE = "annotate-for-llm-v1";
+const BASE = "%BASE%";
 const SHELL = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/manifest.webmanifest",
-  "/icons/icon.svg",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
+  BASE + "/",
+  BASE + "/index.html",
+  BASE + "/styles.css",
+  BASE + "/app.js",
+  BASE + "/manifest.webmanifest",
+  BASE + "/icons/icon.svg",
+  BASE + "/icons/icon-192.png",
+  BASE + "/icons/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -41,7 +45,7 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return; // leave cross-origin alone
-  if (url.pathname.startsWith("/api/")) return; // never cache the fetch proxy
+  if (url.pathname.startsWith(BASE + "/api/")) return; // never cache the fetch proxy
 
   // Navigations: network-first, falling back to the cached shell when offline.
   if (request.mode === "navigate") {
@@ -51,7 +55,7 @@ self.addEventListener("fetch", (event) => {
           cachePut(request, res.clone());
           return res;
         })
-        .catch(() => caches.match(request).then((c) => c || caches.match("/index.html"))),
+        .catch(() => caches.match(request).then((c) => c || caches.match(BASE + "/index.html"))),
     );
     return;
   }

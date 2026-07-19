@@ -1,0 +1,5 @@
+{
+  "title": "Annotate for LLM",
+  "description": "Load a public web page, annotate exact spans of text, and export the notes so an LLM knows precisely which passages each note refers to.",
+  "emoji": "✎"
+}
