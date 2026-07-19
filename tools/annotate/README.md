@@ -1,12 +1,12 @@
-# Annotate for LLM
+# Annotate
 
-Load any public web page, highlight the exact passages you want to comment on,
-and export your notes in a format an LLM understands — with each note tied to the
+Load any public web page (or paste your own text), highlight the exact passages
+you want to comment on, and export your notes — with each note tied to the
 **precise span of text** it refers to.
 
-The motivating use case: paste a URL to a book chapter, mark up the parts you want
-changed, then hand the export to an assistant so it knows exactly which sentences
-each note applies to and can revise the text in place.
+The exports keep each note anchored to its quote, so they're easy to share or
+review later. One format embeds the notes inline in the full document, which is
+handy when you want to hand the whole thing to an assistant to revise in place.
 
 Part of the [`tools`](../../) monorepo; deployed at `tools.kirahowe.com/annotate`.
 
@@ -29,8 +29,10 @@ the HTML. It runs on demand and scales to zero. If you'd rather not use it, the
 
 1. Paste a public page URL and press **Load** (or use **Paste** for raw text/HTML).
 2. Select any text — an **Add note** button appears — and write your comment.
-3. Notes are listed on the right (a drawer on mobile) and saved on your device.
-4. Press **Export** and copy the result into your LLM.
+3. Notes are listed on the right (a drawer on mobile) and saved in this browser's
+   local storage — on this device only, not backed up or synced, so export
+   anything you want to keep.
+4. Press **Export** to copy or download your notes in the format you want.
 
 Tip: `…/annotate/?url=https://…` loads a page immediately (handy as a bookmarklet).
 

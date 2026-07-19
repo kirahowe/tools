@@ -1,12 +1,12 @@
 {
-  "name": "Annotate for LLM",
+  "name": "Annotate",
   "short_name": "Annotate",
-  "description": "Load any public web page, annotate specific spans of text, and export the notes in a format an LLM understands.",
+  "description": "Load or paste any web page, annotate the exact passages you care about, and share your notes.",
   "start_url": "%BASE%/",
   "scope": "%BASE%/",
   "id": "%BASE%/",
   "display": "standalone",
-  "background_color": "#14141c",
+  "background_color": "#ffffff",
   "theme_color": "#4b3fce",
   "orientation": "any",
   "icons": [

@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#1a1a2e" />
-    <title>Annotate for LLM</title>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)" />
+    <title>Annotate</title>
     <meta
       name="description"
-      content="Load any public web page, annotate specific spans of text, and export the notes in a format an LLM understands."
+      content="Load or paste any web page, annotate the exact passages you care about, and share your notes."
     />
     <link rel="manifest" href="%BASE%/manifest.webmanifest" />
     <link rel="icon" href="%BASE%/icons/icon.svg" type="image/svg+xml" />
@@ -17,8 +18,8 @@
   <body>
     <header class="topbar">
       <div class="brand">
-        <span class="logo" aria-hidden="true">✎</span>
-        <span class="brand-name">Annotate<span class="dim">for</span>LLM</span>
+        <img class="logo" src="%BASE%/icons/icon.svg" alt="" width="24" height="24" />
+        <span class="brand-name">Annotate</span>
       </div>
       <form id="urlForm" class="url-form" autocomplete="off">
         <input
@@ -39,20 +40,23 @@
     <main id="app">
       <section id="emptyState" class="empty-state">
         <div class="empty-card">
-          <h1>Annotate a page for an LLM</h1>
+          <h1>Annotate a web page</h1>
           <p>
-            Load a public web page (a book chapter, an article, a spec), highlight the exact
-            passages you want to comment on, and export your notes in a format an assistant can
-            act on — each note tied to the precise span of text it refers to.
+            Load a web page (a book chapter, an article, a spec) or paste in your own text,
+            highlight the exact passages you care about, and export your notes — each one tied to
+            the precise span of text it refers to.
           </p>
           <ol>
             <li>Paste a URL above and press <strong>Load</strong> — or use <strong>Paste</strong> to drop in text directly.</li>
             <li>Select any text and tap <strong>Add note</strong>.</li>
-            <li>Press <strong>Export</strong> and paste the result into your LLM.</li>
+            <li>Press <strong>Export</strong> to copy or download your notes.</li>
           </ol>
           <p class="muted">
-            Your notes are saved on this device. Nothing is uploaded except the page URL, which is
-            fetched through this site's own proxy so it loads despite cross-origin restrictions.
+            Your notes are kept in this browser's local storage — only on this device, with no
+            account and nothing uploaded (except the page URL, which is fetched through this site's own
+            proxy so it loads despite cross-origin restrictions). They survive reloads, but they
+            aren't backed up or synced: clearing your browser data, private browsing, or switching
+            browser or device will lose them, so <strong>export anything you want to keep</strong>.
           </p>
         </div>
       </section>
@@ -97,7 +101,7 @@
         <h3>Note on selection</h3>
       </div>
       <blockquote id="noteQuote" class="sheet-quote"></blockquote>
-      <textarea id="noteText" rows="4" placeholder="What should the LLM know or change about this passage?"></textarea>
+      <textarea id="noteText" rows="4" placeholder="Add a note about this passage…"></textarea>
       <div class="sheet-actions">
         <button id="noteDelete" class="btn danger" type="button" hidden>Delete</button>
         <span class="spacer"></span>
@@ -110,7 +114,7 @@
     <!-- Export modal -->
     <div id="exportModal" class="modal" role="dialog" aria-modal="true" aria-label="Export" hidden>
       <div class="modal-head">
-        <h3>Export for an LLM</h3>
+        <h3>Export notes</h3>
         <button id="exportClose" class="icon-btn" type="button" aria-label="Close">✕</button>
       </div>
       <div class="tabs" role="tablist">
@@ -119,7 +123,7 @@
         <button class="tab" data-format="json" type="button">JSON</button>
       </div>
       <p class="tab-hint muted" id="tabHint">
-        Full document with your notes embedded where they apply — best for asking an LLM to revise the text.
+        Full document with your notes embedded where they apply — good for handing to an assistant to revise.
       </p>
       <textarea id="exportPreview" class="export-preview" readonly spellcheck="false"></textarea>
       <div class="modal-actions">

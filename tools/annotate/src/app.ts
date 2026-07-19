@@ -421,7 +421,7 @@ let currentFormat: ExportFormat = "inline";
 
 const FORMAT_HINTS: Record<ExportFormat, string> = {
   inline:
-    "Full document with your notes embedded where they apply — best for asking an LLM to revise the text.",
+    "Full document with your notes embedded where they apply — good for handing to an assistant to revise.",
   markdown:
     "A readable list of notes, each with the exact quote, its context, and location.",
   json:

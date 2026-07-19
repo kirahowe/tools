@@ -8,7 +8,7 @@
 // %BASE% is replaced at build time with this tool's mount path, e.g. "/annotate",
 // so the service worker is scoped to just this tool and won't touch sibling tools.
 
-const CACHE = "annotate-for-llm-v1";
+const CACHE = "annotate-v2";
 const BASE = "%BASE%";
 const SHELL = [
   BASE + "/",

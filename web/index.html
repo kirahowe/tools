@@ -2,66 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#4b3fce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>tools.kirahowe.com</title>
-    <meta name="description" content="A collection of small tools." />
+    <meta name="description" content="A collection of small web tools." />
     <style>
-      :root {
-        --bg: #f4f4f7; --surface: #fff; --text: #1b1b25; --dim: #5c5c6e;
-        --border: #e0e0e8; --accent: #4b3fce; --shadow: 0 8px 30px rgba(20,20,40,.12);
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #14141c; --surface: #1d1d28; --text: #ececf2; --dim: #a0a0b4;
-          --border: #333343; --accent: #8b80ff; --shadow: 0 8px 30px rgba(0,0,0,.5);
-        }
-      }
-      * { box-sizing: border-box; }
+      :root { color-scheme: light dark; }
       body {
-        margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        line-height: 1.5; display: flex; flex-direction: column; align-items: center;
-        padding: clamp(1.5rem, 5vw, 4rem) 1.25rem;
+        line-height: 1.5;
       }
-      main { width: 100%; max-width: 44rem; }
-      header { margin-bottom: 2rem; }
-      h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 .35rem; }
-      .lede { color: var(--dim); margin: 0; }
-      .grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
-      @media (min-width: 620px) { .grid { grid-template-columns: 1fr 1fr; } }
-      .card {
-        display: flex; gap: .9rem; align-items: flex-start; text-decoration: none;
-        color: inherit; background: var(--surface); border: 1px solid var(--border);
-        border-radius: 14px; padding: 1.1rem 1.15rem; box-shadow: var(--shadow);
-        transition: border-color .15s, transform .15s;
-      }
-      .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-      .card-emoji {
-        flex: none; width: 40px; height: 40px; border-radius: 10px;
-        display: grid; place-items: center; font-size: 1.3rem;
-        background: var(--accent); color: #fff;
-      }
-      .card-text { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
-      .card-text strong { font-size: 1.05rem; }
-      .card-text span { color: var(--dim); font-size: .9rem; }
-      footer { margin-top: 2.5rem; color: var(--dim); font-size: .85rem; }
-      footer a { color: var(--accent); }
+      h1 { font-size: 1.375rem; margin: 0 0 0.25rem; }
+      .lede { margin: 0 0 2rem; color: GrayText; }
+      ul { list-style: none; margin: 0; padding: 0; }
+      li { margin: 0 0 1rem; }
+      li span { display: block; color: GrayText; font-size: 0.9rem; }
+      footer { margin-top: 3rem; color: GrayText; font-size: 0.9rem; }
     </style>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Tools</h1>
-        <p class="lede">A collection of small, self-contained tools.</p>
-      </header>
-      <div class="grid">
+    <h1>Tools</h1>
+    <p class="lede">A collection of small, self-contained web tools.</p>
+    <ul>
 %TOOLS%
-      </div>
-      <footer>
-        Built by Kira Howe · source on
-        <a href="https://github.com/kirahowe/tools">GitHub</a>
-      </footer>
-    </main>
+    </ul>
+    <footer>
+      Built by Kira Howe · <a href="https://github.com/kirahowe/tools">source on GitHub</a>
+    </footer>
   </body>
 </html>

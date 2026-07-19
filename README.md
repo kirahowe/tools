@@ -3,9 +3,9 @@
 A monorepo of small, self-contained web tools, deployed together to a single
 Cloudflare Pages project and served under one subdomain, each at its own path:
 
-- **`tools.kirahowe.com/annotate`** — [Annotate for LLM](tools/annotate) — annotate
-  any public web page and export the notes so an LLM knows exactly which passages
-  each note refers to.
+- **`tools.kirahowe.com/annotate`** — [Annotate](tools/annotate) — load or paste any
+  web page, annotate the exact passages you care about, and export your notes so
+  each one stays tied to the span of text it refers to.
 
 ![landing](docs/screenshot-landing.png)
 

@@ -102,17 +102,15 @@ async function buildLanding(tools) {
   }
   const landingSrc = join(WEB_DIR, "index.html");
   if (!existsSync(landingSrc)) return;
-  const cards = tools
+  const items = tools
     .map(
-      (t) => `      <a class="card" href="${t.base}/">
-        <span class="card-emoji" aria-hidden="true">${esc(t.meta.emoji || "•")}</span>
-        <span class="card-text"><strong>${esc(t.meta.title || t.name)}</strong><span>${esc(
-        t.meta.description || "",
-      )}</span></span>
-      </a>`,
+      (t) => `      <li>
+        <a href="${t.base}/">${esc(t.meta.title || t.name)}</a>
+        <span>${esc(t.meta.description || "")}</span>
+      </li>`,
     )
     .join("\n");
-  const html = (await readFile(landingSrc, "utf8")).split("%TOOLS%").join(cards);
+  const html = (await readFile(landingSrc, "utf8")).split("%TOOLS%").join(items);
   await writeFile(join(DIST, "index.html"), html);
 }
 

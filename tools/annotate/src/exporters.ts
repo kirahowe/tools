@@ -1,9 +1,9 @@
-// Turn annotations into text an LLM can act on.
+// Turn annotations into shareable text.
 //
-// The whole point of the tool: the export must make it unambiguous *which span*
-// of the source each note refers to. Every format therefore carries the exact
-// quoted text; two of the three also carry the full document so an assistant can
-// rewrite it in place.
+// The one rule every format follows: it must be unambiguous *which span* of the
+// source each note refers to. So every format carries the exact quoted text; two
+// of the three also carry the full document — which, for the inline format, lets
+// an assistant rewrite it in place.
 
 import type { LoadedDocument } from "./types.js";
 import type { LocationInfo } from "./textmap.js";
