@@ -10,10 +10,10 @@
   "scripts": {
     "build": "node build.mjs",
     "watch": "node build.mjs --watch",
-    "preview": "npm run build && wrangler pages dev dist",
-    "deploy": "npm run build && wrangler pages deploy dist",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
     "typecheck": "tsc --noEmit",
-    "typecheck:functions": "tsc -p functions/tsconfig.json"
+    "typecheck:worker": "tsc -p worker/tsconfig.json"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",

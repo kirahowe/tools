@@ -1,11 +1,14 @@
 /// <reference types="@cloudflare/workers-types" />
 
-// Cloudflare Pages Function: GET /api/fetch?url=<encoded>
+// Worker entry point for the tools site.
 //
-// Fetches a public web page server-side (on Cloudflare's edge) and returns its
-// HTML to the browser, which is otherwise blocked from cross-origin fetches by
-// CORS. This is the only server-side piece of the app; it runs on-demand and
-// scales to zero — there is no server process to keep running.
+// Static files built into dist/ are served directly by Cloudflare's asset layer
+// (see the [assets] block in wrangler.toml). Any request that does not match a
+// built file falls through to the fetch handler at the bottom of this file. The
+// only dynamic route today is the annotate tool's server-side page fetcher.
+//
+// To add an endpoint for a new tool, add a branch to the router in `fetch`,
+// mounted under /<tool>/api/… to mirror how the frontend calls ${__BASE__}/api/….
 
 interface Env {}
 
@@ -46,8 +49,16 @@ function isBlockedHost(hostname: string): boolean {
   return false;
 }
 
-export const onRequestGet: PagesFunction<Env> = async (context) => {
-  const reqUrl = new URL(context.request.url);
+/**
+ * GET /annotate/api/fetch?url=<encoded>
+ *
+ * Fetches a public web page server-side (on Cloudflare's edge) and returns its
+ * HTML to the browser, which is otherwise blocked from cross-origin fetches by
+ * CORS. This is the only server-side piece of the app; it runs on-demand and
+ * scales to zero — there is no server process to keep running.
+ */
+async function fetchPage(request: Request): Promise<Response> {
+  const reqUrl = new URL(request.url);
   const target = reqUrl.searchParams.get("url");
   if (!target) return json({ error: "Missing ?url= parameter." }, 400);
 
@@ -135,6 +146,18 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     status: upstream.status,
     html,
   });
-};
-// Non-GET methods receive an automatic 405 from Pages since only onRequestGet
-// is exported here.
+}
+
+export default {
+  async fetch(request: Request, _env: Env, _ctx: ExecutionContext): Promise<Response> {
+    const { pathname } = new URL(request.url);
+
+    if (pathname === "/annotate/api/fetch") {
+      if (request.method !== "GET") return json({ error: "Method not allowed." }, 405);
+      return fetchPage(request);
+    }
+
+    // Reached only when no static asset matched the request path.
+    return new Response("Not found", { status: 404 });
+  },
+} satisfies ExportedHandler<Env>;

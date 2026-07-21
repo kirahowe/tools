@@ -11,8 +11,9 @@
 //   node build.mjs            one-off build of everything into dist/
 //   node build.mjs --watch    rebuild on change (JS + static)
 //
-// Cloudflare Pages serves dist/ and picks up serverless routes from functions/
-// automatically (functions/<name>/api/… -> /<name>/api/…).
+// Cloudflare serves dist/ as static assets; dynamic routes are handled by the
+// Worker in worker/index.ts (see wrangler.toml). A request that matches a built
+// file is served directly; anything else falls through to the Worker.
 
 import * as esbuild from "esbuild";
 import { readdir, readFile, writeFile, mkdir, rm, copyFile } from "node:fs/promises";

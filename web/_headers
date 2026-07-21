@@ -1,4 +1,4 @@
-# Cloudflare Pages security headers.
+# Security headers, applied by Cloudflare's static-asset layer (_headers).
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY

@@ -1,7 +1,8 @@
 # tools
 
-A monorepo of small, self-contained web tools, deployed together to a single
-Cloudflare Pages project and served under one subdomain, each at its own path:
+A monorepo of small, self-contained web tools, deployed together as a single
+Cloudflare Worker (with static assets) and served under one subdomain, each at
+its own path:
 
 - **`tools.kirahowe.com/annotate`** — [Annotate](tools/annotate) — load or paste any
   web page, annotate the exact passages you care about, and export your notes so
@@ -16,10 +17,10 @@ tools/<name>/        a web tool: TypeScript in src/, static assets in public/
   src/app.ts         entry point (bundled to /<name>/app.js)
   public/            index.html, styles.css, manifest, sw.js, icons (%BASE% templated)
   tool.json          title/description/emoji for the landing page
-functions/<name>/    Cloudflare Pages Functions for that tool -> /<name>/api/…
+worker/index.ts      the Worker serving dynamic routes (e.g. /<name>/api/…)
 web/                 the umbrella landing page + shared _headers
 build.mjs            builds every tool into dist/<name>/, assembles the landing page
-dist/                build output Cloudflare serves (git-ignored)
+dist/                static assets Cloudflare serves (git-ignored)
 ```
 
 Each tool is **mounted at `/<name>`**. The build injects that base path so a tool
@@ -30,35 +31,36 @@ works from a sub-path without a `<base>` tag:
 - Static files have the `%BASE%` token replaced with `/<name>` (asset URLs, the
   web manifest's `start_url`/`scope`, the service worker's cache list).
 
-Cloudflare Pages Functions are routed by file path, so `functions/annotate/api/fetch.ts`
-automatically serves `/annotate/api/fetch` — no config per tool.
+Dynamic routes live in `worker/index.ts`, which matches on request path — the
+annotate page-fetcher is served at `/annotate/api/fetch`. Static assets in
+`dist/` are served directly; only paths with no matching file reach the Worker.
 
 ## Local development
 
 ```bash
 npm install
 npm run watch      # rebuild tools into dist/ on change (one terminal)
-npm run preview    # wrangler pages dev dist  (another terminal: serves dist/ + functions/)
+npm run preview    # wrangler dev  (another terminal: serves dist/ + the Worker)
 ```
 
 Or a one-off build: `npm run build` (output in `dist/`).
 
-Type checking: `npm run typecheck` (browser code) and `npm run typecheck:functions`.
+Type checking: `npm run typecheck` (browser code) and `npm run typecheck:worker`.
 
-## Deploying (Cloudflare Pages)
+## Deploying (Cloudflare Workers)
 
-One Pages project serves the whole repo. Connect the repo in the Cloudflare
-dashboard with:
+One Worker with static assets serves the whole repo. The repo is connected in
+the Cloudflare dashboard (Workers &amp; Pages → Builds) with:
 
 - **Build command:** `npm run build`
-- **Build output directory:** `dist`
+- **Deploy command:** `npx wrangler deploy`
 
-Functions in `functions/` are picked up automatically; every push deploys. Or
-deploy from your machine with `npm run deploy`.
+`wrangler deploy` reads `wrangler.toml`: it bundles `worker/index.ts` and uploads
+the `dist/` assets in one shot. Every push deploys; or deploy from your machine
+with `npm run deploy`.
 
-Point the custom domain `tools.kirahowe.com` at the project (Pages → Custom
-domains). If the DNS zone is on Cloudflare it's one click; otherwise add a
-`CNAME tools → <project>.pages.dev`.
+Point the custom domain `tools.kirahowe.com` at the Worker (the Worker's
+Settings → Domains &amp; Routes). If the DNS zone is on Cloudflare it's one click.
 
 ## Adding a new web tool
 
@@ -67,7 +69,8 @@ domains). If the DNS zone is on Cloudflare it's one click; otherwise add a
    already base-path aware.
 2. Reference assets with `%BASE%/…` in HTML/manifest, and use `${__BASE__}` for
    any same-origin API calls in TypeScript.
-3. Put any serverless endpoints in `functions/<name>/…`.
+3. Add any serverless endpoint as a branch in `worker/index.ts`, mounted under
+   `/<name>/api/…`.
 4. `npm run build` — it appears in `dist/<name>/` and on the landing page
    automatically.
 
