@@ -20,10 +20,11 @@ in your browser. The *one* thing a browser can't do is fetch an arbitrary other
 website: cross-origin requests are blocked by CORS, enforced by the browser itself
 (WebAssembly, service workers, etc. can't get around it).
 
-So a single serverless function (`functions/annotate/api/fetch.ts`, served at
-`/annotate/api/fetch`) fetches the page for you on Cloudflare's edge and hands back
-the HTML. It runs on demand and scales to zero. If you'd rather not use it, the
-**Paste** button lets you drop in text or HTML directly, fully offline.
+So one small endpoint on the site's Cloudflare Worker (`worker/index.ts` at the
+repo root, served at `/annotate/api/fetch`) fetches the page for you on
+Cloudflare's edge and hands back the HTML. It runs on demand and scales to zero.
+If you'd rather not use it, the **Paste** button lets you drop in text or HTML
+directly, fully offline.
 
 ## Using it
 
