@@ -41,6 +41,20 @@ of things you have recently cared about.
 
 This is the single most important idea in the tool. Everything else supports it.
 
+Decay runs at the tempo of real life, which for projects is slow — things
+legitimately span a year or more. The clocks per level:
+
+| level    | composts after untouched for | why |
+|----------|------------------------------|-----|
+| inbox    | 7 days                       | early chance to drop things that seemed important but weren't |
+| tasks    | 30 days                      | a next action nobody has taken in a month isn't next |
+| projects | 6 months                     | long arcs are normal; renewal is cheap when you review |
+| areas    | ~1 year+                     | near-fixed stars; decay here only flags a life chapter that has genuinely closed |
+
+Renewal is cheap and implicit, so a year-long project stays alive simply by
+being occasionally worked, reviewed, or glanced at in a review pass. The
+clocks are for things *nothing* has happened to — not slow burns.
+
 ### 2. Prioritization by scarcity, not by scoring
 
 Priority labels don't force trade-offs; caps do. The centre of the tool is a
@@ -72,22 +86,47 @@ by actual decay rather than a calendar obligation you can fail at. Skipping
 reviews doesn't break anything — items just compost on their own, which is an
 acceptable outcome by principle 1.
 
-### 4. Model life shallowly
+### 4. Assume good intent — never nag
+
+Silence from the user is a signal about the user, not about the items. The
+tool never shames: no red badges, no overdue counts, no "you have 47 stale
+items", no notifications. The review nudge is an invitation, not an alarm.
+
+Concretely, the system distinguishes *"you looked and didn't care"* from
+*"you weren't looking"*:
+
+- The system tracks the last **human** activity (any interaction from the UI —
+  agent API calls don't count, see the API section).
+- After a gap of more than a few days, the next visit opens with a one-tap
+  offer instead of consequences: **"Away for 9 days? Bump everything by 9
+  days"** — which shifts every `touchedAt` forward by the gap (or a chosen
+  n), so nothing aged while you were on a beach.
+- **Nothing composts during a gap.** Decay staging is computed live, but the
+  compost transition is only *executed* once the return-offer has been shown
+  and resolved. The system never makes moves behind your back; things fade,
+  they don't vanish while you're away.
+
+Declining the bump is also fine — maybe the time away *was* the verdict on
+some of those items. The point is it's a choice, made once, cheaply.
+
+### 5. Model life shallowly
 
 Deep hierarchies are where items go to hide. Three levels, no more:
 
-- **Areas** — ongoing responsibilities that are never "done" (health, home,
-  work, a relationship). Areas don't decay; they're the fixed stars.
+- **Areas** — ongoing responsibilities (health, home, work, a relationship).
+  Areas decay on a ~year-plus clock: effectively permanent, but even a life
+  area can genuinely end, and the system should notice rather than enshrine it.
 - **Projects** — finite outcomes, each belonging to an area, each with a
-  one-line *"done when…"* statement. Projects sit on a horizon and decay.
+  one-line *"done when…"* statement. Projects sit on a horizon and decay on
+  the six-month clock.
 - **Tasks** — next actions, attached to a project or directly to an area.
-  Tasks decay fastest of all.
+  Tasks decay fastest of the three.
 
 Plus an **inbox** for raw capture: items land there untriaged, and the inbox
-has the fastest decay in the system. Triage it or it composts itself — the
-inbox literally cannot accumulate.
+has the fastest decay in the system (a week). Triage it or it composts itself
+— the inbox literally cannot accumulate.
 
-### 5. The dashboard answers one question
+### 6. The dashboard answers one question
 
 "What should I be doing?" — not "what is everything I have ever considered
 doing?". The main view shows:
@@ -107,9 +146,13 @@ click away, deliberately off the main screen.
 type Horizon = "now" | "next" | "later" | "someday";
 
 interface Area {
-  id: string;
+  id: string;              // ULID, client-generated
   name: string;
   colour: string;          // for scanability, nothing more
+  createdAt: number;
+  touchedAt: number;
+  compostedAt?: number;
+  updatedAt: number;       // sync bookkeeping (LWW)
 }
 
 interface Project {
@@ -121,6 +164,7 @@ interface Project {
   createdAt: number;
   touchedAt: number;
   compostedAt?: number;
+  updatedAt: number;
 }
 
 interface Task {
@@ -135,16 +179,23 @@ interface Task {
   touchedAt: number;
   compostedAt?: number;
   inbox?: boolean;         // untriaged capture
+  updatedAt: number;
 }
 
 interface Settings {
   nowProjectCap: number;   // default 3
   nowTaskCap: number;      // default 7
-  decayDays: {             // days-until-compost per context
+  decayDays: {             // days-until-compost per level
     inbox: number;         // default 7
     task: number;          // default 30
-    project: number;       // default 60
+    project: number;       // default 180
+    area: number;          // default 400
   };
+  awayGapDays: number;     // gap that triggers the "away?" offer, default 4
+}
+
+interface ActivityMark {   // for away detection — human surfaces only
+  lastHumanActivityAt: number;
 }
 ```
 
@@ -153,38 +204,107 @@ the relevant `decayDays` to a stage (fresh / aging / stale / composted).
 Changing the decay settings retroactively re-stages everything, which is the
 behaviour you'd want.
 
+## Sync: local-first, two-plus devices, offline
+
+localStorage alone doesn't survive contact with a second device. The shape:
+
+- **Each client keeps a full local replica** (IndexedDB) and is fully usable
+  offline — reads, writes, reviews, capture all work on a plane.
+- **The Worker owns the authoritative copy** in Cloudflare **D1** (SQLite —
+  the data is relational and small; KV's eventual consistency and lack of
+  queries make it the wrong tool).
+- Clients queue mutations while offline and push them when connectivity
+  returns; they pull changes with a `?since=` cursor on `updatedAt`.
+- **Conflict resolution is last-write-wins per record.** This is a
+  single-user system with a handful of devices; the worst realistic conflict
+  is editing the same task title on two devices in the same offline window.
+  LWW loses nothing structural, and per-field merge machinery (CRDTs etc.)
+  would be complexity spent on a problem this system barely has.
+- IDs are client-generated ULIDs, so offline creation never needs the server
+  and every mutation is idempotent (retry-safe by construction).
+
+Auth: a single bearer token (this is one person's life, not a multi-tenant
+product). The UI stores it after first entry; agents are given the same or a
+second token (see below).
+
+## The API is a first-class surface
+
+Agents should be able to interact with the system deterministically — capture
+into the inbox, read the slate, renew or demote items — through the same
+Worker that serves sync. The UI is just another client of this API.
+
+Sketch, mounted under `/command/api/`:
+
+| route | verb | purpose |
+|---|---|---|
+| `/state` | GET | full snapshot (also the export format) |
+| `/changes?since=` | GET | incremental pull for sync |
+| `/areas`, `/projects`, `/tasks` | GET/POST/PATCH | CRUD; PATCH is partial, PUT-by-ULID makes creates idempotent |
+| `/inbox` | POST | quick capture — the primary agent entry point |
+| `/now` | GET | the slate + upcoming due dates — "what matters right now" |
+| `/touch/:id` | POST | renew an item |
+| `/review/next` | GET | items nearest composting, in review order |
+| `/bump` | POST | `{days}` — shift all `touchedAt` forward (the away offer, also invocable directly) |
+
+Deterministic means: plain JSON in and out, client-supplied IDs, idempotent
+writes, no server-side magic that reorders or reinterprets — an agent that
+replays a request gets the same end state.
+
+**Agent actions carry an `actor` distinction** (separate token or an
+`X-Actor: agent` marker), with two consequences:
+
+1. Agent activity does **not** count as human activity for away-detection —
+   an agent filing things into the inbox all week doesn't mask a vacation.
+2. Whether an agent write refreshes an item's `touchedAt` is a policy choice,
+   not an accident. Default: agent *captures* are fresh (they're new), but
+   agent edits to existing items do **not** renew them — freshness measures
+   *your* attention, and an agent shouldn't be able to keep an item alive
+   that you've stopped caring about. Revisit if this proves too strict.
+
 ## Where it lives
 
 A new tool in this repo — `tools/command/`, mounted at `/command` — following
-the annotate pattern:
+the annotate pattern for the client (base-path-aware TypeScript, PWA so it
+installs to a phone home screen; quick capture only earns its keep if it's
+two taps away). Unlike annotate, the Worker gains real routes
+(`/command/api/…`) and a D1 binding.
 
-- **Local-first, no backend.** State in localStorage (with JSON export/import
-  from day one, both as backup and as the escape hatch every tool should
-  offer). No account, no sync, no server state. The Worker gains no routes.
-- **PWA**, like annotate, so it installs to a phone home screen — quick
-  capture only earns its keep if it's two taps away.
-- Sync across devices is explicitly deferred. If the tool proves itself, that
-  is the moment it may graduate per the repo philosophy (its own repo, a real
-  backend, D1 or KV). Building sync first is how prototypes die.
+That nudges against the repo philosophy — a tool with its own database is
+most of the way to "heavier backend, graduates to its own repo". The call:
+start here anyway. One D1 database and a few Worker routes don't change the
+release lifecycle (everything still deploys together), and moving a
+Worker+D1 app out later is mechanical. Graduation is triggered by the tool
+proving itself, not preempted.
 
-## MVP cut
+## Build order
+
+Milestone 1 — the mechanics, single device:
 
 1. Areas / projects / tasks CRUD with horizons and the inbox
-2. Decay staging + visual aging + auto-compost, archive with revive
+2. Decay staging + visual aging + compost/revive, archive
 3. Now slate with caps and displacement (adding past the cap asks what to bump)
 4. Review mode (renew / demote / compost, one item at a time)
 5. Dashboard (slate, due dates, review nudge, quick capture)
-6. JSON export/import
+6. Away detection + the bump offer
+7. JSON export/import
 
-Deliberately not in the MVP: recurring tasks, reminders/notifications, sync,
-calendar integration, any automation of importance. Manual population is fine
-— the hypothesis under test is that *decay + scarcity + cheap reviews* keeps a
+Built from day one on a mutation-log storage layer (every change is a queued
+mutation applied to the local replica), so milestone 2 adds a transport, not
+a rewrite.
+
+Milestone 2 — the surface area:
+
+8. Worker API routes + D1 schema, bearer-token auth
+9. Client sync (push queue, `?since=` pull, LWW)
+10. Actor distinction + agent policy above
+
+Deliberately not planned: recurring tasks, notifications, calendar
+integration, any automation of importance. Manual population is fine — the
+hypothesis under test is that *decay + scarcity + cheap reviews* keeps a
 manually-fed system alive, which no amount of integration can substitute for.
 
 ## Open questions
 
-- **Decay rates.** Are 7/30/60 days (inbox/task/project) the right defaults?
-  Too fast and renewal becomes a chore; too slow and staleness creeps back.
 - **Cap sizes.** Is three now-projects right, or does real life need four?
 - **Should completing feel different from composting?** Probably yes — a
   small "done" log gives the dashboard a rear-view mirror, which matters for
@@ -194,3 +314,8 @@ manually-fed system alive, which no amount of integration can substitute for.
   the layout?
 - **Snooze.** Is "renew" enough, or do dated snoozes ("ask me again in
   October") earn a place? Risk: snooze is how items hide from decay.
+- **Agent renewal policy.** Is "agent edits don't refresh freshness" right,
+  or should some agent actions (e.g. marking a task done on your behalf)
+  count as attention?
+- **One token or two.** Same bearer token for UI and agents, or a separate
+  agent token so the actor distinction can't be spoofed by accident?
