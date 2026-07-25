@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Command">
+  <rect width="512" height="512" rx="112" fill="#2f7a5d"/>
+  <!-- outer ring: the slate -->
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#ffffff" stroke-width="30"/>
+  <!-- the one thing that matters now -->
+  <circle cx="256" cy="256" r="62" fill="#ffffff"/>
+  <!-- a leaf falling away: things compost, gently -->
+  <path d="M400 118 q34 10 30 48 q-38 4 -48 -30 q8 -14 18 -18 z" fill="#bfe6d4"/>
+</svg>

@@ -7,6 +7,9 @@ its own path:
 - **`tools.kirahowe.com/annotate`** — [Annotate](tools/annotate) — load or paste any
   web page, annotate the exact passages you care about, and export your notes so
   each one stays tied to the span of text it refers to.
+- **`tools.kirahowe.com/command`** — [Command](tools/command) — a life command
+  centre where stale things compost themselves: capped priorities, decaying
+  items, two-minute reviews. ([design notes](docs/command-centre-design.md))
 
 ![landing](docs/screenshot-landing.png)
 

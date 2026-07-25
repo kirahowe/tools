@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)" />
+    <title>Command</title>
+    <meta
+      name="description"
+      content="A life command centre where stale things compost themselves: capped priorities, decaying items, two-minute reviews."
+    />
+    <link rel="manifest" href="%BASE%/manifest.webmanifest" />
+    <link rel="icon" href="%BASE%/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="%BASE%/icons/icon-192.png" />
+    <link rel="stylesheet" href="%BASE%/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img class="logo" src="%BASE%/icons/icon.svg" alt="" width="24" height="24" />
+        <span class="brand-name">Command</span>
+      </div>
+      <nav class="tabs-nav" role="tablist" aria-label="Views">
+        <button id="tabNow" class="nav-tab active" type="button">Now</button>
+        <button id="tabProjects" class="nav-tab" type="button">Projects</button>
+        <button id="tabArchive" class="nav-tab" type="button">Archive</button>
+      </nav>
+      <div class="topbar-actions">
+        <button id="reviewBtn" class="btn ghost sm" type="button" hidden>
+          Review <span id="reviewCount" class="badge"></span>
+        </button>
+        <button id="settingsBtn" class="icon-btn" type="button" aria-label="Settings" title="Settings">⚙</button>
+      </div>
+    </header>
+
+    <main id="app">
+      <!-- Away offer: shown after a gap, before anything is allowed to compost -->
+      <div id="awayBanner" class="away-banner" hidden>
+        <p id="awayText"></p>
+        <div class="away-actions">
+          <button id="awayBump" class="btn primary sm" type="button"></button>
+          <button id="awayDecline" class="btn ghost sm" type="button">No, let things age</button>
+        </div>
+      </div>
+
+      <!-- ---- Now (dashboard) ---- -->
+      <section id="viewNow" class="view">
+        <form id="captureForm" class="capture" autocomplete="off">
+          <input id="captureInput" type="text" placeholder="Capture anything — it lands in the inbox…" aria-label="Quick capture" />
+          <button class="btn primary" type="submit">Capture</button>
+        </form>
+
+        <div id="reviewNudge" class="nudge" hidden></div>
+
+        <div id="emptyNow" class="empty-card" hidden>
+          <h1>Your command centre</h1>
+          <p>
+            Capture anything above — it lands in the <strong>inbox</strong>, which quietly composts
+            whatever you don't triage within a week. Set up <strong>areas</strong> and
+            <strong>projects</strong> in the Projects tab, and pull at most a few onto the
+            <strong>Now slate</strong>. Anything you stop touching fades and eventually composts
+            itself — nothing nags, nothing is ever really lost.
+          </p>
+        </div>
+
+        <section id="inboxSection" class="block" hidden>
+          <h2>Inbox <span id="inboxCount" class="badge"></span></h2>
+          <ul id="inboxList" class="rows"></ul>
+        </section>
+
+        <section id="dueSection" class="block" hidden>
+          <h2>Coming up</h2>
+          <ul id="dueList" class="rows"></ul>
+        </section>
+
+        <section id="slateSection" class="block">
+          <div class="block-head">
+            <h2>Now</h2>
+            <span id="slateMeta" class="muted"></span>
+          </div>
+          <div id="slateProjects" class="cards"></div>
+          <div id="slateTasksWrap" hidden>
+            <h3 class="sub-head">Focus tasks</h3>
+            <ul id="slateTasks" class="rows"></ul>
+          </div>
+        </section>
+
+        <section id="doneSection" class="block" hidden>
+          <h2>Recently done</h2>
+          <ul id="doneList" class="rows done-log"></ul>
+        </section>
+      </section>
+
+      <!-- ---- Projects ---- -->
+      <section id="viewProjects" class="view" hidden>
+        <div class="view-head">
+          <div id="areasStrip" class="areas-strip"></div>
+          <div class="view-head-actions">
+            <button id="newAreaBtn" class="btn ghost sm" type="button">+ Area</button>
+            <button id="newProjectBtn" class="btn primary sm" type="button">+ Project</button>
+            <button id="newTaskBtn" class="btn ghost sm" type="button">+ Task</button>
+          </div>
+        </div>
+        <div id="horizonSections"></div>
+        <section id="looseTasksSection" class="block" hidden>
+          <h2>Standalone tasks</h2>
+          <ul id="looseTasks" class="rows"></ul>
+        </section>
+      </section>
+
+      <!-- ---- Archive ---- -->
+      <section id="viewArchive" class="view" hidden>
+        <p class="muted archive-intro">
+          Things that composted (faded out untouched) or got done. Nothing here is lost — revive
+          anything with one tap.
+        </p>
+        <section class="block">
+          <h2>Composted</h2>
+          <ul id="compostList" class="rows"></ul>
+          <p id="compostEmpty" class="muted" hidden>Nothing has composted yet.</p>
+        </section>
+        <section class="block">
+          <h2>Done</h2>
+          <ul id="archiveDone" class="rows done-log"></ul>
+          <p id="doneEmpty" class="muted" hidden>Nothing marked done yet.</p>
+        </section>
+      </section>
+    </main>
+
+    <!-- ---- Review overlay ---- -->
+    <div id="reviewOverlay" class="overlay" role="dialog" aria-modal="true" aria-label="Review" hidden>
+      <div class="review-card">
+        <div class="review-top">
+          <span id="reviewProgress" class="muted"></span>
+          <button id="reviewClose" class="icon-btn" type="button" aria-label="Close review">✕</button>
+        </div>
+        <div id="reviewBody">
+          <span id="reviewKind" class="review-kind"></span>
+          <h2 id="reviewTitle"></h2>
+          <p id="reviewContext" class="muted"></p>
+          <p id="reviewAge" class="review-age"></p>
+          <div id="reviewActions" class="review-actions"></div>
+          <button id="reviewSkip" class="btn ghost sm review-skip" type="button">Skip for now</button>
+        </div>
+        <div id="reviewDoneMsg" class="review-done" hidden>
+          <h2>All clear</h2>
+          <p class="muted">Nothing is close to composting. Go do something.</p>
+          <button id="reviewFinish" class="btn primary" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="scrim" class="scrim" hidden></div>
+
+    <!-- ---- Project editor ---- -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project" hidden>
+      <div class="modal-head">
+        <h3 id="projectModalTitle">New project</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Close">✕</button>
+      </div>
+      <label class="field">
+        <span>Name</span>
+        <input id="projectName" type="text" placeholder="Rebuild the garden fence" />
+      </label>
+      <label class="field">
+        <span>Done when…</span>
+        <input id="projectDoneWhen" type="text" placeholder="the fence stands and the tools are put away" />
+      </label>
+      <div class="field-row">
+        <label class="field">
+          <span>Area</span>
+          <select id="projectArea"></select>
+        </label>
+        <label class="field">
+          <span>Horizon</span>
+          <select id="projectHorizon">
+            <option value="now">Now</option>
+            <option value="next">Next</option>
+            <option value="later">Later</option>
+            <option value="someday">Someday</option>
+          </select>
+        </label>
+      </div>
+      <div id="projectTasksWrap" hidden>
+        <h4 class="sub-head">Tasks</h4>
+        <ul id="projectTasks" class="rows"></ul>
+        <form id="projectAddTaskForm" class="inline-add" autocomplete="off">
+          <input id="projectAddTaskInput" type="text" placeholder="Add a task…" />
+          <button class="btn ghost sm" type="submit">Add</button>
+        </form>
+      </div>
+      <div class="modal-actions">
+        <button id="projectCompost" class="btn danger" type="button" hidden>Compost</button>
+        <span class="spacer"></span>
+        <button class="btn ghost" data-close type="button">Cancel</button>
+        <button id="projectSave" class="btn primary" type="button">Save</button>
+      </div>
+    </div>
+
+    <!-- ---- Task editor ---- -->
+    <div id="taskModal" class="modal" role="dialog" aria-modal="true" aria-label="Task" hidden>
+      <div class="modal-head">
+        <h3 id="taskModalTitle">New task</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Close">✕</button>
+      </div>
+      <label class="field">
+        <span>Title</span>
+        <input id="taskTitle" type="text" placeholder="Call the fence guy" />
+      </label>
+      <label class="field">
+        <span>Note</span>
+        <textarea id="taskNote" rows="2" placeholder="Optional details…"></textarea>
+      </label>
+      <div class="field-row">
+        <label class="field">
+          <span>Belongs to</span>
+          <select id="taskParent"></select>
+        </label>
+        <label class="field">
+          <span>Due</span>
+          <input id="taskDue" type="date" />
+        </label>
+      </div>
+      <label class="check-field">
+        <input id="taskSlate" type="checkbox" />
+        <span>Pin to the Now slate</span>
+      </label>
+      <div class="modal-actions">
+        <button id="taskCompost" class="btn danger" type="button" hidden>Compost</button>
+        <span class="spacer"></span>
+        <button class="btn ghost" data-close type="button">Cancel</button>
+        <button id="taskSave" class="btn primary" type="button">Save</button>
+      </div>
+    </div>
+
+    <!-- ---- Area editor ---- -->
+    <div id="areaModal" class="modal" role="dialog" aria-modal="true" aria-label="Area" hidden>
+      <div class="modal-head">
+        <h3 id="areaModalTitle">New area</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Close">✕</button>
+      </div>
+      <label class="field">
+        <span>Name</span>
+        <input id="areaName" type="text" placeholder="Health, Home, Work…" />
+      </label>
+      <div class="field">
+        <span>Colour</span>
+        <div id="areaSwatches" class="swatches"></div>
+      </div>
+      <div class="modal-actions">
+        <button id="areaCompost" class="btn danger" type="button" hidden>Compost</button>
+        <span class="spacer"></span>
+        <button class="btn ghost" data-close type="button">Cancel</button>
+        <button id="areaSave" class="btn primary" type="button">Save</button>
+      </div>
+    </div>
+
+    <!-- ---- Displacement: the cap is the point ---- -->
+    <div id="displaceModal" class="modal" role="dialog" aria-modal="true" aria-label="Make room" hidden>
+      <div class="modal-head">
+        <h3>The slate is full</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Close">✕</button>
+      </div>
+      <p id="displaceText" class="muted"></p>
+      <ul id="displaceList" class="rows"></ul>
+      <div class="modal-actions">
+        <span class="spacer"></span>
+        <button class="btn ghost" data-close type="button">Never mind</button>
+      </div>
+    </div>
+
+    <!-- ---- Settings ---- -->
+    <div id="settingsModal" class="modal" role="dialog" aria-modal="true" aria-label="Settings" hidden>
+      <div class="modal-head">
+        <h3>Settings</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Close">✕</button>
+      </div>
+      <div class="field-row">
+        <label class="field">
+          <span>Now projects cap</span>
+          <input id="setProjectCap" type="number" min="1" max="10" />
+        </label>
+        <label class="field">
+          <span>Focus tasks cap</span>
+          <input id="setTaskCap" type="number" min="1" max="20" />
+        </label>
+      </div>
+      <h4 class="sub-head">Compost clocks (days untouched)</h4>
+      <div class="field-row">
+        <label class="field"><span>Inbox</span><input id="setDecayInbox" type="number" min="1" /></label>
+        <label class="field"><span>Tasks</span><input id="setDecayTask" type="number" min="1" /></label>
+      </div>
+      <div class="field-row">
+        <label class="field"><span>Projects</span><input id="setDecayProject" type="number" min="1" /></label>
+        <label class="field"><span>Areas</span><input id="setDecayArea" type="number" min="1" /></label>
+      </div>
+      <label class="field">
+        <span>Ask "away?" after this many quiet days</span>
+        <input id="setAwayGap" type="number" min="2" />
+      </label>
+      <div class="settings-tools">
+        <button id="exportBtn" class="btn ghost sm" type="button">Export JSON</button>
+        <button id="importBtn" class="btn ghost sm" type="button">Import JSON</button>
+        <input id="importFile" type="file" accept="application/json" hidden />
+        <button id="resetBtn" class="btn danger sm" type="button">Reset everything</button>
+      </div>
+      <div class="modal-actions">
+        <span class="spacer"></span>
+        <button class="btn ghost" data-close type="button">Cancel</button>
+        <button id="settingsSave" class="btn primary" type="button">Save</button>
+      </div>
+    </div>
+
+    <div id="status" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="%BASE%/app.js" defer></script>
+  </body>
+</html>

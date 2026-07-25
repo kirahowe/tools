@@ -179,6 +179,7 @@ interface Task {
   touchedAt: number;
   compostedAt?: number;
   inbox?: boolean;         // untriaged capture
+  slate?: boolean;         // pinned to the Now slate (capped, like now-projects)
   updatedAt: number;
 }
 
@@ -290,7 +291,14 @@ Milestone 1 — the mechanics, single device:
 
 Built from day one on a mutation-log storage layer (every change is a queued
 mutation applied to the local replica), so milestone 2 adds a transport, not
-a rewrite.
+a rewrite. (M1 persists the replica to localStorage — the data is tiny; the
+IndexedDB move can ride along with sync if quota ever becomes real.)
+
+**Status: milestone 1 is built** — see [tools/command](../tools/command).
+Two design details settled during the build: attention propagates upward
+(touching a task renews its project, a live project keeps its area alive),
+and tasks with a future due date are exempt from auto-compost while the date
+is ahead — dated items force attention instead of quietly disappearing.
 
 Milestone 2 — the surface area:
 
