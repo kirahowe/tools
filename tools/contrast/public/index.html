@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)" />
+    <title>Contrast</title>
+    <meta
+      name="description"
+      content="Pick text colours that meet WCAG contrast against your background."
+    />
+    <link rel="icon" href="%BASE%/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="%BASE%/styles.css" />
+    <link rel="stylesheet" href="/lib/footer.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-head">
+        <h1>Contrast</h1>
+        <p class="lede">Pick a background; only text colours with enough contrast stay selectable.</p>
+      </header>
+
+      <section class="controls" aria-label="Controls">
+        <div class="field">
+          <label for="bgHex">Background</label>
+          <div class="colour-input">
+            <input type="color" id="bgColor" value="#ffffff" aria-label="Background colour picker" />
+            <input
+              type="text"
+              id="bgHex"
+              value="#ffffff"
+              aria-label="Background hex value"
+              spellcheck="false"
+              autocomplete="off"
+              inputmode="text"
+            />
+          </div>
+        </div>
+
+        <fieldset class="field segmented-field">
+          <legend class="sr-only">WCAG level</legend>
+          <div class="segmented">
+            <label class="segment">
+              <input type="radio" name="level" id="levelAaLarge" value="aaLarge" />
+              <span class="segment-label">3:1 · AA large</span>
+            </label>
+            <label class="segment">
+              <input type="radio" name="level" id="levelAa" value="aa" checked />
+              <span class="segment-label">4.5:1 · AA</span>
+            </label>
+            <label class="segment">
+              <input type="radio" name="level" id="levelAaa" value="aaa" />
+              <span class="segment-label">7:1 · AAA</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="satRange">Saturation <output id="satOut" for="satRange">70%</output></label>
+          <input type="range" id="satRange" min="0" max="100" value="70" />
+        </div>
+
+        <button type="button" id="swapBtn" class="btn ghost">Swap bg / text</button>
+      </section>
+
+      <div class="field-wrap" id="fieldWrap">
+        <canvas
+          id="colourField"
+          class="colour-field"
+          width="640"
+          height="288"
+          tabindex="0"
+          aria-roledescription="colour field"
+          aria-label="Text colour field. Click or drag to pick a colour where contrast passes. Arrow keys move the marker: left and right change hue, up and down change lightness, hold shift for bigger steps."
+        ></canvas>
+        <div id="loupe" class="loupe" aria-hidden="true" hidden>
+          <div id="loupeCircle" class="loupe-circle"></div>
+          <div id="loupeChip" class="loupe-chip"></div>
+        </div>
+        <p class="field-hint muted">
+          Click or drag in the bright region — or focus the field and use arrow keys (Shift for bigger steps).
+        </p>
+      </div>
+      <div id="markerStatus" class="sr-only" aria-live="polite"></div>
+
+      <section class="result">
+        <div class="preview" id="previewPanel">
+          <p class="preview-heading" id="previewHeading">Sample heading</p>
+          <p class="preview-body" id="previewBody">
+            The quick brown fox jumps over the lazy dog — this is how body text reads at your
+            chosen colours.
+          </p>
+          <p class="preview-small" id="previewSmall">Small print, captions, and fine detail render at this size.</p>
+        </div>
+
+        <div class="readout">
+          <div class="ratio" id="ratioValue">21.00:1</div>
+          <div class="badges">
+            <span class="badge" id="badgeAaLarge">✓ AA large 3:1</span>
+            <span class="badge" id="badgeAa">✓ AA 4.5:1</span>
+            <span class="badge" id="badgeAaa">✓ AAA 7:1</span>
+          </div>
+          <div class="hex-row">
+            <div class="hex-item">
+              <span class="hex-label">Background</span>
+              <code id="bgHexOut">#ffffff</code>
+              <button type="button" class="btn ghost sm" id="copyBg" aria-label="Copy background hex value">Copy</button>
+            </div>
+            <div class="hex-item">
+              <span class="hex-label">Text</span>
+              <code id="fgHexOut">#1a1a1a</code>
+              <button type="button" class="btn ghost sm" id="copyFg" aria-label="Copy text hex value">Copy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="page-foot muted">
+        Contrast thresholds per <a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">WCAG 2.2 §1.4.3</a>,
+        computed from <a href="https://www.w3.org/TR/WCAG22/#dfn-relative-luminance">relative luminance</a>.
+      </p>
+      %FOOTER%
+    </main>
+
+    <div id="status" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="%BASE%/app.js" defer></script>
+  </body>
+</html>

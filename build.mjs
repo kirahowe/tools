@@ -5,8 +5,12 @@
 // dist/<name>/, injecting that mount path so a tool works from a sub-path:
 //   - its TypeScript is bundled with `__BASE__` defined to "/<name>"
 //   - its static files have the "%BASE%" token replaced with "/<name>"
+//   - a "%FOOTER%" token, if present, is replaced with lib/footer.html (itself
+//     with "%TOOL%" replaced by the tool's own name) — shared cross-tool UI
+//     lives in lib/ as plain build-time includes, not a runtime component
 // It then assembles the umbrella landing page (web/index.html) into dist/,
-// listing every tool from its tool.json.
+// listing every tool from its tool.json. lib/*.css is also copied verbatim to
+// dist/lib/ so tools can link it directly (e.g. <link href="/lib/footer.css">).
 //
 //   node build.mjs            one-off build of everything into dist/
 //   node build.mjs --watch    rebuild on change (JS + static)
@@ -24,6 +28,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = fileURLToPath(new URL(".", import.meta.url));
 const TOOLS_DIR = join(ROOT, "tools");
 const WEB_DIR = join(ROOT, "web");
+const LIB_DIR = join(ROOT, "lib");
 const DIST = join(ROOT, "dist");
 const watch = process.argv.includes("--watch");
 
@@ -83,9 +88,24 @@ async function copyTree(src, dst, tokens) {
   }
 }
 
-async function copyStatic(tool) {
+async function readFooterTemplate() {
+  const p = join(LIB_DIR, "footer.html");
+  return existsSync(p) ? await readFile(p, "utf8") : "";
+}
+
+async function copyStatic(tool, footerTemplate = "") {
   const pub = join(tool.dir, "public");
-  if (existsSync(pub)) await copyTree(pub, tool.outDir, { "%BASE%": tool.base });
+  const footer = footerTemplate.split("%TOOL%").join(tool.name);
+  if (existsSync(pub)) await copyTree(pub, tool.outDir, { "%BASE%": tool.base, "%FOOTER%": footer });
+}
+
+async function copyLib() {
+  if (!existsSync(LIB_DIR)) return;
+  const dst = join(DIST, "lib");
+  await mkdir(dst, { recursive: true });
+  for (const e of await readdir(LIB_DIR, { withFileTypes: true })) {
+    if (e.isFile() && extname(e.name) === ".css") await copyFile(join(LIB_DIR, e.name), join(dst, e.name));
+  }
 }
 
 function esc(s) {
@@ -118,10 +138,12 @@ async function buildLanding(tools) {
 async function fullBuild() {
   await rm(DIST, { recursive: true, force: true });
   const tools = await discoverTools();
+  const footerTemplate = await readFooterTemplate();
   for (const t of tools) {
     await esbuild.build(jsOptions(t));
-    await copyStatic(t);
+    await copyStatic(t, footerTemplate);
   }
+  await copyLib();
   await buildLanding(tools);
   console.log(`[build] done -> dist/ (${tools.map((t) => t.name).join(", ") || "no tools"})`);
 }
@@ -129,8 +151,9 @@ async function fullBuild() {
 async function watchBuild() {
   await rm(DIST, { recursive: true, force: true });
   const tools = await discoverTools();
+  const footerTemplate = await readFooterTemplate();
   for (const t of tools) {
-    await copyStatic(t);
+    await copyStatic(t, footerTemplate);
     const ctx = await esbuild.context({
       ...jsOptions(t),
       plugins: [
@@ -138,7 +161,7 @@ async function watchBuild() {
           name: "copy-static",
           setup(b) {
             b.onEnd((r) => {
-              if (r.errors.length === 0) copyStatic(t);
+              if (r.errors.length === 0) copyStatic(t, footerTemplate);
             });
           },
         },
@@ -146,13 +169,15 @@ async function watchBuild() {
     });
     await ctx.watch();
   }
+  await copyLib();
   await buildLanding(tools);
 
   let timer;
   const refresh = () => {
     clearTimeout(timer);
     timer = setTimeout(async () => {
-      for (const t of tools) await copyStatic(t);
+      for (const t of tools) await copyStatic(t, footerTemplate);
+      await copyLib();
       await buildLanding(tools);
       console.log("[build] static refreshed");
     }, 150);
@@ -162,7 +187,8 @@ async function watchBuild() {
     if (existsSync(p)) fsWatch(p, { recursive: true }, refresh);
   }
   if (existsSync(WEB_DIR)) fsWatch(WEB_DIR, { recursive: true }, refresh);
-  console.log("[build] watching tools/ and web/ …");
+  if (existsSync(LIB_DIR)) fsWatch(LIB_DIR, { recursive: true }, refresh);
+  console.log("[build] watching tools/, web/, and lib/ …");
 }
 
 if (watch) await watchBuild();
