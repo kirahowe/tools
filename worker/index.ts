@@ -5,7 +5,9 @@
 // Static files built into dist/ are served directly by Cloudflare's asset layer
 // (see the [assets] block in wrangler.toml). Any request that does not match a
 // built file falls through to the fetch handler at the bottom of this file. The
-// only dynamic route today is the annotate tool's page fetcher.
+// dynamic routes today are the annotate tool's page fetcher and the feeds
+// tool's feed fetcher, both of which fetch a third-party URL on the browser's
+// behalf.
 //
 // To add an endpoint for a new tool, add a branch to the router in `fetch`,
 // mounted under /<tool>/api/… to mirror how the frontend calls ${__BASE__}/api/….
@@ -223,6 +225,23 @@ async function fetchPage(request: Request): Promise<Response> {
   });
 }
 
+/** Fetch a feed document for the browser, where cross-origin CORS often prevents a direct request. */
+async function fetchFeed(request: Request): Promise<Response> {
+  const result = await fetchUpstream(request, {
+    userAgent: "tools.kirahowe.com Feed Preview",
+    accept:
+      "application/atom+xml,application/rss+xml,application/xml;q=0.9,text/xml;q=0.9,text/plain;q=0.5,*/*;q=0.1",
+    // No contentTypes here — deliberately. Feeds are served under a zoo of
+    // content types (application/atom+xml, application/rss+xml, text/xml,
+    // application/xml, sometimes text/plain or a plain text/html from a
+    // misconfigured host), and the client's XML parser already produces a
+    // better error than a content-type guess would.
+    noun: "feed",
+  });
+  if (!result.ok) return result.response;
+  return json({ xml: result.text, finalUrl: result.finalUrl });
+}
+
 export default {
   async fetch(request: Request, _env: Env, _ctx: ExecutionContext): Promise<Response> {
     const { pathname } = new URL(request.url);
@@ -231,6 +250,11 @@ export default {
       if (request.method !== "GET") return json({ error: "Method not allowed." }, 405);
       return fetchPage(request);
     }
+    if (pathname === "/feeds/api/fetch") {
+      if (request.method !== "GET") return json({ error: "Method not allowed." }, 405);
+      return fetchFeed(request);
+    }
+
     // Reached only when no static asset matched the request path.
     return new Response("Not found", { status: 404 });
   },

@@ -10,6 +10,8 @@ its own path:
 - **`tools.kirahowe.com/contrast`** — [Contrast](tools/contrast) — pick a background
   colour and choose text colours from only the ones with enough WCAG contrast to
   stay accessible.
+- **`tools.kirahowe.com/feeds`** — [Feed Preview](tools/feeds) — paste an Atom or
+  RSS feed, or enter its URL, and preview the entries in a browser.
 
 ## How it's organised
 
@@ -33,9 +35,12 @@ works from a sub-path without a `<base>` tag:
 - Static files have the `%BASE%` token replaced with `/<name>` (asset URLs, the
   web manifest's `start_url`/`scope`, the service worker's cache list).
 
-Dynamic routes live in `worker/index.ts`, which matches on request path — the
-annotate page-fetcher is served at `/annotate/api/fetch`. Static assets in
-`dist/` are served directly; only paths with no matching file reach the Worker.
+Dynamic routes live in `worker/index.ts`, which matches on request path: the
+annotate page-fetcher at `/annotate/api/fetch`, the feed fetcher at
+`/feeds/api/fetch`. Both are thin wrappers over one `fetchUpstream` helper
+holding the URL validation, SSRF guard, timeout, and byte cap, so a third such
+endpoint doesn't mean a third copy of them. Static assets in `dist/` are served
+directly; only paths with no matching file reach the Worker.
 
 ## Local development
 

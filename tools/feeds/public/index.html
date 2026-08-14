@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)" />
+    <title>Feed Preview</title>
+    <meta name="description" content="Paste an Atom or RSS feed or enter its URL to preview the entries." />
+    <link rel="icon" href="%BASE%/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/lib/tokens.css" />
+    <link rel="stylesheet" href="/lib/base.css" />
+    <link rel="stylesheet" href="%BASE%/styles.css" />
+    <link rel="stylesheet" href="/lib/footer.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-head">
+        <h1>Feed Preview</h1>
+        <p class="lede">Paste an Atom or RSS feed or enter its URL to preview the entries.</p>
+      </header>
+
+      <form id="feedForm" class="input-panel">
+        <label for="feedSource">Feed URL or XML</label>
+        <textarea
+          id="feedSource"
+          rows="12"
+          spellcheck="false"
+          placeholder="https://example.com/feed.xml&#10;&#10;or paste the feed XML here"
+        ></textarea>
+        <div class="actions">
+          <button class="btn primary" type="submit" id="previewButton">Preview feed</button>
+          <button class="btn" type="button" id="atomSampleButton">Atom sample</button>
+          <button class="btn" type="button" id="rssSampleButton">RSS sample</button>
+          <span class="hint">⌘/Ctrl + Enter</span>
+        </div>
+      </form>
+
+      <p id="error" class="error" role="alert" hidden></p>
+      <p id="previewStatus" class="sr-only" aria-live="polite"></p>
+
+      <section id="preview" class="preview" hidden>
+        <header class="feed-head">
+          <!-- Filled in with the format that was detected, e.g. "RSS 2.0 feed". -->
+          <p class="eyebrow" id="previewKind">Feed preview</p>
+          <h2 id="feedTitle"></h2>
+          <p id="feedSubtitle" class="feed-subtitle" hidden></p>
+          <div id="feedMeta" class="meta"></div>
+        </header>
+        <div id="entries" class="entries"></div>
+      </section>
+
+      %FOOTER%
+    </main>
+    <script src="%BASE%/app.js" defer></script>
+  </body>
+</html>
