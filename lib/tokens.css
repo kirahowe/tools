@@ -1,0 +1,71 @@
+/* This is the shared token contract: lib/base.css, lib/footer.css, and every
+   tool's own styles.css consume these custom properties without declaring
+   them. Link this file first, before base.css and before the tool's own
+   stylesheet, so the contract is in place before anything depends on it. */
+
+/* ---- design tokens ------------------------------------------------------- */
+/* One small scale for everything: spacing, type, radius. No bespoke values
+   elsewhere in this file — every measurement below is a token. */
+:root {
+  color-scheme: light dark;
+
+  /* palette (near-monochrome; one warm colour for highlights) */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --text: #1a1a1a;
+  --text-dim: #6b6b70;
+  --border: #e3e3e6;
+  --accent: #4b3fce;
+  --accent-text: #ffffff;
+  --danger: #c0392b;
+  --hl: rgba(255, 212, 0, 0.38);
+  --hl-active: rgba(255, 165, 0, 0.55);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+  /* spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* type scale */
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+
+  /* one radius, plus a pill for round chips */
+  --radius: 6px;
+  --radius-pill: 999px;
+
+  /* fixed dimensions */
+  --control-h: 40px;
+  --topbar-h: 56px;
+  --reading: 42rem;
+  --sidebar: 360px;
+
+  font-synthesis: none;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16161a;
+    --surface: #1c1c21;
+    --surface-2: #26262c;
+    --text: #ededf0;
+    --text-dim: #9a9aa2;
+    --border: #2f2f36;
+    --accent: #8b80ff;
+    --accent-text: #16161a;
+    --danger: #ff6b5e;
+    --hl: rgba(255, 212, 0, 0.28);
+    --hl-active: rgba(255, 180, 0, 0.5);
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+}

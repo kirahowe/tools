@@ -20,7 +20,7 @@ tools/<name>/        a web tool: TypeScript in src/, static assets in public/
   tool.json          title/description/emoji for the landing page
 worker/index.ts      the Worker serving dynamic routes (e.g. /<name>/api/…)
 web/                 the umbrella landing page + shared _headers
-lib/                 shared build-time includes for cross-tool UI (e.g. the footer)
+lib/                 shared UI: a linked CSS layer (tokens, base) plus build-time includes (e.g. the footer)
 build.mjs            builds every tool into dist/<name>/, assembles the landing page
 dist/                static assets Cloudflare serves (git-ignored)
 ```
@@ -70,9 +70,11 @@ Settings → Domains &amp; Routes). If the DNS zone is on Cloudflare it's one cl
    `index.html`, and a `tool.json`. Copy `tools/annotate` as a template — it's
    already base-path aware.
 2. Reference assets with `%BASE%/…` in HTML/manifest, and use `${__BASE__}` for
-   any same-origin API calls in TypeScript. Drop `%FOOTER%` wherever the shared
-   footer (`lib/footer.html`) belongs in your page, and link `/lib/footer.css`
-   in `<head>`.
+   any same-origin API calls in TypeScript. In `<head>`, link `/lib/tokens.css`
+   then `/lib/base.css` before your tool's own stylesheet — they supply the
+   design tokens, reset, `.page` frame, and `.btn` pattern. Drop `%FOOTER%`
+   wherever the shared footer (`lib/footer.html`) belongs in your page, and
+   link `/lib/footer.css` in `<head>`.
 3. Add any serverless endpoint as a branch in `worker/index.ts`, mounted under
    `/<name>/api/…`.
 4. `npm run build` — it appears in `dist/<name>/` and on the landing page
