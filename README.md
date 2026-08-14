@@ -17,7 +17,7 @@ its own path:
 tools/<name>/        a web tool: TypeScript in src/, static assets in public/
   src/app.ts         entry point (bundled to /<name>/app.js)
   public/            index.html, styles.css, manifest, sw.js, icons (%BASE% templated)
-  tool.json          title/description/emoji for the landing page
+  tool.json          title/description for the landing page
 worker/index.ts      the Worker serving dynamic routes (e.g. /<name>/api/…)
 web/                 the umbrella landing page, its icon + shared _headers
 lib/                 shared UI: a linked CSS layer (tokens, base) plus build-time includes (e.g. the footer)
