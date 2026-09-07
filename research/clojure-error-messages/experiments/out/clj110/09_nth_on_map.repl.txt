@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (UnsupportedOperationException) compiling at (bugs/09_nth_on_map.clj:8:1).
+nth not supported on this type: PersistentArrayMap
+user=> 

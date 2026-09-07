@@ -1,0 +1,5 @@
+ruby/inc_nil.rb:4:in `next_port': undefined method `+' for nil (NoMethodError)
+
+  c[:prot] + 1
+           ^
+	from ruby/inc_nil.rb:7:in `<main>'

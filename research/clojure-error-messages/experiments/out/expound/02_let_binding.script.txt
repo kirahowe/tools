@@ -1,0 +1,24 @@
+#object[expound.alpha$printer 0x799ed4e8 "expound.alpha$printer@799ed4e8"]
+Syntax error macroexpanding clojure.core/let at (bugs/02_let_binding.clj:4:3).
+-- Spec failed --------------------
+
+  ([greeting "Hello" name] ...)
+   ^^^^^^^^^^^^^^^^^^^^^^^
+
+should satisfy
+
+  even-number-of-forms?
+
+-- Relevant specs -------
+
+:clojure.core.specs.alpha/bindings:
+  (clojure.spec.alpha/and
+   clojure.core/vector?
+   clojure.core.specs.alpha/even-number-of-forms?
+   (clojure.spec.alpha/* :clojure.core.specs.alpha/binding))
+
+-------------------------
+Detected 1 error
+
+Full report at:
+/tmp/clojure-16340530037152038914.edn

@@ -1,0 +1,22 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR --------------------------------------- ./bugs/13_ns_typo.clj:1
+
+The namespace clojure.strng is not on the classpath.
+
+1 | (ns bugs.ns-typo
+  | ^
+2 |   (:require [clojure.strng :as str]))
+
+FileNotFoundException: Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.
+
+Hint: Either the name is misspelled, or the library that provides it is missing from deps.edn / project.clj.
+
+Did you mean one of these?
+    clojure.string
+
+In your code (innermost first):
+    bugs.ns-typo/eval1317/loading--auto--      13_ns_typo.clj:1
+    bugs.ns-typo/eval1317                      13_ns_typo.clj:1
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 32 internal frames hidden (clojure.core 10, clojure.lang 15, clojure.main 7). (nice-errors.core/pst) shows them.
+

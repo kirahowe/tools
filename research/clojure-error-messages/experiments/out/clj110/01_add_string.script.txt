@@ -1,0 +1,12 @@
+Downloading: org/clojure/clojure/1.10.3/clojure-1.10.3.pom from central
+Downloading: org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.pom from central
+Downloading: org/clojure/pom.contrib/0.3.0/pom.contrib-0.3.0.pom from central
+Downloading: org/clojure/spec.alpha/0.2.194/spec.alpha-0.2.194.pom from central
+Downloading: org/clojure/clojure/1.10.3/clojure-1.10.3.jar from central
+Downloading: org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar from central
+Downloading: org/clojure/spec.alpha/0.2.194/spec.alpha-0.2.194.jar from central
+Syntax error (ClassCastException) compiling at (bugs/01_add_string.clj:6:1).
+class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+
+Full report at:
+/tmp/clojure-6827647314846594532.edn

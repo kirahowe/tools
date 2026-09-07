@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (NumberFormatException) compiling at (bugs/05_lazy.clj:8:1).
+For input string: "three"
+user=> 

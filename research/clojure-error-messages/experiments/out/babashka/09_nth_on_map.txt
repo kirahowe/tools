@@ -1,0 +1,21 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.UnsupportedOperationException
+Message:  nth not supported on this type: PersistentArrayMap
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:6:3
+
+----- Context ------------------------------------------------------------------
+2: 
+3: (def user {:name "Ada" :age 36})
+4: 
+5: (defn first-field [m]
+6:   (nth m 0))
+     ^--- nth not supported on this type: PersistentArrayMap
+7: 
+8: (first-field user)
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/nth            - <built-in>
+bugs.nth-on-map/first-field - /home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:6:3
+bugs.nth-on-map/first-field - /home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:5:1
+bugs.nth-on-map             - /home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:8:1
+

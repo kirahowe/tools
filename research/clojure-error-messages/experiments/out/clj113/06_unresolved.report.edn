@@ -1,0 +1,62 @@
+{:clojure.main/message
+ "Syntax error compiling at (bugs/06_unresolved.clj:4:3).\nUnable to resolve symbol: pritnln in this context\n",
+ :clojure.main/triage
+ {:clojure.error/phase :compile-syntax-check,
+  :clojure.error/line 4,
+  :clojure.error/column 3,
+  :clojure.error/source "06_unresolved.clj",
+  :clojure.error/path "bugs/06_unresolved.clj",
+  :clojure.error/class java.lang.RuntimeException,
+  :clojure.error/cause
+  "Unable to resolve symbol: pritnln in this context"},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error compiling at (/home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj:4:3).",
+    :data
+    {:clojure.error/phase :compile-syntax-check,
+     :clojure.error/line 4,
+     :clojure.error/column 3,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj"},
+    :at [clojure.lang.Compiler analyze "Compiler.java" 7401]}
+   {:type java.lang.RuntimeException,
+    :message "Unable to resolve symbol: pritnln in this context",
+    :at [clojure.lang.Util runtimeException "Util.java" 221]}],
+  :trace
+  [[clojure.lang.Util runtimeException "Util.java" 221]
+   [clojure.lang.Compiler resolveIn "Compiler.java" 8008]
+   [clojure.lang.Compiler resolve "Compiler.java" 7947]
+   [clojure.lang.Compiler analyzeSymbol "Compiler.java" 7908]
+   [clojure.lang.Compiler analyze "Compiler.java" 7361]
+   [clojure.lang.Compiler analyze "Compiler.java" 7338]
+   [clojure.lang.Compiler$InvokeExpr parse "Compiler.java" 4342]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7695]
+   [clojure.lang.Compiler analyze "Compiler.java" 7382]
+   [clojure.lang.Compiler analyze "Compiler.java" 7338]
+   [clojure.lang.Compiler$BodyExpr$Parser parse "Compiler.java" 6703]
+   [clojure.lang.Compiler$FnMethod parse "Compiler.java" 6042]
+   [clojure.lang.Compiler$FnExpr parse "Compiler.java" 4605]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7691]
+   [clojure.lang.Compiler analyze "Compiler.java" 7382]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7681]
+   [clojure.lang.Compiler analyze "Compiler.java" 7382]
+   [clojure.lang.Compiler$DefExpr$Parser parse "Compiler.java" 591]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7693]
+   [clojure.lang.Compiler analyze "Compiler.java" 7382]
+   [clojure.lang.Compiler analyze "Compiler.java" 7338]
+   [clojure.lang.Compiler eval "Compiler.java" 7767]
+   [clojure.lang.Compiler load "Compiler.java" 8229]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8167]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "Unable to resolve symbol: pritnln in this context",
+  :phase :compile-syntax-check}}
+

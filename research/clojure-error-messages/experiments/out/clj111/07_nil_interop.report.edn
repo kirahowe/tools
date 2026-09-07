@@ -1,0 +1,54 @@
+{:clojure.main/message
+ "Execution error (NullPointerException) at bugs.nil-interop/shout (07_nil_interop.clj:4).\nCannot invoke \"Object.getClass()\" because \"target\" is null\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.NullPointerException,
+  :clojure.error/line 4,
+  :clojure.error/cause
+  "Cannot invoke \"Object.getClass()\" because \"target\" is null",
+  :clojure.error/symbol bugs.nil-interop/shout,
+  :clojure.error/source "07_nil_interop.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj:6:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 6,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 7671]}
+   {:type java.lang.NullPointerException,
+    :message
+    "Cannot invoke \"Object.getClass()\" because \"target\" is null",
+    :at
+    [clojure.lang.Reflector
+     invokeNoArgInstanceMember
+     "Reflector.java"
+     443]}],
+  :trace
+  [[clojure.lang.Reflector
+    invokeNoArgInstanceMember
+    "Reflector.java"
+    443]
+   [bugs.nil_interop$shout invokeStatic "07_nil_interop.clj" 4]
+   [bugs.nil_interop$shout invoke "07_nil_interop.clj" 3]
+   [bugs.nil_interop$eval147 invokeStatic "07_nil_interop.clj" 6]
+   [bugs.nil_interop$eval147 invoke "07_nil_interop.clj" 6]
+   [clojure.lang.Compiler eval "Compiler.java" 7201]
+   [clojure.lang.Compiler load "Compiler.java" 7659]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7597]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$script_opt invokeStatic "main.clj" 535]
+   [clojure.main$script_opt invoke "main.clj" 530]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause
+  "Cannot invoke \"Object.getClass()\" because \"target\" is null",
+  :phase :execution}}
+

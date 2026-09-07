@@ -1,0 +1,17 @@
+----- Error --------------------------------------------------------------------
+Type:     clojure.lang.ArityException
+Message:  Wrong number of args (1) passed to: bugs.arity/area
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/03_arity.clj:6:1
+
+----- Context ------------------------------------------------------------------
+2: 
+3: (defn area [w h]
+4:   (* w h))
+5: 
+6: (area 5)
+   ^--- Wrong number of args (1) passed to: bugs.arity/area
+
+----- Stack trace --------------------------------------------------------------
+bugs.arity/area - /home/user/tools/research/clojure-error-messages/experiments/bugs/03_arity.clj:3:1
+bugs.arity      - /home/user/tools/research/clojure-error-messages/experiments/bugs/03_arity.clj:6:1
+

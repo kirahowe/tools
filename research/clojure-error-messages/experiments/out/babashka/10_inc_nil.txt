@@ -1,0 +1,20 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.NullPointerException
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:6:3
+
+----- Context ------------------------------------------------------------------
+2: 
+3: (def config {:port 8080})
+4: 
+5: (defn next-port [c]
+6:   (inc (:prot c)))       ; typo: :prot
+     ^--- 
+7: 
+8: (next-port config)
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/inc       - <built-in>
+bugs.inc-nil/next-port - /home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:6:3
+bugs.inc-nil/next-port - /home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:5:1
+bugs.inc-nil           - /home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:8:1
+

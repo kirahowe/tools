@@ -1,0 +1,47 @@
+{:clojure.main/message
+ "Syntax error (UnsupportedOperationException) compiling at (bugs/09_nth_on_map.clj:8:1).\nnth not supported on this type: PersistentArrayMap\n",
+ :clojure.main/triage
+ {:clojure.error/phase :compile-syntax-check,
+  :clojure.error/line 8,
+  :clojure.error/column 1,
+  :clojure.error/source "09_nth_on_map.clj",
+  :clojure.error/path "bugs/09_nth_on_map.clj",
+  :clojure.error/class java.lang.UnsupportedOperationException,
+  :clojure.error/cause
+  "nth not supported on this type: PersistentArrayMap"},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error compiling at (/home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:8:1).",
+    :data
+    {:clojure.error/phase :compile-syntax-check,
+     :clojure.error/line 8,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 7652]}
+   {:type java.lang.UnsupportedOperationException,
+    :message "nth not supported on this type: PersistentArrayMap",
+    :at [clojure.lang.RT nthFrom "RT.java" 932]}],
+  :trace
+  [[clojure.lang.RT nthFrom "RT.java" 932]
+   [clojure.lang.RT nth "RT.java" 897]
+   [bugs.nth_on_map$first_field invokeStatic "09_nth_on_map.clj" 6]
+   [bugs.nth_on_map$first_field invoke "09_nth_on_map.clj" 5]
+   [bugs.nth_on_map$eval147 invokeStatic "09_nth_on_map.clj" 8]
+   [bugs.nth_on_map$eval147 invoke "09_nth_on_map.clj" 8]
+   [clojure.lang.Compiler eval "Compiler.java" 7181]
+   [clojure.lang.Compiler load "Compiler.java" 7640]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7578]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$script_opt invokeStatic "main.clj" 535]
+   [clojure.main$script_opt invoke "main.clj" 530]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause "nth not supported on this type: PersistentArrayMap",
+  :phase :compile-syntax-check}}
+

@@ -1,0 +1,32 @@
+Clojure 1.12.6
+user=> Execution error (NumberFormatException) at java.lang.Integer/parseInt (Integer.java:624).
+Cannot parse null string
+CompilerException Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:15:1). #:clojure.error{:phase :execution, :line 15, :column 1, :source "/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj"}
+	clojure.lang.Compiler.load (Compiler.java:8235)
+	clojure.lang.Compiler.loadFile (Compiler.java:8161)
+	clojure.lang.RT$3.invoke (RT.java:347)
+	user/eval1 (NO_SOURCE_FILE:1)
+	user/eval1 (NO_SOURCE_FILE:1)
+	clojure.lang.Compiler.eval (Compiler.java:7757)
+	clojure.lang.Compiler.eval (Compiler.java:7712)
+	clojure.core/eval (core.clj:3236)
+	clojure.core/eval (core.clj:3232)
+	clojure.main/repl/read-eval-print--9244/fn--9247 (main.clj:437)
+	clojure.main/repl/read-eval-print--9244 (main.clj:437)
+	clojure.main/repl/fn--9253 (main.clj:459)
+Caused by:
+NumberFormatException Cannot parse null string
+	java.lang.Integer.parseInt (Integer.java:624)
+	java.lang.Integer.parseInt (Integer.java:778)
+	bugs.deep/parse-row/fn--147 (11_deep.clj:4)
+	clojure.core/update (core.clj:6263)
+	clojure.core/update (core.clj:6255)
+	bugs.deep/parse-row (11_deep.clj:4)
+	bugs.deep/parse-row (11_deep.clj:3)
+	clojure.core/mapv/fn--8565 (core.clj:7063)
+	clojure.lang.PersistentVector.reduce (PersistentVector.java:418)
+	clojure.core/reduce (core.clj:6968)
+	clojure.core/mapv (core.clj:7054)
+	clojure.core/mapv (core.clj:7054)
+nil
+user=> 

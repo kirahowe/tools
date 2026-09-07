@@ -1,0 +1,22 @@
+user=> Execution error (ClassCastException) at bugs.add-string/total (01_add_string.clj:4).
+class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+      clojure.core/eval           core.clj:3236
+                    ...
+           user/eval800         REPL Input
+                    ...
+bugs.add-string/eval813  01_add_string.clj:   6
+  bugs.add-string/total  01_add_string.clj:   4
+    clojure.core/reduce           core.clj:6964
+                    ...
+         clojure.core/+           core.clj: 994
+                    ...
+           java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clojure.lang.Compiler$CompilerException: Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj:6:1).
+  data: #:clojure.error{:phase :execution,
+                        :line 6,
+                        :column 1,
+                        :source
+                        "/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj"}
+
+nil
+user=> 

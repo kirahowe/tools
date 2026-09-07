@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> nth not supported on this type: PersistentArrayMap, at bugs.nth-on-map/first-field (09_nth_on_map.clj:6) - runtime error (UnsupportedOperationException).

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/user/tools/research/clojure-error-messages/experiments/other-langs/python/inc_none.py", line 6, in <module>
+    next_port(config)
+  File "/home/user/tools/research/clojure-error-messages/experiments/other-langs/python/inc_none.py", line 4, in next_port
+    return c.get("prot") + 1
+           ~~~~~~~~~~~~~~^~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'

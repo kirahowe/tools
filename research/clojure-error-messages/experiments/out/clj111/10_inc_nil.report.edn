@@ -1,0 +1,47 @@
+{:clojure.main/message
+ "Execution error (NullPointerException) at bugs.inc-nil/next-port (10_inc_nil.clj:6).\nCannot invoke \"Object.getClass()\" because \"x\" is null\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.NullPointerException,
+  :clojure.error/line 6,
+  :clojure.error/cause
+  "Cannot invoke \"Object.getClass()\" because \"x\" is null",
+  :clojure.error/symbol bugs.inc-nil/next-port,
+  :clojure.error/source "10_inc_nil.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:6:26).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 6,
+     :clojure.error/column 26,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 7671]}
+   {:type java.lang.NullPointerException,
+    :message
+    "Cannot invoke \"Object.getClass()\" because \"x\" is null",
+    :at [clojure.lang.Numbers ops "Numbers.java" 1095]}],
+  :trace
+  [[clojure.lang.Numbers ops "Numbers.java" 1095]
+   [clojure.lang.Numbers inc "Numbers.java" 139]
+   [bugs.inc_nil$next_port invokeStatic "10_inc_nil.clj" 6]
+   [bugs.inc_nil$next_port invoke "10_inc_nil.clj" 5]
+   [bugs.inc_nil$eval147 invokeStatic "10_inc_nil.clj" 8]
+   [bugs.inc_nil$eval147 invoke "10_inc_nil.clj" 8]
+   [clojure.lang.Compiler eval "Compiler.java" 7201]
+   [clojure.lang.Compiler load "Compiler.java" 7659]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7597]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$script_opt invokeStatic "main.clj" 535]
+   [clojure.main$script_opt invoke "main.clj" 530]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause "Cannot invoke \"Object.getClass()\" because \"x\" is null",
+  :phase :execution}}
+

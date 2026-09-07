@@ -1,0 +1,21 @@
+----- Error --------------------------------------------------------------------
+Type:     clojure.lang.ExceptionInfo
+Message:  Unable to resolve symbol: pritnln
+Data:     {:type :sci/error, :line 3, :column 1, :file "/home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj", :phase "analysis"}
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj:4:3
+Phase:    analysis
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.unresolved)
+2: 
+3: (defn report [xs]
+4:   (pritnln "count:" (count xs)))
+     ^--- Unable to resolve symbol: pritnln
+
+----- Stack trace --------------------------------------------------------------
+bugs.unresolved/fn - /home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj:4:3
+clojure.core/fn    - <built-in>
+bugs.unresolved    - /home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj:3:1
+clojure.core/defn  - <built-in>
+bugs.unresolved    - /home/user/tools/research/clojure-error-messages/experiments/bugs/06_unresolved.clj:3:1
+

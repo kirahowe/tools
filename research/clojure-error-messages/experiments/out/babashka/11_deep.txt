@@ -1,0 +1,30 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.NumberFormatException
+Message:  Cannot parse null string
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:4:3
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.deep)
+2: 
+3: (defn parse-row [row]
+4:   (update row :qty #(Integer/parseInt %)))
+     ^--- Cannot parse null string
+5: 
+6: (defn load-rows [rows]
+7:   (mapv parse-row rows))
+8: 
+9: (defn total-qty [rows]
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/update    - <built-in>
+bugs.deep              - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:4:3
+clojure.core/mapv      - <built-in>
+bugs.deep/load-rows    - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:7:3
+bugs.deep/load-rows    - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:6:1
+... (run with --debug to see elided elements)
+bugs.deep              - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:13:12
+clojure.core/println   - <built-in>
+bugs.deep/-main        - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:13:3
+bugs.deep/-main        - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:12:1
+bugs.deep              - /home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:15:1
+

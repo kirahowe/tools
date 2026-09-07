@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (IllegalArgumentException) compiling at (bugs/12_wrong_ctor_arg.clj:7:1).
+No matching ctor found for class java.io.File
+user=> 

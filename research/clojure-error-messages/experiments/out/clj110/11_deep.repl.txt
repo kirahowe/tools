@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (NumberFormatException) compiling at (bugs/11_deep.clj:15:1).
+Cannot parse null string
+user=> 

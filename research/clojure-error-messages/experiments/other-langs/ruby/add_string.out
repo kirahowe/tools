@@ -1,0 +1,4 @@
+ruby/add_string.rb:2:in `+': String can't be coerced into Integer (TypeError)
+	from ruby/add_string.rb:2:in `sum'
+	from ruby/add_string.rb:2:in `total'
+	from ruby/add_string.rb:5:in `<main>'

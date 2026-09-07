@@ -1,0 +1,5 @@
+Execution error (NullPointerException) at bugs.nil-interop/shout (07_nil_interop.clj:4).
+Cannot invoke "Object.getClass()" because "target" is null
+
+Full report at:
+/tmp/clojure-14116722973154740924.edn

@@ -1,0 +1,4 @@
+Clojure 1.12.6
+user=> Syntax error reading source at (bugs/08_missing_paren.clj:5:1).
+EOF while reading, starting at line 3
+user=> 

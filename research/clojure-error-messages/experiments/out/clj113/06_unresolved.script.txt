@@ -1,0 +1,5 @@
+Syntax error compiling at (bugs/06_unresolved.clj:4:3).
+Unable to resolve symbol: pritnln in this context
+
+Full report at:
+/tmp/clojure-8525355866930587623.edn

@@ -1,0 +1,69 @@
+{:clojure.main/message
+ "Execution error (FileNotFoundException) at bugs.ns-typo/eval119$loading (13_ns_typo.clj:1).\nCould not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.\n",
+ :clojure.main/triage
+ {:clojure.error/class java.io.FileNotFoundException,
+  :clojure.error/line 1,
+  :clojure.error/cause
+  "Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.",
+  :clojure.error/symbol bugs.ns-typo/eval119$loading,
+  :clojure.error/source "13_ns_typo.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error executing at (/home/user/tools/research/clojure-error-messages/experiments/bugs/13_ns_typo.clj:1:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 1,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/13_ns_typo.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 8241]}
+   {:type java.io.FileNotFoundException,
+    :message
+    "Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.",
+    :at [clojure.lang.RT load "RT.java" 458]}],
+  :trace
+  [[clojure.lang.RT load "RT.java" 458]
+   [clojure.lang.RT load "RT.java" 420]
+   [clojure.core$load$fn__7017 invoke "core.clj" 6291]
+   [clojure.core$load invokeStatic "core.clj" 6290]
+   [clojure.core$load doInvoke "core.clj" 6274]
+   [clojure.lang.RestFn invoke "RestFn.java" 411]
+   [clojure.core$load_one invokeStatic "core.clj" 6063]
+   [clojure.core$load_one invoke "core.clj" 6058]
+   [clojure.core$load_lib$fn__6959 invoke "core.clj" 6105]
+   [clojure.core$load_lib invokeStatic "core.clj" 6104]
+   [clojure.core$load_lib doInvoke "core.clj" 6083]
+   [clojure.lang.RestFn applyTo "RestFn.java" 145]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$load_libs invokeStatic "core.clj" 6146]
+   [clojure.core$load_libs doInvoke "core.clj" 6130]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.core$apply invokeStatic "core.clj" 669]
+   [clojure.core$require invokeStatic "core.clj" 6168]
+   [clojure.core$require doInvoke "core.clj" 6168]
+   [clojure.lang.RestFn invoke "RestFn.java" 411]
+   [bugs.ns_typo$eval119$loading__6897__auto____120
+    invoke
+    "13_ns_typo.clj"
+    1]
+   [bugs.ns_typo$eval119 invokeStatic "13_ns_typo.clj" 1]
+   [bugs.ns_typo$eval119 invoke "13_ns_typo.clj" 1]
+   [clojure.lang.Compiler eval "Compiler.java" 7763]
+   [clojure.lang.Compiler eval "Compiler.java" 7752]
+   [clojure.lang.Compiler load "Compiler.java" 8229]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8167]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause
+  "Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.",
+  :phase :execution}}
+

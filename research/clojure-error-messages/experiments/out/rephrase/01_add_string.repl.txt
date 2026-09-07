@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> Expected a number, but was given a string, at bugs.add-string/total (01_add_string.clj:4) - runtime error (unexpected type).

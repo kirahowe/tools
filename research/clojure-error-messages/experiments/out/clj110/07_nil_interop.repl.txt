@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (NullPointerException) compiling at (bugs/07_nil_interop.clj:6:1).
+Cannot invoke "Object.getClass()" because "target" is null
+user=> 

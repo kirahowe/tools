@@ -1,0 +1,16 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.NullPointerException
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj:6:1
+
+----- Context ------------------------------------------------------------------
+2: 
+3: (defn shout [s]
+4:   (.toUpperCase s))
+5: 
+6: (shout nil)
+   ^--- 
+
+----- Stack trace --------------------------------------------------------------
+bugs.nil-interop/shout - /home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj:3:1
+bugs.nil-interop       - /home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj:6:1
+

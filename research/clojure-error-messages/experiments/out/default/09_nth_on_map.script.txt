@@ -1,0 +1,5 @@
+Execution error (UnsupportedOperationException) at bugs.nth-on-map/first-field (09_nth_on_map.clj:6).
+nth not supported on this type: PersistentArrayMap
+
+Full report at:
+/tmp/clojure-16736460323663170705.edn

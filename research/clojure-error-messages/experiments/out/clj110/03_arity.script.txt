@@ -1,0 +1,5 @@
+Syntax error (ArityException) compiling at (bugs/03_arity.clj:6:1).
+Wrong number of args (1) passed to: bugs.arity/area
+
+Full report at:
+/tmp/clojure-16790658567562497854.edn

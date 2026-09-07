@@ -1,0 +1,17 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR ----------------------------------------- ./bugs/03_arity.clj:6
+
+bugs.arity/area was called with 1 argument. It takes [w h].
+
+4 |   (* w h))
+5 | 
+6 | (area 5)
+  | ^
+
+ArityException: Wrong number of args (1) passed to: bugs.arity/area
+
+In your code (innermost first):
+    bugs.arity/eval1326                        03_arity.clj:6
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 18 internal frames hidden (clojure.core 1, clojure.lang 10, clojure.main 7). (nice-errors.core/pst) shows them.
+

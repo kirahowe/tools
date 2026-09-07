@@ -1,0 +1,39 @@
+clojure.lang.ExceptionInfo: Call to clojure.core/defn did not conform to spec:
+In: [1 0] val: x fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-n :bodies :args] predicate: vector?
+In: [1] val: (x) fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-1 :args] predicate: vector?
+ #:clojure.spec.alpha{:problems ({:path [:args :bs :arity-1 :args], :pred clojure.core/vector?, :val (x), :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1]} {:path [:args :bs :arity-n :bodies :args], :pred clojure.core/vector?, :val x, :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1 0]}), :spec #object[clojure.spec.alpha$regex_spec_impl$reify__2436 0x1a6f5124 "clojure.spec.alpha$regex_spec_impl$reify__2436@1a6f5124"], :value (square (x) (* x x)), :args (square (x) (* x x))}, compiling:(/home/user/tools/research/clojure-error-messages/experiments/bugs/15_defn_syntax.clj:3:1)
+	at clojure.lang.Compiler.checkSpecs(Compiler.java:6891)
+	at clojure.lang.Compiler.macroexpand1(Compiler.java:6907)
+	at clojure.lang.Compiler.macroexpand(Compiler.java:6972)
+	at clojure.lang.Compiler.eval(Compiler.java:7046)
+	at clojure.lang.Compiler.load(Compiler.java:7514)
+	at clojure.lang.Compiler.loadFile(Compiler.java:7452)
+	at clojure.lang.RT$3.invoke(RT.java:325)
+	at user$eval11.invokeStatic(NO_SOURCE_FILE:1)
+	at user$eval11.invoke(NO_SOURCE_FILE:1)
+	at clojure.lang.Compiler.eval(Compiler.java:7062)
+	at clojure.lang.Compiler.eval(Compiler.java:7025)
+	at clojure.core$eval.invokeStatic(core.clj:3206)
+	at clojure.main$eval_opt.invokeStatic(main.clj:291)
+	at clojure.main$eval_opt.invoke(main.clj:285)
+	at clojure.main$initialize.invokeStatic(main.clj:311)
+	at clojure.main$null_opt.invokeStatic(main.clj:345)
+	at clojure.main$null_opt.invoke(main.clj:342)
+	at clojure.main$main.invokeStatic(main.clj:424)
+	at clojure.main$main.doInvoke(main.clj:387)
+	at clojure.lang.RestFn.applyTo(RestFn.java:137)
+	at clojure.lang.Var.applyTo(Var.java:702)
+	at clojure.main.main(main.java:37)
+Caused by: clojure.lang.ExceptionInfo: Call to clojure.core/defn did not conform to spec:
+In: [1 0] val: x fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-n :bodies :args] predicate: vector?
+In: [1] val: (x) fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-1 :args] predicate: vector?
+ #:clojure.spec.alpha{:problems ({:path [:args :bs :arity-1 :args], :pred clojure.core/vector?, :val (x), :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1]} {:path [:args :bs :arity-n :bodies :args], :pred clojure.core/vector?, :val x, :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1 0]}), :spec #object[clojure.spec.alpha$regex_spec_impl$reify__2436 0x1a6f5124 "clojure.spec.alpha$regex_spec_impl$reify__2436@1a6f5124"], :value (square (x) (* x x)), :args (square (x) (* x x))}
+	at clojure.core$ex_info.invokeStatic(core.clj:4739)
+	at clojure.core$ex_info.invoke(core.clj:4739)
+	at clojure.spec.alpha$macroexpand_check.invokeStatic(alpha.clj:689)
+	at clojure.spec.alpha$macroexpand_check.invoke(alpha.clj:681)
+	at clojure.lang.AFn.applyToHelper(AFn.java:156)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.lang.Var.applyTo(Var.java:702)
+	at clojure.lang.Compiler.checkSpecs(Compiler.java:6889)
+	... 21 more

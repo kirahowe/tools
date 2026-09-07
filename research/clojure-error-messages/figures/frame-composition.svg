@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-label="For each of 15 bugs, how many stack frames belong to the user's code versus Clojure internals: on average one frame in eight is the user's." font-family="JetBrains Mono, ui-monospace, Menlo, monospace" font-size="12">
+<rect class="s-user" x="0" y="12" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text class="ink" x="17" y="22" fill="#1b2430">your code</text>
+<rect class="s-core" x="99.8" y="12" width="12" height="12" rx="2" fill="#eb6834"/>
+<text class="ink" x="116.8" y="22" fill="#1b2430">clojure.core</text>
+<rect class="s-lang" x="221.2" y="12" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text class="ink" x="238.2" y="22" fill="#1b2430">clojure.lang</text>
+<rect class="s-main" x="342.6" y="12" width="12" height="12" rx="2" fill="#eda100"/>
+<text class="ink" x="359.6" y="22" fill="#1b2430">clojure.main (launcher)</text>
+<rect class="s-other" x="543.2" y="12" width="12" height="12" rx="2" fill="#e87ba4"/>
+<text class="ink" x="560.2" y="22" fill="#1b2430">spec / JDK</text>
+<text class="ink" x="142" y="61" text-anchor="end" fill="#1b2430">11_deep</text>
+<rect class="s-user" x="150.0" y="46" width="160.8" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-core" x="312.8" y="46" width="86.8" height="22" rx="2" fill="#eb6834"/>
+<rect class="s-lang" x="401.6" y="46" width="86.8" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="490.4" y="46" width="86.8" height="22" rx="2" fill="#eda100"/>
+<rect class="s-other" x="579.2" y="46" width="27.6" height="22" rx="2" fill="#e87ba4"/>
+<text class="ink-muted" x="614.8" y="61" fill="#5b6673">11/31 · 35%</text>
+<text class="ink" x="142" y="89" text-anchor="end" fill="#1b2430">04_string_as_fn</text>
+<rect class="s-user" x="150.0" y="74" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="209.2" y="74" width="72.0" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="283.2" y="74" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="378.0" y="89" fill="#5b6673">4/15 · 27%</text>
+<text class="ink" x="142" y="117" text-anchor="end" fill="#1b2430">07_nil_interop</text>
+<rect class="s-user" x="150.0" y="102" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="209.2" y="102" width="86.8" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="298.0" y="102" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="392.8" y="117" fill="#5b6673">4/16 · 25%</text>
+<text class="ink" x="142" y="145" text-anchor="end" fill="#1b2430">12_wrong_ctor_arg</text>
+<rect class="s-user" x="150.0" y="130" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="209.2" y="130" width="86.8" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="298.0" y="130" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="392.8" y="145" fill="#5b6673">4/16 · 25%</text>
+<text class="ink" x="142" y="173" text-anchor="end" fill="#1b2430">09_nth_on_map</text>
+<rect class="s-user" x="150.0" y="158" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="209.2" y="158" width="101.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="312.8" y="158" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="407.6" y="173" fill="#5b6673">4/17 · 24%</text>
+<text class="ink" x="142" y="201" text-anchor="end" fill="#1b2430">10_inc_nil</text>
+<rect class="s-user" x="150.0" y="186" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="209.2" y="186" width="101.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="312.8" y="186" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="407.6" y="201" fill="#5b6673">4/17 · 24%</text>
+<text class="ink" x="142" y="229" text-anchor="end" fill="#1b2430">01_add_string</text>
+<rect class="s-user" x="150.0" y="214" width="57.2" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-core" x="209.2" y="214" width="57.2" height="22" rx="2" fill="#eb6834"/>
+<rect class="s-lang" x="268.4" y="214" width="101.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="372.0" y="214" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="466.8" y="229" fill="#5b6673">4/21 · 19%</text>
+<text class="ink" x="142" y="257" text-anchor="end" fill="#1b2430">03_arity</text>
+<rect class="s-user" x="150.0" y="242" width="27.6" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-lang" x="179.6" y="242" width="101.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="283.2" y="242" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="378.0" y="257" fill="#5b6673">2/15 · 13%</text>
+<text class="ink" x="142" y="285" text-anchor="end" fill="#1b2430">05_lazy</text>
+<rect class="s-user" x="150.0" y="270" width="42.4" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-core" x="194.4" y="270" width="57.2" height="22" rx="2" fill="#eb6834"/>
+<rect class="s-lang" x="253.6" y="270" width="131.2" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="386.8" y="270" width="86.8" height="22" rx="2" fill="#eda100"/>
+<rect class="s-other" x="475.6" y="270" width="42.4" height="22" rx="2" fill="#e87ba4"/>
+<text class="ink-muted" x="526.0" y="285" fill="#5b6673">3/29 · 10%</text>
+<text class="ink" x="142" y="313" text-anchor="end" fill="#1b2430">13_ns_typo</text>
+<rect class="s-user" x="150.0" y="298" width="42.4" height="22" rx="2" fill="#2a78d6"/>
+<rect class="s-core" x="194.4" y="298" width="205.2" height="22" rx="2" fill="#eb6834"/>
+<rect class="s-lang" x="401.6" y="298" width="175.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="579.2" y="298" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="674.0" y="313" fill="#5b6673">3/35 · 9%</text>
+<text class="ink" x="142" y="341" text-anchor="end" fill="#1b2430">02_let_binding</text>
+<rect class="s-lang" x="150.0" y="326" width="368.0" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="520.0" y="326" width="86.8" height="22" rx="2" fill="#eda100"/>
+<rect class="s-other" x="608.8" y="326" width="27.6" height="22" rx="2" fill="#e87ba4"/>
+<text class="ink-muted" x="644.4" y="341" fill="#5b6673">0/33 · 0%</text>
+<text class="ink" x="142" y="369" text-anchor="end" fill="#1b2430">06_unresolved</text>
+<rect class="s-lang" x="150.0" y="354" width="397.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="549.6" y="354" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="644.4" y="369" fill="#5b6673">0/33 · 0%</text>
+<text class="ink" x="142" y="397" text-anchor="end" fill="#1b2430">08_missing_paren</text>
+<rect class="s-lang" x="150.0" y="382" width="131.2" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="283.2" y="382" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="378.0" y="397" fill="#5b6673">0/15 · 0%</text>
+<text class="ink" x="142" y="425" text-anchor="end" fill="#1b2430">14_var_typo</text>
+<rect class="s-lang" x="150.0" y="410" width="397.6" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="549.6" y="410" width="86.8" height="22" rx="2" fill="#eda100"/>
+<text class="ink-muted" x="644.4" y="425" fill="#5b6673">0/33 · 0%</text>
+<text class="ink" x="142" y="453" text-anchor="end" fill="#1b2430">15_defn_syntax</text>
+<rect class="s-lang" x="150.0" y="438" width="160.8" height="22" rx="2" fill="#1baf7a"/>
+<rect class="s-main" x="312.8" y="438" width="86.8" height="22" rx="2" fill="#eda100"/>
+<rect class="s-other" x="401.6" y="438" width="27.6" height="22" rx="2" fill="#e87ba4"/>
+<text class="ink-muted" x="437.2" y="453" fill="#5b6673">0/19 · 0%</text>
+<line x1="150" y1="470" x2="668" y2="470" stroke="#5b6673" stroke-width="1" class="axis"/>
+<line x1="150.0" y1="470" x2="150.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="150.0" y="488" text-anchor="middle" fill="#5b6673">0</text>
+<line x1="224.0" y1="470" x2="224.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="224.0" y="488" text-anchor="middle" fill="#5b6673">5</text>
+<line x1="298.0" y1="470" x2="298.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="298.0" y="488" text-anchor="middle" fill="#5b6673">10</text>
+<line x1="372.0" y1="470" x2="372.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="372.0" y="488" text-anchor="middle" fill="#5b6673">15</text>
+<line x1="446.0" y1="470" x2="446.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="446.0" y="488" text-anchor="middle" fill="#5b6673">20</text>
+<line x1="520.0" y1="470" x2="520.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="520.0" y="488" text-anchor="middle" fill="#5b6673">25</text>
+<line x1="594.0" y1="470" x2="594.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="594.0" y="488" text-anchor="middle" fill="#5b6673">30</text>
+<line x1="668.0" y1="470" x2="668.0" y2="474" stroke="#5b6673" class="axis"/>
+<text class="ink-muted" x="668.0" y="488" text-anchor="middle" fill="#5b6673">35</text>
+</svg>

@@ -1,0 +1,5 @@
+Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (NumberFormatException.java:67).
+For input string: "three"
+
+Full report at:
+/tmp/clojure-12501443186798182837.edn

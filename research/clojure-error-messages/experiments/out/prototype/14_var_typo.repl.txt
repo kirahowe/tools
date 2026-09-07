@@ -1,0 +1,15 @@
+Clojure 1.12.6
+user=> -- COMPILE ERROR -------------------------------------- bugs/14_var_typo.clj:5:3
+
+`str/joinn` does not exist in clojure.string.
+
+3 | 
+4 | (defn csv [xs]
+5 |   (str/joinn "," xs))
+  |   ^
+
+RuntimeException: No such var: str/joinn
+
+Did you mean one of these?
+    join
+

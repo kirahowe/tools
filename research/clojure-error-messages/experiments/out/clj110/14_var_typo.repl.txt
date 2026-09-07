@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error compiling at (bugs/14_var_typo.clj:5:3).
+No such var: str/joinn
+user=> 

@@ -1,0 +1,4 @@
+Clojure 1.10.3
+user=> Syntax error (FileNotFoundException) compiling at (bugs/13_ns_typo.clj:1:1).
+Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.
+user=> 

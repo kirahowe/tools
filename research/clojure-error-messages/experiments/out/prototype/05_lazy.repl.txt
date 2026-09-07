@@ -1,0 +1,23 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR ------------------------------------------ ./bugs/05_lazy.clj:4
+
+Could not parse "three" as a number.
+
+2 | 
+3 | (defn parse-all [xs]
+4 |   (map #(Integer/parseInt %) xs))
+  |   ^
+5 | 
+
+NumberFormatException: For input string: "three"
+
+Hint: Validate or trim the string first, or use `parse-long`/`parse-double`, which return nil instead of throwing.
+
+Note: this happened while a lazy sequence was being realized, which can be far from the `map`/`filter`/... that built it.
+
+In your code (innermost first):
+    bugs.lazy/parse-all/<anon>                 05_lazy.clj:4
+    bugs.lazy/eval1329                         05_lazy.clj:8
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 29 internal frames hidden (clojure.core 7, clojure.lang 12, clojure.main 7, jdk 3). (nice-errors.core/pst) shows them.
+

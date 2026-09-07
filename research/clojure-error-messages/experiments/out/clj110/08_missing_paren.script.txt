@@ -1,0 +1,5 @@
+Syntax error reading source at (bugs/08_missing_paren.clj:5:1).
+EOF while reading, starting at line 3
+
+Full report at:
+/tmp/clojure-10854065640130006367.edn

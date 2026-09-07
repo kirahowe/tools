@@ -1,0 +1,5 @@
+Execution error (ArityException) at bugs.arity/eval128 (03_arity.clj:6).
+Wrong number of args (1) passed to: bugs.arity/area
+
+Full report at:
+/tmp/clojure-7544186899356550239.edn

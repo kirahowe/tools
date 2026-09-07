@@ -1,0 +1,18 @@
+Compiling ...-- NAMING ERROR --------------------------------------------------- src/Typo.elm
+
+I cannot find a `List.lenght` variable:
+
+6|     "count: " ++ String.fromInt (List.lenght xs)
+                                    ^^^^^^^^^^^
+The `List` module does not expose a `lenght` variable. These names seem close
+though:
+
+    List.length
+    List.concat
+    List.range
+    List.repeat
+
+Hint: Read <https://elm-lang.org/0.19.1/imports> to see how `import`
+declarations work in Elm.
+
+Detected problems in 1 module.

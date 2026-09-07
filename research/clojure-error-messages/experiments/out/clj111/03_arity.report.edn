@@ -1,0 +1,44 @@
+{:clojure.main/message
+ "Execution error (ArityException) at bugs.arity/eval147 (03_arity.clj:6).\nWrong number of args (1) passed to: bugs.arity/area\n",
+ :clojure.main/triage
+ {:clojure.error/class clojure.lang.ArityException,
+  :clojure.error/line 6,
+  :clojure.error/cause
+  "Wrong number of args (1) passed to: bugs.arity/area",
+  :clojure.error/symbol bugs.arity/eval147,
+  :clojure.error/source "03_arity.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/03_arity.clj:6:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 6,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/03_arity.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 7671]}
+   {:type clojure.lang.ArityException,
+    :message "Wrong number of args (1) passed to: bugs.arity/area",
+    :at [clojure.lang.AFn throwArity "AFn.java" 429]}],
+  :trace
+  [[clojure.lang.AFn throwArity "AFn.java" 429]
+   [clojure.lang.AFn invoke "AFn.java" 32]
+   [bugs.arity$eval147 invokeStatic "03_arity.clj" 6]
+   [bugs.arity$eval147 invoke "03_arity.clj" 6]
+   [clojure.lang.Compiler eval "Compiler.java" 7201]
+   [clojure.lang.Compiler load "Compiler.java" 7659]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7597]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$script_opt invokeStatic "main.clj" 535]
+   [clojure.main$script_opt invoke "main.clj" 530]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause "Wrong number of args (1) passed to: bugs.arity/area",
+  :phase :execution}}
+

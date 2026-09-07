@@ -1,0 +1,5 @@
+Execution error (ClassCastException) at bugs.string-as-fn/shout (04_string_as_fn.clj:4).
+class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+
+Full report at:
+/tmp/clojure-8482967473882567155.edn

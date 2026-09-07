@@ -1,0 +1,22 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/07_nil_interop.clj:4
+
+A Java method was called on nil.
+
+2 | 
+3 | (defn shout [s]
+4 |   (.toUpperCase s))
+  |   ^
+5 | 
+    (the JVM records only a line number; the column is a guess)
+
+NullPointerException: Cannot invoke "Object.getClass()" because "target" is null
+
+Hint: The object before the method name is nil. Check the value flowing into this call, or guard it with `some->`.
+
+In your code (innermost first):
+    bugs.nil-interop/shout                     07_nil_interop.clj:4
+    bugs.nil-interop/eval1326                  07_nil_interop.clj:6
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 17 internal frames hidden (clojure.core 1, clojure.lang 9, clojure.main 7). (nice-errors.core/pst) shows them.
+

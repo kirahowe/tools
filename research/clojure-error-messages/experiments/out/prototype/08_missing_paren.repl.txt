@@ -1,0 +1,15 @@
+Clojure 1.12.6
+user=> -- SYNTAX ERROR ------------------------------------ bugs/08_missing_paren.clj:3
+
+A form was never closed.
+
+1 | (ns bugs.missing-paren)
+2 | 
+3 | (defn add [a b]
+  | ^
+4 |   (+ a b)
+
+EOF while reading, starting at line 3
+
+Hint: Every ( [ { and " needs a matching closer. The form that was still open is marked above.
+

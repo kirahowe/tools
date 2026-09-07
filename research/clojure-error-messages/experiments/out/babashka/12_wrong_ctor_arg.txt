@@ -1,0 +1,17 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.IllegalArgumentException
+Message:  No matching ctor found for class java.io.File
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/12_wrong_ctor_arg.clj:7:1
+
+----- Context ------------------------------------------------------------------
+3: 
+4: (defn file-of [x]
+5:   (File. x))
+6: 
+7: (file-of 42)
+   ^--- No matching ctor found for class java.io.File
+
+----- Stack trace --------------------------------------------------------------
+bugs.wrong-ctor-arg/file-of - /home/user/tools/research/clojure-error-messages/experiments/bugs/12_wrong_ctor_arg.clj:4:1
+bugs.wrong-ctor-arg         - /home/user/tools/research/clojure-error-messages/experiments/bugs/12_wrong_ctor_arg.clj:7:1
+

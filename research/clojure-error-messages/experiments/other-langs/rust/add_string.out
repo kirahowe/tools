@@ -1,0 +1,21 @@
+error[E0277]: cannot add `&str` to `{integer}`
+ --> add_string.rs:6:15
+  |
+6 |     let t = 1 + "2";
+  |               ^ no implementation for `{integer} + &str`
+  |
+  = help: the trait `Add<&str>` is not implemented for `{integer}`
+  = help: the following other types implement trait `Add<Rhs>`:
+            `&f128` implements `Add<f128>`
+            `&f128` implements `Add`
+            `&f16` implements `Add<f16>`
+            `&f16` implements `Add`
+            `&f32` implements `Add<f32>`
+            `&f32` implements `Add`
+            `&f64` implements `Add<f64>`
+            `&f64` implements `Add`
+          and 56 others
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0277`.

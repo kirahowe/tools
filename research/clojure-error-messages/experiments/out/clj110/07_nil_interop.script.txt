@@ -1,0 +1,5 @@
+Syntax error (NullPointerException) compiling at (bugs/07_nil_interop.clj:6:1).
+Cannot invoke "Object.getClass()" because "target" is null
+
+Full report at:
+/tmp/clojure-11425258521610147258.edn

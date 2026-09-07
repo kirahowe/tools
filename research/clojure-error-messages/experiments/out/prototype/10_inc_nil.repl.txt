@@ -1,0 +1,21 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/10_inc_nil.clj:6
+
+Arithmetic on nil.
+
+4 | 
+5 | (defn next-port [c]
+6 |   (inc (:prot c)))       ; typo: :prot
+  |   ^
+7 | 
+
+NullPointerException: Cannot invoke "Object.getClass()" because "x" is null
+
+Hint: One of the arguments to the arithmetic on this line was nil. nil usually comes from a map lookup with a missing or misspelled key, or from `first`/`get` on an empty collection.
+
+In your code (innermost first):
+    bugs.inc-nil/next-port                     10_inc_nil.clj:6
+    bugs.inc-nil/eval1326                      10_inc_nil.clj:8
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 18 internal frames hidden (clojure.core 1, clojure.lang 10, clojure.main 7). (nice-errors.core/pst) shows them.
+

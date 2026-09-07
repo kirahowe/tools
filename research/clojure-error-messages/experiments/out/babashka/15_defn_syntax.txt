@@ -1,0 +1,18 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.IllegalArgumentException
+Message:  Don't know how to create ISeq from: clojure.lang.Symbol
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/15_defn_syntax.clj:3:1
+Phase:    macroexpand
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.defn-syntax)
+2: 
+3: (defn square (x)
+   ^--- Don't know how to create ISeq from: clojure.lang.Symbol
+4:   (* x x))
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/first--5470 - <built-in>
+clojure.core/defn        - <built-in>
+bugs.defn-syntax         - /home/user/tools/research/clojure-error-messages/experiments/bugs/15_defn_syntax.clj:3:1
+

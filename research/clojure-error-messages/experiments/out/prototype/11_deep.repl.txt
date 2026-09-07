@@ -1,0 +1,25 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR ------------------------------------------ ./bugs/11_deep.clj:4
+
+Could not parse the input as a number.
+
+2 | 
+3 | (defn parse-row [row]
+4 |   (update row :qty #(Integer/parseInt %)))
+  |   ^
+5 | 
+
+NumberFormatException: Cannot parse null string
+
+Hint: Validate or trim the string first, or use `parse-long`/`parse-double`, which return nil instead of throwing.
+
+In your code (innermost first):
+    bugs.deep/parse-row/<anon>                 11_deep.clj:4
+    bugs.deep/parse-row                        11_deep.clj:4
+    bugs.deep/load-rows                        11_deep.clj:7
+    bugs.deep/total-qty                        11_deep.clj:10
+    bugs.deep/-main                            11_deep.clj:13
+    bugs.deep/eval1332                         11_deep.clj:15
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 23 internal frames hidden (clojure.core 5, clojure.lang 9, clojure.main 7, jdk 2). (nice-errors.core/pst) shows them.
+

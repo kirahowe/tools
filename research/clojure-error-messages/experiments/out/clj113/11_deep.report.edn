@@ -1,0 +1,59 @@
+{:clojure.main/message
+ "Execution error (NumberFormatException) at java.lang.Integer/parseInt (Integer.java:624).\nCannot parse null string\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.NumberFormatException,
+  :clojure.error/line 624,
+  :clojure.error/cause "Cannot parse null string",
+  :clojure.error/symbol java.lang.Integer/parseInt,
+  :clojure.error/source "Integer.java",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error executing at (/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:15:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 15,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 8241]}
+   {:type java.lang.NumberFormatException,
+    :message "Cannot parse null string",
+    :at [java.lang.Integer parseInt "Integer.java" 624]}],
+  :trace
+  [[java.lang.Integer parseInt "Integer.java" 624]
+   [java.lang.Integer parseInt "Integer.java" 778]
+   [bugs.deep$parse_row$fn__128 invoke "11_deep.clj" 4]
+   [clojure.core$update invokeStatic "core.clj" 6361]
+   [clojure.core$update invoke "core.clj" 6353]
+   [bugs.deep$parse_row invokeStatic "11_deep.clj" 4]
+   [bugs.deep$parse_row invoke "11_deep.clj" 3]
+   [clojure.core$mapv$fn__8660 invoke "core.clj" 7147]
+   [clojure.lang.PersistentVector reduce "PersistentVector.java" 418]
+   [clojure.core$reduce invokeStatic "core.clj" 7052]
+   [clojure.core$mapv invokeStatic "core.clj" 7138]
+   [clojure.core$mapv invoke "core.clj" 7138]
+   [bugs.deep$load_rows invokeStatic "11_deep.clj" 7]
+   [bugs.deep$load_rows invoke "11_deep.clj" 6]
+   [bugs.deep$total_qty invokeStatic "11_deep.clj" 10]
+   [bugs.deep$total_qty invoke "11_deep.clj" 9]
+   [bugs.deep$_main invokeStatic "11_deep.clj" 13]
+   [bugs.deep$_main invoke "11_deep.clj" 12]
+   [bugs.deep$eval134 invokeStatic "11_deep.clj" 15]
+   [bugs.deep$eval134 invoke "11_deep.clj" 15]
+   [clojure.lang.Compiler eval "Compiler.java" 7763]
+   [clojure.lang.Compiler load "Compiler.java" 8229]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8167]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "Cannot parse null string",
+  :phase :execution}}
+

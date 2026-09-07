@@ -1,0 +1,21 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/12_wrong_ctor_arg.clj:4
+
+Java interop could not find a constructor/method taking these argument types.
+
+2 |   (:import [java.io File]))
+3 | 
+4 | (defn file-of [x]
+  | ^
+5 |   (File. x))
+
+IllegalArgumentException: No matching ctor found for class java.io.File
+
+Hint: Reflection matches on the runtime types of the arguments. Check them with `(type x)`; a common cause is passing a number or nil where a String is expected.
+
+In your code (innermost first):
+    bugs.wrong-ctor-arg/file-of                12_wrong_ctor_arg.clj:4
+    bugs.wrong-ctor-arg/eval1326               12_wrong_ctor_arg.clj:7
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 17 internal frames hidden (clojure.core 1, clojure.lang 9, clojure.main 7). (nice-errors.core/pst) shows them.
+

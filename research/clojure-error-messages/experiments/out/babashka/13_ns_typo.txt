@@ -1,0 +1,16 @@
+----- Error --------------------------------------------------------------------
+Type:     java.io.FileNotFoundException
+Message:  Could not locate clojure/strng.bb, clojure/strng.clj or clojure/strng.cljc on classpath.
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/13_ns_typo.clj:2:3
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.ns-typo
+2:   (:require [clojure.strng :as str]))
+     ^--- Could not locate clojure/strng.bb, clojure/strng.clj or clojure/strng.cljc on classpath.
+3: 
+4: (str/join "," [1 2 3])
+
+----- Stack trace --------------------------------------------------------------
+babashka.main/exec/fn--34554/load-fn--34565 - <built-in>
+bugs.ns-typo                                - /home/user/tools/research/clojure-error-messages/experiments/bugs/13_ns_typo.clj:2:3
+

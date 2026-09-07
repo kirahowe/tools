@@ -1,0 +1,5 @@
+Syntax error (IllegalArgumentException) compiling at (bugs/12_wrong_ctor_arg.clj:7:1).
+No matching ctor found for class java.io.File
+
+Full report at:
+/tmp/clojure-621097055508898346.edn

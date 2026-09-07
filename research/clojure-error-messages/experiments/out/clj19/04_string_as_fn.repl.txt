@@ -1,0 +1,3 @@
+Clojure 1.9.0
+user=> CompilerException java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app'), compiling:(/home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:4:21) 
+user=> 

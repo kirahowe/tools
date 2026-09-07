@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> Syntax error: the name pritnln is not defined, compiling at (bugs/06_unresolved.clj:4:3).

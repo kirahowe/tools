@@ -1,0 +1,4 @@
+Clojure 1.12.6
+user=> Execution error (NullPointerException) at bugs.nil-interop/shout (07_nil_interop.clj:4).
+Cannot invoke "Object.getClass()" because "target" is null
+user=> 

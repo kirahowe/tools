@@ -3,3 +3,8 @@ dist/
 *.log
 .DS_Store
 .wrangler/
+
+# research scratch: resolved Maven/Clojure caches
+research/**/.cpcache/
+research/**/elm-stuff/
+research/**/other-langs/rust/panic

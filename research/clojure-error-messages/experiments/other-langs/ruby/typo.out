@@ -1,0 +1,7 @@
+ruby/typo.rb:2:in `report': undefined method `pritn' for main (NoMethodError)
+
+  pritn "count:", xs.length
+  ^^^^^
+Did you mean?  print
+               printf
+	from ruby/typo.rb:5:in `<main>'

@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> Expected a function, but was given a string, at bugs.string-as-fn/shout (04_string_as_fn.clj:4) - runtime error (unexpected type).

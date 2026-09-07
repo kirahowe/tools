@@ -1,0 +1,29 @@
+user=> Execution error (NumberFormatException) at java.lang.Integer/parseInt (Integer.java:624).
+Cannot parse null string
+         clojure.core/eval      core.clj:3236
+                       ...
+              user/eval800    REPL Input
+                       ...
+         bugs.deep/eval819   11_deep.clj:  15
+           bugs.deep/-main   11_deep.clj:  13
+       bugs.deep/total-qty   11_deep.clj:  10
+       bugs.deep/load-rows   11_deep.clj:   7
+         clojure.core/mapv      core.clj:7054
+       clojure.core/reduce      core.clj:6968
+                       ...
+      clojure.core/mapv/fn      core.clj:7063
+       bugs.deep/parse-row   11_deep.clj:   4
+       clojure.core/update      core.clj:6263
+    bugs.deep/parse-row/fn   11_deep.clj:   4
+java.lang.Integer.parseInt  Integer.java: 778
+java.lang.Integer.parseInt  Integer.java: 624
+        java.lang.NumberFormatException: Cannot parse null string
+clojure.lang.Compiler$CompilerException: Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj:15:1).
+  data: #:clojure.error{:phase :execution,
+                        :line 15,
+                        :column 1,
+                        :source
+                        "/home/user/tools/research/clojure-error-messages/experiments/bugs/11_deep.clj"}
+
+nil
+user=> 

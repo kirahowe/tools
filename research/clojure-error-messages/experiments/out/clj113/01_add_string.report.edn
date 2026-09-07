@@ -1,0 +1,52 @@
+{:clojure.main/message
+ "Execution error (ClassCastException) at bugs.add-string/total (01_add_string.clj:4).\nclass java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.ClassCastException,
+  :clojure.error/line 4,
+  :clojure.error/cause
+  "class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')",
+  :clojure.error/symbol bugs.add-string/total,
+  :clojure.error/source "01_add_string.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error executing at (/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj:6:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 6,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 8241]}
+   {:type java.lang.ClassCastException,
+    :message
+    "class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')",
+    :at [clojure.lang.Numbers add "Numbers.java" 155]}],
+  :trace
+  [[clojure.lang.Numbers add "Numbers.java" 155]
+   [clojure.core$_PLUS_ invokeStatic "core.clj" 994]
+   [clojure.core$_PLUS_ invoke "core.clj" 986]
+   [clojure.lang.PersistentVector reduce "PersistentVector.java" 404]
+   [clojure.core$reduce invokeStatic "core.clj" 7048]
+   [clojure.core$reduce invoke "core.clj" 7035]
+   [bugs.add_string$total invokeStatic "01_add_string.clj" 4]
+   [bugs.add_string$total invoke "01_add_string.clj" 3]
+   [bugs.add_string$eval128 invokeStatic "01_add_string.clj" 6]
+   [bugs.add_string$eval128 invoke "01_add_string.clj" 6]
+   [clojure.lang.Compiler eval "Compiler.java" 7763]
+   [clojure.lang.Compiler load "Compiler.java" 8229]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8167]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause
+  "class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')",
+  :phase :execution}}
+

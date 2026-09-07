@@ -1,0 +1,5 @@
+Syntax error (UnsupportedOperationException) compiling at (bugs/09_nth_on_map.clj:8:1).
+nth not supported on this type: PersistentArrayMap
+
+Full report at:
+/tmp/clojure-8897605048947555550.edn

@@ -1,0 +1,15 @@
+
+thread 'main' (6753) panicked at panic.rs:4:21:
+index out of bounds: the len is 3 but the index is 5
+stack backtrace:
+   0: __rustc::rust_begin_unwind
+             at /rustc/e408947bfd200af42db322daf0fadfe7e26d3bd1/library/std/src/panicking.rs:689:5
+   1: core::panicking::panic_fmt
+             at /rustc/e408947bfd200af42db322daf0fadfe7e26d3bd1/library/core/src/panicking.rs:80:14
+   2: core::panicking::panic_bounds_check
+             at /rustc/e408947bfd200af42db322daf0fadfe7e26d3bd1/library/core/src/panicking.rs:271:5
+   3: <usize as core::slice::index::SliceIndex<[T]>>::index
+   4: <alloc::vec::Vec<T,A> as core::ops::index::Index<I>>::index
+   5: panic::main
+   6: core::ops::function::FnOnce::call_once
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

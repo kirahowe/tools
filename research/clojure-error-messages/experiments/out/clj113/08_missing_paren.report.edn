@@ -1,0 +1,43 @@
+{:clojure.main/message
+ "Syntax error reading source at (bugs/08_missing_paren.clj:5:1).\nEOF while reading, starting at line 3\n",
+ :clojure.main/triage
+ {:clojure.error/phase :read-source,
+  :clojure.error/line 5,
+  :clojure.error/column 1,
+  :clojure.error/source "08_missing_paren.clj",
+  :clojure.error/path "bugs/08_missing_paren.clj",
+  :clojure.error/cause "EOF while reading, starting at line 3"},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error reading source at (/home/user/tools/research/clojure-error-messages/experiments/bugs/08_missing_paren.clj:5:1).",
+    :data
+    {:clojure.error/phase :read-source,
+     :clojure.error/line 5,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/08_missing_paren.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 8236]}
+   {:type java.lang.RuntimeException,
+    :message "EOF while reading, starting at line 3",
+    :at [clojure.lang.Util runtimeException "Util.java" 221]}],
+  :trace
+  [[clojure.lang.Util runtimeException "Util.java" 221]
+   [clojure.lang.LispReader readDelimitedList "LispReader.java" 1408]
+   [clojure.lang.LispReader$ListReader invoke "LispReader.java" 1246]
+   [clojure.lang.LispReader read "LispReader.java" 287]
+   [clojure.lang.LispReader read "LispReader.java" 218]
+   [clojure.lang.Compiler load "Compiler.java" 8224]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8167]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "EOF while reading, starting at line 3",
+  :phase :read-source}}
+

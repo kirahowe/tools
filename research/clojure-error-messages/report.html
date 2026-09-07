@@ -1,0 +1,998 @@
+<title>Clojure's Error Messages</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+
+<style>
+  :root {
+    color-scheme: light;
+    --paper:      #f2f3ef;
+    --paper-2:    #e9ebe3;
+    --card:       #fbfcf8;
+    --listing:    #fcfdfa;
+    --band:       #eef1e7;   /* green-bar stripe */
+    --ink:        #1b2430;
+    --ink-2:      #5b6673;
+    --ink-3:      #828d99;
+    --rule:       #d2d7cc;
+    --rule-soft:  #e2e6da;
+    --accent:     #1d4e89;
+    --accent-soft:#dce7f4;
+    --loss:       #a8321f;
+    --loss-soft:  #f6e2dd;
+    --hook:       #3d7d2c;
+    --hook-soft:  #e2eeda;
+    --s-user:     #2a78d6;
+    --s-core:     #eb6834;
+    --s-lang:     #1baf7a;
+    --s-main:     #eda100;
+    --s-other:    #e87ba4;
+    --shadow:     0 1px 2px rgba(27,36,48,.06), 0 8px 24px -16px rgba(27,36,48,.28);
+
+    --measure: 68ch;
+    --step--1: .8125rem;
+    --step-0:  1.0rem;
+    --step-1:  1.1875rem;
+    --step-2:  1.5rem;
+    --step-3:  2.0rem;
+    --step-4:  2.75rem;
+    --step-5:  3.5rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:      #141b22;
+      --paper-2:    #1a232c;
+      --card:       #1a232c;
+      --listing:    #0e141a;
+      --band:       #141c23;
+      --ink:        #e4e9ee;
+      --ink-2:      #97a3b0;
+      --ink-3:      #78838f;
+      --rule:       #2d3843;
+      --rule-soft:  #232d37;
+      --accent:     #7fb3ef;
+      --accent-soft:#1c2c40;
+      --loss:       #ef8a7c;
+      --loss-soft:  #35211d;
+      --hook:       #86c96f;
+      --hook-soft:  #1e2c1a;
+      --s-user:     #3987e5;
+      --s-core:     #d95926;
+      --s-lang:     #199e70;
+      --s-main:     #c98500;
+      --s-other:    #d55181;
+      --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:      #141b22;
+    --paper-2:    #1a232c;
+    --card:       #1a232c;
+    --listing:    #0e141a;
+    --band:       #141c23;
+    --ink:        #e4e9ee;
+    --ink-2:      #97a3b0;
+    --ink-3:      #78838f;
+    --rule:       #2d3843;
+    --rule-soft:  #232d37;
+    --accent:     #7fb3ef;
+    --accent-soft:#1c2c40;
+    --loss:       #ef8a7c;
+    --loss-soft:  #35211d;
+    --hook:       #86c96f;
+    --hook-soft:  #1e2c1a;
+    --s-user:     #3987e5;
+    --s-core:     #d95926;
+    --s-lang:     #199e70;
+    --s-main:     #c98500;
+    --s-other:    #d55181;
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: var(--step-0);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 1120px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem) 6rem; }
+  .col  { max-width: var(--measure); }
+  .wide { max-width: 100%; }
+
+  h1, h2, h3, h4 { font-family: "Zilla Slab", Georgia, serif; text-wrap: balance; margin: 0; }
+  h1 { font-size: var(--step-5); line-height: 1.02; font-weight: 700; letter-spacing: -.015em; }
+  h2 { font-size: var(--step-3); line-height: 1.12; font-weight: 600; letter-spacing: -.01em; }
+  h3 { font-size: var(--step-1); line-height: 1.25; font-weight: 600; }
+  h4 { font-size: var(--step-0); line-height: 1.3;  font-weight: 600; }
+  p  { margin: 0; }
+  a  { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  strong { font-weight: 600; }
+  code, kbd { font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; font-size: .875em; }
+  p code, li code, td code, th code, dd code {
+    background: var(--paper-2); border: 1px solid var(--rule-soft);
+    border-radius: 3px; padding: .05em .3em;
+  }
+
+  .flow > * + * { margin-top: 1rem; }
+  .stack { display: flex; flex-direction: column; }
+
+  /* ---------- masthead ---------- */
+  header.masthead { padding: clamp(3rem, 7vw, 5.5rem) 0 2.5rem; }
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1); letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-2);
+  }
+  .masthead h1 { margin-top: 1rem; max-width: 16ch; }
+  .deck { font-size: var(--step-2); line-height: 1.35; margin-top: 1.5rem; max-width: 46ch; color: var(--ink); font-family: "Zilla Slab", Georgia, serif; font-weight: 500; }
+  .byline { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; font-size: var(--step--1); color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 1rem; }
+  .byline b { font-weight: 600; color: var(--ink); }
+
+  /* ---------- section rhythm ---------- */
+  section { padding-top: 4.5rem; }
+  .sec-head { border-top: 2px solid var(--ink); padding-top: 1rem; margin-bottom: 2rem; }
+  .sec-head .q {
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: var(--step--1);
+    letter-spacing: .08em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: .6rem;
+  }
+  .sec-head h2 { max-width: 24ch; }
+  .lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink); margin-top: 1rem; max-width: 60ch; }
+
+  /* ---------- listings (the hero content type) ---------- */
+  figure { margin: 0; }
+  .listing {
+    background: var(--listing);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .listing > .tag {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    padding: .45rem .8rem;
+    background: var(--paper-2);
+    border-bottom: 1px solid var(--rule);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    color: var(--ink-2);
+  }
+  .listing > .tag b { color: var(--ink); font-weight: 700; letter-spacing: .01em; }
+  .listing pre {
+    margin: 0; padding: .85rem .9rem; overflow-x: auto;
+    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    font-size: .78rem; line-height: 1.6; tab-size: 2;
+    color: var(--ink);
+  }
+  .listing pre b { color: var(--loss); font-weight: 700; }
+  .listing pre i { color: var(--ink-3); font-style: normal; }
+  .listing pre u { color: var(--hook); text-decoration: none; font-weight: 700; }
+  .listing.good { border-color: color-mix(in srgb, var(--hook) 40%, var(--rule)); }
+  .listing.good > .tag { background: var(--hook-soft); }
+  .listing.bad > .tag  { background: var(--loss-soft); }
+
+  .grid-2 { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+  .grid-3 { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+  @media (min-width: 780px)  { .grid-3 { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1040px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+
+  figcaption { font-size: var(--step--1); color: var(--ink-2); margin-top: .7rem; max-width: 72ch; }
+
+  /* ---------- tables ---------- */
+  .scroller { overflow-x: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: var(--step--1); }
+  th, td { text-align: left; padding: .55rem .75rem; vertical-align: top; border-bottom: 1px solid var(--rule-soft); }
+  thead th {
+    position: sticky; top: 0; background: var(--paper-2); color: var(--ink);
+    font-weight: 600; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase;
+    border-bottom: 1px solid var(--rule); white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: "JetBrains Mono", ui-monospace, monospace; white-space: nowrap; }
+  td.mono, th.mono { font-family: "JetBrains Mono", ui-monospace, monospace; white-space: nowrap; }
+  tbody tr.total td { font-weight: 600; border-top: 1px solid var(--rule); background: var(--paper-2); }
+  .yes { color: var(--hook); font-weight: 600; }
+  .no  { color: var(--loss); }
+  .partly { color: var(--ink-2); }
+
+  /* ---------- small parts ---------- */
+  .chip {
+    display: inline-flex; align-items: center; gap: .4rem;
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .72rem;
+    letter-spacing: .04em; text-transform: uppercase;
+    padding: .15rem .45rem; border-radius: 3px; border: 1px solid var(--rule);
+    background: var(--paper-2); color: var(--ink-2); white-space: nowrap;
+  }
+  .chip.loss { color: var(--loss); border-color: color-mix(in srgb, var(--loss) 35%, var(--rule)); background: var(--loss-soft); }
+  .chip.hook { color: var(--hook); border-color: color-mix(in srgb, var(--hook) 35%, var(--rule)); background: var(--hook-soft); }
+  .swatch { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; }
+
+  .kicker { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: var(--step--1); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+
+  .findings { display: grid; gap: 0; margin-top: 2rem; border-top: 1px solid var(--rule); }
+  .finding { display: grid; grid-template-columns: 1fr; gap: .35rem; padding: 1.15rem 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 760px) { .finding { grid-template-columns: 13rem 1fr; gap: 1.5rem; } }
+  .finding .label { font-family: "Zilla Slab", Georgia, serif; font-weight: 600; font-size: var(--step-1); line-height: 1.25; }
+  .finding .label small { display: block; font-family: "JetBrains Mono", monospace; font-size: .7rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); font-weight: 400; margin-top: .2rem; }
+  .finding .body { max-width: 64ch; }
+
+  ol.steps { list-style: none; counter-reset: s; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; }
+  ol.steps li { counter-increment: s; display: grid; grid-template-columns: 2rem 1fr; gap: .9rem; max-width: 66ch; }
+  ol.steps li::before {
+    content: counter(s); font-family: "JetBrains Mono", monospace; font-size: .8rem; font-weight: 700;
+    color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--rule));
+    background: var(--accent-soft);
+    border-radius: 50%; width: 1.75rem; height: 1.75rem; display: grid; place-items: center; margin-top: .12rem;
+  }
+
+  ul.plain { margin: 1rem 0 0; padding-left: 1.15rem; max-width: 66ch; }
+  ul.plain li + li { margin-top: .5rem; }
+
+  blockquote {
+    margin: 1.5rem 0; padding: .25rem 0 .25rem 1.25rem;
+    border-left: 3px solid var(--accent);
+    font-family: "Zilla Slab", Georgia, serif; font-size: var(--step-1); line-height: 1.45;
+    max-width: 60ch;
+  }
+  blockquote cite { display: block; margin-top: .6rem; font-family: "IBM Plex Sans", sans-serif; font-size: var(--step--1); font-style: normal; color: var(--ink-2); }
+
+  .callout {
+    border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    background: var(--card); border-radius: 0 4px 4px 0; padding: 1.1rem 1.25rem; max-width: 72ch;
+  }
+  .callout .kicker { color: var(--accent); }
+  .callout > * + * { margin-top: .6rem; }
+
+  /* ---------- figures / svg ---------- */
+  .figwrap { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 1.25rem; overflow-x: auto; }
+  .figwrap svg { display: block; max-width: 100%; height: auto; min-width: 660px; }
+  .chart .ink { fill: var(--ink); }
+  .chart .ink-muted { fill: var(--ink-2); }
+  .chart .axis { stroke: var(--ink-3); }
+  .chart .s-user  { fill: var(--s-user); }
+  .chart .s-core  { fill: var(--s-core); }
+  .chart .s-lang  { fill: var(--s-lang); }
+  .chart .s-main  { fill: var(--s-main); }
+  .chart .s-other { fill: var(--s-other); }
+  .diagram text { fill: var(--ink); font-family: "IBM Plex Sans", sans-serif; }
+  .diagram .lbl { fill: var(--ink-2); font-family: "JetBrains Mono", monospace; }
+  .diagram .box { fill: var(--card); stroke: var(--rule); }
+  .diagram .box-loss { fill: var(--loss-soft); stroke: color-mix(in srgb, var(--loss) 45%, var(--rule)); }
+  .diagram .box-hook { fill: var(--hook-soft); stroke: color-mix(in srgb, var(--hook) 45%, var(--rule)); }
+  .diagram .flowline { stroke: var(--ink-2); fill: none; }
+  .diagram .lossline { stroke: var(--loss); fill: none; }
+  .diagram .t-loss { fill: var(--loss); }
+  .diagram .t-hook { fill: var(--hook); }
+  .diagram .head { fill: var(--ink-2); }
+  .diagram .head-loss { fill: var(--loss); }
+
+  details { border: 1px solid var(--rule); border-radius: 4px; background: var(--card); padding: .5rem .9rem; }
+  details + details { margin-top: .5rem; }
+  summary { cursor: pointer; font-weight: 600; font-size: var(--step--1); }
+  details[open] summary { margin-bottom: .6rem; }
+  details .flow { font-size: var(--step--1); }
+
+  footer.end { margin-top: 5rem; border-top: 2px solid var(--ink); padding-top: 1.5rem; font-size: var(--step--1); color: var(--ink-2); }
+  footer.end a { color: var(--accent); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a, summary { transition: color .12s ease; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="eyebrow">Research report · 6 September 2026</span>
+    <h1>Clojure's error messages</h1>
+    <p class="deck">Why they read like Java stack traces, what has been tried, and how far an opt-in library can get before it needs the language's help.</p>
+    <div class="byline">
+      <span><b>Run against</b> Clojure 1.8 → 1.13-alpha6 on JDK 21</span>
+      <span><b>Compared with</b> Elm 0.19.1, Rust 1.94, Python 3.11, Ruby 3.3</span>
+      <span><b>15</b> bug programs, <b>345</b> stack frames analysed</span>
+    </div>
+  </header>
+
+  <section id="thesis">
+    <div class="sec-head col">
+      <span class="q">The finding in one screen</span>
+      <h2>The same mistake, four languages</h2>
+    </div>
+    <p class="lede col">A list of prices with one string in it. Every environment below sees the same bug; what differs is how much of what it knows reaches the person reading.</p>
+
+    <div class="grid-2" style="margin-top:2rem">
+      <figure class="listing bad">
+        <div class="tag"><b>Clojure 1.12.6</b><span>clj REPL</span></div>
+<pre>Execution error (ClassCastException) at
+bugs.add-string/total (01_add_string.clj:4).
+<b>class java.lang.String cannot be cast to class
+java.lang.Number (java.lang.String and
+java.lang.Number are in module java.base of
+loader 'bootstrap')</b></pre>
+      </figure>
+
+      <figure class="listing">
+        <div class="tag"><b>Python 3.11</b><span>runtime traceback</span></div>
+<pre>Traceback (most recent call last):
+  File "add_string.py", line 4, in &lt;module&gt;
+    total([10, 20, "30"])
+  File "add_string.py", line 2, in total
+    return sum(prices)
+           <u>^^^^^^^^^^^</u>
+TypeError: unsupported operand type(s) for +:
+'int' and 'str'</pre>
+      </figure>
+
+      <figure class="listing">
+        <div class="tag"><b>Elm 0.19.1</b><span>compile time</span></div>
+<pre>-- TYPE MISMATCH -------- src/AddString.elm
+
+I cannot do addition with String values like
+this one:
+
+10|     1 + "2"
+            <u>^^^</u>
+The (+) operator only works with Int and Float
+values.
+
+Hint: Switch to the (++) operator to append
+strings!</pre>
+      </figure>
+
+      <figure class="listing good">
+        <div class="tag"><b>Clojure + 390-line library</b><span>this report's prototype</span></div>
+<pre>-- RUNTIME ERROR ---- ./bugs/01_add_string.clj:4
+
+Arithmetic on a String instead of a number.
+
+3 | (defn total [prices]
+4 |   (reduce + prices))
+  |           <u>^</u>
+    <i>(the JVM records only a line number; the
+     column is a guess)</i>
+
+Hint: One of the values reaching the arithmetic
+on this line is a String. If it came from user
+input or a file, convert it first (parse-long).</pre>
+      </figure>
+    </div>
+    <figcaption>All four captured by running the code, not quoted from memory. The bolded text in the Clojure panel is written by HotSpot, not by Clojure: <code>Numbers.java</code> never constructs that exception, it just performs a cast the JVM rejects.</figcaption>
+
+    <div class="findings col" style="max-width:none">
+      <div class="finding">
+        <div class="label">Not designed<small>Question 1 · why</small></div>
+        <div class="body">Six of fifteen runtime messages in the test corpus are authored by HotSpot or the JDK, in Java vocabulary. The JVM class file has nowhere to store a column, so a runtime error can never point at a sub-expression. Both are consequences of the hosting strategy, not choices about wording.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Tried twice, seriously<small>Question 2 · attempts</small></div>
+        <div class="body">Core did one redesign, in Clojure 1.10 (2018): error phases, <code>ex-triage</code>, and a REPL that prints two lines instead of a trace. The community has independently rebuilt message-rewriting tables at least four times and stack-frame filters at least six times. None of them share code.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Governance, not apathy<small>Question 3 · barriers</small></div>
+        <div class="body">The core team's position is on the record and consistent since 2011: improve messages, expose data, leave trace presentation and beginner rewrites to tools. A one-line message fix with a community patch took four years to ship.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Copy Ruby, not Elm<small>Question 4 · other languages</small></div>
+        <div class="body">Elm and Rust spend their whole budget at compile time and have almost no runtime error to design. Clojure's problem is a runtime problem. Ruby solved the same problem with third-party gems that were later bundled, then given a real hook.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Most of it, today<small>Question 5 · as a library</small></div>
+        <div class="body">A 390-line library with no dependencies gets source excerpts, hidden frames, plain-language headlines, hints and "did you mean". It cannot get true columns, cannot hook <code>clj -M script.clj</code> at all, and cannot make the four REPL clients agree.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="sec-head col">
+      <span class="q">Question 1</span>
+      <h2>Why are the messages like this?</h2>
+    </div>
+    <p class="lede col">Follow one piece of information — <em>where in the source the error is</em> — from the file to the printed message. It is destroyed twice and rewritten once by a party that has never heard of Clojure.</p>
+
+    <figure style="margin-top:2rem">
+      <div class="figwrap">
+        <svg class="diagram" viewBox="0 0 980 340" role="img" aria-label="A pipeline from source text to printed message. The reader keeps line and column only for lists; the class file keeps only the line; HotSpot authors the message text; ex-triage picks the blamed frame from a hard-coded namespace list.">
+          <defs>
+            <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" class="head"/>
+            </marker>
+            <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" class="head-loss"/>
+            </marker>
+          </defs>
+
+          <!-- row 1: the pipeline -->
+          <rect class="box" x="8"   y="76" width="150" height="74" rx="4"/>
+          <text x="83" y="100" text-anchor="middle" font-size="13" font-weight="600">Source text</text>
+          <text class="lbl" x="83" y="118" text-anchor="middle" font-size="11">(reduce + prices)</text>
+          <text class="lbl" x="83" y="134" text-anchor="middle" font-size="11">line 4, col 3</text>
+
+          <rect class="box-loss" x="196" y="76" width="160" height="74" rx="4"/>
+          <text x="276" y="100" text-anchor="middle" font-size="13" font-weight="600">Reader</text>
+          <text class="lbl t-loss" x="276" y="118" text-anchor="middle" font-size="11">line + column kept</text>
+          <text class="lbl t-loss" x="276" y="134" text-anchor="middle" font-size="11">only for lists</text>
+
+          <rect class="box" x="394" y="76" width="150" height="74" rx="4"/>
+          <text x="469" y="100" text-anchor="middle" font-size="13" font-weight="600">Compiler</text>
+          <text class="lbl" x="469" y="118" text-anchor="middle" font-size="11">LINE + COLUMN</text>
+          <text class="lbl" x="469" y="134" text-anchor="middle" font-size="11">both in hand</text>
+
+          <rect class="box-loss" x="582" y="76" width="160" height="74" rx="4"/>
+          <text x="662" y="100" text-anchor="middle" font-size="13" font-weight="600">Class file</text>
+          <text class="lbl t-loss" x="662" y="118" text-anchor="middle" font-size="11">LineNumberTable:</text>
+          <text class="lbl t-loss" x="662" y="134" text-anchor="middle" font-size="11">line only</text>
+
+          <rect class="box-loss" x="780" y="76" width="190" height="74" rx="4"/>
+          <text x="875" y="100" text-anchor="middle" font-size="13" font-weight="600">HotSpot / JDK</text>
+          <text class="lbl t-loss" x="875" y="118" text-anchor="middle" font-size="11">writes the message</text>
+          <text class="lbl t-loss" x="875" y="134" text-anchor="middle" font-size="11">in Java vocabulary</text>
+
+          <line class="flowline" x1="160" y1="113" x2="192" y2="113" marker-end="url(#a1)"/>
+          <line class="flowline" x1="358" y1="113" x2="390" y2="113" marker-end="url(#a1)"/>
+          <line class="lossline" x1="546" y1="113" x2="578" y2="113" marker-end="url(#a2)"/>
+          <line class="lossline" x1="744" y1="113" x2="776" y2="113" marker-end="url(#a2)"/>
+
+          <text class="lbl t-loss" x="562" y="64" text-anchor="middle" font-size="11">column dropped</text>
+          <text class="lbl t-loss" x="760" y="64" text-anchor="middle" font-size="11">throws</text>
+
+          <!-- row 2: the printer -->
+          <rect class="box" x="582" y="222" width="160" height="66" rx="4"/>
+          <text x="662" y="246" text-anchor="middle" font-size="13" font-weight="600">ex-triage</text>
+          <text class="lbl" x="662" y="264" text-anchor="middle" font-size="11">blames the first frame</text>
+          <text class="lbl" x="662" y="279" text-anchor="middle" font-size="11">outside a fixed ns list</text>
+
+          <rect class="box" x="394" y="222" width="150" height="66" rx="4"/>
+          <text x="469" y="252" text-anchor="middle" font-size="13" font-weight="600">ex-str</text>
+          <text class="lbl" x="469" y="270" text-anchor="middle" font-size="11">one of 9 templates</text>
+
+          <rect class="box-hook" x="196" y="222" width="160" height="66" rx="4"/>
+          <text x="276" y="246" text-anchor="middle" font-size="13" font-weight="600">printer</text>
+          <text class="lbl t-hook" x="276" y="264" text-anchor="middle" font-size="11">repl-caught /</text>
+          <text class="lbl t-hook" x="276" y="279" text-anchor="middle" font-size="11">nREPL *caught-fn*</text>
+
+          <rect class="box" x="8" y="222" width="150" height="66" rx="4"/>
+          <text x="83" y="252" text-anchor="middle" font-size="13" font-weight="600">What you read</text>
+          <text class="lbl" x="83" y="270" text-anchor="middle" font-size="11">two lines</text>
+
+          <path class="lossline" d="M 875 154 L 875 190 L 662 190 L 662 218" marker-end="url(#a2)"/>
+          <text class="lbl t-loss" x="790" y="184" text-anchor="middle" font-size="11">Throwable → map</text>
+
+          <line class="flowline" x1="578" y1="255" x2="548" y2="255" marker-end="url(#a1)"/>
+          <line class="flowline" x1="390" y1="255" x2="360" y2="255" marker-end="url(#a1)"/>
+          <line class="flowline" x1="192" y1="255" x2="162" y2="255" marker-end="url(#a1)"/>
+
+          <path class="flowline" d="M 276 292 L 276 312" stroke-dasharray="3 3"/>
+          <text class="lbl t-hook" x="276" y="326" text-anchor="middle" font-size="11">a library replaces this box, and nothing upstream of it</text>
+
+          <text class="lbl" x="8" y="30" font-size="11" font-weight="700">READ →  COMPILE →  RUN</text>
+          <text class="lbl" x="8" y="320" font-size="11" font-weight="700">PRINT  ←</text>
+        </svg>
+      </div>
+      <figcaption>Red boxes lose information or author text outside Clojure; green boxes are where a library can attach. Line references for every step are in <code>research/04-internals.md</code>, read against the <code>clojure-1.12.3</code> tag.</figcaption>
+    </figure>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>Five mechanisms, all visible in the source</h3>
+    </div>
+
+    <div class="grid-3" style="margin-top:1.25rem">
+      <div class="callout">
+        <span class="kicker">Only lists have a position</span>
+        <p>The reader attaches <code>:line</code>/<code>:column</code> in exactly two places: <code>ListReader</code> and <code>MetaReader</code> when the target is a seq. Vectors, maps and sets get nothing; symbols are interned bare; keywords, numbers and strings <em>cannot</em> carry metadata at all. Syntax-quote deletes positions from everything a macro builds.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">The class file has no column slot</span>
+        <p>The compiler carries the column all the way to code generation, then calls <code>visitLineNumber(line, label)</code>. ASM's API has no column parameter and the class-file attribute has no field for one. Every runtime location in Clojure is capped at <code>file:line</code>, forever.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Core codes the happy path</span>
+        <p><code>clojure.core/+</code> inlines to <code>Numbers.add</code>, which does <code>(Number)x</code> with no type check first. The cast is a JVM <code>checkcast</code>, so the "cannot be cast to class java.lang.Number" text is HotSpot's. Same for the helpful NullPointerExceptions, which name Java parameters like <code>"x"</code>.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Laziness moves the blame</span>
+        <p><code>(map f coll)</code> runs <code>f</code> inside <code>LazySeq.force</code>, wherever the sequence is first walked. Bug 5 in the corpus builds a sequence on line 4 and fails on line 8 inside <code>reduce</code>. At the REPL, if the consumer is the printer, the message becomes "Error printing return value".</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Macros inherit the call site</span>
+        <p><code>macroexpand1</code> copies no metadata onto the expansion, and syntax-quote stripped what there was, so every form a macro generates reports the line of the macro <em>call</em>. Clojure's own test suite notes it: <code>:line</code> meta on <code>&amp;form</code> does not survive successive expansions.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Names are munged, calls are doubled</span>
+        <p><code>-</code> becomes <code>_</code>, <code>?</code> becomes <code>_QMARK_</code>, anonymous functions get a counter id that changes every run, and direct-linked functions emit both <code>invokeStatic</code> and <code>invoke</code> — so one call is two adjacent frames. Hence <code>bugs.deep$parse_row$fn__147.invoke</code>.</p>
+      </div>
+    </div>
+
+    <div class="col flow" style="margin-top:3rem">
+      <h3>How much of a stack trace is yours</h3>
+      <p>Fifteen realistic bugs, each run as a script so Clojure writes its full error report. Every frame in those reports classified by the class that owns it.</p>
+    </div>
+
+    <figure style="margin-top:1.5rem">
+      <div class="figwrap chart">
+        <svg viewBox="0 0 760 500" role="img" aria-label="For each of 15 bugs, how many stack frames belong to the user's code versus Clojure internals. Overall 43 of 345 frames, 12.5 percent, are the user's; five bugs have none at all." font-family="JetBrains Mono, ui-monospace, Menlo, monospace" font-size="12">
+<rect class="s-user" x="0" y="12" width="12" height="12" rx="2"/>
+<text class="ink" x="17" y="22">your code</text>
+<rect class="s-core" x="99.8" y="12" width="12" height="12" rx="2"/>
+<text class="ink" x="116.8" y="22">clojure.core</text>
+<rect class="s-lang" x="221.2" y="12" width="12" height="12" rx="2"/>
+<text class="ink" x="238.2" y="22">clojure.lang</text>
+<rect class="s-main" x="342.6" y="12" width="12" height="12" rx="2"/>
+<text class="ink" x="359.6" y="22">clojure.main (launcher)</text>
+<rect class="s-other" x="543.2" y="12" width="12" height="12" rx="2"/>
+<text class="ink" x="560.2" y="22">spec / JDK</text>
+<text class="ink" x="142" y="61" text-anchor="end">11_deep</text>
+<rect class="s-user" x="150.0" y="46" width="160.8" height="22" rx="2"/>
+<rect class="s-core" x="312.8" y="46" width="86.8" height="22" rx="2"/>
+<rect class="s-lang" x="401.6" y="46" width="86.8" height="22" rx="2"/>
+<rect class="s-main" x="490.4" y="46" width="86.8" height="22" rx="2"/>
+<rect class="s-other" x="579.2" y="46" width="27.6" height="22" rx="2"/>
+<text class="ink-muted" x="614.8" y="61">11/31 · 35%</text>
+<text class="ink" x="142" y="89" text-anchor="end">04_string_as_fn</text>
+<rect class="s-user" x="150.0" y="74" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="209.2" y="74" width="72.0" height="22" rx="2"/>
+<rect class="s-main" x="283.2" y="74" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="378.0" y="89">4/15 · 27%</text>
+<text class="ink" x="142" y="117" text-anchor="end">07_nil_interop</text>
+<rect class="s-user" x="150.0" y="102" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="209.2" y="102" width="86.8" height="22" rx="2"/>
+<rect class="s-main" x="298.0" y="102" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="392.8" y="117">4/16 · 25%</text>
+<text class="ink" x="142" y="145" text-anchor="end">12_wrong_ctor_arg</text>
+<rect class="s-user" x="150.0" y="130" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="209.2" y="130" width="86.8" height="22" rx="2"/>
+<rect class="s-main" x="298.0" y="130" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="392.8" y="145">4/16 · 25%</text>
+<text class="ink" x="142" y="173" text-anchor="end">09_nth_on_map</text>
+<rect class="s-user" x="150.0" y="158" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="209.2" y="158" width="101.6" height="22" rx="2"/>
+<rect class="s-main" x="312.8" y="158" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="407.6" y="173">4/17 · 24%</text>
+<text class="ink" x="142" y="201" text-anchor="end">10_inc_nil</text>
+<rect class="s-user" x="150.0" y="186" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="209.2" y="186" width="101.6" height="22" rx="2"/>
+<rect class="s-main" x="312.8" y="186" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="407.6" y="201">4/17 · 24%</text>
+<text class="ink" x="142" y="229" text-anchor="end">01_add_string</text>
+<rect class="s-user" x="150.0" y="214" width="57.2" height="22" rx="2"/>
+<rect class="s-core" x="209.2" y="214" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="268.4" y="214" width="101.6" height="22" rx="2"/>
+<rect class="s-main" x="372.0" y="214" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="466.8" y="229">4/21 · 19%</text>
+<text class="ink" x="142" y="257" text-anchor="end">03_arity</text>
+<rect class="s-user" x="150.0" y="242" width="27.6" height="22" rx="2"/>
+<rect class="s-lang" x="179.6" y="242" width="101.6" height="22" rx="2"/>
+<rect class="s-main" x="283.2" y="242" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="378.0" y="257">2/15 · 13%</text>
+<text class="ink" x="142" y="285" text-anchor="end">05_lazy</text>
+<rect class="s-user" x="150.0" y="270" width="42.4" height="22" rx="2"/>
+<rect class="s-core" x="194.4" y="270" width="57.2" height="22" rx="2"/>
+<rect class="s-lang" x="253.6" y="270" width="131.2" height="22" rx="2"/>
+<rect class="s-main" x="386.8" y="270" width="86.8" height="22" rx="2"/>
+<rect class="s-other" x="475.6" y="270" width="42.4" height="22" rx="2"/>
+<text class="ink-muted" x="526.0" y="285">3/29 · 10%</text>
+<text class="ink" x="142" y="313" text-anchor="end">13_ns_typo</text>
+<rect class="s-user" x="150.0" y="298" width="42.4" height="22" rx="2"/>
+<rect class="s-core" x="194.4" y="298" width="205.2" height="22" rx="2"/>
+<rect class="s-lang" x="401.6" y="298" width="175.6" height="22" rx="2"/>
+<rect class="s-main" x="579.2" y="298" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="674.0" y="313">3/35 · 9%</text>
+<text class="ink" x="142" y="341" text-anchor="end">02_let_binding</text>
+<rect class="s-lang" x="150.0" y="326" width="368.0" height="22" rx="2"/>
+<rect class="s-main" x="520.0" y="326" width="86.8" height="22" rx="2"/>
+<rect class="s-other" x="608.8" y="326" width="27.6" height="22" rx="2"/>
+<text class="ink-muted" x="644.4" y="341">0/33 · 0%</text>
+<text class="ink" x="142" y="369" text-anchor="end">06_unresolved</text>
+<rect class="s-lang" x="150.0" y="354" width="397.6" height="22" rx="2"/>
+<rect class="s-main" x="549.6" y="354" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="644.4" y="369">0/33 · 0%</text>
+<text class="ink" x="142" y="397" text-anchor="end">08_missing_paren</text>
+<rect class="s-lang" x="150.0" y="382" width="131.2" height="22" rx="2"/>
+<rect class="s-main" x="283.2" y="382" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="378.0" y="397">0/15 · 0%</text>
+<text class="ink" x="142" y="425" text-anchor="end">14_var_typo</text>
+<rect class="s-lang" x="150.0" y="410" width="397.6" height="22" rx="2"/>
+<rect class="s-main" x="549.6" y="410" width="86.8" height="22" rx="2"/>
+<text class="ink-muted" x="644.4" y="425">0/33 · 0%</text>
+<text class="ink" x="142" y="453" text-anchor="end">15_defn_syntax</text>
+<rect class="s-lang" x="150.0" y="438" width="160.8" height="22" rx="2"/>
+<rect class="s-main" x="312.8" y="438" width="86.8" height="22" rx="2"/>
+<rect class="s-other" x="401.6" y="438" width="27.6" height="22" rx="2"/>
+<text class="ink-muted" x="437.2" y="453">0/19 · 0%</text>
+<line class="axis" x1="150" y1="470" x2="668" y2="470" stroke-width="1"/>
+<line class="axis" x1="150.0" y1="470" x2="150.0" y2="474"/>
+<text class="ink-muted" x="150.0" y="488" text-anchor="middle">0</text>
+<line class="axis" x1="224.0" y1="470" x2="224.0" y2="474"/>
+<text class="ink-muted" x="224.0" y="488" text-anchor="middle">5</text>
+<line class="axis" x1="298.0" y1="470" x2="298.0" y2="474"/>
+<text class="ink-muted" x="298.0" y="488" text-anchor="middle">10</text>
+<line class="axis" x1="372.0" y1="470" x2="372.0" y2="474"/>
+<text class="ink-muted" x="372.0" y="488" text-anchor="middle">15</text>
+<line class="axis" x1="446.0" y1="470" x2="446.0" y2="474"/>
+<text class="ink-muted" x="446.0" y="488" text-anchor="middle">20</text>
+<line class="axis" x1="520.0" y1="470" x2="520.0" y2="474"/>
+<text class="ink-muted" x="520.0" y="488" text-anchor="middle">25</text>
+<line class="axis" x1="594.0" y1="470" x2="594.0" y2="474"/>
+<text class="ink-muted" x="594.0" y="488" text-anchor="middle">30</text>
+<line class="axis" x1="668.0" y1="470" x2="668.0" y2="474"/>
+<text class="ink-muted" x="668.0" y="488" text-anchor="middle">35</text>
+        </svg>
+      </div>
+      <figcaption>Frames in the root-cause stack trace of each bug's error report, by owner. Across the corpus 43 of 345 frames (12.5%) are the user's code. Every trace carries the same six <code>clojure.main</code> launcher frames; the five bugs with zero user frames are reader and macro errors, where the trace is 25 to 27 frames of <code>clojure.lang.Compiler</code>. Roughly half the user frames are the duplicate <code>invokeStatic</code>/<code>invoke</code> pairs.</figcaption>
+    </figure>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>And a stance, not an oversight</h3>
+      <p>The mechanics explain the shape. The reason the shape has not changed much is a position the core team has held and restated for fifteen years.</p>
+      <blockquote>
+        The core team is very interested in improving error messages, and relatively less interested in more code to manipulate stack traces… any old library code can reduce a stacktrace.
+        <cite>Stuart Halloway, Clojure mailing list, 2011, in a thread titled "better error messages &gt; smaller stack traces"</cite>
+      </blockquote>
+      <blockquote>
+        Does Clojure need to incorporate a bunch of changes in its 1.9 release cycle in order to provide a better experience for beginners? No. Who can make a better experience for beginners? Anybody!
+        <cite>Stuart Halloway, "REPL-Driven Development", 2017</cite>
+      </blockquote>
+      <blockquote>
+        I do really want to see the actual stack trace so I don't think that should go away… a lot of people have poured time into this and the results are not (imo) better than the original. I say that not to throw water on it, but just to note that it seems easy but the details are complicated.
+        <cite>Alex Miller, ask.clojure.org, 2021</cite>
+      </blockquote>
+      <p>Read together, these are a division of labour: core improves message text where Clojure authors it and exposes data for tools; presentation and beginner-friendly rewriting are the tools' job. That is exactly the space an opt-in library occupies — and it is an invitation, if you take it at face value.</p>
+    </div>
+  </section>
+
+  <section id="attempts">
+    <div class="sec-head col">
+      <span class="q">Question 2</span>
+      <h2>What has already been tried?</h2>
+    </div>
+    <p class="lede col">One serious redesign inside the language, and about a dozen attempts outside it, most of which rebuild the same two things from scratch.</p>
+
+    <div class="col flow" style="margin-top:2rem">
+      <h3>Inside Clojure</h3>
+    </div>
+    <div class="scroller" style="margin-top:1rem">
+      <table>
+        <thead><tr><th class="mono">Version</th><th class="mono">Date</th><th>What changed for errors</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1.5 – 1.8</td><td class="mono">2013–16</td><td>An "Error messages" section in every changelog. 1.7 adds <code>Throwable-&gt;map</code> and <code>#error {…}</code> printing — errors become data.</td></tr>
+          <tr><td class="mono">1.9</td><td class="mono">2017-12</td><td>Specs checked on core macros. The message embedded the entire explain-data map, including a <code>#object[…reify__2436…]</code>. Widely considered a regression; the 2018 survey analysis said errors "have gotten worse".</td></tr>
+          <tr><td class="mono"><strong>1.10</strong></td><td class="mono">2018-12</td><td><strong>The redesign.</strong> Eight error <em>phases</em>; <code>:clojure.error/*</code> data on <code>CompilerException</code>; public <code>ex-triage</code> and <code>ex-str</code> "that can be used by external tools"; the REPL prints a phase-aware summary and no trace.</td></tr>
+          <tr><td class="mono">1.10.1</td><td class="mono">2019-06</td><td>Script mode stops dumping a JVM trace: same summary, plus the full report written to a temp <code>.edn</code> file. <code>--report file|stderr|none</code>.</td></tr>
+          <tr><td class="mono">1.10.2/3</td><td class="mono">2020–21</td><td>A better <code>case</code> message shipped, then reverted. Ticket reopened.</td></tr>
+          <tr><td class="mono">1.11</td><td class="mono">2022-03</td><td>Runtime errors in loaded files stop being labelled "Syntax error". A keyword arity message, filed in 2018, ships.</td></tr>
+          <tr><td class="mono">1.12</td><td class="mono">2024-09</td><td>Arity message for &gt;20 args; <code>ex-info</code> tolerates a nil data map.</td></tr>
+          <tr><td class="mono">1.13-α</td><td class="mono">2026-07</td><td>A phase mis-categorisation in the report file. Checked keys and <code>req!</code>, motivated by "misspelled keys … lead to failures that do not connect to the actual source of the problem (e.g. NPEs)".</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>From <code>changes.md</code>, the release posts and JIRA. Of 140 tickets labelled <code>errormsgs</code> or <code>error-reporting</code>, 21 closed in 1.10, two in 1.11, two in 1.12; 62 are unresolved and the oldest open one is from 2009.</figcaption>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <p>Meanwhile the demand signal has not moved. "Error messages" was added as a choice in the State of Clojure 2015 survey and was the top frustration in 2015, 2016 and 2018. The 2024 survey asked new users which areas to prioritise: error messages came first at <strong>48.6%</strong>, ahead of tutorials and startup time.</p>
+    </div>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>Outside Clojure</h3>
+      <p>Sixteen projects were checked against their source or README. Three patterns account for nearly all of them.</p>
+    </div>
+
+    <div class="scroller" style="margin-top:1.25rem">
+      <table>
+        <thead><tr><th>Project</th><th class="mono">Since</th><th>What it does</th><th>Where it attaches</th><th class="num">Downloads</th></tr></thead>
+        <tbody>
+          <tr><td><strong>expound</strong><br><span class="partly">Ben Brinckerhoff</span></td><td class="mono">2017</td><td>Human-readable spec explanations</td><td><code>*explain-out*</code> — the one hook core designed, and honours inside <code>ex-str</code></td><td class="num">20.1M</td></tr>
+          <tr><td><strong>pretty</strong><br><span class="partly">clj-commons</span></td><td class="mono">2013</td><td>Coloured, chronological, filtered traces</td><td>Redefines <code>repl-caught</code>, <code>pst</code>, <code>clojure.stacktrace/*</code>, <code>print-method</code>; nREPL middleware</td><td class="num">28.9M</td></tr>
+          <tr><td><strong>clj-stacktrace</strong><br><span class="partly">Mark McGranaghan</span></td><td class="mono">2009</td><td>Demunged, aligned traces</td><td>Explicit <code>pst</code>; Leiningen <code>:caught</code></td><td class="num">23.4M</td></tr>
+          <tr><td><strong>CIDER + orchard</strong></td><td class="mono">2013</td><td>Error buffer; frames tagged clj/java/tooling/dup and toggleable</td><td>An nREPL op that inspects <code>*e</code> afterwards</td><td class="num">12.9M</td></tr>
+          <tr><td><strong>Babel</strong><br><span class="partly">UMN Morris</span></td><td class="mono">2018</td><td>Beginner rewrites from a 559-line regex dictionary plus specs on core fns</td><td>nREPL <code>*caught-fn*</code> middleware</td><td class="num">309</td></tr>
+          <tr><td><strong>rephrase</strong><br><span class="partly">Sean Corfield</span></td><td class="mono">2026</td><td>One-line rephrasing from a regex config; credits Babel</td><td><code>:caught</code> plus nREPL middleware</td><td class="num">new</td></tr>
+          <tr><td><strong>Babashka / SCI</strong><br><span class="partly">Michiel Borkent</span></td><td class="mono">2019</td><td>Error / Context / Stack trace blocks, with a source excerpt and a caret</td><td>Owns the interpreter — so line <em>and column</em> survive to runtime</td><td class="num">4.6k ★</td></tr>
+          <tr><td><strong>shadow-cljs</strong></td><td class="mono">2015</td><td>Boxed compile errors with excerpt and caret</td><td>Owns the compiler</td><td class="num">6.9M</td></tr>
+          <tr><td><strong>error catalog</strong><br><span class="partly">yogthos</span></td><td class="mono">2016</td><td>A markdown catalog, "inspired by the way Elm does this"</td><td>Nothing at runtime; dormant since 2021</td><td class="num">441 ★</td></tr>
+          <tr><td><strong>clj-kondo</strong></td><td class="mono">2019</td><td>Static linting, including a "rudimentary" type check</td><td>Before the program runs; caught 6 of the 15 bugs</td><td class="num">8.2M</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Cumulative Clojars downloads, checked 6 September 2026. Also examined: pyro, kaocha, Reveal, Portal, FlowStorm, phrase, malli, guardrails, Cursive and Calva.</figcaption>
+
+    <div class="grid-3" style="margin-top:2rem">
+      <div class="callout">
+        <span class="kicker">Pattern 1 · rebuilt 4×</span>
+        <p><strong>Message rewriting as a regex table.</strong> Babel's dictionary, Maria's template trie, rephrase's config, the 2016 catalog. Each maintained by one person or one classroom. rephrase reusing Babel's mappings in 2026 is the first time one table ever fed another.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Pattern 2 · rebuilt 6×</span>
+        <p><strong>Stack-frame filters.</strong> pretty's rules, orchard's tooling regex, kaocha's filter list, Reveal's, pyro's, Babashka's. There is no shared definition of "a frame the user does not care about", in core or out of it.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Pattern 3 · the tell</span>
+        <p><strong>Adoption follows bundling, not quality.</strong> expound has 20M downloads because figwheel and guardrails pull it in. Babel, the one project with actual classroom research behind it, has 309.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="barriers">
+    <div class="sec-head col">
+      <span class="q">Question 3</span>
+      <h2>What stands in the way?</h2>
+    </div>
+    <p class="lede col">Seven technical walls, four social ones. Two of the technical walls were discovered by trying, not by reading.</p>
+
+    <div class="findings" style="margin-top:2rem">
+      <div class="finding">
+        <div class="label">No column<small>technical · unfixable in a library</small></div>
+        <div class="body">The JVM's line-number table has no column field. A library can only guess; the prototype guesses from the innermost <code>clojure.core</code> frame's function name and labels the guess as one. Only the compiler could emit a side table.</div>
+      </div>
+      <div class="finding">
+        <div class="label">The text isn't Clojure's<small>technical · maintenance burden</small></div>
+        <div class="body">Six of fifteen messages come from HotSpot or the JDK, and their wording changes between JDK versions — Babel's dictionary already carries three phrasings of the same ClassCastException. Any rewrite table inherits that churn.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Direct linking closes the door<small>technical · discovered by experiment</small></div>
+        <div class="body"><code>clojure.main/main</code> calls <code>report-error</code> with <code>invokestatic</code> — confirmed with <code>javap</code> on the shipped jar — so <strong>no library can change what <code>clj -M script.clj</code> prints</strong>. And the REPL captures its <code>:caught</code> default when it starts, while <code>-e</code> runs inside it, so <code>clj -e "(install!)" -r</code> silently does nothing. A <code>user.clj</code> on the classpath works; <code>-e</code> does not. Both pretty and this report's prototype are affected.</div>
+      </div>
+      <div class="finding">
+        <div class="label">"User frame" is a hard-coded list<small>technical · fixable upstream</small></div>
+        <div class="body"><code>ex-triage</code> blames the first frame outside <code>clojure.lang.</code> and a fixed set of namespaces. JDK classes are not on it, so two of the fifteen bugs are reported at <code>Integer.java:624</code> — a location the user cannot visit. Any library whose namespace is not on the list gets blamed for its callers' errors.</div>
+      </div>
+      <div class="finding">
+        <div class="label">One printer per client<small>technical · coordination problem</small></div>
+        <div class="body"><code>clj</code>, nREPL/CIDER, Calva, Cursive, Babashka, kaocha and <code>clojure.test</code> each render errors independently. Python hit the same wall with "Did you mean", which lives in <code>PyErr_Display()</code> and so does not appear in IPython.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Governance<small>social · the long pole</small></div>
+        <div class="body">Rich Hickey is BDFL; a signed contributor agreement is required; issues start on ask.clojure.org and reach JIRA only when the core team files them; patches are reviewed mainly in late alpha. A one-message fix with a patch attached took from May 2018 to March 2022. LLM-generated code is explicitly not acceptable under the agreement.</div>
+      </div>
+      <div class="finding">
+        <div class="label">Nobody agrees what "better" is<small>social · substantive</small></div>
+        <div class="body">Alex Miller thinks prettified traces "are not (imo) better than the original". Marceau, Fisler and Krishnamurthi found novices misread source highlighting as "edit here" and argue error messages <em>should not propose solutions</em>. Rust bans "did you mean" phrasing on principle. Python, Ruby, Elixir and Gleam shipped it anyway.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="others">
+    <div class="sec-head col">
+      <span class="q">Question 4</span>
+      <h2>How do the languages that do this well do it?</h2>
+    </div>
+    <p class="lede col">The two everyone names, Elm and Rust, are the two whose approach transfers least. Both spend their entire budget at compile time. Clojure's problem is a runtime problem.</p>
+
+    <div class="grid-2" style="margin-top:2rem">
+      <div class="callout">
+        <span class="kicker">Elm</span>
+        <p>A report is a four-field record — title, region, suggestions, message — rendered against the source text the compiler kept. Every principle people quote comes from two 2015 posts: show the code exactly as written, general context above the excerpt and specific hints below, a JSON form from day one, and "compilers should be assistants, not adversaries".</p>
+        <p><strong>Why it doesn't transfer:</strong> "One big goal of Elm is to have no runtime errors. In practice, this is pretty much already how it goes." There is no runtime error subsystem to copy.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Rust</span>
+        <p>A diagnostic is data first: level, code, spans with labels, notes, help, and suggestions carrying an <em>applicability</em> confidence so <code>rustfix</code> can apply them mechanically. RFC 1644's stated goal was "draw inspiration from Elm". The style guide is worth stealing: only the help sub-diagnostic may propose a fix, and suggestions must not be phrased as questions.</p>
+        <p><strong>The other half:</strong> a runtime panic is three lines and the backtrace is off unless you set an environment variable. Rich diagnostics at compile time, deliberate terseness at run time.</p>
+      </div>
+    </div>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>The two that actually apply</h3>
+      <p>Python and Ruby are dynamic, host-constrained languages that fixed <em>runtime</em> errors in the last five years. Both did it the same way: add position information the VM was throwing away, then use it.</p>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.25rem">
+      <div class="callout">
+        <span class="kicker">Python 3.11 · PEP 657</span>
+        <p>Added "a mapping from each bytecode instruction to the start and end column offsets" so a traceback can underline the failing sub-expression. The cost was measured and published — standard-library <code>.pyc</code> files grew <strong>22%</strong> — and an opt-out shipped with it (<code>-X no_debug_ranges</code>). This is precisely the change Clojure would need, and precisely how to justify it.</p>
+      </div>
+      <div class="callout">
+        <span class="kicker">Ruby 2.3 → 3.1 → 3.2</span>
+        <p><code>did_you_mean</code> was a third-party gem in February 2014 and a <em>default</em> gem by Ruby 2.3 in December 2015. <code>error_highlight</code>, which puts a caret under the failing call by mapping a backtrace location back to its AST node, followed the same path into Ruby 3.1. Both worked by monkey-patching <code>Exception#to_s</code>, which broke tests and double-appended on re-raise — so Ruby 3.2 added <code>Exception#detailed_message</code>, a real hook, and the gems moved onto it.</p>
+      </div>
+    </div>
+
+    <div class="callout col" style="max-width:72ch; margin-top:1.25rem; border-left-color: var(--hook)">
+      <span class="kicker" style="color:var(--hook)">The transferable precedent</span>
+      <p>Gem → bundled default → core hook. Each step justified by the previous step's adoption, and the hook added only once monkey-patching caused demonstrable breakage. That is the sequence the Clojure question is really asking about, and it is available without asking anyone's permission to start.</p>
+    </div>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>And one that shares Clojure's exact constraint</h3>
+      <p>JRuby runs on the JVM and faces the same frame noise. It rebuilds Ruby-level backtraces from JVM frames plus its own interpreter frames, turning a ~60-line JVM trace into a 7-line Ruby one — and keeps the raw version one flag away. Groovy ships a <code>sanitize</code> call driven by a package-prefix list and logs the unfiltered trace so nothing is lost. Both chose <em>filter by default, raw on request</em>. Clojure's <code>pst</code> filters exactly two frame types.</p>
+    </div>
+
+    <div class="scroller" style="margin-top:2rem">
+      <table>
+        <thead><tr><th>Feature</th><th>Elm</th><th>Rust</th><th>Python</th><th>Ruby</th><th>Babashka</th><th>Clojure 1.12</th><th>Prototype</th></tr></thead>
+        <tbody>
+          <tr><td>Source excerpt with a caret</td><td class="yes">yes</td><td class="yes">compile only</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="no">no</td><td class="partly">line yes, column guessed</td></tr>
+          <tr><td>Blames the user's code</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="partly">except JDK-thrown</td><td class="yes">yes</td></tr>
+          <tr><td>Plain-language explanation</td><td class="yes">yes</td><td class="yes">yes</td><td class="partly">partly</td><td class="partly">partly</td><td class="no">no</td><td class="no">no</td><td class="yes">13 rules</td></tr>
+          <tr><td>A concrete hint</td><td class="yes">every message</td><td class="yes">yes</td><td class="yes">did you mean</td><td class="yes">did you mean</td><td class="no">no</td><td class="no">no</td><td class="yes">yes</td></tr>
+          <tr><td>Error codes with long-form docs</td><td class="partly">links</td><td class="yes">--explain</td><td class="no">no</td><td class="no">no</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+          <tr><td>Structured form for tools</td><td class="yes">--report=json</td><td class="yes">JSON</td><td class="yes">co_positions</td><td class="yes">detailed_message</td><td class="partly">ex-data</td><td class="yes">ex-triage</td><td class="yes">data map</td></tr>
+          <tr><td>Internals hidden, raw on request</td><td class="partly">n/a</td><td class="yes">RUST_BACKTRACE</td><td class="no">no</td><td class="no">no</td><td class="yes">5+5, --debug</td><td class="partly">all or nothing</td><td class="yes">counts + pst</td></tr>
+          <tr><td>Third-party hook to decorate errors</td><td class="no">no</td><td class="partly">crates</td><td class="partly">PyErr_Display</td><td class="yes">detailed_message</td><td class="no">no</td><td class="partly">spec only</td><td class="partly">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Fourteen of the fifteen corpus bugs are runtime, reader or macro errors that no type system would catch. clj-kondo, the nearest thing Clojure has to a static pass, flags six of them.</figcaption>
+  </section>
+
+  <section id="library">
+    <div class="sec-head col">
+      <span class="q">Question 5</span>
+      <h2>What can be done as an opt-in library?</h2>
+    </div>
+    <p class="lede col">Most of it. A 390-line library with no dependencies, written against hooks that already exist, closes most of the gap with Python and Ruby — and hits three walls that only core can move.</p>
+
+    <figure style="margin-top:2rem">
+      <div class="figwrap">
+        <svg class="diagram" viewBox="0 0 900 300" role="img" aria-label="Five places errors get printed and which hooks reach them. The nREPL caught-fn and the spec explain-out hooks work; the REPL hook works only if installed before the REPL starts; script mode cannot be hooked at all because report-error is direct-linked.">
+          <defs>
+            <marker id="h1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" class="head"/>
+            </marker>
+            <marker id="h2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" class="head-loss"/>
+            </marker>
+          </defs>
+
+          <text class="lbl" x="10" y="20" font-size="11" font-weight="700">WHERE ERRORS APPEAR</text>
+          <text class="lbl" x="560" y="20" font-size="11" font-weight="700">WHAT A LIBRARY CAN REPLACE</text>
+
+          <rect class="box" x="10" y="36" width="200" height="40" rx="4"/>
+          <text x="26" y="61" font-size="13">clj REPL</text>
+
+          <rect class="box" x="10" y="88" width="200" height="40" rx="4"/>
+          <text x="26" y="113" font-size="13">nREPL: CIDER, Calva</text>
+
+          <rect class="box-loss" x="10" y="140" width="200" height="40" rx="4"/>
+          <text class="t-loss" x="26" y="165" font-size="13">clj -M script.clj</text>
+
+          <rect class="box" x="10" y="192" width="200" height="40" rx="4"/>
+          <text x="26" y="217" font-size="13">clojure.test</text>
+
+          <rect class="box" x="10" y="244" width="200" height="40" rx="4"/>
+          <text x="26" y="269" font-size="13">other threads</text>
+
+          <rect class="box-hook" x="560" y="36" width="330" height="40" rx="4"/>
+          <text class="t-hook" x="576" y="55" font-size="13" font-weight="600">repl-caught</text>
+          <text class="lbl t-hook" x="576" y="70" font-size="11">works only from user.clj or -m, never from -e</text>
+
+          <rect class="box-hook" x="560" y="88" width="330" height="40" rx="4"/>
+          <text class="t-hook" x="576" y="107" font-size="13" font-weight="600">nrepl…caught/*caught-fn*</text>
+          <text class="lbl t-hook" x="576" y="122" font-size="11">dynamic var, read per message — the best hook</text>
+
+          <rect class="box-loss" x="560" y="140" width="330" height="40" rx="4"/>
+          <text class="t-loss" x="576" y="159" font-size="13" font-weight="600">report-error — unreachable</text>
+          <text class="lbl t-loss" x="576" y="174" font-size="11">called via invokestatic; only --report is settable</text>
+
+          <rect class="box" x="560" y="192" width="330" height="40" rx="4"/>
+          <text x="576" y="211" font-size="13" font-weight="600">clojure.stacktrace/print-cause-trace</text>
+          <text class="lbl" x="576" y="226" font-size="11">direct-linked; pretty reloads test.clj to get in</text>
+
+          <rect class="box" x="560" y="244" width="330" height="40" rx="4"/>
+          <text x="576" y="263" font-size="13" font-weight="600">default uncaught handler</text>
+          <text class="lbl" x="576" y="278" font-size="11">JVM API; non-main threads only</text>
+
+          <line class="flowline" x1="214" y1="56"  x2="556" y2="56"  marker-end="url(#h1)"/>
+          <line class="flowline" x1="214" y1="108" x2="556" y2="108" marker-end="url(#h1)"/>
+          <line class="lossline" x1="214" y1="160" x2="556" y2="160" stroke-dasharray="4 4" marker-end="url(#h2)"/>
+          <line class="flowline" x1="214" y1="212" x2="556" y2="212" stroke-dasharray="4 4" marker-end="url(#h1)"/>
+          <line class="flowline" x1="214" y1="264" x2="556" y2="264" marker-end="url(#h1)"/>
+
+          <text class="lbl" x="385" y="50" text-anchor="middle" font-size="11">replaces</text>
+          <text class="lbl" x="385" y="102" text-anchor="middle" font-size="11">binds</text>
+          <text class="lbl t-loss" x="385" y="154" text-anchor="middle" font-size="11">cannot reach</text>
+          <text class="lbl" x="385" y="206" text-anchor="middle" font-size="11">only by reloading</text>
+          <text class="lbl" x="385" y="258" text-anchor="middle" font-size="11">installs</text>
+        </svg>
+      </div>
+      <figcaption>Verified by running each path, not inferred. Spec errors are the exception to the whole picture: <code>clojure.spec.alpha/*explain-out*</code> is honoured inside <code>ex-str</code>, so setting it changes spec output in the REPL <em>and</em> in script mode — the one place core built a real extension point.</figcaption>
+    </figure>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>What the prototype gets</h3>
+      <p>Two more of its fifteen outputs. Everything shown is derived from data already inside the exception.</p>
+    </div>
+
+    <div class="grid-2" style="margin-top:1.25rem">
+      <figure class="listing good">
+        <div class="tag"><b>bug 06</b><span>a typo</span></div>
+<pre>-- COMPILE ERROR ------ ./bugs/06_unresolved.clj:4:3
+
+`pritnln` is not defined here.
+
+3 | (defn report [xs]
+4 |   (pritnln "count:" (count xs)))
+  |   <u>^</u>
+
+RuntimeException: Unable to resolve symbol: pritnln
+in this context
+
+Hint: It may be misspelled, defined later in the
+file, or live in a namespace that has not been
+required.
+
+Did you mean one of these?
+    <u>println</u></pre>
+      </figure>
+
+      <figure class="listing good">
+        <div class="tag"><b>bug 05</b><span>a lazy sequence realised elsewhere</span></div>
+<pre>-- RUNTIME ERROR ------------ ./bugs/05_lazy.clj:4
+
+Could not parse "three" as a number.
+
+3 | (defn parse-all [xs]
+4 |   (map #(Integer/parseInt %) xs))
+  |   <u>^</u>
+
+NumberFormatException: For input string: "three"
+
+<i>Note: this happened while a lazy sequence was
+being realized, which can be far from the map or
+filter that built it.</i>
+
+In your code (innermost first):
+    bugs.lazy/parse-all/&lt;anon&gt;    05_lazy.clj:4
+    bugs.lazy/eval1329            05_lazy.clj:8
+    <i>... 29 internal frames hidden (clojure.core 7,
+    clojure.lang 12, clojure.main 7, jdk 3).</i></pre>
+      </figure>
+    </div>
+    <figcaption>Stock Clojure reports the second one at <code>java.lang.NumberFormatException/forInputString (NumberFormatException.java:67)</code>, with no mention of laziness and no reference to any line the user wrote.</figcaption>
+
+    <div class="scroller" style="margin-top:2rem">
+      <table>
+        <thead><tr><th>Capability</th><th>Technique</th><th>Where it stops</th></tr></thead>
+        <tbody>
+          <tr><td>Phase-aware header and location</td><td><code>ex-triage</code>, plus a fallback to the first non-internal frame when triage lands in a <code>.java</code> file</td><td>Only as good as triage's data</td></tr>
+          <tr><td>Source excerpt</td><td>Resolve the error path, else the var's <code>:file</code> metadata, else scan classpath directories for the bare file name</td><td>REPL input has no file at all</td></tr>
+          <tr><td>Caret column at runtime</td><td>Find the innermost <code>clojure.core</code> function's name in call position on that line; label it a guess</td><td>Ambiguous when a name appears twice on one line</td></tr>
+          <tr><td>Frame filtering with counts</td><td>Prefix list; collapse <code>invokeStatic</code>/<code>invoke</code> pairs; demunge; <code>pst</code> for the raw trace</td><td>A prefix list, like everyone else's</td></tr>
+          <tr><td>Headline and hint</td><td>13 rules over exception class, message text and frame classes</td><td>Regexes over JDK text that each JDK may re-word</td></tr>
+          <tr><td>Did you mean</td><td>Edit distance over core publics, the file's own namespace map, an alias's publics, and a classpath scan for namespaces</td><td>Candidate sets are heuristics</td></tr>
+          <tr><td>Spec errors</td><td>Sets <code>*explain-out*</code> to expound when it is present</td><td>Nothing — this one just works</td></tr>
+          <tr><td>Installation</td><td><code>user.clj</code> on the classpath, or <code>-m</code>, plus nREPL's <code>*caught-fn*</code> and the uncaught handler</td><td>Script mode, permanently</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>How to build it so it can win</h3>
+      <p>Every previous attempt was one author, one regex table, one client. The thing worth building is the piece everyone keeps rewriting, packaged so the tools people already use can adopt the <em>data</em> without adopting a user interface.</p>
+      <ol class="steps">
+        <li><strong>Analysis as data, rendering separate.</strong> One function returns a map, mirroring Elm's report record and Rust's diagnostic. Three renderers consume it: terminal, nREPL middleware, JSON. Reveal and orchard already consume <code>ex-triage</code> output and could consume a superset.</li>
+        <li><strong>Make the catalog the product.</strong> An EDN file of match-to-headline-and-hint rules, each pinned by a test to a captured exception — the way Elm's error-message-catalog is a collection of programs that trigger messages. Babel's dictionary, rephrase's config and the 2016 catalog are three seeds. Target Clojure-authored messages first: those strings are stable.</li>
+        <li><strong>Publish one definition of a "tooling frame"</strong> and let pretty, orchard, kaocha and Reveal depend on it instead of each carrying their own.</li>
+        <li><strong>Ship the JSON renderer early.</strong> Editors and CI are where buy-in is actually decided; Elm and Rust both shipped a machine format before anything adopted them.</li>
+        <li><strong>Then take three small asks upstream,</strong> with adoption numbers and the Ruby precedent attached.</li>
+      </ol>
+    </div>
+
+    <div class="col flow" style="margin-top:2.5rem">
+      <h3>The three asks only core can grant</h3>
+      <p>Each is additive, each is motivated by a gap measured in this report, and each fits the constraint that a proposal should state a problem rather than arrive as a patch.</p>
+      <ul class="plain">
+        <li><strong>A dynamic error-printer var, read at each error,</strong> honoured by both the REPL and the script path. This removes the <code>-e</code> and <code>invokestatic</code> walls at once. It is the <code>Exception#detailed_message</code> moment: one var, no behaviour change unless bound.</li>
+        <li><strong>Treat <code>java.*</code>, <code>jdk.*</code> and <code>sun.*</code> frames as non-user in <code>ex-triage</code>,</strong> and make the namespace list extensible. This alone fixes the <code>Integer.java:624</code> locations for every client, with no new wording for anyone's tests to depend on.</li>
+        <li><strong>Longer term, a column side table.</strong> The compiler already has the column at every <code>visitLineNumber</code> call. A custom class-file attribute mapping bytecode offsets to columns is the JVM analogue of PEP 657 — and like PEP 657 it should be prototyped in a fork with its size and time cost measured before anyone proposes it.</li>
+      </ul>
+    </div>
+
+    <div class="callout col" style="max-width:72ch; margin-top:2rem; border-left-color: var(--loss)">
+      <span class="kicker" style="color:var(--loss)">The risk worth naming</span>
+      <p>Marceau's finding is that a wrong hint is worse than no hint, because novices treat the tool as an oracle. Every catalog rule needs a captured exception it is tested against, hints should state facts about the failure rather than guess at the fix, and a guessed column must always say it is guessing. A tool that is confidently wrong once teaches people to stop reading it.</p>
+    </div>
+  </section>
+
+  <footer class="end">
+    <p><strong>Everything above was run or fetched, not recalled.</strong> The full report, the fifteen-bug corpus, the captured output for six Clojure versions and four other languages, the prototype, and four source-by-source evidence files are in <code>research/clojure-error-messages/</code>.</p>
+    <p style="margin-top:1rem">Corrections to things commonly believed, all verified: the <code>clj</code> REPL has never printed a full stack trace by default — 1.9 printed one frame, 1.10 removed it. expound is by Ben Brinckerhoff, not Bruce Hauman. The ClassCastException wording is HotSpot's, not Clojure's. Clojure 1.10.x labelled runtime errors in loaded files as "Syntax error" until 1.11.</p>
+  </footer>
+
+</div>

@@ -1,0 +1,23 @@
+----- Error --------------------------------------------------------------------
+Type:     clojure.lang.ExceptionInfo
+Message:  let requires an even number of forms in binding vector
+Data:     {:type :sci/error, :line 4, :column 3, :file "/home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj"}
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj:4:3
+Phase:    macroexpand
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.let-binding)
+2: 
+3: (defn greet [name]
+4:   (let [greeting "Hello" name]
+     ^--- let requires an even number of forms in binding vector
+5:     (str greeting ", " name)))
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/let    - <built-in>
+bugs.let-binding/fn - /home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj:4:3
+clojure.core/fn     - <built-in>
+bugs.let-binding    - /home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj:3:1
+clojure.core/defn   - <built-in>
+bugs.let-binding    - /home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj:3:1
+

@@ -1,0 +1,6 @@
+Clojure 1.9.0
+user=> CompilerException clojure.lang.ExceptionInfo: Call to clojure.core/defn did not conform to spec:
+In: [1 0] val: x fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-n :bodies :args] predicate: vector?
+In: [1] val: (x) fails spec: :clojure.core.specs.alpha/arg-list at: [:args :bs :arity-1 :args] predicate: vector?
+ #:clojure.spec.alpha{:problems ({:path [:args :bs :arity-1 :args], :pred clojure.core/vector?, :val (x), :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1]} {:path [:args :bs :arity-n :bodies :args], :pred clojure.core/vector?, :val x, :via [:clojure.core.specs.alpha/defn-args :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/args+body :clojure.core.specs.alpha/arg-list :clojure.core.specs.alpha/arg-list], :in [1 0]}), :spec #object[clojure.spec.alpha$regex_spec_impl$reify__2436 0xc3fa05a "clojure.spec.alpha$regex_spec_impl$reify__2436@c3fa05a"], :value (square (x) (* x x)), :args (square (x) (* x x))}, compiling:(/home/user/tools/research/clojure-error-messages/experiments/bugs/15_defn_syntax.clj:3:1) 
+user=> 

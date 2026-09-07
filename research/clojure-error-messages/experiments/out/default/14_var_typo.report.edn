@@ -1,0 +1,62 @@
+{:clojure.main/message
+ "Syntax error compiling at (bugs/14_var_typo.clj:5:3).\nNo such var: str/joinn\n",
+ :clojure.main/triage
+ {:clojure.error/phase :compile-syntax-check,
+  :clojure.error/line 5,
+  :clojure.error/column 3,
+  :clojure.error/source "14_var_typo.clj",
+  :clojure.error/path "bugs/14_var_typo.clj",
+  :clojure.error/class java.lang.RuntimeException,
+  :clojure.error/cause "No such var: str/joinn"},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error compiling at (/home/user/tools/research/clojure-error-messages/experiments/bugs/14_var_typo.clj:5:3).",
+    :data
+    {:clojure.error/phase :compile-syntax-check,
+     :clojure.error/line 5,
+     :clojure.error/column 3,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/14_var_typo.clj"},
+    :at [clojure.lang.Compiler analyze "Compiler.java" 7397]}
+   {:type java.lang.RuntimeException,
+    :message "No such var: str/joinn",
+    :at [clojure.lang.Util runtimeException "Util.java" 221]}],
+  :trace
+  [[clojure.lang.Util runtimeException "Util.java" 221]
+   [clojure.lang.Compiler resolveIn "Compiler.java" 7976]
+   [clojure.lang.Compiler resolve "Compiler.java" 7941]
+   [clojure.lang.Compiler analyzeSymbol "Compiler.java" 7902]
+   [clojure.lang.Compiler analyze "Compiler.java" 7357]
+   [clojure.lang.Compiler analyze "Compiler.java" 7334]
+   [clojure.lang.Compiler$InvokeExpr parse "Compiler.java" 4340]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7689]
+   [clojure.lang.Compiler analyze "Compiler.java" 7378]
+   [clojure.lang.Compiler analyze "Compiler.java" 7334]
+   [clojure.lang.Compiler$BodyExpr$Parser parse "Compiler.java" 6701]
+   [clojure.lang.Compiler$FnMethod parse "Compiler.java" 6040]
+   [clojure.lang.Compiler$FnExpr parse "Compiler.java" 4603]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7685]
+   [clojure.lang.Compiler analyze "Compiler.java" 7378]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7675]
+   [clojure.lang.Compiler analyze "Compiler.java" 7378]
+   [clojure.lang.Compiler access$200 "Compiler.java" 43]
+   [clojure.lang.Compiler$DefExpr$Parser parse "Compiler.java" 589]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7687]
+   [clojure.lang.Compiler analyze "Compiler.java" 7378]
+   [clojure.lang.Compiler analyze "Compiler.java" 7334]
+   [clojure.lang.Compiler eval "Compiler.java" 7761]
+   [clojure.lang.Compiler load "Compiler.java" 8223]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8161]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "No such var: str/joinn",
+  :phase :compile-syntax-check}}
+

@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> bugs.arity/area was called with one argument, but it expects a different number of arguments, at bugs.arity/eval284 (03_arity.clj:6) - runtime error (incorrect number of arguments).

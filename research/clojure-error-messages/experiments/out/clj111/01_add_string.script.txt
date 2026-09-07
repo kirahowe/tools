@@ -1,0 +1,12 @@
+Downloading: org/clojure/clojure/1.11.4/clojure-1.11.4.pom from central
+Downloading: org/clojure/spec.alpha/0.3.218/spec.alpha-0.3.218.pom from central
+Downloading: org/clojure/core.specs.alpha/0.2.62/core.specs.alpha-0.2.62.pom from central
+Downloading: org/clojure/pom.contrib/1.1.0/pom.contrib-1.1.0.pom from central
+Downloading: org/clojure/spec.alpha/0.3.218/spec.alpha-0.3.218.jar from central
+Downloading: org/clojure/core.specs.alpha/0.2.62/core.specs.alpha-0.2.62.jar from central
+Downloading: org/clojure/clojure/1.11.4/clojure-1.11.4.jar from central
+Execution error (ClassCastException) at bugs.add-string/total (01_add_string.clj:4).
+class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+
+Full report at:
+/tmp/clojure-15634466011200158749.edn

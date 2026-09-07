@@ -1,0 +1,4 @@
+Clojure 1.13.0-alpha6
+user=> Execution error (FileNotFoundException) at bugs.ns-typo/eval121$loading (13_ns_typo.clj:1).
+Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.
+user=> 

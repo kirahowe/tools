@@ -1,0 +1,32 @@
+Clojure 1.12.6
+user=> Execution error (ClassCastException) at bugs.add-string/total (01_add_string.clj:4).
+class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+CompilerException Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj:6:1). #:clojure.error{:phase :execution, :line 6, :column 1, :source "/home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj"}
+	clojure.lang.Compiler.load (Compiler.java:8235)
+	clojure.lang.Compiler.loadFile (Compiler.java:8161)
+	clojure.lang.RT$3.invoke (RT.java:347)
+	user/eval1 (NO_SOURCE_FILE:1)
+	user/eval1 (NO_SOURCE_FILE:1)
+	clojure.lang.Compiler.eval (Compiler.java:7757)
+	clojure.lang.Compiler.eval (Compiler.java:7712)
+	clojure.core/eval (core.clj:3236)
+	clojure.core/eval (core.clj:3232)
+	clojure.main/repl/read-eval-print--9244/fn--9247 (main.clj:437)
+	clojure.main/repl/read-eval-print--9244 (main.clj:437)
+	clojure.main/repl/fn--9253 (main.clj:459)
+Caused by:
+ClassCastException class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+	clojure.lang.Numbers.add (Numbers.java:155)
+	clojure.core/+ (core.clj:994)
+	clojure.core/+ (core.clj:986)
+	clojure.lang.PersistentVector.reduce (PersistentVector.java:404)
+	clojure.core/reduce (core.clj:6964)
+	clojure.core/reduce (core.clj:6951)
+	bugs.add-string/total (01_add_string.clj:4)
+	bugs.add-string/total (01_add_string.clj:3)
+	bugs.add-string/eval147 (01_add_string.clj:6)
+	bugs.add-string/eval147 (01_add_string.clj:6)
+	clojure.lang.Compiler.eval (Compiler.java:7757)
+	clojure.lang.Compiler.load (Compiler.java:8223)
+nil
+user=> 

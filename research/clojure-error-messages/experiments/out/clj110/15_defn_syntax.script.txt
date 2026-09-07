@@ -1,0 +1,6 @@
+Syntax error macroexpanding clojure.core/defn at (bugs/15_defn_syntax.clj:3:1).
+x - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+(x) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+
+Full report at:
+/tmp/clojure-7301225356801798548.edn

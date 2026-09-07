@@ -1,0 +1,27 @@
+bugs/01_add_string.clj:1:5: error: Namespace name does not match file name: bugs.add-string
+bugs/02_let_binding.clj:1:5: error: Namespace name does not match file name: bugs.let-binding
+bugs/02_let_binding.clj:3:14: warning: unused binding name
+bugs/02_let_binding.clj:4:8: error: let binding vector requires even number of forms
+bugs/03_arity.clj:1:5: error: Namespace name does not match file name: bugs.arity
+bugs/03_arity.clj:6:1: error: bugs.arity/area is called with 1 arg but expects 2
+bugs/04_string_as_fn.clj:1:5: error: Namespace name does not match file name: bugs.string-as-fn
+bugs/05_lazy.clj:1:5: error: Namespace name does not match file name: bugs.lazy
+bugs/06_unresolved.clj:1:5: error: Namespace name does not match file name: bugs.unresolved
+bugs/06_unresolved.clj:4:4: error: Unresolved symbol: pritnln
+bugs/07_nil_interop.clj:1:5: error: Namespace name does not match file name: bugs.nil-interop
+bugs/08_missing_paren.clj:3:1: error: Found an opening ( with no matching )
+bugs/08_missing_paren.clj:5:1: error: Expected a ) to match ( from line 3
+bugs/09_nth_on_map.clj:1:5: error: Namespace name does not match file name: bugs.nth-on-map
+bugs/10_inc_nil.clj:1:5: error: Namespace name does not match file name: bugs.inc-nil
+bugs/11_deep.clj:1:5: error: Namespace name does not match file name: bugs.deep
+bugs/12_wrong_ctor_arg.clj:1:5: error: Namespace name does not match file name: bugs.wrong-ctor-arg
+bugs/13_ns_typo.clj:1:5: error: Namespace name does not match file name: bugs.ns-typo
+bugs/14_var_typo.clj:1:5: error: Namespace name does not match file name: bugs.var-typo
+bugs/14_var_typo.clj:5:4: warning: Unresolved var: str/joinn
+bugs/15_defn_syntax.clj::: error: More than one function overload with arity null.
+bugs/15_defn_syntax.clj:1:5: error: Namespace name does not match file name: bugs.defn-syntax
+bugs/15_defn_syntax.clj:3:14: error: Function arguments should be wrapped in vector.
+bugs/15_defn_syntax.clj:4:3: error: Function arguments should be wrapped in vector.
+bugs/15_defn_syntax.clj:4:6: warning: Unused value: x
+bugs/15_defn_syntax.clj:4:6: error: Unresolved symbol: x
+linting took 19ms, errors: 23, warnings: 3

@@ -1,0 +1,19 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.ClassCastException
+Message:  java.lang.String cannot be cast to clojure.lang.IFn
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:4:3
+
+----- Context ------------------------------------------------------------------
+1: (ns bugs.string-as-fn)
+2: 
+3: (defn shout [s]
+4:   (s "!"))          ; meant (str s "!")
+     ^--- java.lang.String cannot be cast to clojure.lang.IFn
+5: 
+6: (shout "hello")
+
+----- Stack trace --------------------------------------------------------------
+bugs.string-as-fn/shout - /home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:4:3
+bugs.string-as-fn/shout - /home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:3:1
+bugs.string-as-fn       - /home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:6:1
+

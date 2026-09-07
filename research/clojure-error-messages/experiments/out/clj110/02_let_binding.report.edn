@@ -1,0 +1,114 @@
+{:clojure.main/message
+ "Syntax error macroexpanding clojure.core/let at (bugs/02_let_binding.clj:4:3).\n[greeting \"Hello\" name] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings\n",
+ :clojure.main/triage
+ {:clojure.error/cause
+  "Call to clojure.core/let did not conform to spec.",
+  :clojure.error/phase :macro-syntax-check,
+  :clojure.error/symbol clojure.core/let,
+  :clojure.error/column 3,
+  :clojure.error/line 4,
+  :clojure.error/class clojure.lang.ExceptionInfo,
+  :clojure.error/source "02_let_binding.clj",
+  :clojure.error/spec
+  {:clojure.spec.alpha/problems
+   [{:path [:bindings],
+     :pred clojure.core.specs.alpha/even-number-of-forms?,
+     :val [greeting "Hello" name],
+     :via
+     [:clojure.core.specs.alpha/bindings
+      :clojure.core.specs.alpha/bindings],
+     :in [0]}],
+   :clojure.spec.alpha/spec
+   #object[clojure.spec.alpha$regex_spec_impl$reify__2510 0x695a69a1 "clojure.spec.alpha$regex_spec_impl$reify__2510@695a69a1"],
+   :clojure.spec.alpha/value
+   ([greeting "Hello" name] (str greeting ", " name)),
+   :clojure.spec.alpha/args
+   ([greeting "Hello" name] (str greeting ", " name))},
+  :clojure.error/path "bugs/02_let_binding.clj"},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error macroexpanding clojure.core/let at (/home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj:4:3).",
+    :data
+    {:clojure.error/phase :macro-syntax-check,
+     :clojure.error/line 4,
+     :clojure.error/column 3,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/02_let_binding.clj",
+     :clojure.error/symbol clojure.core/let},
+    :at [clojure.lang.Compiler checkSpecs "Compiler.java" 6976]}
+   {:type clojure.lang.ExceptionInfo,
+    :message "Call to clojure.core/let did not conform to spec.",
+    :data
+    {:clojure.spec.alpha/problems
+     [{:path [:bindings],
+       :pred clojure.core.specs.alpha/even-number-of-forms?,
+       :val [greeting "Hello" name],
+       :via
+       [:clojure.core.specs.alpha/bindings
+        :clojure.core.specs.alpha/bindings],
+       :in [0]}],
+     :clojure.spec.alpha/spec
+     #object[clojure.spec.alpha$regex_spec_impl$reify__2510 0x695a69a1 "clojure.spec.alpha$regex_spec_impl$reify__2510@695a69a1"],
+     :clojure.spec.alpha/value
+     ([greeting "Hello" name] (str greeting ", " name)),
+     :clojure.spec.alpha/args
+     ([greeting "Hello" name] (str greeting ", " name))},
+    :at
+    [clojure.spec.alpha$macroexpand_check
+     invokeStatic
+     "alpha.clj"
+     712]}],
+  :trace
+  [[clojure.spec.alpha$macroexpand_check invokeStatic "alpha.clj" 712]
+   [clojure.spec.alpha$macroexpand_check invoke "alpha.clj" 704]
+   [clojure.lang.AFn applyToHelper "AFn.java" 156]
+   [clojure.lang.AFn applyTo "AFn.java" 144]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.lang.Compiler checkSpecs "Compiler.java" 6974]
+   [clojure.lang.Compiler macroexpand1 "Compiler.java" 6992]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7097]
+   [clojure.lang.Compiler analyze "Compiler.java" 6793]
+   [clojure.lang.Compiler analyze "Compiler.java" 6749]
+   [clojure.lang.Compiler$BodyExpr$Parser parse "Compiler.java" 6124]
+   [clojure.lang.Compiler$FnMethod parse "Compiler.java" 5471]
+   [clojure.lang.Compiler$FnExpr parse "Compiler.java" 4033]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7109]
+   [clojure.lang.Compiler analyze "Compiler.java" 6793]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7099]
+   [clojure.lang.Compiler analyze "Compiler.java" 6793]
+   [clojure.lang.Compiler access$300 "Compiler.java" 38]
+   [clojure.lang.Compiler$DefExpr$Parser parse "Compiler.java" 596]
+   [clojure.lang.Compiler analyzeSeq "Compiler.java" 7111]
+   [clojure.lang.Compiler analyze "Compiler.java" 6793]
+   [clojure.lang.Compiler analyze "Compiler.java" 6749]
+   [clojure.lang.Compiler eval "Compiler.java" 7185]
+   [clojure.lang.Compiler load "Compiler.java" 7640]
+   [clojure.lang.Compiler loadFile "Compiler.java" 7578]
+   [clojure.main$load_script invokeStatic "main.clj" 475]
+   [clojure.main$script_opt invokeStatic "main.clj" 535]
+   [clojure.main$script_opt invoke "main.clj" 530]
+   [clojure.main$main invokeStatic "main.clj" 664]
+   [clojure.main$main doInvoke "main.clj" 616]
+   [clojure.lang.RestFn applyTo "RestFn.java" 137]
+   [clojure.lang.Var applyTo "Var.java" 705]
+   [clojure.main main "main.java" 40]],
+  :cause "Call to clojure.core/let did not conform to spec.",
+  :data
+  {:clojure.spec.alpha/problems
+   [{:path [:bindings],
+     :pred clojure.core.specs.alpha/even-number-of-forms?,
+     :val [greeting "Hello" name],
+     :via
+     [:clojure.core.specs.alpha/bindings
+      :clojure.core.specs.alpha/bindings],
+     :in [0]}],
+   :clojure.spec.alpha/spec
+   #object[clojure.spec.alpha$regex_spec_impl$reify__2510 0x695a69a1 "clojure.spec.alpha$regex_spec_impl$reify__2510@695a69a1"],
+   :clojure.spec.alpha/value
+   ([greeting "Hello" name] (str greeting ", " name)),
+   :clojure.spec.alpha/args
+   ([greeting "Hello" name] (str greeting ", " name))},
+  :phase :macro-syntax-check}}
+

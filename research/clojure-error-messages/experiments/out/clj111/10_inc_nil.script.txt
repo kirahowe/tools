@@ -1,0 +1,5 @@
+Execution error (NullPointerException) at bugs.inc-nil/next-port (10_inc_nil.clj:6).
+Cannot invoke "Object.getClass()" because "x" is null
+
+Full report at:
+/tmp/clojure-1520275750516684135.edn

@@ -1,0 +1,5 @@
+Execution error (FileNotFoundException) at bugs.ns-typo/eval136$loading (13_ns_typo.clj:1).
+Could not locate clojure/strng__init.class, clojure/strng.clj or clojure/strng.cljc on classpath.
+
+Full report at:
+/tmp/clojure-14543076925858850099.edn

@@ -1,0 +1,83 @@
+Clojure 1.12.6
+user=> -- MACRO SYNTAX ERROR ------------------------------ bugs/15_defn_syntax.clj:3:1
+
+The arguments to clojure.core/defn have the wrong shape.
+
+1 | (ns bugs.defn-syntax)
+2 | 
+3 | (defn square (x)
+  | ^
+4 |   (* x x))
+
+-- Spec failed --------------------
+
+  (... (x) ...)
+       ^^^
+
+should satisfy
+
+  vector?
+
+or value
+
+  (... (x) ...)
+        ^
+
+should satisfy
+
+  vector?
+
+-- Relevant specs -------
+
+:clojure.core.specs.alpha/param-list:
+  (clojure.spec.alpha/and
+   clojure.core/vector?
+   (clojure.spec.alpha/cat
+    :params
+    (clojure.spec.alpha/* :clojure.core.specs.alpha/binding-form)
+    :var-params
+    (clojure.spec.alpha/?
+     (clojure.spec.alpha/cat
+      :ampersand
+      #{'&}
+      :var-form
+      :clojure.core.specs.alpha/binding-form))))
+:clojure.core.specs.alpha/params+body:
+  (clojure.spec.alpha/cat
+   :params
+   :clojure.core.specs.alpha/param-list
+   :body
+   (clojure.spec.alpha/alt
+    :prepost+body
+    (clojure.spec.alpha/cat
+     :prepost
+     clojure.core/map?
+     :body
+     (clojure.spec.alpha/+ clojure.core/any?))
+    :body
+    (clojure.spec.alpha/* clojure.core/any?)))
+:clojure.core.specs.alpha/defn-args:
+  (clojure.spec.alpha/cat
+   :fn-name
+   clojure.core/simple-symbol?
+   :docstring
+   (clojure.spec.alpha/? clojure.core/string?)
+   :meta
+   (clojure.spec.alpha/? clojure.core/map?)
+   :fn-tail
+   (clojure.spec.alpha/alt
+    :arity-1
+    :clojure.core.specs.alpha/params+body
+    :arity-n
+    (clojure.spec.alpha/cat
+     :bodies
+     (clojure.spec.alpha/+
+      (clojure.spec.alpha/spec :clojure.core.specs.alpha/params+body))
+     :attr-map
+     (clojure.spec.alpha/? clojure.core/map?))))
+
+-------------------------
+Detected 1 error
+
+ExceptionInfo: Call to clojure.core/defn did not conform to spec.
+

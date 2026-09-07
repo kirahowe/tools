@@ -1,0 +1,5 @@
+Syntax error compiling at (bugs/14_var_typo.clj:5:3).
+No such var: str/joinn
+
+Full report at:
+/tmp/clojure-8214715701331314313.edn

@@ -1,0 +1,17 @@
+Clojure 1.12.6
+user=> -- COMPILE ERROR ------------------------------------ bugs/06_unresolved.clj:4:3
+
+`pritnln` is not defined here.
+
+2 | 
+3 | (defn report [xs]
+4 |   (pritnln "count:" (count xs)))
+  |   ^
+
+RuntimeException: Unable to resolve symbol: pritnln in this context
+
+Hint: It may be misspelled, defined later in the file, or live in a namespace that has not been required.
+
+Did you mean one of these?
+    println
+

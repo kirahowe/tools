@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> Tried to call .getClass() on Object, but was given 'nil', possibly in x (which may be in code you are calling), at bugs.inc-nil/next-port (10_inc_nil.clj:6) - runtime error ('nil' encountered).

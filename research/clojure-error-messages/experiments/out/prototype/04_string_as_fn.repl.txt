@@ -1,0 +1,21 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/04_string_as_fn.clj:4
+
+A String is being called as a function.
+
+2 | 
+3 | (defn shout [s]
+4 |   (s "!"))          ; meant (str s "!")
+  |   ^
+5 | 
+
+ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+
+Hint: The first thing inside ( ) is called as a function; here it was a String. Common causes: an extra pair of parentheses, or a value where a function name was intended (did you mean `str`?).
+
+In your code (innermost first):
+    bugs.string-as-fn/shout                    04_string_as_fn.clj:4
+    bugs.string-as-fn/eval1326                 04_string_as_fn.clj:6
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 16 internal frames hidden (clojure.core 1, clojure.lang 8, clojure.main 7). (nice-errors.core/pst) shows them.
+

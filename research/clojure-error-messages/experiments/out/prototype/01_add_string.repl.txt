@@ -1,0 +1,22 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/01_add_string.clj:4
+
+Arithmetic on a String instead of a number.
+
+2 | 
+3 | (defn total [prices]
+4 |   (reduce + prices))
+  |           ^
+5 | 
+    (the JVM records only a line number; the column is a guess)
+
+ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+
+Hint: One of the values reaching the arithmetic on this line is a String. If it came from user input or a file, convert it first (`parse-long`, `parse-double`).
+
+In your code (innermost first):
+    bugs.add-string/total                      01_add_string.clj:4
+    bugs.add-string/eval1326                   01_add_string.clj:6
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 20 internal frames hidden (clojure.core 3, clojure.lang 10, clojure.main 7). (nice-errors.core/pst) shows them.
+

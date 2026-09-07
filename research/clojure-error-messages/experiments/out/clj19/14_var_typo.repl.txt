@@ -1,0 +1,3 @@
+Clojure 1.9.0
+user=> CompilerException java.lang.RuntimeException: No such var: str/joinn, compiling:(/home/user/tools/research/clojure-error-messages/experiments/bugs/14_var_typo.clj:5:3) 
+user=> 

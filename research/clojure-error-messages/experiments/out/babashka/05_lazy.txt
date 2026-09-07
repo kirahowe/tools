@@ -1,0 +1,19 @@
+----- Error --------------------------------------------------------------------
+Type:     java.lang.NumberFormatException
+Message:  For input string: "three"
+Location: /home/user/tools/research/clojure-error-messages/experiments/bugs/05_lazy.clj:8:17
+
+----- Context ------------------------------------------------------------------
+4:   (map #(Integer/parseInt %) xs))
+5: 
+6: (def parsed (parse-all ["1" "2" "three"]))
+7: 
+8: (println "sum:" (reduce + parsed))
+                   ^--- For input string: "three"
+
+----- Stack trace --------------------------------------------------------------
+clojure.core/reduce  - <built-in>
+bugs.lazy            - /home/user/tools/research/clojure-error-messages/experiments/bugs/05_lazy.clj:8:17
+clojure.core/println - <built-in>
+bugs.lazy            - /home/user/tools/research/clojure-error-messages/experiments/bugs/05_lazy.clj:8:1
+

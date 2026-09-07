@@ -1,0 +1,5 @@
+Syntax error (NullPointerException) compiling at (bugs/10_inc_nil.clj:6:26).
+Cannot invoke "Object.getClass()" because "x" is null
+
+Full report at:
+/tmp/clojure-16201001481490555375.edn

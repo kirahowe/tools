@@ -1,0 +1,21 @@
+Clojure 1.12.6
+user=> -- RUNTIME ERROR - /home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:6
+
+`nth` was given a PersistentArrayMap, which has no positional order.
+
+4 | 
+5 | (defn first-field [m]
+6 |   (nth m 0))
+  |   ^
+7 | 
+
+UnsupportedOperationException: nth not supported on this type: PersistentArrayMap
+
+Hint: `nth` works on vectors, lists, seqs and strings. For a map use `get`, `keys`, `vals`, or `(nth (seq m) i)`.
+
+In your code (innermost first):
+    bugs.nth-on-map/first-field                09_nth_on_map.clj:6
+    bugs.nth-on-map/eval1326                   09_nth_on_map.clj:8
+    user/eval1313                              NO_SOURCE_FILE:1
+    ... 18 internal frames hidden (clojure.core 1, clojure.lang 10, clojure.main 7). (nice-errors.core/pst) shows them.
+

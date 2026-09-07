@@ -1,0 +1,2 @@
+Clojure 1.12.6
+user=> Syntax error: [greeting "Hello" name] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings, macroexpanding clojure.core/let at (bugs/02_let_binding.clj:4:3).

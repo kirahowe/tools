@@ -1,0 +1,3 @@
+user=> Syntax error compiling at (bugs/06_unresolved.clj:4:3).
+Unable to resolve symbol: pritnln in this context
+user=> 

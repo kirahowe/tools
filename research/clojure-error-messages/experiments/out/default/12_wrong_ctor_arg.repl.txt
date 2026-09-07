@@ -1,0 +1,4 @@
+Clojure 1.12.6
+user=> Execution error (IllegalArgumentException) at bugs.wrong-ctor-arg/file-of (12_wrong_ctor_arg.clj:4).
+No matching ctor found for class java.io.File
+user=> 

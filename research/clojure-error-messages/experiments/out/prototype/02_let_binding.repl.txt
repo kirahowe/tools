@@ -1,0 +1,33 @@
+Clojure 1.12.6
+user=> -- MACRO SYNTAX ERROR ------------------------------ bugs/02_let_binding.clj:4:3
+
+The arguments to clojure.core/let have the wrong shape.
+
+2 | 
+3 | (defn greet [name]
+4 |   (let [greeting "Hello" name]
+  |   ^
+5 |     (str greeting ", " name)))
+
+-- Spec failed --------------------
+
+  ([greeting "Hello" name] ...)
+   ^^^^^^^^^^^^^^^^^^^^^^^
+
+should satisfy
+
+  even-number-of-forms?
+
+-- Relevant specs -------
+
+:clojure.core.specs.alpha/bindings:
+  (clojure.spec.alpha/and
+   clojure.core/vector?
+   clojure.core.specs.alpha/even-number-of-forms?
+   (clojure.spec.alpha/* :clojure.core.specs.alpha/binding))
+
+-------------------------
+Detected 1 error
+
+ExceptionInfo: Call to clojure.core/let did not conform to spec.
+

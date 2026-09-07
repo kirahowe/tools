@@ -1,0 +1,4 @@
+Clojure 1.12.6
+user=> Execution error (NullPointerException) at bugs.inc-nil/next-port (10_inc_nil.clj:6).
+Cannot invoke "Object.getClass()" because "x" is null
+user=> 

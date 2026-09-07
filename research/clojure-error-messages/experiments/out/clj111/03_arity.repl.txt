@@ -1,0 +1,4 @@
+Clojure 1.11.4
+user=> Execution error (ArityException) at bugs.arity/eval149 (03_arity.clj:6).
+Wrong number of args (1) passed to: bugs.arity/area
+user=> 

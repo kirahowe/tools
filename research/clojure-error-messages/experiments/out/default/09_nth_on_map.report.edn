@@ -1,0 +1,46 @@
+{:clojure.main/message
+ "Execution error (UnsupportedOperationException) at bugs.nth-on-map/first-field (09_nth_on_map.clj:6).\nnth not supported on this type: PersistentArrayMap\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.UnsupportedOperationException,
+  :clojure.error/line 6,
+  :clojure.error/cause
+  "nth not supported on this type: PersistentArrayMap",
+  :clojure.error/symbol bugs.nth-on-map/first-field,
+  :clojure.error/source "09_nth_on_map.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.Compiler$CompilerException,
+    :message
+    "Syntax error macroexpanding at (/home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj:8:1).",
+    :data
+    {:clojure.error/phase :execution,
+     :clojure.error/line 8,
+     :clojure.error/column 1,
+     :clojure.error/source
+     "/home/user/tools/research/clojure-error-messages/experiments/bugs/09_nth_on_map.clj"},
+    :at [clojure.lang.Compiler load "Compiler.java" 8235]}
+   {:type java.lang.UnsupportedOperationException,
+    :message "nth not supported on this type: PersistentArrayMap",
+    :at [clojure.lang.RT nthFrom "RT.java" 952]}],
+  :trace
+  [[clojure.lang.RT nthFrom "RT.java" 952]
+   [clojure.lang.RT nth "RT.java" 917]
+   [bugs.nth_on_map$first_field invokeStatic "09_nth_on_map.clj" 6]
+   [bugs.nth_on_map$first_field invoke "09_nth_on_map.clj" 5]
+   [bugs.nth_on_map$eval145 invokeStatic "09_nth_on_map.clj" 8]
+   [bugs.nth_on_map$eval145 invoke "09_nth_on_map.clj" 8]
+   [clojure.lang.Compiler eval "Compiler.java" 7757]
+   [clojure.lang.Compiler load "Compiler.java" 8223]
+   [clojure.lang.Compiler loadFile "Compiler.java" 8161]
+   [clojure.main$load_script invokeStatic "main.clj" 476]
+   [clojure.main$script_opt invokeStatic "main.clj" 536]
+   [clojure.main$script_opt invoke "main.clj" 531]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "nth not supported on this type: PersistentArrayMap",
+  :phase :execution}}
+
