@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c13-how-to-get-a-wealth-tax
+(ns economics.wealth-distribution.canada.c14-how-to-get-a-wealth-tax
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn :kind/graphviz}}
    :clay {:title  "Unbounded North: How to Get a Wealth Tax"
@@ -153,7 +153,7 @@
 ;; costed proposals that survive scrutiny, and allies inside the party.
 ;; Public support is already there; the missing piece is pressure.
 
-;; The final part, [References](c14_references.html), lists the sources, data and research behind this series.
+;; The final part, [References](c15_references.html), lists the sources, data and research behind this series.
 
 ;; [^1]: House of Commons, [Vote No. 22, 43rd Parliament, 2nd Session](https://www.ourcommons.ca/members/en/votes/43/2/22), November 2020 (27 yeas, 292 nays); [CBC News](https://www.cbc.ca/news/politics/ndp-wealth-tax-opposition-day-1.5789923).
 ;; [^2]: [Prime Minister's statement, March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase).

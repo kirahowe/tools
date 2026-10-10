@@ -26,9 +26,10 @@ data processing, rendered with [Quarto](https://quarto.org/).
 | 9 | `c09_investment_question.clj` | Would a wealth tax kill investment? Canada's tax-cut experiment and the evidence |
 | 10 | `c10_land.clj` | Land as wealth, Western Canada's land-tax history, vacancy taxes, land value tax |
 | 11 | `c11_canadian_differences.clj` | Mobility, public programs, provinces, Indigenous gaps, concentration |
-| 12 | `c12_scorecard.clj` | The Carney government's measures, targets vs actuals, early indicators |
-| 13 | `c13_how_to_get_a_wealth_tax.clj` | Canada's parliamentary path to a tax |
-| 14 | `c14_references.clj` | Sources and caveats |
+| 12 | `c12_talent.clj` | Brain drain vs brain gain, immigrant founders, and how well Canada's mobility advantage holds up |
+| 13 | `c13_scorecard.clj` | The Carney government's measures, targets vs actuals, early indicators |
+| 14 | `c14_how_to_get_a_wealth_tax.clj` | Canada's parliamentary path to a tax |
+| 15 | `c15_references.clj` | Sources and caveats |
 
 Notebooks live in `src/economics/wealth_distribution/canada/`, mirroring the layout of the
 original series in the [ClojureCivitas repository](https://github.com/ClojureCivitas/clojurecivitas.github.io)

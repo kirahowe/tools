@@ -36,12 +36,14 @@ website:
           text: "10. Land"
         - href: economics/wealth_distribution/canada/c11_canadian_differences.qmd
           text: "11. What Makes Canada Different"
-        - href: economics/wealth_distribution/canada/c12_scorecard.qmd
-          text: "12. Scorecard"
-        - href: economics/wealth_distribution/canada/c13_how_to_get_a_wealth_tax.qmd
-          text: "13. How to Get a Wealth Tax"
-        - href: economics/wealth_distribution/canada/c14_references.qmd
-          text: "14. References"
+        - href: economics/wealth_distribution/canada/c12_talent.qmd
+          text: "12. Talent and Opportunity"
+        - href: economics/wealth_distribution/canada/c13_scorecard.qmd
+          text: "13. Scorecard"
+        - href: economics/wealth_distribution/canada/c14_how_to_get_a_wealth_tax.qmd
+          text: "14. How to Get a Wealth Tax"
+        - href: economics/wealth_distribution/canada/c15_references.qmd
+          text: "15. References"
 
 format:
   html:

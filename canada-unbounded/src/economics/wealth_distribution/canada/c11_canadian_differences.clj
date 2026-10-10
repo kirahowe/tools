@@ -46,21 +46,26 @@
 ;; Before taxes and transfers it is far less equal: Statistics Canada's market-income Gini was 0.436 in 2024.[^2]
 ;; The difference is the work done by public programs.
 
-;; Canada also has much higher intergenerational mobility.
+;; Canada also has higher intergenerational mobility, though by less than the most quoted figure suggests.
 ;; Using linked tax records for both countries, Connolly, Corak and Haeck find:[^3]
 
 ;; | | Canada | United States |
 ;; | :--- | ---: | ---: |
-;; | Chance a child from the bottom fifth reaches the top fifth | 11.2% | 7.5% |
-;; | Chance a child from the top fifth stays there | 29.5% | 36.5% |
-;; | Rank–rank slope (lower = more mobile) | 0.21–0.23 | 0.34 |
+;; | Rank–rank slope (lower = more mobile) | 0.21–0.23 | 0.31–0.34 |
+;; | Average rank reached by children of bottom-fifth parents (regional average) | 40.6 | 35.8 |
+;; | Chance a bottom-fifth child stays in the bottom fifth (US income cut-offs) | 29.1% | 33.7% |
+;; | Chance a bottom-fifth child reaches the top fifth (each country's own cut-offs) | 11.2% | 7.5% |
+;; | Chance a bottom-fifth child reaches the top fifth (US income cut-offs) | 7.7% | 7.5% |
+;; | Chance a top-fifth child stays there | 29.5% | 36.5% |
 ;;
-;; : Intergenerational income mobility {#tbl-mobility}
+;; : Intergenerational income mobility, children born around 1980 {#tbl-mobility}
 
 ;; In their words, "the US 'middle class' is within easier reach for low income Canadian children,
-;; than it is for low income Americans."
-;; They also find large differences *within* Canada: some regions "have more in common with the low mobility
-;; southern parts of the United States than with the rest of Canada."[^3]
+;; than it is for low income Americans", although they are "not necessarily more likely to rise to the top fifth."
+;; Canada's advantage is in the bottom half: fewer children stay poor, and more reach the middle.
+;; Measured on the same dollar scale, a poor Canadian child is no more likely than a poor American one to reach the top.
+;; Canada's mobility is also declining, it varies a lot by region, and it is much lower for Indigenous children;
+;; [Talent and Opportunity](c12_talent.html) looks at all of this in detail.
 
 ;; ### What Public Programs Do
 
@@ -234,11 +239,11 @@
 ;; old family fortunes and untaxed inheritance) all run in the same direction:
 ;; toward wealth that compounds for those who already have it.
 
-;; In the next part, [Scorecard](c12_scorecard.html), we look at what the current government has done so far, and what the data show.
+;; In the next part, [Talent and Opportunity](c12_talent.html), we look at who leaves Canada, who arrives, and whether Canadian children really do have better odds than American ones.
 
 ;; [^1]: OECD, [Income Distribution Database](https://www.oecd.org/en/data/datasets/income-and-wealth-distribution-database.html), Gini coefficient of disposable income, total population, 2023.
 ;; [^2]: Statistics Canada, [Table 11-10-0134-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013401), Gini coefficients of adjusted market, total and after-tax income.
-;; [^3]: Marie Connolly, Miles Corak and Catherine Haeck, ["Intergenerational Mobility between and within Canada and the United States"](https://doi.org/10.1086/703465), *Journal of Labor Economics* 37(S2), 2019. Figures from the [NBER working paper version](https://www.nber.org/papers/w25735), Tables 2–3.
+;; [^3]: Marie Connolly, Miles Corak and Catherine Haeck, ["Intergenerational Mobility between and within Canada and the United States"](https://doi.org/10.1086/703465), *Journal of Labor Economics* 37(S2), 2019. Tables 2–3 and p. S625; quotations from pp. S612–S614.
 ;; [^4]: OECD, [System of Health Accounts](https://data-explorer.oecd.org/s/3zl), 2024, current health expenditure as % of GDP and per capita in US dollars at PPP.
 ;; [^5]: Michael Baker, Derek Messacar and Mark Stabile, ["Effects of Child Tax Benefits on Poverty and Labor Supply: Evidence from the Canada Child Benefit and Universal Child Care Benefit"](https://doi.org/10.1086/721379), *Journal of Labor Economics* 41(4), 2023.
 ;; [^6]: Statistics Canada, [Table 11-10-0135-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501), low income statistics by age, Market Basket Measure.

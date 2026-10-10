@@ -23,7 +23,7 @@
 ;; It is tempting for Canadians to read an American story about inequality and feel relieved.
 ;; In some ways we should.
 ;; Canada's after-tax incomes are much more equal than America's,
-;; a child born poor in Canada has a better chance of reaching the top,
+;; a child born poor in Canada is more likely to reach the middle class,
 ;; Canadian banks came through 2008 without a bailout,
 ;; and Canadians collectively still own a public sector with positive net worth.
 ;; Canada's institutions are stable, and that stability is a real achievement.
@@ -57,9 +57,10 @@
 ;; 9. **[The Investment Question](c09_investment_question.html)**: The claim that a wealth tax would kill investment doesn't survive the data. Canada already cut capital taxes deeply, and investment and productivity fell further behind.
 ;; 10. **[Land](c10_land.html)**: Land is over a third of the value of everything Canada owns. Western Canada once taxed land instead of buildings; economists still rank it the least harmful tax there is.
 ;; 11. **[What Makes Canada Different](c11_canadian_differences.html)**: More equal and mobile than the US because of public programs, with distinctly Canadian fault lines.
-;; 12. **[Scorecard](c12_scorecard.html)**: What the Carney government has enacted, and what the early data show.
-;; 13. **[How to Get a Wealth Tax](c13_how_to_get_a_wealth_tax.html)**: In Canada, only Cabinet can start a tax. Public support exists; what's missing is pressure on the governing party.
-;; 14. **[References](c14_references.html)**: the data and research behind every claim.
+;; 12. **[Talent and Opportunity](c12_talent.html)**: Canada is better than the US at keeping poor children from staying poor, but not at getting them to the top, and its advantage is shrinking.
+;; 13. **[Scorecard](c13_scorecard.html)**: What the Carney government has enacted, and what the early data show.
+;; 14. **[How to Get a Wealth Tax](c14_how_to_get_a_wealth_tax.html)**: In Canada, only Cabinet can start a tax. Public support exists; what's missing is pressure on the governing party.
+;; 15. **[References](c15_references.html)**: the data and research behind every claim.
 
 ;; ## Canada at a Glance
 

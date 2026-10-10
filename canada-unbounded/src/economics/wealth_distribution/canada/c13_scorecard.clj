@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c12-scorecard
+(ns economics.wealth-distribution.canada.c13-scorecard
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/hiccup :kind/fn}}
    :clay {:title  "Unbounded North: Scorecard"
@@ -223,7 +223,7 @@
 ;; The fair verdict is "too early to judge," with one exception: on taxing wealth, land and capital gains, the direction is clear,
 ;; and it runs the other way.
 
-;; In the next part, [How to Get a Wealth Tax](c13_how_to_get_a_wealth_tax.html), we look at what it would take to change that.
+;; In the next part, [How to Get a Wealth Tax](c14_how_to_get_a_wealth_tax.html), we look at what it would take to change that.
 
 ;; [^1]: Attribution caveats are detailed in `data-prep/scorecard/NOTES.md`, section 10. Data downloaded October 10, 2026: GDP through 2026Q2, Labour Force Survey through September 2026, CPI through August 2026, trade and housing starts through August 2026.
 ;; [^2]: LEGISinfo: [Bill C-4](https://www.parl.ca/legisinfo/en/bill/45-1/C-4), [Bill C-5](https://www.parl.ca/legisinfo/en/bill/45-1/C-5), [Bill C-15](https://www.parl.ca/legisinfo/en/bill/45-1/C-15); Department of Finance Canada, [Budget 2025](https://budget.canada.ca/2025/report-rapport/overview-apercu-en.html) and [Spring Economic Update 2026](https://budget.canada.ca/update-miseajour/2026/report-rapport/anx1-en.html); Office of the Parliamentary Budget Officer, [Reducing the lowest federal personal income tax rate to 14 per cent](https://www.pbo-dpb.ca/en/publications/LEG-2526-002-S--reducing-lowest-federal-personal-income-tax-rate-14-per-cent--reduire-14-taux-plus-bas-impot-federal-revenu-particuliers). Full inventory with sources in `data/sc_policy_inventory.csv`.
