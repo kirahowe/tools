@@ -1,0 +1,506 @@
+year,panel,series,unit,value,statcan_tables
+1946,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,100.0,36-10-0305-01
+1946,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,100.0,36-10-0305-01 / 18-10-0005-01
+1947,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,104.3,36-10-0305-01
+1947,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,109.5,36-10-0305-01 / 18-10-0005-01
+1948,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,106.5,36-10-0305-01
+1948,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,104.7,36-10-0305-01 / 18-10-0005-01
+1949,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,108.3,36-10-0305-01
+1949,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,107.9,36-10-0305-01 / 18-10-0005-01
+1950,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,119.1,36-10-0305-01
+1950,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,116.0,36-10-0305-01 / 18-10-0005-01
+1951,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,126.0,36-10-0305-01
+1951,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,120.7,36-10-0305-01 / 18-10-0005-01
+1952,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,135.0,36-10-0305-01
+1952,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,126.7,36-10-0305-01 / 18-10-0005-01
+1953,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,139.7,36-10-0305-01
+1953,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,138.1,36-10-0305-01 / 18-10-0005-01
+1954,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,138.3,36-10-0305-01
+1954,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,139.0,36-10-0305-01 / 18-10-0005-01
+1955,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,153.4,36-10-0305-01
+1955,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,148.6,36-10-0305-01 / 18-10-0005-01
+1956,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,161.4,36-10-0305-01
+1956,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,157.8,36-10-0305-01 / 18-10-0005-01
+1957,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,161.0,36-10-0305-01
+1957,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,163.3,36-10-0305-01 / 18-10-0005-01
+1958,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,169.7,36-10-0305-01
+1958,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,166.1,36-10-0305-01 / 18-10-0005-01
+1959,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,175.8,36-10-0305-01
+1959,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,172.0,36-10-0305-01 / 18-10-0005-01
+1960,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,181.6,36-10-0305-01
+1960,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,178.5,36-10-0305-01 / 18-10-0005-01
+1961,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,187.0,36-10-0305-01
+1961,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,183.0,36-10-0305-01 / 18-10-0005-01
+1962,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,194.6,36-10-0305-01
+1962,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,187.5,36-10-0305-01 / 18-10-0005-01
+1963,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,203.2,36-10-0305-01
+1963,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,193.5,36-10-0305-01 / 18-10-0005-01
+1964,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,211.2,36-10-0305-01
+1964,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,199.8,36-10-0305-01 / 18-10-0005-01
+1965,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,219.9,36-10-0305-01
+1965,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,209.4,36-10-0305-01 / 18-10-0005-01
+1966,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,224.9,36-10-0305-01
+1966,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,214.9,36-10-0305-01 / 18-10-0005-01
+1967,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,226.7,36-10-0305-01
+1967,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,222.6,36-10-0305-01 / 18-10-0005-01
+1968,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,241.5,36-10-0305-01
+1968,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,231.4,36-10-0305-01 / 18-10-0005-01
+1969,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,249.5,36-10-0305-01
+1969,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,238.6,36-10-0305-01 / 18-10-0005-01
+1970,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,258.5,36-10-0305-01
+1970,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,248.7,36-10-0305-01 / 18-10-0005-01
+1971,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,268.6,36-10-0305-01
+1971,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,262.1,36-10-0305-01 / 18-10-0005-01
+1972,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,280.5,36-10-0305-01
+1972,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,273.5,36-10-0305-01 / 18-10-0005-01
+1973,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,290.6,36-10-0305-01
+1973,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,281.1,36-10-0305-01 / 18-10-0005-01
+1974,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,288.8,36-10-0305-01
+1974,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,291.1,36-10-0305-01 / 18-10-0005-01
+1975,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,290.6,36-10-0305-01
+1975,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,302.8,36-10-0305-01 / 18-10-0005-01
+1976,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,308.3,36-10-0305-01
+1976,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,321.2,36-10-0305-01 / 18-10-0005-01
+1977,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,317.0,36-10-0305-01
+1977,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,326.9,36-10-0305-01 / 18-10-0005-01
+1978,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,317.7,36-10-0305-01
+1978,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,315.5,36-10-0305-01 / 18-10-0005-01
+1979,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,317.0,36-10-0305-01
+1979,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,312.2,36-10-0305-01 / 18-10-0005-01
+1980,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,318.8,36-10-0305-01
+1980,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,315.6,36-10-0305-01 / 18-10-0005-01
+1981,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,325.6,36-10-0305-01
+1981,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,310.9,36-10-0305-01 / 18-10-0005-01
+1982,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,326.4,36-10-0305-01
+1982,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,308.7,36-10-0305-01 / 18-10-0005-01
+1983,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,336.1,36-10-0305-01
+1983,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,304.2,36-10-0305-01 / 18-10-0005-01
+1984,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,350.9,36-10-0305-01
+1984,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,306.7,36-10-0305-01 / 18-10-0005-01
+1985,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,353.8,36-10-0305-01
+1985,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,308.6,36-10-0305-01 / 18-10-0005-01
+1986,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,351.3,36-10-0305-01
+1986,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,306.2,36-10-0305-01 / 18-10-0005-01
+1987,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,354.5,36-10-0305-01
+1987,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,309.0,36-10-0305-01 / 18-10-0005-01
+1988,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,356.7,36-10-0305-01
+1988,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,315.7,36-10-0305-01 / 18-10-0005-01
+1989,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,356.3,36-10-0305-01
+1989,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,316.3,36-10-0305-01 / 18-10-0005-01
+1990,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,353.8,36-10-0305-01
+1990,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,314.8,36-10-0305-01 / 18-10-0005-01
+1991,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,353.1,36-10-0305-01
+1991,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,314.3,36-10-0305-01 / 18-10-0005-01
+1992,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,361.0,36-10-0305-01
+1992,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,319.7,36-10-0305-01 / 18-10-0005-01
+1993,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,366.4,36-10-0305-01
+1993,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,315.9,36-10-0305-01 / 18-10-0005-01
+1994,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,379.8,36-10-0305-01
+1994,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,315.9,36-10-0305-01 / 18-10-0005-01
+1995,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,388.8,36-10-0305-01
+1995,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,317.0,36-10-0305-01 / 18-10-0005-01
+1996,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,388.1,36-10-0305-01
+1996,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,317.5,36-10-0305-01 / 18-10-0005-01
+1997,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,398.2,36-10-0305-01
+1997,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,326.8,36-10-0305-01 / 18-10-0005-01
+1998,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,404.7,36-10-0305-01
+1998,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,338.9,36-10-0305-01 / 18-10-0005-01
+1999,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,415.9,36-10-0305-01
+1999,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,333.9,36-10-0305-01 / 18-10-0005-01
+2000,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,425.3,36-10-0305-01
+2000,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,345.1,36-10-0305-01 / 18-10-0005-01
+2001,A_1946-2001_archived_SIC,Business-sector labour productivity,1946=100,428.9,36-10-0305-01
+2001,A_1946-2001_archived_SIC,Real total compensation per hour (CPI-deflated),1946=100,350.4,36-10-0305-01 / 18-10-0005-01
+1961,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,100.0,36-10-0208-01
+1961,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,100.0,36-10-0208-01 / 18-10-0005-01
+1961,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.8,36-10-0208-01 (computed)
+1962,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,104.7,36-10-0208-01
+1962,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,103.8,36-10-0208-01 / 18-10-0005-01
+1962,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.93,36-10-0208-01 (computed)
+1963,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,109.3,36-10-0208-01
+1963,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,106.9,36-10-0208-01 / 18-10-0005-01
+1963,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.92,36-10-0208-01 (computed)
+1964,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,113.8,36-10-0208-01
+1964,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,110.3,36-10-0208-01 / 18-10-0005-01
+1964,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.43,36-10-0208-01 (computed)
+1965,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,118.6,36-10-0208-01
+1965,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,116.9,36-10-0208-01 / 18-10-0005-01
+1965,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.92,36-10-0208-01 (computed)
+1966,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,121.5,36-10-0208-01
+1966,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,120.6,36-10-0208-01 / 18-10-0005-01
+1966,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.17,36-10-0208-01 (computed)
+1967,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,122.7,36-10-0208-01
+1967,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,124.7,36-10-0208-01 / 18-10-0005-01
+1967,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,62.57,36-10-0208-01 (computed)
+1968,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,130.3,36-10-0208-01
+1968,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,128.6,36-10-0208-01 / 18-10-0005-01
+1968,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.4,36-10-0208-01 (computed)
+1969,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,134.5,36-10-0208-01
+1969,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,132.7,36-10-0208-01 / 18-10-0005-01
+1969,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,62.08,36-10-0208-01 (computed)
+1970,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,139.2,36-10-0208-01
+1970,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,137.8,36-10-0208-01 / 18-10-0005-01
+1970,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.96,36-10-0208-01 (computed)
+1971,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,142.6,36-10-0208-01
+1971,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,144.0,36-10-0208-01 / 18-10-0005-01
+1971,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,62.13,36-10-0208-01 (computed)
+1972,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,148.3,36-10-0208-01
+1972,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,150.1,36-10-0208-01 / 18-10-0005-01
+1972,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,62.1,36-10-0208-01 (computed)
+1973,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,152.0,36-10-0208-01
+1973,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,153.5,36-10-0208-01 / 18-10-0005-01
+1973,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.2,36-10-0208-01 (computed)
+1974,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,152.4,36-10-0208-01
+1974,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,160.0,36-10-0208-01 / 18-10-0005-01
+1974,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.0,36-10-0208-01 (computed)
+1975,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,155.2,36-10-0208-01
+1975,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,167.0,36-10-0208-01 / 18-10-0005-01
+1975,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.62,36-10-0208-01 (computed)
+1976,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,166.3,36-10-0208-01
+1976,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,179.3,36-10-0208-01 / 18-10-0005-01
+1976,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.05,36-10-0208-01 (computed)
+1977,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,172.7,36-10-0208-01
+1977,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,182.5,36-10-0208-01 / 18-10-0005-01
+1977,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,61.36,36-10-0208-01 (computed)
+1978,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,173.8,36-10-0208-01
+1978,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,175.3,36-10-0208-01 / 18-10-0005-01
+1978,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.86,36-10-0208-01 (computed)
+1979,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,171.9,36-10-0208-01
+1979,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.0,36-10-0208-01 / 18-10-0005-01
+1979,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,58.32,36-10-0208-01 (computed)
+1980,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,171.9,36-10-0208-01
+1980,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.7,36-10-0208-01 / 18-10-0005-01
+1980,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,58.14,36-10-0208-01 (computed)
+1981,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,175.2,36-10-0208-01
+1981,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.0,36-10-0208-01 / 18-10-0005-01
+1981,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,100.0,36-10-0206-01
+1981,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,100.0,36-10-0206-01 / 18-10-0005-01
+1981,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.37,36-10-0208-01 (computed)
+1982,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,179.5,36-10-0208-01
+1982,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.7,36-10-0208-01 / 18-10-0005-01
+1982,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,101.5,36-10-0206-01
+1982,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,100.4,36-10-0206-01 / 18-10-0005-01
+1982,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.23,36-10-0208-01 (computed)
+1983,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,185.4,36-10-0208-01
+1983,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,170.9,36-10-0208-01 / 18-10-0005-01
+1983,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,104.8,36-10-0206-01
+1983,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,99.3,36-10-0206-01 / 18-10-0005-01
+1983,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.65,36-10-0208-01 (computed)
+1984,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,191.5,36-10-0208-01
+1984,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,171.5,36-10-0208-01 / 18-10-0005-01
+1984,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,108.8,36-10-0206-01
+1984,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,99.7,36-10-0206-01 / 18-10-0005-01
+1984,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.69,36-10-0208-01 (computed)
+1985,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,193.8,36-10-0208-01
+1985,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.9,36-10-0208-01 / 18-10-0005-01
+1985,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,110.1,36-10-0206-01
+1985,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,100.5,36-10-0206-01 / 18-10-0005-01
+1985,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.1,36-10-0208-01 (computed)
+1986,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,192.5,36-10-0208-01
+1986,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,171.1,36-10-0208-01 / 18-10-0005-01
+1986,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,108.8,36-10-0206-01
+1986,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,99.4,36-10-0206-01 / 18-10-0005-01
+1986,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,58.3,36-10-0208-01 (computed)
+1987,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,194.2,36-10-0208-01
+1987,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,172.3,36-10-0208-01 / 18-10-0005-01
+1987,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,109.7,36-10-0206-01
+1987,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,100.2,36-10-0206-01 / 18-10-0005-01
+1987,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,58.36,36-10-0208-01 (computed)
+1988,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,197.3,36-10-0208-01
+1988,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,177.4,36-10-0208-01 / 18-10-0005-01
+1988,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,111.1,36-10-0206-01
+1988,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,103.1,36-10-0206-01 / 18-10-0005-01
+1988,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,58.83,36-10-0208-01 (computed)
+1989,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,198.2,36-10-0208-01
+1989,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,178.1,36-10-0208-01 / 18-10-0005-01
+1989,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,111.1,36-10-0206-01
+1989,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,103.5,36-10-0206-01 / 18-10-0005-01
+1989,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.69,36-10-0208-01 (computed)
+1990,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,198.2,36-10-0208-01
+1990,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,178.0,36-10-0208-01 / 18-10-0005-01
+1990,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,110.7,36-10-0206-01
+1990,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,103.5,36-10-0206-01 / 18-10-0005-01
+1990,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.97,36-10-0208-01 (computed)
+1991,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,197.8,36-10-0208-01
+1991,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,178.5,36-10-0208-01 / 18-10-0005-01
+1991,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,110.8,36-10-0206-01
+1991,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,103.8,36-10-0206-01 / 18-10-0005-01
+1991,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,63.13,36-10-0208-01 (computed)
+1992,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,202.3,36-10-0208-01
+1992,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,181.4,36-10-0208-01 / 18-10-0005-01
+1992,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,113.2,36-10-0206-01
+1992,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,105.5,36-10-0206-01 / 18-10-0005-01
+1992,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,63.42,36-10-0208-01 (computed)
+1993,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,205.8,36-10-0208-01
+1993,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,179.6,36-10-0208-01 / 18-10-0005-01
+1993,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,115.4,36-10-0206-01
+1993,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,104.5,36-10-0206-01 / 18-10-0005-01
+1993,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,62.27,36-10-0208-01 (computed)
+1994,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,211.2,36-10-0208-01
+1994,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,180.4,36-10-0208-01 / 18-10-0005-01
+1994,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,118.2,36-10-0206-01
+1994,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,104.9,36-10-0206-01 / 18-10-0005-01
+1994,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.21,36-10-0208-01 (computed)
+1995,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,213.4,36-10-0208-01
+1995,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,179.9,36-10-0208-01 / 18-10-0005-01
+1995,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,119.5,36-10-0206-01
+1995,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,104.6,36-10-0206-01 / 18-10-0005-01
+1995,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.17,36-10-0208-01 (computed)
+1996,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,212.4,36-10-0208-01
+1996,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,180.7,36-10-0208-01 / 18-10-0005-01
+1996,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,118.8,36-10-0206-01
+1996,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,105.0,36-10-0206-01 / 18-10-0005-01
+1996,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.31,36-10-0208-01 (computed)
+1997,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,219.5,36-10-0208-01
+1997,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,186.3,36-10-0208-01 / 18-10-0005-01
+1997,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,122.1,36-10-0206-01
+1997,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,107.9,36-10-0206-01 / 18-10-0005-01
+1997,D_1997-2025,Business-sector labour productivity,1997=100,100.0,36-10-0206-01
+1997,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,100.0,36-10-0206-01 / 18-10-0005-01
+1997,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.0,14-10-0064-01 / 18-10-0005-01
+1997,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.0,14-10-0064-01 / 18-10-0005-01
+1997,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.6,36-10-0208-01 (computed)
+1998,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,225.0,36-10-0208-01
+1998,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,192.1,36-10-0208-01 / 18-10-0005-01
+1998,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,125.3,36-10-0206-01
+1998,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,111.3,36-10-0206-01 / 18-10-0005-01
+1998,D_1997-2025,Business-sector labour productivity,1997=100,102.6,36-10-0206-01
+1998,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,103.1,36-10-0206-01 / 18-10-0005-01
+1998,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.1,14-10-0064-01 / 18-10-0005-01
+1998,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.2,14-10-0064-01 / 18-10-0005-01
+1998,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,60.89,36-10-0208-01 (computed)
+1999,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,233.8,36-10-0208-01
+1999,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,194.0,36-10-0208-01 / 18-10-0005-01
+1999,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,129.7,36-10-0206-01
+1999,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,112.6,36-10-0206-01 / 18-10-0005-01
+1999,D_1997-2025,Business-sector labour productivity,1997=100,106.2,36-10-0206-01
+1999,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,104.3,36-10-0206-01 / 18-10-0005-01
+1999,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.8,14-10-0064-01 / 18-10-0005-01
+1999,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.9,14-10-0064-01 / 18-10-0005-01
+1999,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.01,36-10-0208-01 (computed)
+2000,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,244.3,36-10-0208-01
+2000,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,201.4,36-10-0208-01 / 18-10-0005-01
+2000,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,135.0,36-10-0206-01
+2000,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,116.8,36-10-0206-01 / 18-10-0005-01
+2000,D_1997-2025,Business-sector labour productivity,1997=100,110.6,36-10-0206-01
+2000,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,108.2,36-10-0206-01 / 18-10-0005-01
+2000,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.5,14-10-0064-01 / 18-10-0005-01
+2000,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.3,14-10-0064-01 / 18-10-0005-01
+2000,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.57,36-10-0208-01 (computed)
+2001,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,248.2,36-10-0208-01
+2001,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,203.7,36-10-0208-01 / 18-10-0005-01
+2001,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,137.6,36-10-0206-01
+2001,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,118.2,36-10-0206-01 / 18-10-0005-01
+2001,D_1997-2025,Business-sector labour productivity,1997=100,112.7,36-10-0206-01
+2001,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,109.6,36-10-0206-01 / 18-10-0005-01
+2001,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.5,14-10-0064-01 / 18-10-0005-01
+2001,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,102.1,14-10-0064-01 / 18-10-0005-01
+2001,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.74,36-10-0208-01 (computed)
+2002,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,251.9,36-10-0208-01
+2002,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,202.8,36-10-0208-01 / 18-10-0005-01
+2002,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,140.1,36-10-0206-01
+2002,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,117.7,36-10-0206-01 / 18-10-0005-01
+2002,D_1997-2025,Business-sector labour productivity,1997=100,114.8,36-10-0206-01
+2002,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,109.1,36-10-0206-01 / 18-10-0005-01
+2002,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.2,14-10-0064-01 / 18-10-0005-01
+2002,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,102.4,14-10-0064-01 / 18-10-0005-01
+2002,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.75,36-10-0208-01 (computed)
+2003,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,252.9,36-10-0208-01
+2003,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,201.3,36-10-0208-01 / 18-10-0005-01
+2003,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,140.3,36-10-0206-01
+2003,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,116.8,36-10-0206-01 / 18-10-0005-01
+2003,D_1997-2025,Business-sector labour productivity,1997=100,114.9,36-10-0206-01
+2003,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,108.3,36-10-0206-01 / 18-10-0005-01
+2003,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.5,14-10-0064-01 / 18-10-0005-01
+2003,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,101.8,14-10-0064-01 / 18-10-0005-01
+2003,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.62,36-10-0208-01 (computed)
+2004,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,254.3,36-10-0208-01
+2004,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,204.1,36-10-0208-01 / 18-10-0005-01
+2004,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,141.2,36-10-0206-01
+2004,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,118.4,36-10-0206-01 / 18-10-0005-01
+2004,D_1997-2025,Business-sector labour productivity,1997=100,115.6,36-10-0206-01
+2004,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,109.8,36-10-0206-01 / 18-10-0005-01
+2004,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,100.8,14-10-0064-01 / 18-10-0005-01
+2004,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,102.5,14-10-0064-01 / 18-10-0005-01
+2004,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.03,36-10-0208-01 (computed)
+2005,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,259.7,36-10-0208-01
+2005,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,209.2,36-10-0208-01 / 18-10-0005-01
+2005,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,144.4,36-10-0206-01
+2005,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,121.3,36-10-0206-01 / 18-10-0005-01
+2005,D_1997-2025,Business-sector labour productivity,1997=100,118.3,36-10-0206-01
+2005,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,112.5,36-10-0206-01 / 18-10-0005-01
+2005,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,102.6,14-10-0064-01 / 18-10-0005-01
+2005,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,103.5,14-10-0064-01 / 18-10-0005-01
+2005,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,55.4,36-10-0208-01 (computed)
+2006,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,263.9,36-10-0208-01
+2006,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,215.6,36-10-0208-01 / 18-10-0005-01
+2006,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,146.6,36-10-0206-01
+2006,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,125.1,36-10-0206-01 / 18-10-0005-01
+2006,D_1997-2025,Business-sector labour productivity,1997=100,120.1,36-10-0206-01
+2006,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,116.0,36-10-0206-01 / 18-10-0005-01
+2006,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,103.6,14-10-0064-01 / 18-10-0005-01
+2006,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,107.1,14-10-0064-01 / 18-10-0005-01
+2006,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,55.7,36-10-0208-01 (computed)
+2007,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,264.5,36-10-0208-01
+2007,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,220.1,36-10-0208-01 / 18-10-0005-01
+2007,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,146.7,36-10-0206-01
+2007,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,127.8,36-10-0206-01 / 18-10-0005-01
+2007,D_1997-2025,Business-sector labour productivity,1997=100,120.2,36-10-0206-01
+2007,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,118.5,36-10-0206-01 / 18-10-0005-01
+2007,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,104.2,14-10-0064-01 / 18-10-0005-01
+2007,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,109.2,14-10-0064-01 / 18-10-0005-01
+2007,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.06,36-10-0208-01 (computed)
+2008,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,261.7,36-10-0208-01
+2008,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,221.7,36-10-0208-01 / 18-10-0005-01
+2008,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,145.7,36-10-0206-01
+2008,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,128.8,36-10-0206-01 / 18-10-0005-01
+2008,D_1997-2025,Business-sector labour productivity,1997=100,119.3,36-10-0206-01
+2008,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,119.3,36-10-0206-01 / 18-10-0005-01
+2008,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,107.5,14-10-0064-01 / 18-10-0005-01
+2008,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,111.0,14-10-0064-01 / 18-10-0005-01
+2008,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,55.45,36-10-0208-01 (computed)
+2009,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,259.1,36-10-0208-01
+2009,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,223.9,36-10-0208-01 / 18-10-0005-01
+2009,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,145.5,36-10-0206-01
+2009,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,130.1,36-10-0206-01 / 18-10-0005-01
+2009,D_1997-2025,Business-sector labour productivity,1997=100,119.2,36-10-0206-01
+2009,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,120.6,36-10-0206-01 / 18-10-0005-01
+2009,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,111.5,14-10-0064-01 / 18-10-0005-01
+2009,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,114.7,14-10-0064-01 / 18-10-0005-01
+2009,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.12,36-10-0208-01 (computed)
+2010,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,260.6,36-10-0208-01
+2010,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,219.7,36-10-0208-01 / 18-10-0005-01
+2010,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,145.7,36-10-0206-01
+2010,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,127.7,36-10-0206-01 / 18-10-0005-01
+2010,D_1997-2025,Business-sector labour productivity,1997=100,119.3,36-10-0206-01
+2010,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,118.3,36-10-0206-01 / 18-10-0005-01
+2010,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,110.9,14-10-0064-01 / 18-10-0005-01
+2010,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,114.9,14-10-0064-01 / 18-10-0005-01
+2010,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.97,36-10-0208-01 (computed)
+2011,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,266.6,36-10-0208-01
+2011,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,222.0,36-10-0208-01 / 18-10-0005-01
+2011,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,148.5,36-10-0206-01
+2011,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,128.9,36-10-0206-01 / 18-10-0005-01
+2011,D_1997-2025,Business-sector labour productivity,1997=100,121.6,36-10-0206-01
+2011,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,119.5,36-10-0206-01 / 18-10-0005-01
+2011,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,107.7,14-10-0064-01 / 18-10-0005-01
+2011,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,114.1,14-10-0064-01 / 18-10-0005-01
+2011,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.01,36-10-0208-01 (computed)
+2012,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,266.2,36-10-0208-01
+2012,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,224.7,36-10-0208-01 / 18-10-0005-01
+2012,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,148.0,36-10-0206-01
+2012,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,130.5,36-10-0206-01 / 18-10-0005-01
+2012,D_1997-2025,Business-sector labour productivity,1997=100,121.2,36-10-0206-01
+2012,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,121.0,36-10-0206-01 / 18-10-0005-01
+2012,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,109.3,14-10-0064-01 / 18-10-0005-01
+2012,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,115.4,14-10-0064-01 / 18-10-0005-01
+2012,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.32,36-10-0208-01 (computed)
+2013,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,271.2,36-10-0208-01
+2013,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,228.9,36-10-0208-01 / 18-10-0005-01
+2013,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,150.2,36-10-0206-01
+2013,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,132.9,36-10-0206-01 / 18-10-0005-01
+2013,D_1997-2025,Business-sector labour productivity,1997=100,123.0,36-10-0206-01
+2013,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,123.2,36-10-0206-01 / 18-10-0005-01
+2013,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,110.4,14-10-0064-01 / 18-10-0005-01
+2013,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,116.9,14-10-0064-01 / 18-10-0005-01
+2013,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.18,36-10-0208-01 (computed)
+2014,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,281.1,36-10-0208-01
+2014,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,233.9,36-10-0208-01 / 18-10-0005-01
+2014,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,155.4,36-10-0206-01
+2014,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,135.8,36-10-0206-01 / 18-10-0005-01
+2014,D_1997-2025,Business-sector labour productivity,1997=100,127.3,36-10-0206-01
+2014,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,125.9,36-10-0206-01 / 18-10-0005-01
+2014,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,111.6,14-10-0064-01 / 18-10-0005-01
+2014,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,116.6,14-10-0064-01 / 18-10-0005-01
+2014,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.29,36-10-0208-01 (computed)
+2015,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,280.4,36-10-0208-01
+2015,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,236.3,36-10-0208-01 / 18-10-0005-01
+2015,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,154.5,36-10-0206-01
+2015,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,137.2,36-10-0206-01 / 18-10-0005-01
+2015,D_1997-2025,Business-sector labour productivity,1997=100,126.6,36-10-0206-01
+2015,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,127.2,36-10-0206-01 / 18-10-0005-01
+2015,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,112.2,14-10-0064-01 / 18-10-0005-01
+2015,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,118.5,14-10-0064-01 / 18-10-0005-01
+2015,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.15,36-10-0208-01 (computed)
+2016,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,282.1,36-10-0208-01
+2016,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,230.2,36-10-0208-01 / 18-10-0005-01
+2016,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,155.0,36-10-0206-01
+2016,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,133.5,36-10-0206-01 / 18-10-0005-01
+2016,D_1997-2025,Business-sector labour productivity,1997=100,126.9,36-10-0206-01
+2016,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,123.8,36-10-0206-01 / 18-10-0005-01
+2016,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,113.2,14-10-0064-01 / 18-10-0005-01
+2016,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,119.2,14-10-0064-01 / 18-10-0005-01
+2016,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.95,36-10-0208-01 (computed)
+2017,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,286.6,36-10-0208-01
+2017,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,231.8,36-10-0208-01 / 18-10-0005-01
+2017,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,157.2,36-10-0206-01
+2017,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,134.5,36-10-0206-01 / 18-10-0005-01
+2017,D_1997-2025,Business-sector labour productivity,1997=100,128.8,36-10-0206-01
+2017,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,124.6,36-10-0206-01 / 18-10-0005-01
+2017,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,113.9,14-10-0064-01 / 18-10-0005-01
+2017,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,119.2,14-10-0064-01 / 18-10-0005-01
+2017,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.81,36-10-0208-01 (computed)
+2018,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,288.0,36-10-0208-01
+2018,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,233.8,36-10-0208-01 / 18-10-0005-01
+2018,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,157.8,36-10-0206-01
+2018,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,135.5,36-10-0206-01 / 18-10-0005-01
+2018,D_1997-2025,Business-sector labour productivity,1997=100,129.3,36-10-0206-01
+2018,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,125.6,36-10-0206-01 / 18-10-0005-01
+2018,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,112.9,14-10-0064-01 / 18-10-0005-01
+2018,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,119.8,14-10-0064-01 / 18-10-0005-01
+2018,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.25,36-10-0208-01 (computed)
+2019,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,289.0,36-10-0208-01
+2019,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,235.3,36-10-0208-01 / 18-10-0005-01
+2019,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,158.1,36-10-0206-01
+2019,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,136.4,36-10-0206-01 / 18-10-0005-01
+2019,D_1997-2025,Business-sector labour productivity,1997=100,129.5,36-10-0206-01
+2019,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,126.5,36-10-0206-01 / 18-10-0005-01
+2019,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,114.1,14-10-0064-01 / 18-10-0005-01
+2019,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,120.7,14-10-0064-01 / 18-10-0005-01
+2019,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,57.75,36-10-0208-01 (computed)
+2020,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,314.4,36-10-0208-01
+2020,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,262.0,36-10-0208-01 / 18-10-0005-01
+2020,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,171.7,36-10-0206-01
+2020,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,152.3,36-10-0206-01 / 18-10-0005-01
+2020,D_1997-2025,Business-sector labour productivity,1997=100,140.6,36-10-0206-01
+2020,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,141.1,36-10-0206-01 / 18-10-0005-01
+2020,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,120.8,14-10-0064-01 / 18-10-0005-01
+2020,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,127.1,14-10-0064-01 / 18-10-0005-01
+2020,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,59.29,36-10-0208-01 (computed)
+2021,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,300.5,36-10-0208-01
+2021,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,252.0,36-10-0208-01 / 18-10-0005-01
+2021,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,163.7,36-10-0206-01
+2021,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,145.9,36-10-0206-01 / 18-10-0005-01
+2021,D_1997-2025,Business-sector labour productivity,1997=100,134.1,36-10-0206-01
+2021,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,135.2,36-10-0206-01 / 18-10-0005-01
+2021,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,118.6,14-10-0064-01 / 18-10-0005-01
+2021,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,125.7,14-10-0064-01 / 18-10-0005-01
+2021,E_labour_share,Labour compensation as % of business-sector nominal GDP,percent,56.27,36-10-0208-01 (computed)
+2022,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,298.7,36-10-0208-01
+2022,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,247.0,36-10-0208-01 / 18-10-0005-01
+2022,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,163.8,36-10-0206-01
+2022,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,143.0,36-10-0206-01 / 18-10-0005-01
+2022,D_1997-2025,Business-sector labour productivity,1997=100,134.2,36-10-0206-01
+2022,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,132.6,36-10-0206-01 / 18-10-0005-01
+2022,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,115.3,14-10-0064-01 / 18-10-0005-01
+2022,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,122.6,14-10-0064-01 / 18-10-0005-01
+2023,B_1961-2023_MFP_program,Business-sector labour productivity,1961=100,292.4,36-10-0208-01
+2023,B_1961-2023_MFP_program,Real labour compensation per hour (CPI-deflated),1961=100,249.2,36-10-0208-01 / 18-10-0005-01
+2023,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,161.5,36-10-0206-01
+2023,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,144.4,36-10-0206-01 / 18-10-0005-01
+2023,D_1997-2025,Business-sector labour productivity,1997=100,132.3,36-10-0206-01
+2023,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,133.8,36-10-0206-01 / 18-10-0005-01
+2023,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,118.3,14-10-0064-01 / 18-10-0005-01
+2023,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,123.9,14-10-0064-01 / 18-10-0005-01
+2024,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,162.6,36-10-0206-01
+2024,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,145.6,36-10-0206-01 / 18-10-0005-01
+2024,D_1997-2025,Business-sector labour productivity,1997=100,133.2,36-10-0206-01
+2024,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,135.0,36-10-0206-01 / 18-10-0005-01
+2024,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,120.4,14-10-0064-01 / 18-10-0005-01
+2024,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,126.9,14-10-0064-01 / 18-10-0005-01
+2025,C_1981-2025_quarterly_program,Business-sector labour productivity,1981=100,164.4,36-10-0206-01
+2025,C_1981-2025_quarterly_program,Real total compensation per hour (CPI-deflated),1981=100,145.9,36-10-0206-01 / 18-10-0005-01
+2025,D_1997-2025,Business-sector labour productivity,1997=100,134.7,36-10-0206-01
+2025,D_1997-2025,Real total compensation per hour (CPI-deflated),1997=100,135.2,36-10-0206-01 / 18-10-0005-01
+2025,D_1997-2025,"Real median hourly wage, all employees (LFS, CPI-deflated)",1997=100,121.0,14-10-0064-01 / 18-10-0005-01
+2025,D_1997-2025,"Real average hourly wage, all employees (LFS, CPI-deflated)",1997=100,128.5,14-10-0064-01 / 18-10-0005-01

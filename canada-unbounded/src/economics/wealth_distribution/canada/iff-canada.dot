@@ -1,0 +1,67 @@
+digraph canada {
+  graph [rankdir=LR, bgcolor="transparent", nodesep=0.35, ranksep=0.6, fontname="Helvetica"]
+  node  [shape=box, style="rounded,filled", fillcolor="#f4f1ea", color="#8b7246", fontname="Helvetica", fontsize=11]
+  edge  [color="#777777", fontname="Helvetica", fontsize=9]
+
+  wc      [label="Wealth\nConcentration", fillcolor="#f6c9c3"]
+  assets  [label="Asset Stores\n(housing, land, equity)"]
+  capinc  [label="Capital Income\n(half-taxed gains,\ndividends, rents)"]
+  inherit [label="Inheritance\n(no estate tax)"]
+  market  [label="Market Power\n(banks, telecom,\ngrocery, rail)"]
+  policy  [label="Government\nPolicy"]
+  taxpref [label="Tax Preferences\n(capital gains, PRE,\nprivate corps)"]
+  housing [label="Housing\nAffordability"]
+  debt    [label="Household\nDebt"]
+  living  [label="Standard of\nLiving", fillcolor="#cfe3c9"]
+  stab    [label="System\nStability", fillcolor="#cfe3c9"]
+  mob     [label="Class\nMobility"]
+  labour  [label="Labour\nIncome"]
+  spend   [label="Consumer\nSpending"]
+  prod    [label="Productive\nCapacity"]
+  invest  [label="Business\nInvestment"]
+  innov   [label="Innovation"]
+  know    [label="Knowledge"]
+  public  [label="Public Services\n(health, CCB, CPP,\nchildcare)", fillcolor="#d6e4f0"]
+  revenue [label="Tax\nRevenue"]
+
+  # the concentration loops (red)
+  wc -> assets      [color="#c0392b", penwidth=2]
+  assets -> capinc  [color="#c0392b", penwidth=2]
+  capinc -> wc      [color="#c0392b", penwidth=2]
+  wc -> inherit     [color="#c0392b", penwidth=2]
+  inherit -> wc     [color="#c0392b", penwidth=2]
+  wc -> policy      [color="#c0392b", penwidth=2, label="influence"]
+  policy -> taxpref [color="#c0392b", penwidth=2]
+  taxpref -> capinc [color="#c0392b", penwidth=2]
+  market -> capinc  [color="#c0392b", penwidth=2, label="rents"]
+  wc -> market      [color="#c0392b", penwidth=2]
+
+  # the growth loops (green)
+  labour -> spend   [color="#2e8b57", penwidth=2]
+  spend -> prod     [color="#2e8b57", penwidth=2]
+  prod -> labour    [color="#2e8b57", penwidth=2]
+  innov -> know     [color="#2e8b57", penwidth=2]
+  know -> prod      [color="#2e8b57", penwidth=2]
+  prod -> innov     [color="#2e8b57", penwidth=2]
+  invest -> prod    [color="#2e8b57", penwidth=2]
+
+  # cross links
+  assets -> housing [label="bids up prices (−)"]
+  housing -> debt   [label="(−)"]
+  debt -> living    [label="(−)"]
+  debt -> spend     [label="(−)"]
+  market -> invest  [label="(−)"]
+  market -> innov   [label="(−)"]
+  wc -> mob         [label="(−)"]
+  housing -> mob
+  mob -> know
+  labour -> living
+  living -> stab
+  mob -> stab
+  labour -> revenue
+  capinc -> revenue [style=dashed, label="lightly"]
+  revenue -> public
+  public -> living
+  public -> mob
+  stab -> assets
+}

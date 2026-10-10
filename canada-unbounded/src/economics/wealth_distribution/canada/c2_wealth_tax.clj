@@ -227,7 +227,7 @@
 (def g7
   (-> (c/data "imf_g7_debt_fm2026apr.csv")
       (tc/select-rows #(= 2025 (:year %)))
-      (tc/update-columns {:country (partial map #(if (= "G7" %) "G7 average" %))})
+      (tc/update-columns {:country (partial map #(get {"G7" "G7 average" "United Kingdom" "UK" "United States" "US"} % %))})
       (tc/pivot->longer [:gg_gross_debt_pct_gdp :gg_net_debt_pct_gdp]
                         {:target-columns :measure :value-column-name :pct})
       (tc/update-columns {:measure (partial map {:gg_gross_debt_pct_gdp "Gross debt" :gg_net_debt_pct_gdp "Net debt"})})))

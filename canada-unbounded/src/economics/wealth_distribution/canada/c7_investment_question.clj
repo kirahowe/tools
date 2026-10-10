@@ -64,8 +64,8 @@
                    :caption "Canada's combined statutory corporate income tax rate (OECD) and business non-residential investment as a share of GDP (Statistics Canada). The 2006–2014 rise in investment was oil-and-gas structures during the commodity boom; machinery and equipment, the investment most tied to productivity, kept falling.[^2][^3]"}}
 (-> (tc/concat cit investment-long)
     (pj/lay-line :year :value {:color :series})
-    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed :color "gray"})
-    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed :color "gray"})
+    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed})
+    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed})
     (pj/lay-text {:data (tc/dataset {:year [2006] :value [45] :t ["Rate cuts, 2000–2012"]})
                   :x :year :y :value :text :t :align-x :center :overlay true})
     (pj/scale :color {:values [c/o c/w c/wd]})
@@ -103,7 +103,7 @@
                    :caption "Business non-residential investment divided by corporations' gross operating surplus (a national accounts measure of pre-tax profit plus depreciation). Below 0.5 means less than half of corporate surplus is reinvested in the business sector.[^3]"}}
 (-> (c/data "A4_corporate_surplus_vs_business_investment.csv")
     (pj/lay-line :year :nonres_investment_to_corp_gross_operating_surplus_ratio {:color c/o})
-    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed :color "gray"})
+    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed})
     (pj/scale :y {:include 0})
     (pj/options {:title   "Share of Corporate Surplus Reinvested"
                  :x-label "Year"
@@ -121,8 +121,8 @@
                    :caption "Currency and deposits held by non-financial private corporations at year end, as a share of GDP. A gross figure: corporate debt also rose, and firms in many countries hold more cash than they used to.[^5]"}}
 (-> cash
     (pj/lay-area :year :currency_deposits_pct_gdp {:color c/o :alpha 0.6})
-    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed :color "gray"})
-    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed :color "gray"})
+    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed})
+    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed})
     (pj/options {:title   "Canadian Corporate Cash"
                  :x-label "Year"
                  :y-label "% of GDP"}))
@@ -146,8 +146,8 @@
                    :caption "Canada's GDP per hour worked as a share of the US level, constant 2020 PPPs (OECD Productivity Database).[^6]"}}
 (-> productivity
     (pj/lay-line :year :can_pct_of_usa_per_hour_constant {:color c/red})
-    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed :color "gray"})
-    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed :color "gray"})
+    (pj/lay-rule-v {:x-intercept 2000 :stroke-dash :dashed})
+    (pj/lay-rule-v {:x-intercept 2012 :stroke-dash :dashed})
     (pj/scale :y {:domain [50 100]})
     (pj/options {:title   "Canadian Labour Productivity, % of US"
                  :x-label "Year"
@@ -323,18 +323,18 @@
 ;; In the next part, [What Makes Canada Different](c8_canadian_differences.html), we look at the features of Canada's economy and society that shape its version of the problem.
 
 ;; [^1]: Carolyn Rogers, Senior Deputy Governor, Bank of Canada, ["Time to break the glass: Fixing Canada's productivity problem"](https://www.bankofcanada.ca/2024/03/time-to-break-the-glass-fixing-canadas-productivity-problem/), Halifax, March 26, 2024.
-;; [^2]: OECD [Corporate Tax Statistics](https://www.oecd.org/en/data/datasets/corporate-tax-statistics-database.html), combined (central plus sub-central) statutory corporate income tax rates.
+;; [^2]: OECD [Corporate Tax Statistics](https://www.oecd.org/en/data/datasets/corporate-income-tax-rates-database.html), combined (central plus sub-central) statutory corporate income tax rates.
 ;; [^3]: Statistics Canada, [Table 36-10-0104-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401) (expenditure-based GDP: business gross fixed capital formation in non-residential structures, machinery and equipment, and intellectual property products) and [Table 36-10-0103-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010301) (income-based GDP: corporations' net operating surplus and consumption of fixed capital). Nominal shares; annual averages of quarterly data.
 ;; [^4]: Canadian Press, ["Carney urges firms to spend cash or return it to shareholders"](https://www.cbc.ca/news/business/carney-urges-firms-to-spend-cash-or-return-to-shareholders-1.1130766), CBC News, August 23, 2012.
 ;; [^5]: Statistics Canada, [Table 36-10-0580-01, National Balance Sheet Accounts](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610058001): non-financial private corporations, currency and deposits (fourth quarter), divided by annual nominal GDP.
-;; [^6]: OECD [Productivity Database](https://www.oecd.org/en/data/datasets/productivity-statistics.html), GDP per hour worked, total economy, constant prices and 2020 PPPs. Compare OECD, [Economic Surveys: Canada 2025](https://www.oecd.org/en/publications/oecd-economic-surveys-canada-2025_28f9e02c-en.html), and the Bank of Canada speech above, which put Canada at 71% of the US level in 2022.
-;; [^7]: OECD Economic Outlook database (No. 119): private non-residential gross fixed capital formation (volume) divided by total employment, indexed to 2014. The OECD's [2025 Economic Survey of Canada](https://www.oecd.org/en/publications/oecd-economic-surveys-canada-2025_28f9e02c-en.html) reports that by 2023, Canadian investment per worker was 85% of its 2014 level, while it had grown 21% in the US.
+;; [^6]: OECD [Productivity Database](https://data-explorer.oecd.org/s/4rg), GDP per hour worked, total economy, constant prices and 2020 PPPs. Compare OECD, [Economic Surveys: Canada 2025](https://www.oecd.org/en/publications/2025/05/oecd-economic-surveys-canada-2025_ee18a269.html), and the Bank of Canada speech above, which put Canada at 71% of the US level in 2022.
+;; [^7]: OECD Economic Outlook database (No. 119): private non-residential gross fixed capital formation (volume) divided by total employment, indexed to 2014. The OECD's [2025 Economic Survey of Canada](https://www.oecd.org/en/publications/2025/05/oecd-economic-surveys-canada-2025_ee18a269.html) reports that by 2023, Canadian investment per worker was 85% of its 2014 level, while it had grown 21% in the US.
 ;; [^8]: Wulong Gu, ["Investment Slowdown in Canada After the Mid-2000s: The Role of Competition and Intangibles"](https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2024001-eng.htm), Statistics Canada Analytical Studies Branch Research Paper No. 474, 2024; [The Daily](https://www150.statcan.gc.ca/n1/daily-quotidien/240222/dq240222d-eng.htm).
 ;; [^9]: Competition Bureau Canada, ["Competition in Canada from 2000 to 2020: An Economy at a Crossroads"](https://ised-isde.canada.ca/site/competition-bureau-canada/en/how-we-foster-competition/education-and-outreach/competition-canada-2000-2020-economy-crossroads), 2023.
-;; [^10]: OECD, [Economic Surveys: Canada 2025](https://www.oecd.org/en/publications/oecd-economic-surveys-canada-2025_28f9e02c-en.html), Chapter 4.
+;; [^10]: OECD, [Economic Surveys: Canada 2025](https://www.oecd.org/en/publications/2025/05/oecd-economic-surveys-canada-2025_ee18a269.html), Chapter 4.
 ;; [^11]: IMF, ["Canada: Staff Concluding Statement of the 2025 Article IV Mission"](https://www.imf.org/en/news/articles/2025/12/05/cs-canada-staff-concluding-statement-of-the-2025-article-iv-mission), December 5, 2025.
 ;; [^12]: Eric Zwick and James Mahon, ["Tax Policy and Heterogeneous Investment Behavior"](https://doi.org/10.1257/aer.20140855), *American Economic Review* 107(1), 2017. See also Ohrn, [*AEJ: Economic Policy* 10(2), 2018](https://doi.org/10.1257/pol.20150378), and Chodorow-Reich, Zidar and Zwick, ["Lessons from the Biggest Business Tax Cut in US History"](https://doi.org/10.1257/jep.38.3.61), *Journal of Economic Perspectives* 38(3), 2024.
-;; [^13]: Bev Dahlby and Ergete Ferede, ["The Effects of Tax Rate Changes on Tax Bases and the Marginal Cost of Public Funds for Canadian Provincial Governments"](https://doi.org/10.17310/ntj.2012.3.03), *National Tax Journal* 65(3), 2012, and [*FinanzArchiv* 77(1), 2021](https://doi.org/10.1628/fa-2021-0002).
+;; [^13]: Ergete Ferede and Bev Dahlby, ["The Impact of Tax Cuts on Economic Growth: Evidence from the Canadian Provinces"](https://doi.org/10.17310/ntj.2012.3.03), *National Tax Journal* 65(3), 2012, and [*FinanzArchiv* 77(1), 2021](https://doi.org/10.1628/fa-2021-0002).
 ;; [^14]: Danny Yagan, ["Capital Tax Reform and the Real Economy: The Effects of the 2003 Dividend Tax Cut"](https://doi.org/10.1257/aer.20130098), *American Economic Review* 105(12), 2015.
 ;; [^15]: France Stratégie, Comité d'évaluation des réformes de la fiscalité du capital, [fourth and final report](https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf), October 2023, pp. 16–20 (translation mine).
 ;; [^16]: Marie Bjørneby, Simen Markussen and Knut Røed, ["An imperfect wealth tax and employment in closely held firms"](https://doi.org/10.1111/ecca.12456), *Economica* 90(358), 2023.

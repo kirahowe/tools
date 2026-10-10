@@ -34,8 +34,8 @@
 ;;    Those profits flow to concentrated shareholdings, and shareholders who already hold
 ;;    concentrated wealth can afford to defend the arrangement.
 ;; 3. **The inheritance loop.** Canada has had no estate or inheritance tax since 1972.
-;;    Most of the country's largest fortunes belong to second-, third- and fourth-generation families,
-;;    and dual-class shares let those families keep control of the firms that hold them.
+;;    Several of the country's best-known fortunes (the Thomsons, Westons, Irvings, McCains and others) belong to
+;;    second-, third- and fourth-generation families, and dual-class shares let families keep control of the firms that hold them.
 
 ;; Against these, Canada has counterweights the United States mostly lacks:
 ;; single-payer health insurance, the Canada Child Benefit, public pensions (CPP/QPP and OAS/GIS),
@@ -47,73 +47,7 @@
 ;; ::: {#fig-iff-canada}
 
 ^:kind/graphviz
-["digraph canada {
-  graph [rankdir=LR, bgcolor=\"transparent\", nodesep=0.35, ranksep=0.6, fontname=\"Helvetica\"]
-  node  [shape=box, style=\"rounded,filled\", fillcolor=\"#f4f1ea\", color=\"#8b7246\", fontname=\"Helvetica\", fontsize=11]
-  edge  [color=\"#777777\", fontname=\"Helvetica\", fontsize=9]
-
-  wc      [label=\"Wealth\\nConcentration\", fillcolor=\"#f6c9c3\"]
-  assets  [label=\"Asset Stores\\n(housing, land, equity)\"]
-  capinc  [label=\"Capital Income\\n(half-taxed gains,\\ndividends, rents)\"]
-  inherit [label=\"Inheritance\\n(no estate tax)\"]
-  market  [label=\"Market Power\\n(banks, telecom,\\ngrocery, rail)\"]
-  policy  [label=\"Government\\nPolicy\"]
-  taxpref [label=\"Tax Preferences\\n(capital gains, PRE,\\nprivate corps)\"]
-  housing [label=\"Housing\\nAffordability\"]
-  debt    [label=\"Household\\nDebt\"]
-  living  [label=\"Standard of\\nLiving\", fillcolor=\"#cfe3c9\"]
-  stab    [label=\"System\\nStability\", fillcolor=\"#cfe3c9\"]
-  mob     [label=\"Class\\nMobility\"]
-  labour  [label=\"Labour\\nIncome\"]
-  spend   [label=\"Consumer\\nSpending\"]
-  prod    [label=\"Productive\\nCapacity\"]
-  invest  [label=\"Business\\nInvestment\"]
-  innov   [label=\"Innovation\"]
-  know    [label=\"Knowledge\"]
-  public  [label=\"Public Services\\n(health, CCB, CPP,\\nchildcare)\", fillcolor=\"#d6e4f0\"]
-  revenue [label=\"Tax\\nRevenue\"]
-
-  # the concentration loops (red)
-  wc -> assets      [color=\"#c0392b\", penwidth=2]
-  assets -> capinc  [color=\"#c0392b\", penwidth=2]
-  capinc -> wc      [color=\"#c0392b\", penwidth=2]
-  wc -> inherit     [color=\"#c0392b\", penwidth=2]
-  inherit -> wc     [color=\"#c0392b\", penwidth=2]
-  wc -> policy      [color=\"#c0392b\", penwidth=2, label=\"influence\"]
-  policy -> taxpref [color=\"#c0392b\", penwidth=2]
-  taxpref -> capinc [color=\"#c0392b\", penwidth=2]
-  market -> capinc  [color=\"#c0392b\", penwidth=2, label=\"rents\"]
-  wc -> market      [color=\"#c0392b\", penwidth=2]
-
-  # the growth loops (green)
-  labour -> spend   [color=\"#2e8b57\", penwidth=2]
-  spend -> prod     [color=\"#2e8b57\", penwidth=2]
-  prod -> labour    [color=\"#2e8b57\", penwidth=2]
-  innov -> know     [color=\"#2e8b57\", penwidth=2]
-  know -> prod      [color=\"#2e8b57\", penwidth=2]
-  prod -> innov     [color=\"#2e8b57\", penwidth=2]
-  invest -> prod    [color=\"#2e8b57\", penwidth=2]
-
-  # cross links
-  assets -> housing [label=\"bids up prices (−)\"]
-  housing -> debt   [label=\"(−)\"]
-  debt -> living    [label=\"(−)\"]
-  debt -> spend     [label=\"(−)\"]
-  market -> invest  [label=\"(−)\"]
-  market -> innov   [label=\"(−)\"]
-  wc -> mob         [label=\"(−)\"]
-  housing -> mob
-  mob -> know
-  labour -> living
-  living -> stab
-  mob -> stab
-  labour -> revenue
-  capinc -> revenue [style=dashed, label=\"lightly\"]
-  revenue -> public
-  public -> living
-  public -> mob
-  stab -> assets
-}"]
+[(slurp "src/economics/wealth_distribution/canada/iff-canada.dot")]
 
 ;; Canadian Interactive Factors (nodes) and causes (arrows). Red loops concentrate; green loops grow; blue is the public counterweight.
 ;; :::
@@ -140,7 +74,7 @@
 ;; When asset owners bid up homes, everyone else takes on more household debt to keep up.
 ;; That debt crowds out spending and squeezes living standards
 ;; (see [Labour Hours](c3_labour_hours.html)).
-;; Canadian households carry among the highest debt loads in the G7, nearly all of it mortgages.
+;; Canadian households owe about 180% of their disposable income, nearly twice the American ratio, mostly in mortgages.
 
 ;; **Blue: the counterweight.**
 ;; Public services are Canada's main defence against the red loops.
