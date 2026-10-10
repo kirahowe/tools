@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c6-economic-growth
+(ns economics.wealth-distribution.canada.c08-economic-growth
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: Economic Growth"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "How concentrated, inherited wealth and protected incumbents slow Canadian growth."
                    :abstract    "Canada's growth problem is a participation problem. Economists have a name for one version of it: the Canadian disease."
-                   :date        "2026-10-16"
+                   :date        "2026-10-18"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}}
@@ -54,7 +54,7 @@
 ;; Since 1980 it has grown about 1.4% a year, and since 2000 under 1%.
 ;; Canada closed much of the gap with America in the postwar decades, from about 70% of the US level in 1945 to 88% in the mid-1970s.
 ;; Apart from a recovery during the 2000s commodity boom, it has been losing ground since, and is now below 80%.[^2]
-;; Lower taxes on capital did not reverse that, as [The Investment Question](c7_investment_question.html) shows.
+;; Lower taxes on capital did not reverse that, as [The Investment Question](c09_investment_question.html) shows.
 ;; So what else could be going on?
 
 ;; ## Circulation
@@ -66,9 +66,9 @@
 ;; In Canada, three things slow circulation:
 
 ;; * **Corporate cash.** Non-financial private corporations held almost \$1 trillion in cash and deposits at the end of 2025,
-;;   29% of GDP, up from 11% in 2000 (see [The Investment Question](c7_investment_question.html)).
+;;   29% of GDP, up from 11% in 2000 (see [The Investment Question](c09_investment_question.html)).
 ;; * **Household debt.** Canadian households owe about 176% of their disposable income, mostly mortgages.
-;;   Every dollar of interest paid to a lender is a dollar not spent at a local business (see [Labour Hours](c3_labour_hours.html)).
+;;   Every dollar of interest paid to a lender is a dollar not spent at a local business (see [Labour Hours](c03_labour_hours.html)).
 ;; * **Housing as a store of value.** When the safest way to build wealth is to buy land and wait,
 ;;   capital flows into bidding up existing homes rather than building new businesses.
 ;;   Housing is the main asset of most Canadian families, and the most lightly taxed.
@@ -80,39 +80,20 @@
 
 ;; Growth depends on how many people get to try things.
 ;; Every firm that enters a market tests a new idea, and incumbents have to improve or lose customers.
-;; In Canada, that process has been slowing.
-
-;; The Competition Bureau found that firm entry rates fell by 24% between 2001 and 2020,
-;; the number of highly concentrated industries rose from 19 to 27 between 2005 and 2018,
+;; In Canada, that process has been slowing: firm entry rates fell by 24% between 2001 and 2020,
 ;; and the same firms increasingly hold the top positions in their industries year after year.[^3]
-;; Statistics Canada estimates that declining entry and competition explain about 30% of the fall in
-;; business investment per worker from 2006 to 2019.[^4]
-
-;; Some of Canada's most familiar industries are run by a handful of firms:
-;; the Big Six banks, three national wireless carriers, and five grocery chains that the Competition Bureau's
-;; 2023 grocery study found together control around 80% of the market.[^5]
-;; A protected incumbent has less reason to invest, and a potential challenger has less chance to try.
+;; Declining entry and competition explain about 30% of the fall in business investment per worker from 2006 to 2019.[^4]
+;; Some of Canada's most familiar industries (banking, wireless, groceries) are run by a handful of firms.[^5]
+;; [Stable and Stuck](c06_productivity.html) looks at this in detail.
 
 ;; ## The Canadian Disease
 
-;; There is a striking Canadian strand of research on exactly this.
-;; In the late 1990s, economists Randall Morck, David Stangeland and Bernard Yeung studied what happens when
-;; large Canadian firms are controlled by heirs rather than founders or professional managers.
-;; They found that "heir-controlled Canadian firms show low industry-adjusted financial performance,"
-;; and that across countries, those where inherited billionaire wealth is large relative to GDP grow more slowly.[^6]
-;; They called it *the Canadian disease*.
-
-;; The mechanism is the one Tim describes.
-;; Old, concentrated wealth protects what it already owns.
-;; It lobbies for barriers to entry, favours stability over experimentation, and keeps control
-;; through dual-class shares, family trusts and holding companies.
-;; Morck and his co-authors found that heir control declined after the Canada–US Free Trade Agreement
-;; exposed protected firms to competition.[^6]
-
-;; Canada has no inheritance tax, so nothing in the tax system slows the transfer of control from one generation to the next.
-;; A wave of inheritances is under way: CPA Canada estimated in 2023 that about \$1 trillion would pass
-;; from baby boomers to their children between 2023 and 2026.[^7]
-;; Studies of Canadian survey data find that inheritances are larger and more likely for families who are already well off.[^8]
+;; Canadian research has a name for one version of the problem.
+;; Morck, Stangeland and Yeung found that heir-controlled Canadian firms underperform, and that countries where inherited
+;; billionaire wealth is large relative to GDP grow more slowly: *the Canadian disease*.[^6]
+;; Old, concentrated wealth protects what it already owns, and Canada has no inheritance tax to slow the transfer of control
+;; from one generation to the next, even as a large wave of inheritances gets under way.[^7][^8]
+;; [Old Money](c07_old_money.html) traces this from Canada's colonial land grants to today's family holding companies.
 
 ;; ## Error Correction
 
@@ -148,7 +129,7 @@
 ;; Growth needs many participants, not just more capital in the same hands.
 ;; Competition policy and taxation of very large fortunes are complementary corrections.
 
-;; In the next part, [The Investment Question](c7_investment_question.html), we test the claim that a wealth tax would kill investment.
+;; In the next part, [The Investment Question](c09_investment_question.html), we test the claim that a wealth tax would kill investment.
 
 ;; [^1]: Timothy Pratley, [Unbounded: Economic Growth](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u6_economic_growth.html), ClojureCivitas, 2026.
 ;; [^2]: [Maddison Project Database 2023](https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023), Jutta Bolt and Jan Luiten van Zanden, GDP per capita in 2011 international dollars. Growth rates computed on this page.

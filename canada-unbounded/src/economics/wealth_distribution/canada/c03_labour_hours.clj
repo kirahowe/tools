@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c3-labour-hours
+(ns economics.wealth-distribution.canada.c03-labour-hours
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: Labour Hours"
@@ -114,7 +114,7 @@
 ;; Most of that debt is mortgages.
 ;; A Canadian family's home is often its largest asset *and* the reason for its largest debt.
 
-;; This is the flip side of the "broad middle" in [Wealth Concentration](c5_wealth_concentration.html).
+;; This is the flip side of the "broad middle" in [Wealth Concentration](c05_wealth_concentration.html).
 ;; Canadian middle-class wealth is real, but it is concentrated in one illiquid asset bought with borrowed money.
 ;; Those who bought early rode the boom.
 ;; Those who didn't now pay the boom's price.
@@ -192,7 +192,7 @@
 ;; As in the United States, the top rate fell sharply after the 1970s: to 59% in 1972 and 46% by 1988.[^12]
 ;; Unlike the United States, Canada's top combined rate has risen again, to 53.5% in Ontario, since 2016.
 ;; But that top rate applies to *income*.
-;; As [Who Pays Tax](c1_who_pays_tax.html) showed, the largest fortunes grow mostly through capital gains,
+;; As [Who Pays Tax](c01_who_pays_tax.html) showed, the largest fortunes grow mostly through capital gains,
 ;; which are half-taxed when sold and untaxed until then.
 ;; A high top income tax rate is not the same as a high tax on the very rich.
 
@@ -262,7 +262,7 @@
 ;; A country that makes its young people spend their working lives catching up to the price of a home
 ;; is wasting the time that builds a future.
 
-;; In the next part, [Interactive Factors](c4_interactive_factors.html), we look at how these pressures connect.
+;; In the next part, [Interactive Factors](c04_interactive_factors.html), we look at how these pressures connect.
 
 ;; [^1]: Timothy Pratley, [Unbounded: Labor Hours](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u3_labor_hours.html), ClojureCivitas, 2026.
 ;; [^2]: OECD, [Analytical House Price Database](https://data-explorer.oecd.org/s/eh) (dataflow `OECD.ECO.MPD:DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES`), price-to-income ratio, annual averages, rebased by me to 1970 = 100. The denominator is disposable income per person for the whole economy, not median household income.

@@ -1,0 +1,109 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,business_labour_productivity_index,103.46,index 2017=100,36-10-0206-01,pre
+2022-04-01,business_labour_productivity_index,104.28,index 2017=100,36-10-0206-01,pre
+2022-07-01,business_labour_productivity_index,104.95,index 2017=100,36-10-0206-01,pre
+2022-10-01,business_labour_productivity_index,104.16,index 2017=100,36-10-0206-01,pre
+2023-01-01,business_labour_productivity_index,103.52,index 2017=100,36-10-0206-01,pre
+2023-04-01,business_labour_productivity_index,102.8,index 2017=100,36-10-0206-01,pre
+2023-07-01,business_labour_productivity_index,102.31,index 2017=100,36-10-0206-01,pre
+2023-10-01,business_labour_productivity_index,102.37,index 2017=100,36-10-0206-01,pre
+2024-01-01,business_labour_productivity_index,102.54,index 2017=100,36-10-0206-01,pre
+2024-04-01,business_labour_productivity_index,103.04,index 2017=100,36-10-0206-01,pre
+2024-07-01,business_labour_productivity_index,103.74,index 2017=100,36-10-0206-01,pre
+2024-10-01,business_labour_productivity_index,104.49,index 2017=100,36-10-0206-01,pre
+2025-01-01,business_labour_productivity_index,104.73,index 2017=100,36-10-0206-01,transition
+2025-04-01,business_labour_productivity_index,104.03,index 2017=100,36-10-0206-01,post
+2025-07-01,business_labour_productivity_index,104.93,index 2017=100,36-10-0206-01,post
+2025-10-01,business_labour_productivity_index,104.62,index 2017=100,36-10-0206-01,post
+2026-01-01,business_labour_productivity_index,104.25,index 2017=100,36-10-0206-01,post
+2026-04-01,business_labour_productivity_index,105.28,index 2017=100,36-10-0206-01,post
+2022-01-01,business_labour_productivity_qoq,0.73,percent (not annualized),36-10-0206-01,pre
+2022-04-01,business_labour_productivity_qoq,0.79,percent (not annualized),36-10-0206-01,pre
+2022-07-01,business_labour_productivity_qoq,0.64,percent (not annualized),36-10-0206-01,pre
+2022-10-01,business_labour_productivity_qoq,-0.76,percent (not annualized),36-10-0206-01,pre
+2023-01-01,business_labour_productivity_qoq,-0.61,percent (not annualized),36-10-0206-01,pre
+2023-04-01,business_labour_productivity_qoq,-0.7,percent (not annualized),36-10-0206-01,pre
+2023-07-01,business_labour_productivity_qoq,-0.48,percent (not annualized),36-10-0206-01,pre
+2023-10-01,business_labour_productivity_qoq,0.06,percent (not annualized),36-10-0206-01,pre
+2024-01-01,business_labour_productivity_qoq,0.17,percent (not annualized),36-10-0206-01,pre
+2024-04-01,business_labour_productivity_qoq,0.49,percent (not annualized),36-10-0206-01,pre
+2024-07-01,business_labour_productivity_qoq,0.68,percent (not annualized),36-10-0206-01,pre
+2024-10-01,business_labour_productivity_qoq,0.72,percent (not annualized),36-10-0206-01,pre
+2025-01-01,business_labour_productivity_qoq,0.22,percent (not annualized),36-10-0206-01,transition
+2025-04-01,business_labour_productivity_qoq,-0.66,percent (not annualized),36-10-0206-01,post
+2025-07-01,business_labour_productivity_qoq,0.87,percent (not annualized),36-10-0206-01,post
+2025-10-01,business_labour_productivity_qoq,-0.3,percent (not annualized),36-10-0206-01,post
+2026-01-01,business_labour_productivity_qoq,-0.36,percent (not annualized),36-10-0206-01,post
+2026-04-01,business_labour_productivity_qoq,0.99,percent (not annualized),36-10-0206-01,post
+2022-01-01,business_labour_productivity_yoy,-2.22,percent,36-10-0206-01,pre
+2022-04-01,business_labour_productivity_yoy,0.12,percent,36-10-0206-01,pre
+2022-07-01,business_labour_productivity_yoy,1.01,percent,36-10-0206-01,pre
+2022-10-01,business_labour_productivity_yoy,1.4,percent,36-10-0206-01,pre
+2023-01-01,business_labour_productivity_yoy,0.06,percent,36-10-0206-01,pre
+2023-04-01,business_labour_productivity_yoy,-1.43,percent,36-10-0206-01,pre
+2023-07-01,business_labour_productivity_yoy,-2.52,percent,36-10-0206-01,pre
+2023-10-01,business_labour_productivity_yoy,-1.72,percent,36-10-0206-01,pre
+2024-01-01,business_labour_productivity_yoy,-0.94,percent,36-10-0206-01,pre
+2024-04-01,business_labour_productivity_yoy,0.24,percent,36-10-0206-01,pre
+2024-07-01,business_labour_productivity_yoy,1.4,percent,36-10-0206-01,pre
+2024-10-01,business_labour_productivity_yoy,2.07,percent,36-10-0206-01,pre
+2025-01-01,business_labour_productivity_yoy,2.13,percent,36-10-0206-01,transition
+2025-04-01,business_labour_productivity_yoy,0.96,percent,36-10-0206-01,post
+2025-07-01,business_labour_productivity_yoy,1.15,percent,36-10-0206-01,post
+2025-10-01,business_labour_productivity_yoy,0.12,percent,36-10-0206-01,post
+2026-01-01,business_labour_productivity_yoy,-0.46,percent,36-10-0206-01,post
+2026-04-01,business_labour_productivity_yoy,1.19,percent,36-10-0206-01,post
+2022-01-01,business_hours_worked_index,104.67,index 2017=100,36-10-0206-01,pre
+2022-04-01,business_hours_worked_index,105.16,index 2017=100,36-10-0206-01,pre
+2022-07-01,business_hours_worked_index,105.4,index 2017=100,36-10-0206-01,pre
+2022-10-01,business_hours_worked_index,106.02,index 2017=100,36-10-0206-01,pre
+2023-01-01,business_hours_worked_index,107.89,index 2017=100,36-10-0206-01,pre
+2023-04-01,business_hours_worked_index,108.78,index 2017=100,36-10-0206-01,pre
+2023-07-01,business_hours_worked_index,109.11,index 2017=100,36-10-0206-01,pre
+2023-10-01,business_hours_worked_index,109.26,index 2017=100,36-10-0206-01,pre
+2024-01-01,business_hours_worked_index,109.61,index 2017=100,36-10-0206-01,pre
+2024-04-01,business_hours_worked_index,109.91,index 2017=100,36-10-0206-01,pre
+2024-07-01,business_hours_worked_index,110.08,index 2017=100,36-10-0206-01,pre
+2024-10-01,business_hours_worked_index,110.25,index 2017=100,36-10-0206-01,pre
+2025-01-01,business_hours_worked_index,110.85,index 2017=100,36-10-0206-01,transition
+2025-04-01,business_hours_worked_index,111.05,index 2017=100,36-10-0206-01,post
+2025-07-01,business_hours_worked_index,110.88,index 2017=100,36-10-0206-01,post
+2025-10-01,business_hours_worked_index,110.8,index 2017=100,36-10-0206-01,post
+2026-01-01,business_hours_worked_index,111.22,index 2017=100,36-10-0206-01,post
+2026-04-01,business_hours_worked_index,111.09,index 2017=100,36-10-0206-01,post
+2022-01-01,business_real_gdp_index,108.3,index 2017=100,36-10-0206-01,pre
+2022-04-01,business_real_gdp_index,109.67,index 2017=100,36-10-0206-01,pre
+2022-07-01,business_real_gdp_index,110.62,index 2017=100,36-10-0206-01,pre
+2022-10-01,business_real_gdp_index,110.42,index 2017=100,36-10-0206-01,pre
+2023-01-01,business_real_gdp_index,111.69,index 2017=100,36-10-0206-01,pre
+2023-04-01,business_real_gdp_index,111.82,index 2017=100,36-10-0206-01,pre
+2023-07-01,business_real_gdp_index,111.62,index 2017=100,36-10-0206-01,pre
+2023-10-01,business_real_gdp_index,111.85,index 2017=100,36-10-0206-01,pre
+2024-01-01,business_real_gdp_index,112.4,index 2017=100,36-10-0206-01,pre
+2024-04-01,business_real_gdp_index,113.26,index 2017=100,36-10-0206-01,pre
+2024-07-01,business_real_gdp_index,114.2,index 2017=100,36-10-0206-01,pre
+2024-10-01,business_real_gdp_index,115.21,index 2017=100,36-10-0206-01,pre
+2025-01-01,business_real_gdp_index,116.09,index 2017=100,36-10-0206-01,transition
+2025-04-01,business_real_gdp_index,115.53,index 2017=100,36-10-0206-01,post
+2025-07-01,business_real_gdp_index,116.35,index 2017=100,36-10-0206-01,post
+2025-10-01,business_real_gdp_index,115.92,index 2017=100,36-10-0206-01,post
+2026-01-01,business_real_gdp_index,115.94,index 2017=100,36-10-0206-01,post
+2026-04-01,business_real_gdp_index,116.95,index 2017=100,36-10-0206-01,post
+2022-01-01,business_unit_labour_cost_yoy,5.85,percent,36-10-0206-01,pre
+2022-04-01,business_unit_labour_cost_yoy,4.08,percent,36-10-0206-01,pre
+2022-07-01,business_unit_labour_cost_yoy,3.28,percent,36-10-0206-01,pre
+2022-10-01,business_unit_labour_cost_yoy,5.3,percent,36-10-0206-01,pre
+2023-01-01,business_unit_labour_cost_yoy,5.41,percent,36-10-0206-01,pre
+2023-04-01,business_unit_labour_cost_yoy,6.87,percent,36-10-0206-01,pre
+2023-07-01,business_unit_labour_cost_yoy,7.71,percent,36-10-0206-01,pre
+2023-10-01,business_unit_labour_cost_yoy,5.63,percent,36-10-0206-01,pre
+2024-01-01,business_unit_labour_cost_yoy,4.92,percent,36-10-0206-01,pre
+2024-04-01,business_unit_labour_cost_yoy,2.64,percent,36-10-0206-01,pre
+2024-07-01,business_unit_labour_cost_yoy,1.4,percent,36-10-0206-01,pre
+2024-10-01,business_unit_labour_cost_yoy,1.48,percent,36-10-0206-01,pre
+2025-01-01,business_unit_labour_cost_yoy,0.6,percent,36-10-0206-01,transition
+2025-04-01,business_unit_labour_cost_yoy,0.87,percent,36-10-0206-01,post
+2025-07-01,business_unit_labour_cost_yoy,1.22,percent,36-10-0206-01,post
+2025-10-01,business_unit_labour_cost_yoy,1.73,percent,36-10-0206-01,post
+2026-01-01,business_unit_labour_cost_yoy,3.02,percent,36-10-0206-01,post
+2026-04-01,business_unit_labour_cost_yoy,3.17,percent,36-10-0206-01,post

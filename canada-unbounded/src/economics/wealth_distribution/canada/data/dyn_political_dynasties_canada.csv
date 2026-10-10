@@ -1,0 +1,28 @@
+family,jurisdiction,person,relation_in_family,office,start,end,source_url,verification
+Trudeau,Federal,Pierre Elliott Trudeau,father,Prime Minister,1968,1979,https://guide-ministries.canada.ca/en/ministers-state,"Guide to Canadian Ministries lists 22nd Ministry (1980-1984); 1968-1979 tenure widely documented, exact days not retrieved"
+Trudeau,Federal,Pierre Elliott Trudeau,father,Prime Minister (second period),1980,1984,https://guide-ministries.canada.ca/en/ministers-state,Guide to Canadian Ministries: 'Pierre Elliott Trudeau (1980 - 1984)'
+Trudeau,Federal,Justin Trudeau,son,Prime Minister,2015,2025,https://www.pm.gc.ca/about,"Successor Carney sworn in March 2025 (PMO About page); Gagnon (2011) lists J. Trudeau among sitting MPs whose fathers were MPs"
+Martin,Federal,Paul Martin Sr.,father,"MP and cabinet minister; later senator",,,https://www.ourcommons.ca/heritage/en/collection/25708,"House of Commons heritage record: PM Paul Martin was 'son of long-time Liberal member of Parliament and cabinet minister Paul Martin Sr.'; exact years not retrieved (ParlInfo blocked)"
+Martin,Federal,Paul Martin,son,Prime Minister,2003,2006,https://guide-ministries.canada.ca/en/ministers-state,Guide to Canadian Ministries: 27th Ministry 'Paul Martin (2003 - 2006)'
+Manning,Alberta,Ernest C. Manning,father,Premier of Alberta,1943,1968,https://history.alberta.ca/energyheritage/sands/mega-projects/setting-the-stage/ernest-manning.aspx,Government of Alberta heritage site; appointed to Senate 1970 (alberta.ca/aoe-ernest-manning)
+Manning,Federal,Preston Manning,son,"Reform Party founder-leader; MP Calgary Southwest; Leader of the Opposition",,,https://www.alberta.ca/aoe-preston-manning,Alberta Order of Excellence biography; exact years not retrieved
+Johnson,Quebec,Daniel Johnson (père),father,Premier of Quebec (Union nationale),1966-06-16,1968,https://www.assnat.qc.ca/fr/patrimoine/pm.html,Assemblée nationale list; successor Bertrand from 1968-10-02 (Johnson died in office Sept 1968 - date not retrieved here)
+Johnson,Quebec,Pierre Marc Johnson,son,Premier of Quebec (Parti québécois),1985-10-03,1985-12-12,https://www.assnat.qc.ca/fr/patrimoine/pm.html,Assemblée nationale list (Bourassa returned 1985-12-12)
+Johnson,Quebec,Daniel Johnson (fils),son,Premier of Quebec (Liberal),1994-01-11,1994-09-26,https://www.assnat.qc.ca/fr/patrimoine/pm.html,Assemblée nationale list (Parizeau from 1994-09-26); brothers led different parties
+Bennett,British Columbia,W.A.C. Bennett,father,Premier of BC (Social Credit),1952-08-01,1972-09-15,https://www.llbc.leg.bc.ca/public/reference/premiers.pdf,Legislative Library of BC list
+Bennett,British Columbia,William Richards (Bill) Bennett,son,Premier of BC (Social Credit),1975-12-22,1986-08-06,https://www.llbc.leg.bc.ca/public/reference/premiers.pdf,Legislative Library of BC list
+Ghiz,Prince Edward Island,Joseph Ghiz,father,Premier of PEI (Liberal),1986,1993,https://www.assembly.pe.ca/sites/www.assembly.pe.ca/files/Historical%20MLA%20Bios/G-2.pdf,PEI Legislative Assembly bio of Robert Ghiz: father was 27th premier and MLA 1982-1996; resigned as premier Jan 1993; start year 1986 not confirmed in retrieved text
+Ghiz,Prince Edward Island,Robert Ghiz,son,Premier of PEI (Liberal),2007-06,2015,https://www.assembly.pe.ca/sites/www.assembly.pe.ca/files/Historical%20MLA%20Bios/G-2.pdf,"Sworn in June 2007; won 2011; resigned seat Nov 2014; 2015 end of premiership not confirmed in retrieved text. Assembly bio: second father-son premier pair in PEI after Thane and Alexander Campbell"
+Ford,Ontario,Douglas B. Ford (Sr.),father,MPP Etobicoke-Humber (PC),1995-06-08,1999-06-02,https://www.ola.org/en/members/all/douglas-b-ford,OLA member profile
+Ford,Toronto,Rob Ford,son,Mayor of Toronto,2010,2014,https://www.toronto.ca/explore-enjoy/history-art-culture/mayors-councillors-reeves-chairmen/mayor-reeve-chairman/,City of Toronto; councillor Etobicoke North 2000-2010 and 2014-2016 (City news release)
+Ford,Ontario,Doug Ford,son,Premier of Ontario; MPP Etobicoke North,2018,,https://www.ola.org/en/members/all/doug-ford,"ontario.ca premier bio: 'Three generations of Fords have served the people of Ontario in elected office.'"
+Ford,Ontario,Michael D. Ford,grandson (nephew of Doug and Rob),MPP York South-Weston; Minister of Citizenship and Multiculturalism,2022-06-02,2025-02-27,https://www.ola.org/en/members/all/michael-d-ford,OLA profile; nephew relationship not stated on OLA page (implied by ontario.ca 'three generations')
+Mulroney,Federal/Ontario,Brian Mulroney,father,Prime Minister,1984,1993,https://guide-ministries.canada.ca/en/home,tenure years widely documented; exact days not retrieved
+Mulroney,Ontario,Caroline Mulroney,daughter,MPP York-Simcoe; Attorney General; Minister of Transportation; President of Treasury Board,2018-06-07,2026-06-05,https://www.ola.org/en/members/all/caroline-mulroney,OLA profile (resigned 2026-06-05 per profile)
+LeBlanc,Federal,Dominic LeBlanc,son (father Roméo LeBlanc was MP),MP and minister,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011) footnote: sitting MPs whose fathers were MPs
+Bernier,Federal,Maxime Bernier,son,MP,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)
+Layton,Federal,Jack Layton,son,MP (NDP leader),,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)
+MacKay,Federal,Peter MacKay,son,MP and minister,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)
+Regan,Federal,Geoff Regan,son,MP,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)
+Strahl,Federal,Mark Strahl,son,MP,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)
+Dewar,Federal,Paul Dewar,son (mother Marion Dewar was MP),MP,,,https://www.revparlcan.ca/?p=3907,Gagnon (2011)

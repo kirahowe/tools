@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c5-wealth-concentration
+(ns economics.wealth-distribution.canada.c05-wealth-concentration
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: Wealth Concentration"
@@ -167,7 +167,7 @@
 ;; Housing is the main asset of the middle 60% of Canadian families,
 ;; which is why Canada's middle class looks wealthier on paper than America's,
 ;; and why that wealth is so tied up in one illiquid, overpriced asset
-;; (see [Labour Hours](c3_labour_hours.html)).
+;; (see [Labour Hours](c03_labour_hours.html)).
 
 ;; On a log scale we can see the whole distribution at once.
 
@@ -342,7 +342,7 @@
 ;; pharmacy) with inherited ones: six members of the Thomson family appear, together worth US\$43.5B.
 ;; A Canadian wealth tax would apply to residents.
 ;; Canada already taxes residents who leave through its "departure tax",
-;; which treats emigrants as having sold their assets on the way out (see [Wealth Tax](c2_wealth_tax.html)).
+;; which treats emigrants as having sold their assets on the way out (see [Wealth Tax](c02_wealth_tax.html)).
 ;; :::
 
 ;; ## Conclusion
@@ -356,7 +356,7 @@
 ;; Canada also starts from a stronger public balance sheet than the United States,
 ;; which gives it room to choose.
 
-;; In the next part, [Economic Growth](c6_economic_growth.html), we look at how concentration and growth interact in Canada.
+;; In the next part, [Stable and Stuck](c06_productivity.html), we look at Canada's central economic problem: productivity.
 
 ;; [^1]: Statistics Canada, [Table 36-10-0660-01, Distributions of household economic accounts, wealth, by characteristic, Canada, quarterly](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066001), and [The Daily, April 13, 2026](https://www150.statcan.gc.ca/n1/daily-quotidien/260413/dq260413a-eng.htm).
 ;; [^2]: Timothy Pratley, [Unbounded: Wealth Concentration](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u5_wealth_concentration.html), using the Federal Reserve's [Distributional Financial Accounts](https://www.federalreserve.gov/releases/z1/dataviz/dfa/).

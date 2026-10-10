@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c9-how-to-get-a-wealth-tax
+(ns economics.wealth-distribution.canada.c13-how-to-get-a-wealth-tax
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn :kind/graphviz}}
    :clay {:title  "Unbounded North: How to Get a Wealth Tax"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "How a wealth tax could actually become law in Canada's parliamentary system."
                    :abstract    "In Canada only Cabinet can start a tax. A wealth tax needs pressure that changes what the governing party believes it must do."
-                   :date        "2026-10-19"
+                   :date        "2026-10-23"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}})
@@ -16,7 +16,7 @@
 
 ;; A wealth tax is popular in Canada.
 ;; In 2020, 79% of Canadians supported a 1% tax on wealth above \$20M, including 64% of Conservative voters
-;; (see [Wealth Tax](c2_wealth_tax.html)).
+;; (see [Wealth Tax](c02_wealth_tax.html)).
 ;; Yet when the NDP put a wealth tax motion to the House of Commons in November 2020, it was defeated 27 to 292.
 ;; Liberal, Conservative and Bloc MPs voted against it.[^1]
 ;; In 2025, the government cancelled even the much smaller increase in the capital gains inclusion rate.[^2]
@@ -99,7 +99,7 @@
 ;; 1. **Voters in swing ridings who make it a voting issue.** Popularity isn't the same as priority.
 ;;    A wealth tax that 79% support but almost nobody votes on gives a government no reason to act.
 ;; 2. **Fiscal pressure.** Debt charges are rising toward 13% of federal revenue by 2030–31
-;;    (see [Wealth Tax](c2_wealth_tax.html)). Every government will need new revenue or cuts.
+;;    (see [Wealth Tax](c02_wealth_tax.html)). Every government will need new revenue or cuts.
 ;;    The question is who pays.
 ;; 3. **Credible, costed proposals.** The PBO's estimate of \$121.5B over five years, with a cautious avoidance
 ;;    assumption, makes the proposal hard to dismiss as fantasy.
@@ -153,7 +153,7 @@
 ;; costed proposals that survive scrutiny, and allies inside the party.
 ;; Public support is already there; the missing piece is pressure.
 
-;; The final part, [References](c10_references.html), lists the sources, data and research behind this series.
+;; The final part, [References](c14_references.html), lists the sources, data and research behind this series.
 
 ;; [^1]: House of Commons, [Vote No. 22, 43rd Parliament, 2nd Session](https://www.ourcommons.ca/members/en/votes/43/2/22), November 2020 (27 yeas, 292 nays); [CBC News](https://www.cbc.ca/news/politics/ndp-wealth-tax-opposition-day-1.5789923).
 ;; [^2]: [Prime Minister's statement, March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase).

@@ -1,0 +1,43 @@
+date,indicator,value,unit,source_table,regime
+2021-07-01,non_permanent_residents,1326000.0,persons (quarter-start estimate),17-10-0121-01,pre
+2021-07-01,npr_share_of_population,3.47,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2021-10-01,non_permanent_residents,1408873.0,persons (quarter-start estimate),17-10-0121-01,pre
+2021-10-01,npr_share_of_population,3.66,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2022-01-01,non_permanent_residents,1372025.0,persons (quarter-start estimate),17-10-0121-01,pre
+2022-01-01,npr_share_of_population,3.56,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2022-04-01,non_permanent_residents,1397019.0,persons (quarter-start estimate),17-10-0121-01,pre
+2022-04-01,npr_share_of_population,3.61,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2022-07-01,non_permanent_residents,1546638.0,persons (quarter-start estimate),17-10-0121-01,pre
+2022-07-01,npr_share_of_population,3.97,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2022-10-01,non_permanent_residents,1759870.0,persons (quarter-start estimate),17-10-0121-01,pre
+2022-10-01,npr_share_of_population,4.48,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2023-01-01,non_permanent_residents,1893217.0,persons (quarter-start estimate),17-10-0121-01,pre
+2023-01-01,npr_share_of_population,4.8,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2023-04-01,non_permanent_residents,1974989.0,persons (quarter-start estimate),17-10-0121-01,pre
+2023-04-01,npr_share_of_population,4.98,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2023-07-01,non_permanent_residents,2196877.0,persons (quarter-start estimate),17-10-0121-01,pre
+2023-07-01,npr_share_of_population,5.49,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2023-10-01,non_permanent_residents,2505089.0,persons (quarter-start estimate),17-10-0121-01,pre
+2023-10-01,npr_share_of_population,6.19,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2024-01-01,non_permanent_residents,2649906.0,persons (quarter-start estimate),17-10-0121-01,pre
+2024-01-01,npr_share_of_population,6.52,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2024-04-01,non_permanent_residents,2785509.0,persons (quarter-start estimate),17-10-0121-01,pre
+2024-04-01,npr_share_of_population,6.81,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2024-07-01,non_permanent_residents,2900083.0,persons (quarter-start estimate),17-10-0121-01,pre
+2024-07-01,npr_share_of_population,7.05,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2024-10-01,non_permanent_residents,2984285.0,persons (quarter-start estimate),17-10-0121-01,pre
+2024-10-01,npr_share_of_population,7.21,percent,17-10-0121-01 / 17-10-0009-01 (derived),pre
+2025-01-01,non_permanent_residents,2952596.0,persons (quarter-start estimate),17-10-0121-01,transition
+2025-01-01,npr_share_of_population,7.13,percent,17-10-0121-01 / 17-10-0009-01 (derived),transition
+2025-04-01,non_permanent_residents,2925722.0,persons (quarter-start estimate),17-10-0121-01,post
+2025-04-01,npr_share_of_population,7.05,percent,17-10-0121-01 / 17-10-0009-01 (derived),post
+2025-07-01,non_permanent_residents,2934388.0,persons (quarter-start estimate),17-10-0121-01,post
+2025-07-01,npr_share_of_population,7.05,percent,17-10-0121-01 / 17-10-0009-01 (derived),post
+2025-10-01,non_permanent_residents,2942949.0,persons (quarter-start estimate),17-10-0121-01,post
+2025-10-01,npr_share_of_population,7.05,percent,17-10-0121-01 / 17-10-0009-01 (derived),post
+2026-01-01,non_permanent_residents,2863151.0,persons (quarter-start estimate),17-10-0121-01,post
+2026-01-01,npr_share_of_population,6.86,percent,17-10-0121-01 / 17-10-0009-01 (derived),post
+2026-04-01,non_permanent_residents,2798649.0,persons (quarter-start estimate),17-10-0121-01,post
+2026-04-01,npr_share_of_population,6.71,percent,17-10-0121-01 / 17-10-0009-01 (derived),post
+2026-07-01,non_permanent_residents,2779774.0,persons (quarter-start estimate),17-10-0121-01,post
+2026-07-01,npr_share_of_population,6.65,percent,17-10-0121-01 / 17-10-0009-01 (derived),post

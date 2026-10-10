@@ -1,0 +1,166 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,real_gdp_basic_prices_all_industries,2160859.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-02-01,real_gdp_basic_prices_all_industries,2183889.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-03-01,real_gdp_basic_prices_all_industries,2196942.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-04-01,real_gdp_basic_prices_all_industries,2197345.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-05-01,real_gdp_basic_prices_all_industries,2202456.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-06-01,real_gdp_basic_prices_all_industries,2211634.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-07-01,real_gdp_basic_prices_all_industries,2214919.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-08-01,real_gdp_basic_prices_all_industries,2221513.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-09-01,real_gdp_basic_prices_all_industries,2226368.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-10-01,real_gdp_basic_prices_all_industries,2223909.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-11-01,real_gdp_basic_prices_all_industries,2221392.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2022-12-01,real_gdp_basic_prices_all_industries,2214902.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-01-01,real_gdp_basic_prices_all_industries,2236190.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-02-01,real_gdp_basic_prices_all_industries,2243830.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-03-01,real_gdp_basic_prices_all_industries,2250566.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-04-01,real_gdp_basic_prices_all_industries,2250710.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-05-01,real_gdp_basic_prices_all_industries,2251250.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-06-01,real_gdp_basic_prices_all_industries,2248378.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-07-01,real_gdp_basic_prices_all_industries,2250903.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-08-01,real_gdp_basic_prices_all_industries,2251926.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-09-01,real_gdp_basic_prices_all_industries,2251153.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-10-01,real_gdp_basic_prices_all_industries,2253540.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-11-01,real_gdp_basic_prices_all_industries,2259470.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2023-12-01,real_gdp_basic_prices_all_industries,2256668.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-01-01,real_gdp_basic_prices_all_industries,2262764.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-02-01,real_gdp_basic_prices_all_industries,2276470.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-03-01,real_gdp_basic_prices_all_industries,2277491.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-04-01,real_gdp_basic_prices_all_industries,2285643.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-05-01,real_gdp_basic_prices_all_industries,2289038.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-06-01,real_gdp_basic_prices_all_industries,2294051.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-07-01,real_gdp_basic_prices_all_industries,2298623.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-08-01,real_gdp_basic_prices_all_industries,2301315.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-09-01,real_gdp_basic_prices_all_industries,2307523.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-10-01,real_gdp_basic_prices_all_industries,2317073.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-11-01,real_gdp_basic_prices_all_industries,2312337.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2024-12-01,real_gdp_basic_prices_all_industries,2317000.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2025-01-01,real_gdp_basic_prices_all_industries,2329644.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2025-02-01,real_gdp_basic_prices_all_industries,2325830.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,pre
+2025-03-01,real_gdp_basic_prices_all_industries,2330391.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,transition
+2025-04-01,real_gdp_basic_prices_all_industries,2328471.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-05-01,real_gdp_basic_prices_all_industries,2324790.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-06-01,real_gdp_basic_prices_all_industries,2323307.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-07-01,real_gdp_basic_prices_all_industries,2338557.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-08-01,real_gdp_basic_prices_all_industries,2337154.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-09-01,real_gdp_basic_prices_all_industries,2342306.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-10-01,real_gdp_basic_prices_all_industries,2335748.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-11-01,real_gdp_basic_prices_all_industries,2337863.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2025-12-01,real_gdp_basic_prices_all_industries,2340368.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-01-01,real_gdp_basic_prices_all_industries,2340048.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-02-01,real_gdp_basic_prices_all_industries,2343731.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-03-01,real_gdp_basic_prices_all_industries,2340120.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-04-01,real_gdp_basic_prices_all_industries,2355221.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-05-01,real_gdp_basic_prices_all_industries,2363071.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-06-01,real_gdp_basic_prices_all_industries,2371886.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2026-07-01,real_gdp_basic_prices_all_industries,2371771.0,"millions of chained 2017 dollars, SAAR",36-10-0434-01,post
+2022-01-01,real_gdp_basic_prices_mom,-0.24,percent,36-10-0434-01,pre
+2022-02-01,real_gdp_basic_prices_mom,1.07,percent,36-10-0434-01,pre
+2022-03-01,real_gdp_basic_prices_mom,0.6,percent,36-10-0434-01,pre
+2022-04-01,real_gdp_basic_prices_mom,0.02,percent,36-10-0434-01,pre
+2022-05-01,real_gdp_basic_prices_mom,0.23,percent,36-10-0434-01,pre
+2022-06-01,real_gdp_basic_prices_mom,0.42,percent,36-10-0434-01,pre
+2022-07-01,real_gdp_basic_prices_mom,0.15,percent,36-10-0434-01,pre
+2022-08-01,real_gdp_basic_prices_mom,0.3,percent,36-10-0434-01,pre
+2022-09-01,real_gdp_basic_prices_mom,0.22,percent,36-10-0434-01,pre
+2022-10-01,real_gdp_basic_prices_mom,-0.11,percent,36-10-0434-01,pre
+2022-11-01,real_gdp_basic_prices_mom,-0.11,percent,36-10-0434-01,pre
+2022-12-01,real_gdp_basic_prices_mom,-0.29,percent,36-10-0434-01,pre
+2023-01-01,real_gdp_basic_prices_mom,0.96,percent,36-10-0434-01,pre
+2023-02-01,real_gdp_basic_prices_mom,0.34,percent,36-10-0434-01,pre
+2023-03-01,real_gdp_basic_prices_mom,0.3,percent,36-10-0434-01,pre
+2023-04-01,real_gdp_basic_prices_mom,0.01,percent,36-10-0434-01,pre
+2023-05-01,real_gdp_basic_prices_mom,0.02,percent,36-10-0434-01,pre
+2023-06-01,real_gdp_basic_prices_mom,-0.13,percent,36-10-0434-01,pre
+2023-07-01,real_gdp_basic_prices_mom,0.11,percent,36-10-0434-01,pre
+2023-08-01,real_gdp_basic_prices_mom,0.05,percent,36-10-0434-01,pre
+2023-09-01,real_gdp_basic_prices_mom,-0.03,percent,36-10-0434-01,pre
+2023-10-01,real_gdp_basic_prices_mom,0.11,percent,36-10-0434-01,pre
+2023-11-01,real_gdp_basic_prices_mom,0.26,percent,36-10-0434-01,pre
+2023-12-01,real_gdp_basic_prices_mom,-0.12,percent,36-10-0434-01,pre
+2024-01-01,real_gdp_basic_prices_mom,0.27,percent,36-10-0434-01,pre
+2024-02-01,real_gdp_basic_prices_mom,0.61,percent,36-10-0434-01,pre
+2024-03-01,real_gdp_basic_prices_mom,0.04,percent,36-10-0434-01,pre
+2024-04-01,real_gdp_basic_prices_mom,0.36,percent,36-10-0434-01,pre
+2024-05-01,real_gdp_basic_prices_mom,0.15,percent,36-10-0434-01,pre
+2024-06-01,real_gdp_basic_prices_mom,0.22,percent,36-10-0434-01,pre
+2024-07-01,real_gdp_basic_prices_mom,0.2,percent,36-10-0434-01,pre
+2024-08-01,real_gdp_basic_prices_mom,0.12,percent,36-10-0434-01,pre
+2024-09-01,real_gdp_basic_prices_mom,0.27,percent,36-10-0434-01,pre
+2024-10-01,real_gdp_basic_prices_mom,0.41,percent,36-10-0434-01,pre
+2024-11-01,real_gdp_basic_prices_mom,-0.2,percent,36-10-0434-01,pre
+2024-12-01,real_gdp_basic_prices_mom,0.2,percent,36-10-0434-01,pre
+2025-01-01,real_gdp_basic_prices_mom,0.55,percent,36-10-0434-01,pre
+2025-02-01,real_gdp_basic_prices_mom,-0.16,percent,36-10-0434-01,pre
+2025-03-01,real_gdp_basic_prices_mom,0.2,percent,36-10-0434-01,transition
+2025-04-01,real_gdp_basic_prices_mom,-0.08,percent,36-10-0434-01,post
+2025-05-01,real_gdp_basic_prices_mom,-0.16,percent,36-10-0434-01,post
+2025-06-01,real_gdp_basic_prices_mom,-0.06,percent,36-10-0434-01,post
+2025-07-01,real_gdp_basic_prices_mom,0.66,percent,36-10-0434-01,post
+2025-08-01,real_gdp_basic_prices_mom,-0.06,percent,36-10-0434-01,post
+2025-09-01,real_gdp_basic_prices_mom,0.22,percent,36-10-0434-01,post
+2025-10-01,real_gdp_basic_prices_mom,-0.28,percent,36-10-0434-01,post
+2025-11-01,real_gdp_basic_prices_mom,0.09,percent,36-10-0434-01,post
+2025-12-01,real_gdp_basic_prices_mom,0.11,percent,36-10-0434-01,post
+2026-01-01,real_gdp_basic_prices_mom,-0.01,percent,36-10-0434-01,post
+2026-02-01,real_gdp_basic_prices_mom,0.16,percent,36-10-0434-01,post
+2026-03-01,real_gdp_basic_prices_mom,-0.15,percent,36-10-0434-01,post
+2026-04-01,real_gdp_basic_prices_mom,0.65,percent,36-10-0434-01,post
+2026-05-01,real_gdp_basic_prices_mom,0.33,percent,36-10-0434-01,post
+2026-06-01,real_gdp_basic_prices_mom,0.37,percent,36-10-0434-01,post
+2026-07-01,real_gdp_basic_prices_mom,-0.0,percent,36-10-0434-01,post
+2022-01-01,real_gdp_basic_prices_yoy,4.46,percent,36-10-0434-01,pre
+2022-02-01,real_gdp_basic_prices_yoy,5.42,percent,36-10-0434-01,pre
+2022-03-01,real_gdp_basic_prices_yoy,4.93,percent,36-10-0434-01,pre
+2022-04-01,real_gdp_basic_prices_yoy,6.05,percent,36-10-0434-01,pre
+2022-05-01,real_gdp_basic_prices_yoy,6.51,percent,36-10-0434-01,pre
+2022-06-01,real_gdp_basic_prices_yoy,5.96,percent,36-10-0434-01,pre
+2022-07-01,real_gdp_basic_prices_yoy,5.4,percent,36-10-0434-01,pre
+2022-08-01,real_gdp_basic_prices_yoy,4.83,percent,36-10-0434-01,pre
+2022-09-01,real_gdp_basic_prices_yoy,4.56,percent,36-10-0434-01,pre
+2022-10-01,real_gdp_basic_prices_yoy,3.57,percent,36-10-0434-01,pre
+2022-11-01,real_gdp_basic_prices_yoy,2.97,percent,36-10-0434-01,pre
+2022-12-01,real_gdp_basic_prices_yoy,2.25,percent,36-10-0434-01,pre
+2023-01-01,real_gdp_basic_prices_yoy,3.49,percent,36-10-0434-01,pre
+2023-02-01,real_gdp_basic_prices_yoy,2.74,percent,36-10-0434-01,pre
+2023-03-01,real_gdp_basic_prices_yoy,2.44,percent,36-10-0434-01,pre
+2023-04-01,real_gdp_basic_prices_yoy,2.43,percent,36-10-0434-01,pre
+2023-05-01,real_gdp_basic_prices_yoy,2.22,percent,36-10-0434-01,pre
+2023-06-01,real_gdp_basic_prices_yoy,1.66,percent,36-10-0434-01,pre
+2023-07-01,real_gdp_basic_prices_yoy,1.62,percent,36-10-0434-01,pre
+2023-08-01,real_gdp_basic_prices_yoy,1.37,percent,36-10-0434-01,pre
+2023-09-01,real_gdp_basic_prices_yoy,1.11,percent,36-10-0434-01,pre
+2023-10-01,real_gdp_basic_prices_yoy,1.33,percent,36-10-0434-01,pre
+2023-11-01,real_gdp_basic_prices_yoy,1.71,percent,36-10-0434-01,pre
+2023-12-01,real_gdp_basic_prices_yoy,1.89,percent,36-10-0434-01,pre
+2024-01-01,real_gdp_basic_prices_yoy,1.19,percent,36-10-0434-01,pre
+2024-02-01,real_gdp_basic_prices_yoy,1.45,percent,36-10-0434-01,pre
+2024-03-01,real_gdp_basic_prices_yoy,1.2,percent,36-10-0434-01,pre
+2024-04-01,real_gdp_basic_prices_yoy,1.55,percent,36-10-0434-01,pre
+2024-05-01,real_gdp_basic_prices_yoy,1.68,percent,36-10-0434-01,pre
+2024-06-01,real_gdp_basic_prices_yoy,2.03,percent,36-10-0434-01,pre
+2024-07-01,real_gdp_basic_prices_yoy,2.12,percent,36-10-0434-01,pre
+2024-08-01,real_gdp_basic_prices_yoy,2.19,percent,36-10-0434-01,pre
+2024-09-01,real_gdp_basic_prices_yoy,2.5,percent,36-10-0434-01,pre
+2024-10-01,real_gdp_basic_prices_yoy,2.82,percent,36-10-0434-01,pre
+2024-11-01,real_gdp_basic_prices_yoy,2.34,percent,36-10-0434-01,pre
+2024-12-01,real_gdp_basic_prices_yoy,2.67,percent,36-10-0434-01,pre
+2025-01-01,real_gdp_basic_prices_yoy,2.96,percent,36-10-0434-01,pre
+2025-02-01,real_gdp_basic_prices_yoy,2.17,percent,36-10-0434-01,pre
+2025-03-01,real_gdp_basic_prices_yoy,2.32,percent,36-10-0434-01,transition
+2025-04-01,real_gdp_basic_prices_yoy,1.87,percent,36-10-0434-01,post
+2025-05-01,real_gdp_basic_prices_yoy,1.56,percent,36-10-0434-01,post
+2025-06-01,real_gdp_basic_prices_yoy,1.28,percent,36-10-0434-01,post
+2025-07-01,real_gdp_basic_prices_yoy,1.74,percent,36-10-0434-01,post
+2025-08-01,real_gdp_basic_prices_yoy,1.56,percent,36-10-0434-01,post
+2025-09-01,real_gdp_basic_prices_yoy,1.51,percent,36-10-0434-01,post
+2025-10-01,real_gdp_basic_prices_yoy,0.81,percent,36-10-0434-01,post
+2025-11-01,real_gdp_basic_prices_yoy,1.1,percent,36-10-0434-01,post
+2025-12-01,real_gdp_basic_prices_yoy,1.01,percent,36-10-0434-01,post
+2026-01-01,real_gdp_basic_prices_yoy,0.45,percent,36-10-0434-01,post
+2026-02-01,real_gdp_basic_prices_yoy,0.77,percent,36-10-0434-01,post
+2026-03-01,real_gdp_basic_prices_yoy,0.42,percent,36-10-0434-01,post
+2026-04-01,real_gdp_basic_prices_yoy,1.15,percent,36-10-0434-01,post
+2026-05-01,real_gdp_basic_prices_yoy,1.65,percent,36-10-0434-01,post
+2026-06-01,real_gdp_basic_prices_yoy,2.09,percent,36-10-0434-01,post
+2026-07-01,real_gdp_basic_prices_yoy,1.42,percent,36-10-0434-01,post

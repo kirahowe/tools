@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c2-wealth-tax
+(ns economics.wealth-distribution.canada.c02-wealth-tax
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: Wealth Tax"
@@ -20,7 +20,7 @@
 ;; A wealth tax is an annual tax on net worth (everything you own minus everything you owe) above a high threshold.
 ;; With a \$10M threshold, a family worth \$12M pays tax only on the \$2M above it.
 ;; It reaches what income tax misses: the growth of large fortunes that is never sold, and so never taxed,
-;; as we saw in [Who Pays Tax](c1_who_pays_tax.html).
+;; as we saw in [Who Pays Tax](c01_who_pays_tax.html).
 
 ;; Canada has seriously costed several wealth taxes.
 ;; The Parliamentary Budget Officer (PBO), Parliament's independent fiscal watchdog,
@@ -42,7 +42,7 @@
 ;; The PBO assumes **35%** of each wealthy family's net worth is hidden or avoided and drops it from the tax base,
 ;; then subtracts 2% for administration.[^4]
 ;; A review of the international evidence suggests a well-designed 1% wealth tax would shrink its base by 7–17%,
-;; so the PBO's estimate is, if anything, low (see [The Investment Question](c7_investment_question.html)).
+;; so the PBO's estimate is, if anything, low (see [The Investment Question](c09_investment_question.html)).
 
 ;; ## Who Would Pay?
 
@@ -110,7 +110,7 @@
 ;; A \$20M family would pay \$100,000 a year, 0.5% of its wealth.
 ;; A \$1B family would pay about \$28M, 2.8%.
 ;; Large fortunes have historically grown faster than that.
-;; The Forbes list's Canadian citizens went from a combined US\$143B in 2020 to US\$457B in 2026 (see [Wealth Concentration](c5_wealth_concentration.html)).
+;; The Forbes list's Canadian citizens went from a combined US\$143B in 2020 to US\$457B in 2026 (see [Wealth Concentration](c05_wealth_concentration.html)).
 ;; A 3% tax slows the snowball; it doesn't melt it.
 
 ;; ### Replicating the PBO Estimate
@@ -252,7 +252,7 @@
 
 ;; Closing loopholes is worthwhile; Canada's biggest "loophole" is the statute itself.
 ;; Half-taxing capital gains costs Ottawa about \$30–42B a year, and that is the law working as written
-;; (see [Who Pays Tax](c1_who_pays_tax.html)).
+;; (see [Who Pays Tax](c01_who_pays_tax.html)).
 ;; Raising the inclusion rate, as Budget 2024 proposed, would help.
 ;; But a capital gains tax only bites when assets are *sold*.
 ;; Only a tax on the stock of wealth can slow fortunes that are never sold.
@@ -264,7 +264,7 @@
 ;; "deemed to have disposed" of their property at fair market value, and owes tax on the accrued gains.[^12]
 ;; A wealth tax can be paired with a parallel exit charge.
 ;; Evidence from Norway, the most-cited case of millionaires leaving, finds that at most about 100 people left
-;; because of its 2021–24 wealth tax increases, and revenue still rose (see [The Investment Question](c7_investment_question.html)).
+;; because of its 2021–24 wealth tax increases, and revenue still rose (see [The Investment Question](c09_investment_question.html)).
 
 ;; Canada's emigration is also small: about 112,000 people in 2025, roughly 0.3% of the population,
 ;; with about half that number returning each year.[^13]
@@ -273,7 +273,7 @@
 ;; ### "It Will Kill Investment"
 
 ;; This is the most common objection in Canada, and it gets its own part:
-;; [The Investment Question](c7_investment_question.html).
+;; [The Investment Question](c09_investment_question.html).
 ;; The short answer: Canada cut capital taxes deeply between 2000 and 2012, and investment and productivity fell further behind anyway.
 
 ;; ### "It's Unconstitutional / a Provincial Matter"
@@ -313,7 +313,7 @@
 ;; Most objections are design questions with known answers.
 ;; The rest of this series looks at why it matters beyond the revenue.
 
-;; In the next part, [Labour Hours](c3_labour_hours.html), we look at what Canadians' work buys them today.
+;; In the next part, [Labour Hours](c03_labour_hours.html), we look at what Canadians' work buys them today.
 
 ;; [^1]: Office of the Parliamentary Budget Officer, [Net Wealth Tax on Canadian Resident Economic Families](https://www.pbo-dpb.ca/en/publications/RP-2021-017-M--net-wealth-tax-canadian-resident-economic-families--impot-patrimoine-net-familles-economiques-residant-au-canada), July 8, 2020.
 ;; [^2]: Office of the Parliamentary Budget Officer, [Revenue Estimates for M-68: One-Time Tax on Extreme Wealth](https://www.pbo-dpb.ca/en/publications/RP-2122-012-M--revenue-estimates-m-68-one-time-tax-extreme-wealth--estimation-recettes-mesures-prevues-dans-motion-m-68-impot-unique-richesse-extreme), July 15, 2021.

@@ -1,0 +1,10 @@
+scenario,base_description,base_cad_millions,tax_rate_pct,exemption,revenue_cad_millions_per_year,revenue_pct_of_2025_gdp,note
+A,"Land underlying dwellings, all sectors, 2025Q4",4522600,1.0,none,45226,1.39,Static; no capitalization or behavioural response
+B,"Land underlying dwellings, households sector, 2025Q4",4235477,1.0,none,42355,1.31,Static
+C_50k,"Land underlying dwellings, all sectors, 2025Q4",4522600,1.0,"$50,000 land-value exemption per occupied dwelling (14,978,941 dwellings)",37737,1.16,LOWER BOUND: assumes every dwelling has land value >= exemption; true revenue lies between this and scenario A
+C_100k,"Land underlying dwellings, all sectors, 2025Q4",4522600,1.0,"$100,000 land-value exemption per occupied dwelling (14,978,941 dwellings)",30247,0.93,LOWER BOUND: assumes every dwelling has land value >= exemption; true revenue lies between this and scenario A
+C_200k,"Land underlying dwellings, all sectors, 2025Q4",4522600,1.0,"$200,000 land-value exemption per occupied dwelling (14,978,941 dwellings)",15268,0.47,LOWER BOUND: assumes every dwelling has land value >= exemption; true revenue lies between this and scenario A
+D_r3,"Land underlying dwellings, all sectors, after capitalization",3391950,1.0,none,33920,1.05,Perpetuity capitalization V'=V*r/(r+t) with discount rate r=3%; land values fall 25%
+D_r4,"Land underlying dwellings, all sectors, after capitalization",3618080,1.0,none,36181,1.11,Perpetuity capitalization V'=V*r/(r+t) with discount rate r=4%; land values fall 20%
+D_r5,"Land underlying dwellings, all sectors, after capitalization",3768833,1.0,none,37688,1.16,Perpetuity capitalization V'=V*r/(r+t) with discount rate r=5%; land values fall 17%
+E,"All land (dwellings + other buildings/structures + agricultural), all sectors, 2025Q4",6369477,1.0,none,63695,1.96,Static; includes commercial/industrial and farm land

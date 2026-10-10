@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c7-investment-question
+(ns economics.wealth-distribution.canada.c09-investment-question
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: The Investment Question"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "Would a wealth tax kill investment and productivity in Canada? What the data say."
                    :abstract    "Canada already ran the experiment in reverse: it cut capital taxes deeply, and investment and productivity fell further behind. The evidence on wealth taxes points to avoidance, not lost investment."
-                   :date        "2026-10-17"
+                   :date        "2026-10-19"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada :investment :productivity]}}}
@@ -320,7 +320,7 @@
 ;; Where wealth taxes have been studied, the costs show up as avoidance and lost revenue, not lost investment or jobs.
 ;; Those are design problems, and Canada already has some of the tools to solve them.
 
-;; In the next part, [What Makes Canada Different](c8_canadian_differences.html), we look at the features of Canada's economy and society that shape its version of the problem.
+;; In the next part, [Land](c10_land.html), we look at the largest and least productive store of Canadian wealth, and how to tax it.
 
 ;; [^1]: Carolyn Rogers, Senior Deputy Governor, Bank of Canada, ["Time to break the glass: Fixing Canada's productivity problem"](https://www.bankofcanada.ca/2024/03/time-to-break-the-glass-fixing-canadas-productivity-problem/), Halifax, March 26, 2024.
 ;; [^2]: OECD [Corporate Tax Statistics](https://www.oecd.org/en/data/datasets/corporate-income-tax-rates-database.html), combined (central plus sub-central) statutory corporate income tax rates.

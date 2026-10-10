@@ -5,4 +5,4 @@ title: "Unbounded North"
 Wealth, taxes and growth in Canada: a Canadian adaptation of Timothy Pratley's
 [*Unbounded*](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u0_introduction.html).
 
-[Start with the introduction →](economics/wealth_distribution/canada/c0_introduction.qmd)
+[Start with the introduction →](economics/wealth_distribution/canada/c00_introduction.qmd)

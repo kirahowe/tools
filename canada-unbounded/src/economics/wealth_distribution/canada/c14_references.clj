@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c10-references
+(ns economics.wealth-distribution.canada.c14-references
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: References"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "The data, research and institutions behind the Unbounded North series."
                    :abstract    "Every chart in this series is built from public data published by Canadian and international institutions. Here is where to find it."
-                   :date        "2026-10-20"
+                   :date        "2026-10-24"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}})
@@ -97,6 +97,32 @@
 ;; * Hope and Limberg, ["The economic consequences of major tax cuts for the rich"](https://doi.org/10.1093/ser/mwab061), *Socio-Economic Review*, 2022.
 ;; * France Stratégie, [evaluation of the 2018 capital tax reforms](https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf), 2023.
 
+;; **Productivity, competition and corporate churn**
+;;
+;; * Gu and Willox, ["The Post-2001 Productivity Growth Divergence between Canada and the United States"](https://csls.ca/ipm-archive/ipm-issue-45/the-post-2001-productivity-growth-divergence-between-canada-and-the-united-states/), *International Productivity Monitor* 45, 2023.
+;; * McCormack and Macdonald, ["Measuring Canada's economic performance relative to the United States"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026003/article/00004-eng.htm), Statistics Canada, 2026.
+;; * IMF, [Canada: 2025 Article IV Staff Report](https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-573340), 2026.
+;; * Bank of Canada speeches: Macklem (June 2024), [Rogers (October 2025)](https://www.bankofcanada.ca/2025/10/productivitys-competitive-edge/), [Vincent (November 2025)](https://www.bankofcanada.ca/2025/11/toward-a-virtuous-circle-for-productivity/).
+;; * Royal Commission on Corporate Concentration, [*Report*](https://publications.gc.ca/collections/collection_2014/bcp-pco/Z1-1975-1-1-eng.pdf), 1978.
+;; * Forbes Global 2000, 2011–2026.
+
+;; **Dynastic wealth**
+;;
+;; * Lord Durham, *Report on the Affairs of British North America*, 1839 ([full text](https://www.fadedpage.com/showbook.php?pid=20210933)).
+;; * Morck, Stangeland and Yeung, ["Inherited Wealth, Corporate Control, and Economic Growth: The Canadian Disease?"](https://www.nber.org/system/files/chapters/c9014/c9014.pdf), 2000; Morck, Wolfenzon and Yeung, ["Corporate Governance, Economic Entrenchment, and Growth"](https://www.nber.org/papers/w10692), *JEL*, 2005.
+;; * Bennedsen, Nielsen, Pérez-González and Wolfenzon, ["Inside the Family Firm"](https://www.nber.org/papers/w12356), *QJE*, 2007.
+;; * Gagnon, ["Elementary Kinship Structures in Parliament since 1867"](https://www.revparlcan.ca/?p=3907), *Canadian Parliamentary Review*, 2011; Dal Bó, Dal Bó and Snyder, ["Political Dynasties"](https://www.nber.org/papers/w13122), *REStud*, 2009.
+
+;; **Land**
+;;
+;; * Haig, [*The Exemption of Improvements from Taxation in Canada and the United States*](https://archive.org/details/exemptionofimpro00haiguoft), 1915.
+;; * Dye and England, [*Assessing the Theory and Practice of Land Value Taxation*](https://www.lincolninst.edu/app/uploads/legacy-files/pubfiles/assessing-theory-practice-land-value-taxation-full_0.pdf), Lincoln Institute, 2010.
+;; * OECD, [*Housing Taxation in OECD Countries*](https://www.oecd.org/tax/tax-policy/brochure-housing-taxation-in-oecd-countries.pdf), 2022; Mirrlees et al., *Tax by Design*, 2011.
+
+;; **Scorecard**
+;;
+;; * LEGISinfo bill records; Finance Canada budgets and economic updates; Office of the Parliamentary Budget Officer reports (2025–2026); NATO defence expenditure reports.
+
 ;; ## Books
 
 ;; * **The Beginning of Infinity**, *David Deutsch*: progress as error correction.
@@ -106,8 +132,11 @@
 
 ;; ## Data Caveats
 
-;; * **Units differ.** The Survey of Financial Security and the PBO count *families*; the Distributions of Household Economic Accounts count *households*; the World Inequality Database counts *adults*. The stitched distribution in [Wealth Concentration](c5_wealth_concentration.html) joins these, so read it as a picture of shape, not precise levels.
+;; * **Units differ.** The Survey of Financial Security and the PBO count *families*; the Distributions of Household Economic Accounts count *households*; the World Inequality Database counts *adults*. The stitched distribution in [Wealth Concentration](c05_wealth_concentration.html) joins these, so read it as a picture of shape, not precise levels.
 ;; * **Surveys miss the top.** Statistics Canada says its survey understates the top 1%'s share. The PBO's database corrects for this using rich lists; its estimates are the best published, but they are modelled.
 ;; * **No Canadian tax-by-wealth study exists.** Unlike the American IRS study used in the original series, there is no public estimate of taxes paid by wealth group in Canada.
 ;; * **Some figures are from secondary reports.** Living wages for Toronto, Vancouver and Calgary, and the Competition Bureau's grocery share, come from news reports of official releases; the primary sites could not be fetched automatically.
 ;; * **Long-run wealth shares.** The Davies–Di Matteo figures are from their 2018 working paper; the 2021 journal version revised some estimates.
+;; * **Top companies.** The Forbes Global 2000 API is complete only from 2011, so the animated comparison covers 2011–2026. Forbes ranks by market value, Fortune by revenue, and the 1978 Royal Commission by sales; long-run comparisons mix measures.
+;; * **The scorecard is early.** Most measures became law in 2026, US tariffs and an oil shock dominate the data, and all recent figures will be revised.
+;; * **Land values are modelled.** Statistics Canada splits residential property into land and structures using a land-to-structure ratio it describes as dated.

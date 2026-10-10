@@ -1,0 +1,58 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,population,38559788.0,persons (quarter-start estimate),17-10-0009-01,pre
+2022-04-01,population,38678014.0,persons (quarter-start estimate),17-10-0009-01,pre
+2022-07-01,population,38945628.0,persons (quarter-start estimate),17-10-0009-01,pre
+2022-10-01,population,39278574.0,persons (quarter-start estimate),17-10-0009-01,pre
+2023-01-01,population,39477134.0,persons (quarter-start estimate),17-10-0009-01,pre
+2023-04-01,population,39684191.0,persons (quarter-start estimate),17-10-0009-01,pre
+2023-07-01,population,40022704.0,persons (quarter-start estimate),17-10-0009-01,pre
+2023-10-01,population,40439108.0,persons (quarter-start estimate),17-10-0009-01,pre
+2024-01-01,population,40670178.0,persons (quarter-start estimate),17-10-0009-01,pre
+2024-04-01,population,40912561.0,persons (quarter-start estimate),17-10-0009-01,pre
+2024-07-01,population,41162593.0,persons (quarter-start estimate),17-10-0009-01,pre
+2024-10-01,population,41373096.0,persons (quarter-start estimate),17-10-0009-01,pre
+2025-01-01,population,41435888.0,persons (quarter-start estimate),17-10-0009-01,transition
+2025-04-01,population,41495432.0,persons (quarter-start estimate),17-10-0009-01,post
+2025-07-01,population,41608982.0,persons (quarter-start estimate),17-10-0009-01,post
+2025-10-01,population,41723923.0,persons (quarter-start estimate),17-10-0009-01,post
+2026-01-01,population,41716698.0,persons (quarter-start estimate),17-10-0009-01,post
+2026-04-01,population,41718064.0,persons (quarter-start estimate),17-10-0009-01,post
+2026-07-01,population,41798407.0,persons (quarter-start estimate),17-10-0009-01,post
+2022-01-01,population_growth_qoq,0.253,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2022-04-01,population_growth_qoq,0.307,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2022-07-01,population_growth_qoq,0.692,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2022-10-01,population_growth_qoq,0.855,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2023-01-01,population_growth_qoq,0.506,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2023-04-01,population_growth_qoq,0.524,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2023-07-01,population_growth_qoq,0.853,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2023-10-01,population_growth_qoq,1.04,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2024-01-01,population_growth_qoq,0.571,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2024-04-01,population_growth_qoq,0.596,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2024-07-01,population_growth_qoq,0.611,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2024-10-01,population_growth_qoq,0.511,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,pre
+2025-01-01,population_growth_qoq,0.152,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,transition
+2025-04-01,population_growth_qoq,0.144,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2025-07-01,population_growth_qoq,0.274,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2025-10-01,population_growth_qoq,0.276,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2026-01-01,population_growth_qoq,-0.017,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2026-04-01,population_growth_qoq,0.003,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2026-07-01,population_growth_qoq,0.193,percent change from previous quarter-start estimate (not annualized),17-10-0009-01,post
+2022-01-01,population_growth_yoy,1.32,percent,17-10-0009-01,pre
+2022-04-01,population_growth_yoy,1.41,percent,17-10-0009-01,pre
+2022-07-01,population_growth_yoy,1.85,percent,17-10-0009-01,pre
+2022-10-01,population_growth_yoy,2.12,percent,17-10-0009-01,pre
+2023-01-01,population_growth_yoy,2.38,percent,17-10-0009-01,pre
+2023-04-01,population_growth_yoy,2.6,percent,17-10-0009-01,pre
+2023-07-01,population_growth_yoy,2.77,percent,17-10-0009-01,pre
+2023-10-01,population_growth_yoy,2.95,percent,17-10-0009-01,pre
+2024-01-01,population_growth_yoy,3.02,percent,17-10-0009-01,pre
+2024-04-01,population_growth_yoy,3.1,percent,17-10-0009-01,pre
+2024-07-01,population_growth_yoy,2.85,percent,17-10-0009-01,pre
+2024-10-01,population_growth_yoy,2.31,percent,17-10-0009-01,pre
+2025-01-01,population_growth_yoy,1.88,percent,17-10-0009-01,transition
+2025-04-01,population_growth_yoy,1.42,percent,17-10-0009-01,post
+2025-07-01,population_growth_yoy,1.08,percent,17-10-0009-01,post
+2025-10-01,population_growth_yoy,0.85,percent,17-10-0009-01,post
+2026-01-01,population_growth_yoy,0.68,percent,17-10-0009-01,post
+2026-04-01,population_growth_yoy,0.54,percent,17-10-0009-01,post
+2026-07-01,population_growth_yoy,0.46,percent,17-10-0009-01,post

@@ -1,0 +1,307 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,real_gdp,2331146.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-04-01,real_gdp,2357666.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-07-01,real_gdp,2376734.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-10-01,real_gdp,2378229.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-01-01,real_gdp,2403264.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-04-01,real_gdp,2407099.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-07-01,real_gdp,2408306.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-10-01,real_gdp,2409551.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-01-01,real_gdp,2427108.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-04-01,real_gdp,2446913.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-07-01,real_gdp,2466957.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-10-01,real_gdp,2484261.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2025-01-01,real_gdp,2502038.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,transition
+2025-04-01,real_gdp,2495975.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-07-01,real_gdp,2507754.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-10-01,real_gdp,2501573.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-01-01,real_gdp,2503604.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-04-01,real_gdp,2524127.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2022-01-01,real_gdp_growth_qoq_annualized,4.21,percent,36-10-0104-01,pre
+2022-04-01,real_gdp_growth_qoq_annualized,4.63,percent,36-10-0104-01,pre
+2022-07-01,real_gdp_growth_qoq_annualized,3.27,percent,36-10-0104-01,pre
+2022-10-01,real_gdp_growth_qoq_annualized,0.25,percent,36-10-0104-01,pre
+2023-01-01,real_gdp_growth_qoq_annualized,4.28,percent,36-10-0104-01,pre
+2023-04-01,real_gdp_growth_qoq_annualized,0.64,percent,36-10-0104-01,pre
+2023-07-01,real_gdp_growth_qoq_annualized,0.2,percent,36-10-0104-01,pre
+2023-10-01,real_gdp_growth_qoq_annualized,0.21,percent,36-10-0104-01,pre
+2024-01-01,real_gdp_growth_qoq_annualized,2.95,percent,36-10-0104-01,pre
+2024-04-01,real_gdp_growth_qoq_annualized,3.3,percent,36-10-0104-01,pre
+2024-07-01,real_gdp_growth_qoq_annualized,3.32,percent,36-10-0104-01,pre
+2024-10-01,real_gdp_growth_qoq_annualized,2.84,percent,36-10-0104-01,pre
+2025-01-01,real_gdp_growth_qoq_annualized,2.89,percent,36-10-0104-01,transition
+2025-04-01,real_gdp_growth_qoq_annualized,-0.97,percent,36-10-0104-01,post
+2025-07-01,real_gdp_growth_qoq_annualized,1.9,percent,36-10-0104-01,post
+2025-10-01,real_gdp_growth_qoq_annualized,-0.98,percent,36-10-0104-01,post
+2026-01-01,real_gdp_growth_qoq_annualized,0.33,percent,36-10-0104-01,post
+2026-04-01,real_gdp_growth_qoq_annualized,3.32,percent,36-10-0104-01,post
+2022-01-01,real_gdp_growth_yoy,4.79,percent,36-10-0104-01,pre
+2022-04-01,real_gdp_growth_yoy,6.11,percent,36-10-0104-01,pre
+2022-07-01,real_gdp_growth_yoy,4.86,percent,36-10-0104-01,pre
+2022-10-01,real_gdp_growth_yoy,3.08,percent,36-10-0104-01,pre
+2023-01-01,real_gdp_growth_yoy,3.09,percent,36-10-0104-01,pre
+2023-04-01,real_gdp_growth_yoy,2.1,percent,36-10-0104-01,pre
+2023-07-01,real_gdp_growth_yoy,1.33,percent,36-10-0104-01,pre
+2023-10-01,real_gdp_growth_yoy,1.32,percent,36-10-0104-01,pre
+2024-01-01,real_gdp_growth_yoy,0.99,percent,36-10-0104-01,pre
+2024-04-01,real_gdp_growth_yoy,1.65,percent,36-10-0104-01,pre
+2024-07-01,real_gdp_growth_yoy,2.44,percent,36-10-0104-01,pre
+2024-10-01,real_gdp_growth_yoy,3.1,percent,36-10-0104-01,pre
+2025-01-01,real_gdp_growth_yoy,3.09,percent,36-10-0104-01,transition
+2025-04-01,real_gdp_growth_yoy,2.01,percent,36-10-0104-01,post
+2025-07-01,real_gdp_growth_yoy,1.65,percent,36-10-0104-01,post
+2025-10-01,real_gdp_growth_yoy,0.7,percent,36-10-0104-01,post
+2026-01-01,real_gdp_growth_yoy,0.06,percent,36-10-0104-01,post
+2026-04-01,real_gdp_growth_yoy,1.13,percent,36-10-0104-01,post
+2022-01-01,real_gdp_per_capita,60363.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-04-01,real_gdp_per_capita,60746.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-07-01,real_gdp_per_capita,60767.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-10-01,real_gdp_per_capita,60395.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-01-01,real_gdp_per_capita,60718.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-04-01,real_gdp_per_capita,60399.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-07-01,real_gdp_per_capita,59862.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-10-01,real_gdp_per_capita,59415.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-01-01,real_gdp_per_capita,59501.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-04-01,real_gdp_per_capita,59626.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-07-01,real_gdp_per_capita,59779.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-10-01,real_gdp_per_capita,60000.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),pre
+2025-01-01,real_gdp_per_capita,60340.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),transition
+2025-04-01,real_gdp_per_capita,60068.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-07-01,real_gdp_per_capita,60186.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-10-01,real_gdp_per_capita,59961.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-01-01,real_gdp_per_capita,60013.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-04-01,real_gdp_per_capita,60446.0,"chained 2017 dollars per person, annualized",36-10-0104-01 / 17-10-0009-01 (derived),post
+2022-01-01,real_gdp_per_capita_growth_qoq_annualized,3.05,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-04-01,real_gdp_per_capita_growth_qoq_annualized,2.56,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-07-01,real_gdp_per_capita_growth_qoq_annualized,0.14,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-10-01,real_gdp_per_capita_growth_qoq_annualized,-2.43,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-01-01,real_gdp_per_capita_growth_qoq_annualized,2.16,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-04-01,real_gdp_per_capita_growth_qoq_annualized,-2.09,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-07-01,real_gdp_per_capita_growth_qoq_annualized,-3.51,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-10-01,real_gdp_per_capita_growth_qoq_annualized,-2.95,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-01-01,real_gdp_per_capita_growth_qoq_annualized,0.58,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-04-01,real_gdp_per_capita_growth_qoq_annualized,0.85,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-07-01,real_gdp_per_capita_growth_qoq_annualized,1.03,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-10-01,real_gdp_per_capita_growth_qoq_annualized,1.48,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2025-01-01,real_gdp_per_capita_growth_qoq_annualized,2.29,percent,36-10-0104-01 / 17-10-0009-01 (derived),transition
+2025-04-01,real_gdp_per_capita_growth_qoq_annualized,-1.79,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-07-01,real_gdp_per_capita_growth_qoq_annualized,0.79,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-10-01,real_gdp_per_capita_growth_qoq_annualized,-1.49,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-01-01,real_gdp_per_capita_growth_qoq_annualized,0.35,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-04-01,real_gdp_per_capita_growth_qoq_annualized,2.92,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2022-01-01,real_gdp_per_capita_growth_yoy,3.39,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-04-01,real_gdp_per_capita_growth_yoy,4.41,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-07-01,real_gdp_per_capita_growth_yoy,2.82,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2022-10-01,real_gdp_per_capita_growth_yoy,0.81,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-01-01,real_gdp_per_capita_growth_yoy,0.59,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-04-01,real_gdp_per_capita_growth_yoy,-0.57,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-07-01,real_gdp_per_capita_growth_yoy,-1.49,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2023-10-01,real_gdp_per_capita_growth_yoy,-1.62,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-01-01,real_gdp_per_capita_growth_yoy,-2.01,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-04-01,real_gdp_per_capita_growth_yoy,-1.28,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-07-01,real_gdp_per_capita_growth_yoy,-0.14,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2024-10-01,real_gdp_per_capita_growth_yoy,0.98,percent,36-10-0104-01 / 17-10-0009-01 (derived),pre
+2025-01-01,real_gdp_per_capita_growth_yoy,1.41,percent,36-10-0104-01 / 17-10-0009-01 (derived),transition
+2025-04-01,real_gdp_per_capita_growth_yoy,0.74,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-07-01,real_gdp_per_capita_growth_yoy,0.68,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2025-10-01,real_gdp_per_capita_growth_yoy,-0.07,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-01-01,real_gdp_per_capita_growth_yoy,-0.54,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2026-04-01,real_gdp_per_capita_growth_yoy,0.63,percent,36-10-0104-01 / 17-10-0009-01 (derived),post
+2022-01-01,real_business_nonres_investment,260481.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2022-04-01,real_business_nonres_investment,268722.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2022-07-01,real_business_nonres_investment,272044.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2022-10-01,real_business_nonres_investment,270467.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2023-01-01,real_business_nonres_investment,276048.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2023-04-01,real_business_nonres_investment,284602.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2023-07-01,real_business_nonres_investment,276737.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2023-10-01,real_business_nonres_investment,269277.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2024-01-01,real_business_nonres_investment,271248.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2024-04-01,real_business_nonres_investment,279179.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2024-07-01,real_business_nonres_investment,272056.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2024-10-01,real_business_nonres_investment,277250.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),pre
+2025-01-01,real_business_nonres_investment,277277.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),transition
+2025-04-01,real_business_nonres_investment,276549.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),post
+2025-07-01,real_business_nonres_investment,273005.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),post
+2025-10-01,real_business_nonres_investment,275591.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),post
+2026-01-01,real_business_nonres_investment,274835.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),post
+2026-04-01,real_business_nonres_investment,280652.0,"millions of chained 2017 dollars, SAAR (business NR structures+M&E + IPP; chained components not strictly additive)",36-10-0104-01 (derived),post
+2022-01-01,real_business_nonres_investment_yoy,10.56,percent,36-10-0104-01 (derived),pre
+2022-04-01,real_business_nonres_investment_yoy,7.95,percent,36-10-0104-01 (derived),pre
+2022-07-01,real_business_nonres_investment_yoy,9.23,percent,36-10-0104-01 (derived),pre
+2022-10-01,real_business_nonres_investment_yoy,6.03,percent,36-10-0104-01 (derived),pre
+2023-01-01,real_business_nonres_investment_yoy,5.98,percent,36-10-0104-01 (derived),pre
+2023-04-01,real_business_nonres_investment_yoy,5.91,percent,36-10-0104-01 (derived),pre
+2023-07-01,real_business_nonres_investment_yoy,1.73,percent,36-10-0104-01 (derived),pre
+2023-10-01,real_business_nonres_investment_yoy,-0.44,percent,36-10-0104-01 (derived),pre
+2024-01-01,real_business_nonres_investment_yoy,-1.74,percent,36-10-0104-01 (derived),pre
+2024-04-01,real_business_nonres_investment_yoy,-1.91,percent,36-10-0104-01 (derived),pre
+2024-07-01,real_business_nonres_investment_yoy,-1.69,percent,36-10-0104-01 (derived),pre
+2024-10-01,real_business_nonres_investment_yoy,2.96,percent,36-10-0104-01 (derived),pre
+2025-01-01,real_business_nonres_investment_yoy,2.22,percent,36-10-0104-01 (derived),transition
+2025-04-01,real_business_nonres_investment_yoy,-0.94,percent,36-10-0104-01 (derived),post
+2025-07-01,real_business_nonres_investment_yoy,0.35,percent,36-10-0104-01 (derived),post
+2025-10-01,real_business_nonres_investment_yoy,-0.6,percent,36-10-0104-01 (derived),post
+2026-01-01,real_business_nonres_investment_yoy,-0.88,percent,36-10-0104-01 (derived),post
+2026-04-01,real_business_nonres_investment_yoy,1.48,percent,36-10-0104-01 (derived),post
+2022-01-01,real_business_nonres_investment_qoq_annualized,8.73,percent,36-10-0104-01 (derived),pre
+2022-04-01,real_business_nonres_investment_qoq_annualized,13.27,percent,36-10-0104-01 (derived),pre
+2022-07-01,real_business_nonres_investment_qoq_annualized,5.04,percent,36-10-0104-01 (derived),pre
+2022-10-01,real_business_nonres_investment_qoq_annualized,-2.3,percent,36-10-0104-01 (derived),pre
+2023-01-01,real_business_nonres_investment_qoq_annualized,8.51,percent,36-10-0104-01 (derived),pre
+2023-04-01,real_business_nonres_investment_qoq_annualized,12.98,percent,36-10-0104-01 (derived),pre
+2023-07-01,real_business_nonres_investment_qoq_annualized,-10.6,percent,36-10-0104-01 (derived),pre
+2023-10-01,real_business_nonres_investment_qoq_annualized,-10.35,percent,36-10-0104-01 (derived),pre
+2024-01-01,real_business_nonres_investment_qoq_annualized,2.96,percent,36-10-0104-01 (derived),pre
+2024-04-01,real_business_nonres_investment_qoq_annualized,12.22,percent,36-10-0104-01 (derived),pre
+2024-07-01,real_business_nonres_investment_qoq_annualized,-9.82,percent,36-10-0104-01 (derived),pre
+2024-10-01,real_business_nonres_investment_qoq_annualized,7.86,percent,36-10-0104-01 (derived),pre
+2025-01-01,real_business_nonres_investment_qoq_annualized,0.04,percent,36-10-0104-01 (derived),transition
+2025-04-01,real_business_nonres_investment_qoq_annualized,-1.05,percent,36-10-0104-01 (derived),post
+2025-07-01,real_business_nonres_investment_qoq_annualized,-5.03,percent,36-10-0104-01 (derived),post
+2025-10-01,real_business_nonres_investment_qoq_annualized,3.84,percent,36-10-0104-01 (derived),post
+2026-01-01,real_business_nonres_investment_qoq_annualized,-1.09,percent,36-10-0104-01 (derived),post
+2026-04-01,real_business_nonres_investment_qoq_annualized,8.74,percent,36-10-0104-01 (derived),post
+2022-01-01,real_business_machinery_equipment,82695.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-04-01,real_business_machinery_equipment,85659.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-07-01,real_business_machinery_equipment,86016.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-10-01,real_business_machinery_equipment,79333.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-01-01,real_business_machinery_equipment,81984.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-04-01,real_business_machinery_equipment,86804.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-07-01,real_business_machinery_equipment,82545.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-10-01,real_business_machinery_equipment,81017.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-01-01,real_business_machinery_equipment,81439.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-04-01,real_business_machinery_equipment,85974.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-07-01,real_business_machinery_equipment,78660.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-10-01,real_business_machinery_equipment,82872.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2025-01-01,real_business_machinery_equipment,84080.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,transition
+2025-04-01,real_business_machinery_equipment,80506.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-07-01,real_business_machinery_equipment,77471.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-10-01,real_business_machinery_equipment,79107.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-01-01,real_business_machinery_equipment,81297.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-04-01,real_business_machinery_equipment,85554.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2022-01-01,real_business_machinery_equipment_yoy,12.71,percent,36-10-0104-01,pre
+2022-04-01,real_business_machinery_equipment_yoy,5.3,percent,36-10-0104-01,pre
+2022-07-01,real_business_machinery_equipment_yoy,8.53,percent,36-10-0104-01,pre
+2022-10-01,real_business_machinery_equipment_yoy,-4.31,percent,36-10-0104-01,pre
+2023-01-01,real_business_machinery_equipment_yoy,-0.86,percent,36-10-0104-01,pre
+2023-04-01,real_business_machinery_equipment_yoy,1.34,percent,36-10-0104-01,pre
+2023-07-01,real_business_machinery_equipment_yoy,-4.04,percent,36-10-0104-01,pre
+2023-10-01,real_business_machinery_equipment_yoy,2.12,percent,36-10-0104-01,pre
+2024-01-01,real_business_machinery_equipment_yoy,-0.66,percent,36-10-0104-01,pre
+2024-04-01,real_business_machinery_equipment_yoy,-0.96,percent,36-10-0104-01,pre
+2024-07-01,real_business_machinery_equipment_yoy,-4.71,percent,36-10-0104-01,pre
+2024-10-01,real_business_machinery_equipment_yoy,2.29,percent,36-10-0104-01,pre
+2025-01-01,real_business_machinery_equipment_yoy,3.24,percent,36-10-0104-01,transition
+2025-04-01,real_business_machinery_equipment_yoy,-6.36,percent,36-10-0104-01,post
+2025-07-01,real_business_machinery_equipment_yoy,-1.51,percent,36-10-0104-01,post
+2025-10-01,real_business_machinery_equipment_yoy,-4.54,percent,36-10-0104-01,post
+2026-01-01,real_business_machinery_equipment_yoy,-3.31,percent,36-10-0104-01,post
+2026-04-01,real_business_machinery_equipment_yoy,6.27,percent,36-10-0104-01,post
+2022-01-01,real_residential_investment,190930.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-04-01,real_residential_investment,173998.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-07-01,real_residential_investment,165610.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-10-01,real_residential_investment,161545.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-01-01,real_residential_investment,154951.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-04-01,real_residential_investment,155947.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-07-01,real_residential_investment,158587.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-10-01,real_residential_investment,156879.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-01-01,real_residential_investment,154752.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-04-01,real_residential_investment,153045.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-07-01,real_residential_investment,155874.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-10-01,real_residential_investment,161371.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2025-01-01,real_residential_investment,157105.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,transition
+2025-04-01,real_residential_investment,157186.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-07-01,real_residential_investment,158903.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-10-01,real_residential_investment,155039.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-01-01,real_residential_investment,150774.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-04-01,real_residential_investment,154556.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2022-01-01,real_residential_investment_yoy,-4.73,percent,36-10-0104-01,pre
+2022-04-01,real_residential_investment_yoy,-11.84,percent,36-10-0104-01,pre
+2022-07-01,real_residential_investment_yoy,-8.43,percent,36-10-0104-01,pre
+2022-10-01,real_residential_investment_yoy,-11.42,percent,36-10-0104-01,pre
+2023-01-01,real_residential_investment_yoy,-18.84,percent,36-10-0104-01,pre
+2023-04-01,real_residential_investment_yoy,-10.37,percent,36-10-0104-01,pre
+2023-07-01,real_residential_investment_yoy,-4.24,percent,36-10-0104-01,pre
+2023-10-01,real_residential_investment_yoy,-2.89,percent,36-10-0104-01,pre
+2024-01-01,real_residential_investment_yoy,-0.13,percent,36-10-0104-01,pre
+2024-04-01,real_residential_investment_yoy,-1.86,percent,36-10-0104-01,pre
+2024-07-01,real_residential_investment_yoy,-1.71,percent,36-10-0104-01,pre
+2024-10-01,real_residential_investment_yoy,2.86,percent,36-10-0104-01,pre
+2025-01-01,real_residential_investment_yoy,1.52,percent,36-10-0104-01,transition
+2025-04-01,real_residential_investment_yoy,2.71,percent,36-10-0104-01,post
+2025-07-01,real_residential_investment_yoy,1.94,percent,36-10-0104-01,post
+2025-10-01,real_residential_investment_yoy,-3.92,percent,36-10-0104-01,post
+2026-01-01,real_residential_investment_yoy,-4.03,percent,36-10-0104-01,post
+2026-04-01,real_residential_investment_yoy,-1.67,percent,36-10-0104-01,post
+2022-01-01,real_government_gfcf,86476.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-04-01,real_government_gfcf,85820.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-07-01,real_government_gfcf,83436.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-10-01,real_government_gfcf,84602.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-01-01,real_government_gfcf,88537.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-04-01,real_government_gfcf,89424.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-07-01,real_government_gfcf,90504.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-10-01,real_government_gfcf,91483.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-01-01,real_government_gfcf,93839.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-04-01,real_government_gfcf,95054.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-07-01,real_government_gfcf,95578.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-10-01,real_government_gfcf,97431.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2025-01-01,real_government_gfcf,97292.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,transition
+2025-04-01,real_government_gfcf,99718.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-07-01,real_government_gfcf,103366.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-10-01,real_government_gfcf,109202.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-01-01,real_government_gfcf,106413.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-04-01,real_government_gfcf,103351.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2022-01-01,real_government_gfcf_yoy,0.5,percent,36-10-0104-01,pre
+2022-04-01,real_government_gfcf_yoy,1.39,percent,36-10-0104-01,pre
+2022-07-01,real_government_gfcf_yoy,-1.66,percent,36-10-0104-01,pre
+2022-10-01,real_government_gfcf_yoy,-1.04,percent,36-10-0104-01,pre
+2023-01-01,real_government_gfcf_yoy,2.38,percent,36-10-0104-01,pre
+2023-04-01,real_government_gfcf_yoy,4.2,percent,36-10-0104-01,pre
+2023-07-01,real_government_gfcf_yoy,8.47,percent,36-10-0104-01,pre
+2023-10-01,real_government_gfcf_yoy,8.13,percent,36-10-0104-01,pre
+2024-01-01,real_government_gfcf_yoy,5.99,percent,36-10-0104-01,pre
+2024-04-01,real_government_gfcf_yoy,6.3,percent,36-10-0104-01,pre
+2024-07-01,real_government_gfcf_yoy,5.61,percent,36-10-0104-01,pre
+2024-10-01,real_government_gfcf_yoy,6.5,percent,36-10-0104-01,pre
+2025-01-01,real_government_gfcf_yoy,3.68,percent,36-10-0104-01,transition
+2025-04-01,real_government_gfcf_yoy,4.91,percent,36-10-0104-01,post
+2025-07-01,real_government_gfcf_yoy,8.15,percent,36-10-0104-01,post
+2025-10-01,real_government_gfcf_yoy,12.08,percent,36-10-0104-01,post
+2026-01-01,real_government_gfcf_yoy,9.37,percent,36-10-0104-01,post
+2026-04-01,real_government_gfcf_yoy,3.64,percent,36-10-0104-01,post
+2022-01-01,real_exports_goods,533660.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-04-01,real_exports_goods,552534.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-07-01,real_exports_goods,554268.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2022-10-01,real_exports_goods,550786.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-01-01,real_exports_goods,567788.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-04-01,real_exports_goods,572408.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-07-01,real_exports_goods,568708.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2023-10-01,real_exports_goods,573183.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-01-01,real_exports_goods,569680.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-04-01,real_exports_goods,569375.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-07-01,real_exports_goods,568548.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2024-10-01,real_exports_goods,582415.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,pre
+2025-01-01,real_exports_goods,592359.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,transition
+2025-04-01,real_exports_goods,543769.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-07-01,real_exports_goods,550353.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2025-10-01,real_exports_goods,563046.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-01-01,real_exports_goods,566012.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2026-04-01,real_exports_goods,593527.0,"millions of chained 2017 dollars, SAAR",36-10-0104-01,post
+2022-01-01,real_exports_goods_yoy,-2.86,percent,36-10-0104-01,pre
+2022-04-01,real_exports_goods_yoy,5.3,percent,36-10-0104-01,pre
+2022-07-01,real_exports_goods_yoy,6.77,percent,36-10-0104-01,pre
+2022-10-01,real_exports_goods_yoy,3.15,percent,36-10-0104-01,pre
+2023-01-01,real_exports_goods_yoy,6.4,percent,36-10-0104-01,pre
+2023-04-01,real_exports_goods_yoy,3.6,percent,36-10-0104-01,pre
+2023-07-01,real_exports_goods_yoy,2.61,percent,36-10-0104-01,pre
+2023-10-01,real_exports_goods_yoy,4.07,percent,36-10-0104-01,pre
+2024-01-01,real_exports_goods_yoy,0.33,percent,36-10-0104-01,pre
+2024-04-01,real_exports_goods_yoy,-0.53,percent,36-10-0104-01,pre
+2024-07-01,real_exports_goods_yoy,-0.03,percent,36-10-0104-01,pre
+2024-10-01,real_exports_goods_yoy,1.61,percent,36-10-0104-01,pre
+2025-01-01,real_exports_goods_yoy,3.98,percent,36-10-0104-01,transition
+2025-04-01,real_exports_goods_yoy,-4.5,percent,36-10-0104-01,post
+2025-07-01,real_exports_goods_yoy,-3.2,percent,36-10-0104-01,post
+2025-10-01,real_exports_goods_yoy,-3.33,percent,36-10-0104-01,post
+2026-01-01,real_exports_goods_yoy,-4.45,percent,36-10-0104-01,post
+2026-04-01,real_exports_goods_yoy,9.15,percent,36-10-0104-01,post

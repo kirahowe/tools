@@ -72,3 +72,39 @@ are alongside. "Supporting" files back figures quoted in the text rather than a 
 | `statcan_poverty_rates_mbm_11-10-0135-01.csv` | Statistics Canada Table 11-10-0135-01 |
 | `statcan_emigration_17-10-0040-01.csv` | Statistics Canada Table 17-10-0040-01 (quarters summed) |
 | `oecd_health_spending_can_usa.csv` | Supporting. OECD System of Health Accounts |
+
+## Productivity and competition (Stable and Stuck)
+| File | Source |
+| --- | --- |
+| `prod_G1_gdp_per_capita_gap_canada_us.csv` | OECD Productivity Database |
+| `prod_A4_canada_us_lp_mfp_index_2000eq100.csv` | Statistics Canada 36-10-0208-01; US BLS (supporting) |
+| `prod_A5_gu_willox_2023_table1_canada_us_decomposition.csv` | Gu & Willox (2023), *International Productivity Monitor* 45, Table 1 |
+| `prod_B1_business_dynamics_entry_exit_33100164.csv` | Statistics Canada Table 33-10-0164-01 |
+| `prod_B3_telecom_market_shares_crtc.csv`, `prod_B4_concentration_headlines.csv` | Supporting. CRTC open data; IMF; Bank of Canada; Competition Bureau |
+| `prod_D4_residential_vs_business_investment_canada_vs_us.csv` | Statistics Canada 36-10-0108-01 / 36-10-0104-01; US BEA via FRED |
+| `prod_E1_rd_intensity_oecd_msti.csv` | OECD Main Science and Technology Indicators |
+| `forbes_g2000_ca_us_2011_2026.csv` | Forbes Global 2000 (2011–2026), Canadian and US companies |
+| `top_company_founding_years.csv` | Compiled by hand; see `data-prep/README.md` |
+| `forbes_2026_ca_us_selfmade_industry.csv` | Forbes 2026 billionaires, industry shares (computed) |
+
+## Old Money
+| File | Source |
+| --- | --- |
+| `dyn_durham_upper_canada_land_grants_1839.csv` | Lord Durham's Report (1839), Lucas ed. vol. 2 pp. 222–223 |
+| `dyn_parliament_kinship_counts_gagnon2011.csv` | Gagnon (2011), *Canadian Parliamentary Review* 34(3) |
+| `dyn_political_dynasties_canada.csv`, `dyn_family_control_performance_studies.csv`, `dyn_forbes_2026_canada_inherited_vs_selfmade.csv` | Supporting. Legislature records; academic studies; Forbes 2026 |
+
+## Land
+| File | Source |
+| --- | --- |
+| `land_land_share_summary.csv` | Statistics Canada 36-10-0580-01 and 36-10-0104-01 (computed shares) |
+| `land_canada_land_tax_history.csv` | Haig (1915); England (2018) |
+| `land_lvt_illustrative_scenarios.csv` | Computed from Statistics Canada land values |
+| `land_vacancy_taxes.csv` | Supporting. BC Ministry of Finance, City of Vancouver, City of Toronto, PBO, CRA (some via press reports) |
+
+## Scorecard
+| File | Source |
+| --- | --- |
+| `sc_policy_inventory.csv`, `sc_targets_vs_actuals.csv` | LEGISinfo, Budget 2025, Spring Economic Update 2026, PBO, NATO (sources per row) |
+| `sc_ind_*.csv` | Statistics Canada tables 36-10-0104, 36-10-0206, 14-10-0287, 18-10-0004, 34-10-0158, 34-10-0135, 17-10-0009, 17-10-0121, 12-10-0011; Bank of Canada |
+| `sc_fiscal_projections_vs_results.csv`, `sc_defence_spending.csv` | Finance Canada; PBO; NATO |

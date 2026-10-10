@@ -1,0 +1,673 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,goods_exports_all,58504.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_all,61350.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_all,64943.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_all,65675.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_all,71304.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_all,69354.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_all,66771.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_all,65103.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_all,65715.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_all,65283.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_all,64044.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_all,64501.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_all,65925.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_all,63070.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_all,63888.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_all,64517.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_all,63286.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_all,60556.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_all,61696.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_all,65334.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_all,66557.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_all,66479.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_all,65272.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_all,63178.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_all,61007.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_all,65145.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_all,63144.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_all,65302.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_all,63470.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_all,65848.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_all,65096.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_all,64124.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_all,63893.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_all,64989.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_all,66006.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_all,69585.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_all,73521.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_all,68371.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_all,67151.5,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_all,60286.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_all,61186.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_all,61908.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_all,62531.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_all,60679.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_all,64570.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_all,65481.6,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_all,64135.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_all,65961.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_all,63132.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_all,67332.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_all,74280.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_all,76719.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_all,77381.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_all,78054.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_all,76025.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_all,77908.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_us,45306.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_us,46601.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_us,50053.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_us,51489.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_us,52891.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_us,52897.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_us,50790.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_us,49539.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_us,49368.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_us,48901.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_us,47287.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_us,48510.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_us,49390.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_us,47712.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_us,47792.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_us,49552.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_us,49030.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_us,47329.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_us,48581.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_us,51216.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_us,52080.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_us,51267.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_us,50633.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_us,47729.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_us,46778.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_us,48813.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_us,47686.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_us,49449.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_us,49755.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_us,49846.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_us,50445.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_us,48047.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_us,48390.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_us,47390.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_us,50340.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_us,53046.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_us,57115.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_us,54413.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_us,49087.0,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_us,41841.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_us,41890.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_us,43465.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_us,45423.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_us,43941.6,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_us,45820.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_us,44064.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_us,43865.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_us,44458.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_us,42800.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_us,44915.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_us,49833.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_us,53156.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_us,53734.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_us,54265.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_us,50286.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_us,54346.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_non_us,13198.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-02-01,goods_exports_non_us,14748.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-03-01,goods_exports_non_us,14889.5,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-04-01,goods_exports_non_us,14186.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-05-01,goods_exports_non_us,18413.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-06-01,goods_exports_non_us,16457.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-07-01,goods_exports_non_us,15981.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-08-01,goods_exports_non_us,15563.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-09-01,goods_exports_non_us,16346.8,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-10-01,goods_exports_non_us,16381.7,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-11-01,goods_exports_non_us,16757.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2022-12-01,goods_exports_non_us,15991.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-01-01,goods_exports_non_us,16534.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-02-01,goods_exports_non_us,15358.7,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-03-01,goods_exports_non_us,16095.8,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-04-01,goods_exports_non_us,14964.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-05-01,goods_exports_non_us,14255.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-06-01,goods_exports_non_us,13226.6,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-07-01,goods_exports_non_us,13115.1,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-08-01,goods_exports_non_us,14117.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-09-01,goods_exports_non_us,14477.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-10-01,goods_exports_non_us,15212.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-11-01,goods_exports_non_us,14638.1,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2023-12-01,goods_exports_non_us,15448.8,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-01-01,goods_exports_non_us,14229.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-02-01,goods_exports_non_us,16332.1,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-03-01,goods_exports_non_us,15458.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-04-01,goods_exports_non_us,15853.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-05-01,goods_exports_non_us,13714.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-06-01,goods_exports_non_us,16001.8,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-07-01,goods_exports_non_us,14650.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-08-01,goods_exports_non_us,16077.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-09-01,goods_exports_non_us,15503.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-10-01,goods_exports_non_us,17599.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-11-01,goods_exports_non_us,15665.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2024-12-01,goods_exports_non_us,16538.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2025-01-01,goods_exports_non_us,16406.3,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2025-02-01,goods_exports_non_us,13957.6,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),pre
+2025-03-01,goods_exports_non_us,18064.5,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),transition
+2025-04-01,goods_exports_non_us,18444.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-05-01,goods_exports_non_us,19295.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-06-01,goods_exports_non_us,18443.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-07-01,goods_exports_non_us,17107.6,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-08-01,goods_exports_non_us,16737.7,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-09-01,goods_exports_non_us,18750.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-10-01,goods_exports_non_us,21417.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-11-01,goods_exports_non_us,20269.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2025-12-01,goods_exports_non_us,21502.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-01-01,goods_exports_non_us,20331.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-02-01,goods_exports_non_us,22417.0,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-03-01,goods_exports_non_us,24446.5,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-04-01,goods_exports_non_us,23562.9,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-05-01,goods_exports_non_us,23646.2,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-06-01,goods_exports_non_us,23788.6,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-07-01,goods_exports_non_us,25738.8,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2026-08-01,goods_exports_non_us,23562.4,"millions of dollars, SA, BOP basis (derived: all - US)",12-10-0011-01 (derived),post
+2022-01-01,us_share_of_goods_exports,77.44,percent,12-10-0011-01 (derived),pre
+2022-02-01,us_share_of_goods_exports,75.96,percent,12-10-0011-01 (derived),pre
+2022-03-01,us_share_of_goods_exports,77.07,percent,12-10-0011-01 (derived),pre
+2022-04-01,us_share_of_goods_exports,78.4,percent,12-10-0011-01 (derived),pre
+2022-05-01,us_share_of_goods_exports,74.18,percent,12-10-0011-01 (derived),pre
+2022-06-01,us_share_of_goods_exports,76.27,percent,12-10-0011-01 (derived),pre
+2022-07-01,us_share_of_goods_exports,76.07,percent,12-10-0011-01 (derived),pre
+2022-08-01,us_share_of_goods_exports,76.09,percent,12-10-0011-01 (derived),pre
+2022-09-01,us_share_of_goods_exports,75.12,percent,12-10-0011-01 (derived),pre
+2022-10-01,us_share_of_goods_exports,74.91,percent,12-10-0011-01 (derived),pre
+2022-11-01,us_share_of_goods_exports,73.84,percent,12-10-0011-01 (derived),pre
+2022-12-01,us_share_of_goods_exports,75.21,percent,12-10-0011-01 (derived),pre
+2023-01-01,us_share_of_goods_exports,74.92,percent,12-10-0011-01 (derived),pre
+2023-02-01,us_share_of_goods_exports,75.65,percent,12-10-0011-01 (derived),pre
+2023-03-01,us_share_of_goods_exports,74.81,percent,12-10-0011-01 (derived),pre
+2023-04-01,us_share_of_goods_exports,76.81,percent,12-10-0011-01 (derived),pre
+2023-05-01,us_share_of_goods_exports,77.47,percent,12-10-0011-01 (derived),pre
+2023-06-01,us_share_of_goods_exports,78.16,percent,12-10-0011-01 (derived),pre
+2023-07-01,us_share_of_goods_exports,78.74,percent,12-10-0011-01 (derived),pre
+2023-08-01,us_share_of_goods_exports,78.39,percent,12-10-0011-01 (derived),pre
+2023-09-01,us_share_of_goods_exports,78.25,percent,12-10-0011-01 (derived),pre
+2023-10-01,us_share_of_goods_exports,77.12,percent,12-10-0011-01 (derived),pre
+2023-11-01,us_share_of_goods_exports,77.57,percent,12-10-0011-01 (derived),pre
+2023-12-01,us_share_of_goods_exports,75.55,percent,12-10-0011-01 (derived),pre
+2024-01-01,us_share_of_goods_exports,76.68,percent,12-10-0011-01 (derived),pre
+2024-02-01,us_share_of_goods_exports,74.93,percent,12-10-0011-01 (derived),pre
+2024-03-01,us_share_of_goods_exports,75.52,percent,12-10-0011-01 (derived),pre
+2024-04-01,us_share_of_goods_exports,75.72,percent,12-10-0011-01 (derived),pre
+2024-05-01,us_share_of_goods_exports,78.39,percent,12-10-0011-01 (derived),pre
+2024-06-01,us_share_of_goods_exports,75.7,percent,12-10-0011-01 (derived),pre
+2024-07-01,us_share_of_goods_exports,77.49,percent,12-10-0011-01 (derived),pre
+2024-08-01,us_share_of_goods_exports,74.93,percent,12-10-0011-01 (derived),pre
+2024-09-01,us_share_of_goods_exports,75.74,percent,12-10-0011-01 (derived),pre
+2024-10-01,us_share_of_goods_exports,72.92,percent,12-10-0011-01 (derived),pre
+2024-11-01,us_share_of_goods_exports,76.27,percent,12-10-0011-01 (derived),pre
+2024-12-01,us_share_of_goods_exports,76.23,percent,12-10-0011-01 (derived),pre
+2025-01-01,us_share_of_goods_exports,77.69,percent,12-10-0011-01 (derived),pre
+2025-02-01,us_share_of_goods_exports,79.59,percent,12-10-0011-01 (derived),pre
+2025-03-01,us_share_of_goods_exports,73.1,percent,12-10-0011-01 (derived),transition
+2025-04-01,us_share_of_goods_exports,69.41,percent,12-10-0011-01 (derived),post
+2025-05-01,us_share_of_goods_exports,68.46,percent,12-10-0011-01 (derived),post
+2025-06-01,us_share_of_goods_exports,70.21,percent,12-10-0011-01 (derived),post
+2025-07-01,us_share_of_goods_exports,72.64,percent,12-10-0011-01 (derived),post
+2025-08-01,us_share_of_goods_exports,72.42,percent,12-10-0011-01 (derived),post
+2025-09-01,us_share_of_goods_exports,70.96,percent,12-10-0011-01 (derived),post
+2025-10-01,us_share_of_goods_exports,67.29,percent,12-10-0011-01 (derived),post
+2025-11-01,us_share_of_goods_exports,68.4,percent,12-10-0011-01 (derived),post
+2025-12-01,us_share_of_goods_exports,67.4,percent,12-10-0011-01 (derived),post
+2026-01-01,us_share_of_goods_exports,67.8,percent,12-10-0011-01 (derived),post
+2026-02-01,us_share_of_goods_exports,66.71,percent,12-10-0011-01 (derived),post
+2026-03-01,us_share_of_goods_exports,67.09,percent,12-10-0011-01 (derived),post
+2026-04-01,us_share_of_goods_exports,69.29,percent,12-10-0011-01 (derived),post
+2026-05-01,us_share_of_goods_exports,69.44,percent,12-10-0011-01 (derived),post
+2026-06-01,us_share_of_goods_exports,69.52,percent,12-10-0011-01 (derived),post
+2026-07-01,us_share_of_goods_exports,66.14,percent,12-10-0011-01 (derived),post
+2026-08-01,us_share_of_goods_exports,69.76,percent,12-10-0011-01 (derived),post
+2022-01-01,us_share_of_goods_exports_12mo,75.18,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-02-01,us_share_of_goods_exports_12mo,75.24,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-03-01,us_share_of_goods_exports_12mo,75.62,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-04-01,us_share_of_goods_exports_12mo,76.04,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-05-01,us_share_of_goods_exports_12mo,75.98,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-06-01,us_share_of_goods_exports_12mo,76.19,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-07-01,us_share_of_goods_exports_12mo,76.22,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-08-01,us_share_of_goods_exports_12mo,76.33,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-09-01,us_share_of_goods_exports_12mo,76.32,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-10-01,us_share_of_goods_exports_12mo,76.27,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-11-01,us_share_of_goods_exports_12mo,75.96,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2022-12-01,us_share_of_goods_exports_12mo,75.86,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-01-01,us_share_of_goods_exports_12mo,75.66,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-02-01,us_share_of_goods_exports_12mo,75.64,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-03-01,us_share_of_goods_exports_12mo,75.45,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-04-01,us_share_of_goods_exports_12mo,75.32,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-05-01,us_share_of_goods_exports_12mo,75.6,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-06-01,us_share_of_goods_exports_12mo,75.74,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-07-01,us_share_of_goods_exports_12mo,75.95,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-08-01,us_share_of_goods_exports_12mo,76.15,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-09-01,us_share_of_goods_exports_12mo,76.42,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-10-01,us_share_of_goods_exports_12mo,76.61,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-11-01,us_share_of_goods_exports_12mo,76.92,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2023-12-01,us_share_of_goods_exports_12mo,76.95,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-01-01,us_share_of_goods_exports_12mo,77.1,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-02-01,us_share_of_goods_exports_12mo,77.04,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-03-01,us_share_of_goods_exports_12mo,77.1,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-04-01,us_share_of_goods_exports_12mo,77.0,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-05-01,us_share_of_goods_exports_12mo,77.08,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-06-01,us_share_of_goods_exports_12mo,76.88,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-07-01,us_share_of_goods_exports_12mo,76.78,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-08-01,us_share_of_goods_exports_12mo,76.49,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-09-01,us_share_of_goods_exports_12mo,76.28,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-10-01,us_share_of_goods_exports_12mo,75.92,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-11-01,us_share_of_goods_exports_12mo,75.81,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2024-12-01,us_share_of_goods_exports_12mo,75.87,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2025-01-01,us_share_of_goods_exports_12mo,75.98,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2025-02-01,us_share_of_goods_exports_12mo,76.38,percent (rolling 12-month),12-10-0011-01 (derived),pre
+2025-03-01,us_share_of_goods_exports_12mo,76.17,percent (rolling 12-month),12-10-0011-01 (derived),transition
+2025-04-01,us_share_of_goods_exports_12mo,75.69,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-05-01,us_share_of_goods_exports_12mo,74.91,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-06-01,us_share_of_goods_exports_12mo,74.48,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-07-01,us_share_of_goods_exports_12mo,74.08,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-08-01,us_share_of_goods_exports_12mo,73.88,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-09-01,us_share_of_goods_exports_12mo,73.49,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-10-01,us_share_of_goods_exports_12mo,73.01,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-11-01,us_share_of_goods_exports_12mo,72.36,percent (rolling 12-month),12-10-0011-01 (derived),post
+2025-12-01,us_share_of_goods_exports_12mo,71.59,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-01-01,us_share_of_goods_exports_12mo,70.69,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-02-01,us_share_of_goods_exports_12mo,69.55,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-03-01,us_share_of_goods_exports_12mo,69.0,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-04-01,us_share_of_goods_exports_12mo,69.0,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-05-01,us_share_of_goods_exports_12mo,69.08,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-06-01,us_share_of_goods_exports_12mo,69.04,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-07-01,us_share_of_goods_exports_12mo,68.5,percent (rolling 12-month),12-10-0011-01 (derived),post
+2026-08-01,us_share_of_goods_exports_12mo,68.34,percent (rolling 12-month),12-10-0011-01 (derived),post
+2022-01-01,goods_exports_non_us_yoy,-6.54,percent,12-10-0011-01 (derived),pre
+2022-02-01,goods_exports_non_us_yoy,18.23,percent,12-10-0011-01 (derived),pre
+2022-03-01,goods_exports_non_us_yoy,7.44,percent,12-10-0011-01 (derived),pre
+2022-04-01,goods_exports_non_us_yoy,7.52,percent,12-10-0011-01 (derived),pre
+2022-05-01,goods_exports_non_us_yoy,43.59,percent,12-10-0011-01 (derived),pre
+2022-06-01,goods_exports_non_us_yoy,16.71,percent,12-10-0011-01 (derived),pre
+2022-07-01,goods_exports_non_us_yoy,22.93,percent,12-10-0011-01 (derived),pre
+2022-08-01,goods_exports_non_us_yoy,13.45,percent,12-10-0011-01 (derived),pre
+2022-09-01,goods_exports_non_us_yoy,24.27,percent,12-10-0011-01 (derived),pre
+2022-10-01,goods_exports_non_us_yoy,18.05,percent,12-10-0011-01 (derived),pre
+2022-11-01,goods_exports_non_us_yoy,28.2,percent,12-10-0011-01 (derived),pre
+2022-12-01,goods_exports_non_us_yoy,16.98,percent,12-10-0011-01 (derived),pre
+2023-01-01,goods_exports_non_us_yoy,25.28,percent,12-10-0011-01 (derived),pre
+2023-02-01,goods_exports_non_us_yoy,4.13,percent,12-10-0011-01 (derived),pre
+2023-03-01,goods_exports_non_us_yoy,8.1,percent,12-10-0011-01 (derived),pre
+2023-04-01,goods_exports_non_us_yoy,5.48,percent,12-10-0011-01 (derived),pre
+2023-05-01,goods_exports_non_us_yoy,-22.58,percent,12-10-0011-01 (derived),pre
+2023-06-01,goods_exports_non_us_yoy,-19.63,percent,12-10-0011-01 (derived),pre
+2023-07-01,goods_exports_non_us_yoy,-17.93,percent,12-10-0011-01 (derived),pre
+2023-08-01,goods_exports_non_us_yoy,-9.29,percent,12-10-0011-01 (derived),pre
+2023-09-01,goods_exports_non_us_yoy,-11.44,percent,12-10-0011-01 (derived),pre
+2023-10-01,goods_exports_non_us_yoy,-7.14,percent,12-10-0011-01 (derived),pre
+2023-11-01,goods_exports_non_us_yoy,-12.64,percent,12-10-0011-01 (derived),pre
+2023-12-01,goods_exports_non_us_yoy,-3.39,percent,12-10-0011-01 (derived),pre
+2024-01-01,goods_exports_non_us_yoy,-13.94,percent,12-10-0011-01 (derived),pre
+2024-02-01,goods_exports_non_us_yoy,6.34,percent,12-10-0011-01 (derived),pre
+2024-03-01,goods_exports_non_us_yoy,-3.96,percent,12-10-0011-01 (derived),pre
+2024-04-01,goods_exports_non_us_yoy,5.94,percent,12-10-0011-01 (derived),pre
+2024-05-01,goods_exports_non_us_yoy,-3.8,percent,12-10-0011-01 (derived),pre
+2024-06-01,goods_exports_non_us_yoy,20.98,percent,12-10-0011-01 (derived),pre
+2024-07-01,goods_exports_non_us_yoy,11.71,percent,12-10-0011-01 (derived),pre
+2024-08-01,goods_exports_non_us_yoy,13.88,percent,12-10-0011-01 (derived),pre
+2024-09-01,goods_exports_non_us_yoy,7.09,percent,12-10-0011-01 (derived),pre
+2024-10-01,goods_exports_non_us_yoy,15.69,percent,12-10-0011-01 (derived),pre
+2024-11-01,goods_exports_non_us_yoy,7.02,percent,12-10-0011-01 (derived),pre
+2024-12-01,goods_exports_non_us_yoy,7.06,percent,12-10-0011-01 (derived),pre
+2025-01-01,goods_exports_non_us_yoy,15.3,percent,12-10-0011-01 (derived),pre
+2025-02-01,goods_exports_non_us_yoy,-14.54,percent,12-10-0011-01 (derived),pre
+2025-03-01,goods_exports_non_us_yoy,16.86,percent,12-10-0011-01 (derived),transition
+2025-04-01,goods_exports_non_us_yoy,16.35,percent,12-10-0011-01 (derived),post
+2025-05-01,goods_exports_non_us_yoy,40.69,percent,12-10-0011-01 (derived),post
+2025-06-01,goods_exports_non_us_yoy,15.26,percent,12-10-0011-01 (derived),post
+2025-07-01,goods_exports_non_us_yoy,16.77,percent,12-10-0011-01 (derived),post
+2025-08-01,goods_exports_non_us_yoy,4.11,percent,12-10-0011-01 (derived),post
+2025-09-01,goods_exports_non_us_yoy,20.95,percent,12-10-0011-01 (derived),post
+2025-10-01,goods_exports_non_us_yoy,21.7,percent,12-10-0011-01 (derived),post
+2025-11-01,goods_exports_non_us_yoy,29.39,percent,12-10-0011-01 (derived),post
+2025-12-01,goods_exports_non_us_yoy,30.01,percent,12-10-0011-01 (derived),post
+2026-01-01,goods_exports_non_us_yoy,23.93,percent,12-10-0011-01 (derived),post
+2026-02-01,goods_exports_non_us_yoy,60.61,percent,12-10-0011-01 (derived),post
+2026-03-01,goods_exports_non_us_yoy,35.33,percent,12-10-0011-01 (derived),post
+2026-04-01,goods_exports_non_us_yoy,27.75,percent,12-10-0011-01 (derived),post
+2026-05-01,goods_exports_non_us_yoy,22.55,percent,12-10-0011-01 (derived),post
+2026-06-01,goods_exports_non_us_yoy,28.98,percent,12-10-0011-01 (derived),post
+2026-07-01,goods_exports_non_us_yoy,50.45,percent,12-10-0011-01 (derived),post
+2026-08-01,goods_exports_non_us_yoy,40.77,percent,12-10-0011-01 (derived),post
+2022-01-01,goods_exports_us_yoy,20.31,percent,12-10-0011-01 (derived),pre
+2022-02-01,goods_exports_us_yoy,21.88,percent,12-10-0011-01 (derived),pre
+2022-03-01,goods_exports_us_yoy,37.01,percent,12-10-0011-01 (derived),pre
+2022-04-01,goods_exports_us_yoy,39.94,percent,12-10-0011-01 (derived),pre
+2022-05-01,goods_exports_us_yoy,43.87,percent,12-10-0011-01 (derived),pre
+2022-06-01,goods_exports_us_yoy,35.53,percent,12-10-0011-01 (derived),pre
+2022-07-01,goods_exports_us_yoy,25.68,percent,12-10-0011-01 (derived),pre
+2022-08-01,goods_exports_us_yoy,23.33,percent,12-10-0011-01 (derived),pre
+2022-09-01,goods_exports_us_yoy,24.75,percent,12-10-0011-01 (derived),pre
+2022-10-01,goods_exports_us_yoy,15.81,percent,12-10-0011-01 (derived),pre
+2022-11-01,goods_exports_us_yoy,3.85,percent,12-10-0011-01 (derived),pre
+2022-12-01,goods_exports_us_yoy,8.82,percent,12-10-0011-01 (derived),pre
+2023-01-01,goods_exports_us_yoy,9.02,percent,12-10-0011-01 (derived),pre
+2023-02-01,goods_exports_us_yoy,2.38,percent,12-10-0011-01 (derived),pre
+2023-03-01,goods_exports_us_yoy,-4.52,percent,12-10-0011-01 (derived),pre
+2023-04-01,goods_exports_us_yoy,-3.76,percent,12-10-0011-01 (derived),pre
+2023-05-01,goods_exports_us_yoy,-7.3,percent,12-10-0011-01 (derived),pre
+2023-06-01,goods_exports_us_yoy,-10.53,percent,12-10-0011-01 (derived),pre
+2023-07-01,goods_exports_us_yoy,-4.35,percent,12-10-0011-01 (derived),pre
+2023-08-01,goods_exports_us_yoy,3.38,percent,12-10-0011-01 (derived),pre
+2023-09-01,goods_exports_us_yoy,5.49,percent,12-10-0011-01 (derived),pre
+2023-10-01,goods_exports_us_yoy,4.84,percent,12-10-0011-01 (derived),pre
+2023-11-01,goods_exports_us_yoy,7.08,percent,12-10-0011-01 (derived),pre
+2023-12-01,goods_exports_us_yoy,-1.61,percent,12-10-0011-01 (derived),pre
+2024-01-01,goods_exports_us_yoy,-5.29,percent,12-10-0011-01 (derived),pre
+2024-02-01,goods_exports_us_yoy,2.31,percent,12-10-0011-01 (derived),pre
+2024-03-01,goods_exports_us_yoy,-0.22,percent,12-10-0011-01 (derived),pre
+2024-04-01,goods_exports_us_yoy,-0.21,percent,12-10-0011-01 (derived),pre
+2024-05-01,goods_exports_us_yoy,1.48,percent,12-10-0011-01 (derived),pre
+2024-06-01,goods_exports_us_yoy,5.32,percent,12-10-0011-01 (derived),pre
+2024-07-01,goods_exports_us_yoy,3.84,percent,12-10-0011-01 (derived),pre
+2024-08-01,goods_exports_us_yoy,-6.19,percent,12-10-0011-01 (derived),pre
+2024-09-01,goods_exports_us_yoy,-7.09,percent,12-10-0011-01 (derived),pre
+2024-10-01,goods_exports_us_yoy,-7.56,percent,12-10-0011-01 (derived),pre
+2024-11-01,goods_exports_us_yoy,-0.58,percent,12-10-0011-01 (derived),pre
+2024-12-01,goods_exports_us_yoy,11.14,percent,12-10-0011-01 (derived),pre
+2025-01-01,goods_exports_us_yoy,22.1,percent,12-10-0011-01 (derived),pre
+2025-02-01,goods_exports_us_yoy,11.47,percent,12-10-0011-01 (derived),pre
+2025-03-01,goods_exports_us_yoy,2.94,percent,12-10-0011-01 (derived),transition
+2025-04-01,goods_exports_us_yoy,-15.38,percent,12-10-0011-01 (derived),post
+2025-05-01,goods_exports_us_yoy,-15.81,percent,12-10-0011-01 (derived),post
+2025-06-01,goods_exports_us_yoy,-12.8,percent,12-10-0011-01 (derived),post
+2025-07-01,goods_exports_us_yoy,-9.95,percent,12-10-0011-01 (derived),post
+2025-08-01,goods_exports_us_yoy,-8.55,percent,12-10-0011-01 (derived),post
+2025-09-01,goods_exports_us_yoy,-5.31,percent,12-10-0011-01 (derived),post
+2025-10-01,goods_exports_us_yoy,-7.02,percent,12-10-0011-01 (derived),post
+2025-11-01,goods_exports_us_yoy,-12.86,percent,12-10-0011-01 (derived),post
+2025-12-01,goods_exports_us_yoy,-16.19,percent,12-10-0011-01 (derived),post
+2026-01-01,goods_exports_us_yoy,-25.06,percent,12-10-0011-01 (derived),post
+2026-02-01,goods_exports_us_yoy,-17.45,percent,12-10-0011-01 (derived),post
+2026-03-01,goods_exports_us_yoy,1.52,percent,12-10-0011-01 (derived),post
+2026-04-01,goods_exports_us_yoy,27.04,percent,12-10-0011-01 (derived),post
+2026-05-01,goods_exports_us_yoy,28.27,percent,12-10-0011-01 (derived),post
+2026-06-01,goods_exports_us_yoy,24.85,percent,12-10-0011-01 (derived),post
+2026-07-01,goods_exports_us_yoy,10.7,percent,12-10-0011-01 (derived),post
+2026-08-01,goods_exports_us_yoy,23.68,percent,12-10-0011-01 (derived),post
+2022-01-01,goods_exports_european_union,2545.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_european_union,2802.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_european_union,3099.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_european_union,2728.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_european_union,3152.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_european_union,3173.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_european_union,2699.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_european_union,3237.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_european_union,3213.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_european_union,3273.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_european_union,3254.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_european_union,3372.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_european_union,2928.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_european_union,2773.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_european_union,2939.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_european_union,2948.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_european_union,3149.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_european_union,2936.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_european_union,2639.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_european_union,2879.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_european_union,2919.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_european_union,3130.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_european_union,2764.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_european_union,2830.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_european_union,2604.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_european_union,2692.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_european_union,2727.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_european_union,2807.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_european_union,2265.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_european_union,2953.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_european_union,3018.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_european_union,2747.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_european_union,2999.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_european_union,3580.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_european_union,2946.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_european_union,3340.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_european_union,3276.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_european_union,2816.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_european_union,3738.6,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_european_union,3407.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_european_union,3560.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_european_union,3570.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_european_union,3343.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_european_union,3239.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_european_union,3796.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_european_union,4187.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_european_union,4073.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_european_union,3839.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_european_union,3779.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_european_union,3730.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_european_union,4288.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_european_union,3550.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_european_union,4425.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_european_union,3290.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_european_union,4385.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_european_union,3705.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_china,2066.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_china,2117.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_china,2126.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_china,2164.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_china,2063.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_china,2366.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_china,2243.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_china,2475.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_china,2626.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_china,3367.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_china,3099.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_china,2573.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_china,2944.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_china,3055.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_china,2918.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_china,2447.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_china,2622.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_china,1815.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_china,2361.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_china,2307.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_china,2588.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_china,2588.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_china,2775.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_china,2618.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_china,2232.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_china,2621.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_china,2417.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_china,2328.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_china,2485.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_china,2591.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_china,2672.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_china,2692.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_china,2540.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_china,2818.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_china,2602.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_china,2377.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_china,3016.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_china,2653.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_china,2744.9,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_china,3086.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_china,2439.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_china,2695.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_china,2757.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_china,2739.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_china,2659.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_china,3461.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_china,3631.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_china,3040.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_china,3117.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_china,3625.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_china,3370.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_china,3979.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_china,4037.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_china,3828.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_china,4197.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_china,4259.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_united_kingdom,1681.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_united_kingdom,2331.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_united_kingdom,1974.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_united_kingdom,1196.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_united_kingdom,4519.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_united_kingdom,2334.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_united_kingdom,1864.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_united_kingdom,1697.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_united_kingdom,1856.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_united_kingdom,1136.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_united_kingdom,2078.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_united_kingdom,1485.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_united_kingdom,1721.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_united_kingdom,1272.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_united_kingdom,1832.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_united_kingdom,1020.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_united_kingdom,816.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_united_kingdom,1021.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_united_kingdom,1212.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_united_kingdom,1315.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_united_kingdom,1115.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_united_kingdom,1271.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_united_kingdom,1454.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_united_kingdom,2178.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_united_kingdom,1692.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_united_kingdom,2379.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_united_kingdom,2263.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_united_kingdom,2703.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_united_kingdom,1333.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_united_kingdom,3034.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_united_kingdom,1931.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_united_kingdom,3204.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_united_kingdom,2408.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_united_kingdom,3083.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_united_kingdom,2985.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_united_kingdom,2536.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_united_kingdom,2756.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_united_kingdom,1951.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_united_kingdom,3784.7,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_united_kingdom,4136.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_united_kingdom,5328.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_united_kingdom,4269.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_united_kingdom,3210.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_united_kingdom,3543.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_united_kingdom,3243.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_united_kingdom,5904.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_united_kingdom,4771.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_united_kingdom,6643.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_united_kingdom,5414.6,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_united_kingdom,6432.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_united_kingdom,8617.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_united_kingdom,6897.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_united_kingdom,5683.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_united_kingdom,7193.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_united_kingdom,6711.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_united_kingdom,5721.6,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_japan,1465.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_japan,1498.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_japan,1481.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_japan,1473.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_japan,1678.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_japan,1586.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_japan,1768.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_japan,1457.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_japan,1571.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_japan,1659.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_japan,1214.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_japan,1384.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_japan,1457.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_japan,1502.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_japan,1478.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_japan,1356.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_japan,1330.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_japan,1317.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_japan,1199.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_japan,1462.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_japan,1174.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_japan,1165.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_japan,1324.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_japan,1220.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_japan,1299.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_japan,1300.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_japan,1222.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_japan,1581.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_japan,1073.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_japan,1187.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_japan,1114.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_japan,1218.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_japan,1378.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_japan,1214.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_japan,1147.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_japan,1375.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_japan,1292.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_japan,1174.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_japan,1277.4,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_japan,1271.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_japan,1311.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_japan,1124.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_japan,1414.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_japan,1142.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_japan,1167.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_japan,1222.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_japan,1154.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_japan,1151.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_japan,1019.8,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_japan,1173.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_japan,1077.4,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_japan,1103.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_japan,1125.9,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_japan,1287.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_japan,1282.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_japan,1245.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2022-01-01,goods_exports_india,284.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-02-01,goods_exports_india,446.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-03-01,goods_exports_india,451.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-04-01,goods_exports_india,494.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-05-01,goods_exports_india,404.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-06-01,goods_exports_india,364.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-07-01,goods_exports_india,341.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-08-01,goods_exports_india,490.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-09-01,goods_exports_india,465.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-10-01,goods_exports_india,475.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-11-01,goods_exports_india,471.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2022-12-01,goods_exports_india,776.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-01-01,goods_exports_india,415.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-02-01,goods_exports_india,264.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-03-01,goods_exports_india,457.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-04-01,goods_exports_india,522.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-05-01,goods_exports_india,525.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-06-01,goods_exports_india,473.3,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-07-01,goods_exports_india,409.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-08-01,goods_exports_india,352.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-09-01,goods_exports_india,396.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-10-01,goods_exports_india,426.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-11-01,goods_exports_india,447.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2023-12-01,goods_exports_india,537.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-01-01,goods_exports_india,635.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-02-01,goods_exports_india,516.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-03-01,goods_exports_india,390.9,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-04-01,goods_exports_india,279.4,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-05-01,goods_exports_india,433.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-06-01,goods_exports_india,695.2,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-07-01,goods_exports_india,377.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-08-01,goods_exports_india,364.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-09-01,goods_exports_india,424.7,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-10-01,goods_exports_india,456.6,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-11-01,goods_exports_india,421.5,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2024-12-01,goods_exports_india,379.0,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-01-01,goods_exports_india,301.1,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-02-01,goods_exports_india,281.8,"millions of dollars, SA, BOP basis",12-10-0011-01,pre
+2025-03-01,goods_exports_india,272.1,"millions of dollars, SA, BOP basis",12-10-0011-01,transition
+2025-04-01,goods_exports_india,323.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-05-01,goods_exports_india,341.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-06-01,goods_exports_india,289.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-07-01,goods_exports_india,347.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-08-01,goods_exports_india,342.6,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-09-01,goods_exports_india,512.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-10-01,goods_exports_india,243.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-11-01,goods_exports_india,355.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2025-12-01,goods_exports_india,353.0,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-01-01,goods_exports_india,338.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-02-01,goods_exports_india,453.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-03-01,goods_exports_india,494.2,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-04-01,goods_exports_india,448.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-05-01,goods_exports_india,334.3,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-06-01,goods_exports_india,369.7,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-07-01,goods_exports_india,480.5,"millions of dollars, SA, BOP basis",12-10-0011-01,post
+2026-08-01,goods_exports_india,464.1,"millions of dollars, SA, BOP basis",12-10-0011-01,post

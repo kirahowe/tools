@@ -1,0 +1,12 @@
+date,indicator,value,unit,source_table,regime,months
+2022-01-01,goods_exports_non_us_annual,188915,"millions of dollars, SA, BOP basis",12-10-0011-01 (derived),pre,12
+2022-01-01,us_share_goods_exports_annual,75.86,percent,12-10-0011-01 (derived),pre,12
+2023-01-01,goods_exports_non_us_annual,177446,"millions of dollars, SA, BOP basis",12-10-0011-01 (derived),pre,12
+2023-01-01,us_share_goods_exports_annual,76.95,percent,12-10-0011-01 (derived),pre,12
+2024-01-01,goods_exports_non_us_annual,187623,"millions of dollars, SA, BOP basis",12-10-0011-01 (derived),pre,12
+2024-01-01,us_share_goods_exports_annual,75.87,percent,12-10-0011-01 (derived),pre,12
+2025-01-01,goods_exports_non_us_annual,220397,"millions of dollars, SA, BOP basis",12-10-0011-01 (derived),post,12
+2025-01-01,us_share_goods_exports_annual,71.59,percent,12-10-0011-01 (derived),post,12
+2026-01-01,goods_exports_non_us_annual_ytd,187494,"millions of dollars, SA, BOP basis (Jan-08 only)",12-10-0011-01 (derived),post,8
+2026-01-01,us_share_goods_exports_annual_ytd,68.27,percent (Jan-08 only),12-10-0011-01 (derived),post,8
+2026-01-01,goods_exports_non_us_ytd_growth_vs_prior_year,35.42,percent (Jan-08 vs same months prior year),12-10-0011-01 (derived),post,8

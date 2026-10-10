@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "Canada's central economic problem is productivity. Its stability is real, but it has come to protect incumbents rather than enable newcomers."
                    :abstract    "Canada produces about 30% less per hour than the United States, and the gap is mostly about efficiency, not equipment. The same firms sit at the top year after year, capital flows into housing, and too few new firms start or grow."
-                   :date        "2026-10-15"
+                   :date        "2026-10-16"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada :productivity]}}}
@@ -201,6 +201,23 @@
 ;; What it lacks is *new* companies: firms founded in living memory that grew to dominate their industries.
 ;; The IMF's 2025 review of Canada found the same thing in the data on all firms: "Limited turnover at the top suggests entrenched incumbents."[^7]
 
+;; ::: {.callout-note}
+;; ## A Closer Look: The Long View
+
+;; Is Canada's top tier *always* this static? Not entirely.
+;; A 1978 Royal Commission on Corporate Concentration tracked Canada's 100 largest non-financial companies and found that
+;; 21 of them dropped out between 1967 and 1971, and 22 between 1971 and 1975: turnover similar to the US Fortune 500 at the time.[^19]
+;; The biggest Canadian non-financial firms in 1975 were George Weston, Ford Canada, GM Canada, Imperial Oil and Canadian Pacific,
+;; several of them subsidiaries of American companies.
+
+;; Where Canada really is different is finance.
+;; The five largest financial institutions in 1975 were RBC, CIBC, BMO, Scotiabank and TD.
+;; Half a century later, they are still the five largest banks, and still among Canada's ten most valuable companies.
+;; Among the 25 largest financial institutions, only two newcomers broke in during each four-year period the Commission studied.[^19]
+;; Canada's persistence is concentrated in banking and in family-controlled groups (see [Old Money](c07_old_money.html)),
+;; and in what has *not* happened: very few new Canadian firms have grown to join them.
+;; :::
+
 ;; The same pattern shows up in personal fortunes.
 ;; Among billionaires who live in each country, the share Forbes counts as "self-made" is about the same,
 ;; roughly three in four.
@@ -335,7 +352,21 @@
 ;; Tim Pratley's original series makes the case that stable institutions are what let ordinary people take risks:
 ;; a predictable legal system, a safety net, a sound financial system.
 ;; Canada has those, and they are real achievements.
-;; Its banks came through 2008 without a bailout, and its social programs keep mobility high.
+;; How well did they serve Canada in the last two crises?
+;; Compared with the other G7 countries:[^20]
+
+;; | | Where Canada did well | Where it didn't |
+;; | :--- | :--- | :--- |
+;; | **2008–09 financial crisis** | Smallest two-year output loss in the G7 (−1.9%, 2007–2009); back to its pre-crisis peak fastest (9 quarters); no systemic banking crisis and no bank bailouts; banks rated soundest in the world by the World Economic Forum's executive survey, 2008–2014 | Its single-year 2009 contraction (−2.9%) was slightly deeper than America's (−2.6%); unemployment rose more than in Germany, which kept workers on through job-sharing |
+;; | **COVID-19** | Second-lowest excess deaths in the G7 after Japan (about 70 per 100,000 in 2020–21, against about 290 in the US); highest first-dose vaccination rate in the G7 by the end of 2021 | GDP fell 5.0% in 2020 against 2.1% in the US, and recovered more slowly; unemployment peaked at 14.2%, among the sharpest rises in the G7 |
+;;
+;; : Canada's record in two crises, relative to the G7 {#tbl-crises}
+
+;; So Canada's stability is genuine where it matters most for ordinary people: its banks didn't fail, and fewer Canadians died.
+;; But stability is not dynamism.
+;; The same economy that rides out crises well grows slowly between them.
+;; Government support in 2008–09 came as liquidity, not bailouts: CMHC bought \$69B of insured mortgages from the banks,
+;; and the Bank of Canada lent more than \$40B at the peak.[^20]
 
 ;; But there are two kinds of stability.
 ;; **System stability** means the rules are predictable and failure isn't catastrophic, so newcomers can try things.
@@ -374,7 +405,7 @@
 ;; [^3]: Statistics Canada, McCormack and Macdonald, ["Measuring Canada's economic performance relative to the United States"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026003/article/00004-eng.htm), *Economic and Social Reports*, March 2026.
 ;; [^4]: Nicolas Vincent, ["Toward a virtuous circle for productivity"](https://www.bankofcanada.ca/2025/11/toward-a-virtuous-circle-for-productivity/), Bank of Canada, November 19, 2025.
 ;; [^5]: Wulong Gu and Michael Willox, ["The Post-2001 Productivity Growth Divergence between Canada and the United States"](https://csls.ca/ipm-archive/ipm-issue-45/the-post-2001-productivity-growth-divergence-between-canada-and-the-united-states/), *International Productivity Monitor* 45, 2023, Table 1 and abstract.
-;; [^6]: Forbes Global 2000, 2011–2026 editions (market value in US dollars). Company identities matched across years and renamings (e.g. Google/Alphabet); where Forbes listed a company under a different country in a single year, it is assigned the country it is listed under most often. Founding years are those of the original company, from Wikidata, checked by hand (`data/top_company_founding_years.csv`).
+;; [^6]: Forbes Global 2000, 2011–2026 editions (market value in US dollars). Company identities matched across years and renamings (e.g. Google/Alphabet); where Forbes listed a company under a different country in a single year, it is assigned the country it is listed under most often. Founding years (of the company or the predecessor it names as its origin) were compiled by hand; where ambiguous, the later date is used for Canadian firms and the earlier for US firms, biasing the comparison against this essay's argument (`data/top_company_founding_years.csv`).
 ;; [^7]: IMF, [Canada: 2025 Article IV Consultation—Staff Report](https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-573340), January 2026, paragraphs 32–33 and Box 4.
 ;; [^8]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/), industry and self-made flags as assigned by Forbes; computed on this page.
 ;; [^9]: Statistics Canada, [Table 33-10-0164-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310016401), business dynamics measures.
@@ -387,3 +418,5 @@
 ;; [^16]: Bank of Canada, [Staff Analytical Paper 2026-19](https://www.bankofcanada.ca/2026/05/staff-analytical-paper-2026-19/), "Potential output in Canada: 2026 assessment," Box 3.
 ;; [^17]: IMF, [Canada: 2025 Article IV Staff Report](https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-573340); see also Alvarez, Krznar and Tombe, ["Internal Trade in Canada: Case for Liberalization"](https://www.imf.org/en/Publications/WP/Issues/2019/07/22/Internal-Trade-in-Canada-Case-for-Liberalization-47100), IMF Working Paper 19/158.
 ;; [^18]: Statistics Canada, [Table 33-10-1118-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310111801), Canadian Survey on Business Conditions, first quarter 2026.
+;; [^19]: Royal Commission on Corporate Concentration, [*Report*](https://publications.gc.ca/collections/collection_2014/bcp-pco/Z1-1975-1-1-eng.pdf), 1978, Tables 2.3–2.4 and the lists of the largest non-financial and financial corporations, 1975.
+;; [^20]: GDP: IMF World Economic Outlook and OECD quarterly national accounts; banking crises: Laeven and Valencia, IMF systemic banking crises database; excess deaths: WHO estimates for 2020–21; vaccination: Our World in Data; unemployment: OECD; CMHC Insured Mortgage Purchase Program: Office of the Parliamentary Budget Officer (2020); Bank of Canada term liquidity: *Bank of Canada Review*, 2009; World Economic Forum, *Global Competitiveness Report* (executive opinion survey), 2008–2014. Full sources in `data-prep/topco_longrun/NOTES.md`.

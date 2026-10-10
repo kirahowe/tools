@@ -1,0 +1,113 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,housing_starts_saar,229125.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-02-01,housing_starts_saar,248877.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-03-01,housing_starts_saar,245690.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-04-01,housing_starts_saar,262693.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-05-01,housing_starts_saar,280961.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-06-01,housing_starts_saar,273565.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-07-01,housing_starts_saar,277195.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-08-01,housing_starts_saar,266521.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-09-01,housing_starts_saar,294615.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-10-01,housing_starts_saar,261632.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-11-01,housing_starts_saar,259518.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2022-12-01,housing_starts_saar,252115.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-01-01,housing_starts_saar,205585.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-02-01,housing_starts_saar,245474.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-03-01,housing_starts_saar,212635.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-04-01,housing_starts_saar,259258.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-05-01,housing_starts_saar,193709.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-06-01,housing_starts_saar,282657.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-07-01,housing_starts_saar,253675.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-08-01,housing_starts_saar,250814.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-09-01,housing_starts_saar,268451.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-10-01,housing_starts_saar,270322.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-11-01,housing_starts_saar,207569.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2023-12-01,housing_starts_saar,253860.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-01-01,housing_starts_saar,228574.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-02-01,housing_starts_saar,263539.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-03-01,housing_starts_saar,242514.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-04-01,housing_starts_saar,240347.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-05-01,housing_starts_saar,258456.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-06-01,housing_starts_saar,246101.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-07-01,housing_starts_saar,276475.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-08-01,housing_starts_saar,215421.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-09-01,housing_starts_saar,226910.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-10-01,housing_starts_saar,243732.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-11-01,housing_starts_saar,262930.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2024-12-01,housing_starts_saar,232639.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2025-01-01,housing_starts_saar,233830.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2025-02-01,housing_starts_saar,222448.0,"units, SAAR (all areas)",34-10-0158-01,pre
+2025-03-01,housing_starts_saar,214494.0,"units, SAAR (all areas)",34-10-0158-01,transition
+2025-04-01,housing_starts_saar,281826.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-05-01,housing_starts_saar,278701.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-06-01,housing_starts_saar,284165.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-07-01,housing_starts_saar,293877.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-08-01,housing_starts_saar,244294.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-09-01,housing_starts_saar,280669.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-10-01,housing_starts_saar,231239.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-11-01,housing_starts_saar,253191.0,"units, SAAR (all areas)",34-10-0158-01,post
+2025-12-01,housing_starts_saar,282023.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-01-01,housing_starts_saar,236778.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-02-01,housing_starts_saar,248831.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-03-01,housing_starts_saar,239571.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-04-01,housing_starts_saar,271832.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-05-01,housing_starts_saar,254597.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-06-01,housing_starts_saar,240486.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-07-01,housing_starts_saar,229360.0,"units, SAAR (all areas)",34-10-0158-01,post
+2026-08-01,housing_starts_saar,229046.0,"units, SAAR (all areas)",34-10-0158-01,post
+2022-01-01,housing_starts_saar_6mo_avg,254740.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-02-01,housing_starts_saar_6mo_avg,252948.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-03-01,housing_starts_saar_6mo_avg,252111.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-04-01,housing_starts_saar_6mo_avg,256462.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-05-01,housing_starts_saar_6mo_avg,252421.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-06-01,housing_starts_saar_6mo_avg,256818.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-07-01,housing_starts_saar_6mo_avg,264830.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-08-01,housing_starts_saar_6mo_avg,267771.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-09-01,housing_starts_saar_6mo_avg,275925.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-10-01,housing_starts_saar_6mo_avg,275748.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-11-01,housing_starts_saar_6mo_avg,272174.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2022-12-01,housing_starts_saar_6mo_avg,268599.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-01-01,housing_starts_saar_6mo_avg,256664.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-02-01,housing_starts_saar_6mo_avg,253156.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-03-01,housing_starts_saar_6mo_avg,239493.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-04-01,housing_starts_saar_6mo_avg,239098.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-05-01,housing_starts_saar_6mo_avg,228129.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-06-01,housing_starts_saar_6mo_avg,233220.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-07-01,housing_starts_saar_6mo_avg,241235.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-08-01,housing_starts_saar_6mo_avg,242125.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-09-01,housing_starts_saar_6mo_avg,251427.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-10-01,housing_starts_saar_6mo_avg,253271.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-11-01,housing_starts_saar_6mo_avg,255581.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2023-12-01,housing_starts_saar_6mo_avg,250782.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-01-01,housing_starts_saar_6mo_avg,246598.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-02-01,housing_starts_saar_6mo_avg,248719.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-03-01,housing_starts_saar_6mo_avg,244396.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-04-01,housing_starts_saar_6mo_avg,239400.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-05-01,housing_starts_saar_6mo_avg,247882.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-06-01,housing_starts_saar_6mo_avg,246588.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-07-01,housing_starts_saar_6mo_avg,254572.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-08-01,housing_starts_saar_6mo_avg,246552.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-09-01,housing_starts_saar_6mo_avg,243952.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-10-01,housing_starts_saar_6mo_avg,244516.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-11-01,housing_starts_saar_6mo_avg,245262.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2024-12-01,housing_starts_saar_6mo_avg,243018.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2025-01-01,housing_starts_saar_6mo_avg,235910.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2025-02-01,housing_starts_saar_6mo_avg,237082.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),pre
+2025-03-01,housing_starts_saar_6mo_avg,235012.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),transition
+2025-04-01,housing_starts_saar_6mo_avg,241361.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-05-01,housing_starts_saar_6mo_avg,243990.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-06-01,housing_starts_saar_6mo_avg,252577.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-07-01,housing_starts_saar_6mo_avg,262585.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-08-01,housing_starts_saar_6mo_avg,266226.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-09-01,housing_starts_saar_6mo_avg,277255.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-10-01,housing_starts_saar_6mo_avg,268824.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-11-01,housing_starts_saar_6mo_avg,264572.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2025-12-01,housing_starts_saar_6mo_avg,264216.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-01-01,housing_starts_saar_6mo_avg,254699.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-02-01,housing_starts_saar_6mo_avg,255455.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-03-01,housing_starts_saar_6mo_avg,248606.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-04-01,housing_starts_saar_6mo_avg,255371.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-05-01,housing_starts_saar_6mo_avg,255605.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-06-01,housing_starts_saar_6mo_avg,248682.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-07-01,housing_starts_saar_6mo_avg,247446.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post
+2026-08-01,housing_starts_saar_6mo_avg,244149.0,"units, SAAR (derived 6-month moving average; CMHC publishes its own trend)",34-10-0158-01 (derived),post

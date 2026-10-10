@@ -1,0 +1,678 @@
+date,indicator,value,unit,source_table,regime
+2022-01-01,unemployment_rate,6.4,"percent, SA",14-10-0287-01,pre
+2022-02-01,unemployment_rate,5.5,"percent, SA",14-10-0287-01,pre
+2022-03-01,unemployment_rate,5.4,"percent, SA",14-10-0287-01,pre
+2022-04-01,unemployment_rate,5.4,"percent, SA",14-10-0287-01,pre
+2022-05-01,unemployment_rate,5.2,"percent, SA",14-10-0287-01,pre
+2022-06-01,unemployment_rate,4.9,"percent, SA",14-10-0287-01,pre
+2022-07-01,unemployment_rate,4.8,"percent, SA",14-10-0287-01,pre
+2022-08-01,unemployment_rate,5.2,"percent, SA",14-10-0287-01,pre
+2022-09-01,unemployment_rate,5.1,"percent, SA",14-10-0287-01,pre
+2022-10-01,unemployment_rate,5.1,"percent, SA",14-10-0287-01,pre
+2022-11-01,unemployment_rate,5.0,"percent, SA",14-10-0287-01,pre
+2022-12-01,unemployment_rate,5.0,"percent, SA",14-10-0287-01,pre
+2023-01-01,unemployment_rate,5.1,"percent, SA",14-10-0287-01,pre
+2023-02-01,unemployment_rate,5.2,"percent, SA",14-10-0287-01,pre
+2023-03-01,unemployment_rate,5.1,"percent, SA",14-10-0287-01,pre
+2023-04-01,unemployment_rate,5.1,"percent, SA",14-10-0287-01,pre
+2023-05-01,unemployment_rate,5.2,"percent, SA",14-10-0287-01,pre
+2023-06-01,unemployment_rate,5.4,"percent, SA",14-10-0287-01,pre
+2023-07-01,unemployment_rate,5.4,"percent, SA",14-10-0287-01,pre
+2023-08-01,unemployment_rate,5.4,"percent, SA",14-10-0287-01,pre
+2023-09-01,unemployment_rate,5.5,"percent, SA",14-10-0287-01,pre
+2023-10-01,unemployment_rate,5.7,"percent, SA",14-10-0287-01,pre
+2023-11-01,unemployment_rate,5.8,"percent, SA",14-10-0287-01,pre
+2023-12-01,unemployment_rate,5.8,"percent, SA",14-10-0287-01,pre
+2024-01-01,unemployment_rate,5.7,"percent, SA",14-10-0287-01,pre
+2024-02-01,unemployment_rate,5.9,"percent, SA",14-10-0287-01,pre
+2024-03-01,unemployment_rate,6.1,"percent, SA",14-10-0287-01,pre
+2024-04-01,unemployment_rate,6.2,"percent, SA",14-10-0287-01,pre
+2024-05-01,unemployment_rate,6.3,"percent, SA",14-10-0287-01,pre
+2024-06-01,unemployment_rate,6.4,"percent, SA",14-10-0287-01,pre
+2024-07-01,unemployment_rate,6.4,"percent, SA",14-10-0287-01,pre
+2024-08-01,unemployment_rate,6.6,"percent, SA",14-10-0287-01,pre
+2024-09-01,unemployment_rate,6.5,"percent, SA",14-10-0287-01,pre
+2024-10-01,unemployment_rate,6.6,"percent, SA",14-10-0287-01,pre
+2024-11-01,unemployment_rate,7.0,"percent, SA",14-10-0287-01,pre
+2024-12-01,unemployment_rate,6.7,"percent, SA",14-10-0287-01,pre
+2025-01-01,unemployment_rate,6.7,"percent, SA",14-10-0287-01,pre
+2025-02-01,unemployment_rate,6.6,"percent, SA",14-10-0287-01,pre
+2025-03-01,unemployment_rate,6.8,"percent, SA",14-10-0287-01,transition
+2025-04-01,unemployment_rate,6.9,"percent, SA",14-10-0287-01,post
+2025-05-01,unemployment_rate,7.0,"percent, SA",14-10-0287-01,post
+2025-06-01,unemployment_rate,6.9,"percent, SA",14-10-0287-01,post
+2025-07-01,unemployment_rate,6.9,"percent, SA",14-10-0287-01,post
+2025-08-01,unemployment_rate,7.1,"percent, SA",14-10-0287-01,post
+2025-09-01,unemployment_rate,7.1,"percent, SA",14-10-0287-01,post
+2025-10-01,unemployment_rate,6.9,"percent, SA",14-10-0287-01,post
+2025-11-01,unemployment_rate,6.6,"percent, SA",14-10-0287-01,post
+2025-12-01,unemployment_rate,6.8,"percent, SA",14-10-0287-01,post
+2026-01-01,unemployment_rate,6.5,"percent, SA",14-10-0287-01,post
+2026-02-01,unemployment_rate,6.7,"percent, SA",14-10-0287-01,post
+2026-03-01,unemployment_rate,6.7,"percent, SA",14-10-0287-01,post
+2026-04-01,unemployment_rate,6.9,"percent, SA",14-10-0287-01,post
+2026-05-01,unemployment_rate,6.6,"percent, SA",14-10-0287-01,post
+2026-06-01,unemployment_rate,6.5,"percent, SA",14-10-0287-01,post
+2026-07-01,unemployment_rate,6.4,"percent, SA",14-10-0287-01,post
+2026-08-01,unemployment_rate,6.4,"percent, SA",14-10-0287-01,post
+2026-09-01,unemployment_rate,6.5,"percent, SA",14-10-0287-01,post
+2022-01-01,employment_rate,61.2,"percent, SA",14-10-0287-01,pre
+2022-02-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2022-03-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2022-04-01,employment_rate,62.2,"percent, SA",14-10-0287-01,pre
+2022-05-01,employment_rate,62.3,"percent, SA",14-10-0287-01,pre
+2022-06-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2022-07-01,employment_rate,62.2,"percent, SA",14-10-0287-01,pre
+2022-08-01,employment_rate,62.0,"percent, SA",14-10-0287-01,pre
+2022-09-01,employment_rate,62.0,"percent, SA",14-10-0287-01,pre
+2022-10-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2022-11-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2022-12-01,employment_rate,62.3,"percent, SA",14-10-0287-01,pre
+2023-01-01,employment_rate,62.4,"percent, SA",14-10-0287-01,pre
+2023-02-01,employment_rate,62.4,"percent, SA",14-10-0287-01,pre
+2023-03-01,employment_rate,62.5,"percent, SA",14-10-0287-01,pre
+2023-04-01,employment_rate,62.4,"percent, SA",14-10-0287-01,pre
+2023-05-01,employment_rate,62.3,"percent, SA",14-10-0287-01,pre
+2023-06-01,employment_rate,62.3,"percent, SA",14-10-0287-01,pre
+2023-07-01,employment_rate,62.2,"percent, SA",14-10-0287-01,pre
+2023-08-01,employment_rate,62.3,"percent, SA",14-10-0287-01,pre
+2023-09-01,employment_rate,62.2,"percent, SA",14-10-0287-01,pre
+2023-10-01,employment_rate,62.1,"percent, SA",14-10-0287-01,pre
+2023-11-01,employment_rate,62.0,"percent, SA",14-10-0287-01,pre
+2023-12-01,employment_rate,61.9,"percent, SA",14-10-0287-01,pre
+2024-01-01,employment_rate,61.8,"percent, SA",14-10-0287-01,pre
+2024-02-01,employment_rate,61.7,"percent, SA",14-10-0287-01,pre
+2024-03-01,employment_rate,61.6,"percent, SA",14-10-0287-01,pre
+2024-04-01,employment_rate,61.6,"percent, SA",14-10-0287-01,pre
+2024-05-01,employment_rate,61.5,"percent, SA",14-10-0287-01,pre
+2024-06-01,employment_rate,61.3,"percent, SA",14-10-0287-01,pre
+2024-07-01,employment_rate,61.1,"percent, SA",14-10-0287-01,pre
+2024-08-01,employment_rate,61.1,"percent, SA",14-10-0287-01,pre
+2024-09-01,employment_rate,61.0,"percent, SA",14-10-0287-01,pre
+2024-10-01,employment_rate,60.9,"percent, SA",14-10-0287-01,pre
+2024-11-01,employment_rate,60.9,"percent, SA",14-10-0287-01,pre
+2024-12-01,employment_rate,61.1,"percent, SA",14-10-0287-01,pre
+2025-01-01,employment_rate,61.1,"percent, SA",14-10-0287-01,pre
+2025-02-01,employment_rate,61.0,"percent, SA",14-10-0287-01,pre
+2025-03-01,employment_rate,60.9,"percent, SA",14-10-0287-01,transition
+2025-04-01,employment_rate,60.8,"percent, SA",14-10-0287-01,post
+2025-05-01,employment_rate,60.7,"percent, SA",14-10-0287-01,post
+2025-06-01,employment_rate,60.9,"percent, SA",14-10-0287-01,post
+2025-07-01,employment_rate,60.7,"percent, SA",14-10-0287-01,post
+2025-08-01,employment_rate,60.5,"percent, SA",14-10-0287-01,post
+2025-09-01,employment_rate,60.6,"percent, SA",14-10-0287-01,post
+2025-10-01,employment_rate,60.8,"percent, SA",14-10-0287-01,post
+2025-11-01,employment_rate,60.9,"percent, SA",14-10-0287-01,post
+2025-12-01,employment_rate,60.9,"percent, SA",14-10-0287-01,post
+2026-01-01,employment_rate,60.8,"percent, SA",14-10-0287-01,post
+2026-02-01,employment_rate,60.6,"percent, SA",14-10-0287-01,post
+2026-03-01,employment_rate,60.6,"percent, SA",14-10-0287-01,post
+2026-04-01,employment_rate,60.5,"percent, SA",14-10-0287-01,post
+2026-05-01,employment_rate,60.7,"percent, SA",14-10-0287-01,post
+2026-06-01,employment_rate,60.8,"percent, SA",14-10-0287-01,post
+2026-07-01,employment_rate,60.9,"percent, SA",14-10-0287-01,post
+2026-08-01,employment_rate,60.8,"percent, SA",14-10-0287-01,post
+2026-09-01,employment_rate,60.6,"percent, SA",14-10-0287-01,post
+2022-01-01,participation_rate,65.4,"percent, SA",14-10-0287-01,pre
+2022-02-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2022-03-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2022-04-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2022-05-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2022-06-01,participation_rate,65.4,"percent, SA",14-10-0287-01,pre
+2022-07-01,participation_rate,65.3,"percent, SA",14-10-0287-01,pre
+2022-08-01,participation_rate,65.4,"percent, SA",14-10-0287-01,pre
+2022-09-01,participation_rate,65.3,"percent, SA",14-10-0287-01,pre
+2022-10-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2022-11-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2022-12-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2023-01-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-02-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-03-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-04-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2023-05-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2023-06-01,participation_rate,65.9,"percent, SA",14-10-0287-01,pre
+2023-07-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-08-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-09-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-10-01,participation_rate,65.9,"percent, SA",14-10-0287-01,pre
+2023-11-01,participation_rate,65.8,"percent, SA",14-10-0287-01,pre
+2023-12-01,participation_rate,65.7,"percent, SA",14-10-0287-01,pre
+2024-01-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2024-02-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2024-03-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2024-04-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2024-05-01,participation_rate,65.6,"percent, SA",14-10-0287-01,pre
+2024-06-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2024-07-01,participation_rate,65.3,"percent, SA",14-10-0287-01,pre
+2024-08-01,participation_rate,65.4,"percent, SA",14-10-0287-01,pre
+2024-09-01,participation_rate,65.2,"percent, SA",14-10-0287-01,pre
+2024-10-01,participation_rate,65.2,"percent, SA",14-10-0287-01,pre
+2024-11-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2024-12-01,participation_rate,65.4,"percent, SA",14-10-0287-01,pre
+2025-01-01,participation_rate,65.5,"percent, SA",14-10-0287-01,pre
+2025-02-01,participation_rate,65.3,"percent, SA",14-10-0287-01,pre
+2025-03-01,participation_rate,65.3,"percent, SA",14-10-0287-01,transition
+2025-04-01,participation_rate,65.3,"percent, SA",14-10-0287-01,post
+2025-05-01,participation_rate,65.3,"percent, SA",14-10-0287-01,post
+2025-06-01,participation_rate,65.3,"percent, SA",14-10-0287-01,post
+2025-07-01,participation_rate,65.2,"percent, SA",14-10-0287-01,post
+2025-08-01,participation_rate,65.1,"percent, SA",14-10-0287-01,post
+2025-09-01,participation_rate,65.2,"percent, SA",14-10-0287-01,post
+2025-10-01,participation_rate,65.2,"percent, SA",14-10-0287-01,post
+2025-11-01,participation_rate,65.2,"percent, SA",14-10-0287-01,post
+2025-12-01,participation_rate,65.4,"percent, SA",14-10-0287-01,post
+2026-01-01,participation_rate,65.0,"percent, SA",14-10-0287-01,post
+2026-02-01,participation_rate,64.9,"percent, SA",14-10-0287-01,post
+2026-03-01,participation_rate,64.9,"percent, SA",14-10-0287-01,post
+2026-04-01,participation_rate,65.0,"percent, SA",14-10-0287-01,post
+2026-05-01,participation_rate,65.0,"percent, SA",14-10-0287-01,post
+2026-06-01,participation_rate,65.0,"percent, SA",14-10-0287-01,post
+2026-07-01,participation_rate,65.1,"percent, SA",14-10-0287-01,post
+2026-08-01,participation_rate,65.0,"percent, SA",14-10-0287-01,post
+2026-09-01,participation_rate,64.8,"percent, SA",14-10-0287-01,post
+2022-01-01,employment,19305.4,"thousands of persons, SA",14-10-0287-01,pre
+2022-02-01,employment,19629.0,"thousands of persons, SA",14-10-0287-01,pre
+2022-03-01,employment,19647.8,"thousands of persons, SA",14-10-0287-01,pre
+2022-04-01,employment,19709.7,"thousands of persons, SA",14-10-0287-01,pre
+2022-05-01,employment,19763.4,"thousands of persons, SA",14-10-0287-01,pre
+2022-06-01,employment,19750.8,"thousands of persons, SA",14-10-0287-01,pre
+2022-07-01,employment,19787.5,"thousands of persons, SA",14-10-0287-01,pre
+2022-08-01,employment,19781.2,"thousands of persons, SA",14-10-0287-01,pre
+2022-09-01,employment,19796.1,"thousands of persons, SA",14-10-0287-01,pre
+2022-10-01,employment,19882.8,"thousands of persons, SA",14-10-0287-01,pre
+2022-11-01,employment,19923.8,"thousands of persons, SA",14-10-0287-01,pre
+2022-12-01,employment,19998.5,"thousands of persons, SA",14-10-0287-01,pre
+2023-01-01,employment,20097.5,"thousands of persons, SA",14-10-0287-01,pre
+2023-02-01,employment,20143.3,"thousands of persons, SA",14-10-0287-01,pre
+2023-03-01,employment,20214.7,"thousands of persons, SA",14-10-0287-01,pre
+2023-04-01,employment,20242.1,"thousands of persons, SA",14-10-0287-01,pre
+2023-05-01,employment,20253.9,"thousands of persons, SA",14-10-0287-01,pre
+2023-06-01,employment,20325.1,"thousands of persons, SA",14-10-0287-01,pre
+2023-07-01,employment,20356.9,"thousands of persons, SA",14-10-0287-01,pre
+2023-08-01,employment,20423.7,"thousands of persons, SA",14-10-0287-01,pre
+2023-09-01,employment,20473.1,"thousands of persons, SA",14-10-0287-01,pre
+2023-10-01,employment,20501.8,"thousands of persons, SA",14-10-0287-01,pre
+2023-11-01,employment,20522.2,"thousands of persons, SA",14-10-0287-01,pre
+2023-12-01,employment,20530.6,"thousands of persons, SA",14-10-0287-01,pre
+2024-01-01,employment,20552.1,"thousands of persons, SA",14-10-0287-01,pre
+2024-02-01,employment,20593.8,"thousands of persons, SA",14-10-0287-01,pre
+2024-03-01,employment,20620.8,"thousands of persons, SA",14-10-0287-01,pre
+2024-04-01,employment,20674.9,"thousands of persons, SA",14-10-0287-01,pre
+2024-05-01,employment,20707.2,"thousands of persons, SA",14-10-0287-01,pre
+2024-06-01,employment,20708.1,"thousands of persons, SA",14-10-0287-01,pre
+2024-07-01,employment,20725.1,"thousands of persons, SA",14-10-0287-01,pre
+2024-08-01,employment,20760.4,"thousands of persons, SA",14-10-0287-01,pre
+2024-09-01,employment,20796.0,"thousands of persons, SA",14-10-0287-01,pre
+2024-10-01,employment,20804.9,"thousands of persons, SA",14-10-0287-01,pre
+2024-11-01,employment,20842.0,"thousands of persons, SA",14-10-0287-01,pre
+2024-12-01,employment,20934.7,"thousands of persons, SA",14-10-0287-01,pre
+2025-01-01,employment,20986.9,"thousands of persons, SA",14-10-0287-01,pre
+2025-02-01,employment,20985.5,"thousands of persons, SA",14-10-0287-01,pre
+2025-03-01,employment,20964.3,"thousands of persons, SA",14-10-0287-01,transition
+2025-04-01,employment,20966.7,"thousands of persons, SA",14-10-0287-01,post
+2025-05-01,employment,20974.4,"thousands of persons, SA",14-10-0287-01,post
+2025-06-01,employment,21040.7,"thousands of persons, SA",14-10-0287-01,post
+2025-07-01,employment,21018.3,"thousands of persons, SA",14-10-0287-01,post
+2025-08-01,employment,20956.6,"thousands of persons, SA",14-10-0287-01,post
+2025-09-01,employment,21009.9,"thousands of persons, SA",14-10-0287-01,post
+2025-10-01,employment,21083.6,"thousands of persons, SA",14-10-0287-01,post
+2025-11-01,employment,21135.9,"thousands of persons, SA",14-10-0287-01,post
+2025-12-01,employment,21146.0,"thousands of persons, SA",14-10-0287-01,post
+2026-01-01,employment,21121.2,"thousands of persons, SA",14-10-0287-01,post
+2026-02-01,employment,21037.3,"thousands of persons, SA",14-10-0287-01,post
+2026-03-01,employment,21051.4,"thousands of persons, SA",14-10-0287-01,post
+2026-04-01,employment,21033.7,"thousands of persons, SA",14-10-0287-01,post
+2026-05-01,employment,21121.5,"thousands of persons, SA",14-10-0287-01,post
+2026-06-01,employment,21139.7,"thousands of persons, SA",14-10-0287-01,post
+2026-07-01,employment,21214.8,"thousands of persons, SA",14-10-0287-01,post
+2026-08-01,employment,21173.1,"thousands of persons, SA",14-10-0287-01,post
+2026-09-01,employment,21104.8,"thousands of persons, SA",14-10-0287-01,post
+2022-01-01,employment_yoy,4.97,percent,14-10-0287-01,pre
+2022-02-01,employment_yoy,5.35,percent,14-10-0287-01,pre
+2022-03-01,employment_yoy,4.11,percent,14-10-0287-01,pre
+2022-04-01,employment_yoy,5.55,percent,14-10-0287-01,pre
+2022-05-01,employment_yoy,6.12,percent,14-10-0287-01,pre
+2022-06-01,employment_yoy,4.53,percent,14-10-0287-01,pre
+2022-07-01,employment_yoy,4.05,percent,14-10-0287-01,pre
+2022-08-01,employment_yoy,3.67,percent,14-10-0287-01,pre
+2022-09-01,employment_yoy,2.83,percent,14-10-0287-01,pre
+2022-10-01,employment_yoy,3.08,percent,14-10-0287-01,pre
+2022-11-01,employment_yoy,2.5,percent,14-10-0287-01,pre
+2022-12-01,employment_yoy,2.51,percent,14-10-0287-01,pre
+2023-01-01,employment_yoy,4.1,percent,14-10-0287-01,pre
+2023-02-01,employment_yoy,2.62,percent,14-10-0287-01,pre
+2023-03-01,employment_yoy,2.89,percent,14-10-0287-01,pre
+2023-04-01,employment_yoy,2.7,percent,14-10-0287-01,pre
+2023-05-01,employment_yoy,2.48,percent,14-10-0287-01,pre
+2023-06-01,employment_yoy,2.91,percent,14-10-0287-01,pre
+2023-07-01,employment_yoy,2.88,percent,14-10-0287-01,pre
+2023-08-01,employment_yoy,3.25,percent,14-10-0287-01,pre
+2023-09-01,employment_yoy,3.42,percent,14-10-0287-01,pre
+2023-10-01,employment_yoy,3.11,percent,14-10-0287-01,pre
+2023-11-01,employment_yoy,3.0,percent,14-10-0287-01,pre
+2023-12-01,employment_yoy,2.66,percent,14-10-0287-01,pre
+2024-01-01,employment_yoy,2.26,percent,14-10-0287-01,pre
+2024-02-01,employment_yoy,2.24,percent,14-10-0287-01,pre
+2024-03-01,employment_yoy,2.01,percent,14-10-0287-01,pre
+2024-04-01,employment_yoy,2.14,percent,14-10-0287-01,pre
+2024-05-01,employment_yoy,2.24,percent,14-10-0287-01,pre
+2024-06-01,employment_yoy,1.88,percent,14-10-0287-01,pre
+2024-07-01,employment_yoy,1.81,percent,14-10-0287-01,pre
+2024-08-01,employment_yoy,1.65,percent,14-10-0287-01,pre
+2024-09-01,employment_yoy,1.58,percent,14-10-0287-01,pre
+2024-10-01,employment_yoy,1.48,percent,14-10-0287-01,pre
+2024-11-01,employment_yoy,1.56,percent,14-10-0287-01,pre
+2024-12-01,employment_yoy,1.97,percent,14-10-0287-01,pre
+2025-01-01,employment_yoy,2.12,percent,14-10-0287-01,pre
+2025-02-01,employment_yoy,1.9,percent,14-10-0287-01,pre
+2025-03-01,employment_yoy,1.67,percent,14-10-0287-01,transition
+2025-04-01,employment_yoy,1.41,percent,14-10-0287-01,post
+2025-05-01,employment_yoy,1.29,percent,14-10-0287-01,post
+2025-06-01,employment_yoy,1.61,percent,14-10-0287-01,post
+2025-07-01,employment_yoy,1.41,percent,14-10-0287-01,post
+2025-08-01,employment_yoy,0.95,percent,14-10-0287-01,post
+2025-09-01,employment_yoy,1.03,percent,14-10-0287-01,post
+2025-10-01,employment_yoy,1.34,percent,14-10-0287-01,post
+2025-11-01,employment_yoy,1.41,percent,14-10-0287-01,post
+2025-12-01,employment_yoy,1.01,percent,14-10-0287-01,post
+2026-01-01,employment_yoy,0.64,percent,14-10-0287-01,post
+2026-02-01,employment_yoy,0.25,percent,14-10-0287-01,post
+2026-03-01,employment_yoy,0.42,percent,14-10-0287-01,post
+2026-04-01,employment_yoy,0.32,percent,14-10-0287-01,post
+2026-05-01,employment_yoy,0.7,percent,14-10-0287-01,post
+2026-06-01,employment_yoy,0.47,percent,14-10-0287-01,post
+2026-07-01,employment_yoy,0.93,percent,14-10-0287-01,post
+2026-08-01,employment_yoy,1.03,percent,14-10-0287-01,post
+2026-09-01,employment_yoy,0.45,percent,14-10-0287-01,post
+2022-01-01,youth_unemployment_rate_15_24,12.5,"percent, SA",14-10-0287-01,pre
+2022-02-01,youth_unemployment_rate_15_24,10.3,"percent, SA",14-10-0287-01,pre
+2022-03-01,youth_unemployment_rate_15_24,9.3,"percent, SA",14-10-0287-01,pre
+2022-04-01,youth_unemployment_rate_15_24,10.3,"percent, SA",14-10-0287-01,pre
+2022-05-01,youth_unemployment_rate_15_24,9.5,"percent, SA",14-10-0287-01,pre
+2022-06-01,youth_unemployment_rate_15_24,9.3,"percent, SA",14-10-0287-01,pre
+2022-07-01,youth_unemployment_rate_15_24,9.0,"percent, SA",14-10-0287-01,pre
+2022-08-01,youth_unemployment_rate_15_24,9.2,"percent, SA",14-10-0287-01,pre
+2022-09-01,youth_unemployment_rate_15_24,10.3,"percent, SA",14-10-0287-01,pre
+2022-10-01,youth_unemployment_rate_15_24,10.8,"percent, SA",14-10-0287-01,pre
+2022-11-01,youth_unemployment_rate_15_24,10.2,"percent, SA",14-10-0287-01,pre
+2022-12-01,youth_unemployment_rate_15_24,9.8,"percent, SA",14-10-0287-01,pre
+2023-01-01,youth_unemployment_rate_15_24,10.1,"percent, SA",14-10-0287-01,pre
+2023-02-01,youth_unemployment_rate_15_24,10.3,"percent, SA",14-10-0287-01,pre
+2023-03-01,youth_unemployment_rate_15_24,9.4,"percent, SA",14-10-0287-01,pre
+2023-04-01,youth_unemployment_rate_15_24,9.8,"percent, SA",14-10-0287-01,pre
+2023-05-01,youth_unemployment_rate_15_24,10.8,"percent, SA",14-10-0287-01,pre
+2023-06-01,youth_unemployment_rate_15_24,11.1,"percent, SA",14-10-0287-01,pre
+2023-07-01,youth_unemployment_rate_15_24,10.2,"percent, SA",14-10-0287-01,pre
+2023-08-01,youth_unemployment_rate_15_24,10.9,"percent, SA",14-10-0287-01,pre
+2023-09-01,youth_unemployment_rate_15_24,10.5,"percent, SA",14-10-0287-01,pre
+2023-10-01,youth_unemployment_rate_15_24,11.4,"percent, SA",14-10-0287-01,pre
+2023-11-01,youth_unemployment_rate_15_24,11.6,"percent, SA",14-10-0287-01,pre
+2023-12-01,youth_unemployment_rate_15_24,11.5,"percent, SA",14-10-0287-01,pre
+2024-01-01,youth_unemployment_rate_15_24,11.0,"percent, SA",14-10-0287-01,pre
+2024-02-01,youth_unemployment_rate_15_24,12.1,"percent, SA",14-10-0287-01,pre
+2024-03-01,youth_unemployment_rate_15_24,13.0,"percent, SA",14-10-0287-01,pre
+2024-04-01,youth_unemployment_rate_15_24,12.9,"percent, SA",14-10-0287-01,pre
+2024-05-01,youth_unemployment_rate_15_24,12.7,"percent, SA",14-10-0287-01,pre
+2024-06-01,youth_unemployment_rate_15_24,13.4,"percent, SA",14-10-0287-01,pre
+2024-07-01,youth_unemployment_rate_15_24,13.9,"percent, SA",14-10-0287-01,pre
+2024-08-01,youth_unemployment_rate_15_24,14.1,"percent, SA",14-10-0287-01,pre
+2024-09-01,youth_unemployment_rate_15_24,13.3,"percent, SA",14-10-0287-01,pre
+2024-10-01,youth_unemployment_rate_15_24,12.9,"percent, SA",14-10-0287-01,pre
+2024-11-01,youth_unemployment_rate_15_24,14.2,"percent, SA",14-10-0287-01,pre
+2024-12-01,youth_unemployment_rate_15_24,14.2,"percent, SA",14-10-0287-01,pre
+2025-01-01,youth_unemployment_rate_15_24,13.7,"percent, SA",14-10-0287-01,pre
+2025-02-01,youth_unemployment_rate_15_24,13.1,"percent, SA",14-10-0287-01,pre
+2025-03-01,youth_unemployment_rate_15_24,13.9,"percent, SA",14-10-0287-01,transition
+2025-04-01,youth_unemployment_rate_15_24,14.2,"percent, SA",14-10-0287-01,post
+2025-05-01,youth_unemployment_rate_15_24,14.2,"percent, SA",14-10-0287-01,post
+2025-06-01,youth_unemployment_rate_15_24,14.2,"percent, SA",14-10-0287-01,post
+2025-07-01,youth_unemployment_rate_15_24,14.5,"percent, SA",14-10-0287-01,post
+2025-08-01,youth_unemployment_rate_15_24,14.3,"percent, SA",14-10-0287-01,post
+2025-09-01,youth_unemployment_rate_15_24,14.6,"percent, SA",14-10-0287-01,post
+2025-10-01,youth_unemployment_rate_15_24,14.0,"percent, SA",14-10-0287-01,post
+2025-11-01,youth_unemployment_rate_15_24,12.8,"percent, SA",14-10-0287-01,post
+2025-12-01,youth_unemployment_rate_15_24,13.3,"percent, SA",14-10-0287-01,post
+2026-01-01,youth_unemployment_rate_15_24,12.8,"percent, SA",14-10-0287-01,post
+2026-02-01,youth_unemployment_rate_15_24,14.1,"percent, SA",14-10-0287-01,post
+2026-03-01,youth_unemployment_rate_15_24,13.8,"percent, SA",14-10-0287-01,post
+2026-04-01,youth_unemployment_rate_15_24,14.3,"percent, SA",14-10-0287-01,post
+2026-05-01,youth_unemployment_rate_15_24,13.4,"percent, SA",14-10-0287-01,post
+2026-06-01,youth_unemployment_rate_15_24,12.7,"percent, SA",14-10-0287-01,post
+2026-07-01,youth_unemployment_rate_15_24,12.6,"percent, SA",14-10-0287-01,post
+2026-08-01,youth_unemployment_rate_15_24,12.9,"percent, SA",14-10-0287-01,post
+2026-09-01,youth_unemployment_rate_15_24,13.0,"percent, SA",14-10-0287-01,post
+2022-01-01,avg_hourly_wage_lfs,31.62,"current dollars, NSA",14-10-0063-01,pre
+2022-02-01,avg_hourly_wage_lfs,31.48,"current dollars, NSA",14-10-0063-01,pre
+2022-03-01,avg_hourly_wage_lfs,31.45,"current dollars, NSA",14-10-0063-01,pre
+2022-04-01,avg_hourly_wage_lfs,31.74,"current dollars, NSA",14-10-0063-01,pre
+2022-05-01,avg_hourly_wage_lfs,31.65,"current dollars, NSA",14-10-0063-01,pre
+2022-06-01,avg_hourly_wage_lfs,31.8,"current dollars, NSA",14-10-0063-01,pre
+2022-07-01,avg_hourly_wage_lfs,31.66,"current dollars, NSA",14-10-0063-01,pre
+2022-08-01,avg_hourly_wage_lfs,31.93,"current dollars, NSA",14-10-0063-01,pre
+2022-09-01,avg_hourly_wage_lfs,32.39,"current dollars, NSA",14-10-0063-01,pre
+2022-10-01,avg_hourly_wage_lfs,32.53,"current dollars, NSA",14-10-0063-01,pre
+2022-11-01,avg_hourly_wage_lfs,32.72,"current dollars, NSA",14-10-0063-01,pre
+2022-12-01,avg_hourly_wage_lfs,32.68,"current dollars, NSA",14-10-0063-01,pre
+2023-01-01,avg_hourly_wage_lfs,33.03,"current dollars, NSA",14-10-0063-01,pre
+2023-02-01,avg_hourly_wage_lfs,33.17,"current dollars, NSA",14-10-0063-01,pre
+2023-03-01,avg_hourly_wage_lfs,33.13,"current dollars, NSA",14-10-0063-01,pre
+2023-04-01,avg_hourly_wage_lfs,33.37,"current dollars, NSA",14-10-0063-01,pre
+2023-05-01,avg_hourly_wage_lfs,33.26,"current dollars, NSA",14-10-0063-01,pre
+2023-06-01,avg_hourly_wage_lfs,33.13,"current dollars, NSA",14-10-0063-01,pre
+2023-07-01,avg_hourly_wage_lfs,33.25,"current dollars, NSA",14-10-0063-01,pre
+2023-08-01,avg_hourly_wage_lfs,33.5,"current dollars, NSA",14-10-0063-01,pre
+2023-09-01,avg_hourly_wage_lfs,34.03,"current dollars, NSA",14-10-0063-01,pre
+2023-10-01,avg_hourly_wage_lfs,34.1,"current dollars, NSA",14-10-0063-01,pre
+2023-11-01,avg_hourly_wage_lfs,34.29,"current dollars, NSA",14-10-0063-01,pre
+2023-12-01,avg_hourly_wage_lfs,34.46,"current dollars, NSA",14-10-0063-01,pre
+2024-01-01,avg_hourly_wage_lfs,34.76,"current dollars, NSA",14-10-0063-01,pre
+2024-02-01,avg_hourly_wage_lfs,34.82,"current dollars, NSA",14-10-0063-01,pre
+2024-03-01,avg_hourly_wage_lfs,34.81,"current dollars, NSA",14-10-0063-01,pre
+2024-04-01,avg_hourly_wage_lfs,34.93,"current dollars, NSA",14-10-0063-01,pre
+2024-05-01,avg_hourly_wage_lfs,34.94,"current dollars, NSA",14-10-0063-01,pre
+2024-06-01,avg_hourly_wage_lfs,34.91,"current dollars, NSA",14-10-0063-01,pre
+2024-07-01,avg_hourly_wage_lfs,34.99,"current dollars, NSA",14-10-0063-01,pre
+2024-08-01,avg_hourly_wage_lfs,35.19,"current dollars, NSA",14-10-0063-01,pre
+2024-09-01,avg_hourly_wage_lfs,35.61,"current dollars, NSA",14-10-0063-01,pre
+2024-10-01,avg_hourly_wage_lfs,35.79,"current dollars, NSA",14-10-0063-01,pre
+2024-11-01,avg_hourly_wage_lfs,35.73,"current dollars, NSA",14-10-0063-01,pre
+2024-12-01,avg_hourly_wage_lfs,35.83,"current dollars, NSA",14-10-0063-01,pre
+2025-01-01,avg_hourly_wage_lfs,35.99,"current dollars, NSA",14-10-0063-01,pre
+2025-02-01,avg_hourly_wage_lfs,36.14,"current dollars, NSA",14-10-0063-01,pre
+2025-03-01,avg_hourly_wage_lfs,36.05,"current dollars, NSA",14-10-0063-01,transition
+2025-04-01,avg_hourly_wage_lfs,36.13,"current dollars, NSA",14-10-0063-01,post
+2025-05-01,avg_hourly_wage_lfs,36.14,"current dollars, NSA",14-10-0063-01,post
+2025-06-01,avg_hourly_wage_lfs,36.01,"current dollars, NSA",14-10-0063-01,post
+2025-07-01,avg_hourly_wage_lfs,36.16,"current dollars, NSA",14-10-0063-01,post
+2025-08-01,avg_hourly_wage_lfs,36.31,"current dollars, NSA",14-10-0063-01,post
+2025-09-01,avg_hourly_wage_lfs,36.78,"current dollars, NSA",14-10-0063-01,post
+2025-10-01,avg_hourly_wage_lfs,37.06,"current dollars, NSA",14-10-0063-01,post
+2025-11-01,avg_hourly_wage_lfs,37.0,"current dollars, NSA",14-10-0063-01,post
+2025-12-01,avg_hourly_wage_lfs,37.06,"current dollars, NSA",14-10-0063-01,post
+2026-01-01,avg_hourly_wage_lfs,37.17,"current dollars, NSA",14-10-0063-01,post
+2026-02-01,avg_hourly_wage_lfs,37.56,"current dollars, NSA",14-10-0063-01,post
+2026-03-01,avg_hourly_wage_lfs,37.73,"current dollars, NSA",14-10-0063-01,post
+2026-04-01,avg_hourly_wage_lfs,37.77,"current dollars, NSA",14-10-0063-01,post
+2026-05-01,avg_hourly_wage_lfs,37.24,"current dollars, NSA",14-10-0063-01,post
+2026-06-01,avg_hourly_wage_lfs,37.2,"current dollars, NSA",14-10-0063-01,post
+2026-07-01,avg_hourly_wage_lfs,37.17,"current dollars, NSA",14-10-0063-01,post
+2026-08-01,avg_hourly_wage_lfs,37.02,"current dollars, NSA",14-10-0063-01,post
+2026-09-01,avg_hourly_wage_lfs,37.64,"current dollars, NSA",14-10-0063-01,post
+2022-01-01,avg_hourly_wage_lfs_yoy,2.83,percent,14-10-0063-01,pre
+2022-02-01,avg_hourly_wage_lfs_yoy,2.74,percent,14-10-0063-01,pre
+2022-03-01,avg_hourly_wage_lfs_yoy,3.15,percent,14-10-0063-01,pre
+2022-04-01,avg_hourly_wage_lfs_yoy,3.25,percent,14-10-0063-01,pre
+2022-05-01,avg_hourly_wage_lfs_yoy,3.6,percent,14-10-0063-01,pre
+2022-06-01,avg_hourly_wage_lfs_yoy,4.92,percent,14-10-0063-01,pre
+2022-07-01,avg_hourly_wage_lfs_yoy,4.28,percent,14-10-0063-01,pre
+2022-08-01,avg_hourly_wage_lfs_yoy,4.86,percent,14-10-0063-01,pre
+2022-09-01,avg_hourly_wage_lfs_yoy,4.89,percent,14-10-0063-01,pre
+2022-10-01,avg_hourly_wage_lfs_yoy,5.34,percent,14-10-0063-01,pre
+2022-11-01,avg_hourly_wage_lfs_yoy,5.72,percent,14-10-0063-01,pre
+2022-12-01,avg_hourly_wage_lfs_yoy,4.74,percent,14-10-0063-01,pre
+2023-01-01,avg_hourly_wage_lfs_yoy,4.46,percent,14-10-0063-01,pre
+2023-02-01,avg_hourly_wage_lfs_yoy,5.37,percent,14-10-0063-01,pre
+2023-03-01,avg_hourly_wage_lfs_yoy,5.34,percent,14-10-0063-01,pre
+2023-04-01,avg_hourly_wage_lfs_yoy,5.14,percent,14-10-0063-01,pre
+2023-05-01,avg_hourly_wage_lfs_yoy,5.09,percent,14-10-0063-01,pre
+2023-06-01,avg_hourly_wage_lfs_yoy,4.18,percent,14-10-0063-01,pre
+2023-07-01,avg_hourly_wage_lfs_yoy,5.02,percent,14-10-0063-01,pre
+2023-08-01,avg_hourly_wage_lfs_yoy,4.92,percent,14-10-0063-01,pre
+2023-09-01,avg_hourly_wage_lfs_yoy,5.06,percent,14-10-0063-01,pre
+2023-10-01,avg_hourly_wage_lfs_yoy,4.83,percent,14-10-0063-01,pre
+2023-11-01,avg_hourly_wage_lfs_yoy,4.8,percent,14-10-0063-01,pre
+2023-12-01,avg_hourly_wage_lfs_yoy,5.45,percent,14-10-0063-01,pre
+2024-01-01,avg_hourly_wage_lfs_yoy,5.24,percent,14-10-0063-01,pre
+2024-02-01,avg_hourly_wage_lfs_yoy,4.97,percent,14-10-0063-01,pre
+2024-03-01,avg_hourly_wage_lfs_yoy,5.07,percent,14-10-0063-01,pre
+2024-04-01,avg_hourly_wage_lfs_yoy,4.67,percent,14-10-0063-01,pre
+2024-05-01,avg_hourly_wage_lfs_yoy,5.05,percent,14-10-0063-01,pre
+2024-06-01,avg_hourly_wage_lfs_yoy,5.37,percent,14-10-0063-01,pre
+2024-07-01,avg_hourly_wage_lfs_yoy,5.23,percent,14-10-0063-01,pre
+2024-08-01,avg_hourly_wage_lfs_yoy,5.04,percent,14-10-0063-01,pre
+2024-09-01,avg_hourly_wage_lfs_yoy,4.64,percent,14-10-0063-01,pre
+2024-10-01,avg_hourly_wage_lfs_yoy,4.96,percent,14-10-0063-01,pre
+2024-11-01,avg_hourly_wage_lfs_yoy,4.2,percent,14-10-0063-01,pre
+2024-12-01,avg_hourly_wage_lfs_yoy,3.98,percent,14-10-0063-01,pre
+2025-01-01,avg_hourly_wage_lfs_yoy,3.54,percent,14-10-0063-01,pre
+2025-02-01,avg_hourly_wage_lfs_yoy,3.79,percent,14-10-0063-01,pre
+2025-03-01,avg_hourly_wage_lfs_yoy,3.56,percent,14-10-0063-01,transition
+2025-04-01,avg_hourly_wage_lfs_yoy,3.44,percent,14-10-0063-01,post
+2025-05-01,avg_hourly_wage_lfs_yoy,3.43,percent,14-10-0063-01,post
+2025-06-01,avg_hourly_wage_lfs_yoy,3.15,percent,14-10-0063-01,post
+2025-07-01,avg_hourly_wage_lfs_yoy,3.34,percent,14-10-0063-01,post
+2025-08-01,avg_hourly_wage_lfs_yoy,3.18,percent,14-10-0063-01,post
+2025-09-01,avg_hourly_wage_lfs_yoy,3.29,percent,14-10-0063-01,post
+2025-10-01,avg_hourly_wage_lfs_yoy,3.55,percent,14-10-0063-01,post
+2025-11-01,avg_hourly_wage_lfs_yoy,3.55,percent,14-10-0063-01,post
+2025-12-01,avg_hourly_wage_lfs_yoy,3.43,percent,14-10-0063-01,post
+2026-01-01,avg_hourly_wage_lfs_yoy,3.28,percent,14-10-0063-01,post
+2026-02-01,avg_hourly_wage_lfs_yoy,3.93,percent,14-10-0063-01,post
+2026-03-01,avg_hourly_wage_lfs_yoy,4.66,percent,14-10-0063-01,post
+2026-04-01,avg_hourly_wage_lfs_yoy,4.54,percent,14-10-0063-01,post
+2026-05-01,avg_hourly_wage_lfs_yoy,3.04,percent,14-10-0063-01,post
+2026-06-01,avg_hourly_wage_lfs_yoy,3.3,percent,14-10-0063-01,post
+2026-07-01,avg_hourly_wage_lfs_yoy,2.79,percent,14-10-0063-01,post
+2026-08-01,avg_hourly_wage_lfs_yoy,1.96,percent,14-10-0063-01,post
+2026-09-01,avg_hourly_wage_lfs_yoy,2.34,percent,14-10-0063-01,post
+2022-01-01,real_avg_hourly_wage_lfs_yoy,-2.2,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-02-01,real_avg_hourly_wage_lfs_yoy,-2.79,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-03-01,real_avg_hourly_wage_lfs_yoy,-3.29,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-04-01,real_avg_hourly_wage_lfs_yoy,-3.3,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-05-01,real_avg_hourly_wage_lfs_yoy,-3.83,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-06-01,real_avg_hourly_wage_lfs_yoy,-2.98,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-07-01,real_avg_hourly_wage_lfs_yoy,-3.07,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-08-01,real_avg_hourly_wage_lfs_yoy,-2.01,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-09-01,real_avg_hourly_wage_lfs_yoy,-1.84,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-10-01,real_avg_hourly_wage_lfs_yoy,-1.44,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-11-01,real_avg_hourly_wage_lfs_yoy,-1.01,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2022-12-01,real_avg_hourly_wage_lfs_yoy,-1.48,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-01-01,real_avg_hourly_wage_lfs_yoy,-1.38,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-02-01,real_avg_hourly_wage_lfs_yoy,0.12,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-03-01,real_avg_hourly_wage_lfs_yoy,1.0,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-04-01,real_avg_hourly_wage_lfs_yoy,0.7,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-05-01,real_avg_hourly_wage_lfs_yoy,1.67,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-06-01,real_avg_hourly_wage_lfs_yoy,1.33,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-07-01,real_avg_hourly_wage_lfs_yoy,1.7,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-08-01,real_avg_hourly_wage_lfs_yoy,0.88,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-09-01,real_avg_hourly_wage_lfs_yoy,1.22,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-10-01,real_avg_hourly_wage_lfs_yoy,1.65,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-11-01,real_avg_hourly_wage_lfs_yoy,1.63,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2023-12-01,real_avg_hourly_wage_lfs_yoy,1.98,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-01-01,real_avg_hourly_wage_lfs_yoy,2.31,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-02-01,real_avg_hourly_wage_lfs_yoy,2.13,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-03-01,real_avg_hourly_wage_lfs_yoy,2.11,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-04-01,real_avg_hourly_wage_lfs_yoy,1.94,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-05-01,real_avg_hourly_wage_lfs_yoy,2.12,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-06-01,real_avg_hourly_wage_lfs_yoy,2.63,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-07-01,real_avg_hourly_wage_lfs_yoy,2.64,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-08-01,real_avg_hourly_wage_lfs_yoy,3.03,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-09-01,real_avg_hourly_wage_lfs_yoy,2.95,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-10-01,real_avg_hourly_wage_lfs_yoy,2.88,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-11-01,real_avg_hourly_wage_lfs_yoy,2.27,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2024-12-01,real_avg_hourly_wage_lfs_yoy,2.11,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2025-01-01,real_avg_hourly_wage_lfs_yoy,1.61,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2025-02-01,real_avg_hourly_wage_lfs_yoy,1.12,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),pre
+2025-03-01,real_avg_hourly_wage_lfs_yoy,1.22,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),transition
+2025-04-01,real_avg_hourly_wage_lfs_yoy,1.66,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-05-01,real_avg_hourly_wage_lfs_yoy,1.67,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-06-01,real_avg_hourly_wage_lfs_yoy,1.27,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-07-01,real_avg_hourly_wage_lfs_yoy,1.59,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-08-01,real_avg_hourly_wage_lfs_yoy,1.3,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-09-01,real_avg_hourly_wage_lfs_yoy,0.91,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-10-01,real_avg_hourly_wage_lfs_yoy,1.36,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-11-01,real_avg_hourly_wage_lfs_yoy,1.3,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2025-12-01,real_avg_hourly_wage_lfs_yoy,1.05,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-01-01,real_avg_hourly_wage_lfs_yoy,0.96,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-02-01,real_avg_hourly_wage_lfs_yoy,2.11,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-03-01,real_avg_hourly_wage_lfs_yoy,2.22,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-04-01,real_avg_hourly_wage_lfs_yoy,1.68,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-05-01,real_avg_hourly_wage_lfs_yoy,-0.18,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-06-01,real_avg_hourly_wage_lfs_yoy,0.49,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-07-01,real_avg_hourly_wage_lfs_yoy,-0.23,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2026-08-01,real_avg_hourly_wage_lfs_yoy,-1.05,percent (nominal y/y deflated by CPI all-items y/y),14-10-0063-01 / 18-10-0004-01 (derived),post
+2022-01-01,avg_weekly_earnings_seph,1151.01,"current dollars, SA",14-10-0223-01,pre
+2022-02-01,avg_weekly_earnings_seph,1159.84,"current dollars, SA",14-10-0223-01,pre
+2022-03-01,avg_weekly_earnings_seph,1168.29,"current dollars, SA",14-10-0223-01,pre
+2022-04-01,avg_weekly_earnings_seph,1160.49,"current dollars, SA",14-10-0223-01,pre
+2022-05-01,avg_weekly_earnings_seph,1159.93,"current dollars, SA",14-10-0223-01,pre
+2022-06-01,avg_weekly_earnings_seph,1162.39,"current dollars, SA",14-10-0223-01,pre
+2022-07-01,avg_weekly_earnings_seph,1161.84,"current dollars, SA",14-10-0223-01,pre
+2022-08-01,avg_weekly_earnings_seph,1165.97,"current dollars, SA",14-10-0223-01,pre
+2022-09-01,avg_weekly_earnings_seph,1169.01,"current dollars, SA",14-10-0223-01,pre
+2022-10-01,avg_weekly_earnings_seph,1172.4,"current dollars, SA",14-10-0223-01,pre
+2022-11-01,avg_weekly_earnings_seph,1176.99,"current dollars, SA",14-10-0223-01,pre
+2022-12-01,avg_weekly_earnings_seph,1173.83,"current dollars, SA",14-10-0223-01,pre
+2023-01-01,avg_weekly_earnings_seph,1182.47,"current dollars, SA",14-10-0223-01,pre
+2023-02-01,avg_weekly_earnings_seph,1180.47,"current dollars, SA",14-10-0223-01,pre
+2023-03-01,avg_weekly_earnings_seph,1189.47,"current dollars, SA",14-10-0223-01,pre
+2023-04-01,avg_weekly_earnings_seph,1197.61,"current dollars, SA",14-10-0223-01,pre
+2023-05-01,avg_weekly_earnings_seph,1203.01,"current dollars, SA",14-10-0223-01,pre
+2023-06-01,avg_weekly_earnings_seph,1206.25,"current dollars, SA",14-10-0223-01,pre
+2023-07-01,avg_weekly_earnings_seph,1211.39,"current dollars, SA",14-10-0223-01,pre
+2023-08-01,avg_weekly_earnings_seph,1211.81,"current dollars, SA",14-10-0223-01,pre
+2023-09-01,avg_weekly_earnings_seph,1214.71,"current dollars, SA",14-10-0223-01,pre
+2023-10-01,avg_weekly_earnings_seph,1218.02,"current dollars, SA",14-10-0223-01,pre
+2023-11-01,avg_weekly_earnings_seph,1222.57,"current dollars, SA",14-10-0223-01,pre
+2023-12-01,avg_weekly_earnings_seph,1219.55,"current dollars, SA",14-10-0223-01,pre
+2024-01-01,avg_weekly_earnings_seph,1225.25,"current dollars, SA",14-10-0223-01,pre
+2024-02-01,avg_weekly_earnings_seph,1231.12,"current dollars, SA",14-10-0223-01,pre
+2024-03-01,avg_weekly_earnings_seph,1239.28,"current dollars, SA",14-10-0223-01,pre
+2024-04-01,avg_weekly_earnings_seph,1242.86,"current dollars, SA",14-10-0223-01,pre
+2024-05-01,avg_weekly_earnings_seph,1254.01,"current dollars, SA",14-10-0223-01,pre
+2024-06-01,avg_weekly_earnings_seph,1255.72,"current dollars, SA",14-10-0223-01,pre
+2024-07-01,avg_weekly_earnings_seph,1264.48,"current dollars, SA",14-10-0223-01,pre
+2024-08-01,avg_weekly_earnings_seph,1273.0,"current dollars, SA",14-10-0223-01,pre
+2024-09-01,avg_weekly_earnings_seph,1275.17,"current dollars, SA",14-10-0223-01,pre
+2024-10-01,avg_weekly_earnings_seph,1283.79,"current dollars, SA",14-10-0223-01,pre
+2024-11-01,avg_weekly_earnings_seph,1283.9,"current dollars, SA",14-10-0223-01,pre
+2024-12-01,avg_weekly_earnings_seph,1291.58,"current dollars, SA",14-10-0223-01,pre
+2025-01-01,avg_weekly_earnings_seph,1294.3,"current dollars, SA",14-10-0223-01,pre
+2025-02-01,avg_weekly_earnings_seph,1294.74,"current dollars, SA",14-10-0223-01,pre
+2025-03-01,avg_weekly_earnings_seph,1288.12,"current dollars, SA",14-10-0223-01,transition
+2025-04-01,avg_weekly_earnings_seph,1295.9,"current dollars, SA",14-10-0223-01,post
+2025-05-01,avg_weekly_earnings_seph,1293.19,"current dollars, SA",14-10-0223-01,post
+2025-06-01,avg_weekly_earnings_seph,1299.68,"current dollars, SA",14-10-0223-01,post
+2025-07-01,avg_weekly_earnings_seph,1305.63,"current dollars, SA",14-10-0223-01,post
+2025-08-01,avg_weekly_earnings_seph,1306.43,"current dollars, SA",14-10-0223-01,post
+2025-09-01,avg_weekly_earnings_seph,1314.65,"current dollars, SA",14-10-0223-01,post
+2025-10-01,avg_weekly_earnings_seph,1309.49,"current dollars, SA",14-10-0223-01,post
+2025-11-01,avg_weekly_earnings_seph,1315.19,"current dollars, SA",14-10-0223-01,post
+2025-12-01,avg_weekly_earnings_seph,1316.48,"current dollars, SA",14-10-0223-01,post
+2026-01-01,avg_weekly_earnings_seph,1319.29,"current dollars, SA",14-10-0223-01,post
+2026-02-01,avg_weekly_earnings_seph,1331.61,"current dollars, SA",14-10-0223-01,post
+2026-03-01,avg_weekly_earnings_seph,1332.83,"current dollars, SA",14-10-0223-01,post
+2026-04-01,avg_weekly_earnings_seph,1343.52,"current dollars, SA",14-10-0223-01,post
+2026-05-01,avg_weekly_earnings_seph,1336.3,"current dollars, SA",14-10-0223-01,post
+2026-06-01,avg_weekly_earnings_seph,1343.77,"current dollars, SA",14-10-0223-01,post
+2026-07-01,avg_weekly_earnings_seph,1347.14,"current dollars, SA",14-10-0223-01,post
+2022-01-01,avg_weekly_earnings_seph_yoy,1.93,percent,14-10-0223-01,pre
+2022-02-01,avg_weekly_earnings_seph_yoy,2.23,percent,14-10-0223-01,pre
+2022-03-01,avg_weekly_earnings_seph_yoy,4.36,percent,14-10-0223-01,pre
+2022-04-01,avg_weekly_earnings_seph_yoy,3.3,percent,14-10-0223-01,pre
+2022-05-01,avg_weekly_earnings_seph_yoy,2.62,percent,14-10-0223-01,pre
+2022-06-01,avg_weekly_earnings_seph_yoy,3.58,percent,14-10-0223-01,pre
+2022-07-01,avg_weekly_earnings_seph_yoy,3.0,percent,14-10-0223-01,pre
+2022-08-01,avg_weekly_earnings_seph_yoy,3.06,percent,14-10-0223-01,pre
+2022-09-01,avg_weekly_earnings_seph_yoy,3.06,percent,14-10-0223-01,pre
+2022-10-01,avg_weekly_earnings_seph_yoy,3.45,percent,14-10-0223-01,pre
+2022-11-01,avg_weekly_earnings_seph_yoy,3.91,percent,14-10-0223-01,pre
+2022-12-01,avg_weekly_earnings_seph_yoy,2.83,percent,14-10-0223-01,pre
+2023-01-01,avg_weekly_earnings_seph_yoy,2.73,percent,14-10-0223-01,pre
+2023-02-01,avg_weekly_earnings_seph_yoy,1.78,percent,14-10-0223-01,pre
+2023-03-01,avg_weekly_earnings_seph_yoy,1.81,percent,14-10-0223-01,pre
+2023-04-01,avg_weekly_earnings_seph_yoy,3.2,percent,14-10-0223-01,pre
+2023-05-01,avg_weekly_earnings_seph_yoy,3.71,percent,14-10-0223-01,pre
+2023-06-01,avg_weekly_earnings_seph_yoy,3.77,percent,14-10-0223-01,pre
+2023-07-01,avg_weekly_earnings_seph_yoy,4.26,percent,14-10-0223-01,pre
+2023-08-01,avg_weekly_earnings_seph_yoy,3.93,percent,14-10-0223-01,pre
+2023-09-01,avg_weekly_earnings_seph_yoy,3.91,percent,14-10-0223-01,pre
+2023-10-01,avg_weekly_earnings_seph_yoy,3.89,percent,14-10-0223-01,pre
+2023-11-01,avg_weekly_earnings_seph_yoy,3.87,percent,14-10-0223-01,pre
+2023-12-01,avg_weekly_earnings_seph_yoy,3.89,percent,14-10-0223-01,pre
+2024-01-01,avg_weekly_earnings_seph_yoy,3.62,percent,14-10-0223-01,pre
+2024-02-01,avg_weekly_earnings_seph_yoy,4.29,percent,14-10-0223-01,pre
+2024-03-01,avg_weekly_earnings_seph_yoy,4.19,percent,14-10-0223-01,pre
+2024-04-01,avg_weekly_earnings_seph_yoy,3.78,percent,14-10-0223-01,pre
+2024-05-01,avg_weekly_earnings_seph_yoy,4.24,percent,14-10-0223-01,pre
+2024-06-01,avg_weekly_earnings_seph_yoy,4.1,percent,14-10-0223-01,pre
+2024-07-01,avg_weekly_earnings_seph_yoy,4.38,percent,14-10-0223-01,pre
+2024-08-01,avg_weekly_earnings_seph_yoy,5.05,percent,14-10-0223-01,pre
+2024-09-01,avg_weekly_earnings_seph_yoy,4.98,percent,14-10-0223-01,pre
+2024-10-01,avg_weekly_earnings_seph_yoy,5.4,percent,14-10-0223-01,pre
+2024-11-01,avg_weekly_earnings_seph_yoy,5.02,percent,14-10-0223-01,pre
+2024-12-01,avg_weekly_earnings_seph_yoy,5.91,percent,14-10-0223-01,pre
+2025-01-01,avg_weekly_earnings_seph_yoy,5.64,percent,14-10-0223-01,pre
+2025-02-01,avg_weekly_earnings_seph_yoy,5.17,percent,14-10-0223-01,pre
+2025-03-01,avg_weekly_earnings_seph_yoy,3.94,percent,14-10-0223-01,transition
+2025-04-01,avg_weekly_earnings_seph_yoy,4.27,percent,14-10-0223-01,post
+2025-05-01,avg_weekly_earnings_seph_yoy,3.12,percent,14-10-0223-01,post
+2025-06-01,avg_weekly_earnings_seph_yoy,3.5,percent,14-10-0223-01,post
+2025-07-01,avg_weekly_earnings_seph_yoy,3.25,percent,14-10-0223-01,post
+2025-08-01,avg_weekly_earnings_seph_yoy,2.63,percent,14-10-0223-01,post
+2025-09-01,avg_weekly_earnings_seph_yoy,3.1,percent,14-10-0223-01,post
+2025-10-01,avg_weekly_earnings_seph_yoy,2.0,percent,14-10-0223-01,post
+2025-11-01,avg_weekly_earnings_seph_yoy,2.44,percent,14-10-0223-01,post
+2025-12-01,avg_weekly_earnings_seph_yoy,1.93,percent,14-10-0223-01,post
+2026-01-01,avg_weekly_earnings_seph_yoy,1.93,percent,14-10-0223-01,post
+2026-02-01,avg_weekly_earnings_seph_yoy,2.85,percent,14-10-0223-01,post
+2026-03-01,avg_weekly_earnings_seph_yoy,3.47,percent,14-10-0223-01,post
+2026-04-01,avg_weekly_earnings_seph_yoy,3.67,percent,14-10-0223-01,post
+2026-05-01,avg_weekly_earnings_seph_yoy,3.33,percent,14-10-0223-01,post
+2026-06-01,avg_weekly_earnings_seph_yoy,3.39,percent,14-10-0223-01,post
+2026-07-01,avg_weekly_earnings_seph_yoy,3.18,percent,14-10-0223-01,post
+2022-01-01,real_avg_weekly_earnings_seph_yoy,-3.05,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-02-01,real_avg_weekly_earnings_seph_yoy,-3.27,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-03-01,real_avg_weekly_earnings_seph_yoy,-2.16,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-04-01,real_avg_weekly_earnings_seph_yoy,-3.25,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-05-01,real_avg_weekly_earnings_seph_yoy,-4.74,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-06-01,real_avg_weekly_earnings_seph_yoy,-4.21,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-07-01,real_avg_weekly_earnings_seph_yoy,-4.26,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-08-01,real_avg_weekly_earnings_seph_yoy,-3.7,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-09-01,real_avg_weekly_earnings_seph_yoy,-3.56,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-10-01,real_avg_weekly_earnings_seph_yoy,-3.21,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-11-01,real_avg_weekly_earnings_seph_yoy,-2.7,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2022-12-01,real_avg_weekly_earnings_seph_yoy,-3.28,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-01-01,real_avg_weekly_earnings_seph_yoy,-3.01,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-02-01,real_avg_weekly_earnings_seph_yoy,-3.29,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-03-01,real_avg_weekly_earnings_seph_yoy,-2.38,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-04-01,real_avg_weekly_earnings_seph_yoy,-1.16,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-05-01,real_avg_weekly_earnings_seph_yoy,0.34,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-06-01,real_avg_weekly_earnings_seph_yoy,0.93,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-07-01,real_avg_weekly_earnings_seph_yoy,0.97,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-08-01,real_avg_weekly_earnings_seph_yoy,-0.06,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-09-01,real_avg_weekly_earnings_seph_yoy,0.11,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-10-01,real_avg_weekly_earnings_seph_yoy,0.75,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-11-01,real_avg_weekly_earnings_seph_yoy,0.73,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2023-12-01,real_avg_weekly_earnings_seph_yoy,0.48,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-01-01,real_avg_weekly_earnings_seph_yoy,0.74,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-02-01,real_avg_weekly_earnings_seph_yoy,1.47,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-03-01,real_avg_weekly_earnings_seph_yoy,1.25,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-04-01,real_avg_weekly_earnings_seph_yoy,1.06,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-05-01,real_avg_weekly_earnings_seph_yoy,1.33,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-06-01,real_avg_weekly_earnings_seph_yoy,1.39,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-07-01,real_avg_weekly_earnings_seph_yoy,1.81,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-08-01,real_avg_weekly_earnings_seph_yoy,3.04,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-09-01,real_avg_weekly_earnings_seph_yoy,3.28,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-10-01,real_avg_weekly_earnings_seph_yoy,3.32,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-11-01,real_avg_weekly_earnings_seph_yoy,3.07,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2024-12-01,real_avg_weekly_earnings_seph_yoy,4.0,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2025-01-01,real_avg_weekly_earnings_seph_yoy,3.67,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2025-02-01,real_avg_weekly_earnings_seph_yoy,2.46,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),pre
+2025-03-01,real_avg_weekly_earnings_seph_yoy,1.59,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),transition
+2025-04-01,real_avg_weekly_earnings_seph_yoy,2.48,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-05-01,real_avg_weekly_earnings_seph_yoy,1.37,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-06-01,real_avg_weekly_earnings_seph_yoy,1.61,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-07-01,real_avg_weekly_earnings_seph_yoy,1.5,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-08-01,real_avg_weekly_earnings_seph_yoy,0.76,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-09-01,real_avg_weekly_earnings_seph_yoy,0.72,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-10-01,real_avg_weekly_earnings_seph_yoy,-0.16,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-11-01,real_avg_weekly_earnings_seph_yoy,0.21,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2025-12-01,real_avg_weekly_earnings_seph_yoy,-0.42,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-01-01,real_avg_weekly_earnings_seph_yoy,-0.35,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-02-01,real_avg_weekly_earnings_seph_yoy,1.05,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-03-01,real_avg_weekly_earnings_seph_yoy,1.06,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-04-01,real_avg_weekly_earnings_seph_yoy,0.84,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-05-01,real_avg_weekly_earnings_seph_yoy,0.1,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-06-01,real_avg_weekly_earnings_seph_yoy,0.58,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post
+2026-07-01,real_avg_weekly_earnings_seph_yoy,0.14,percent (nominal y/y deflated by CPI all-items y/y),14-10-0223-01 / 18-10-0004-01 (derived),post

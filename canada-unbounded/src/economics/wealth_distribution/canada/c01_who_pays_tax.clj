@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c1-who-pays-tax
+(ns economics.wealth-distribution.canada.c01-who-pays-tax
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: Who Pays Tax?"
@@ -315,7 +315,7 @@
 ;; Counting capital gains as income lowers the top 1%'s average income tax rate from 39% to 31%.
 ;; The wealthiest Canadians' unrealized growth doesn't show up in any tax statistic.
 
-;; In the next part, [Wealth Tax](c2_wealth_tax.html), we look at what a Canadian wealth tax would do, and who it would touch.
+;; In the next part, [Wealth Tax](c02_wealth_tax.html), we look at what a Canadian wealth tax would do, and who it would touch.
 
 ;; [^1]: Department of Finance Canada, [Annual Financial Report of the Government of Canada, Fiscal Year 2024–2025](https://www.canada.ca/en/department-finance/services/publications/annual-financial-report/2025.html), Table 4. The Canada Pension Plan is excluded from the federal reporting entity; CPP contributions were \$81.6B in 2023–24 ([CPP Annual Report 2024](https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html)).
 ;; [^2]: OECD, [Revenue Statistics 2025: Canada country note](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/revenue-statistics-2025-country-notes_3708be73/canada_3aa043fb/795aaca9-en.pdf). All levels of government, 2023.

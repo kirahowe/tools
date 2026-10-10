@@ -1,0 +1,7 @@
+list_year,list_date,scope,forbes_category,n_billionaires,n_total,net_worth_usd_bn,total_net_worth_usd_bn,share_of_net_worth_pct
+2026,2026-03-10,citizens,self_made,66,82,381.7,457.2,83.5
+2026,2026-03-10,citizens,inherited_forbes_selfmade_false,16,82,75.5,457.2,16.5
+2026,2026-03-10,citizens_resident_in_canada,self_made,41,50,167.0,201.6,82.8
+2026,2026-03-10,citizens_resident_in_canada,inherited_forbes_selfmade_false,9,50,34.6,201.6,17.2
+2026,2026-03-10,citizens_excl_changpeng_zhao,self_made,65,81,271.7,347.2,78.3
+2026,2026-03-10,citizens_excl_changpeng_zhao,inherited_forbes_selfmade_false,16,81,75.5,347.2,21.7

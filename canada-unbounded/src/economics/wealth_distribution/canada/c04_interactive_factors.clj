@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c4-interactive-factors
+(ns economics.wealth-distribution.canada.c04-interactive-factors
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn :kind/graphviz}}
    :clay {:title  "Unbounded North: Interactive Factors"
@@ -41,8 +41,8 @@
 ;; single-payer health insurance, the Canada Child Benefit, public pensions (CPP/QPP and OAS/GIS),
 ;; and, more recently, a national childcare and dental plan.
 ;; These cut the cost of being alive for ordinary families, which is why Canada still has much
-;; higher intergenerational mobility than the United States (see [What Makes Canada Different](c8_canadian_differences.html)).
-;; They are funded mostly by taxes on work, which is the problem [Who Pays Tax](c1_who_pays_tax.html) describes.
+;; higher intergenerational mobility than the United States (see [What Makes Canada Different](c11_canadian_differences.html)).
+;; They are funded mostly by taxes on work, which is the problem [Who Pays Tax](c01_who_pays_tax.html) describes.
 
 ;; ::: {#fig-iff-canada}
 
@@ -66,14 +66,14 @@
 ;; Labour income pays for consumer spending, which justifies productive capacity, which pays labour income.
 ;; Innovation produces knowledge, which raises productive capacity, which pays for more innovation.
 ;; Business investment feeds this loop.
-;; [The Investment Question](c7_investment_question.html) shows that Canada's investment problem
+;; [The Investment Question](c09_investment_question.html) shows that Canada's investment problem
 ;; sits in the market-power box, not the tax box.
 
 ;; **Cross links: where the loops collide.**
 ;; Housing is where the red loop hits households hardest.
 ;; When asset owners bid up homes, everyone else takes on more household debt to keep up.
 ;; That debt crowds out spending and squeezes living standards
-;; (see [Labour Hours](c3_labour_hours.html)).
+;; (see [Labour Hours](c03_labour_hours.html)).
 ;; Canadian households owe about 180% of their disposable income, nearly twice the American ratio, mostly in mortgages.
 
 ;; **Blue: the counterweight.**
@@ -112,6 +112,6 @@
 ;; and an inheritance loop left untaxed since 1972.
 ;; Canada's public services are a genuine counterweight, but they are funded by the people least able to absorb more tax.
 
-;; In the next part, [Wealth Concentration](c5_wealth_concentration.html), we measure how concentrated Canadian wealth has become.
+;; In the next part, [Wealth Concentration](c05_wealth_concentration.html), we measure how concentrated Canadian wealth has become.
 
 ;; [^1]: Timothy Pratley, [Unbounded: Interactive Factors](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u4_interactive_factors.html), ClojureCivitas, 2026.

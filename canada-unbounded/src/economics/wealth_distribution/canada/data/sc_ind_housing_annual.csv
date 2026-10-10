@@ -1,0 +1,31 @@
+date,indicator,value,unit,source_table,regime,quarters_in_sum
+2015-01-01,housing_starts_annual_total,195535,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2016-01-01,housing_starts_annual_total,197915,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2017-01-01,housing_starts_annual_total,219763,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2018-01-01,housing_starts_annual_total,212843,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2019-01-01,housing_starts_annual_total,208685,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2020-01-01,housing_starts_annual_total,217880,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2021-01-01,housing_starts_annual_total,271198,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2022-01-01,housing_starts_annual_total,261849,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2023-01-01,housing_starts_annual_total,240267,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2024-01-01,housing_starts_annual_total,245367,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),pre,4
+2025-01-01,housing_starts_annual_total,259028,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),post,4
+2026-01-01,housing_starts_annual_total,117999,"units (all areas, actual, NSA)",34-10-0135-01 (sum of quarters),post,2
+2022-01-01,housing_starts_quarterly_total,48357,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2022-04-01,housing_starts_quarterly_total,72314,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2022-07-01,housing_starts_quarterly_total,73548,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2022-10-01,housing_starts_quarterly_total,67630,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2023-01-01,housing_starts_quarterly_total,46851,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2023-04-01,housing_starts_quarterly_total,64042,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2023-07-01,housing_starts_quarterly_total,66678,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2023-10-01,housing_starts_quarterly_total,62696,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2024-01-01,housing_starts_quarterly_total,52859,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2024-04-01,housing_starts_quarterly_total,65739,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2024-07-01,housing_starts_quarterly_total,62135,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2024-10-01,housing_starts_quarterly_total,64634,"units (all areas, actual, NSA)",34-10-0135-01,pre,1
+2025-01-01,housing_starts_quarterly_total,47309,"units (all areas, actual, NSA)",34-10-0135-01,transition,1
+2025-04-01,housing_starts_quarterly_total,74657,"units (all areas, actual, NSA)",34-10-0135-01,post,1
+2025-07-01,housing_starts_quarterly_total,70446,"units (all areas, actual, NSA)",34-10-0135-01,post,1
+2025-10-01,housing_starts_quarterly_total,66616,"units (all areas, actual, NSA)",34-10-0135-01,post,1
+2026-01-01,housing_starts_quarterly_total,51211,"units (all areas, actual, NSA)",34-10-0135-01,post,1
+2026-04-01,housing_starts_quarterly_total,66788,"units (all areas, actual, NSA)",34-10-0135-01,post,1

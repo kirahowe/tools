@@ -14,17 +14,21 @@ data processing, rendered with [Quarto](https://quarto.org/).
 
 | # | Notebook | Topic |
 | --- | --- | --- |
-| 0 | `c0_introduction.clj` | Introduction and central claims |
-| 1 | `c1_who_pays_tax.clj` | Federal revenue, capital gains, tax preferences, no inheritance tax |
-| 2 | `c2_wealth_tax.clj` | PBO-costed proposals, who would pay, debt charges, objections |
-| 3 | `c3_labour_hours.clj` | House prices vs income, homeownership, debt, living wage, productivity and pay |
-| 4 | `c4_interactive_factors.clj` | Causal loop diagram of the Canadian system |
-| 5 | `c5_wealth_concentration.clj` | The full distribution (SFS + PBO + Forbes), quintile trends, long run |
-| 6 | `c6_economic_growth.clj` | Circulation, participation, "the Canadian disease" |
-| 7 | `c7_investment_question.clj` | Would a wealth tax kill investment? Canada's tax-cut experiment and the evidence |
-| 8 | `c8_canadian_differences.clj` | Mobility, public programs, provinces, Indigenous gaps, concentration |
-| 9 | `c9_how_to_get_a_wealth_tax.clj` | Canada's parliamentary path to a tax |
-| 10 | `c10_references.clj` | Sources and caveats |
+| 0 | `c00_introduction.clj` | Introduction and central claims |
+| 1 | `c01_who_pays_tax.clj` | Federal revenue, capital gains, tax preferences, no inheritance tax |
+| 2 | `c02_wealth_tax.clj` | PBO-costed proposals, who would pay, debt charges, objections |
+| 3 | `c03_labour_hours.clj` | House prices vs income, homeownership, debt, living wage, productivity and pay |
+| 4 | `c04_interactive_factors.clj` | Causal loop diagram of the Canadian system |
+| 5 | `c05_wealth_concentration.clj` | The full distribution (SFS + PBO + Forbes), quintile trends, long run |
+| 6 | `c06_productivity.clj` | Productivity, competition, corporate churn (animated top-10 companies, Canada vs US) |
+| 7 | `c07_old_money.clj` | Colonial land grants, family holding companies, heir control, dual-class shares, political dynasties |
+| 8 | `c08_economic_growth.clj` | Circulation, participation, "the Canadian disease" |
+| 9 | `c09_investment_question.clj` | Would a wealth tax kill investment? Canada's tax-cut experiment and the evidence |
+| 10 | `c10_land.clj` | Land as wealth, Western Canada's land-tax history, vacancy taxes, land value tax |
+| 11 | `c11_canadian_differences.clj` | Mobility, public programs, provinces, Indigenous gaps, concentration |
+| 12 | `c12_scorecard.clj` | The Carney government's measures, targets vs actuals, early indicators |
+| 13 | `c13_how_to_get_a_wealth_tax.clj` | Canada's parliamentary path to a tax |
+| 14 | `c14_references.clj` | Sources and caveats |
 
 Notebooks live in `src/economics/wealth_distribution/canada/`, mirroring the layout of the
 original series in the [ClojureCivitas repository](https://github.com/ClojureCivitas/clojurecivitas.github.io)

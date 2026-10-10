@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c8-canadian-differences
+(ns economics.wealth-distribution.canada.c11-canadian-differences
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: What Makes Canada Different"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "The features of Canada's economy and society that shape its version of the wealth concentration problem."
                    :abstract    "Canada is more equal and more mobile than the United States, thanks largely to public programs. But it has its own fault lines: housing, provinces, Indigenous communities, concentrated industries, and untaxed inheritance."
-                   :date        "2026-10-18"
+                   :date        "2026-10-21"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}}
@@ -95,7 +95,7 @@
 ;; Child poverty fell from 16.3% in 2015 to 9.4% in 2019 on the 2018-base measure, and to 4.8% in 2020 with pandemic benefits.
 ;; Since then it has climbed back, to 11.5% in 2024 on the newer 2023 base, as the cost of living outran benefits.[^6]
 ;; Not all of the 2015–2019 decline was due to the CCB, but it shows that public programs can move the numbers quickly.
-;; This is Canada's counterweight to the concentration loops in [Interactive Factors](c4_interactive_factors.html).
+;; This is Canada's counterweight to the concentration loops in [Interactive Factors](c04_interactive_factors.html).
 ;; It is funded mainly by taxes on work.
 
 ;; ## A Federation of Very Different Economies
@@ -141,7 +141,7 @@
 
 ;; The provinces matter for a wealth tax.
 ;; They can levy direct taxes, but evidence from Spain and Switzerland shows that regional wealth taxes leak to the lowest-tax region.
-;; A national tax avoids a race to the bottom (see [The Investment Question](c7_investment_question.html)).
+;; A national tax avoids a race to the bottom (see [The Investment Question](c09_investment_question.html)).
 
 ;; ## Indigenous Peoples
 
@@ -184,7 +184,7 @@
 ;; Families like the Thomsons, Westons, Irvings, McCains, Rogers, Saputos and Desmarais have controlled
 ;; major companies for generations, often through dual-class shares that let a family control a company
 ;; while owning a minority of its equity.
-;; Research on "the Canadian disease" found that heir-controlled Canadian firms underperform (see [Economic Growth](c6_economic_growth.html)).[^13]
+;; Research on "the Canadian disease" found that heir-controlled Canadian firms underperform (see [Economic Growth](c08_economic_growth.html)).[^13]
 
 ;; And there is no inheritance tax.
 ;; Canada abolished its federal estate tax in 1972 and the last provincial succession duties, Quebec's, in 1985.
@@ -223,7 +223,7 @@
 ;; About 112,000 people emigrated in 2025, roughly a quarter of one percent of the population,
 ;; and about 50,000 returned.[^14]
 ;; Statistics Canada does not publish destinations or incomes, so claims about the *rich* leaving should be treated with care.
-;; Canada already taxes accrued gains when residents leave, through the departure tax (see [Wealth Tax](c2_wealth_tax.html)).
+;; Canada already taxes accrued gains when residents leave, through the departure tax (see [Wealth Tax](c02_wealth_tax.html)).
 
 ;; ## Conclusion
 
@@ -234,7 +234,7 @@
 ;; old family fortunes and untaxed inheritance) all run in the same direction:
 ;; toward wealth that compounds for those who already have it.
 
-;; In the next part, [How to Get a Wealth Tax](c9_how_to_get_a_wealth_tax.html), we look at what it would take politically.
+;; In the next part, [Scorecard](c12_scorecard.html), we look at what the current government has done so far, and what the data show.
 
 ;; [^1]: OECD, [Income Distribution Database](https://www.oecd.org/en/data/datasets/income-and-wealth-distribution-database.html), Gini coefficient of disposable income, total population, 2023.
 ;; [^2]: Statistics Canada, [Table 11-10-0134-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013401), Gini coefficients of adjusted market, total and after-tax income.

@@ -12,28 +12,36 @@ website:
       title: "Unbounded North"
       style: docked
       contents:
-        - href: economics/wealth_distribution/canada/c0_introduction.qmd
+        - href: economics/wealth_distribution/canada/c00_introduction.qmd
           text: "Introduction"
-        - href: economics/wealth_distribution/canada/c1_who_pays_tax.qmd
+        - href: economics/wealth_distribution/canada/c01_who_pays_tax.qmd
           text: "1. Who Pays Tax?"
-        - href: economics/wealth_distribution/canada/c2_wealth_tax.qmd
+        - href: economics/wealth_distribution/canada/c02_wealth_tax.qmd
           text: "2. Wealth Tax"
-        - href: economics/wealth_distribution/canada/c3_labour_hours.qmd
+        - href: economics/wealth_distribution/canada/c03_labour_hours.qmd
           text: "3. Labour Hours"
-        - href: economics/wealth_distribution/canada/c4_interactive_factors.qmd
+        - href: economics/wealth_distribution/canada/c04_interactive_factors.qmd
           text: "4. Interactive Factors"
-        - href: economics/wealth_distribution/canada/c5_wealth_concentration.qmd
+        - href: economics/wealth_distribution/canada/c05_wealth_concentration.qmd
           text: "5. Wealth Concentration"
-        - href: economics/wealth_distribution/canada/c6_economic_growth.qmd
-          text: "6. Economic Growth"
-        - href: economics/wealth_distribution/canada/c7_investment_question.qmd
-          text: "7. The Investment Question"
-        - href: economics/wealth_distribution/canada/c8_canadian_differences.qmd
-          text: "8. What Makes Canada Different"
-        - href: economics/wealth_distribution/canada/c9_how_to_get_a_wealth_tax.qmd
-          text: "9. How to Get a Wealth Tax"
-        - href: economics/wealth_distribution/canada/c10_references.qmd
-          text: "10. References"
+        - href: economics/wealth_distribution/canada/c06_productivity.qmd
+          text: "6. Stable and Stuck"
+        - href: economics/wealth_distribution/canada/c07_old_money.qmd
+          text: "7. Old Money"
+        - href: economics/wealth_distribution/canada/c08_economic_growth.qmd
+          text: "8. Economic Growth"
+        - href: economics/wealth_distribution/canada/c09_investment_question.qmd
+          text: "9. The Investment Question"
+        - href: economics/wealth_distribution/canada/c10_land.qmd
+          text: "10. Land"
+        - href: economics/wealth_distribution/canada/c11_canadian_differences.qmd
+          text: "11. What Makes Canada Different"
+        - href: economics/wealth_distribution/canada/c12_scorecard.qmd
+          text: "12. Scorecard"
+        - href: economics/wealth_distribution/canada/c13_how_to_get_a_wealth_tax.qmd
+          text: "13. How to Get a Wealth Tax"
+        - href: economics/wealth_distribution/canada/c14_references.qmd
+          text: "14. References"
 
 format:
   html:
