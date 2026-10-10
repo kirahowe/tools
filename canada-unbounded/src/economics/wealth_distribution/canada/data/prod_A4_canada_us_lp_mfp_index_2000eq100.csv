@@ -1,0 +1,153 @@
+year,country,measure,index_2000_100,source
+1987,Canada,labour_productivity,79.47,StatCan 36-10-0208-01 business sector
+1988,Canada,labour_productivity,80.75,StatCan 36-10-0208-01 business sector
+1989,Canada,labour_productivity,81.15,StatCan 36-10-0208-01 business sector
+1990,Canada,labour_productivity,81.14,StatCan 36-10-0208-01 business sector
+1991,Canada,labour_productivity,80.98,StatCan 36-10-0208-01 business sector
+1992,Canada,labour_productivity,82.82,StatCan 36-10-0208-01 business sector
+1993,Canada,labour_productivity,84.25,StatCan 36-10-0208-01 business sector
+1994,Canada,labour_productivity,86.43,StatCan 36-10-0208-01 business sector
+1995,Canada,labour_productivity,87.35,StatCan 36-10-0208-01 business sector
+1996,Canada,labour_productivity,86.94,StatCan 36-10-0208-01 business sector
+1997,Canada,labour_productivity,89.85,StatCan 36-10-0208-01 business sector
+1998,Canada,labour_productivity,92.11,StatCan 36-10-0208-01 business sector
+1999,Canada,labour_productivity,95.72,StatCan 36-10-0208-01 business sector
+2000,Canada,labour_productivity,100.0,StatCan 36-10-0208-01 business sector
+2001,Canada,labour_productivity,101.59,StatCan 36-10-0208-01 business sector
+2002,Canada,labour_productivity,103.1,StatCan 36-10-0208-01 business sector
+2003,Canada,labour_productivity,103.51,StatCan 36-10-0208-01 business sector
+2004,Canada,labour_productivity,104.11,StatCan 36-10-0208-01 business sector
+2005,Canada,labour_productivity,106.32,StatCan 36-10-0208-01 business sector
+2006,Canada,labour_productivity,108.01,StatCan 36-10-0208-01 business sector
+2007,Canada,labour_productivity,108.28,StatCan 36-10-0208-01 business sector
+2008,Canada,labour_productivity,107.14,StatCan 36-10-0208-01 business sector
+2009,Canada,labour_productivity,106.06,StatCan 36-10-0208-01 business sector
+2010,Canada,labour_productivity,106.68,StatCan 36-10-0208-01 business sector
+2011,Canada,labour_productivity,109.13,StatCan 36-10-0208-01 business sector
+2012,Canada,labour_productivity,108.97,StatCan 36-10-0208-01 business sector
+2013,Canada,labour_productivity,111.03,StatCan 36-10-0208-01 business sector
+2014,Canada,labour_productivity,115.07,StatCan 36-10-0208-01 business sector
+2015,Canada,labour_productivity,114.79,StatCan 36-10-0208-01 business sector
+2016,Canada,labour_productivity,115.49,StatCan 36-10-0208-01 business sector
+2017,Canada,labour_productivity,117.3,StatCan 36-10-0208-01 business sector
+2018,Canada,labour_productivity,117.9,StatCan 36-10-0208-01 business sector
+2019,Canada,labour_productivity,118.31,StatCan 36-10-0208-01 business sector
+2020,Canada,labour_productivity,128.68,StatCan 36-10-0208-01 business sector
+2021,Canada,labour_productivity,123.02,StatCan 36-10-0208-01 business sector
+2022,Canada,labour_productivity,122.25,StatCan 36-10-0208-01 business sector
+2023,Canada,labour_productivity,119.69,StatCan 36-10-0208-01 business sector
+1987,Canada,multifactor_productivity,95.2,StatCan 36-10-0208-01 business sector
+1988,Canada,multifactor_productivity,95.35,StatCan 36-10-0208-01 business sector
+1989,Canada,multifactor_productivity,94.34,StatCan 36-10-0208-01 business sector
+1990,Canada,multifactor_productivity,92.78,StatCan 36-10-0208-01 business sector
+1991,Canada,multifactor_productivity,90.02,StatCan 36-10-0208-01 business sector
+1992,Canada,multifactor_productivity,90.52,StatCan 36-10-0208-01 business sector
+1993,Canada,multifactor_productivity,91.42,StatCan 36-10-0208-01 business sector
+1994,Canada,multifactor_productivity,93.72,StatCan 36-10-0208-01 business sector
+1995,Canada,multifactor_productivity,93.94,StatCan 36-10-0208-01 business sector
+1996,Canada,multifactor_productivity,93.03,StatCan 36-10-0208-01 business sector
+1997,Canada,multifactor_productivity,94.45,StatCan 36-10-0208-01 business sector
+1998,Canada,multifactor_productivity,95.18,StatCan 36-10-0208-01 business sector
+1999,Canada,multifactor_productivity,97.61,StatCan 36-10-0208-01 business sector
+2000,Canada,multifactor_productivity,100.0,StatCan 36-10-0208-01 business sector
+2001,Canada,multifactor_productivity,99.93,StatCan 36-10-0208-01 business sector
+2002,Canada,multifactor_productivity,100.99,StatCan 36-10-0208-01 business sector
+2003,Canada,multifactor_productivity,100.33,StatCan 36-10-0208-01 business sector
+2004,Canada,multifactor_productivity,100.06,StatCan 36-10-0208-01 business sector
+2005,Canada,multifactor_productivity,99.87,StatCan 36-10-0208-01 business sector
+2006,Canada,multifactor_productivity,99.24,StatCan 36-10-0208-01 business sector
+2007,Canada,multifactor_productivity,98.13,StatCan 36-10-0208-01 business sector
+2008,Canada,multifactor_productivity,95.75,StatCan 36-10-0208-01 business sector
+2009,Canada,multifactor_productivity,92.86,StatCan 36-10-0208-01 business sector
+2010,Canada,multifactor_productivity,93.79,StatCan 36-10-0208-01 business sector
+2011,Canada,multifactor_productivity,95.26,StatCan 36-10-0208-01 business sector
+2012,Canada,multifactor_productivity,94.65,StatCan 36-10-0208-01 business sector
+2013,Canada,multifactor_productivity,95.51,StatCan 36-10-0208-01 business sector
+2014,Canada,multifactor_productivity,97.27,StatCan 36-10-0208-01 business sector
+2015,Canada,multifactor_productivity,96.42,StatCan 36-10-0208-01 business sector
+2016,Canada,multifactor_productivity,96.53,StatCan 36-10-0208-01 business sector
+2017,Canada,multifactor_productivity,97.93,StatCan 36-10-0208-01 business sector
+2018,Canada,multifactor_productivity,97.95,StatCan 36-10-0208-01 business sector
+2019,Canada,multifactor_productivity,97.46,StatCan 36-10-0208-01 business sector
+2020,Canada,multifactor_productivity,98.42,StatCan 36-10-0208-01 business sector
+2021,Canada,multifactor_productivity,97.5,StatCan 36-10-0208-01 business sector
+2022,Canada,multifactor_productivity,98.09,StatCan 36-10-0208-01 business sector
+2023,Canada,multifactor_productivity,96.38,StatCan 36-10-0208-01 business sector
+1987,United States,labour_productivity,76.15,"BLS TFP major sectors, private business (PG)"
+1988,United States,labour_productivity,77.3,"BLS TFP major sectors, private business (PG)"
+1989,United States,labour_productivity,78.17,"BLS TFP major sectors, private business (PG)"
+1990,United States,labour_productivity,79.73,"BLS TFP major sectors, private business (PG)"
+1991,United States,labour_productivity,81.11,"BLS TFP major sectors, private business (PG)"
+1992,United States,labour_productivity,84.83,"BLS TFP major sectors, private business (PG)"
+1993,United States,labour_productivity,84.96,"BLS TFP major sectors, private business (PG)"
+1994,United States,labour_productivity,85.49,"BLS TFP major sectors, private business (PG)"
+1995,United States,labour_productivity,86.14,"BLS TFP major sectors, private business (PG)"
+1996,United States,labour_productivity,88.24,"BLS TFP major sectors, private business (PG)"
+1997,United States,labour_productivity,90.08,"BLS TFP major sectors, private business (PG)"
+1998,United States,labour_productivity,93.16,"BLS TFP major sectors, private business (PG)"
+1999,United States,labour_productivity,96.96,"BLS TFP major sectors, private business (PG)"
+2000,United States,labour_productivity,100.0,"BLS TFP major sectors, private business (PG)"
+2001,United States,labour_productivity,102.85,"BLS TFP major sectors, private business (PG)"
+2002,United States,labour_productivity,107.29,"BLS TFP major sectors, private business (PG)"
+2003,United States,labour_productivity,111.43,"BLS TFP major sectors, private business (PG)"
+2004,United States,labour_productivity,114.92,"BLS TFP major sectors, private business (PG)"
+2005,United States,labour_productivity,117.47,"BLS TFP major sectors, private business (PG)"
+2006,United States,labour_productivity,118.73,"BLS TFP major sectors, private business (PG)"
+2007,United States,labour_productivity,120.74,"BLS TFP major sectors, private business (PG)"
+2008,United States,labour_productivity,122.41,"BLS TFP major sectors, private business (PG)"
+2009,United States,labour_productivity,127.89,"BLS TFP major sectors, private business (PG)"
+2010,United States,labour_productivity,132.04,"BLS TFP major sectors, private business (PG)"
+2011,United States,labour_productivity,131.7,"BLS TFP major sectors, private business (PG)"
+2012,United States,labour_productivity,132.64,"BLS TFP major sectors, private business (PG)"
+2013,United States,labour_productivity,134.04,"BLS TFP major sectors, private business (PG)"
+2014,United States,labour_productivity,135.04,"BLS TFP major sectors, private business (PG)"
+2015,United States,labour_productivity,136.83,"BLS TFP major sectors, private business (PG)"
+2016,United States,labour_productivity,137.95,"BLS TFP major sectors, private business (PG)"
+2017,United States,labour_productivity,139.77,"BLS TFP major sectors, private business (PG)"
+2018,United States,labour_productivity,141.82,"BLS TFP major sectors, private business (PG)"
+2019,United States,labour_productivity,144.98,"BLS TFP major sectors, private business (PG)"
+2020,United States,labour_productivity,152.83,"BLS TFP major sectors, private business (PG)"
+2021,United States,labour_productivity,156.14,"BLS TFP major sectors, private business (PG)"
+2022,United States,labour_productivity,153.86,"BLS TFP major sectors, private business (PG)"
+2023,United States,labour_productivity,157.47,"BLS TFP major sectors, private business (PG)"
+2024,United States,labour_productivity,162.25,"BLS TFP major sectors, private business (PG)"
+2025,United States,labour_productivity,165.88,"BLS TFP major sectors, private business (PG)"
+1987,United States,multifactor_productivity,88.99,"BLS TFP major sectors, private business (PG)"
+1988,United States,multifactor_productivity,89.76,"BLS TFP major sectors, private business (PG)"
+1989,United States,multifactor_productivity,90.16,"BLS TFP major sectors, private business (PG)"
+1990,United States,multifactor_productivity,90.42,"BLS TFP major sectors, private business (PG)"
+1991,United States,multifactor_productivity,90.08,"BLS TFP major sectors, private business (PG)"
+1992,United States,multifactor_productivity,92.76,"BLS TFP major sectors, private business (PG)"
+1993,United States,multifactor_productivity,92.36,"BLS TFP major sectors, private business (PG)"
+1994,United States,multifactor_productivity,92.75,"BLS TFP major sectors, private business (PG)"
+1995,United States,multifactor_productivity,92.63,"BLS TFP major sectors, private business (PG)"
+1996,United States,multifactor_productivity,93.82,"BLS TFP major sectors, private business (PG)"
+1997,United States,multifactor_productivity,94.83,"BLS TFP major sectors, private business (PG)"
+1998,United States,multifactor_productivity,96.52,"BLS TFP major sectors, private business (PG)"
+1999,United States,multifactor_productivity,98.72,"BLS TFP major sectors, private business (PG)"
+2000,United States,multifactor_productivity,100.0,"BLS TFP major sectors, private business (PG)"
+2001,United States,multifactor_productivity,100.4,"BLS TFP major sectors, private business (PG)"
+2002,United States,multifactor_productivity,102.4,"BLS TFP major sectors, private business (PG)"
+2003,United States,multifactor_productivity,104.8,"BLS TFP major sectors, private business (PG)"
+2004,United States,multifactor_productivity,107.32,"BLS TFP major sectors, private business (PG)"
+2005,United States,multifactor_productivity,108.87,"BLS TFP major sectors, private business (PG)"
+2006,United States,multifactor_productivity,109.22,"BLS TFP major sectors, private business (PG)"
+2007,United States,multifactor_productivity,109.51,"BLS TFP major sectors, private business (PG)"
+2008,United States,multifactor_productivity,108.45,"BLS TFP major sectors, private business (PG)"
+2009,United States,multifactor_productivity,108.88,"BLS TFP major sectors, private business (PG)"
+2010,United States,multifactor_productivity,111.62,"BLS TFP major sectors, private business (PG)"
+2011,United States,multifactor_productivity,111.17,"BLS TFP major sectors, private business (PG)"
+2012,United States,multifactor_productivity,111.93,"BLS TFP major sectors, private business (PG)"
+2013,United States,multifactor_productivity,112.58,"BLS TFP major sectors, private business (PG)"
+2014,United States,multifactor_productivity,113.26,"BLS TFP major sectors, private business (PG)"
+2015,United States,multifactor_productivity,114.29,"BLS TFP major sectors, private business (PG)"
+2016,United States,multifactor_productivity,114.29,"BLS TFP major sectors, private business (PG)"
+2017,United States,multifactor_productivity,115.02,"BLS TFP major sectors, private business (PG)"
+2018,United States,multifactor_productivity,115.84,"BLS TFP major sectors, private business (PG)"
+2019,United States,multifactor_productivity,117.24,"BLS TFP major sectors, private business (PG)"
+2020,United States,multifactor_productivity,116.58,"BLS TFP major sectors, private business (PG)"
+2021,United States,multifactor_productivity,121.17,"BLS TFP major sectors, private business (PG)"
+2022,United States,multifactor_productivity,119.92,"BLS TFP major sectors, private business (PG)"
+2023,United States,multifactor_productivity,121.91,"BLS TFP major sectors, private business (PG)"
+2024,United States,multifactor_productivity,123.84,"BLS TFP major sectors, private business (PG)"
+2025,United States,multifactor_productivity,124.87,"BLS TFP major sectors, private business (PG)"

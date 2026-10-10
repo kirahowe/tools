@@ -1,0 +1,35 @@
+country,industry,networth_usd_bn,share_pct
+Canada,Finance & Investments,189.7,41.49
+Canada,Technology,79.4,17.37
+Canada,Media & Entertainment,49.7,10.87
+Canada,Fashion & Retail,33.2,7.26
+Canada,Real Estate,25.0,5.47
+Canada,Food & Beverage,19.8,4.33
+Canada,Diversified,19.2,4.2
+Canada,Manufacturing,11.2,2.45
+Canada,Construction & Engineering,7.7,1.68
+Canada,Gambling & Casinos,6.0,1.31
+Canada,Energy,4.7,1.03
+Canada,Service,4.2,0.92
+Canada,Sports,2.8,0.61
+Canada,Metals & Mining,1.7,0.37
+Canada,Telecom,1.6,0.35
+Canada,Logistics,1.3,0.28
+United States,Technology,3486.3,41.35
+United States,Finance & Investments,1769.9,20.99
+United States,Fashion & Retail,799.0,9.48
+United States,Food & Beverage,500.8,5.94
+United States,Diversified,268.9,3.19
+United States,Energy,240.6,2.85
+United States,Real Estate,227.6,2.7
+United States,Sports,216.3,2.57
+United States,Media & Entertainment,215.2,2.55
+United States,Healthcare,213.8,2.54
+United States,Manufacturing,135.1,1.6
+United States,Automotive,95.2,1.13
+United States,Service,86.9,1.03
+United States,Gambling & Casinos,52.9,0.63
+United States,Construction & Engineering,47.2,0.56
+United States,Logistics,37.4,0.44
+United States,Telecom,28.2,0.33
+United States,Metals & Mining,10.1,0.12
