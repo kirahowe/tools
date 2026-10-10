@@ -1,0 +1,60 @@
+country,year,gini_disposable_income_total_pop,definition
+CAN,2015,0.318,Current definition
+CAN,2016,0.307,Current definition
+CAN,2017,0.31,Current definition
+CAN,2018,0.304,Current definition
+CAN,2019,0.3,Current definition
+CAN,2020,0.28,Current definition
+CAN,2021,0.292,Current definition
+CAN,2022,0.3,Current definition
+CAN,2023,0.306,Current definition
+DEU,2015,0.293,Current definition
+DEU,2016,0.294,Current definition
+DEU,2017,0.289,Current definition
+DEU,2018,0.289,Current definition
+DEU,2019,0.296,Current definition
+DEU,2020,0.303,Current definition
+DEU,2021,0.313,Current definition
+DEU,2022,0.309,Current definition
+DEU,2023,0.307,Current definition
+FRA,2015,0.295,Previous definition - with overlap year
+FRA,2016,0.291,Previous definition - with overlap year
+FRA,2017,0.292,Previous definition - with overlap year
+FRA,2018,0.301,Previous definition - with overlap year
+FRA,2019,0.292,Previous definition - with overlap year
+FRA,2020,0.278,Current definition
+FRA,2020,0.285,Previous definition - with overlap year
+FRA,2021,0.298,Current definition
+FRA,2022,0.297,Current definition
+FRA,2023,0.299,Current definition
+GBR,2015,0.36,Current definition
+GBR,2016,0.351,Current definition
+GBR,2017,0.357,Current definition
+GBR,2018,0.366,Current definition
+GBR,2019,0.366,Current definition
+GBR,2020,0.355,Current definition
+GBR,2021,0.354,Current definition
+GBR,2022,0.365,Current definition
+GBR,2023,0.367,Current definition
+ITA,2015,0.333,Current definition
+ITA,2016,0.327,Current definition
+ITA,2017,0.334,Current definition
+ITA,2018,0.33,Current definition
+ITA,2019,0.325,Current definition
+ITA,2020,0.331,Current definition
+ITA,2021,0.33,Current definition
+ITA,2022,0.319,Current definition
+ITA,2023,0.325,Current definition
+JPN,2015,0.339,Current definition
+JPN,2018,0.334,Current definition
+JPN,2018,0.334,Current definition
+JPN,2021,0.338,Current definition
+USA,2015,0.39,Current definition
+USA,2016,0.391,Current definition
+USA,2017,0.39,Current definition
+USA,2018,0.393,Current definition
+USA,2019,0.395,Current definition
+USA,2020,0.377,Current definition
+USA,2021,0.375,Current definition
+USA,2022,0.396,Current definition
+USA,2023,0.394,Current definition

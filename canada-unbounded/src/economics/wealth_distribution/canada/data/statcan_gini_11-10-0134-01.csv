@@ -1,0 +1,1996 @@
+year,geo,income_concept,gini
+1976,Canada,Adjusted market income,0.384
+1976,Canada,Adjusted total income,0.330
+1976,Canada,Adjusted after-tax income,0.300
+1976,Atlantic provinces,Adjusted market income,0.408
+1976,Atlantic provinces,Adjusted total income,0.310
+1976,Atlantic provinces,Adjusted after-tax income,0.280
+1976,Newfoundland and Labrador,Adjusted market income,0.454
+1976,Newfoundland and Labrador,Adjusted total income,0.337
+1976,Newfoundland and Labrador,Adjusted after-tax income,0.308
+1976,Prince Edward Island,Adjusted market income,0.445
+1976,Prince Edward Island,Adjusted total income,0.345
+1976,Prince Edward Island,Adjusted after-tax income,0.314
+1976,Nova Scotia,Adjusted market income,0.373
+1976,Nova Scotia,Adjusted total income,0.292
+1976,Nova Scotia,Adjusted after-tax income,0.261
+1976,New Brunswick,Adjusted market income,0.402
+1976,New Brunswick,Adjusted total income,0.299
+1976,New Brunswick,Adjusted after-tax income,0.270
+1976,Quebec,Adjusted market income,0.387
+1976,Quebec,Adjusted total income,0.325
+1976,Quebec,Adjusted after-tax income,0.295
+1976,Ontario,Adjusted market income,0.368
+1976,Ontario,Adjusted total income,0.325
+1976,Ontario,Adjusted after-tax income,0.294
+1976,Prairie provinces,Adjusted market income,0.380
+1976,Prairie provinces,Adjusted total income,0.335
+1976,Prairie provinces,Adjusted after-tax income,0.311
+1976,Manitoba,Adjusted market income,0.375
+1976,Manitoba,Adjusted total income,0.321
+1976,Manitoba,Adjusted after-tax income,0.294
+1976,Saskatchewan,Adjusted market income,0.393
+1976,Saskatchewan,Adjusted total income,0.340
+1976,Saskatchewan,Adjusted after-tax income,0.312
+1976,Alberta,Adjusted market income,0.371
+1976,Alberta,Adjusted total income,0.333
+1976,Alberta,Adjusted after-tax income,0.311
+1976,British Columbia,Adjusted market income,0.369
+1976,British Columbia,Adjusted total income,0.325
+1976,British Columbia,Adjusted after-tax income,0.297
+1977,Canada,Adjusted market income,0.368
+1977,Canada,Adjusted total income,0.315
+1977,Canada,Adjusted after-tax income,0.286
+1977,Atlantic provinces,Adjusted market income,0.411
+1977,Atlantic provinces,Adjusted total income,0.313
+1977,Atlantic provinces,Adjusted after-tax income,0.282
+1977,Newfoundland and Labrador,Adjusted market income,0.423
+1977,Newfoundland and Labrador,Adjusted total income,0.308
+1977,Newfoundland and Labrador,Adjusted after-tax income,0.276
+1977,Prince Edward Island,Adjusted market income,0.416
+1977,Prince Edward Island,Adjusted total income,0.318
+1977,Prince Edward Island,Adjusted after-tax income,0.288
+1977,Nova Scotia,Adjusted market income,0.394
+1977,Nova Scotia,Adjusted total income,0.309
+1977,Nova Scotia,Adjusted after-tax income,0.277
+1977,New Brunswick,Adjusted market income,0.418
+1977,New Brunswick,Adjusted total income,0.319
+1977,New Brunswick,Adjusted after-tax income,0.289
+1977,Quebec,Adjusted market income,0.382
+1977,Quebec,Adjusted total income,0.318
+1977,Quebec,Adjusted after-tax income,0.289
+1977,Ontario,Adjusted market income,0.348
+1977,Ontario,Adjusted total income,0.305
+1977,Ontario,Adjusted after-tax income,0.276
+1977,Prairie provinces,Adjusted market income,0.363
+1977,Prairie provinces,Adjusted total income,0.321
+1977,Prairie provinces,Adjusted after-tax income,0.294
+1977,Manitoba,Adjusted market income,0.377
+1977,Manitoba,Adjusted total income,0.326
+1977,Manitoba,Adjusted after-tax income,0.296
+1977,Saskatchewan,Adjusted market income,0.379
+1977,Saskatchewan,Adjusted total income,0.330
+1977,Saskatchewan,Adjusted after-tax income,0.300
+1977,Alberta,Adjusted market income,0.342
+1977,Alberta,Adjusted total income,0.308
+1977,Alberta,Adjusted after-tax income,0.283
+1977,British Columbia,Adjusted market income,0.341
+1977,British Columbia,Adjusted total income,0.295
+1977,British Columbia,Adjusted after-tax income,0.272
+1978,Canada,Adjusted market income,0.375
+1978,Canada,Adjusted total income,0.320
+1978,Canada,Adjusted after-tax income,0.291
+1978,Atlantic provinces,Adjusted market income,0.422
+1978,Atlantic provinces,Adjusted total income,0.322
+1978,Atlantic provinces,Adjusted after-tax income,0.291
+1978,Newfoundland and Labrador,Adjusted market income,0.458
+1978,Newfoundland and Labrador,Adjusted total income,0.326
+1978,Newfoundland and Labrador,Adjusted after-tax income,0.295
+1978,Prince Edward Island,Adjusted market income,0.410
+1978,Prince Edward Island,Adjusted total income,0.317
+1978,Prince Edward Island,Adjusted after-tax income,0.294
+1978,Nova Scotia,Adjusted market income,0.407
+1978,Nova Scotia,Adjusted total income,0.327
+1978,Nova Scotia,Adjusted after-tax income,0.293
+1978,New Brunswick,Adjusted market income,0.408
+1978,New Brunswick,Adjusted total income,0.310
+1978,New Brunswick,Adjusted after-tax income,0.280
+1978,Quebec,Adjusted market income,0.382
+1978,Quebec,Adjusted total income,0.313
+1978,Quebec,Adjusted after-tax income,0.280
+1978,Ontario,Adjusted market income,0.356
+1978,Ontario,Adjusted total income,0.314
+1978,Ontario,Adjusted after-tax income,0.284
+1978,Prairie provinces,Adjusted market income,0.370
+1978,Prairie provinces,Adjusted total income,0.329
+1978,Prairie provinces,Adjusted after-tax income,0.305
+1978,Manitoba,Adjusted market income,0.381
+1978,Manitoba,Adjusted total income,0.330
+1978,Manitoba,Adjusted after-tax income,0.306
+1978,Saskatchewan,Adjusted market income,0.358
+1978,Saskatchewan,Adjusted total income,0.313
+1978,Saskatchewan,Adjusted after-tax income,0.290
+1978,Alberta,Adjusted market income,0.362
+1978,Alberta,Adjusted total income,0.327
+1978,Alberta,Adjusted after-tax income,0.304
+1978,British Columbia,Adjusted market income,0.353
+1978,British Columbia,Adjusted total income,0.308
+1978,British Columbia,Adjusted after-tax income,0.283
+1979,Canada,Adjusted market income,0.365
+1979,Canada,Adjusted total income,0.315
+1979,Canada,Adjusted after-tax income,0.286
+1979,Atlantic provinces,Adjusted market income,0.400
+1979,Atlantic provinces,Adjusted total income,0.309
+1979,Atlantic provinces,Adjusted after-tax income,0.282
+1979,Newfoundland and Labrador,Adjusted market income,0.419
+1979,Newfoundland and Labrador,Adjusted total income,0.313
+1979,Newfoundland and Labrador,Adjusted after-tax income,0.283
+1979,Prince Edward Island,Adjusted market income,0.397
+1979,Prince Edward Island,Adjusted total income,0.307
+1979,Prince Edward Island,Adjusted after-tax income,0.282
+1979,Nova Scotia,Adjusted market income,0.379
+1979,Nova Scotia,Adjusted total income,0.303
+1979,Nova Scotia,Adjusted after-tax income,0.277
+1979,New Brunswick,Adjusted market income,0.408
+1979,New Brunswick,Adjusted total income,0.311
+1979,New Brunswick,Adjusted after-tax income,0.284
+1979,Quebec,Adjusted market income,0.381
+1979,Quebec,Adjusted total income,0.320
+1979,Quebec,Adjusted after-tax income,0.285
+1979,Ontario,Adjusted market income,0.339
+1979,Ontario,Adjusted total income,0.299
+1979,Ontario,Adjusted after-tax income,0.275
+1979,Prairie provinces,Adjusted market income,0.366
+1979,Prairie provinces,Adjusted total income,0.328
+1979,Prairie provinces,Adjusted after-tax income,0.299
+1979,Manitoba,Adjusted market income,0.369
+1979,Manitoba,Adjusted total income,0.321
+1979,Manitoba,Adjusted after-tax income,0.292
+1979,Saskatchewan,Adjusted market income,0.391
+1979,Saskatchewan,Adjusted total income,0.345
+1979,Saskatchewan,Adjusted after-tax income,0.315
+1979,Alberta,Adjusted market income,0.349
+1979,Alberta,Adjusted total income,0.318
+1979,Alberta,Adjusted after-tax income,0.289
+1979,British Columbia,Adjusted market income,0.344
+1979,British Columbia,Adjusted total income,0.300
+1979,British Columbia,Adjusted after-tax income,0.276
+1980,Canada,Adjusted market income,0.370
+1980,Canada,Adjusted total income,0.313
+1980,Canada,Adjusted after-tax income,0.286
+1980,Atlantic provinces,Adjusted market income,0.404
+1980,Atlantic provinces,Adjusted total income,0.303
+1980,Atlantic provinces,Adjusted after-tax income,0.275
+1980,Newfoundland and Labrador,Adjusted market income,0.440
+1980,Newfoundland and Labrador,Adjusted total income,0.325
+1980,Newfoundland and Labrador,Adjusted after-tax income,0.297
+1980,Prince Edward Island,Adjusted market income,0.399
+1980,Prince Edward Island,Adjusted total income,0.295
+1980,Prince Edward Island,Adjusted after-tax income,0.267
+1980,Nova Scotia,Adjusted market income,0.375
+1980,Nova Scotia,Adjusted total income,0.289
+1980,Nova Scotia,Adjusted after-tax income,0.262
+1980,New Brunswick,Adjusted market income,0.406
+1980,New Brunswick,Adjusted total income,0.299
+1980,New Brunswick,Adjusted after-tax income,0.271
+1980,Quebec,Adjusted market income,0.389
+1980,Quebec,Adjusted total income,0.315
+1980,Quebec,Adjusted after-tax income,0.277
+1980,Ontario,Adjusted market income,0.342
+1980,Ontario,Adjusted total income,0.297
+1980,Ontario,Adjusted after-tax income,0.274
+1980,Prairie provinces,Adjusted market income,0.367
+1980,Prairie provinces,Adjusted total income,0.326
+1980,Prairie provinces,Adjusted after-tax income,0.296
+1980,Manitoba,Adjusted market income,0.375
+1980,Manitoba,Adjusted total income,0.323
+1980,Manitoba,Adjusted after-tax income,0.294
+1980,Saskatchewan,Adjusted market income,0.354
+1980,Saskatchewan,Adjusted total income,0.307
+1980,Saskatchewan,Adjusted after-tax income,0.282
+1980,Alberta,Adjusted market income,0.360
+1980,Alberta,Adjusted total income,0.326
+1980,Alberta,Adjusted after-tax income,0.295
+1980,British Columbia,Adjusted market income,0.347
+1980,British Columbia,Adjusted total income,0.306
+1980,British Columbia,Adjusted after-tax income,0.287
+1981,Canada,Adjusted market income,0.369
+1981,Canada,Adjusted total income,0.313
+1981,Canada,Adjusted after-tax income,0.285
+1981,Atlantic provinces,Adjusted market income,0.408
+1981,Atlantic provinces,Adjusted total income,0.310
+1981,Atlantic provinces,Adjusted after-tax income,0.281
+1981,Newfoundland and Labrador,Adjusted market income,0.424
+1981,Newfoundland and Labrador,Adjusted total income,0.316
+1981,Newfoundland and Labrador,Adjusted after-tax income,0.284
+1981,Prince Edward Island,Adjusted market income,0.411
+1981,Prince Edward Island,Adjusted total income,0.303
+1981,Prince Edward Island,Adjusted after-tax income,0.277
+1981,Nova Scotia,Adjusted market income,0.383
+1981,Nova Scotia,Adjusted total income,0.299
+1981,Nova Scotia,Adjusted after-tax income,0.272
+1981,New Brunswick,Adjusted market income,0.424
+1981,New Brunswick,Adjusted total income,0.319
+1981,New Brunswick,Adjusted after-tax income,0.290
+1981,Quebec,Adjusted market income,0.380
+1981,Quebec,Adjusted total income,0.310
+1981,Quebec,Adjusted after-tax income,0.280
+1981,Ontario,Adjusted market income,0.344
+1981,Ontario,Adjusted total income,0.298
+1981,Ontario,Adjusted after-tax income,0.272
+1981,Prairie provinces,Adjusted market income,0.370
+1981,Prairie provinces,Adjusted total income,0.326
+1981,Prairie provinces,Adjusted after-tax income,0.297
+1981,Manitoba,Adjusted market income,0.374
+1981,Manitoba,Adjusted total income,0.317
+1981,Manitoba,Adjusted after-tax income,0.289
+1981,Saskatchewan,Adjusted market income,0.405
+1981,Saskatchewan,Adjusted total income,0.350
+1981,Saskatchewan,Adjusted after-tax income,0.319
+1981,Alberta,Adjusted market income,0.345
+1981,Alberta,Adjusted total income,0.312
+1981,Alberta,Adjusted after-tax income,0.284
+1981,British Columbia,Adjusted market income,0.349
+1981,British Columbia,Adjusted total income,0.304
+1981,British Columbia,Adjusted after-tax income,0.280
+1982,Canada,Adjusted market income,0.388
+1982,Canada,Adjusted total income,0.320
+1982,Canada,Adjusted after-tax income,0.288
+1982,Atlantic provinces,Adjusted market income,0.434
+1982,Atlantic provinces,Adjusted total income,0.318
+1982,Atlantic provinces,Adjusted after-tax income,0.286
+1982,Newfoundland and Labrador,Adjusted market income,0.439
+1982,Newfoundland and Labrador,Adjusted total income,0.318
+1982,Newfoundland and Labrador,Adjusted after-tax income,0.286
+1982,Prince Edward Island,Adjusted market income,0.420
+1982,Prince Edward Island,Adjusted total income,0.300
+1982,Prince Edward Island,Adjusted after-tax income,0.270
+1982,Nova Scotia,Adjusted market income,0.419
+1982,Nova Scotia,Adjusted total income,0.315
+1982,Nova Scotia,Adjusted after-tax income,0.283
+1982,New Brunswick,Adjusted market income,0.447
+1982,New Brunswick,Adjusted total income,0.324
+1982,New Brunswick,Adjusted after-tax income,0.291
+1982,Quebec,Adjusted market income,0.396
+1982,Quebec,Adjusted total income,0.311
+1982,Quebec,Adjusted after-tax income,0.273
+1982,Ontario,Adjusted market income,0.365
+1982,Ontario,Adjusted total income,0.308
+1982,Ontario,Adjusted after-tax income,0.279
+1982,Prairie provinces,Adjusted market income,0.382
+1982,Prairie provinces,Adjusted total income,0.331
+1982,Prairie provinces,Adjusted after-tax income,0.301
+1982,Manitoba,Adjusted market income,0.400
+1982,Manitoba,Adjusted total income,0.332
+1982,Manitoba,Adjusted after-tax income,0.299
+1982,Saskatchewan,Adjusted market income,0.394
+1982,Saskatchewan,Adjusted total income,0.331
+1982,Saskatchewan,Adjusted after-tax income,0.298
+1982,Alberta,Adjusted market income,0.360
+1982,Alberta,Adjusted total income,0.321
+1982,Alberta,Adjusted after-tax income,0.293
+1982,British Columbia,Adjusted market income,0.381
+1982,British Columbia,Adjusted total income,0.321
+1982,British Columbia,Adjusted after-tax income,0.293
+1983,Canada,Adjusted market income,0.403
+1983,Canada,Adjusted total income,0.329
+1983,Canada,Adjusted after-tax income,0.296
+1983,Atlantic provinces,Adjusted market income,0.457
+1983,Atlantic provinces,Adjusted total income,0.330
+1983,Atlantic provinces,Adjusted after-tax income,0.296
+1983,Newfoundland and Labrador,Adjusted market income,0.489
+1983,Newfoundland and Labrador,Adjusted total income,0.340
+1983,Newfoundland and Labrador,Adjusted after-tax income,0.300
+1983,Prince Edward Island,Adjusted market income,0.424
+1983,Prince Edward Island,Adjusted total income,0.309
+1983,Prince Edward Island,Adjusted after-tax income,0.276
+1983,Nova Scotia,Adjusted market income,0.423
+1983,Nova Scotia,Adjusted total income,0.318
+1983,Nova Scotia,Adjusted after-tax income,0.289
+1983,New Brunswick,Adjusted market income,0.472
+1983,New Brunswick,Adjusted total income,0.335
+1983,New Brunswick,Adjusted after-tax income,0.299
+1983,Quebec,Adjusted market income,0.406
+1983,Quebec,Adjusted total income,0.315
+1983,Quebec,Adjusted after-tax income,0.275
+1983,Ontario,Adjusted market income,0.385
+1983,Ontario,Adjusted total income,0.328
+1983,Ontario,Adjusted after-tax income,0.296
+1983,Prairie provinces,Adjusted market income,0.396
+1983,Prairie provinces,Adjusted total income,0.334
+1983,Prairie provinces,Adjusted after-tax income,0.304
+1983,Manitoba,Adjusted market income,0.401
+1983,Manitoba,Adjusted total income,0.324
+1983,Manitoba,Adjusted after-tax income,0.292
+1983,Saskatchewan,Adjusted market income,0.403
+1983,Saskatchewan,Adjusted total income,0.338
+1983,Saskatchewan,Adjusted after-tax income,0.310
+1983,Alberta,Adjusted market income,0.388
+1983,Alberta,Adjusted total income,0.333
+1983,Alberta,Adjusted after-tax income,0.303
+1983,British Columbia,Adjusted market income,0.388
+1983,British Columbia,Adjusted total income,0.323
+1983,British Columbia,Adjusted after-tax income,0.293
+1984,Canada,Adjusted market income,0.401
+1984,Canada,Adjusted total income,0.326
+1984,Canada,Adjusted after-tax income,0.293
+1984,Atlantic provinces,Adjusted market income,0.441
+1984,Atlantic provinces,Adjusted total income,0.322
+1984,Atlantic provinces,Adjusted after-tax income,0.288
+1984,Newfoundland and Labrador,Adjusted market income,0.470
+1984,Newfoundland and Labrador,Adjusted total income,0.324
+1984,Newfoundland and Labrador,Adjusted after-tax income,0.289
+1984,Prince Edward Island,Adjusted market income,0.405
+1984,Prince Edward Island,Adjusted total income,0.287
+1984,Prince Edward Island,Adjusted after-tax income,0.257
+1984,Nova Scotia,Adjusted market income,0.416
+1984,Nova Scotia,Adjusted total income,0.316
+1984,Nova Scotia,Adjusted after-tax income,0.285
+1984,New Brunswick,Adjusted market income,0.447
+1984,New Brunswick,Adjusted total income,0.326
+1984,New Brunswick,Adjusted after-tax income,0.292
+1984,Quebec,Adjusted market income,0.421
+1984,Quebec,Adjusted total income,0.327
+1984,Quebec,Adjusted after-tax income,0.287
+1984,Ontario,Adjusted market income,0.373
+1984,Ontario,Adjusted total income,0.316
+1984,Ontario,Adjusted after-tax income,0.286
+1984,Prairie provinces,Adjusted market income,0.395
+1984,Prairie provinces,Adjusted total income,0.330
+1984,Prairie provinces,Adjusted after-tax income,0.299
+1984,Manitoba,Adjusted market income,0.389
+1984,Manitoba,Adjusted total income,0.317
+1984,Manitoba,Adjusted after-tax income,0.288
+1984,Saskatchewan,Adjusted market income,0.413
+1984,Saskatchewan,Adjusted total income,0.340
+1984,Saskatchewan,Adjusted after-tax income,0.310
+1984,Alberta,Adjusted market income,0.387
+1984,Alberta,Adjusted total income,0.328
+1984,Alberta,Adjusted after-tax income,0.297
+1984,British Columbia,Adjusted market income,0.401
+1984,British Columbia,Adjusted total income,0.329
+1984,British Columbia,Adjusted after-tax income,0.298
+1985,Canada,Adjusted market income,0.395
+1985,Canada,Adjusted total income,0.322
+1985,Canada,Adjusted after-tax income,0.290
+1985,Atlantic provinces,Adjusted market income,0.446
+1985,Atlantic provinces,Adjusted total income,0.326
+1985,Atlantic provinces,Adjusted after-tax income,0.294
+1985,Newfoundland and Labrador,Adjusted market income,0.489
+1985,Newfoundland and Labrador,Adjusted total income,0.339
+1985,Newfoundland and Labrador,Adjusted after-tax income,0.303
+1985,Prince Edward Island,Adjusted market income,0.412
+1985,Prince Edward Island,Adjusted total income,0.285
+1985,Prince Edward Island,Adjusted after-tax income,0.257
+1985,Nova Scotia,Adjusted market income,0.428
+1985,Nova Scotia,Adjusted total income,0.331
+1985,Nova Scotia,Adjusted after-tax income,0.299
+1985,New Brunswick,Adjusted market income,0.429
+1985,New Brunswick,Adjusted total income,0.309
+1985,New Brunswick,Adjusted after-tax income,0.278
+1985,Quebec,Adjusted market income,0.404
+1985,Quebec,Adjusted total income,0.312
+1985,Quebec,Adjusted after-tax income,0.276
+1985,Ontario,Adjusted market income,0.368
+1985,Ontario,Adjusted total income,0.314
+1985,Ontario,Adjusted after-tax income,0.281
+1985,Prairie provinces,Adjusted market income,0.390
+1985,Prairie provinces,Adjusted total income,0.327
+1985,Prairie provinces,Adjusted after-tax income,0.297
+1985,Manitoba,Adjusted market income,0.390
+1985,Manitoba,Adjusted total income,0.318
+1985,Manitoba,Adjusted after-tax income,0.288
+1985,Saskatchewan,Adjusted market income,0.413
+1985,Saskatchewan,Adjusted total income,0.341
+1985,Saskatchewan,Adjusted after-tax income,0.311
+1985,Alberta,Adjusted market income,0.376
+1985,Alberta,Adjusted total income,0.320
+1985,Alberta,Adjusted after-tax income,0.290
+1985,British Columbia,Adjusted market income,0.401
+1985,British Columbia,Adjusted total income,0.331
+1985,British Columbia,Adjusted after-tax income,0.302
+1986,Canada,Adjusted market income,0.395
+1986,Canada,Adjusted total income,0.322
+1986,Canada,Adjusted after-tax income,0.290
+1986,Atlantic provinces,Adjusted market income,0.441
+1986,Atlantic provinces,Adjusted total income,0.315
+1986,Atlantic provinces,Adjusted after-tax income,0.280
+1986,Newfoundland and Labrador,Adjusted market income,0.466
+1986,Newfoundland and Labrador,Adjusted total income,0.308
+1986,Newfoundland and Labrador,Adjusted after-tax income,0.271
+1986,Prince Edward Island,Adjusted market income,0.417
+1986,Prince Edward Island,Adjusted total income,0.290
+1986,Prince Edward Island,Adjusted after-tax income,0.258
+1986,Nova Scotia,Adjusted market income,0.433
+1986,Nova Scotia,Adjusted total income,0.326
+1986,Nova Scotia,Adjusted after-tax income,0.289
+1986,New Brunswick,Adjusted market income,0.422
+1986,New Brunswick,Adjusted total income,0.299
+1986,New Brunswick,Adjusted after-tax income,0.269
+1986,Quebec,Adjusted market income,0.406
+1986,Quebec,Adjusted total income,0.317
+1986,Quebec,Adjusted after-tax income,0.282
+1986,Ontario,Adjusted market income,0.364
+1986,Ontario,Adjusted total income,0.310
+1986,Ontario,Adjusted after-tax income,0.280
+1986,Prairie provinces,Adjusted market income,0.395
+1986,Prairie provinces,Adjusted total income,0.330
+1986,Prairie provinces,Adjusted after-tax income,0.298
+1986,Manitoba,Adjusted market income,0.394
+1986,Manitoba,Adjusted total income,0.321
+1986,Manitoba,Adjusted after-tax income,0.286
+1986,Saskatchewan,Adjusted market income,0.427
+1986,Saskatchewan,Adjusted total income,0.352
+1986,Saskatchewan,Adjusted after-tax income,0.317
+1986,Alberta,Adjusted market income,0.378
+1986,Alberta,Adjusted total income,0.320
+1986,Alberta,Adjusted after-tax income,0.291
+1986,British Columbia,Adjusted market income,0.395
+1986,British Columbia,Adjusted total income,0.325
+1986,British Columbia,Adjusted after-tax income,0.296
+1987,Canada,Adjusted market income,0.392
+1987,Canada,Adjusted total income,0.321
+1987,Canada,Adjusted after-tax income,0.287
+1987,Atlantic provinces,Adjusted market income,0.428
+1987,Atlantic provinces,Adjusted total income,0.310
+1987,Atlantic provinces,Adjusted after-tax income,0.274
+1987,Newfoundland and Labrador,Adjusted market income,0.465
+1987,Newfoundland and Labrador,Adjusted total income,0.317
+1987,Newfoundland and Labrador,Adjusted after-tax income,0.279
+1987,Prince Edward Island,Adjusted market income,0.406
+1987,Prince Edward Island,Adjusted total income,0.294
+1987,Prince Edward Island,Adjusted after-tax income,0.262
+1987,Nova Scotia,Adjusted market income,0.402
+1987,Nova Scotia,Adjusted total income,0.307
+1987,Nova Scotia,Adjusted after-tax income,0.272
+1987,New Brunswick,Adjusted market income,0.423
+1987,New Brunswick,Adjusted total income,0.301
+1987,New Brunswick,Adjusted after-tax income,0.268
+1987,Quebec,Adjusted market income,0.406
+1987,Quebec,Adjusted total income,0.321
+1987,Quebec,Adjusted after-tax income,0.283
+1987,Ontario,Adjusted market income,0.362
+1987,Ontario,Adjusted total income,0.308
+1987,Ontario,Adjusted after-tax income,0.276
+1987,Prairie provinces,Adjusted market income,0.393
+1987,Prairie provinces,Adjusted total income,0.325
+1987,Prairie provinces,Adjusted after-tax income,0.290
+1987,Manitoba,Adjusted market income,0.389
+1987,Manitoba,Adjusted total income,0.312
+1987,Manitoba,Adjusted after-tax income,0.277
+1987,Saskatchewan,Adjusted market income,0.402
+1987,Saskatchewan,Adjusted total income,0.325
+1987,Saskatchewan,Adjusted after-tax income,0.291
+1987,Alberta,Adjusted market income,0.387
+1987,Alberta,Adjusted total income,0.328
+1987,Alberta,Adjusted after-tax income,0.293
+1987,British Columbia,Adjusted market income,0.395
+1987,British Columbia,Adjusted total income,0.324
+1987,British Columbia,Adjusted after-tax income,0.290
+1988,Canada,Adjusted market income,0.391
+1988,Canada,Adjusted total income,0.318
+1988,Canada,Adjusted after-tax income,0.282
+1988,Atlantic provinces,Adjusted market income,0.420
+1988,Atlantic provinces,Adjusted total income,0.303
+1988,Atlantic provinces,Adjusted after-tax income,0.267
+1988,Newfoundland and Labrador,Adjusted market income,0.444
+1988,Newfoundland and Labrador,Adjusted total income,0.304
+1988,Newfoundland and Labrador,Adjusted after-tax income,0.270
+1988,Prince Edward Island,Adjusted market income,0.408
+1988,Prince Edward Island,Adjusted total income,0.285
+1988,Prince Edward Island,Adjusted after-tax income,0.256
+1988,Nova Scotia,Adjusted market income,0.399
+1988,Nova Scotia,Adjusted total income,0.304
+1988,Nova Scotia,Adjusted after-tax income,0.266
+1988,New Brunswick,Adjusted market income,0.421
+1988,New Brunswick,Adjusted total income,0.299
+1988,New Brunswick,Adjusted after-tax income,0.265
+1988,Quebec,Adjusted market income,0.402
+1988,Quebec,Adjusted total income,0.313
+1988,Quebec,Adjusted after-tax income,0.269
+1988,Ontario,Adjusted market income,0.363
+1988,Ontario,Adjusted total income,0.308
+1988,Ontario,Adjusted after-tax income,0.275
+1988,Prairie provinces,Adjusted market income,0.395
+1988,Prairie provinces,Adjusted total income,0.326
+1988,Prairie provinces,Adjusted after-tax income,0.289
+1988,Manitoba,Adjusted market income,0.404
+1988,Manitoba,Adjusted total income,0.322
+1988,Manitoba,Adjusted after-tax income,0.281
+1988,Saskatchewan,Adjusted market income,0.419
+1988,Saskatchewan,Adjusted total income,0.336
+1988,Saskatchewan,Adjusted after-tax income,0.297
+1988,Alberta,Adjusted market income,0.378
+1988,Alberta,Adjusted total income,0.320
+1988,Alberta,Adjusted after-tax income,0.284
+1988,British Columbia,Adjusted market income,0.374
+1988,British Columbia,Adjusted total income,0.308
+1988,British Columbia,Adjusted after-tax income,0.276
+1989,Canada,Adjusted market income,0.388
+1989,Canada,Adjusted total income,0.318
+1989,Canada,Adjusted after-tax income,0.281
+1989,Atlantic provinces,Adjusted market income,0.421
+1989,Atlantic provinces,Adjusted total income,0.306
+1989,Atlantic provinces,Adjusted after-tax income,0.269
+1989,Newfoundland and Labrador,Adjusted market income,0.441
+1989,Newfoundland and Labrador,Adjusted total income,0.301
+1989,Newfoundland and Labrador,Adjusted after-tax income,0.264
+1989,Prince Edward Island,Adjusted market income,0.409
+1989,Prince Edward Island,Adjusted total income,0.293
+1989,Prince Edward Island,Adjusted after-tax income,0.260
+1989,Nova Scotia,Adjusted market income,0.411
+1989,Nova Scotia,Adjusted total income,0.312
+1989,Nova Scotia,Adjusted after-tax income,0.274
+1989,New Brunswick,Adjusted market income,0.414
+1989,New Brunswick,Adjusted total income,0.300
+1989,New Brunswick,Adjusted after-tax income,0.265
+1989,Quebec,Adjusted market income,0.398
+1989,Quebec,Adjusted total income,0.308
+1989,Quebec,Adjusted after-tax income,0.266
+1989,Ontario,Adjusted market income,0.367
+1989,Ontario,Adjusted total income,0.313
+1989,Ontario,Adjusted after-tax income,0.278
+1989,Prairie provinces,Adjusted market income,0.389
+1989,Prairie provinces,Adjusted total income,0.322
+1989,Prairie provinces,Adjusted after-tax income,0.285
+1989,Manitoba,Adjusted market income,0.398
+1989,Manitoba,Adjusted total income,0.318
+1989,Manitoba,Adjusted after-tax income,0.275
+1989,Saskatchewan,Adjusted market income,0.409
+1989,Saskatchewan,Adjusted total income,0.328
+1989,Saskatchewan,Adjusted after-tax income,0.288
+1989,Alberta,Adjusted market income,0.373
+1989,Alberta,Adjusted total income,0.318
+1989,Alberta,Adjusted after-tax income,0.284
+1989,British Columbia,Adjusted market income,0.362
+1989,British Columbia,Adjusted total income,0.302
+1989,British Columbia,Adjusted after-tax income,0.270
+1990,Canada,Adjusted market income,0.403
+1990,Canada,Adjusted total income,0.326
+1990,Canada,Adjusted after-tax income,0.286
+1990,Atlantic provinces,Adjusted market income,0.432
+1990,Atlantic provinces,Adjusted total income,0.311
+1990,Atlantic provinces,Adjusted after-tax income,0.272
+1990,Newfoundland and Labrador,Adjusted market income,0.473
+1990,Newfoundland and Labrador,Adjusted total income,0.318
+1990,Newfoundland and Labrador,Adjusted after-tax income,0.278
+1990,Prince Edward Island,Adjusted market income,0.415
+1990,Prince Edward Island,Adjusted total income,0.292
+1990,Prince Edward Island,Adjusted after-tax income,0.257
+1990,Nova Scotia,Adjusted market income,0.411
+1990,Nova Scotia,Adjusted total income,0.308
+1990,Nova Scotia,Adjusted after-tax income,0.270
+1990,New Brunswick,Adjusted market income,0.423
+1990,New Brunswick,Adjusted total income,0.307
+1990,New Brunswick,Adjusted after-tax income,0.269
+1990,Quebec,Adjusted market income,0.415
+1990,Quebec,Adjusted total income,0.316
+1990,Quebec,Adjusted after-tax income,0.269
+1990,Ontario,Adjusted market income,0.379
+1990,Ontario,Adjusted total income,0.319
+1990,Ontario,Adjusted after-tax income,0.280
+1990,Prairie provinces,Adjusted market income,0.403
+1990,Prairie provinces,Adjusted total income,0.333
+1990,Prairie provinces,Adjusted after-tax income,0.293
+1990,Manitoba,Adjusted market income,0.402
+1990,Manitoba,Adjusted total income,0.322
+1990,Manitoba,Adjusted after-tax income,0.279
+1990,Saskatchewan,Adjusted market income,0.434
+1990,Saskatchewan,Adjusted total income,0.350
+1990,Saskatchewan,Adjusted after-tax income,0.306
+1990,Alberta,Adjusted market income,0.388
+1990,Alberta,Adjusted total income,0.327
+1990,Alberta,Adjusted after-tax income,0.289
+1990,British Columbia,Adjusted market income,0.395
+1990,British Columbia,Adjusted total income,0.328
+1990,British Columbia,Adjusted after-tax income,0.290
+1991,Canada,Adjusted market income,0.422
+1991,Canada,Adjusted total income,0.334
+1991,Canada,Adjusted after-tax income,0.292
+1991,Atlantic provinces,Adjusted market income,0.449
+1991,Atlantic provinces,Adjusted total income,0.315
+1991,Atlantic provinces,Adjusted after-tax income,0.275
+1991,Newfoundland and Labrador,Adjusted market income,0.494
+1991,Newfoundland and Labrador,Adjusted total income,0.325
+1991,Newfoundland and Labrador,Adjusted after-tax income,0.282
+1991,Prince Edward Island,Adjusted market income,0.433
+1991,Prince Edward Island,Adjusted total income,0.296
+1991,Prince Edward Island,Adjusted after-tax income,0.259
+1991,Nova Scotia,Adjusted market income,0.422
+1991,Nova Scotia,Adjusted total income,0.310
+1991,Nova Scotia,Adjusted after-tax income,0.271
+1991,New Brunswick,Adjusted market income,0.445
+1991,New Brunswick,Adjusted total income,0.314
+1991,New Brunswick,Adjusted after-tax income,0.274
+1991,Quebec,Adjusted market income,0.436
+1991,Quebec,Adjusted total income,0.326
+1991,Quebec,Adjusted after-tax income,0.278
+1991,Ontario,Adjusted market income,0.409
+1991,Ontario,Adjusted total income,0.333
+1991,Ontario,Adjusted after-tax income,0.291
+1991,Prairie provinces,Adjusted market income,0.418
+1991,Prairie provinces,Adjusted total income,0.343
+1991,Prairie provinces,Adjusted after-tax income,0.301
+1991,Manitoba,Adjusted market income,0.422
+1991,Manitoba,Adjusted total income,0.330
+1991,Manitoba,Adjusted after-tax income,0.287
+1991,Saskatchewan,Adjusted market income,0.430
+1991,Saskatchewan,Adjusted total income,0.339
+1991,Saskatchewan,Adjusted after-tax income,0.296
+1991,Alberta,Adjusted market income,0.405
+1991,Alberta,Adjusted total income,0.342
+1991,Alberta,Adjusted after-tax income,0.301
+1991,British Columbia,Adjusted market income,0.392
+1991,British Columbia,Adjusted total income,0.318
+1991,British Columbia,Adjusted after-tax income,0.283
+1992,Canada,Adjusted market income,0.429
+1992,Canada,Adjusted total income,0.334
+1992,Canada,Adjusted after-tax income,0.291
+1992,Atlantic provinces,Adjusted market income,0.457
+1992,Atlantic provinces,Adjusted total income,0.319
+1992,Atlantic provinces,Adjusted after-tax income,0.280
+1992,Newfoundland and Labrador,Adjusted market income,0.512
+1992,Newfoundland and Labrador,Adjusted total income,0.333
+1992,Newfoundland and Labrador,Adjusted after-tax income,0.294
+1992,Prince Edward Island,Adjusted market income,0.420
+1992,Prince Edward Island,Adjusted total income,0.287
+1992,Prince Edward Island,Adjusted after-tax income,0.253
+1992,Nova Scotia,Adjusted market income,0.437
+1992,Nova Scotia,Adjusted total income,0.318
+1992,Nova Scotia,Adjusted after-tax income,0.278
+1992,New Brunswick,Adjusted market income,0.442
+1992,New Brunswick,Adjusted total income,0.312
+1992,New Brunswick,Adjusted after-tax income,0.274
+1992,Quebec,Adjusted market income,0.433
+1992,Quebec,Adjusted total income,0.318
+1992,Quebec,Adjusted after-tax income,0.270
+1992,Ontario,Adjusted market income,0.414
+1992,Ontario,Adjusted total income,0.330
+1992,Ontario,Adjusted after-tax income,0.287
+1992,Prairie provinces,Adjusted market income,0.432
+1992,Prairie provinces,Adjusted total income,0.347
+1992,Prairie provinces,Adjusted after-tax income,0.307
+1992,Manitoba,Adjusted market income,0.434
+1992,Manitoba,Adjusted total income,0.332
+1992,Manitoba,Adjusted after-tax income,0.288
+1992,Saskatchewan,Adjusted market income,0.443
+1992,Saskatchewan,Adjusted total income,0.350
+1992,Saskatchewan,Adjusted after-tax income,0.308
+1992,Alberta,Adjusted market income,0.425
+1992,Alberta,Adjusted total income,0.350
+1992,Alberta,Adjusted after-tax income,0.312
+1992,British Columbia,Adjusted market income,0.411
+1992,British Columbia,Adjusted total income,0.334
+1992,British Columbia,Adjusted after-tax income,0.295
+1993,Canada,Adjusted market income,0.429
+1993,Canada,Adjusted total income,0.329
+1993,Canada,Adjusted after-tax income,0.289
+1993,Atlantic provinces,Adjusted market income,0.453
+1993,Atlantic provinces,Adjusted total income,0.306
+1993,Atlantic provinces,Adjusted after-tax income,0.270
+1993,Newfoundland and Labrador,Adjusted market income,0.493
+1993,Newfoundland and Labrador,Adjusted total income,0.307
+1993,Newfoundland and Labrador,Adjusted after-tax income,0.271
+1993,Prince Edward Island,Adjusted market income,0.418
+1993,Prince Edward Island,Adjusted total income,0.272
+1993,Prince Edward Island,Adjusted after-tax income,0.240
+1993,Nova Scotia,Adjusted market income,0.443
+1993,Nova Scotia,Adjusted total income,0.312
+1993,Nova Scotia,Adjusted after-tax income,0.275
+1993,New Brunswick,Adjusted market income,0.436
+1993,New Brunswick,Adjusted total income,0.300
+1993,New Brunswick,Adjusted after-tax income,0.266
+1993,Quebec,Adjusted market income,0.443
+1993,Quebec,Adjusted total income,0.322
+1993,Quebec,Adjusted after-tax income,0.274
+1993,Ontario,Adjusted market income,0.421
+1993,Ontario,Adjusted total income,0.331
+1993,Ontario,Adjusted after-tax income,0.291
+1993,Prairie provinces,Adjusted market income,0.411
+1993,Prairie provinces,Adjusted total income,0.326
+1993,Prairie provinces,Adjusted after-tax income,0.290
+1993,Manitoba,Adjusted market income,0.412
+1993,Manitoba,Adjusted total income,0.313
+1993,Manitoba,Adjusted after-tax income,0.274
+1993,Saskatchewan,Adjusted market income,0.436
+1993,Saskatchewan,Adjusted total income,0.334
+1993,Saskatchewan,Adjusted after-tax income,0.293
+1993,Alberta,Adjusted market income,0.397
+1993,Alberta,Adjusted total income,0.323
+1993,Alberta,Adjusted after-tax income,0.290
+1993,British Columbia,Adjusted market income,0.403
+1993,British Columbia,Adjusted total income,0.320
+1993,British Columbia,Adjusted after-tax income,0.285
+1994,Canada,Adjusted market income,0.432
+1994,Canada,Adjusted total income,0.333
+1994,Canada,Adjusted after-tax income,0.290
+1994,Atlantic provinces,Adjusted market income,0.448
+1994,Atlantic provinces,Adjusted total income,0.312
+1994,Atlantic provinces,Adjusted after-tax income,0.275
+1994,Newfoundland and Labrador,Adjusted market income,0.475
+1994,Newfoundland and Labrador,Adjusted total income,0.315
+1994,Newfoundland and Labrador,Adjusted after-tax income,0.275
+1994,Prince Edward Island,Adjusted market income,0.403
+1994,Prince Edward Island,Adjusted total income,0.269
+1994,Prince Edward Island,Adjusted after-tax income,0.238
+1994,Nova Scotia,Adjusted market income,0.442
+1994,Nova Scotia,Adjusted total income,0.317
+1994,Nova Scotia,Adjusted after-tax income,0.280
+1994,New Brunswick,Adjusted market income,0.441
+1994,New Brunswick,Adjusted total income,0.308
+1994,New Brunswick,Adjusted after-tax income,0.272
+1994,Quebec,Adjusted market income,0.448
+1994,Quebec,Adjusted total income,0.331
+1994,Quebec,Adjusted after-tax income,0.278
+1994,Ontario,Adjusted market income,0.426
+1994,Ontario,Adjusted total income,0.335
+1994,Ontario,Adjusted after-tax income,0.292
+1994,Prairie provinces,Adjusted market income,0.410
+1994,Prairie provinces,Adjusted total income,0.328
+1994,Prairie provinces,Adjusted after-tax income,0.290
+1994,Manitoba,Adjusted market income,0.423
+1994,Manitoba,Adjusted total income,0.325
+1994,Manitoba,Adjusted after-tax income,0.282
+1994,Saskatchewan,Adjusted market income,0.430
+1994,Saskatchewan,Adjusted total income,0.326
+1994,Saskatchewan,Adjusted after-tax income,0.285
+1994,Alberta,Adjusted market income,0.394
+1994,Alberta,Adjusted total income,0.326
+1994,Alberta,Adjusted after-tax income,0.291
+1994,British Columbia,Adjusted market income,0.405
+1994,British Columbia,Adjusted total income,0.318
+1994,British Columbia,Adjusted after-tax income,0.282
+1995,Canada,Adjusted market income,0.430
+1995,Canada,Adjusted total income,0.336
+1995,Canada,Adjusted after-tax income,0.293
+1995,Atlantic provinces,Adjusted market income,0.450
+1995,Atlantic provinces,Adjusted total income,0.312
+1995,Atlantic provinces,Adjusted after-tax income,0.275
+1995,Newfoundland and Labrador,Adjusted market income,0.486
+1995,Newfoundland and Labrador,Adjusted total income,0.322
+1995,Newfoundland and Labrador,Adjusted after-tax income,0.285
+1995,Prince Edward Island,Adjusted market income,0.406
+1995,Prince Edward Island,Adjusted total income,0.276
+1995,Prince Edward Island,Adjusted after-tax income,0.244
+1995,Nova Scotia,Adjusted market income,0.437
+1995,Nova Scotia,Adjusted total income,0.311
+1995,Nova Scotia,Adjusted after-tax income,0.272
+1995,New Brunswick,Adjusted market income,0.444
+1995,New Brunswick,Adjusted total income,0.311
+1995,New Brunswick,Adjusted after-tax income,0.274
+1995,Quebec,Adjusted market income,0.446
+1995,Quebec,Adjusted total income,0.333
+1995,Quebec,Adjusted after-tax income,0.280
+1995,Ontario,Adjusted market income,0.423
+1995,Ontario,Adjusted total income,0.338
+1995,Ontario,Adjusted after-tax income,0.294
+1995,Prairie provinces,Adjusted market income,0.408
+1995,Prairie provinces,Adjusted total income,0.331
+1995,Prairie provinces,Adjusted after-tax income,0.292
+1995,Manitoba,Adjusted market income,0.410
+1995,Manitoba,Adjusted total income,0.317
+1995,Manitoba,Adjusted after-tax income,0.276
+1995,Saskatchewan,Adjusted market income,0.430
+1995,Saskatchewan,Adjusted total income,0.339
+1995,Saskatchewan,Adjusted after-tax income,0.293
+1995,Alberta,Adjusted market income,0.397
+1995,Alberta,Adjusted total income,0.331
+1995,Alberta,Adjusted after-tax income,0.294
+1995,British Columbia,Adjusted market income,0.404
+1995,British Columbia,Adjusted total income,0.324
+1995,British Columbia,Adjusted after-tax income,0.289
+1996,Canada,Adjusted market income,0.439
+1996,Canada,Adjusted total income,0.346
+1996,Canada,Adjusted after-tax income,0.301
+1996,Atlantic provinces,Adjusted market income,0.448
+1996,Atlantic provinces,Adjusted total income,0.313
+1996,Atlantic provinces,Adjusted after-tax income,0.276
+1996,Newfoundland and Labrador,Adjusted market income,0.483
+1996,Newfoundland and Labrador,Adjusted total income,0.316
+1996,Newfoundland and Labrador,Adjusted after-tax income,0.277
+1996,Prince Edward Island,Adjusted market income,0.402
+1996,Prince Edward Island,Adjusted total income,0.279
+1996,Prince Edward Island,Adjusted after-tax income,0.248
+1996,Nova Scotia,Adjusted market income,0.440
+1996,Nova Scotia,Adjusted total income,0.314
+1996,Nova Scotia,Adjusted after-tax income,0.278
+1996,New Brunswick,Adjusted market income,0.439
+1996,New Brunswick,Adjusted total income,0.312
+1996,New Brunswick,Adjusted after-tax income,0.274
+1996,Quebec,Adjusted market income,0.454
+1996,Quebec,Adjusted total income,0.343
+1996,Quebec,Adjusted after-tax income,0.290
+1996,Ontario,Adjusted market income,0.434
+1996,Ontario,Adjusted total income,0.350
+1996,Ontario,Adjusted after-tax income,0.305
+1996,Prairie provinces,Adjusted market income,0.413
+1996,Prairie provinces,Adjusted total income,0.335
+1996,Prairie provinces,Adjusted after-tax income,0.295
+1996,Manitoba,Adjusted market income,0.416
+1996,Manitoba,Adjusted total income,0.322
+1996,Manitoba,Adjusted after-tax income,0.281
+1996,Saskatchewan,Adjusted market income,0.427
+1996,Saskatchewan,Adjusted total income,0.330
+1996,Saskatchewan,Adjusted after-tax income,0.285
+1996,Alberta,Adjusted market income,0.405
+1996,Alberta,Adjusted total income,0.339
+1996,Alberta,Adjusted after-tax income,0.300
+1996,British Columbia,Adjusted market income,0.421
+1996,British Columbia,Adjusted total income,0.339
+1996,British Columbia,Adjusted after-tax income,0.298
+1997,Canada,Adjusted market income,0.438
+1997,Canada,Adjusted total income,0.348
+1997,Canada,Adjusted after-tax income,0.304
+1997,Atlantic provinces,Adjusted market income,0.451
+1997,Atlantic provinces,Adjusted total income,0.319
+1997,Atlantic provinces,Adjusted after-tax income,0.280
+1997,Newfoundland and Labrador,Adjusted market income,0.478
+1997,Newfoundland and Labrador,Adjusted total income,0.311
+1997,Newfoundland and Labrador,Adjusted after-tax income,0.271
+1997,Prince Edward Island,Adjusted market income,0.408
+1997,Prince Edward Island,Adjusted total income,0.280
+1997,Prince Edward Island,Adjusted after-tax income,0.250
+1997,Nova Scotia,Adjusted market income,0.445
+1997,Nova Scotia,Adjusted total income,0.328
+1997,Nova Scotia,Adjusted after-tax income,0.288
+1997,New Brunswick,Adjusted market income,0.441
+1997,New Brunswick,Adjusted total income,0.315
+1997,New Brunswick,Adjusted after-tax income,0.278
+1997,Quebec,Adjusted market income,0.454
+1997,Quebec,Adjusted total income,0.342
+1997,Quebec,Adjusted after-tax income,0.290
+1997,Ontario,Adjusted market income,0.431
+1997,Ontario,Adjusted total income,0.349
+1997,Ontario,Adjusted after-tax income,0.305
+1997,Prairie provinces,Adjusted market income,0.418
+1997,Prairie provinces,Adjusted total income,0.344
+1997,Prairie provinces,Adjusted after-tax income,0.300
+1997,Manitoba,Adjusted market income,0.412
+1997,Manitoba,Adjusted total income,0.319
+1997,Manitoba,Adjusted after-tax income,0.279
+1997,Saskatchewan,Adjusted market income,0.425
+1997,Saskatchewan,Adjusted total income,0.327
+1997,Saskatchewan,Adjusted after-tax income,0.280
+1997,Alberta,Adjusted market income,0.412
+1997,Alberta,Adjusted total income,0.353
+1997,Alberta,Adjusted after-tax income,0.308
+1997,British Columbia,Adjusted market income,0.420
+1997,British Columbia,Adjusted total income,0.340
+1997,British Columbia,Adjusted after-tax income,0.302
+1998,Canada,Adjusted market income,0.446
+1998,Canada,Adjusted total income,0.356
+1998,Canada,Adjusted after-tax income,0.311
+1998,Atlantic provinces,Adjusted market income,0.458
+1998,Atlantic provinces,Adjusted total income,0.333
+1998,Atlantic provinces,Adjusted after-tax income,0.291
+1998,Newfoundland and Labrador,Adjusted market income,0.491
+1998,Newfoundland and Labrador,Adjusted total income,0.337
+1998,Newfoundland and Labrador,Adjusted after-tax income,0.292
+1998,Prince Edward Island,Adjusted market income,0.422
+1998,Prince Edward Island,Adjusted total income,0.301
+1998,Prince Edward Island,Adjusted after-tax income,0.260
+1998,Nova Scotia,Adjusted market income,0.451
+1998,Nova Scotia,Adjusted total income,0.337
+1998,Nova Scotia,Adjusted after-tax income,0.297
+1998,New Brunswick,Adjusted market income,0.445
+1998,New Brunswick,Adjusted total income,0.328
+1998,New Brunswick,Adjusted after-tax income,0.285
+1998,Quebec,Adjusted market income,0.462
+1998,Quebec,Adjusted total income,0.349
+1998,Quebec,Adjusted after-tax income,0.295
+1998,Ontario,Adjusted market income,0.437
+1998,Ontario,Adjusted total income,0.357
+1998,Ontario,Adjusted after-tax income,0.311
+1998,Prairie provinces,Adjusted market income,0.437
+1998,Prairie provinces,Adjusted total income,0.362
+1998,Prairie provinces,Adjusted after-tax income,0.317
+1998,Manitoba,Adjusted market income,0.432
+1998,Manitoba,Adjusted total income,0.341
+1998,Manitoba,Adjusted after-tax income,0.296
+1998,Saskatchewan,Adjusted market income,0.441
+1998,Saskatchewan,Adjusted total income,0.342
+1998,Saskatchewan,Adjusted after-tax income,0.295
+1998,Alberta,Adjusted market income,0.432
+1998,Alberta,Adjusted total income,0.370
+1998,Alberta,Adjusted after-tax income,0.325
+1998,British Columbia,Adjusted market income,0.423
+1998,British Columbia,Adjusted total income,0.343
+1998,British Columbia,Adjusted after-tax income,0.304
+1999,Canada,Adjusted market income,0.437
+1999,Canada,Adjusted total income,0.356
+1999,Canada,Adjusted after-tax income,0.310
+1999,Atlantic provinces,Adjusted market income,0.450
+1999,Atlantic provinces,Adjusted total income,0.333
+1999,Atlantic provinces,Adjusted after-tax income,0.290
+1999,Newfoundland and Labrador,Adjusted market income,0.503
+1999,Newfoundland and Labrador,Adjusted total income,0.350
+1999,Newfoundland and Labrador,Adjusted after-tax income,0.301
+1999,Prince Edward Island,Adjusted market income,0.442
+1999,Prince Edward Island,Adjusted total income,0.320
+1999,Prince Edward Island,Adjusted after-tax income,0.283
+1999,Nova Scotia,Adjusted market income,0.430
+1999,Nova Scotia,Adjusted total income,0.329
+1999,Nova Scotia,Adjusted after-tax income,0.289
+1999,New Brunswick,Adjusted market income,0.435
+1999,New Brunswick,Adjusted total income,0.325
+1999,New Brunswick,Adjusted after-tax income,0.283
+1999,Quebec,Adjusted market income,0.441
+1999,Quebec,Adjusted total income,0.339
+1999,Quebec,Adjusted after-tax income,0.284
+1999,Ontario,Adjusted market income,0.435
+1999,Ontario,Adjusted total income,0.366
+1999,Ontario,Adjusted after-tax income,0.318
+1999,Prairie provinces,Adjusted market income,0.411
+1999,Prairie provinces,Adjusted total income,0.340
+1999,Prairie provinces,Adjusted after-tax income,0.298
+1999,Manitoba,Adjusted market income,0.410
+1999,Manitoba,Adjusted total income,0.327
+1999,Manitoba,Adjusted after-tax income,0.287
+1999,Saskatchewan,Adjusted market income,0.415
+1999,Saskatchewan,Adjusted total income,0.325
+1999,Saskatchewan,Adjusted after-tax income,0.283
+1999,Alberta,Adjusted market income,0.406
+1999,Alberta,Adjusted total income,0.345
+1999,Alberta,Adjusted after-tax income,0.303
+1999,British Columbia,Adjusted market income,0.429
+1999,British Columbia,Adjusted total income,0.353
+1999,British Columbia,Adjusted after-tax income,0.312
+2000,Canada,Adjusted market income,0.439
+2000,Canada,Adjusted total income,0.362
+2000,Canada,Adjusted after-tax income,0.317
+2000,Atlantic provinces,Adjusted market income,0.453
+2000,Atlantic provinces,Adjusted total income,0.338
+2000,Atlantic provinces,Adjusted after-tax income,0.295
+2000,Newfoundland and Labrador,Adjusted market income,0.501
+2000,Newfoundland and Labrador,Adjusted total income,0.348
+2000,Newfoundland and Labrador,Adjusted after-tax income,0.302
+2000,Prince Edward Island,Adjusted market income,0.438
+2000,Prince Edward Island,Adjusted total income,0.327
+2000,Prince Edward Island,Adjusted after-tax income,0.285
+2000,Nova Scotia,Adjusted market income,0.438
+2000,Nova Scotia,Adjusted total income,0.336
+2000,Nova Scotia,Adjusted after-tax income,0.295
+2000,New Brunswick,Adjusted market income,0.438
+2000,New Brunswick,Adjusted total income,0.333
+2000,New Brunswick,Adjusted after-tax income,0.291
+2000,Quebec,Adjusted market income,0.443
+2000,Quebec,Adjusted total income,0.348
+2000,Quebec,Adjusted after-tax income,0.294
+2000,Ontario,Adjusted market income,0.437
+2000,Ontario,Adjusted total income,0.372
+2000,Ontario,Adjusted after-tax income,0.325
+2000,Prairie provinces,Adjusted market income,0.417
+2000,Prairie provinces,Adjusted total income,0.348
+2000,Prairie provinces,Adjusted after-tax income,0.308
+2000,Manitoba,Adjusted market income,0.411
+2000,Manitoba,Adjusted total income,0.331
+2000,Manitoba,Adjusted after-tax income,0.290
+2000,Saskatchewan,Adjusted market income,0.426
+2000,Saskatchewan,Adjusted total income,0.337
+2000,Saskatchewan,Adjusted after-tax income,0.295
+2000,Alberta,Adjusted market income,0.411
+2000,Alberta,Adjusted total income,0.351
+2000,Alberta,Adjusted after-tax income,0.312
+2000,British Columbia,Adjusted market income,0.427
+2000,British Columbia,Adjusted total income,0.353
+2000,British Columbia,Adjusted after-tax income,0.312
+2001,Canada,Adjusted market income,0.440
+2001,Canada,Adjusted total income,0.360
+2001,Canada,Adjusted after-tax income,0.318
+2001,Atlantic provinces,Adjusted market income,0.455
+2001,Atlantic provinces,Adjusted total income,0.335
+2001,Atlantic provinces,Adjusted after-tax income,0.293
+2001,Newfoundland and Labrador,Adjusted market income,0.497
+2001,Newfoundland and Labrador,Adjusted total income,0.334
+2001,Newfoundland and Labrador,Adjusted after-tax income,0.290
+2001,Prince Edward Island,Adjusted market income,0.430
+2001,Prince Edward Island,Adjusted total income,0.315
+2001,Prince Edward Island,Adjusted after-tax income,0.277
+2001,Nova Scotia,Adjusted market income,0.441
+2001,Nova Scotia,Adjusted total income,0.339
+2001,Nova Scotia,Adjusted after-tax income,0.298
+2001,New Brunswick,Adjusted market income,0.443
+2001,New Brunswick,Adjusted total income,0.331
+2001,New Brunswick,Adjusted after-tax income,0.290
+2001,Quebec,Adjusted market income,0.450
+2001,Quebec,Adjusted total income,0.350
+2001,Quebec,Adjusted after-tax income,0.298
+2001,Ontario,Adjusted market income,0.434
+2001,Ontario,Adjusted total income,0.365
+2001,Ontario,Adjusted after-tax income,0.321
+2001,Prairie provinces,Adjusted market income,0.413
+2001,Prairie provinces,Adjusted total income,0.345
+2001,Prairie provinces,Adjusted after-tax income,0.309
+2001,Manitoba,Adjusted market income,0.410
+2001,Manitoba,Adjusted total income,0.329
+2001,Manitoba,Adjusted after-tax income,0.291
+2001,Saskatchewan,Adjusted market income,0.425
+2001,Saskatchewan,Adjusted total income,0.335
+2001,Saskatchewan,Adjusted after-tax income,0.296
+2001,Alberta,Adjusted market income,0.404
+2001,Alberta,Adjusted total income,0.346
+2001,Alberta,Adjusted after-tax income,0.311
+2001,British Columbia,Adjusted market income,0.439
+2001,British Columbia,Adjusted total income,0.366
+2001,British Columbia,Adjusted after-tax income,0.328
+2002,Canada,Adjusted market income,0.439
+2002,Canada,Adjusted total income,0.360
+2002,Canada,Adjusted after-tax income,0.318
+2002,Atlantic provinces,Adjusted market income,0.458
+2002,Atlantic provinces,Adjusted total income,0.340
+2002,Atlantic provinces,Adjusted after-tax income,0.299
+2002,Newfoundland and Labrador,Adjusted market income,0.501
+2002,Newfoundland and Labrador,Adjusted total income,0.346
+2002,Newfoundland and Labrador,Adjusted after-tax income,0.305
+2002,Prince Edward Island,Adjusted market income,0.443
+2002,Prince Edward Island,Adjusted total income,0.322
+2002,Prince Edward Island,Adjusted after-tax income,0.285
+2002,Nova Scotia,Adjusted market income,0.442
+2002,Nova Scotia,Adjusted total income,0.344
+2002,Nova Scotia,Adjusted after-tax income,0.302
+2002,New Brunswick,Adjusted market income,0.446
+2002,New Brunswick,Adjusted total income,0.331
+2002,New Brunswick,Adjusted after-tax income,0.291
+2002,Quebec,Adjusted market income,0.448
+2002,Quebec,Adjusted total income,0.352
+2002,Quebec,Adjusted after-tax income,0.301
+2002,Ontario,Adjusted market income,0.430
+2002,Ontario,Adjusted total income,0.363
+2002,Ontario,Adjusted after-tax income,0.320
+2002,Prairie provinces,Adjusted market income,0.407
+2002,Prairie provinces,Adjusted total income,0.338
+2002,Prairie provinces,Adjusted after-tax income,0.303
+2002,Manitoba,Adjusted market income,0.420
+2002,Manitoba,Adjusted total income,0.339
+2002,Manitoba,Adjusted after-tax income,0.305
+2002,Saskatchewan,Adjusted market income,0.427
+2002,Saskatchewan,Adjusted total income,0.334
+2002,Saskatchewan,Adjusted after-tax income,0.296
+2002,Alberta,Adjusted market income,0.392
+2002,Alberta,Adjusted total income,0.333
+2002,Alberta,Adjusted after-tax income,0.298
+2002,British Columbia,Adjusted market income,0.454
+2002,British Columbia,Adjusted total income,0.378
+2002,British Columbia,Adjusted after-tax income,0.341
+2003,Canada,Adjusted market income,0.437
+2003,Canada,Adjusted total income,0.358
+2003,Canada,Adjusted after-tax income,0.316
+2003,Atlantic provinces,Adjusted market income,0.453
+2003,Atlantic provinces,Adjusted total income,0.335
+2003,Atlantic provinces,Adjusted after-tax income,0.295
+2003,Newfoundland and Labrador,Adjusted market income,0.498
+2003,Newfoundland and Labrador,Adjusted total income,0.339
+2003,Newfoundland and Labrador,Adjusted after-tax income,0.296
+2003,Prince Edward Island,Adjusted market income,0.417
+2003,Prince Edward Island,Adjusted total income,0.302
+2003,Prince Edward Island,Adjusted after-tax income,0.267
+2003,Nova Scotia,Adjusted market income,0.432
+2003,Nova Scotia,Adjusted total income,0.333
+2003,Nova Scotia,Adjusted after-tax income,0.295
+2003,New Brunswick,Adjusted market income,0.451
+2003,New Brunswick,Adjusted total income,0.337
+2003,New Brunswick,Adjusted after-tax income,0.297
+2003,Quebec,Adjusted market income,0.442
+2003,Quebec,Adjusted total income,0.346
+2003,Quebec,Adjusted after-tax income,0.295
+2003,Ontario,Adjusted market income,0.432
+2003,Ontario,Adjusted total income,0.364
+2003,Ontario,Adjusted after-tax income,0.321
+2003,Prairie provinces,Adjusted market income,0.416
+2003,Prairie provinces,Adjusted total income,0.348
+2003,Prairie provinces,Adjusted after-tax income,0.311
+2003,Manitoba,Adjusted market income,0.419
+2003,Manitoba,Adjusted total income,0.337
+2003,Manitoba,Adjusted after-tax income,0.295
+2003,Saskatchewan,Adjusted market income,0.429
+2003,Saskatchewan,Adjusted total income,0.341
+2003,Saskatchewan,Adjusted after-tax income,0.304
+2003,Alberta,Adjusted market income,0.406
+2003,Alberta,Adjusted total income,0.347
+2003,Alberta,Adjusted after-tax income,0.311
+2003,British Columbia,Adjusted market income,0.437
+2003,British Columbia,Adjusted total income,0.360
+2003,British Columbia,Adjusted after-tax income,0.324
+2004,Canada,Adjusted market income,0.442
+2004,Canada,Adjusted total income,0.365
+2004,Canada,Adjusted after-tax income,0.322
+2004,Atlantic provinces,Adjusted market income,0.447
+2004,Atlantic provinces,Adjusted total income,0.334
+2004,Atlantic provinces,Adjusted after-tax income,0.295
+2004,Newfoundland and Labrador,Adjusted market income,0.493
+2004,Newfoundland and Labrador,Adjusted total income,0.342
+2004,Newfoundland and Labrador,Adjusted after-tax income,0.299
+2004,Prince Edward Island,Adjusted market income,0.413
+2004,Prince Edward Island,Adjusted total income,0.301
+2004,Prince Edward Island,Adjusted after-tax income,0.267
+2004,Nova Scotia,Adjusted market income,0.423
+2004,Nova Scotia,Adjusted total income,0.330
+2004,Nova Scotia,Adjusted after-tax income,0.292
+2004,New Brunswick,Adjusted market income,0.449
+2004,New Brunswick,Adjusted total income,0.338
+2004,New Brunswick,Adjusted after-tax income,0.298
+2004,Quebec,Adjusted market income,0.445
+2004,Quebec,Adjusted total income,0.352
+2004,Quebec,Adjusted after-tax income,0.299
+2004,Ontario,Adjusted market income,0.444
+2004,Ontario,Adjusted total income,0.376
+2004,Ontario,Adjusted after-tax income,0.332
+2004,Prairie provinces,Adjusted market income,0.414
+2004,Prairie provinces,Adjusted total income,0.348
+2004,Prairie provinces,Adjusted after-tax income,0.312
+2004,Manitoba,Adjusted market income,0.418
+2004,Manitoba,Adjusted total income,0.338
+2004,Manitoba,Adjusted after-tax income,0.297
+2004,Saskatchewan,Adjusted market income,0.430
+2004,Saskatchewan,Adjusted total income,0.343
+2004,Saskatchewan,Adjusted after-tax income,0.307
+2004,Alberta,Adjusted market income,0.401
+2004,Alberta,Adjusted total income,0.345
+2004,Alberta,Adjusted after-tax income,0.310
+2004,British Columbia,Adjusted market income,0.437
+2004,British Columbia,Adjusted total income,0.363
+2004,British Columbia,Adjusted after-tax income,0.328
+2005,Canada,Adjusted market income,0.435
+2005,Canada,Adjusted total income,0.358
+2005,Canada,Adjusted after-tax income,0.317
+2005,Atlantic provinces,Adjusted market income,0.444
+2005,Atlantic provinces,Adjusted total income,0.333
+2005,Atlantic provinces,Adjusted after-tax income,0.294
+2005,Newfoundland and Labrador,Adjusted market income,0.496
+2005,Newfoundland and Labrador,Adjusted total income,0.349
+2005,Newfoundland and Labrador,Adjusted after-tax income,0.302
+2005,Prince Edward Island,Adjusted market income,0.404
+2005,Prince Edward Island,Adjusted total income,0.291
+2005,Prince Edward Island,Adjusted after-tax income,0.257
+2005,Nova Scotia,Adjusted market income,0.420
+2005,Nova Scotia,Adjusted total income,0.330
+2005,Nova Scotia,Adjusted after-tax income,0.293
+2005,New Brunswick,Adjusted market income,0.442
+2005,New Brunswick,Adjusted total income,0.331
+2005,New Brunswick,Adjusted after-tax income,0.293
+2005,Quebec,Adjusted market income,0.442
+2005,Quebec,Adjusted total income,0.344
+2005,Quebec,Adjusted after-tax income,0.296
+2005,Ontario,Adjusted market income,0.430
+2005,Ontario,Adjusted total income,0.364
+2005,Ontario,Adjusted after-tax income,0.321
+2005,Prairie provinces,Adjusted market income,0.412
+2005,Prairie provinces,Adjusted total income,0.348
+2005,Prairie provinces,Adjusted after-tax income,0.312
+2005,Manitoba,Adjusted market income,0.416
+2005,Manitoba,Adjusted total income,0.340
+2005,Manitoba,Adjusted after-tax income,0.298
+2005,Saskatchewan,Adjusted market income,0.445
+2005,Saskatchewan,Adjusted total income,0.362
+2005,Saskatchewan,Adjusted after-tax income,0.325
+2005,Alberta,Adjusted market income,0.393
+2005,Alberta,Adjusted total income,0.339
+2005,Alberta,Adjusted after-tax income,0.303
+2005,British Columbia,Adjusted market income,0.432
+2005,British Columbia,Adjusted total income,0.364
+2005,British Columbia,Adjusted after-tax income,0.325
+2006,Canada,Adjusted market income,0.433
+2006,Canada,Adjusted total income,0.356
+2006,Canada,Adjusted after-tax income,0.316
+2006,Atlantic provinces,Adjusted market income,0.439
+2006,Atlantic provinces,Adjusted total income,0.331
+2006,Atlantic provinces,Adjusted after-tax income,0.291
+2006,Newfoundland and Labrador,Adjusted market income,0.486
+2006,Newfoundland and Labrador,Adjusted total income,0.346
+2006,Newfoundland and Labrador,Adjusted after-tax income,0.298
+2006,Prince Edward Island,Adjusted market income,0.409
+2006,Prince Edward Island,Adjusted total income,0.302
+2006,Prince Edward Island,Adjusted after-tax income,0.268
+2006,Nova Scotia,Adjusted market income,0.420
+2006,Nova Scotia,Adjusted total income,0.332
+2006,Nova Scotia,Adjusted after-tax income,0.294
+2006,New Brunswick,Adjusted market income,0.433
+2006,New Brunswick,Adjusted total income,0.323
+2006,New Brunswick,Adjusted after-tax income,0.285
+2006,Quebec,Adjusted market income,0.442
+2006,Quebec,Adjusted total income,0.342
+2006,Quebec,Adjusted after-tax income,0.293
+2006,Ontario,Adjusted market income,0.427
+2006,Ontario,Adjusted total income,0.359
+2006,Ontario,Adjusted after-tax income,0.319
+2006,Prairie provinces,Adjusted market income,0.424
+2006,Prairie provinces,Adjusted total income,0.358
+2006,Prairie provinces,Adjusted after-tax income,0.322
+2006,Manitoba,Adjusted market income,0.431
+2006,Manitoba,Adjusted total income,0.352
+2006,Manitoba,Adjusted after-tax income,0.309
+2006,Saskatchewan,Adjusted market income,0.444
+2006,Saskatchewan,Adjusted total income,0.363
+2006,Saskatchewan,Adjusted after-tax income,0.324
+2006,Alberta,Adjusted market income,0.408
+2006,Alberta,Adjusted total income,0.350
+2006,Alberta,Adjusted after-tax income,0.314
+2006,British Columbia,Adjusted market income,0.420
+2006,British Columbia,Adjusted total income,0.355
+2006,British Columbia,Adjusted after-tax income,0.320
+2007,Canada,Adjusted market income,0.434
+2007,Canada,Adjusted total income,0.358
+2007,Canada,Adjusted after-tax income,0.316
+2007,Atlantic provinces,Adjusted market income,0.435
+2007,Atlantic provinces,Adjusted total income,0.329
+2007,Atlantic provinces,Adjusted after-tax income,0.287
+2007,Newfoundland and Labrador,Adjusted market income,0.476
+2007,Newfoundland and Labrador,Adjusted total income,0.342
+2007,Newfoundland and Labrador,Adjusted after-tax income,0.296
+2007,Prince Edward Island,Adjusted market income,0.398
+2007,Prince Edward Island,Adjusted total income,0.288
+2007,Prince Edward Island,Adjusted after-tax income,0.252
+2007,Nova Scotia,Adjusted market income,0.419
+2007,Nova Scotia,Adjusted total income,0.332
+2007,Nova Scotia,Adjusted after-tax income,0.290
+2007,New Brunswick,Adjusted market income,0.429
+2007,New Brunswick,Adjusted total income,0.323
+2007,New Brunswick,Adjusted after-tax income,0.283
+2007,Quebec,Adjusted market income,0.447
+2007,Quebec,Adjusted total income,0.345
+2007,Quebec,Adjusted after-tax income,0.294
+2007,Ontario,Adjusted market income,0.431
+2007,Ontario,Adjusted total income,0.361
+2007,Ontario,Adjusted after-tax income,0.319
+2007,Prairie provinces,Adjusted market income,0.424
+2007,Prairie provinces,Adjusted total income,0.364
+2007,Prairie provinces,Adjusted after-tax income,0.325
+2007,Manitoba,Adjusted market income,0.433
+2007,Manitoba,Adjusted total income,0.358
+2007,Manitoba,Adjusted after-tax income,0.313
+2007,Saskatchewan,Adjusted market income,0.449
+2007,Saskatchewan,Adjusted total income,0.373
+2007,Saskatchewan,Adjusted after-tax income,0.328
+2007,Alberta,Adjusted market income,0.406
+2007,Alberta,Adjusted total income,0.354
+2007,Alberta,Adjusted after-tax income,0.318
+2007,British Columbia,Adjusted market income,0.410
+2007,British Columbia,Adjusted total income,0.349
+2007,British Columbia,Adjusted after-tax income,0.314
+2008,Canada,Adjusted market income,0.430
+2008,Canada,Adjusted total income,0.355
+2008,Canada,Adjusted after-tax income,0.314
+2008,Atlantic provinces,Adjusted market income,0.436
+2008,Atlantic provinces,Adjusted total income,0.331
+2008,Atlantic provinces,Adjusted after-tax income,0.289
+2008,Newfoundland and Labrador,Adjusted market income,0.472
+2008,Newfoundland and Labrador,Adjusted total income,0.344
+2008,Newfoundland and Labrador,Adjusted after-tax income,0.301
+2008,Prince Edward Island,Adjusted market income,0.401
+2008,Prince Edward Island,Adjusted total income,0.300
+2008,Prince Edward Island,Adjusted after-tax income,0.263
+2008,Nova Scotia,Adjusted market income,0.434
+2008,Nova Scotia,Adjusted total income,0.337
+2008,Nova Scotia,Adjusted after-tax income,0.294
+2008,New Brunswick,Adjusted market income,0.418
+2008,New Brunswick,Adjusted total income,0.318
+2008,New Brunswick,Adjusted after-tax income,0.279
+2008,Quebec,Adjusted market income,0.440
+2008,Quebec,Adjusted total income,0.339
+2008,Quebec,Adjusted after-tax income,0.293
+2008,Ontario,Adjusted market income,0.431
+2008,Ontario,Adjusted total income,0.363
+2008,Ontario,Adjusted after-tax income,0.319
+2008,Prairie provinces,Adjusted market income,0.407
+2008,Prairie provinces,Adjusted total income,0.350
+2008,Prairie provinces,Adjusted after-tax income,0.314
+2008,Manitoba,Adjusted market income,0.421
+2008,Manitoba,Adjusted total income,0.349
+2008,Manitoba,Adjusted after-tax income,0.305
+2008,Saskatchewan,Adjusted market income,0.417
+2008,Saskatchewan,Adjusted total income,0.346
+2008,Saskatchewan,Adjusted after-tax income,0.308
+2008,Alberta,Adjusted market income,0.393
+2008,Alberta,Adjusted total income,0.344
+2008,Alberta,Adjusted after-tax income,0.309
+2008,British Columbia,Adjusted market income,0.409
+2008,British Columbia,Adjusted total income,0.346
+2008,British Columbia,Adjusted after-tax income,0.311
+2009,Canada,Adjusted market income,0.438
+2009,Canada,Adjusted total income,0.355
+2009,Canada,Adjusted after-tax income,0.315
+2009,Atlantic provinces,Adjusted market income,0.447
+2009,Atlantic provinces,Adjusted total income,0.336
+2009,Atlantic provinces,Adjusted after-tax income,0.296
+2009,Newfoundland and Labrador,Adjusted market income,0.477
+2009,Newfoundland and Labrador,Adjusted total income,0.341
+2009,Newfoundland and Labrador,Adjusted after-tax income,0.300
+2009,Prince Edward Island,Adjusted market income,0.400
+2009,Prince Edward Island,Adjusted total income,0.289
+2009,Prince Edward Island,Adjusted after-tax income,0.254
+2009,Nova Scotia,Adjusted market income,0.448
+2009,Nova Scotia,Adjusted total income,0.349
+2009,Nova Scotia,Adjusted after-tax income,0.306
+2009,New Brunswick,Adjusted market income,0.432
+2009,New Brunswick,Adjusted total income,0.325
+2009,New Brunswick,Adjusted after-tax income,0.287
+2009,Quebec,Adjusted market income,0.436
+2009,Quebec,Adjusted total income,0.332
+2009,Quebec,Adjusted after-tax income,0.286
+2009,Ontario,Adjusted market income,0.440
+2009,Ontario,Adjusted total income,0.361
+2009,Ontario,Adjusted after-tax income,0.319
+2009,Prairie provinces,Adjusted market income,0.420
+2009,Prairie provinces,Adjusted total income,0.357
+2009,Prairie provinces,Adjusted after-tax income,0.320
+2009,Manitoba,Adjusted market income,0.415
+2009,Manitoba,Adjusted total income,0.335
+2009,Manitoba,Adjusted after-tax income,0.293
+2009,Saskatchewan,Adjusted market income,0.431
+2009,Saskatchewan,Adjusted total income,0.357
+2009,Saskatchewan,Adjusted after-tax income,0.316
+2009,Alberta,Adjusted market income,0.411
+2009,Alberta,Adjusted total income,0.356
+2009,Alberta,Adjusted after-tax income,0.320
+2009,British Columbia,Adjusted market income,0.424
+2009,British Columbia,Adjusted total income,0.355
+2009,British Columbia,Adjusted after-tax income,0.321
+2010,Canada,Adjusted market income,0.441
+2010,Canada,Adjusted total income,0.356
+2010,Canada,Adjusted after-tax income,0.315
+2010,Atlantic provinces,Adjusted market income,0.445
+2010,Atlantic provinces,Adjusted total income,0.330
+2010,Atlantic provinces,Adjusted after-tax income,0.290
+2010,Newfoundland and Labrador,Adjusted market income,0.487
+2010,Newfoundland and Labrador,Adjusted total income,0.350
+2010,Newfoundland and Labrador,Adjusted after-tax income,0.308
+2010,Prince Edward Island,Adjusted market income,0.408
+2010,Prince Edward Island,Adjusted total income,0.294
+2010,Prince Edward Island,Adjusted after-tax income,0.258
+2010,Nova Scotia,Adjusted market income,0.439
+2010,Nova Scotia,Adjusted total income,0.333
+2010,Nova Scotia,Adjusted after-tax income,0.292
+2010,New Brunswick,Adjusted market income,0.425
+2010,New Brunswick,Adjusted total income,0.317
+2010,New Brunswick,Adjusted after-tax income,0.279
+2010,Quebec,Adjusted market income,0.434
+2010,Quebec,Adjusted total income,0.332
+2010,Quebec,Adjusted after-tax income,0.286
+2010,Ontario,Adjusted market income,0.447
+2010,Ontario,Adjusted total income,0.363
+2010,Ontario,Adjusted after-tax income,0.320
+2010,Prairie provinces,Adjusted market income,0.425
+2010,Prairie provinces,Adjusted total income,0.359
+2010,Prairie provinces,Adjusted after-tax income,0.319
+2010,Manitoba,Adjusted market income,0.419
+2010,Manitoba,Adjusted total income,0.339
+2010,Manitoba,Adjusted after-tax income,0.296
+2010,Saskatchewan,Adjusted market income,0.428
+2010,Saskatchewan,Adjusted total income,0.353
+2010,Saskatchewan,Adjusted after-tax income,0.311
+2010,Alberta,Adjusted market income,0.419
+2010,Alberta,Adjusted total income,0.359
+2010,Alberta,Adjusted after-tax income,0.320
+2010,British Columbia,Adjusted market income,0.429
+2010,British Columbia,Adjusted total income,0.357
+2010,British Columbia,Adjusted after-tax income,0.322
+2011,Canada,Adjusted market income,0.433
+2011,Canada,Adjusted total income,0.352
+2011,Canada,Adjusted after-tax income,0.311
+2011,Atlantic provinces,Adjusted market income,0.434
+2011,Atlantic provinces,Adjusted total income,0.326
+2011,Atlantic provinces,Adjusted after-tax income,0.288
+2011,Newfoundland and Labrador,Adjusted market income,0.469
+2011,Newfoundland and Labrador,Adjusted total income,0.344
+2011,Newfoundland and Labrador,Adjusted after-tax income,0.303
+2011,Prince Edward Island,Adjusted market income,0.402
+2011,Prince Edward Island,Adjusted total income,0.299
+2011,Prince Edward Island,Adjusted after-tax income,0.265
+2011,Nova Scotia,Adjusted market income,0.415
+2011,Nova Scotia,Adjusted total income,0.317
+2011,Nova Scotia,Adjusted after-tax income,0.280
+2011,New Brunswick,Adjusted market income,0.435
+2011,New Brunswick,Adjusted total income,0.326
+2011,New Brunswick,Adjusted after-tax income,0.289
+2011,Quebec,Adjusted market income,0.438
+2011,Quebec,Adjusted total income,0.340
+2011,Quebec,Adjusted after-tax income,0.291
+2011,Ontario,Adjusted market income,0.433
+2011,Ontario,Adjusted total income,0.352
+2011,Ontario,Adjusted after-tax income,0.311
+2011,Prairie provinces,Adjusted market income,0.419
+2011,Prairie provinces,Adjusted total income,0.361
+2011,Prairie provinces,Adjusted after-tax income,0.323
+2011,Manitoba,Adjusted market income,0.405
+2011,Manitoba,Adjusted total income,0.330
+2011,Manitoba,Adjusted after-tax income,0.292
+2011,Saskatchewan,Adjusted market income,0.415
+2011,Saskatchewan,Adjusted total income,0.347
+2011,Saskatchewan,Adjusted after-tax income,0.306
+2011,Alberta,Adjusted market income,0.416
+2011,Alberta,Adjusted total income,0.365
+2011,Alberta,Adjusted after-tax income,0.326
+2011,British Columbia,Adjusted market income,0.420
+2011,British Columbia,Adjusted total income,0.346
+2011,British Columbia,Adjusted after-tax income,0.312
+2012,Canada,Adjusted market income,0.432
+2012,Canada,Adjusted total income,0.354
+2012,Canada,Adjusted after-tax income,0.315
+2012,Atlantic provinces,Adjusted market income,0.434
+2012,Atlantic provinces,Adjusted total income,0.330
+2012,Atlantic provinces,Adjusted after-tax income,0.291
+2012,Newfoundland and Labrador,Adjusted market income,0.462
+2012,Newfoundland and Labrador,Adjusted total income,0.343
+2012,Newfoundland and Labrador,Adjusted after-tax income,0.300
+2012,Prince Edward Island,Adjusted market income,0.396
+2012,Prince Edward Island,Adjusted total income,0.293
+2012,Prince Edward Island,Adjusted after-tax income,0.257
+2012,Nova Scotia,Adjusted market income,0.426
+2012,Nova Scotia,Adjusted total income,0.330
+2012,Nova Scotia,Adjusted after-tax income,0.291
+2012,New Brunswick,Adjusted market income,0.426
+2012,New Brunswick,Adjusted total income,0.324
+2012,New Brunswick,Adjusted after-tax income,0.288
+2012,Quebec,Adjusted market income,0.441
+2012,Quebec,Adjusted total income,0.341
+2012,Quebec,Adjusted after-tax income,0.296
+2012,Ontario,Adjusted market income,0.436
+2012,Ontario,Adjusted total income,0.360
+2012,Ontario,Adjusted after-tax income,0.321
+2012,Prairie provinces,Adjusted market income,0.403
+2012,Prairie provinces,Adjusted total income,0.348
+2012,Prairie provinces,Adjusted after-tax income,0.311
+2012,Manitoba,Adjusted market income,0.411
+2012,Manitoba,Adjusted total income,0.335
+2012,Manitoba,Adjusted after-tax income,0.297
+2012,Saskatchewan,Adjusted market income,0.398
+2012,Saskatchewan,Adjusted total income,0.334
+2012,Saskatchewan,Adjusted after-tax income,0.298
+2012,Alberta,Adjusted market income,0.392
+2012,Alberta,Adjusted total income,0.345
+2012,Alberta,Adjusted after-tax income,0.308
+2012,British Columbia,Adjusted market income,0.419
+2012,British Columbia,Adjusted total income,0.348
+2012,British Columbia,Adjusted after-tax income,0.314
+2013,Canada,Adjusted market income,0.435
+2013,Canada,Adjusted total income,0.357
+2013,Canada,Adjusted after-tax income,0.317
+2013,Atlantic provinces,Adjusted market income,0.436
+2013,Atlantic provinces,Adjusted total income,0.335
+2013,Atlantic provinces,Adjusted after-tax income,0.297
+2013,Newfoundland and Labrador,Adjusted market income,0.455
+2013,Newfoundland and Labrador,Adjusted total income,0.349
+2013,Newfoundland and Labrador,Adjusted after-tax income,0.306
+2013,Prince Edward Island,Adjusted market income,0.428
+2013,Prince Edward Island,Adjusted total income,0.319
+2013,Prince Edward Island,Adjusted after-tax income,0.285
+2013,Nova Scotia,Adjusted market income,0.430
+2013,Nova Scotia,Adjusted total income,0.339
+2013,Nova Scotia,Adjusted after-tax income,0.301
+2013,New Brunswick,Adjusted market income,0.424
+2013,New Brunswick,Adjusted total income,0.317
+2013,New Brunswick,Adjusted after-tax income,0.281
+2013,Quebec,Adjusted market income,0.442
+2013,Quebec,Adjusted total income,0.338
+2013,Quebec,Adjusted after-tax income,0.291
+2013,Ontario,Adjusted market income,0.444
+2013,Ontario,Adjusted total income,0.367
+2013,Ontario,Adjusted after-tax income,0.327
+2013,Prairie provinces,Adjusted market income,0.403
+2013,Prairie provinces,Adjusted total income,0.349
+2013,Prairie provinces,Adjusted after-tax income,0.312
+2013,Manitoba,Adjusted market income,0.405
+2013,Manitoba,Adjusted total income,0.334
+2013,Manitoba,Adjusted after-tax income,0.294
+2013,Saskatchewan,Adjusted market income,0.416
+2013,Saskatchewan,Adjusted total income,0.347
+2013,Saskatchewan,Adjusted after-tax income,0.306
+2013,Alberta,Adjusted market income,0.391
+2013,Alberta,Adjusted total income,0.344
+2013,Alberta,Adjusted after-tax income,0.308
+2013,British Columbia,Adjusted market income,0.419
+2013,British Columbia,Adjusted total income,0.351
+2013,British Columbia,Adjusted after-tax income,0.318
+2014,Canada,Adjusted market income,0.426
+2014,Canada,Adjusted total income,0.351
+2014,Canada,Adjusted after-tax income,0.310
+2014,Atlantic provinces,Adjusted market income,0.429
+2014,Atlantic provinces,Adjusted total income,0.328
+2014,Atlantic provinces,Adjusted after-tax income,0.288
+2014,Newfoundland and Labrador,Adjusted market income,0.441
+2014,Newfoundland and Labrador,Adjusted total income,0.334
+2014,Newfoundland and Labrador,Adjusted after-tax income,0.294
+2014,Prince Edward Island,Adjusted market income,0.415
+2014,Prince Edward Island,Adjusted total income,0.316
+2014,Prince Edward Island,Adjusted after-tax income,0.276
+2014,Nova Scotia,Adjusted market income,0.424
+2014,Nova Scotia,Adjusted total income,0.332
+2014,Nova Scotia,Adjusted after-tax income,0.290
+2014,New Brunswick,Adjusted market income,0.422
+2014,New Brunswick,Adjusted total income,0.316
+2014,New Brunswick,Adjusted after-tax income,0.277
+2014,Quebec,Adjusted market income,0.427
+2014,Quebec,Adjusted total income,0.329
+2014,Quebec,Adjusted after-tax income,0.280
+2014,Ontario,Adjusted market income,0.428
+2014,Ontario,Adjusted total income,0.357
+2014,Ontario,Adjusted after-tax income,0.315
+2014,Prairie provinces,Adjusted market income,0.404
+2014,Prairie provinces,Adjusted total income,0.354
+2014,Prairie provinces,Adjusted after-tax income,0.318
+2014,Manitoba,Adjusted market income,0.410
+2014,Manitoba,Adjusted total income,0.337
+2014,Manitoba,Adjusted after-tax income,0.297
+2014,Saskatchewan,Adjusted market income,0.407
+2014,Saskatchewan,Adjusted total income,0.345
+2014,Saskatchewan,Adjusted after-tax income,0.305
+2014,Alberta,Adjusted market income,0.392
+2014,Alberta,Adjusted total income,0.352
+2014,Alberta,Adjusted after-tax income,0.317
+2014,British Columbia,Adjusted market income,0.414
+2014,British Columbia,Adjusted total income,0.346
+2014,British Columbia,Adjusted after-tax income,0.309
+2015,Canada,Adjusted market income,0.435
+2015,Canada,Adjusted total income,0.354
+2015,Canada,Adjusted after-tax income,0.314
+2015,Atlantic provinces,Adjusted market income,0.437
+2015,Atlantic provinces,Adjusted total income,0.334
+2015,Atlantic provinces,Adjusted after-tax income,0.295
+2015,Newfoundland and Labrador,Adjusted market income,0.466
+2015,Newfoundland and Labrador,Adjusted total income,0.357
+2015,Newfoundland and Labrador,Adjusted after-tax income,0.314
+2015,Prince Edward Island,Adjusted market income,0.407
+2015,Prince Edward Island,Adjusted total income,0.314
+2015,Prince Edward Island,Adjusted after-tax income,0.282
+2015,Nova Scotia,Adjusted market income,0.435
+2015,Nova Scotia,Adjusted total income,0.335
+2015,Nova Scotia,Adjusted after-tax income,0.297
+2015,New Brunswick,Adjusted market income,0.413
+2015,New Brunswick,Adjusted total income,0.309
+2015,New Brunswick,Adjusted after-tax income,0.273
+2015,Quebec,Adjusted market income,0.433
+2015,Quebec,Adjusted total income,0.329
+2015,Quebec,Adjusted after-tax income,0.284
+2015,Ontario,Adjusted market income,0.435
+2015,Ontario,Adjusted total income,0.359
+2015,Ontario,Adjusted after-tax income,0.317
+2015,Prairie provinces,Adjusted market income,0.422
+2015,Prairie provinces,Adjusted total income,0.361
+2015,Prairie provinces,Adjusted after-tax income,0.321
+2015,Manitoba,Adjusted market income,0.418
+2015,Manitoba,Adjusted total income,0.341
+2015,Manitoba,Adjusted after-tax income,0.300
+2015,Saskatchewan,Adjusted market income,0.412
+2015,Saskatchewan,Adjusted total income,0.342
+2015,Saskatchewan,Adjusted after-tax income,0.302
+2015,Alberta,Adjusted market income,0.416
+2015,Alberta,Adjusted total income,0.362
+2015,Alberta,Adjusted after-tax income,0.322
+2015,British Columbia,Adjusted market income,0.419
+2015,British Columbia,Adjusted total income,0.346
+2015,British Columbia,Adjusted after-tax income,0.314
+2016,Canada,Adjusted market income,0.431
+2016,Canada,Adjusted total income,0.347
+2016,Canada,Adjusted after-tax income,0.306
+2016,Atlantic provinces,Adjusted market income,0.444
+2016,Atlantic provinces,Adjusted total income,0.334
+2016,Atlantic provinces,Adjusted after-tax income,0.292
+2016,Newfoundland and Labrador,Adjusted market income,0.466
+2016,Newfoundland and Labrador,Adjusted total income,0.345
+2016,Newfoundland and Labrador,Adjusted after-tax income,0.302
+2016,Prince Edward Island,Adjusted market income,0.429
+2016,Prince Edward Island,Adjusted total income,0.319
+2016,Prince Edward Island,Adjusted after-tax income,0.278
+2016,Nova Scotia,Adjusted market income,0.442
+2016,Nova Scotia,Adjusted total income,0.342
+2016,Nova Scotia,Adjusted after-tax income,0.297
+2016,New Brunswick,Adjusted market income,0.430
+2016,New Brunswick,Adjusted total income,0.315
+2016,New Brunswick,Adjusted after-tax income,0.279
+2016,Quebec,Adjusted market income,0.435
+2016,Quebec,Adjusted total income,0.332
+2016,Quebec,Adjusted after-tax income,0.283
+2016,Ontario,Adjusted market income,0.443
+2016,Ontario,Adjusted total income,0.362
+2016,Ontario,Adjusted after-tax income,0.318
+2016,Prairie provinces,Adjusted market income,0.401
+2016,Prairie provinces,Adjusted total income,0.334
+2016,Prairie provinces,Adjusted after-tax income,0.297
+2016,Manitoba,Adjusted market income,0.410
+2016,Manitoba,Adjusted total income,0.326
+2016,Manitoba,Adjusted after-tax income,0.289
+2016,Saskatchewan,Adjusted market income,0.397
+2016,Saskatchewan,Adjusted total income,0.326
+2016,Saskatchewan,Adjusted after-tax income,0.289
+2016,Alberta,Adjusted market income,0.394
+2016,Alberta,Adjusted total income,0.333
+2016,Alberta,Adjusted after-tax income,0.296
+2016,British Columbia,Adjusted market income,0.403
+2016,British Columbia,Adjusted total income,0.332
+2016,British Columbia,Adjusted after-tax income,0.298
+2017,Canada,Adjusted market income,0.438
+2017,Canada,Adjusted total income,0.352
+2017,Canada,Adjusted after-tax income,0.309
+2017,Atlantic provinces,Adjusted market income,0.447
+2017,Atlantic provinces,Adjusted total income,0.335
+2017,Atlantic provinces,Adjusted after-tax income,0.293
+2017,Newfoundland and Labrador,Adjusted market income,0.484
+2017,Newfoundland and Labrador,Adjusted total income,0.359
+2017,Newfoundland and Labrador,Adjusted after-tax income,0.309
+2017,Prince Edward Island,Adjusted market income,0.426
+2017,Prince Edward Island,Adjusted total income,0.320
+2017,Prince Edward Island,Adjusted after-tax income,0.287
+2017,Nova Scotia,Adjusted market income,0.438
+2017,Nova Scotia,Adjusted total income,0.336
+2017,Nova Scotia,Adjusted after-tax income,0.295
+2017,New Brunswick,Adjusted market income,0.431
+2017,New Brunswick,Adjusted total income,0.317
+2017,New Brunswick,Adjusted after-tax income,0.278
+2017,Quebec,Adjusted market income,0.436
+2017,Quebec,Adjusted total income,0.331
+2017,Quebec,Adjusted after-tax income,0.287
+2017,Ontario,Adjusted market income,0.451
+2017,Ontario,Adjusted total income,0.368
+2017,Ontario,Adjusted after-tax income,0.321
+2017,Prairie provinces,Adjusted market income,0.409
+2017,Prairie provinces,Adjusted total income,0.341
+2017,Prairie provinces,Adjusted after-tax income,0.301
+2017,Manitoba,Adjusted market income,0.426
+2017,Manitoba,Adjusted total income,0.345
+2017,Manitoba,Adjusted after-tax income,0.304
+2017,Saskatchewan,Adjusted market income,0.423
+2017,Saskatchewan,Adjusted total income,0.343
+2017,Saskatchewan,Adjusted after-tax income,0.302
+2017,Alberta,Adjusted market income,0.396
+2017,Alberta,Adjusted total income,0.334
+2017,Alberta,Adjusted after-tax income,0.294
+2017,British Columbia,Adjusted market income,0.414
+2017,British Columbia,Adjusted total income,0.339
+2017,British Columbia,Adjusted after-tax income,0.303
+2018,Canada,Adjusted market income,0.429
+2018,Canada,Adjusted total income,0.345
+2018,Canada,Adjusted after-tax income,0.304
+2018,Atlantic provinces,Adjusted market income,0.446
+2018,Atlantic provinces,Adjusted total income,0.335
+2018,Atlantic provinces,Adjusted after-tax income,0.289
+2018,Newfoundland and Labrador,Adjusted market income,0.474
+2018,Newfoundland and Labrador,Adjusted total income,0.347
+2018,Newfoundland and Labrador,Adjusted after-tax income,0.300
+2018,Prince Edward Island,Adjusted market income,0.430
+2018,Prince Edward Island,Adjusted total income,0.321
+2018,Prince Edward Island,Adjusted after-tax income,0.282
+2018,Nova Scotia,Adjusted market income,0.434
+2018,Nova Scotia,Adjusted total income,0.332
+2018,Nova Scotia,Adjusted after-tax income,0.288
+2018,New Brunswick,Adjusted market income,0.442
+2018,New Brunswick,Adjusted total income,0.330
+2018,New Brunswick,Adjusted after-tax income,0.283
+2018,Quebec,Adjusted market income,0.434
+2018,Quebec,Adjusted total income,0.330
+2018,Quebec,Adjusted after-tax income,0.283
+2018,Ontario,Adjusted market income,0.432
+2018,Ontario,Adjusted total income,0.353
+2018,Ontario,Adjusted after-tax income,0.312
+2018,Prairie provinces,Adjusted market income,0.413
+2018,Prairie provinces,Adjusted total income,0.342
+2018,Prairie provinces,Adjusted after-tax income,0.300
+2018,Manitoba,Adjusted market income,0.414
+2018,Manitoba,Adjusted total income,0.333
+2018,Manitoba,Adjusted after-tax income,0.289
+2018,Saskatchewan,Adjusted market income,0.403
+2018,Saskatchewan,Adjusted total income,0.326
+2018,Saskatchewan,Adjusted after-tax income,0.290
+2018,Alberta,Adjusted market income,0.410
+2018,Alberta,Adjusted total income,0.343
+2018,Alberta,Adjusted after-tax income,0.299
+2018,British Columbia,Adjusted market income,0.409
+2018,British Columbia,Adjusted total income,0.340
+2018,British Columbia,Adjusted after-tax income,0.303
+2018,Territories,Adjusted market income,0.414
+2018,Territories,Adjusted total income,0.340
+2018,Territories,Adjusted after-tax income,0.311
+2018,Yukon,Adjusted market income,0.355
+2018,Yukon,Adjusted total income,0.300
+2018,Yukon,Adjusted after-tax income,0.274
+2018,Northwest Territories,Adjusted market income,0.384
+2018,Northwest Territories,Adjusted total income,0.322
+2018,Northwest Territories,Adjusted after-tax income,0.294
+2018,Nunavut,Adjusted market income,0.500
+2018,Nunavut,Adjusted total income,0.388
+2018,Nunavut,Adjusted after-tax income,0.355
+2019,Canada,Adjusted market income,0.421
+2019,Canada,Adjusted total income,0.338
+2019,Canada,Adjusted after-tax income,0.299
+2019,Atlantic provinces,Adjusted market income,0.429
+2019,Atlantic provinces,Adjusted total income,0.321
+2019,Atlantic provinces,Adjusted after-tax income,0.281
+2019,Newfoundland and Labrador,Adjusted market income,0.475
+2019,Newfoundland and Labrador,Adjusted total income,0.348
+2019,Newfoundland and Labrador,Adjusted after-tax income,0.303
+2019,Prince Edward Island,Adjusted market income,0.402
+2019,Prince Edward Island,Adjusted total income,0.297
+2019,Prince Edward Island,Adjusted after-tax income,0.262
+2019,Nova Scotia,Adjusted market income,0.415
+2019,Nova Scotia,Adjusted total income,0.319
+2019,Nova Scotia,Adjusted after-tax income,0.278
+2019,New Brunswick,Adjusted market income,0.416
+2019,New Brunswick,Adjusted total income,0.307
+2019,New Brunswick,Adjusted after-tax income,0.270
+2019,Quebec,Adjusted market income,0.425
+2019,Quebec,Adjusted total income,0.327
+2019,Quebec,Adjusted after-tax income,0.282
+2019,Ontario,Adjusted market income,0.424
+2019,Ontario,Adjusted total income,0.343
+2019,Ontario,Adjusted after-tax income,0.303
+2019,Prairie provinces,Adjusted market income,0.409
+2019,Prairie provinces,Adjusted total income,0.336
+2019,Prairie provinces,Adjusted after-tax income,0.298
+2019,Manitoba,Adjusted market income,0.419
+2019,Manitoba,Adjusted total income,0.333
+2019,Manitoba,Adjusted after-tax income,0.290
+2019,Saskatchewan,Adjusted market income,0.410
+2019,Saskatchewan,Adjusted total income,0.330
+2019,Saskatchewan,Adjusted after-tax income,0.293
+2019,Alberta,Adjusted market income,0.400
+2019,Alberta,Adjusted total income,0.333
+2019,Alberta,Adjusted after-tax income,0.296
+2019,British Columbia,Adjusted market income,0.408
+2019,British Columbia,Adjusted total income,0.339
+2019,British Columbia,Adjusted after-tax income,0.305
+2019,Territories,Adjusted market income,0.396
+2019,Territories,Adjusted total income,0.325
+2019,Territories,Adjusted after-tax income,0.296
+2019,Yukon,Adjusted market income,0.339
+2019,Yukon,Adjusted total income,0.285
+2019,Yukon,Adjusted after-tax income,0.257
+2019,Northwest Territories,Adjusted market income,0.380
+2019,Northwest Territories,Adjusted total income,0.316
+2019,Northwest Territories,Adjusted after-tax income,0.289
+2019,Nunavut,Adjusted market income,0.468
+2019,Nunavut,Adjusted total income,0.367
+2019,Nunavut,Adjusted after-tax income,0.333
+2020,Canada,Adjusted market income,0.440
+2020,Canada,Adjusted total income,0.322
+2020,Canada,Adjusted after-tax income,0.281
+2020,Atlantic provinces,Adjusted market income,0.445
+2020,Atlantic provinces,Adjusted total income,0.306
+2020,Atlantic provinces,Adjusted after-tax income,0.265
+2020,Newfoundland and Labrador,Adjusted market income,0.472
+2020,Newfoundland and Labrador,Adjusted total income,0.315
+2020,Newfoundland and Labrador,Adjusted after-tax income,0.272
+2020,Prince Edward Island,Adjusted market income,0.419
+2020,Prince Edward Island,Adjusted total income,0.293
+2020,Prince Edward Island,Adjusted after-tax income,0.255
+2020,Nova Scotia,Adjusted market income,0.437
+2020,Nova Scotia,Adjusted total income,0.302
+2020,Nova Scotia,Adjusted after-tax income,0.262
+2020,New Brunswick,Adjusted market income,0.440
+2020,New Brunswick,Adjusted total income,0.306
+2020,New Brunswick,Adjusted after-tax income,0.264
+2020,Quebec,Adjusted market income,0.441
+2020,Quebec,Adjusted total income,0.308
+2020,Quebec,Adjusted after-tax income,0.261
+2020,Ontario,Adjusted market income,0.449
+2020,Ontario,Adjusted total income,0.332
+2020,Ontario,Adjusted after-tax income,0.290
+2020,Prairie provinces,Adjusted market income,0.422
+2020,Prairie provinces,Adjusted total income,0.316
+2020,Prairie provinces,Adjusted after-tax income,0.277
+2020,Manitoba,Adjusted market income,0.423
+2020,Manitoba,Adjusted total income,0.311
+2020,Manitoba,Adjusted after-tax income,0.269
+2020,Saskatchewan,Adjusted market income,0.419
+2020,Saskatchewan,Adjusted total income,0.306
+2020,Saskatchewan,Adjusted after-tax income,0.267
+2020,Alberta,Adjusted market income,0.419
+2020,Alberta,Adjusted total income,0.317
+2020,Alberta,Adjusted after-tax income,0.278
+2020,British Columbia,Adjusted market income,0.423
+2020,British Columbia,Adjusted total income,0.317
+2020,British Columbia,Adjusted after-tax income,0.280
+2020,Territories,Adjusted market income,0.415
+2020,Territories,Adjusted total income,0.310
+2020,Territories,Adjusted after-tax income,0.280
+2020,Yukon,Adjusted market income,0.391
+2020,Yukon,Adjusted total income,0.293
+2020,Yukon,Adjusted after-tax income,0.269
+2020,Northwest Territories,Adjusted market income,0.375
+2020,Northwest Territories,Adjusted total income,0.289
+2020,Northwest Territories,Adjusted after-tax income,0.260
+2020,Nunavut,Adjusted market income,0.474
+2020,Nunavut,Adjusted total income,0.341
+2020,Nunavut,Adjusted after-tax income,0.305
+2021,Canada,Adjusted market income,0.433
+2021,Canada,Adjusted total income,0.333
+2021,Canada,Adjusted after-tax income,0.289
+2021,Atlantic provinces,Adjusted market income,0.430
+2021,Atlantic provinces,Adjusted total income,0.311
+2021,Atlantic provinces,Adjusted after-tax income,0.269
+2021,Newfoundland and Labrador,Adjusted market income,0.470
+2021,Newfoundland and Labrador,Adjusted total income,0.330
+2021,Newfoundland and Labrador,Adjusted after-tax income,0.283
+2021,Prince Edward Island,Adjusted market income,0.394
+2021,Prince Edward Island,Adjusted total income,0.293
+2021,Prince Edward Island,Adjusted after-tax income,0.253
+2021,Nova Scotia,Adjusted market income,0.422
+2021,Nova Scotia,Adjusted total income,0.310
+2021,Nova Scotia,Adjusted after-tax income,0.267
+2021,New Brunswick,Adjusted market income,0.419
+2021,New Brunswick,Adjusted total income,0.302
+2021,New Brunswick,Adjusted after-tax income,0.265
+2021,Quebec,Adjusted market income,0.430
+2021,Quebec,Adjusted total income,0.313
+2021,Quebec,Adjusted after-tax income,0.265
+2021,Ontario,Adjusted market income,0.442
+2021,Ontario,Adjusted total income,0.343
+2021,Ontario,Adjusted after-tax income,0.295
+2021,Prairie provinces,Adjusted market income,0.424
+2021,Prairie provinces,Adjusted total income,0.336
+2021,Prairie provinces,Adjusted after-tax income,0.295
+2021,Manitoba,Adjusted market income,0.419
+2021,Manitoba,Adjusted total income,0.319
+2021,Manitoba,Adjusted after-tax income,0.278
+2021,Saskatchewan,Adjusted market income,0.400
+2021,Saskatchewan,Adjusted total income,0.311
+2021,Saskatchewan,Adjusted after-tax income,0.274
+2021,Alberta,Adjusted market income,0.427
+2021,Alberta,Adjusted total income,0.342
+2021,Alberta,Adjusted after-tax income,0.299
+2021,British Columbia,Adjusted market income,0.416
+2021,British Columbia,Adjusted total income,0.327
+2021,British Columbia,Adjusted after-tax income,0.292
+2021,Territories,Adjusted market income,0.431
+2021,Territories,Adjusted total income,0.330
+2021,Territories,Adjusted after-tax income,0.299
+2021,Yukon,Adjusted market income,0.352
+2021,Yukon,Adjusted total income,0.277
+2021,Yukon,Adjusted after-tax income,0.251
+2021,Northwest Territories,Adjusted market income,0.417
+2021,Northwest Territories,Adjusted total income,0.328
+2021,Northwest Territories,Adjusted after-tax income,0.297
+2021,Nunavut,Adjusted market income,0.511
+2021,Nunavut,Adjusted total income,0.374
+2021,Nunavut,Adjusted after-tax income,0.338
+2022,Canada,Adjusted market income,0.433
+2022,Canada,Adjusted total income,0.348
+2022,Canada,Adjusted after-tax income,0.302
+2022,Atlantic provinces,Adjusted market income,0.433
+2022,Atlantic provinces,Adjusted total income,0.324
+2022,Atlantic provinces,Adjusted after-tax income,0.279
+2022,Newfoundland and Labrador,Adjusted market income,0.460
+2022,Newfoundland and Labrador,Adjusted total income,0.335
+2022,Newfoundland and Labrador,Adjusted after-tax income,0.286
+2022,Prince Edward Island,Adjusted market income,0.386
+2022,Prince Edward Island,Adjusted total income,0.290
+2022,Prince Edward Island,Adjusted after-tax income,0.251
+2022,Nova Scotia,Adjusted market income,0.431
+2022,Nova Scotia,Adjusted total income,0.329
+2022,Nova Scotia,Adjusted after-tax income,0.283
+2022,New Brunswick,Adjusted market income,0.426
+2022,New Brunswick,Adjusted total income,0.315
+2022,New Brunswick,Adjusted after-tax income,0.274
+2022,Quebec,Adjusted market income,0.430
+2022,Quebec,Adjusted total income,0.323
+2022,Quebec,Adjusted after-tax income,0.272
+2022,Ontario,Adjusted market income,0.441
+2022,Ontario,Adjusted total income,0.363
+2022,Ontario,Adjusted after-tax income,0.313
+2022,Prairie provinces,Adjusted market income,0.420
+2022,Prairie provinces,Adjusted total income,0.345
+2022,Prairie provinces,Adjusted after-tax income,0.303
+2022,Manitoba,Adjusted market income,0.409
+2022,Manitoba,Adjusted total income,0.322
+2022,Manitoba,Adjusted after-tax income,0.279
+2022,Saskatchewan,Adjusted market income,0.417
+2022,Saskatchewan,Adjusted total income,0.331
+2022,Saskatchewan,Adjusted after-tax income,0.289
+2022,Alberta,Adjusted market income,0.420
+2022,Alberta,Adjusted total income,0.350
+2022,Alberta,Adjusted after-tax income,0.308
+2022,British Columbia,Adjusted market income,0.420
+2022,British Columbia,Adjusted total income,0.348
+2022,British Columbia,Adjusted after-tax income,0.308
+2022,Territories,Adjusted market income,0.419
+2022,Territories,Adjusted total income,0.340
+2022,Territories,Adjusted after-tax income,0.307
+2022,Yukon,Adjusted market income,0.382
+2022,Yukon,Adjusted total income,0.317
+2022,Yukon,Adjusted after-tax income,0.283
+2022,Northwest Territories,Adjusted market income,0.383
+2022,Northwest Territories,Adjusted total income,0.319
+2022,Northwest Territories,Adjusted after-tax income,0.289
+2022,Nunavut,Adjusted market income,0.482
+2022,Nunavut,Adjusted total income,0.372
+2022,Nunavut,Adjusted after-tax income,0.334
+2023,Canada,Adjusted market income,0.430
+2023,Canada,Adjusted total income,0.346
+2023,Canada,Adjusted after-tax income,0.301
+2023,Atlantic provinces,Adjusted market income,0.428
+2023,Atlantic provinces,Adjusted total income,0.321
+2023,Atlantic provinces,Adjusted after-tax income,0.280
+2023,Newfoundland and Labrador,Adjusted market income,0.461
+2023,Newfoundland and Labrador,Adjusted total income,0.341
+2023,Newfoundland and Labrador,Adjusted after-tax income,0.294
+2023,Prince Edward Island,Adjusted market income,0.395
+2023,Prince Edward Island,Adjusted total income,0.296
+2023,Prince Edward Island,Adjusted after-tax income,0.261
+2023,Nova Scotia,Adjusted market income,0.418
+2023,Nova Scotia,Adjusted total income,0.319
+2023,Nova Scotia,Adjusted after-tax income,0.277
+2023,New Brunswick,Adjusted market income,0.424
+2023,New Brunswick,Adjusted total income,0.314
+2023,New Brunswick,Adjusted after-tax income,0.275
+2023,Quebec,Adjusted market income,0.426
+2023,Quebec,Adjusted total income,0.324
+2023,Quebec,Adjusted after-tax income,0.273
+2023,Ontario,Adjusted market income,0.437
+2023,Ontario,Adjusted total income,0.359
+2023,Ontario,Adjusted after-tax income,0.311
+2023,Prairie provinces,Adjusted market income,0.417
+2023,Prairie provinces,Adjusted total income,0.339
+2023,Prairie provinces,Adjusted after-tax income,0.299
+2023,Manitoba,Adjusted market income,0.410
+2023,Manitoba,Adjusted total income,0.323
+2023,Manitoba,Adjusted after-tax income,0.280
+2023,Saskatchewan,Adjusted market income,0.412
+2023,Saskatchewan,Adjusted total income,0.328
+2023,Saskatchewan,Adjusted after-tax income,0.290
+2023,Alberta,Adjusted market income,0.416
+2023,Alberta,Adjusted total income,0.343
+2023,Alberta,Adjusted after-tax income,0.302
+2023,British Columbia,Adjusted market income,0.427
+2023,British Columbia,Adjusted total income,0.352
+2023,British Columbia,Adjusted after-tax income,0.311
+2023,Territories,Adjusted market income,0.410
+2023,Territories,Adjusted total income,0.329
+2023,Territories,Adjusted after-tax income,0.299
+2023,Yukon,Adjusted market income,0.364
+2023,Yukon,Adjusted total income,0.298
+2023,Yukon,Adjusted after-tax income,0.271
+2023,Northwest Territories,Adjusted market income,0.384
+2023,Northwest Territories,Adjusted total income,0.316
+2023,Northwest Territories,Adjusted after-tax income,0.287
+2023,Nunavut,Adjusted market income,0.474
+2023,Nunavut,Adjusted total income,0.359
+2023,Nunavut,Adjusted after-tax income,0.327
+2024,Canada,Adjusted market income,0.436
+2024,Canada,Adjusted total income,0.351
+2024,Canada,Adjusted after-tax income,0.305
+2024,Atlantic provinces,Adjusted market income,0.426
+2024,Atlantic provinces,Adjusted total income,0.320
+2024,Atlantic provinces,Adjusted after-tax income,0.279
+2024,Newfoundland and Labrador,Adjusted market income,0.452
+2024,Newfoundland and Labrador,Adjusted total income,0.337
+2024,Newfoundland and Labrador,Adjusted after-tax income,0.288
+2024,Prince Edward Island,Adjusted market income,0.404
+2024,Prince Edward Island,Adjusted total income,0.307
+2024,Prince Edward Island,Adjusted after-tax income,0.268
+2024,Nova Scotia,Adjusted market income,0.417
+2024,Nova Scotia,Adjusted total income,0.318
+2024,Nova Scotia,Adjusted after-tax income,0.277
+2024,New Brunswick,Adjusted market income,0.423
+2024,New Brunswick,Adjusted total income,0.313
+2024,New Brunswick,Adjusted after-tax income,0.275
+2024,Quebec,Adjusted market income,0.423
+2024,Quebec,Adjusted total income,0.324
+2024,Quebec,Adjusted after-tax income,0.276
+2024,Ontario,Adjusted market income,0.447
+2024,Ontario,Adjusted total income,0.367
+2024,Ontario,Adjusted after-tax income,0.318
+2024,Prairie provinces,Adjusted market income,0.424
+2024,Prairie provinces,Adjusted total income,0.346
+2024,Prairie provinces,Adjusted after-tax income,0.304
+2024,Manitoba,Adjusted market income,0.411
+2024,Manitoba,Adjusted total income,0.325
+2024,Manitoba,Adjusted after-tax income,0.285
+2024,Saskatchewan,Adjusted market income,0.420
+2024,Saskatchewan,Adjusted total income,0.335
+2024,Saskatchewan,Adjusted after-tax income,0.297
+2024,Alberta,Adjusted market income,0.425
+2024,Alberta,Adjusted total income,0.351
+2024,Alberta,Adjusted after-tax income,0.308
+2024,British Columbia,Adjusted market income,0.429
+2024,British Columbia,Adjusted total income,0.354
+2024,British Columbia,Adjusted after-tax income,0.310
+2024,Territories,Adjusted market income,0.399
+2024,Territories,Adjusted total income,0.326
+2024,Territories,Adjusted after-tax income,0.296
+2024,Yukon,Adjusted market income,0.357
+2024,Yukon,Adjusted total income,0.297
+2024,Yukon,Adjusted after-tax income,0.272
+2024,Northwest Territories,Adjusted market income,0.354
+2024,Northwest Territories,Adjusted total income,0.300
+2024,Northwest Territories,Adjusted after-tax income,0.273
+2024,Nunavut,Adjusted market income,0.472
+2024,Nunavut,Adjusted total income,0.355
+2024,Nunavut,Adjusted after-tax income,0.323

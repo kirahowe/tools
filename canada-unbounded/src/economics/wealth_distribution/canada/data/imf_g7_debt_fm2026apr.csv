@@ -1,0 +1,121 @@
+country,year,gg_gross_debt_pct_gdp,gg_net_debt_pct_gdp,projection
+G7,2017,113.9,84.4,no
+G7,2018,113.8,84.4,no
+G7,2019,114.6,85.1,no
+G7,2020,136.1,98.4,no
+G7,2021,129.1,95.9,no
+G7,2022,122.9,92.1,no
+G7,2023,121.5,92.4,no
+G7,2024,122.2,92.8,no
+G7,2025,123.0,93.5,no
+G7,2026,123.7,94.6,yes
+G7,2027,125.4,96.2,yes
+G7,2028,127.4,98.3,yes
+G7,2029,129.2,100.3,yes
+G7,2030,131.0,102.4,yes
+G7,2031,132.8,104.4,yes
+Canada,2017,91.0,12.8,no
+Canada,2018,90.8,11.8,no
+Canada,2019,90.1,8.7,no
+Canada,2020,118.1,16.2,no
+Canada,2021,112.6,14.1,no
+Canada,2022,103.5,13.3,no
+Canada,2023,105.1,12.7,no
+Canada,2024,110.0,10.8,no
+Canada,2025,113.5,10.2,no
+Canada,2026,110.7,10.3,yes
+Canada,2027,109.5,10.7,yes
+Canada,2028,108.1,10.7,yes
+Canada,2029,106.7,10.7,yes
+Canada,2030,105.2,10.5,yes
+Canada,2031,103.5,10.4,yes
+France,2017,98.8,89.5,no
+France,2018,98.5,89.4,no
+France,2019,98.2,89.0,no
+France,2020,114.9,101.6,no
+France,2021,112.8,100.5,no
+France,2022,111.4,101.1,no
+France,2023,109.6,101.5,no
+France,2024,113.2,105.0,no
+France,2025,116.0,108.8,no
+France,2026,118.4,110.2,yes
+France,2027,120.5,112.3,yes
+France,2028,121.1,113.0,yes
+France,2029,121.3,113.2,yes
+France,2030,121.2,113.0,yes
+France,2031,120.7,112.6,yes
+Germany,2017,64.0,44.7,no
+Germany,2018,60.8,42.1,no
+Germany,2019,58.7,39.8,no
+Germany,2020,68.0,45.3,no
+Germany,2021,67.9,46.2,no
+Germany,2022,64.4,45.8,no
+Germany,2023,62.3,45.7,no
+Germany,2024,62.2,46.0,no
+Germany,2025,62.9,47.2,no
+Germany,2026,64.6,49.4,yes
+Germany,2027,66.5,51.9,yes
+Germany,2028,68.4,54.2,yes
+Germany,2029,70.2,56.4,yes
+Germany,2030,72.0,58.6,yes
+Germany,2031,73.7,60.7,yes
+Italy,2017,133.7,123.0,no
+Italy,2018,134.2,123.4,no
+Italy,2019,133.9,123.0,no
+Italy,2020,154.4,141.4,no
+Italy,2021,145.8,134.0,no
+Italy,2022,138.4,127.9,no
+Italy,2023,133.9,123.9,no
+Italy,2024,134.7,125.3,no
+Italy,2025,137.1,127.7,no
+Italy,2026,138.4,129.0,yes
+Italy,2027,138.8,129.4,yes
+Italy,2028,137.6,128.2,yes
+Italy,2029,137.1,127.7,yes
+Italy,2030,136.5,127.1,yes
+Italy,2031,136.1,126.7,yes
+Japan,2017,203.1,144.3,no
+Japan,2018,203.7,146.7,no
+Japan,2019,206.3,148.2,no
+Japan,2020,228.8,160.8,no
+Japan,2021,222.7,157.5,no
+Japan,2022,227.8,159.6,no
+Japan,2023,220.3,149.5,no
+Japan,2024,214.5,141.7,no
+Japan,2025,206.5,136.5,no
+Japan,2026,204.4,134.3,yes
+Japan,2027,200.1,130.1,yes
+Japan,2028,197.7,127.7,yes
+Japan,2029,195.7,125.6,yes
+Japan,2030,193.9,123.8,yes
+Japan,2031,192.8,122.8,yes
+United Kingdom,2017,86.1,76.7,no
+United Kingdom,2018,85.6,75.9,no
+United Kingdom,2019,84.9,75.1,no
+United Kingdom,2020,104.8,92.2,no
+United Kingdom,2021,103.4,90.2,no
+United Kingdom,2022,97.5,87.9,no
+United Kingdom,2023,98.9,90.4,no
+United Kingdom,2024,99.9,92.4,no
+United Kingdom,2025,102.3,93.8,no
+United Kingdom,2026,103.6,95.5,yes
+United Kingdom,2027,104.1,95.9,yes
+United Kingdom,2028,103.9,95.8,yes
+United Kingdom,2029,103.5,95.4,yes
+United Kingdom,2030,102.9,94.9,yes
+United Kingdom,2031,102.6,94.5,yes
+United States,2017,106.4,79.2,no
+United States,2018,107.7,79.9,no
+United States,2019,108.8,81.6,no
+United States,2020,132.6,95.9,no
+United States,2021,125.0,95.2,no
+United States,2022,119.1,91.3,no
+United States,2023,120.0,94.0,no
+United States,2024,122.3,95.7,no
+United States,2025,123.9,96.7,no
+United States,2026,125.8,98.5,yes
+United States,2027,128.6,101.3,yes
+United States,2028,132.1,104.8,yes
+United States,2029,135.5,108.3,yes
+United States,2030,138.9,111.9,yes
+United States,2031,142.1,115.4,yes

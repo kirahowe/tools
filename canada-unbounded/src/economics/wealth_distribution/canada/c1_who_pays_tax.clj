@@ -215,8 +215,10 @@
 ;; Wealth that grows without being sold does not show up at all.
 ;; Neither does income retained inside private holding corporations,
 ;; where it is taxed at the corporate rate and can be left to compound for years.
-;; Researchers using linked Canadian tax data found that once income kept inside private corporations is
-;; attributed to the people who own them, the top 1%'s share of income rises substantially.[^8]
+;; Researchers using linked Canadian tax data found that "top income shares are significantly higher"
+;; once income kept inside private corporations is attributed to the people who own them.[^8]
+;; Finance Canada found that taxable passive investment income held inside private corporations
+;; more than tripled, from \$8.6B in 2002 to \$26.8B in 2015.[^17]
 
 ;; ## What We Can and Can't Measure
 
@@ -296,11 +298,12 @@
 ;; accountant Kenneth Carter.
 ;; Its 1966 report argued that every increase in a person's economic power should be taxed the same way,
 ;; whether it came from wages, dividends, gifts, inheritances, or gains on assets.
-;; The idea became known by a phrase still quoted in tax classes: *"a buck is a buck."*[^16]
+;; The idea is usually summed up in a phrase attributed to Carter himself: *"a buck is a buck."*[^16]
 
-;; The Commission recommended taxing capital gains in full, like wages.
-;; The 1971 tax reform that followed taxed only half of them.
-;; It also abolished the federal estate tax.
+;; The Commission recommended taxing capital gains, gifts and inheritances like any other income,
+;; because they "increase the economic power" of the people who receive them.
+;; The 1971 tax reform that followed taxed only half of capital gains, from 1972.
+;; It also abolished the federal estate and gift taxes, on the grounds that taxing gains at death made them redundant.
 ;; Fifty-five years later, the gap Carter tried to close is still there.
 ;; :::
 
@@ -318,15 +321,16 @@
 ;; [^2]: OECD, [Revenue Statistics 2025: Canada country note](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/revenue-statistics-2025-country-notes_3708be73/canada_3aa043fb/795aaca9-en.pdf). All levels of government, 2023.
 ;; [^3]: Canada Revenue Agency, [Individual Income Tax Return Statistics, 2023 tax year](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/t1-final-statistics/2023-tax-year.html), Table 2 ([CSV](https://www.canada.ca/content/dam/cra-arc/prog-policy/stats/t1-final-stats/2023-tax-year/tbl2_ac.csv)). Income classes are by total income assessed.
 ;; [^4]: The inclusion rate history (0% before 1972; 50% from 1972; 66⅔% from 1988; 75% from 1990; 66⅔% from February 2000; 50% from October 18, 2000) and the cancellation of the 2024 proposal are documented in Department of Finance Canada, [Report on Federal Tax Expenditures 2026](https://www.canada.ca/content/dam/fin/publications/taxexp-depfisc/2026/taxexp-depfisc-26-eng.pdf), and the [Prime Minister's statement of March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase). Ontario's 2026 top combined rate of 53.53% is computed from the federal 33% bracket and the Ontario rate and surtax in CRA's [T4127 Payroll Deductions Formulas, January 2026](https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4127-payroll-deductions-formulas.html).
-;; [^5]: Office of the Parliamentary Budget Officer, [Capital Gains Inclusion Rate Increase](https://www.pbo-dpb.ca/en/publications/LEG-2425-007-S--capital-gains-inclusion-rate-increase--augmentation-taux-inclusion-gains-capital), 2024.
+;; [^5]: Office of the Parliamentary Budget Officer, [Increasing the Capital Gains Inclusion Rate](https://www.pbo-dpb.ca/en/publications/LEG-2425-010-S--increasing-capital-gains-inclusion-rate--augmentation-taux-inclusion-gains-capital), 2024.
 ;; [^6]: Department of Finance Canada, [Budget 2024, Chapter 8: Tax Fairness for Every Generation](https://budget.canada.ca/2024/report-rapport/chap8-en.html).
 ;; [^7]: Statistics Canada, [Table 11-10-0055-01, High income tax filers in Canada](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110005501). Average federal and provincial/territorial income tax paid divided by average income, for the "Total income" and "Total income with capital gains" concepts.
-;; [^8]: Michael Wolfson, Mike Veall, Neil Brooks and Brian Murphy, ["Piercing the Veil: Private Corporations and the Income of the Affluent"](https://www.ctf.ca/EN/EN/Newsletters/Canadian_Tax_Journal/2016/1/160101.aspx), *Canadian Tax Journal* 64(1), 2016.
+;; [^8]: Michael Wolfson, Mike Veall, Neil Brooks and Brian Murphy, ["Piercing the Veil: Private Corporations and the Income of the Affluent"](https://ideas.repec.org/a/ctf/journl/v64y2016i1p1-30.html), *Canadian Tax Journal* 64(1): 1–30, 2016.
 ;; [^9]: Timothy Pratley, [Unbounded: Who Pays Tax?](https://clojurecivitas.org/economics/wealth_distribution/unbounded/u1_who_pays_tax.html), citing the IRS study [Estimating Tax Burdens by Wealth Group](https://www.irs.gov/pub/irs-soi/24rpestimatingtaxburdens.pdf).
 ;; [^10]: Statistics Canada, Distributions of Household Economic Accounts: [Table 36-10-0587-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610058701) (income, consumption and saving, by income quintile) and [Table 36-10-0660-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066001) (wealth, by wealth quintile). Taxes appear only within "current transfers paid", which also includes non-tax transfers.
-;; [^11]: Office of the Parliamentary Budget Officer, [Estimating the top tail of the family wealth distribution in Canada](https://www.pbo-dpb.ca/en/publications/RP-2021-007-S--estimating-top-tail-family-wealth-distribution-in-canada-updates-extensions--estimation-queue-distribution-richesse-familles-canada-mises-jour-extensions), and its wealth tax costings.
+;; [^11]: Office of the Parliamentary Budget Officer, [Estimating the Top Tail of the Family Wealth Distribution in Canada: 2025 Update](https://www.pbo-dpb.ca/en/publications/RP-2526-009-S--estimating-top-tail-family-wealth-distribution-in-canada-2025-update--estimation-extremite-superieure-distribution-patrimoine-familial-canada-mises-jour-2025), and its wealth tax costings.
 ;; [^12]: Department of Finance Canada, [Report on Federal Tax Expenditures: Concepts, Estimates and Evaluations 2026](https://www.canada.ca/content/dam/fin/publications/taxexp-depfisc/2026/taxexp-depfisc-26-eng.pdf), Part 2 tables. Federal revenue only; figures for 2024 onward are projections.
 ;; [^13]: Children's benefits (mainly the Canada Child Benefit) were \$26.3B in 2023–24 and \$28.6B in 2024–25: [Annual Financial Report 2024–25](https://www.canada.ca/en/department-finance/services/publications/annual-financial-report/2025.html), Table 5.
-;; [^14]: On the abolition of federal estate and gift taxes in 1972 and of provincial succession duties (Quebec last, in 1985), see David G. Duff, ["The Abolition of Wealth Transfer Taxes: Lessons from Canada, Australia and New Zealand"](https://digitalcommons.osgoode.yorku.ca/cgi/viewcontent.cgi?article=1003&context=pblj), *Pittsburgh Tax Review* 3(1), 2005.
-;; [^15]: Canada Revenue Agency, [Capital gains – deemed disposition of property](https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died/capital-gains-deemed-disposition-property.html).
-;; [^16]: [Report of the Royal Commission on Taxation](https://publications.gc.ca/site/eng/9.699795/publication.html) (Carter Commission), 1966. For the history and the phrase, see the [Canadian Encyclopedia entry on the Carter Commission](https://www.thecanadianencyclopedia.ca/en/article/royal-commission-on-taxation).
+;; [^14]: François Vaillancourt and Sarah Kerkhoff, ["Capital gains taxation in Canada, 1972–2017: evolution in a federal setting"](https://www.unsw.edu.au/content/dam/pdfs/business/acct-audit-tax/research-reports/past-issues/bus-2019/2019-volume-16-number-2/BUS-2019-V16-paper1-v16-n2.pdf), *eJournal of Tax Research* 16(2), 2019. Federal death taxes were first imposed in 1941; "All provinces abolished succession duties in the 1970s except for Quebec, which eliminated the tax in 1985."
+;; [^15]: *Income Tax Act*, [section 70(5)](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-70.html) (deemed disposition at death) and 70(6) (spousal rollover).
+;; [^16]: *Report of the Royal Commission on Taxation* (Carter Commission), 1966, vol. 3. On the recommendations, the 1971 reform, and the attribution of "a buck is a buck" to Carter, see Vaillancourt and Kerkhoff (2019), above.
+;; [^17]: Department of Finance Canada, [Tax Planning Using Private Corporations](https://www.canada.ca/content/dam/fin/migration/activty/consult/tppc-pfsp-eng.pdf), consultation paper, July 2017.

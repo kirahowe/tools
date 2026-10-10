@@ -1,0 +1,8 @@
+start,end,labour_productivity_cagr_pct,mfp_cagr_pct,real_gdp_cagr_pct,source
+1961,1973,3.55,1.53,5.62,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+1973,1981,1.8,0.15,3.91,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+1981,2000,1.76,0.47,3.17,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+2000,2008,0.87,-0.54,2.09,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+2008,2019,0.91,0.16,1.83,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+1961,2000,2.32,0.73,4.07,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
+2000,2023,0.78,-0.16,1.84,"StatCan 36-10-0208-01, business sector, index levels (vectors v41712898,v41712881,v41712932)"
