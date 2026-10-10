@@ -1,0 +1,257 @@
+iso3,country,year,measure_code,measure,statistic,unit,currency,value,obs_status,obs_status_label
+AUS,Australia,2012,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.632,A,Normal value
+AUS,Australia,2012,NW,Net wealth,MEAN,National currency per household,AUD,595820.0,A,Normal value
+AUS,Australia,2012,NW,Net wealth,MEAN,National currency per person,AUD,231744.406,A,Normal value
+AUS,Australia,2012,NW,Net wealth,MEDIAN,National currency per household,AUD,365000.0,A,Normal value
+AUS,Australia,2012,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,5.086,A,Normal value
+AUS,Australia,2012,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,13.272,A,Normal value
+AUS,Australia,2012,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,44.91,A,Normal value
+AUS,Australia,2012,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,32.172,A,Normal value
+AUS,Australia,2014,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.711,A,Normal value
+AUS,Australia,2014,NW,Net wealth,MEAN,National currency per household,AUD,649993.0,A,Normal value
+AUS,Australia,2014,NW,Net wealth,MEAN,National currency per person,AUD,251246.922,A,Normal value
+AUS,Australia,2014,NW,Net wealth,MEDIAN,National currency per household,AUD,380000.0,A,Normal value
+AUS,Australia,2014,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.892,A,Normal value
+AUS,Australia,2014,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,14.997,A,Normal value
+AUS,Australia,2014,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,46.466,A,Normal value
+AUS,Australia,2014,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,33.513,A,Normal value
+AUS,Australia,2018,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.87,A,Normal value
+AUS,Australia,2018,NW,Net wealth,MEAN,National currency per household,AUD,811432.0,A,Normal value
+AUS,Australia,2018,NW,Net wealth,MEAN,National currency per person,AUD,312639.0,A,Normal value
+AUS,Australia,2018,NW,Net wealth,MEDIAN,National currency per household,AUD,434006.0,A,Normal value
+AUS,Australia,2018,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.841,A,Normal value
+AUS,Australia,2018,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,16.132,A,Normal value
+AUS,Australia,2018,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,48.515,A,Normal value
+AUS,Australia,2018,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,35.118,A,Normal value
+AUS,Australia,2020,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.807,A,Normal value
+AUS,Australia,2020,NW,Net wealth,MEAN,National currency per household,AUD,805569.0,A,Normal value
+AUS,Australia,2020,NW,Net wealth,MEAN,National currency per person,AUD,314794.375,A,Normal value
+AUS,Australia,2020,NW,Net wealth,MEDIAN,National currency per household,AUD,445823.0,A,Normal value
+AUS,Australia,2020,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.926,A,Normal value
+AUS,Australia,2020,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,15.354,A,Normal value
+AUS,Australia,2020,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,47.431,A,Normal value
+AUS,Australia,2020,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,34.039,A,Normal value
+CAN,Canada,2012,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.207,A,Normal value
+CAN,Canada,2012,NW,Net wealth,MEAN,National currency per household,CAD,467400.0,A,Normal value
+CAN,Canada,2012,NW,Net wealth,MEAN,National currency per person,CAD,190995.141,A,Normal value
+CAN,Canada,2012,NW,Net wealth,MEDIAN,National currency per household,CAD,211800.0,A,Normal value
+CAN,Canada,2012,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.249,A,Normal value
+CAN,Canada,2012,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,15.502,A,Normal value
+CAN,Canada,2012,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,50.309,A,Normal value
+CAN,Canada,2012,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,36.499,A,Normal value
+CAN,Canada,2016,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.223,A,Normal value
+CAN,Canada,2016,NW,Net wealth,MEAN,National currency per household,CAD,574600.0,A,Normal value
+CAN,Canada,2016,NW,Net wealth,MEAN,National currency per person,CAD,233872.453,A,Normal value
+CAN,Canada,2016,NW,Net wealth,MEDIAN,National currency per household,CAD,258500.0,A,Normal value
+CAN,Canada,2016,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.365,A,Normal value
+CAN,Canada,2016,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,16.715,A,Normal value
+CAN,Canada,2016,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,51.072,A,Normal value
+CAN,Canada,2016,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,37.039,A,Normal value
+CAN,Canada,2019,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.289,A,Normal value
+CAN,Canada,2019,NW,Net wealth,MEAN,National currency per household,CAD,624900.0,A,Normal value
+CAN,Canada,2019,NW,Net wealth,MEAN,National currency per person,CAD,261006.578,A,Normal value
+CAN,Canada,2019,NW,Net wealth,MEDIAN,National currency per household,CAD,273000.0,A,Normal value
+CAN,Canada,2019,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.335,A,Normal value
+CAN,Canada,2019,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,17.519,A,Normal value
+CAN,Canada,2019,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,51.382,A,Normal value
+CAN,Canada,2019,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,37.324,A,Normal value
+CAN,Canada,2023,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.041,A,Normal value
+CAN,Canada,2023,NW,Net wealth,MEAN,National currency per household,CAD,874100.0,A,Normal value
+CAN,Canada,2023,NW,Net wealth,MEAN,National currency per person,CAD,380434.344,A,Normal value
+CAN,Canada,2023,NW,Net wealth,MEDIAN,National currency per household,CAD,428300.0,A,Normal value
+CAN,Canada,2023,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.893,A,Normal value
+CAN,Canada,2023,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,12.333,A,Normal value
+CAN,Canada,2023,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,47.051,A,Normal value
+CAN,Canada,2023,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,32.207,A,Normal value
+DEU,Germany,2011,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,3.8,A,Normal value
+DEU,Germany,2011,NW,Net wealth,MEAN,National currency per household,EUR,195169.855,A,Normal value
+DEU,Germany,2011,NW,Net wealth,MEAN,National currency per person,EUR,95490.898,A,Normal value
+DEU,Germany,2011,NW,Net wealth,MEDIAN,National currency per household,EUR,51358.0,A,Normal value
+DEU,Germany,2011,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,0.865,A,Normal value
+DEU,Germany,2011,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,24.31,A,Normal value
+DEU,Germany,2011,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,59.173,A,Normal value
+DEU,Germany,2011,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,45.619,A,Normal value
+DEU,Germany,2014,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,3.525,A,Normal value
+DEU,Germany,2014,NW,Net wealth,MEAN,National currency per household,EUR,214259.171,A,Normal value
+DEU,Germany,2014,NW,Net wealth,MEAN,National currency per person,EUR,106195.234,A,Normal value
+DEU,Germany,2014,NW,Net wealth,MEDIAN,National currency per household,EUR,60790.0,A,Normal value
+DEU,Germany,2014,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,0.54,A,Normal value
+DEU,Germany,2014,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,23.662,A,Normal value
+DEU,Germany,2014,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,59.759,A,Normal value
+DEU,Germany,2014,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,46.256,A,Normal value
+DEU,Germany,2017,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,3.289,A,Normal value
+DEU,Germany,2017,NW,Net wealth,MEAN,National currency per household,EUR,232810.732,A,Normal value
+DEU,Germany,2017,NW,Net wealth,MEAN,National currency per person,EUR,114992.578,A,Normal value
+DEU,Germany,2017,NW,Net wealth,MEDIAN,National currency per household,EUR,70780.0,A,Normal value
+DEU,Germany,2017,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,0.563,A,Normal value
+DEU,Germany,2017,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,18.582,A,Normal value
+DEU,Germany,2017,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,55.371,A,Normal value
+DEU,Germany,2017,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,40.752,A,Normal value
+DEU,Germany,2021,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.959,A,Normal value
+DEU,Germany,2021,NW,Net wealth,MEAN,National currency per household,EUR,315610.667,A,Normal value
+DEU,Germany,2021,NW,Net wealth,MEAN,National currency per person,EUR,158031.031,A,Normal value
+DEU,Germany,2021,NW,Net wealth,MEDIAN,National currency per household,EUR,106652.4,A,Normal value
+DEU,Germany,2021,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,1.141,A,Normal value
+DEU,Germany,2021,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,17.683,A,Normal value
+DEU,Germany,2021,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,55.549,A,Normal value
+DEU,Germany,2021,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,41.153,A,Normal value
+FRA,France,2009,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.017,A,Normal value
+FRA,France,2009,NW,Net wealth,MEAN,National currency per household,EUR,233305.593,A,Normal value
+FRA,France,2009,NW,Net wealth,MEAN,National currency per person,EUR,104059.359,A,Normal value
+FRA,France,2009,NW,Net wealth,MEDIAN,National currency per household,EUR,115687.0,A,Normal value
+FRA,France,2009,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,1.756,A,Normal value
+FRA,France,2009,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,17.935,A,Normal value
+FRA,France,2009,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,49.972,A,Normal value
+FRA,France,2009,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,36.538,A,Normal value
+FRA,France,2014,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.146,A,Normal value
+FRA,France,2014,NW,Net wealth,MEAN,National currency per household,EUR,243129.534,A,Normal value
+FRA,France,2014,NW,Net wealth,MEAN,National currency per person,EUR,109554.602,A,Normal value
+FRA,France,2014,NW,Net wealth,MEDIAN,National currency per household,EUR,113300.0,A,Normal value
+FRA,France,2014,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,2.678,A,Normal value
+FRA,France,2014,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,18.646,A,Normal value
+FRA,France,2014,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,50.587,A,Normal value
+FRA,France,2014,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,37.261,A,Normal value
+FRA,France,2017,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.059,A,Normal value
+FRA,France,2017,NW,Net wealth,MEAN,National currency per household,EUR,241979.392,A,Normal value
+FRA,France,2017,NW,Net wealth,MEAN,National currency per person,EUR,108302.18,A,Normal value
+FRA,France,2017,NW,Net wealth,MEDIAN,National currency per household,EUR,117551.0,A,Normal value
+FRA,France,2017,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,2.162,A,Normal value
+FRA,France,2017,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,17.139,A,Normal value
+FRA,France,2017,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,49.221,A,Normal value
+FRA,France,2017,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,35.505,A,Normal value
+FRA,France,2020,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.205,A,Normal value
+FRA,France,2020,NW,Net wealth,MEAN,National currency per household,EUR,277088.079,A,Normal value
+FRA,France,2020,NW,Net wealth,MEAN,National currency per person,EUR,128134.172,A,Normal value
+FRA,France,2020,NW,Net wealth,MEDIAN,National currency per household,EUR,125673.0,A,Normal value
+FRA,France,2020,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,2.378,A,Normal value
+FRA,France,2020,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,16.775,A,Normal value
+FRA,France,2020,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,49.935,A,Normal value
+FRA,France,2020,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,35.857,A,Normal value
+GBR,United Kingdom,2009,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.888,A,Normal value
+GBR,United Kingdom,2009,NW,Net wealth,MEAN,National currency per household,GBP,309700.0,A,Normal value
+GBR,United Kingdom,2009,NW,Net wealth,MEAN,National currency per person,GBP,129365.492,A,Normal value
+GBR,United Kingdom,2009,NW,Net wealth,MEDIAN,National currency per household,GBP,164000.0,A,Normal value
+GBR,United Kingdom,2009,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.514,A,Normal value
+GBR,United Kingdom,2009,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,15.925,A,Normal value
+GBR,United Kingdom,2009,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,47.258,A,Normal value
+GBR,United Kingdom,2009,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,33.941,A,Normal value
+GBR,United Kingdom,2011,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.998,A,Normal value
+GBR,United Kingdom,2011,NW,Net wealth,MEAN,National currency per household,GBP,340600.0,A,Normal value
+GBR,United Kingdom,2011,NW,Net wealth,MEAN,National currency per person,GBP,138321.422,A,Normal value
+GBR,United Kingdom,2011,NW,Net wealth,MEDIAN,National currency per household,GBP,170500.0,A,Normal value
+GBR,United Kingdom,2011,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.216,A,Normal value
+GBR,United Kingdom,2011,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,16.69,A,Normal value
+GBR,United Kingdom,2011,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,48.253,A,Normal value
+GBR,United Kingdom,2011,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,34.723,A,Normal value
+GBR,United Kingdom,2013,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.323,A,Normal value
+GBR,United Kingdom,2013,NW,Net wealth,MEAN,National currency per household,GBP,392400.0,A,Normal value
+GBR,United Kingdom,2013,NW,Net wealth,MEAN,National currency per person,GBP,161416.0,A,Normal value
+GBR,United Kingdom,2013,NW,Net wealth,MEDIAN,National currency per household,GBP,168900.0,A,Normal value
+GBR,United Kingdom,2013,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.476,A,Normal value
+GBR,United Kingdom,2013,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,20.025,A,Normal value
+GBR,United Kingdom,2013,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,51.999,A,Normal value
+GBR,United Kingdom,2013,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,38.244,A,Normal value
+GBR,United Kingdom,2015,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.38,A,Normal value
+GBR,United Kingdom,2015,NW,Net wealth,MEAN,National currency per household,GBP,435500.0,A,Normal value
+GBR,United Kingdom,2015,NW,Net wealth,MEAN,National currency per person,GBP,178425.094,A,Normal value
+GBR,United Kingdom,2015,NW,Net wealth,MEDIAN,National currency per household,GBP,183000.0,A,Normal value
+GBR,United Kingdom,2015,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.284,A,Normal value
+GBR,United Kingdom,2015,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,19.921,A,Normal value
+GBR,United Kingdom,2015,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,51.989,A,Normal value
+GBR,United Kingdom,2015,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,38.035,A,Normal value
+GBR,United Kingdom,2017,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.151,A,Normal value
+GBR,United Kingdom,2017,NW,Net wealth,MEAN,National currency per household,GBP,392500.0,A,Normal value
+GBR,United Kingdom,2017,NW,Net wealth,MEAN,National currency per person,GBP,161646.625,A,Normal value
+GBR,United Kingdom,2017,NW,Net wealth,MEDIAN,National currency per household,GBP,182500.0,A,Normal value
+GBR,United Kingdom,2017,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,3.646,A,Normal value
+GBR,United Kingdom,2017,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,22.6,A,Normal value
+GBR,United Kingdom,2017,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,51.959,A,Normal value
+GBR,United Kingdom,2017,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,39.512,A,Normal value
+ITA,Italy,2010,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.584,A,Normal value
+ITA,Italy,2010,NW,Net wealth,MEAN,National currency per household,EUR,274656.592,A,Normal value
+ITA,Italy,2010,NW,Net wealth,MEAN,National currency per person,EUR,108469.016,A,Normal value
+ITA,Italy,2010,NW,Net wealth,MEDIAN,National currency per household,EUR,173386.785,A,Normal value
+ITA,Italy,2010,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.845,A,Normal value
+ITA,Italy,2010,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,14.24,A,Normal value
+ITA,Italy,2010,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,44.848,A,Normal value
+ITA,Italy,2010,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,32.099,A,Normal value
+ITA,Italy,2014,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.534,A,Normal value
+ITA,Italy,2014,NW,Net wealth,MEAN,National currency per household,EUR,225566.645,A,Normal value
+ITA,Italy,2014,NW,Net wealth,MEAN,National currency per person,EUR,91640.766,A,Normal value
+ITA,Italy,2014,NW,Net wealth,MEDIAN,National currency per household,EUR,147000.0,A,Normal value
+ITA,Italy,2014,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.53,A,Normal value
+ITA,Italy,2014,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,11.619,A,Normal value
+ITA,Italy,2014,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,42.805,A,Normal value
+ITA,Italy,2014,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,29.598,A,Normal value
+ITA,Italy,2016,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.62,A,Normal value
+ITA,Italy,2016,NW,Net wealth,MEAN,National currency per household,EUR,214255.372,A,Normal value
+ITA,Italy,2016,NW,Net wealth,MEAN,National currency per person,EUR,90769.25,A,Normal value
+ITA,Italy,2016,NW,Net wealth,MEDIAN,National currency per household,EUR,132265.76,A,Normal value
+ITA,Italy,2016,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,4.65,A,Normal value
+ITA,Italy,2016,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,12.033,A,Normal value
+ITA,Italy,2016,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,43.379,A,Normal value
+ITA,Italy,2016,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,30.036,A,Normal value
+ITA,Italy,2020,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,2.201,B,Time series break
+ITA,Italy,2020,NW,Net wealth,MEAN,National currency per household,EUR,349980.43,B,Time series break
+ITA,Italy,2020,NW,Net wealth,MEAN,National currency per person,EUR,149603.219,B,Time series break
+ITA,Italy,2020,NW,Net wealth,MEDIAN,National currency per household,EUR,159000.0,B,Time series break
+ITA,Italy,2020,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,5.072,B,Time series break
+ITA,Italy,2020,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,20.149,B,Time series break
+ITA,Italy,2020,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,54.576,B,Time series break
+ITA,Italy,2020,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,41.676,B,Time series break
+JPN,Japan,2014,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.616,D,Definition differs
+JPN,Japan,2014,NW,Net wealth,MEAN,National currency per household,JPY,32555000.0,D,Definition differs
+JPN,Japan,2014,NW,Net wealth,MEAN,National currency per person,JPY,13457081.0,D,Definition differs
+JPN,Japan,2014,NW,Net wealth,MEDIAN,National currency per household,JPY,20147000.0,D,Definition differs
+JPN,Japan,2014,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,5.286,D,Definition differs
+JPN,Japan,2014,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,10.766,D,Definition differs
+JPN,Japan,2014,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,41.016,D,Definition differs
+JPN,Japan,2014,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,27.691,D,Definition differs
+JPN,Japan,2019,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,1.953,B,Time series break
+JPN,Japan,2019,NW,Net wealth,MEAN,National currency per household,JPY,28745000.0,B,Time series break
+JPN,Japan,2019,NW,Net wealth,MEAN,National currency per person,JPY,12418369.0,B,Time series break
+JPN,Japan,2019,NW,Net wealth,MEDIAN,National currency per household,JPY,14718000.0,B,Time series break
+JPN,Japan,2019,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,1.227,B,Time series break
+JPN,Japan,2019,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,13.228,B,Time series break
+JPN,Japan,2019,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,47.301,B,Time series break
+JPN,Japan,2019,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,32.884,B,Time series break
+USA,United States,2010,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,7.246,A,Normal value
+USA,United States,2010,NW,Net wealth,MEAN,National currency per household,USD,452900.0,A,Normal value
+USA,United States,2010,NW,Net wealth,MEAN,National currency per person,USD,174855.672,A,Normal value
+USA,United States,2010,NW,Net wealth,MEDIAN,National currency per household,USD,62500.0,A,Normal value
+USA,United States,2010,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,-0.366,A,Normal value
+USA,United States,2010,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,37.345,A,Normal value
+USA,United States,2010,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,76.61,A,Normal value
+USA,United States,2010,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,63.466,A,Normal value
+USA,United States,2013,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,7.56,A,Normal value
+USA,United States,2013,NW,Net wealth,MEAN,National currency per household,USD,488400.0,A,Normal value
+USA,United States,2013,NW,Net wealth,MEAN,National currency per person,USD,189572.25,A,Normal value
+USA,United States,2013,NW,Net wealth,MEDIAN,National currency per household,USD,64600.0,A,Normal value
+USA,United States,2013,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,-0.36,A,Normal value
+USA,United States,2013,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,37.617,A,Normal value
+USA,United States,2013,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,78.193,A,Normal value
+USA,United States,2013,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,65.859,A,Normal value
+USA,United States,2016,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,8.167,A,Normal value
+USA,United States,2016,NW,Net wealth,MEAN,National currency per household,USD,632100.0,A,Normal value
+USA,United States,2016,NW,Net wealth,MEAN,National currency per person,USD,248811.625,A,Normal value
+USA,United States,2016,NW,Net wealth,MEDIAN,National currency per household,USD,77400.0,A,Normal value
+USA,United States,2016,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,-0.142,A,Normal value
+USA,United States,2016,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,42.476,A,Normal value
+USA,United States,2016,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,79.472,A,Normal value
+USA,United States,2016,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,68.049,A,Normal value
+USA,United States,2019,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,7.028,A,Normal value
+USA,United States,2019,NW,Net wealth,MEAN,National currency per household,USD,684500.0,A,Normal value
+USA,United States,2019,NW,Net wealth,MEAN,National currency per person,USD,277162.156,A,Normal value
+USA,United States,2019,NW,Net wealth,MEDIAN,National currency per household,USD,97400.0,A,Normal value
+USA,United States,2019,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,-0.082,A,Normal value
+USA,United States,2019,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,40.478,A,Normal value
+USA,United States,2019,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,79.062,A,Normal value
+USA,United States,2019,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,67.731,A,Normal value
+USA,United States,2022,M_NW_RATIO,Mean to median net wealth ratio,_Z,Factor of median net wealth,,5.889,A,Normal value
+USA,United States,2022,NW,Net wealth,MEAN,National currency per household,USD,975800.0,A,Normal value
+USA,United States,2022,NW,Net wealth,MEAN,National currency per person,USD,398514.906,A,Normal value
+USA,United States,2022,NW,Net wealth,MEDIAN,National currency per household,USD,165700.0,A,Normal value
+USA,United States,2022,SH_BOT40,Share of bottom 40% of wealth,_Z,Percentage of household wealth,,0.601,A,Normal value
+USA,United States,2022,SH_TOP1,Share of top 1% of wealth,_Z,Percentage of household wealth,,37.388,A,Normal value
+USA,United States,2022,SH_TOP10,Share of top 10% of wealth,_Z,Percentage of household wealth,,75.149,A,Normal value
+USA,United States,2022,SH_TOP5,Share of top 5% of wealth,_Z,Percentage of household wealth,,63.898,A,Normal value

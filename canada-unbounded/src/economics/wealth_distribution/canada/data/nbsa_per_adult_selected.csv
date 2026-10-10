@@ -1,0 +1,73 @@
+quarter,sector,category,value_millions_cad,adults_18plus_july1,population_july1,pop_year_used,value_per_adult_cad,value_per_capita_cad
+2019Q4,National balance sheets,Net financial assets,690849,30361209,37618495,2019,22754,18365
+2019Q4,National balance sheets,Net worth,12505023,30361209,37618495,2019,411875,332417
+2019Q4,Households and non-profit institutions serving households,Net financial assets,5655204,30361209,37618495,2019,186264,150330
+2019Q4,Households and non-profit institutions serving households,Net worth,12482925,30361209,37618495,2019,411147,331829
+2019Q4,Households,Net financial assets,5545688,30361209,37618495,2019,182657,147419
+2019Q4,Households,Net worth,12336717,30361209,37618495,2019,406332,327943
+2019Q4,General governments,Net financial assets,-721881,30361209,37618495,2019,-23776,-19190
+2019Q4,General governments,Net worth,344412,30361209,37618495,2019,11344,9155
+2019Q4,Federal general government,Net financial assets,-665636,30361209,37618495,2019,-21924,-17694
+2019Q4,Federal general government,Net worth,-587746,30361209,37618495,2019,-19358,-15624
+2019Q4,Other levels of general government,Net financial assets,-561105,30361209,37618495,2019,-18481,-14916
+2019Q4,Other levels of general government,Net worth,427298,30361209,37618495,2019,14074,11359
+2019Q4,Provincial and territorial general governments,Net financial assets,-495610,30361209,37618495,2019,-16324,-13175
+2019Q4,Provincial and territorial general governments,Net worth,38119,30361209,37618495,2019,1256,1013
+2019Q4,Local general governments,Net financial assets,-28881,30361209,37618495,2019,-951,-768
+2019Q4,Local general governments,Net worth,389179,30361209,37618495,2019,12818,10345
+2019Q4,Social security funds,Net financial assets,504860,30361209,37618495,2019,16628,13421
+2019Q4,Social security funds,Net worth,504860,30361209,37618495,2019,16628,13421
+2025Q2,National balance sheets,Net financial assets,1777658,33972255,41608982,2025,52327,42723
+2025Q2,National balance sheets,Net worth,19129319,33972255,41608982,2025,563087,459740
+2025Q2,Households and non-profit institutions serving households,Net financial assets,8167024,33972255,41608982,2025,240403,196280
+2025Q2,Households and non-profit institutions serving households,Net worth,18213896,33972255,41608982,2025,536140,437740
+2025Q2,Households,Net financial assets,7962201,33972255,41608982,2025,234374,191358
+2025Q2,Households,Net worth,17955030,33972255,41608982,2025,528520,431518
+2025Q2,General governments,Net financial assets,-514934,33972255,41608982,2025,-15157,-12376
+2025Q2,General governments,Net worth,1150522,33972255,41608982,2025,33867,27651
+2025Q2,Federal general government,Net financial assets,-994818,33972255,41608982,2025,-29283,-23909
+2025Q2,Federal general government,Net worth,-874562,33972255,41608982,2025,-25743,-21019
+2025Q2,Other levels of general government,Net financial assets,-404736,33972255,41608982,2025,-11914,-9727
+2025Q2,Other levels of general government,Net worth,1140464,33972255,41608982,2025,33570,27409
+2025Q2,Provincial and territorial general governments,Net financial assets,-377285,33972255,41608982,2025,-11106,-9067
+2025Q2,Provincial and territorial general governments,Net worth,503764,33972255,41608982,2025,14829,12107
+2025Q2,Local general governments,Net financial assets,22723,33972255,41608982,2025,669,546
+2025Q2,Local general governments,Net worth,629278,33972255,41608982,2025,18523,15124
+2025Q2,Social security funds,Net financial assets,884620,33972255,41608982,2025,26039,21260
+2025Q2,Social security funds,Net worth,884620,33972255,41608982,2025,26039,21260
+2025Q4,National balance sheets,Net financial assets,1671317,33972255,41608982,2025,49197,40167
+2025Q4,National balance sheets,Net worth,19108615,33972255,41608982,2025,562477,459243
+2025Q4,Households and non-profit institutions serving households,Net financial assets,8743516,33972255,41608982,2025,257372,210135
+2025Q4,Households and non-profit institutions serving households,Net worth,18634930,33972255,41608982,2025,548534,447858
+2025Q4,Households,Net financial assets,8530744,33972255,41608982,2025,251109,205022
+2025Q4,Households,Net worth,18367809,33972255,41608982,2025,540671,441439
+2025Q4,General governments,Net financial assets,-511125,33972255,41608982,2025,-15045,-12284
+2025Q4,General governments,Net worth,1225006,33972255,41608982,2025,36059,29441
+2025Q4,Federal general government,Net financial assets,-1009433,33972255,41608982,2025,-29713,-24260
+2025Q4,Federal general government,Net worth,-881197,33972255,41608982,2025,-25939,-21178
+2025Q4,Other levels of general government,Net financial assets,-439035,33972255,41608982,2025,-12923,-10551
+2025Q4,Other levels of general government,Net worth,1168860,33972255,41608982,2025,34406,28092
+2025Q4,Provincial and territorial general governments,Net financial assets,-401167,33972255,41608982,2025,-11809,-9641
+2025Q4,Provincial and territorial general governments,Net worth,529664,33972255,41608982,2025,15591,12730
+2025Q4,Local general governments,Net financial assets,12791,33972255,41608982,2025,377,307
+2025Q4,Local general governments,Net worth,631774,33972255,41608982,2025,18597,15184
+2025Q4,Social security funds,Net financial assets,937343,33972255,41608982,2025,27591,22527
+2025Q4,Social security funds,Net worth,937343,33972255,41608982,2025,27591,22527
+2026Q2,National balance sheets,Net financial assets,1945455,34158557,41798407,2026,56954,46544
+2026Q2,National balance sheets,Net worth,20302362,34158557,41798407,2026,594357,485721
+2026Q2,Households and non-profit institutions serving households,Net financial assets,9354791,34158557,41798407,2026,273864,223807
+2026Q2,Households and non-profit institutions serving households,Net worth,19423212,34158557,41798407,2026,568619,464688
+2026Q2,Households,Net financial assets,9135950,34158557,41798407,2026,267457,218572
+2026Q2,Households,Net worth,19148610,34158557,41798407,2026,560580,458118
+2026Q2,General governments,Net financial assets,-448577,34158557,41798407,2026,-13132,-10732
+2026Q2,General governments,Net worth,1531555,34158557,41798407,2026,44837,36641
+2026Q2,Federal general government,Net financial assets,-1051171,34158557,41798407,2026,-30773,-25149
+2026Q2,Federal general government,Net worth,-910276,34158557,41798407,2026,-26649,-21778
+2026Q2,Other levels of general government,Net financial assets,-431394,34158557,41798407,2026,-12629,-10321
+2026Q2,Other levels of general government,Net worth,1407843,34158557,41798407,2026,41215,33682
+2026Q2,Provincial and territorial general governments,Net financial assets,-397394,34158557,41798407,2026,-11634,-9507
+2026Q2,Provincial and territorial general governments,Net worth,735156,34158557,41798407,2026,21522,17588
+2026Q2,Local general governments,Net financial assets,18394,34158557,41798407,2026,538,440
+2026Q2,Local general governments,Net worth,665265,34158557,41798407,2026,19476,15916
+2026Q2,Social security funds,Net financial assets,1033988,34158557,41798407,2026,30270,24737
+2026Q2,Social security funds,Net worth,1033988,34158557,41798407,2026,30270,24737

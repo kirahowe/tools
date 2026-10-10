@@ -1,0 +1,14 @@
+jurisdiction,federal_top_rate,federal_top_threshold,prov_top_statutory_rate,prov_top_threshold,prov_top_effective_rate,combined_top_rate,note
+Newfoundland and Labrador,33.0,258482.01,21.8,1141275.01,21.8,54.8,
+Nova Scotia,33.0,258482.01,21.0,157124.01,21.0,54.0,
+Ontario,33.0,258482.01,13.16,220000.01,20.5296,53.53,"Ontario surtax 20%+36% of basic Ontario tax above $5,818/$7,446 (CRA T4127 Jan 2026, factor V1); effective top Ontario rate = 13.16% x 1.56"
+British Columbia,33.0,258482.01,20.5,265545.01,20.5,53.5,
+Quebec,33.0,258482.01,25.75,132245.01,25.75,53.305,Federal tax reduced by 16.5% Quebec abatement; Quebec rate from Revenu Quebec page (not downloadable; cited via search)
+Prince Edward Island,33.0,258482.01,20.0,200000.01,20.0,53.0,
+New Brunswick,33.0,258482.01,19.5,193861.01,19.5,52.5,
+Manitoba,33.0,258482.01,17.4,101200.01,17.4,50.4,
+Alberta,33.0,258482.01,15.0,370220.01,15.0,48.0,
+Yukon,33.0,258482.01,15.0,500000.01,15.0,48.0,
+Saskatchewan,33.0,258482.01,14.5,155805.01,14.5,47.5,
+Northwest Territories,33.0,258482.01,14.05,172346.01,14.05,47.05,
+Nunavut,33.0,258482.01,11.5,181439.01,11.5,44.5,

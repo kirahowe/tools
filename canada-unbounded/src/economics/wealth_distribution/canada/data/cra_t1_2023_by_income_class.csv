@@ -1,0 +1,141 @@
+tax_year,item,income_class,number,amount_thousands,share_of_total_pct
+2023,Total number of returns,Total,30989470,0,100.0
+2023,Total number of returns,4999 and under/Moins de 4 999,2679920,0,8.65
+2023,Total number of returns,5000 - 9999,1295630,0,4.18
+2023,Total number of returns,10000 - 14999,1610820,0,5.2
+2023,Total number of returns,15000 - 19999,1901610,0,6.14
+2023,Total number of returns,20000 - 24999,2248850,0,7.26
+2023,Total number of returns,25000 - 29999,1838640,0,5.93
+2023,Total number of returns,30000 - 34999,1536250,0,4.96
+2023,Total number of returns,35000 - 39999,1443740,0,4.66
+2023,Total number of returns,40000 - 44999,1454980,0,4.7
+2023,Total number of returns,45000 - 49999,1408030,0,4.54
+2023,Total number of returns,50000 - 54999,1391260,0,4.49
+2023,Total number of returns,55000 - 59999,1212360,0,3.91
+2023,Total number of returns,60000 - 69999,2077650,0,6.7
+2023,Total number of returns,70000 - 79999,1691000,0,5.46
+2023,Total number of returns,80000 - 89999,1423020,0,4.59
+2023,Total number of returns,90000 - 99999,1144070,0,3.69
+2023,Total number of returns,100000 - 149999,2859430,0,9.23
+2023,Total number of returns,150000 - 249999,1225540,0,3.95
+2023,Total number of returns,250000 and over/250000 et plus,546650,0,1.76
+2023,Total income assessed,Total,29665120,1896427638,100.0
+2023,Total income assessed,4999 and under/Moins de 4 999,1355570,1739547,0.09
+2023,Total income assessed,5000 - 9999,1295630,9875446,0.52
+2023,Total income assessed,10000 - 14999,1610820,20204390,1.07
+2023,Total income assessed,15000 - 19999,1901610,33192258,1.75
+2023,Total income assessed,20000 - 24999,2248850,50866608,2.68
+2023,Total income assessed,25000 - 29999,1838640,50350975,2.66
+2023,Total income assessed,30000 - 34999,1536250,49846278,2.63
+2023,Total income assessed,35000 - 39999,1443740,54075804,2.85
+2023,Total income assessed,40000 - 44999,1454980,61822175,3.26
+2023,Total income assessed,45000 - 49999,1408030,66836927,3.52
+2023,Total income assessed,50000 - 54999,1391260,73074942,3.85
+2023,Total income assessed,55000 - 59999,1212360,69646993,3.67
+2023,Total income assessed,60000 - 69999,2077650,134667327,7.1
+2023,Total income assessed,70000 - 79999,1691000,126498672,6.67
+2023,Total income assessed,80000 - 89999,1423020,120787830,6.37
+2023,Total income assessed,90000 - 99999,1144070,108424470,5.72
+2023,Total income assessed,100000 - 149999,2859430,341709666,18.02
+2023,Total income assessed,150000 - 249999,1225540,227709589,12.01
+2023,Total income assessed,250000 and over/250000 et plus,546650,295097743,15.56
+2023,Employment income,Total,19245810,1177993484,100.0
+2023,Employment income,4999 and under/Moins de 4 999,648900,1766191,0.15
+2023,Employment income,5000 - 9999,724790,4789523,0.41
+2023,Employment income,10000 - 14999,795020,8243626,0.7
+2023,Employment income,15000 - 19999,814840,11428844,0.97
+2023,Employment income,20000 - 24999,821410,14712312,1.25
+2023,Employment income,25000 - 29999,840670,18547975,1.57
+2023,Employment income,30000 - 34999,901920,24055067,2.04
+2023,Employment income,35000 - 39999,940260,29502459,2.5
+2023,Employment income,40000 - 44999,972050,35060346,2.98
+2023,Employment income,45000 - 49999,983550,40174266,3.41
+2023,Employment income,50000 - 54999,970610,43985130,3.73
+2023,Employment income,55000 - 59999,901660,45205254,3.84
+2023,Employment income,60000 - 69999,1600900,91462803,7.76
+2023,Employment income,70000 - 79999,1343560,89123975,7.57
+2023,Employment income,80000 - 89999,1134680,85680874,7.27
+2023,Employment income,90000 - 99999,957700,81518636,6.92
+2023,Employment income,100000 - 149999,2457710,262073625,22.25
+2023,Employment income,150000 - 249999,1022070,157773196,13.39
+2023,Employment income,250000 and over/250000 et plus,413530,132889380,11.28
+2023,Taxable amount of dividends from taxable Canadian corporations,Total,4556940,111557402,100.0
+2023,Taxable amount of dividends from taxable Canadian corporations,4999 and under/Moins de 4 999,56520,73091,0.07
+2023,Taxable amount of dividends from taxable Canadian corporations,5000 - 9999,41920,63340,0.06
+2023,Taxable amount of dividends from taxable Canadian corporations,10000 - 14999,59580,122560,0.11
+2023,Taxable amount of dividends from taxable Canadian corporations,15000 - 19999,97980,220246,0.2
+2023,Taxable amount of dividends from taxable Canadian corporations,20000 - 24999,145270,394483,0.35
+2023,Taxable amount of dividends from taxable Canadian corporations,25000 - 29999,182770,600419,0.54
+2023,Taxable amount of dividends from taxable Canadian corporations,30000 - 34999,175900,823025,0.74
+2023,Taxable amount of dividends from taxable Canadian corporations,35000 - 39999,170530,861340,0.77
+2023,Taxable amount of dividends from taxable Canadian corporations,40000 - 44999,184920,1106006,0.99
+2023,Taxable amount of dividends from taxable Canadian corporations,45000 - 49999,195250,1412082,1.27
+2023,Taxable amount of dividends from taxable Canadian corporations,50000 - 54999,212880,1535983,1.38
+2023,Taxable amount of dividends from taxable Canadian corporations,55000 - 59999,195330,1738566,1.56
+2023,Taxable amount of dividends from taxable Canadian corporations,60000 - 69999,351260,3244797,2.91
+2023,Taxable amount of dividends from taxable Canadian corporations,70000 - 79999,315950,3310299,2.97
+2023,Taxable amount of dividends from taxable Canadian corporations,80000 - 89999,304620,3980306,3.57
+2023,Taxable amount of dividends from taxable Canadian corporations,90000 - 99999,252870,3643945,3.27
+2023,Taxable amount of dividends from taxable Canadian corporations,100000 - 149999,768470,15178392,13.61
+2023,Taxable amount of dividends from taxable Canadian corporations,150000 - 249999,503000,19586801,17.56
+2023,Taxable amount of dividends from taxable Canadian corporations,250000 and over/250000 et plus,341930,53661721,48.1
+2023,Taxable capital gains,Total,2712430,54988744,100.0
+2023,Taxable capital gains,4999 and under/Moins de 4 999,45350,75813,0.14
+2023,Taxable capital gains,5000 - 9999,33490,52918,0.1
+2023,Taxable capital gains,10000 - 14999,44560,78326,0.14
+2023,Taxable capital gains,15000 - 19999,62630,113233,0.21
+2023,Taxable capital gains,20000 - 24999,85760,157102,0.29
+2023,Taxable capital gains,25000 - 29999,105090,205849,0.37
+2023,Taxable capital gains,30000 - 34999,101360,241315,0.44
+2023,Taxable capital gains,35000 - 39999,98500,260010,0.47
+2023,Taxable capital gains,40000 - 44999,105270,300583,0.55
+2023,Taxable capital gains,45000 - 49999,108590,330644,0.6
+2023,Taxable capital gains,50000 - 54999,119570,378096,0.69
+2023,Taxable capital gains,55000 - 59999,109450,388482,0.71
+2023,Taxable capital gains,60000 - 69999,199610,797476,1.45
+2023,Taxable capital gains,70000 - 79999,180420,850741,1.55
+2023,Taxable capital gains,80000 - 89999,172790,940354,1.71
+2023,Taxable capital gains,90000 - 99999,145580,911623,1.66
+2023,Taxable capital gains,100000 - 149999,447270,4102418,7.46
+2023,Taxable capital gains,150000 - 249999,306590,5966244,10.85
+2023,Taxable capital gains,250000 and over/250000 et plus,240580,38837518,70.63
+2023,Capital gains deduction,Total,60500,9296915,100.0
+2023,Capital gains deduction,4999 and under/Moins de 4 999,50,1413,0.02
+2023,Capital gains deduction,5000 - 9999,40,295,0.0
+2023,Capital gains deduction,10000 - 14999,30,287,0.0
+2023,Capital gains deduction,15000 - 19999,190,788,0.01
+2023,Capital gains deduction,20000 - 24999,440,1928,0.02
+2023,Capital gains deduction,25000 - 29999,370,2428,0.03
+2023,Capital gains deduction,30000 - 34999,540,4257,0.05
+2023,Capital gains deduction,35000 - 39999,620,6460,0.07
+2023,Capital gains deduction,40000 - 44999,800,10449,0.11
+2023,Capital gains deduction,45000 - 49999,820,11758,0.13
+2023,Capital gains deduction,50000 - 54999,920,16001,0.17
+2023,Capital gains deduction,55000 - 59999,990,18586,0.2
+2023,Capital gains deduction,60000 - 69999,2140,49472,0.53
+2023,Capital gains deduction,70000 - 79999,2410,68942,0.74
+2023,Capital gains deduction,80000 - 89999,2900,102175,1.1
+2023,Capital gains deduction,90000 - 99999,2240,84773,0.91
+2023,Capital gains deduction,100000 - 149999,8610,442486,4.76
+2023,Capital gains deduction,150000 - 249999,10680,956252,10.29
+2023,Capital gains deduction,250000 and over/250000 et plus,25710,7518164,80.87
+2023,Net federal tax,Total,20663760,207855024,100.0
+2023,Net federal tax,4999 and under/Moins de 4 999,73150,39879,0.02
+2023,Net federal tax,5000 - 9999,127090,84502,0.04
+2023,Net federal tax,10000 - 14999,197150,155220,0.07
+2023,Net federal tax,15000 - 19999,416290,228865,0.11
+2023,Net federal tax,20000 - 24999,656030,502899,0.24
+2023,Net federal tax,25000 - 29999,903520,906406,0.44
+2023,Net federal tax,30000 - 34999,1105220,1533492,0.74
+2023,Net federal tax,35000 - 39999,1210550,2265420,1.09
+2023,Net federal tax,40000 - 44999,1312840,3171943,1.53
+2023,Net federal tax,45000 - 49999,1317100,3973482,1.91
+2023,Net federal tax,50000 - 54999,1330680,4849310,2.33
+2023,Net federal tax,55000 - 59999,1172190,5026289,2.42
+2023,Net federal tax,60000 - 69999,2031600,11047274,5.31
+2023,Net federal tax,70000 - 79999,1666510,11832953,5.69
+2023,Net federal tax,80000 - 89999,1408580,12425248,5.98
+2023,Net federal tax,90000 - 99999,1135820,11877022,5.71
+2023,Net federal tax,100000 - 149999,2842510,42119334,20.26
+2023,Net federal tax,150000 - 249999,1215860,34348133,16.53
+2023,Net federal tax,250000 and over/250000 et plus,541070,61467354,29.57
