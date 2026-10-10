@@ -207,27 +207,9 @@
 ;; ## Brain Drain and the Exodus Argument
 
 ;; Canadians often worry about losing talent to the United States.
-;; Emigration is real but modest.
-
-(def emigration
-  (-> (c/data "statcan_emigration_17-10-0040-01.csv")
-      (tc/select-rows #(= 4 (:quarters_summed %)))
-      (tc/pivot->longer [:emigrants :returning_emigrants] {:target-columns :measure :value-column-name :people})
-      (tc/update-columns {:measure (partial map {:emigrants "Emigrants" :returning_emigrants "Returning emigrants"})})))
-
-^{:kindly/options {:id :fig-emigration
-                   :caption "Estimated emigrants from Canada and returning emigrants, by calendar year (Statistics Canada; recent quarters preliminary).[^14]"}}
-(-> emigration
-    (pj/lay-line :calendar_year :people {:color :measure :size 2})
-    (pj/scale :color {:values [c/red c/wd]})
-    (pj/scale :y {:include 0})
-    (pj/options {:title "Emigration from Canada"
-                 :x-label "Year" :y-label "People"
-                 :color-label "" :legend-position :bottom}))
-
-;; About 112,000 people emigrated in 2025, roughly a quarter of one percent of the population,
-;; and about 50,000 returned.[^14]
-;; Statistics Canada does not publish destinations or incomes, so claims about the *rich* leaving should be treated with care.
+;; By headcount, Canada admits several permanent immigrants for every net emigrant; the loss is concentrated among its very best graduates.
+;; [Talent and Opportunity](c12_talent.html) looks at this in detail.
+;; Statistics Canada does not publish emigrants' incomes, so claims about the *rich* leaving should be treated with care.
 ;; Canada already taxes accrued gains when residents leave, through the departure tax (see [Wealth Tax](c02_wealth_tax.html)).
 
 ;; ## Conclusion
@@ -254,4 +236,3 @@
 ;; [^11]: Grocery share from the Competition Bureau's 2023 retail grocery market study, as summarized by [Global News](https://globalnews.ca/news/9796699/competition-bureau-canada-grocery-study-takeaways/). I could not retrieve official market-share figures for banking and wireless, so none are given here.
 ;; [^12]: Competition Bureau Canada, ["Competition in Canada from 2000 to 2020: An Economy at a Crossroads"](https://ised-isde.canada.ca/site/competition-bureau-canada/en/how-we-foster-competition/education-and-outreach/competition-canada-2000-2020-economy-crossroads), 2023.
 ;; [^13]: Randall Morck, David Stangeland and Bernard Yeung, ["Inherited Wealth, Corporate Control and Economic Growth: The Canadian Disease"](https://www.nber.org/papers/w6814), NBER Working Paper 6814, 1998.
-;; [^14]: Statistics Canada, [Table 17-10-0040-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001), estimates of the components of international migration, quarterly, summed to calendar years.

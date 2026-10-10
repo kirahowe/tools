@@ -1,0 +1,11 @@
+year,indicator,country,value,source,url,note
+2024,net_ai_talent_migration_per_10k_linkedin,Canada,0.95,Stanford AI Index 2025 Fig 4.2.23 (LinkedIn),https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,positive=net inflow; peaked ~2.4 in 2022-23 (read from chart); index says Canada among countries with declining net AI talent migration
+2024,net_ai_talent_migration_per_10k_linkedin,United States,1.07,AI Index 2025 Fig 4.2.22,https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,
+2024,net_ai_talent_migration_per_10k_linkedin,Germany,2.13,AI Index 2025,https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,
+2024,net_ai_talent_migration_per_10k_linkedin,Israel,-2.1,AI Index 2025,https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,
+2024,net_ai_talent_migration_per_10k_linkedin,India,-1.55,AI Index 2025,https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,
+2024,newly_funded_ai_companies,Canada,51,AI Index 2025 (Quid),https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,6th
+2013-2024,newly_funded_ai_companies_sum,Canada,481,AI Index 2025 (Quid),https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,"US 6,956; China 1,605; UK 885; Israel 492"
+2024,ai_private_investment_usd_bn,Canada,2.89,AI Index 2025 (Quid),https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,US 109.08
+2013-2024,ai_private_investment_sum_usd_bn,Canada,15.31,AI Index 2025 (Quid),https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf,
+2026,canada_cifar_ai_chairs,Canada,>130,"CIFAR (context, program self-report)",https://cifar.ca/ai/impact/,"""more than 130"" researchers recruited via chairs program"

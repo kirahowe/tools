@@ -119,6 +119,18 @@
 ;; * Dye and England, [*Assessing the Theory and Practice of Land Value Taxation*](https://www.lincolninst.edu/app/uploads/legacy-files/pubfiles/assessing-theory-practice-land-value-taxation-full_0.pdf), Lincoln Institute, 2010.
 ;; * OECD, [*Housing Taxation in OECD Countries*](https://www.oecd.org/tax/tax-policy/brochure-housing-taxation-in-oecd-countries.pdf), 2022; Mirrlees et al., *Tax by Design*, 2011.
 
+;; **Talent flows and mobility**
+;;
+;; * Statistics Canada, [Table 17-10-0040-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001) (components of international migration) and ["Portrait of Canadian emigration"](https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2026013-eng.htm), 2026.
+;; * Choi and Hou, ["Retention of science, technology, engineering, mathematics and computer science graduates in Canada"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2025007/article/00004-eng.htm), *Economic and Social Reports*, 2025.
+;; * Blit, Skuterud and Zhang, ["The Potential of Canada's International Education Strategy: Evidence from the 'MIT of the North'"](https://clef.uwaterloo.ca/wp-content/uploads/2024/09/CLEF-074-2024.pdf), CLEF WP 74, 2024.
+;; * Zhao, Drew and Murray, ["Knowledge workers on the move"](https://www150.statcan.gc.ca/n1/pub/75-001-x/2000002/article/5072-eng.pdf), *Perspectives on Labour and Income*, 2000.
+;; * Picot and Rollin, ["Immigrant Entrepreneurs as Job Creators"](https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2019011-eng.htm), Statistics Canada, 2019.
+;; * Connolly, Haeck and Lapierre, ["Trends in Intergenerational Income Mobility and Income Inequality in Canada"](https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2021001-eng.htm), Statistics Canada, 2021.
+;; * Corak, ["The Canadian Geography of Intergenerational Income Mobility"](https://doi.org/10.1093/ej/uez019), *Economic Journal*, 2020.
+;; * Connolly and Haeck, "The Great Mobility Puzzle Resolved", [*Canadian Public Policy* 52(1), 2026](https://doi.org/10.3138/cpp.2026-004).
+;; * OECD, [*A Broken Social Elevator?*](https://doi.org/10.1787/9789264301085-en), 2018.
+
 ;; **Scorecard**
 ;;
 ;; * LEGISinfo bill records; Finance Canada budgets and economic updates; Office of the Parliamentary Budget Officer reports (2025–2026); NATO defence expenditure reports.
@@ -139,4 +151,6 @@
 ;; * **Long-run wealth shares.** The Davies–Di Matteo figures are from their 2018 working paper; the 2021 journal version revised some estimates.
 ;; * **Top companies.** The Forbes Global 2000 API is complete only from 2011, so the animated comparison covers 2011–2026. Forbes ranks by market value, Fortune by revenue, and the 1978 Royal Commission by sales; long-run comparisons mix measures.
 ;; * **The scorecard is early.** Most measures became law in 2026, US tariffs and an oil shock dominate the data, and all recent figures will be revised.
+;; * **Mobility comparisons depend on the yardstick.** The often-quoted 11.2% vs 7.5% bottom-to-top figure ranks each country's children in its own distribution; on a common US scale it is 7.7% vs 7.5%. Canadian trend estimates use different income definitions from the Canada–US comparison.
+;; * **Emigration is measured imperfectly.** Statistics Canada changed how it counts emigrants in 2016, graduate retention uses tax filing as a proxy for living in Canada, the education of returning emigrants is unknown, and there is no count of Canadians on TN visas. The net degree-flow figures are rough author's calculations.
 ;; * **Land values are modelled.** Statistics Canada splits residential property into land and structures using a land-to-structure ratio it describes as dated.

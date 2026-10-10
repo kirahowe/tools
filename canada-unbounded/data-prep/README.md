@@ -27,6 +27,8 @@ Run scripts with `python3 -I <script>.py` from the topic folder.
 | `topco_longrun/` | Long-run largest-company lists (Royal Commission on Corporate Concentration 1978; Fortune 500), crisis comparisons (2008–09, COVID) | Stable and Stuck |
 | `dynasty/` | Durham Report land grants, family holding companies, dual-class shares, heir-control studies, political dynasties | Old Money |
 | `land/` | Land values (national balance sheet), Western Canada's land-tax history, vacancy taxes, illustrative land value tax | Land |
+| `talent/` | Immigration and emigration flows, emigrant education, graduate retention, Canadians in the US, immigrant entrepreneurship, AI talent | Talent and Opportunity |
+| `mobility/` | Intergenerational income mobility: Canada–US comparison, cohort trends, provinces, groups, OECD | Talent and Opportunity, What Makes Canada Different |
 | `scorecard/` | Policy inventory since March 2025, targets vs actuals, monthly/quarterly indicators | Scorecard |
 
 The animated top-companies chart uses `forbes_g2000_ca_us_2011_2026.csv`, extracted from the Forbes Global 2000

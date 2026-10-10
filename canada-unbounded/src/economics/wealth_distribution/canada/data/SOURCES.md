@@ -108,3 +108,29 @@ are alongside. "Supporting" files back figures quoted in the text rather than a 
 | `sc_policy_inventory.csv`, `sc_targets_vs_actuals.csv` | LEGISinfo, Budget 2025, Spring Economic Update 2026, PBO, NATO (sources per row) |
 | `sc_ind_*.csv` | Statistics Canada tables 36-10-0104, 36-10-0206, 14-10-0287, 18-10-0004, 34-10-0158, 34-10-0135, 17-10-0009, 17-10-0121, 12-10-0011; Bank of Canada |
 | `sc_fiscal_projections_vs_results.csv`, `sc_defence_spending.csv` | Finance Canada; PBO; NATO |
+
+## Talent flows
+| File | Source |
+| --- | --- |
+| `tal_canada_talent_flows_2000_2025.csv` | Statistics Canada 17-10-0040-01, 17-10-0009-01, 17-10-0121-01 |
+| `tal_oecd_permanent_inflows_per1000.csv` | OECD DF_MIG_INT_PER (standardised permanent inflows); World Bank population |
+| `tal_skilled_emigration_indicators.csv` | Statistics Canada Portrait of Canadian emigration (2026), The Daily (2024-02-02); CLEF WP 74; Zhao, Drew & Murray (2000); Finnie (2006) |
+| `tal_statcan_stem_grad_retention_choi_hou_2025.csv` | Choi & Hou (2025), Statistics Canada ESR 5(7), Table 1 |
+| `tal_census2021_degree_by_immigrant_status.csv` | Statistics Canada Census 2021, 98-10-0446-01 |
+| `tal_us_acs_canadian_born_education.csv` | US Census Bureau ACS 1-year PUMS 2014 and 2024 (author tabulation) |
+| `tal_us_admin_flows_canadians.csv` | DHS OHSS Yearbook Table 3; USCIS H-1B FY2023 report |
+| `tal_cihi_physician_international_migration.csv` | CIHI physician supply and migration data tables 2023–2024 |
+| `tal_immigrant_entrepreneurship.csv` | Picot & Rollin (2019); Picot & Ostrovsky (2021); Green et al. (2016) |
+| `tal_ai_talent_indicators.csv` | Stanford AI Index 2025, Chapter 4 |
+| `tal_net_skill_balance_estimates.csv` | Zhao, Drew & Murray (2000); author's calculations (derivations per row) |
+
+## Mobility
+| File | Source |
+| --- | --- |
+| `mob_canada_us_headline_measures.csv`, `mob_cch2019_*.csv` | Connolly, Corak & Haeck (2019), JOLE 37(S2), Tables 2–5, 7 |
+| `mob_canada_relative_mobility_by_cohort.csv`, `mob_canada_rank_slope_by_province_cohort.csv` | Connolly, Haeck & Lapierre (2021), Statistics Canada 11F0019M No. 458 |
+| `mob_canada_mobility_by_province_corak2020.csv` | Corak (2020), Economic Journal 130(631), Tables 4–6 |
+| `mob_absolute_mobility_canada_us.csv` | Ostrovsky (2017), Statistics Canada 11-626-X No. 073; Manduca et al. (2024) via Statistics Canada ESR; Chetty et al. (2017) |
+| `mob_canada_mobility_by_group.csv` | Adnan, Zhang & Zheng (2023); Aydemir, Chen & Corak (2009); Chen, Ostrovsky & Piraino (2016); Corak & Heisz (1999); Corak (2013); Connolly & Haeck (2026) |
+| `mob_oecd_broken_elevator_2018.csv` | OECD (2018), A Broken Social Elevator?, Figures 1.5 and 4.8 (StatLink files) |
+| `mob_canada_homeownership_by_parent_properties.csv` | Statistics Canada Canadian Housing Statistics Program (2023) |

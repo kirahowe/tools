@@ -1,0 +1,309 @@
+year,series,value,unit,source,note
+2000,immigrants,227429,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,emigrants,48841,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,returning_emigrants,17550,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,net_temporary_emigration,25818,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,net_emigration,57109,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,net_nonpermanent_residents,28433,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2000,population_july1,30685730,persons,StatCan 17-10-0009-01,
+2000,immigration_rate_per1000,7.412,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2000,emigration_rate_per1000,1.592,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2000,returning_emigrant_rate_per1000,0.572,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2000,net_emigration_rate_per1000,1.861,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2000,net_permanent_flow_immigrants_minus_net_emigration,170320,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2001,immigrants,250638,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,emigrants,53588,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,returning_emigrants,22073,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,net_temporary_emigration,27876,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,net_emigration,59391,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,net_nonpermanent_residents,47286,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2001,population_july1,31020855,persons,StatCan 17-10-0009-01,
+2001,immigration_rate_per1000,8.08,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2001,emigration_rate_per1000,1.727,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2001,returning_emigrant_rate_per1000,0.712,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2001,net_emigration_rate_per1000,1.915,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2001,net_permanent_flow_immigrants_minus_net_emigration,191247,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2002,immigrants,229049,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,emigrants,46721,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,returning_emigrants,27035,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,net_temporary_emigration,25996,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,net_emigration,45682,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,net_nonpermanent_residents,29133,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2002,population_july1,31359199,persons,StatCan 17-10-0009-01,
+2002,immigration_rate_per1000,7.304,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2002,emigration_rate_per1000,1.49,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2002,returning_emigrant_rate_per1000,0.862,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2002,net_emigration_rate_per1000,1.457,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2002,net_permanent_flow_immigrants_minus_net_emigration,183367,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2003,immigrants,221349,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,emigrants,53684,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,returning_emigrants,30697,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,net_temporary_emigration,26889,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,net_emigration,49876,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,net_nonpermanent_residents,22943,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2003,population_july1,31642461,persons,StatCan 17-10-0009-01,
+2003,immigration_rate_per1000,6.995,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2003,emigration_rate_per1000,1.697,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2003,returning_emigrant_rate_per1000,0.97,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2003,net_emigration_rate_per1000,1.576,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2003,net_permanent_flow_immigrants_minus_net_emigration,171473,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2004,immigrants,235859,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,emigrants,58426,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,returning_emigrants,31031,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,net_temporary_emigration,27690,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,net_emigration,55085,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,net_nonpermanent_residents,14225,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2004,population_july1,31938807,persons,StatCan 17-10-0009-01,
+2004,immigration_rate_per1000,7.385,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2004,emigration_rate_per1000,1.829,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2004,returning_emigrant_rate_per1000,0.972,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2004,net_emigration_rate_per1000,1.725,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2004,net_permanent_flow_immigrants_minus_net_emigration,180774,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2005,immigrants,262246,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,emigrants,58561,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,returning_emigrants,33412,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,net_temporary_emigration,27287,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,net_emigration,52436,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,net_nonpermanent_residents,3159,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2005,population_july1,32242732,persons,StatCan 17-10-0009-01,
+2005,immigration_rate_per1000,8.133,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2005,emigration_rate_per1000,1.816,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2005,returning_emigrant_rate_per1000,1.036,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2005,net_emigration_rate_per1000,1.626,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2005,net_permanent_flow_immigrants_minus_net_emigration,209810,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2006,immigrants,251649,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,emigrants,64707,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,returning_emigrants,39703,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,net_temporary_emigration,22886,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,net_emigration,47890,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,net_nonpermanent_residents,12741,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2006,population_july1,32571193,persons,StatCan 17-10-0009-01,
+2006,immigration_rate_per1000,7.726,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2006,emigration_rate_per1000,1.987,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2006,returning_emigrant_rate_per1000,1.219,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2006,net_emigration_rate_per1000,1.47,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2006,net_permanent_flow_immigrants_minus_net_emigration,203759,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2007,immigrants,236763,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,emigrants,66411,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,returning_emigrants,33493,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,net_temporary_emigration,18537,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,net_emigration,51455,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,net_nonpermanent_residents,43958,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2007,population_july1,32888886,persons,StatCan 17-10-0009-01,
+2007,immigration_rate_per1000,7.199,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2007,emigration_rate_per1000,2.019,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2007,returning_emigrant_rate_per1000,1.018,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2007,net_emigration_rate_per1000,1.565,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2007,net_permanent_flow_immigrants_minus_net_emigration,185308,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2008,immigrants,247262,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,emigrants,66234,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,returning_emigrants,32488,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,net_temporary_emigration,18932,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,net_emigration,52678,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,net_nonpermanent_residents,71669,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2008,population_july1,33247298,persons,StatCan 17-10-0009-01,
+2008,immigration_rate_per1000,7.437,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2008,emigration_rate_per1000,1.992,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2008,returning_emigrant_rate_per1000,0.977,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2008,net_emigration_rate_per1000,1.584,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2008,net_permanent_flow_immigrants_minus_net_emigration,194584,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2009,immigrants,252218,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,emigrants,56427,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,returning_emigrants,33339,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,net_temporary_emigration,18043,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,net_emigration,41131,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,net_nonpermanent_residents,55977,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2009,population_july1,33630069,persons,StatCan 17-10-0009-01,
+2009,immigration_rate_per1000,7.5,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2009,emigration_rate_per1000,1.678,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2009,returning_emigrant_rate_per1000,0.991,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2009,net_emigration_rate_per1000,1.223,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2009,net_permanent_flow_immigrants_minus_net_emigration,211087,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2010,immigrants,280739,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,emigrants,59688,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,returning_emigrants,35990,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,net_temporary_emigration,18489,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,net_emigration,42187,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,net_nonpermanent_residents,11927,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2010,population_july1,34005902,persons,StatCan 17-10-0009-01,
+2010,immigration_rate_per1000,8.256,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2010,emigration_rate_per1000,1.755,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2010,returning_emigrant_rate_per1000,1.058,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2010,net_emigration_rate_per1000,1.241,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2010,net_permanent_flow_immigrants_minus_net_emigration,238552,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2011,immigrants,248735,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,emigrants,65125,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,returning_emigrants,37275,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,net_temporary_emigration,23082,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,net_emigration,50932,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,net_nonpermanent_residents,42802,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2011,population_july1,34339221,persons,StatCan 17-10-0009-01,
+2011,immigration_rate_per1000,7.243,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2011,emigration_rate_per1000,1.897,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2011,returning_emigrant_rate_per1000,1.085,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2011,net_emigration_rate_per1000,1.483,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2011,net_permanent_flow_immigrants_minus_net_emigration,197803,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2012,immigrants,257825,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,emigrants,61873,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,returning_emigrants,37759,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,net_temporary_emigration,26312,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,net_emigration,50426,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,net_nonpermanent_residents,46207,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2012,population_july1,34713395,persons,StatCan 17-10-0009-01,
+2012,immigration_rate_per1000,7.427,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2012,emigration_rate_per1000,1.782,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2012,returning_emigrant_rate_per1000,1.088,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2012,net_emigration_rate_per1000,1.453,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2012,net_permanent_flow_immigrants_minus_net_emigration,207399,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2013,immigrants,259046,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,emigrants,62709,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,returning_emigrants,37867,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,net_temporary_emigration,26608,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,net_emigration,51450,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,net_nonpermanent_residents,52984,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2013,population_july1,35080992,persons,StatCan 17-10-0009-01,
+2013,immigration_rate_per1000,7.384,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2013,emigration_rate_per1000,1.788,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2013,returning_emigrant_rate_per1000,1.079,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2013,net_emigration_rate_per1000,1.467,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2013,net_permanent_flow_immigrants_minus_net_emigration,207596,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2014,immigrants,260308,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,emigrants,65222,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,returning_emigrants,37004,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,net_temporary_emigration,26738,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,net_emigration,54956,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,net_nonpermanent_residents,16970,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2014,population_july1,35434066,persons,StatCan 17-10-0009-01,
+2014,immigration_rate_per1000,7.346,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2014,emigration_rate_per1000,1.841,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2014,returning_emigrant_rate_per1000,1.044,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2014,net_emigration_rate_per1000,1.551,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2014,net_permanent_flow_immigrants_minus_net_emigration,205352,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2015,immigrants,271867,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,emigrants,68945,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,returning_emigrants,39436,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,net_temporary_emigration,27057,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,net_emigration,56566,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,net_nonpermanent_residents,-9330,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),
+2015,population_july1,35704498,persons,StatCan 17-10-0009-01,
+2015,immigration_rate_per1000,7.614,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2015,emigration_rate_per1000,1.931,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2015,returning_emigrant_rate_per1000,1.105,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2015,net_emigration_rate_per1000,1.584,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),
+2015,net_permanent_flow_immigrants_minus_net_emigration,215301,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2016,immigrants,296385,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,emigrants,97473,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,returning_emigrants,53065,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,net_temporary_emigration,12364,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,net_emigration,56772,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,net_nonpermanent_residents,88722,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,population_july1,36110803,persons,StatCan 17-10-0009-01,
+2016,immigration_rate_per1000,8.208,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,emigration_rate_per1000,2.699,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,returning_emigrant_rate_per1000,1.47,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,net_emigration_rate_per1000,1.572,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),mixed-method year (H1 old method incl. net temp emig; H2 new); method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2016,net_permanent_flow_immigrants_minus_net_emigration,239613,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2017,immigrants,286537,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,emigrants,104013,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,returning_emigrants,60181,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,net_emigration,43832,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,net_nonpermanent_residents,138034,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,population_july1,36545075,persons,StatCan 17-10-0009-01,
+2017,immigration_rate_per1000,7.841,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,emigration_rate_per1000,2.846,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,returning_emigrant_rate_per1000,1.647,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,net_emigration_rate_per1000,1.199,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2017,net_permanent_flow_immigrants_minus_net_emigration,242705,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2018,immigrants,321054,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,emigrants,97035,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,returning_emigrants,59120,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,net_emigration,37915,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,net_nonpermanent_residents,154917,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,population_july1,37072620,persons,StatCan 17-10-0009-01,
+2018,immigration_rate_per1000,8.66,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,emigration_rate_per1000,2.617,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,returning_emigrant_rate_per1000,1.595,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,net_emigration_rate_per1000,1.023,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2018,net_permanent_flow_immigrants_minus_net_emigration,283139,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2019,immigrants,341174,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,emigrants,90460,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,returning_emigrants,54669,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,net_emigration,35791,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,net_nonpermanent_residents,189781,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,population_july1,37618495,persons,StatCan 17-10-0009-01,
+2019,immigration_rate_per1000,9.069,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,emigration_rate_per1000,2.405,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,returning_emigrant_rate_per1000,1.453,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,net_emigration_rate_per1000,0.951,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2019,net_permanent_flow_immigrants_minus_net_emigration,305383,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2020,immigrants,184594,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,emigrants,60407,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,returning_emigrants,41172,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,net_emigration,19235,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,net_nonpermanent_residents,-96066,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,population_july1,38028638,persons,StatCan 17-10-0009-01,
+2020,immigration_rate_per1000,4.854,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,emigration_rate_per1000,1.588,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,returning_emigrant_rate_per1000,1.083,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,net_emigration_rate_per1000,0.506,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2020,net_permanent_flow_immigrants_minus_net_emigration,165359,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2021,immigrants,406046,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,emigrants,83357,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,returning_emigrants,44196,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,net_emigration,39161,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,net_nonpermanent_residents,71661,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,population_july1,38239864,persons,StatCan 17-10-0009-01,
+2021,immigration_rate_per1000,10.618,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,emigration_rate_per1000,2.18,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,returning_emigrant_rate_per1000,1.156,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,net_emigration_rate_per1000,1.024,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2021,net_permanent_flow_immigrants_minus_net_emigration,366885,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2021,npr_stock_july1,1326000,persons,StatCan 17-10-0121-01,stock of non-permanent residents July 1
+2022,immigrants,437612,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,emigrants,110172,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,returning_emigrants,51602,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,net_emigration,58570,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,net_nonpermanent_residents,521192,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,population_july1,38945628,persons,StatCan 17-10-0009-01,
+2022,immigration_rate_per1000,11.236,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,emigration_rate_per1000,2.829,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,returning_emigrant_rate_per1000,1.325,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,net_emigration_rate_per1000,1.504,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2022,net_permanent_flow_immigrants_minus_net_emigration,379042,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2022,npr_stock_july1,1546638,persons,StatCan 17-10-0121-01,stock of non-permanent residents July 1
+2023,immigrants,471817,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,emigrants,112561,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,returning_emigrants,51380,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,net_emigration,61181,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,net_nonpermanent_residents,756689,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,population_july1,40022704,persons,StatCan 17-10-0009-01,
+2023,immigration_rate_per1000,11.789,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,emigration_rate_per1000,2.812,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,returning_emigrant_rate_per1000,1.284,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,net_emigration_rate_per1000,1.529,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2023,net_permanent_flow_immigrants_minus_net_emigration,410636,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2023,npr_stock_july1,2196877,persons,StatCan 17-10-0121-01,stock of non-permanent residents July 1
+2024,immigrants,483654,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,emigrants,109535,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,returning_emigrants,49186,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,net_emigration,60349,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,net_nonpermanent_residents,302690,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,population_july1,41162593,persons,StatCan 17-10-0009-01,
+2024,immigration_rate_per1000,11.75,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,emigration_rate_per1000,2.661,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,returning_emigrant_rate_per1000,1.195,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,net_emigration_rate_per1000,1.466,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2024,net_permanent_flow_immigrants_minus_net_emigration,423305,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2024,npr_stock_july1,2900083,persons,StatCan 17-10-0121-01,stock of non-permanent residents July 1
+2025,immigrants,393781,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,emigrants,111572,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,returning_emigrants,50064,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,net_emigration,61508,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,net_nonpermanent_residents,-89445,persons,StatCan 17-10-0040-01 (quarterly summed to calendar year),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,population_july1,41608982,persons,StatCan 17-10-0009-01,
+2025,immigration_rate_per1000,9.464,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,emigration_rate_per1000,2.681,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,returning_emigrant_rate_per1000,1.203,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,net_emigration_rate_per1000,1.478,"per 1,000 population",calc from 17-10-0040-01 / 17-10-0009-01 (July 1 pop),method break: from Jul 2016 short-term emigrants/returnees are inside emigrants & returning emigrants; net temporary emigration no longer calculated
+2025,net_permanent_flow_immigrants_minus_net_emigration,332273,persons,calc,immigrants minus net emigration (emig - returning + net temp emig)
+2025,npr_stock_july1,2934388,persons,StatCan 17-10-0121-01,stock of non-permanent residents July 1

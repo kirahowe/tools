@@ -1,0 +1,6 @@
+census_year,group,pop_25_64,bachelor_or_higher_25_64,share_pct,source
+2021,total,19568260,6431940,32.9,StatCan Census 2021 Table 98-10-0446-01 via WDS (Canada; 25 to 64; total gender; private households)
+2021,non_immigrants,13592395,3642705,26.8,StatCan Census 2021 Table 98-10-0446-01 via WDS (Canada; 25 to 64; total gender; private households)
+2021,immigrants,5423905,2453410,45.2,StatCan Census 2021 Table 98-10-0446-01 via WDS (Canada; 25 to 64; total gender; private households)
+2021,immigrants_2016_2021,901075,535635,59.4,StatCan Census 2021 Table 98-10-0446-01 via WDS (Canada; 25 to 64; total gender; private households)
+2021,non_permanent_residents,551960,335825,60.8,StatCan Census 2021 Table 98-10-0446-01 via WDS (Canada; 25 to 64; total gender; private households)

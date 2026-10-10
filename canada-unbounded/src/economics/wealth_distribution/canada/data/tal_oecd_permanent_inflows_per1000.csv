@@ -1,0 +1,291 @@
+country_iso3,country,year,permanent_inflows_standardised,work_plus_accompanying,population_worldbank,permanent_inflows_per_1000,work_share_pct,obs_status_flag,source
+AUS,Australia,2015,227937,127774,,,56.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2016,229440,128550,,,56.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2017,220458,123567,,,56.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2018,195356,111099,,,56.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2019,195574,109713,25334826,7.72,56.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2020,158870,95843,25649248,6.19,60.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2021,170407,79620,25685412,6.63,46.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2022,170888,89063,26018721,6.57,52.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2023,238733,142344,26659922,8.95,59.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUS,Australia,2024,239343,137100,27194286,8.8,57.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2015,105598,2381,,,2.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2016,105834,2206,,,2.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2017,101960,2460,,,2.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2018,89668,3458,,,3.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2019,84440,4231,8879920,9.51,5.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2020,65608,2773,8916864,7.36,4.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2021,76514,3589,8955797,8.54,4.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2022,93323,5313,9041851,10.32,5.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2023,105422,8113,9131761,11.54,7.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+AUT,Austria,2024,102604,9207,9177982,11.18,9.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2015,103455,4250,,,4.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2016,92852,3764,,,4.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2017,93773,4245,,,4.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2018,94820,4584,,,4.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2019,95018,4471,11488980,8.27,4.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2020,78818,3635,11538604,6.83,4.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2021,94983,4406,11586195,8.2,4.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2022,102939,6900,11680210,8.81,6.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2023,106142,7641,11779946,9.01,7.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+BEL,Belgium,2024,106177,6980,11858610,8.95,6.6,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2015,275790,170336,,,61.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2016,296742,156030,,,52.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2017,286519,159315,,,55.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2018,321055,186370,,,58.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2019,341178,196655,37618495,9.07,57.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2020,184535,106355,38028638,4.85,57.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2021,406035,252990,38239864,10.62,62.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2022,437620,255700,38950132,11.24,58.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2023,471700,272655,40049088,11.78,57.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CAN,Canada,2024,483585,281615,41262329,11.72,58.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2015,112681,1334,,,1.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2016,108162,1277,,,1.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2017,103545,1458,,,1.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2018,105567,1785,,,1.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2019,106536,2016,8575280,12.42,1.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2020,102286,1560,8638167,11.84,1.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2021,109128,2769,8704546,12.54,2.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2022,129975,3069,8777088,14.81,2.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2023,144486,2841,8888822,16.25,2.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CHE,Switzerland,2024,135570,2179,9005582,15.05,1.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2015,27777,7229,,,26.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2016,29198,8737,,,29.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2017,40205,17725,,,44.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2018,55360,29584,,,53.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2019,62340,35509,10671870,5.84,57.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2020,55553,26032,10697858,5.19,46.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2021,63916,37217,10505772,6.08,58.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2022,45630,22527,10672118,4.28,49.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2023,37519,14605,10864042,3.45,38.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+CZE,Czechia,2024,40242,17338,10905028,3.69,43.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2015,708132,27108,,,3.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2016,1077937,50458,,,4.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2017,883085,61702,,,7.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2018,656482,64944,,,9.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2019,643278,78815,83092962,7.74,12.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2020,521112,53668,83160871,6.27,10.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2021,533102,56649,83196078,6.41,10.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2022,668962,89870,83177813,8.04,13.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2023,664309,93345,83287273,7.98,14.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DEU,Germany,2024,586207,62984,83516593,7.02,10.7,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2015,60730,9920,,,16.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2016,54911,11359,,,20.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2017,49605,9740,,,19.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2018,48598,11001,,,22.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2019,45765,11112,5814422,7.87,24.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2020,37834,7566,5831404,6.49,20.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2021,48903,10449,5856733,8.35,21.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2022,62862,17472,5903037,10.65,27.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2023,57442,16350,5946952,9.66,28.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+DNK,Denmark,2024,54386,17359,5976992,9.1,31.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2015,269642,37559,,,13.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2016,190848,6602,,,3.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2017,213490,7535,,,3.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2018,229284,7896,,,3.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2019,244557,9403,47118501,5.19,3.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2020,178648,11234,47359424,3.77,6.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2021,261443,18247,47443821,5.51,7.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2022,323215,45340,47786102,6.76,14.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2023,374852,40253,48352528,7.75,10.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ESP,Spain,2024,367986,36381,48848840,7.53,9.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2015,5514,790,,,14.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2016,6244,1066,,,17.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2017,8186,2142,,,26.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2018,9211,3189,,,34.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2019,10385,3923,1326898,7.83,37.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2020,9135,3552,1329522,6.87,38.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2021,11751,4730,1330932,8.83,40.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2022,14238,5468,1348840,10.56,38.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2023,12510,3437,1370286,9.13,27.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+EST,Estonia,2024,8907,2639,1372341,6.49,29.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2015,24918,4174,,,16.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2016,30317,4598,,,15.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2017,26188,5383,,,20.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2018,25627,5242,,,20.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2019,28121,6298,5521606,5.09,22.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2020,24222,5809,5529543,4.38,24.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2021,30758,8012,5541017,5.55,26.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2022,40400,13087,5556106,7.27,32.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2023,42804,12247,5583911,7.67,28.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FIN,Finland,2024,34681,7786,5619911,6.17,22.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2015,268139,31457,,,11.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2016,267261,27487,,,10.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2017,265849,30094,,,11.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2018,288416,44135,,,15.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2019,284536,43645,67382061,4.22,15.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2020,228013,37087,67601110,3.37,16.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2021,276638,49371,67842811,4.08,17.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2022,305949,64024,68184457,4.49,20.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2023,306160,70904,68372286,4.48,23.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+FRA,France,2024,298115,63668,68551653,4.35,21.4,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2015,366543,45256,,,12.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2016,351048,42549,,,12.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2017,317737,45254,,,14.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2018,317725,55266,,,17.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2019,356147,76400,66628000,5.35,21.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2020,199942,65901,66740000,3.0,33.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2021,369169,150306,66978000,5.51,40.7,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2022,488042,321526,67636000,7.22,65.9,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2023,743121,540833,68526000,10.84,72.8,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+GBR,United Kingdom,2024,435650,262508,69281000,6.29,60.3,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2015,36212,5038,,,13.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2016,41926,6676,,,15.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2017,41047,8519,,,20.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2018,42961,10365,,,24.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2019,48553,14837,4976456,9.76,30.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2020,42664,15199,5039747,8.47,35.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2021,38444,13235,5110585,7.52,34.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2022,66914,35392,5212836,12.84,52.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2023,65626,27390,5311538,12.36,41.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+IRL,Ireland,2024,71921,31427,5395790,13.33,43.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2015,27908,0,,,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2016,25977,0,,,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2017,26357,0,,,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2018,28099,0,,,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2019,33247,0,9054000,3.67,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2020,19676,0,9215100,2.14,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2021,25497,0,9371400,2.72,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2022,74714,0,9557500,7.82,0.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2023,45984,0,9849000,4.67,0.0,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ISR,Israel,2024,39728,0,10002200,3.97,0.0,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2015,218629,13800,,,6.3,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2016,209266,5869,,,2.8,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2017,215405,4806,,,2.2,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2018,201976,8236,,,4.1,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2019,167082,3211,59729081,2.8,1.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2020,112004,6289,59438851,1.88,5.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2021,204427,42991,59133173,3.46,21.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2022,235431,55808,59013667,3.99,23.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2023,201588,23437,58984216,3.42,11.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+ITA,Italy,2024,168868,17241,58952704,2.86,10.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2015,83461,56769,,,68.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2016,96072,67259,,,70.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2017,100933,71925,,,71.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2018,116722,86515,,,74.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2019,137636,106914,126633000,1.09,77.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2020,83616,67186,126261000,0.66,80.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2021,56767,37773,125681593,0.45,66.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2022,144478,116704,125124989,1.15,80.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2023,163130,137757,124516650,1.31,84.4,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+JPN,Japan,2024,177133,154274,123975371,1.43,87.1,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2015,65557,6257,,,9.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2016,72937,6879,,,9.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2017,71071,5116,,,7.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2018,75993,5785,,,7.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2019,72547,4087,51764822,1.4,5.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2020,53032,5154,51836239,1.02,9.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2021,48248,4779,51769539,0.93,9.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2022,57757,6029,51672569,1.12,10.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2023,87144,13947,51712619,1.69,16.0,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+KOR,Korea,2024,75582,13185,51751065,1.46,17.4,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2015,2532,151,,,6.0,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2016,3302,916,,,27.7,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2017,2667,390,,,14.6,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2018,2788,445,,,16.0,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2019,2895,463,2811089,1.03,16.0,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2020,2791,469,2810369,0.99,16.8,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2021,5871,1550,2808380,2.09,26.4,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2022,10679,4345,2831639,3.77,40.7,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2023,6963,1958,2871585,2.42,28.1,E,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LTU,Lithuania,2024,5684,1804,2888278,1.97,31.7,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2015,20753,971,,,4.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2016,21045,1110,,,5.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2017,23015,1485,,,6.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2018,23250,1774,,,7.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2019,24453,2285,620001,39.44,9.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2020,20088,1713,630419,31.87,8.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2021,24345,2241,640064,38.04,9.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2022,27222,3615,653103,41.68,13.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2023,27441,3812,666430,41.18,13.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+LUX,Luxembourg,2024,26352,3157,677012,38.92,12.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2015,34406,8668,,,25.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2016,35906,8566,,,23.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2017,32639,5173,,,15.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2018,37000,5747,,,15.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2019,40543,6183,125762982,0.32,15.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2020,58430,7582,126799054,0.46,13.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2021,67740,10664,127648148,0.53,15.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2022,75636,10294,128613117,0.59,13.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2023,69905,8180,129739759,0.54,11.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+MEX,Mexico,2024,72486,4710,130861007,0.55,6.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2015,128004,14470,,,11.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2016,139462,15555,,,11.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2017,149794,19530,,,13.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2018,149753,22935,,,15.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2019,165685,24620,17344874,9.55,14.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2020,134234,14790,17441500,7.7,11.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2021,172363,22285,17533044,9.83,12.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2022,205933,33975,17700982,11.63,16.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2023,195874,29530,17877117,10.96,15.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NLD,Netherlands,2024,183377,23415,17993485,10.19,12.8,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2015,61098,5290,,,8.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2016,64924,4620,,,7.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2017,54955,5074,,,9.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2018,46048,6255,,,13.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2019,46127,7956,5347896,8.63,17.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2020,32839,5121,5379475,6.1,15.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2021,38096,6857,5408320,7.04,18.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2022,42540,9229,5457127,7.8,21.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2023,41660,9284,5519601,7.55,22.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NOR,Norway,2024,35706,6419,5572279,6.41,18.0,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2015,54341,28068,,,51.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2016,55323,29226,,,52.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2017,46942,24177,,,51.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2018,44744,20082,,,44.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2019,38054,20226,4970300,7.66,53.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2020,35694,18813,5072400,7.04,52.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2021,35375,15261,5084600,6.96,43.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2022,154298,137685,5081700,30.36,89.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2023,119405,99285,5200000,22.96,83.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+NZL,New Zealand,2024,52958,24375,5290000,10.01,46.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2015,33640,6670,,,19.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2016,39152,5574,,,14.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2017,51279,7583,,,14.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2018,78716,19976,,,25.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2019,106679,34607,10286263,10.37,32.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2020,84713,32598,10297081,8.23,38.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2021,93737,38653,10361831,9.05,41.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2022,121018,53190,10434332,11.6,44.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2023,140274,55147,10578174,13.26,39.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+PRT,Portugal,2024,137570,60269,10694681,12.86,43.8,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2015,9310,2773,,,29.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2016,10139,3092,,,30.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2017,13207,6940,,,52.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2018,19891,13358,,,67.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2019,26827,20364,5454147,4.92,75.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2020,17114,11724,5458827,3.14,68.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2021,26844,21348,5447247,4.93,79.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2022,24276,18895,5431752,4.47,77.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2023,24320,19514,5426740,4.48,80.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVK,Slovak Republic,2024,20874,16014,5422069,3.85,76.7,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2015,12165,5627,,,46.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2016,14671,7468,,,50.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2017,20919,13140,,,62.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2018,31327,22536,,,71.9,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2019,35936,22755,2088385,17.21,63.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2020,22935,11193,2102419,10.91,48.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2021,29982,19197,2108079,14.22,64.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2022,33190,23446,2112076,15.71,70.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2023,31294,20877,2120461,14.76,66.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SVN,Slovenia,2024,26390,15767,2127400,12.41,59.7,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2015,120832,20339,,,16.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2016,155122,18589,,,12.0,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2017,132967,25592,,,19.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2018,118719,32116,,,27.1,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2019,99257,32017,10278887,9.66,32.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2020,80920,25449,10353442,7.82,31.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2021,75893,30510,10415811,7.29,40.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2022,89832,31827,10486941,8.57,35.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2023,87122,28089,10536632,8.27,32.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+SWE,Sweden,2024,75599,22132,10569709,7.15,29.3,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2015,1050973,144047,,,13.7,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2016,1186905,148296,,,12.5,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2017,1103748,135018,,,12.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2018,1089632,139646,,,12.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2019,1030981,152657,330226227,3.12,14.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2020,581471,128899,331578104,1.75,22.2,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2021,835375,206814,332100166,2.52,24.8,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2022,1048744,287576,333996304,3.14,27.4,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2023,1190162,162194,336755052,3.53,13.6,,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc
+USA,United States,2024,1425060,184650,340003797,4.19,13.0,P,OECD DF_MIG_INT_PER (standardised permanent-type inflows) via sdmx.oecd.org; population World Bank SP.POP.TOTL; per-1000 is calc

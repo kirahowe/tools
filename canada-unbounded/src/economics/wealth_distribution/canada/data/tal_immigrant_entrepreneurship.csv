@@ -1,0 +1,17 @@
+indicator,period,group,value,unit,source,url,note
+share_of_private_incorporated_firms,2003-2013,immigrant_owned (immigrants landed since 1980),17,pct,Picot & Rollin 2019 (StatCan Analytical Studies 11F0019M2019011),https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2019011-eng.htm,
+share_of_net_jobs_created,2003-2013,immigrant_owned,25,pct,Picot & Rollin 2019,https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2019011-eng.htm,advantage disappears after controlling for firm age/size
+ownership_rate_incorporated_with_employees,2016,immigrants,5.2,pct of pop 25-69,Picot & Ostrovsky 2021 ESR,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+ownership_rate_incorporated_with_employees,2016,second_generation,5.0,pct of pop 25-69,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+ownership_rate_incorporated_with_employees,2016,third_plus_generation,4.0,pct of pop 25-69,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+primary_self_employment_rate,2016,immigrants,6.9,pct of pop 25-69,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+primary_self_employment_rate,2016,second_generation,5.3,pct of pop 25-69,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+primary_self_employment_rate,2016,third_plus_generation,4.6,pct of pop 25-69,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+stem_grad_share_owners_incorporated_with_employees,2016,immigrants,22.1,pct,Picot & Ostrovsky 2021 Chart 2,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,STEM incl. college
+stem_grad_share_owners_incorporated_with_employees,2016,second_generation,12.3,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+stem_grad_share_owners_incorporated_with_employees,2016,third_plus_generation,10.0,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+sme_product_innovation_3y,c.2014-2017,immigrant_owned,29,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,adjusted
+sme_product_innovation_3y,c.2014-2017,canadian_born_owned,27,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,adjusted
+sme_process_innovation_3y,c.2014-2017,immigrant_owned,21,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+sme_process_innovation_3y,c.2014-2017,canadian_born_owned,17,pct,Picot & Ostrovsky 2021,https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm,
+early_stage_entrepreneurship_share_first_second_gen,n.d.,first+second generation,34.7,pct,"MaRS (CONTEXT, industry; GEM-based, not verified)",https://www.marsdd.com/our-story/how-immigrant-tech-founders-boost-canadian-innovation/,context only

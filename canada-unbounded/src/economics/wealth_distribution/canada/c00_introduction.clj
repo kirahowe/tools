@@ -57,7 +57,7 @@
 ;; 9. **[The Investment Question](c09_investment_question.html)**: The claim that a wealth tax would kill investment doesn't survive the data. Canada already cut capital taxes deeply, and investment and productivity fell further behind.
 ;; 10. **[Land](c10_land.html)**: Land is over a third of the value of everything Canada owns. Western Canada once taxed land instead of buildings; economists still rank it the least harmful tax there is.
 ;; 11. **[What Makes Canada Different](c11_canadian_differences.html)**: More equal and mobile than the US because of public programs, with distinctly Canadian fault lines.
-;; 12. **[Talent and Opportunity](c12_talent.html)**: Canada is better than the US at keeping poor children from staying poor, but not at getting them to the top, and its advantage is shrinking.
+;; 12. **[Talent and Opportunity](c12_talent.html)**: Canada gains far more educated people than it loses, but leaks its best home-grown graduates to the US. It keeps more poor children out of poverty than the US, but doesn't get more of them to the top, and that advantage is shrinking.
 ;; 13. **[Scorecard](c13_scorecard.html)**: What the Carney government has enacted, and what the early data show.
 ;; 14. **[How to Get a Wealth Tax](c14_how_to_get_a_wealth_tax.html)**: In Canada, only Cabinet can start a tax. Public support exists; what's missing is pressure on the governing party.
 ;; 15. **[References](c15_references.html)**: the data and research behind every claim.
@@ -76,6 +76,7 @@
 ;; | Real median employment income growth, 1976–2024 | about 7% | Statistics Canada |
 ;; | Labour productivity, % of US level | 87% (2000) → 70% (2025) | OECD |
 ;; | Top-10 public companies founded since 1975 (2026) | Canada 1, US 6 | Forbes Global 2000 |
+;; | Permanent immigrants per net emigrant | about 6 (2025) | Statistics Canada |
 ;; | Land as a share of Canada's non-financial assets | 25% (2000) → 37% (2025) | Statistics Canada |
 ;; | Business investment as % of GDP, before vs after 2000–2012 corporate tax cuts | 11.9% → 11.6% | Statistics Canada |
 ;;

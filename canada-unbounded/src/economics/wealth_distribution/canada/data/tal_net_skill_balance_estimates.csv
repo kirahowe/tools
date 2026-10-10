@@ -1,0 +1,16 @@
+period,measure,value,unit,label,derivation,sources
+1990s,degree_holders_entering_canada_per_year (perm+temp),39000,persons/yr,primary,Zhao/Drew/Murray 2000 (1996 Census),https://www150.statcan.gc.ca/n1/pub/75-001-x/2000002/article/5072-eng.pdf
+1990s,degree_holders_leaving_for_US_per_year (perm+temp),10000,persons/yr,primary,US CPS 1994-99 per Zhao/Drew/Murray,https://www150.statcan.gc.ca/n1/pub/75-001-x/2000002/article/5072-eng.pdf
+1990s,ratio_inflow_to_US_outflow_degree_holders,3.9,ratio,calc (article: ~4 to 1),39000/10000,https://www150.statcan.gc.ca/n1/pub/75-001-x/2000002/article/5072-eng.pdf
+2016-2021,avg_emigrants_per_year,88791,persons/yr,calc,mean of calendar-year sums 2016-2021 from 17-10-0040-01,https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001
+2016-2021,avg_returning_emigrants_per_year,52067,persons/yr,calc,same table,https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001
+2021,degree_share_of_emigrant_population,69.8,pct,primary,38.7 bachelor + 31.1 master's+ (Portrait of Canadian emigration),https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2026013-eng.htm
+2016-2021,est_degree_holding_emigrants_per_year_gross,62000,persons/yr,calc (rough),88791 x 0.698; assumes Portrait 2021 education mix applies to all emigrants of the period; ~61% of them are immigrants themselves,derived
+2016-2021,est_degree_holding_net_emigrants_per_year_if_returnees_same_education,25600,persons/yr,calc (illustrative; returnee education UNKNOWN),(88791-52067) x 0.698,derived
+2016-2021,recent_immigrants_25_64_with_bachelor_plus_resident_2021,535635,persons,primary,Census 2021 98-10-0446-01 (immigrants landed 2016-May 2021 still in Canada),https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810044601
+2016-2021,recent_immigrant_degree_holders_25_64_retained_per_year,99900,persons/yr,calc,535635 / 5.36 years (Jan 2016-May 2021); survivors only (net of early re-emigration),derived
+2021,non_permanent_residents_25_64_with_bachelor_plus_stock,335825,persons,primary,Census 2021 98-10-0446-01,https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810044601
+2016-2021,ratio_immigrant_degree_inflow_to_gross_degree_emigration,1.6,ratio,calc (rough),99900/62000,derived
+2016-2021,ratio_immigrant_degree_inflow_to_net_degree_emigration,3.9,ratio,calc (illustrative),99900/25600; depends on unknown returnee education,derived
+2015-2024,canada_born_25plus_bachelor_plus_who_entered_US_last_10y_resident_2024,87953,persons,calc from ACS PUMS,ACS 2024 1-yr PUMS POBP=301 YOEP>=2015 AGEP>=25 SCHL>=21 weighted,https://www2.census.gov/programs-surveys/acs/data/pums/2024/1-Year/
+2015-2024,approx_annual_canada_born_degree_holders_settling_in_US,8800,persons/yr,calc (rough),87953/10; survivors in US in 2024; excludes foreign-born Canadians who moved to US,derived
