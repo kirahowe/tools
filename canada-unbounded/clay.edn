@@ -1,0 +1,11 @@
+{:base-target-path   "temp"
+ :base-source-path   "src"
+ :hide-ui-header     true
+ :subdirs-to-sync    ["src"]
+ :flatten-targets    false
+ ;; `clojure -M:clay -A:markdown` writes .qmd files to site/, then
+ ;; `quarto render site` builds the website (see build.sh).
+ :markdown {:render           true
+            :base-target-path "site"
+            :format           [:quarto :html]
+            :run-quarto       false}}

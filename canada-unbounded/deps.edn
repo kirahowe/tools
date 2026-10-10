@@ -1,0 +1,12 @@
+{:paths ["src"]
+ :deps  {org.clojure/clojure    {:mvn/version "1.12.3"}
+         org.scicloj/clay       {:mvn/version "2.0.23"}
+         org.scicloj/plotje     {:mvn/version "0.15.0"}
+         scicloj/tablecloth     {:mvn/version "7.042"}
+         babashka/fs            {:mvn/version "0.5.27"}}
+ :aliases
+ {;; Render the series to site/ with `clojure -M:clay -A:markdown`
+  ;; Run Clay in watch mode with `clojure -M:clay`
+  :clay {:main-opts ["-m" "scicloj.clay.v2.main"]
+         :jvm-opts  ["-Dclojure.main.report=stderr"
+                     "--add-opens=java.base/java.nio=ALL-UNNAMED"]}}}
