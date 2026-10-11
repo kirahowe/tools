@@ -19,7 +19,7 @@
 
 ;; A wealth tax is an annual tax on net worth (everything you own minus everything you owe) above a high threshold.
 ;; With a \$10M threshold, a family worth \$12M pays tax only on the \$2M above it.
-;; It reaches what income tax misses: the growth of large fortunes that is never sold, and so never taxed,
+;; It reaches what income tax misses: the growth of large fortunes that is not sold, and so goes untaxed for decades, until death,
 ;; as we saw in [Who Pays Tax](c01_who_pays_tax.html).
 
 ;; Canada has seriously costed several wealth taxes.
@@ -41,8 +41,9 @@
 ;; Every PBO costing is deliberately cautious.
 ;; The PBO assumes **35%** of each wealthy family's net worth is hidden or avoided and drops it from the tax base,
 ;; then subtracts 2% for administration.[^4]
-;; A review of the international evidence suggests a well-designed 1% wealth tax would shrink its base by 7–17%,
-;; so the PBO's estimate is, if anything, low (see [The Investment Question](c09_investment_question.html)).
+;; Cutting each family's *total* net worth by 35% roughly halves the revenue on the PBO's own public file.
+;; A review of the international evidence suggests a well-designed 1% wealth tax would shrink its base by 7–17%,[^18]
+;; so the PBO's estimate is probably conservative, even allowing for the higher 2% and 3% rates (see [The Investment Question](c09_investment_question.html)).
 
 ;; ## Who Would Pay?
 
@@ -77,7 +78,7 @@
 ;; About 108,000 families (0.6% of all Canadian families) have more than \$10M.
 ;; Together they hold about a fifth of all the wealth in the country.
 ;; **If your family is worth less than \$10M, you would not pay this tax.**
-;; The median Canadian family is worth about \$520,000.
+;; The median Canadian family is worth about \$520,000.[^19]
 ;; For the median family, a \$10M threshold is about twenty times what they own today.
 
 ;; The schedule is gentle at the threshold and rises with the size of the fortune.
@@ -109,8 +110,9 @@
 
 ;; A \$20M family would pay \$100,000 a year, 0.5% of its wealth.
 ;; A \$1B family would pay about \$28M, 2.8%.
-;; Large fortunes have historically grown faster than that.
-;; The Forbes list's Canadian citizens went from a combined US\$143B in 2020 to US\$457B in 2026 (see [Wealth Concentration](c05_wealth_concentration.html)).
+;; Large fortunes have recently grown faster than that.
+;; The combined wealth of Forbes billionaires living in Canada went from US\$110B in April 2020 (near the pandemic market low) to US\$202B in 2026,
+;; partly because new billionaires joined the list (see [Wealth Concentration](c05_wealth_concentration.html)).
 ;; A 3% tax slows the snowball; it doesn't melt it.
 
 ;; ### Replicating the PBO Estimate
@@ -161,13 +163,13 @@
 
 ;; In 2020, Abacus Data found **79%** of Canadians supported a 1% tax on wealth over \$20M,
 ;; including **64% of Conservative voters** and 73% of people in the highest income bracket.[^7]
-;; A 2021 Abacus poll for the Broadbent Institute found 88% wanted a wealth tax in the pandemic recovery plan.
-;; I could not find a published 2025–26 poll from a major firm, which is itself telling:
-;; the question has dropped out of the national conversation, not out of public opinion.
+;; A 2021 Abacus poll for the Broadbent Institute found 88% wanted a wealth tax in the pandemic recovery plan (54% called it a must-have).
+;; I could not find a published 2025–26 poll from a major firm.
+;; The question has dropped out of the national conversation; whether opinion has moved with it is unknown.
 
 ;; Support is broad, but specific measures framed as hitting "investors" fare worse.
 ;; When the 2024 capital gains increase was in the news, the Angus Reid Institute found only about a third of Canadians supported it.[^8]
-;; How a tax is framed matters as much as who it falls on.
+;; A broad tax on the very rich polls far better than a specific change that many voters expect could reach them.
 
 ;; ## Why Does It Matter?
 
@@ -208,19 +210,19 @@
                  :color-label "" :legend-position :bottom}))
 
 ;; In 1990–91, interest ate **37.6%** of federal revenue.
-;; The austerity of the 1990s brought it down, and by 2020–21 it was just 6.4%.
+;; The austerity of the 1990s brought it down, and by 2021–22 it was just 5.9%.
 ;; Since then rates have risen and deficits returned.
 ;; Debt charges were \$53.4B in 2024–25, 10.5% of revenue, and are projected to reach \$80.9B (13.2%) by 2030–31.[^9]
 ;; **Of every federal tax dollar you pay, more than a dime goes to bondholders**, and the share is rising.
 
-;; A wealth tax raising \$20–25B a year would cover a third or more of those interest payments.
+;; A wealth tax raising \$20–25B a year would cover about a third or more of today's interest payments.
 ;; It wouldn't replace responsible budgeting.
 ;; But it would mean the adjustment doesn't fall entirely on people who work for a living.
 
 ;; ### Canada's Hidden Fiscal Strength
 
 ;; One genuinely Canadian difference is the public balance sheet.
-;; Canada's *gross* general government debt (113.5% of GDP in 2025) is close to the G7 average.
+;; Canada's *gross* general government debt (113.5% of GDP in 2025) is a little below the G7 average of 123%.
 ;; Its *net* debt is the lowest in the G7 by far: 10.2% of GDP.[^10]
 
 (def g7
@@ -239,8 +241,10 @@
   :from-color c/red :to-color c/neutral :include-zero true
   :title "G7 Government Debt, 2025" :x-label "% of GDP" :fmt #(format "%.0f" (double %))})
 
-;; The gap is mostly the Canada and Quebec Pension Plans.
-;; Their funds hold about \$850B in net financial assets, which offset about 59% of federal and provincial net liabilities.[^11]
+;; The Canada and Quebec Pension Plans are a big part of why net debt is so low.
+;; Their funds hold about \$850B in net financial assets (about 27% of GDP), which offset about 59% of federal and provincial net liabilities.[^11]
+;; The rest of the gap is other government financial assets, such as equity holdings, loans and receivables.
+;; Even without the pension plans, Canada's net debt would still be the lowest in the G7.
 ;; That is a real strength: Canadians collectively own a large, well-managed public investment fund.
 ;; But those assets are earmarked for future pensions, so "lowest net debt in the G7" flatters the federal books.
 
@@ -249,7 +253,7 @@
 ;; ### "Just Fix the Loopholes"
 
 ;; Closing loopholes is worthwhile; Canada's biggest "loophole" is the statute itself.
-;; Half-taxing capital gains costs Ottawa about \$30–42B a year, and that is the law working as written
+;; Half-taxing capital gains costs Ottawa an estimated \$30–40B a year, and that is the law working as written
 ;; (see [Who Pays Tax](c01_who_pays_tax.html)).
 ;; Raising the inclusion rate, as Budget 2024 proposed, would help.
 ;; But a capital gains tax only bites when assets are *sold*.
@@ -284,7 +288,7 @@
 ;; ### "Farmers and Small Business Owners Will Be Hit"
 
 ;; Not at a \$10M threshold.
-;; The lifetime capital gains exemption already shelters up to \$1.25M of gains on qualifying small businesses, farms and fishing property.[^15]
+;; The lifetime capital gains exemption already shelters up to \$1.275M (2026) of gains on qualifying small businesses, farms and fishing property.[^15]
 ;; A family farm or small business worth less than \$10M in net worth would owe nothing.
 ;; For illiquid fortunes above the threshold, the OECD recommends instalment or deferral options, and they should be part of any design.
 
@@ -300,7 +304,6 @@
 ;;   plus a permanent 1.5-point surtax on their taxable income above \$100M (2022);
 ;; * a **global minimum tax** of 15% on large multinationals (2024).[^17]
 
-;; Each was called unworkable before it passed.
 ;; :::
 
 ;; ## Conclusion
@@ -327,6 +330,8 @@
 ;; [^12]: *Income Tax Act*, [section 128.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html). Some property, such as Canadian real estate and pensions, is excluded from the deemed disposition.
 ;; [^13]: Statistics Canada, [Table 17-10-0040-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710004001), estimates of emigrants and returning emigrants.
 ;; [^14]: [Constitution Act, 1867](https://laws-lois.justice.gc.ca/eng/const/page-3.html), ss. 91(3) and 92(2).
-;; [^15]: [Prime Minister's statement of March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase), confirming the \$1.25M lifetime capital gains exemption.
+;; [^15]: [Prime Minister's statement of March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase), confirming the \$1.25M lifetime capital gains exemption; indexed to \$1,275,000 for 2026 ([CRA indexation table](https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/adjustment-personal-income-tax-benefit-amounts.html)).
 ;; [^16]: Vaillancourt and Kerkhoff, ["Capital gains taxation in Canada, 1972–2017"](https://www.unsw.edu.au/content/dam/pdfs/business/acct-audit-tax/research-reports/past-issues/bus-2019/2019-volume-16-number-2/BUS-2019-V16-paper1-v16-n2.pdf), *eJournal of Tax Research* 16(2), 2019.
 ;; [^17]: LEGISinfo: [Bill C-19 (2022)](https://www.parl.ca/legisinfo/en/bill/44-1/C-19), *Select Luxury Items Tax Act*; [Bill C-32 (2022)](https://www.parl.ca/legisinfo/en/bill/44-1/C-32), Canada Recovery Dividend and additional tax on banks and life insurers; [Bill C-69 (2024)](https://www.parl.ca/legisinfo/en/bill/44-1/C-69), *Global Minimum Tax Act*; [Bill C-15 (2026)](https://www.parl.ca/legisinfo/en/bill/45-1/C-15), which removed aircraft and vessels from the luxury tax.
+;; [^18]: Arun Advani and Hannah Tarrant, ["Behavioural responses to a wealth tax"](https://doi.org/10.1111/1475-5890.12283), *Fiscal Studies* 42(3–4), 2021. The 7–17% range is for a 1% tax.
+;; [^19]: Statistics Canada, Survey of Financial Security 2023, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601), median net worth of families (\$519,700).

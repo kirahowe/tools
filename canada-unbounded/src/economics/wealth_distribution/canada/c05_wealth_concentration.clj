@@ -6,7 +6,7 @@
           :quarto {:sidebar     "unbounded-north"
                    :author      "Kira Howe"
                    :description "What Canada's wealth distribution looks like, and how it is changing."
-                   :abstract    "Canada's wealth is less concentrated than America's, but its shape is the same right angle. The broad middle held its ground on housing; the very top pulled away."
+                   :abstract    "Canada's wealth is less concentrated than America's, but its shape is the same right angle. The broad middle held its ground on housing; the top 1%'s share has been roughly flat, while billionaire fortunes have grown fastest."
                    :date        "2026-10-15"
                    :type        :post
                    :category    :economics
@@ -157,7 +157,7 @@
 ;; It is only once we drop the top 10% that we can see how ordinary Canadians are doing.
 
 ^{:kindly/options {:id :fig-ca-wealth-excluding-top-10
-                   :caption "Excluding the top 10%. The poorest tenth of families has a median net worth of about $1,000; the 45th–55th percentile is about $420–630K, most of it home equity."}}
+                   :caption "Excluding the top 10%. The poorest tenth of families has a median net worth of about $1,000; the 45th–55th percentile is about $420–630K."}}
 (curve-chart (tc/select-rows curve #(<= (:percentile %) 90))
              {:title "Excluding the Top 10%" :unit "thousands" :divisor 1e3})
 
@@ -195,13 +195,13 @@
     (tc/rename-columns {:group "Group" :families "Families" :share "Share of all wealth"
                         :threshold "Starts at"}))
 
-;; The top 1% of families, about 169,000 households with \$7.4M or more, hold about 24% of all wealth.
+;; The top 1% of families, about 169,000 families with \$7.4M or more, hold about 24% of all wealth.
 ;; This is the PBO's own published estimate, and our calculation from its public file reproduces it.[^4]
 ;; The top 0.01%, about 1,700 families, hold over 5%.
 ;; That is almost two-thirds as much as the entire bottom half of Canadian families combined,
 ;; whose share is 8.1% in the survey.[^3]
 
-;; Statistics Canada's own survey puts the top 1% at only 11%.
+;; Statistics Canada's own survey, on its own, puts the top 1% at only 11–12%.
 ;; The gap is because surveys miss the very rich.
 ;; Statistics Canada says so plainly:
 ;; "measures like the share of wealth held by the top 1% will be understated in this data source."[^3]
@@ -237,15 +237,14 @@
 ;; By quintile, Canada's wealth distribution has been remarkably stable since 2010.
 ;; The top 20%'s share actually *fell* slightly, from 68.9% to 65.7%,
 ;; and the bottom 40%'s share doubled, from 1.5% to 3.0%.[^1]
-;; Two forces drove that.
+;; Two forces likely drove that.
 ;; House prices rose sharply, and housing is middle-class wealth.
 ;; Households also saved heavily during the pandemic, helped by emergency benefits.
-;; Since 2021, the trend has reversed: the gap between the top 20% and the bottom 40% has widened
-;; every year, and in 2025 the top grew its wealth fastest (+6.0%) and the bottom slowest (+2.1%),
+;; Since 2021, the gap between the top 20% and the bottom 40% has widened again, from 60.8 to 62.7 percentage points, and in 2025 the top grew its wealth fastest (+6.0%) and the bottom slowest (+2.1%),
 ;; "mainly from equity markets".[^1]
 
 ;; Quintiles can't see the very top, though.
-;; The top 20% is 3.4 million households; the people a wealth tax is aimed at are a few thousand.
+;; The top 20% is 3.4 million households; a wealth tax starting at \$10M would reach about 108,000 families, and most of its revenue would come from a few thousand.
 ;; For them, the clearest signal is the billionaire count.
 
 (def billionaire-years
@@ -253,7 +252,7 @@
       (tc/select-rows #(>= (:list_year %) 2010))))
 
 ^{:kindly/options {:id :fig-billionaire-count
-                   :caption "Canadian citizens on the Forbes billionaires list, and how many of them live in Canada. Nominal US dollars.[^5]"}}
+                   :caption "Canadian citizens on the Forbes billionaires list, and how many of them live in Canada (Forbes lists for 2010, 2015 and 2020–2026).[^5]"}}
 (-> billionaire-years
     (tc/pivot->longer [:canadian_citizens_count :canada_residents_count]
                       {:target-columns :measure :value-column-name :count})
@@ -270,8 +269,8 @@
 ;; In 2010, Forbes counted 24 Canadian billionaires, worth a combined US\$75B.
 ;; In 2026 it counted 82, worth US\$457B.[^5]
 ;; Fifty of them live in Canada, holding US\$202B.
-;; Over the same period, total Canadian household net worth grew about 2.6-fold in Canadian dollars,
-;; while the count of billionaires more than tripled.
+;; Over the same period, total Canadian household net worth grew about 2.7-fold in Canadian dollars,
+;; while the wealth of billionaires living in Canada grew roughly fourfold.
 
 ;; The Forbes list also undercounts old Canadian money.
 ;; Several of the country's best-known dynasties (the Westons, Irvings, Rogers, Desmarais, McCains and Sobeys)
@@ -284,7 +283,7 @@
 ;; Over the long run, Canadian wealth concentration traces a U shape, like most rich countries.
 ;; Using estate tax records, Davies and Di Matteo estimate the top 1% of Ontario families held about 41% of wealth in 1892.
 ;; By the late 1960s, the top 1% of Canadian adults held about 20%.
-;; By the 1980s, concentration was rising again.[^7]
+;; Since 1970 it has stayed in the low-to-mid twenties; the published version of the study finds a modest upward trend after 1984.[^7]
 
 (def long-run
   (tc/concat
@@ -293,12 +292,12 @@
        (tc/add-column :year #(map (fn [a b] (/ (+ a b) 2.0)) (:period_start %) (:period_end %)))
        (tc/add-column :source "Davies & Di Matteo")
        (tc/select-columns [:year :top1_pct :source]))
-   (tc/dataset {:year     [2016 2019 2023]
-                :top1_pct [25.6 23.4 23.8]
+   (tc/dataset {:year     [2016 2023]
+                :top1_pct [25.6 23.8]
                 :source   "PBO"})))
 
 ^{:kindly/options {:id :fig-long-run-top-1
-                   :caption "Top 1% share of net worth. 1892 and 1902 are Ontario families; 1946–1970 are Canadian adults (estate multiplier method); 1970 onward are Canadian families from surveys with a rich-list adjustment. Different sources and units: compare the shape, not individual points.[^7][^4]"}}
+                   :caption "Top 1% share of net worth. 1892 and 1902 are Ontario families; 1946–1970 are Canadian adults (estate multiplier method); 1970 onward are Canadian families from surveys with a rich-list adjustment. Different sources and units: compare the shape, not individual points. The PBO's 2019 estimate (23.4%) is omitted because it uses a narrower rich list.[^7][^4]"}}
 (-> long-run
     (pj/lay-line :year :top1_pct {:color :source})
     (pj/lay-point {:color :source})
@@ -310,13 +309,13 @@
 
 ;; The mid-century trough coincides with Canada's highest top tax rates and its estate tax.
 ;; The federal estate tax was abolished in 1972.
-;; The top 1% share bottomed out around then and has been in the low-to-mid twenties ever since.
+;; Since then the top 1% share (now measured for families from surveys) has stayed in the low-to-mid twenties.
 
 ;; ## Compared With the United States
 
 ;; By every measure, Canadian wealth is less concentrated than American wealth.
 ;; The World Inequality Database puts the top 1% share at about 29% in Canada and 35% in the United States.[^8]
-;; The PBO's 23.8% for Canada compares with roughly 31% in the U.S. Federal Reserve's Distributional Financial Accounts.[^2]
+;; The PBO's 23.8% for Canada (2023) compares with about 30% for the United States in 2023 in the Federal Reserve's Distributional Financial Accounts.[^2]
 ;; Canada's median family has more net worth relative to the mean, mainly because of homeownership.
 
 ;; Public wealth differs even more.
@@ -327,7 +326,7 @@
 ;; has a **positive** net worth of \$1.53T, about \$44,800 per adult,
 ;; because public assets, including over \$1T in public pension funds, exceed public debts.[^9]
 ;; Canadians collectively still own their public sector.
-;; That is a rare position among rich countries, and it is worth protecting.
+;; Canada also has the lowest general-government net debt in the G7 (about 10% of GDP, IMF), and that is worth protecting.
 
 ;; ::: {.callout-note}
 ;; ## A Closer Look: Who Are Canada's Billionaires?
@@ -339,7 +338,7 @@
 ;; Others live in the United States, Hong Kong, the United Kingdom and Switzerland.
 
 ;; Among those who do live here, the list mixes new fortunes (Shopify, Lululemon, Couche-Tard, homebuilding,
-;; pharmacy) with inherited ones: six members of the Thomson family appear, together worth US\$43.5B.
+;; pharmacy) with inherited ones: six members of the Thomson family appear, together worth US\$43.5B, though Forbes lists a Canadian residence for only one of them.
 ;; A Canadian wealth tax would apply to residents.
 ;; Canada already taxes residents who leave through its "departure tax",
 ;; which treats emigrants as having sold their assets on the way out (see [Wealth Tax](c02_wealth_tax.html)).
@@ -349,9 +348,9 @@
 
 ;; Canada's wealth distribution has the same basic shape as America's: a right angle.
 ;; The top 1% of families hold about a quarter of all wealth.
-;; The top 0.01% hold about as much as the bottom half.
+;; The top 0.01%, about 1,700 families, hold almost two-thirds as much as the entire bottom half.
 ;; Canada's broad middle has held on, mostly through home equity.
-;; But since 2021 the gap has been widening again, and the number of Canadian billionaires
+;; But since 2021 the gap has been widening again, and the number of Canadian-citizen billionaires
 ;; has more than tripled since 2010.
 ;; Canada also starts from a stronger public balance sheet than the United States,
 ;; which gives it room to choose.
@@ -363,7 +362,7 @@
 ;; [^3]: Statistics Canada, Survey of Financial Security 2023, [Table 11-10-0075-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007501) (net worth by decile) and [The Daily, October 29, 2024](https://www150.statcan.gc.ca/n1/daily-quotidien/241029/dq241029a-eng.htm). Points plotted are the median within each decile, placed at the decile midpoint. Values in 2023 dollars.
 ;; [^4]: Office of the Parliamentary Budget Officer, [Estimating the Top Tail of the Family Wealth Distribution in Canada: 2025 Update](https://www.pbo-dpb.ca/en/publications/RP-2526-009-S--estimating-top-tail-family-wealth-distribution-in-canada-2025-update--estimation-extremite-superieure-distribution-patrimoine-familial-canada-mises-jour-2025) (September 2025), Table 2, and its public High-net-worth Family Database file for 2023. Thresholds and shares above are computed from the public file using the PBO's denominators (16.852 million families, \$16,341B).
 ;; [^5]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/) (March 10, 2026), Canadian citizens. Converted to Canadian dollars at the Bank of Canada rate of 1.3567 for March 10, 2026 ([Valet API, FXUSDCAD](https://www.bankofcanada.ca/valet/observations/FXUSDCAD)). The curve includes billionaires living in Canada or with no residence listed.
-;; [^6]: Statistics Canada experimental estimates from capitalized investment income, as compared in the PBO's [2025 update](https://www.pbo-dpb.ca/en/publications/RP-2526-009-S--estimating-top-tail-family-wealth-distribution-in-canada-2025-update--estimation-extremite-superieure-distribution-patrimoine-familial-canada-mises-jour-2025), Table 4. Experimental; excludes real estate.
-;; [^7]: James B. Davies and Livio Di Matteo, "Long Run Canadian Wealth Inequality in International Context", [Western University EPRI Working Paper 2018-1](https://ir.lib.uwo.ca/epri-workingpapers/), Table 1 (adjusted series); published in revised form in the *Review of Income and Wealth* 67(1), 2021.
+;; [^6]: Gauthier, Hui and Krochmalnek, ["Enhancing wealth distributions within the DHEA using a capitalization of income method"](https://www150.statcan.gc.ca/n1/pub/13-605-x/2025001/article/00002-eng.htm), *Latest Developments in the Canadian Economic Accounts* (13-605-X), Statistics Canada, July 2025, Table 4. Experimental; real estate is excluded from the capitalization estimates.
+;; [^7]: James B. Davies and Livio Di Matteo, ["Filling the Gap: Long Run Canadian Wealth Inequality in International Context"](https://uwo.scholaris.ca/server/api/core/bitstreams/776c2e67-0e98-4464-b759-88ef4cfe9573/content), Western University Department of Economics Research Report 2018-1, Table 2 (adjusted series); revised and published as "Long Run Canadian Wealth Inequality in International Context," *Review of Income and Wealth* 67(1), 2021.
 ;; [^8]: [World Inequality Database](https://wid.world/country/canada/), net personal wealth, top 1% share (2024). WID rates its Canadian wealth series as low quality (mostly imputed).
 ;; [^9]: Statistics Canada, [Table 36-10-0580-01, National Balance Sheet Accounts](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610058001), second quarter 2026; adults from [Table 17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501).

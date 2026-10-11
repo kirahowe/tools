@@ -1,5 +1,5 @@
 ^:kindly/hide-code
-(ns economics.wealth-distribution.canada.c15-references
+(ns economics.wealth-distribution.canada.c16-references
   {:kindly/options {:static true
                     :kinds-that-hide-code #{:kind/var :kind/hiccup2 :kind/fn}}
    :clay {:title  "Unbounded North: References"
@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "The data, research and institutions behind the Unbounded North series."
                    :abstract    "Every chart in this series is built from public data published by Canadian and international institutions. Here is where to find it."
-                   :date        "2026-10-24"
+                   :date        "2026-10-26"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}})
@@ -130,6 +130,18 @@
 ;; * Corak, ["The Canadian Geography of Intergenerational Income Mobility"](https://doi.org/10.1093/ej/uez019), *Economic Journal*, 2020.
 ;; * Connolly and Haeck, "The Great Mobility Puzzle Resolved", [*Canadian Public Policy* 52(1), 2026](https://doi.org/10.3138/cpp.2026-004).
 ;; * OECD, [*A Broken Social Elevator?*](https://doi.org/10.1787/9789264301085-en), 2018.
+;; * Connolly, Corak and Haeck, ["Intergenerational Mobility between and within Canada and the United States"](https://doi.org/10.1086/703465), *Journal of Labor Economics*, 2019.
+;; * Chetty, Hendren, Kline, Saez and Turner, ["Is the United States Still a Land of Opportunity?"](https://doi.org/10.1257/aer.104.5.141), *American Economic Review*, 2014.
+;; * Corak and Heisz, ["The Intergenerational Earnings and Income Mobility of Canadian Men"](https://econwpa.ub.uni-muenchen.de/econ-wp/lab/papers/9808/9808001.pdf), *Journal of Human Resources*, 1999.
+;; * Corak, ["Income Inequality, Equality of Opportunity, and Intergenerational Mobility"](https://doi.org/10.1257/jep.27.3.79), *Journal of Economic Perspectives*, 2013.
+;; * Chen, Ostrovsky and Piraino, ["Lifecycle Variation, Errors-in-Variables Bias and Nonlinearities in Intergenerational Income Transmission"](https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2016059-eng.htm), Statistics Canada, 2016; *Labour Economics*, 2017.
+;; * Adnan, Zhang and Zheng, [IZA Discussion Paper 16471](https://docs.iza.org/dp16471.pdf), 2023; Aydemir, Chen and Corak, ["Intergenerational Earnings Mobility among the Children of Canadian Immigrants"](https://doi.org/10.1162/rest.91.2.377), *Review of Economics and Statistics*, 2009.
+;; * Ostrovsky, [Statistics Canada 11-626-X No. 073](https://www150.statcan.gc.ca/n1/pub/11-626-x/11-626-x2017073-eng.htm), 2017, and [Economic and Social Reports, December 2023](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2023012/article/00001-eng.htm) (Manduca et al.), on absolute mobility.
+;; * Statistics Canada, ["Homeownership among young Canadians: the role of parents"](https://www150.statcan.gc.ca/n1/pub/46-28-0001/2023001/article/00004-eng.htm), 2023.
+;; * David Card, ["Canadian Emigration to the United States"](https://eml.berkeley.edu/~card/papers/canadian-emigrants.pdf), 2003.
+;; * Picot and Ostrovsky, ["Immigrant entrepreneurs in Canada: Highlights from recent studies"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2021009/article/00001-eng.htm), *Economic and Social Reports*, 2021.
+;; * Canadian Institute for Health Information, [physician supply and migration data tables, 2024](https://www.cihi.ca/sites/default/files/document/supply-distribution-migration-physicians-in-canada-2024-data-tables-en.xlsx); Watanabe, Comeau and Buske, ["Analysis of International Migration Patterns Affecting Physician Supply in Canada"](https://www.longwoods.com/content/19899), *Healthcare Policy*, 2008.
+;; * Stanford HAI, [*AI Index Report 2025*, Chapter 4](https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter4_final.pdf).
 
 ;; **Scorecard**
 ;;
@@ -147,7 +159,7 @@
 ;; * **Units differ.** The Survey of Financial Security and the PBO count *families*; the Distributions of Household Economic Accounts count *households*; the World Inequality Database counts *adults*. The stitched distribution in [Wealth Concentration](c05_wealth_concentration.html) joins these, so read it as a picture of shape, not precise levels.
 ;; * **Surveys miss the top.** Statistics Canada says its survey understates the top 1%'s share. The PBO's database corrects for this using rich lists; its estimates are the best published, but they are modelled.
 ;; * **No Canadian tax-by-wealth study exists.** Unlike the American IRS study used in the original series, there is no public estimate of taxes paid by wealth group in Canada.
-;; * **Some figures are from secondary reports.** Living wages for Toronto, Vancouver and Calgary, and the Competition Bureau's grocery share, come from news reports of official releases; the primary sites could not be fetched automatically.
+;; * **Some figures are from secondary reports.** Living wages for Toronto, Vancouver and Calgary come from news reports of official releases; the primary sites could not be fetched automatically.
 ;; * **Long-run wealth shares.** The Davies–Di Matteo figures are from their 2018 working paper; the 2021 journal version revised some estimates.
 ;; * **Top companies.** The Forbes Global 2000 API is complete only from 2011, so the animated comparison covers 2011–2026. Forbes ranks by market value, Fortune by revenue, and the 1978 Royal Commission by sales; long-run comparisons mix measures.
 ;; * **The scorecard is early.** Most measures became law in 2026, US tariffs and an oil shock dominate the data, and all recent figures will be revised.

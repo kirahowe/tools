@@ -29,7 +29,8 @@ data processing, rendered with [Quarto](https://quarto.org/).
 | 12 | `c12_talent.clj` | Brain drain vs brain gain, immigrant founders, and how well Canada's mobility advantage holds up |
 | 13 | `c13_scorecard.clj` | The Carney government's measures, targets vs actuals, early indicators |
 | 14 | `c14_how_to_get_a_wealth_tax.clj` | Canada's parliamentary path to a tax |
-| 15 | `c15_references.clj` | Sources and caveats |
+| 15 | `c15_what_should_canada_do.clj` | What the series adds up to, and a Canadian policy toolkit |
+| 16 | `c16_references.clj` | Sources and caveats |
 
 Notebooks live in `src/economics/wealth_distribution/canada/`, mirroring the layout of the
 original series in the [ClojureCivitas repository](https://github.com/ClojureCivitas/clojurecivitas.github.io)

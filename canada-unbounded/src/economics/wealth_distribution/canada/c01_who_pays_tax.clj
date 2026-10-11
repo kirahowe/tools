@@ -20,7 +20,7 @@
 
 ;; In fiscal year 2024–25 the Government of Canada collected \$511B in revenue.[^1]
 ;; Personal income tax alone brought in \$234B, nearly half of it.
-;; Employment Insurance premiums, paid on wages, added another \$32B.
+;; Employment Insurance premiums, paid on wages, added another \$31.5B.
 ;; Corporate income tax was \$97B, about one dollar in five.
 ;; The GST and other taxes on what we buy brought in most of the rest.
 
@@ -47,7 +47,7 @@
       (tc/order-by [:fy2024_25_final_millions])))
 
 ^{:kindly/options {:id :fig-federal-revenue
-                   :caption "Federal revenue, 2024–25. Personal income tax and EI premiums (blue) are mostly paid on wages and salaries. Corporate and non-resident taxes (orange) fall on owners of capital. CPP contributions ($82B) are not federal revenue and are excluded.[^1]"}}
+                   :caption "Federal revenue, 2024–25. Personal income tax and EI premiums (blue) are mostly paid on wages and salaries. Corporate and non-resident taxes (orange) are levied on corporate profits and on investment income paid to non-residents. CPP contributions ($82B in 2023–24) are not federal revenue and are excluded.[^1]"}}
 (-> revenue
     (pj/lay-bar :revenue-b :source {:color {:column :c :scale false}})
     (pj/lay-label {:text :revenue-text})
@@ -73,6 +73,7 @@
 ;; Only half of a capital gain is taxable, so that is about \$110B of actual gains.
 ;; Filers with incomes over \$250,000 filed 1.8% of all tax returns.
 ;; They reported **71%** of all taxable capital gains.
+;; Because the income classes include the gains themselves, some of these filers are there only because of a one-time sale, such as a business or a cottage.
 
 (def income-band
   (fn [cls]
@@ -120,7 +121,7 @@
 ;; ## Half-Taxed Income
 
 ;; Since October 2000 only **50%** of a capital gain has been included in taxable income.[^4]
-;; A surgeon in Ontario earning an extra dollar of salary at the top bracket pays 53.5¢ of it in tax.
+;; An Ontario employee in the top bracket who earns an extra dollar of salary pays 53.5¢ of it in tax.
 ;; An investor realizing an extra dollar of capital gain pays 26.8¢.
 ;; If the investor doesn't sell, they pay nothing at all that year.
 ;; If the gain is on their principal residence, they never pay tax on it.
@@ -204,12 +205,13 @@
 
 ;; The 2023 rows tell the story:
 
-;; * The top 0.01% (3,110 people) had average income of \$7.7M without gains, and \$10.8M with them.
-;; * They paid 41.4% of the smaller figure in income tax, and 31.6% of the larger one.
+;; * Ranked without gains, the top 0.01% (3,110 people) had average income of \$7.7M and paid 41.4% of it in income tax.
+;; * Ranked with gains, the top 0.01% (a partly different 3,110 people) averaged \$10.8M and paid 31.6%.
 ;; * Under the same measure, the top 1% go from 38.9% to 31.3%.
 
-;; Even these figures overstate how much tax very wealthy people pay relative to their *economic* income.
-;; They capture only *realized* gains.
+;; These figures leave a lot out.
+;; They count only personal income tax, not the corporate tax paid before profits reach shareholders, which would push the rate up.
+;; In the other direction, they capture only *realized* gains.
 ;; Wealth that grows without being sold does not show up at all.
 ;; Neither does income retained inside private holding corporations,
 ;; where it is taxed at the corporate rate and can be left to compound for years.
@@ -255,7 +257,7 @@
         (tc/order-by [:cost-b]))))
 
 ^{:kindly/options {:id :fig-tax-expenditures
-                   :caption "Estimated federal revenue forgone in 2023 through selected tax preferences for capital and savings. Provincial revenue forgone is additional.[^12]"}}
+                   :caption "Estimated federal revenue forgone in 2023 through selected tax measures on capital and savings. Finance Canada classes the dividend tax credit and the investment interest deduction as structural rather than preferences: the dividend credit offsets corporate tax already paid. Provincial revenue forgone is additional.[^12]"}}
 (-> expenditures
     (pj/lay-bar :cost-b :label {:color c/o})
     (pj/lay-label {:text :cost-text})
@@ -263,8 +265,8 @@
                  :x-label "C$ billions"
                  :y-label ""}))
 
-;; The partial inclusion of capital gains alone cost Ottawa \$29.5B in 2023,
-;; and is projected at \$34–42B a year from 2024 to 2027.
+;; The partial inclusion of capital gains alone cost Ottawa an estimated \$29.5B in 2023 (before any change in behaviour),
+;; and is projected at \$34–40B a year from 2025 to 2027, after a one-off \$41.7B in 2024 as investors sold ahead of the proposed increase.
 ;; That is more than the \$26.3B Ottawa paid out in children's benefits in 2023–24.[^13]
 ;; The principal residence exemption costs another \$7.6B,
 ;; and that is a break Canadians feel very directly through the price of housing.
@@ -274,19 +276,20 @@
 ;; Canada has had no estate or inheritance tax since 1972,
 ;; when Ottawa abolished its estate and gift taxes as part of the reform that first taxed capital gains.
 ;; The provinces followed: Quebec, the last to give up its succession duties, did so in 1985.[^14]
+;; (Provinces still charge probate fees, such as Ontario's Estate Administration Tax, but these are small and are not inheritance taxes.)
 
 ;; Instead, Canada taxes accrued gains at death.
 ;; When someone dies, they are "deemed" to have sold everything at fair market value,
 ;; and the capital gain is taxed on their final return, unless the property passes to a spouse.[^15]
 ;; This is an important difference from the United States.
-;; There, heirs receive a "stepped-up basis" and the gain is never taxed.
+;; There, heirs receive a "stepped-up basis" and the gain escapes income tax for good, although very large estates face a federal estate tax that Canada doesn't have.
 ;; In Canada, "buy, borrow, die" *defers* tax, sometimes for a lifetime, but does not erase it.
 
 ;; The deferral is still worth a great deal.
 ;; A fortune that compounds untaxed for 40 years and is taxed once at half-rate at the end
 ;; is taxed far more lightly than a salary taxed every two weeks.
 ;; And the deemed disposition can itself be deferred for another generation,
-;; through a spousal rollover, through family trusts, or through an "estate freeze" that moves future growth to children.
+;; through a spousal rollover, through family trusts (for up to 21 years), or through an "estate freeze" that moves future growth to children.
 
 ;; ::: {.callout-note}
 ;; ## A Closer Look: "A Buck Is a Buck"

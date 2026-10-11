@@ -397,3 +397,7 @@ Source: https://www.canada.ca/en/department-finance/programs/international-trade
   - Real wages are nominal y/y deflated by CPI y/y. The LFS wage is NSA.
 - `scripts/`: `extract.py` (StatCan/BoC to tidy), `extract_extra.py` (NPR, annual trade), `build_tables.py` (inventory, fiscal, defence), `build_targets.py`, `h2t.py`, `inspect.py`. Run with `python3 -I`.
 - `raw/`: StatCan zips; budget, SEU, LEGISinfo, PBO, NATO and BoC downloads.
+
+## Update, 2026-10-11
+
+On October 1, 2026 the Prime Minister announced the Pacific Link (West Coast oil) pipeline as the first project of national interest under the Building Canada Act (CP24, Castanet, Global News, The Logic). The rows in `sc_policy_inventory.csv` and `sc_targets_vs_actuals.csv` that say no project was designated reflect the Justice Laws consolidation current to 2026-09-21 and are superseded; the Scorecard post text is updated. Check Canada Gazette Part II for the order amending Schedule 1.

@@ -42,8 +42,10 @@ website:
           text: "13. Scorecard"
         - href: economics/wealth_distribution/canada/c14_how_to_get_a_wealth_tax.qmd
           text: "14. How to Get a Wealth Tax"
-        - href: economics/wealth_distribution/canada/c15_references.qmd
-          text: "15. References"
+        - href: economics/wealth_distribution/canada/c15_what_should_canada_do.qmd
+          text: "15. So What Should Canada Do?"
+        - href: economics/wealth_distribution/canada/c16_references.qmd
+          text: "16. References"
 
 format:
   html:

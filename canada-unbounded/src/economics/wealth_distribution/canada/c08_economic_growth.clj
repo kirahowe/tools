@@ -6,7 +6,7 @@
           :quarto {:sidebar     "unbounded-north"
                    :author      "Kira Howe"
                    :description "How concentrated, inherited wealth and protected incumbents slow Canadian growth."
-                   :abstract    "Canada's growth problem is a participation problem. Economists have a name for one version of it: the Canadian disease."
+                   :abstract    "Canada's growth problem is partly a participation problem. Economists have a name for one version of it: the Canadian disease."
                    :date        "2026-10-18"
                    :type        :post
                    :category    :economics
@@ -52,8 +52,8 @@
 
 ;; Real GDP per person grew about 2.5% a year in Canada from 1946 to 1975, faster than in the United States.
 ;; Since 1980 it has grown about 1.4% a year, and since 2000 under 1%.
-;; Canada closed much of the gap with America in the postwar decades, from about 70% of the US level in 1945 to 88% in the mid-1970s.
-;; Apart from a recovery during the 2000s commodity boom, it has been losing ground since, and is now below 80%.[^2]
+;; Canada closed much of the gap with America in the postwar decades, from about 75% of the US level in the late 1940s to 88% in the mid-1970s.
+;; Apart from a recovery during the 2000s commodity boom, it has been losing ground since, and is now below 80% on this measure (about 74% in 2025 on OECD figures; see [Stable and Stuck](c06_productivity.html)).[^2]
 ;; Lower taxes on capital did not reverse that, as [The Investment Question](c09_investment_question.html) shows.
 ;; So what else could be going on?
 
@@ -83,7 +83,7 @@
 ;; In Canada, that process has been slowing: firm entry rates fell by 24% between 2001 and 2020,
 ;; and the same firms increasingly hold the top positions in their industries year after year.[^3]
 ;; Declining entry and competition explain about 30% of the fall in business investment per worker from 2006 to 2019.[^4]
-;; Some of Canada's most familiar industries (banking, wireless, groceries) are run by a handful of firms.[^5]
+;; Some of Canada's most familiar industries (banking, wireless, groceries) are run by a handful of firms; in groceries, five chains hold about 80% of sales.[^5]
 ;; [Stable and Stuck](c06_productivity.html) looks at this in detail.
 
 ;; ## The Canadian Disease
@@ -138,5 +138,5 @@
 ;; [^5]: Competition Bureau Canada, *Canada Needs More Grocery Competition*, retail grocery market study, June 2023; the "roughly 80%" figure for the five largest grocers (Loblaw, Sobeys/Empire, Metro, Costco and Walmart) is as summarized by [Global News](https://globalnews.ca/news/9796699/competition-bureau-canada-grocery-study-takeaways/).
 ;; [^6]: Randall Morck, David Stangeland and Bernard Yeung, ["Inherited Wealth, Corporate Control and Economic Growth: The Canadian Disease"](https://www.nber.org/papers/w6814), NBER Working Paper 6814, 1998; published in Randall Morck (ed.), *Concentrated Corporate Ownership*, University of Chicago Press, 2000.
 ;; [^7]: CPA Canada estimate (2023), as reported by [CBC News](https://www.cbc.ca/news/canada/saskatchewan/wealth-transfer-inequality-1trillion-1.7462837). An earlier CIBC estimate (2016) was \$750B over ten years.
-;; [^8]: See the 2024 peer-reviewed study using the Survey of Financial Security 2005–2019, [abstract on Érudit](https://releve.erudit.org/fr/revues/efg/2024-n46-efg09848/1116166ar/resume/).
+;; [^8]: See the 2024 peer-reviewed study using the Survey of Financial Security 2005–2019, [abstract on Érudit](https://www.erudit.org/fr/revues/efg/2024-n46-efg09848/1116166ar/).
 ;; [^9]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/), Canadian citizens.

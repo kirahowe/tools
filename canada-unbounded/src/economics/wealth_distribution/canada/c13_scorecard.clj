@@ -6,8 +6,8 @@
           :quarto {:sidebar     "unbounded-north"
                    :author      "Kira Howe"
                    :description "What the Carney government has announced, what it has enacted, and what the data show so far."
-                   :abstract    "Eighteen months in, most of the government's structural agenda has only just become law. The early numbers are dominated by US tariffs. Here is what can and can't be measured yet."
-                   :date        "2026-10-22"
+                   :abstract    "Nineteen months in, most of the government's structural agenda has only just become law. The early numbers are dominated by US tariffs. Here is what can and can't be measured yet."
+                   :date        "2026-10-23"
                    :type        :post
                    :category    :economics
                    :tags        [:economics :growth :canada :policy]}}}
@@ -45,15 +45,15 @@
 ;; | Tax | Lowest income tax rate cut from 15% to 14% | In force; PBO: \$28B over 5 years, about \$110–200 per filer a year |
 ;; | Tax | Digital Services Tax and Underused Housing Tax repealed; luxury tax on boats and planes ended | In force (C-15) |
 ;; | Investment | "Productivity Super-Deduction": faster write-offs for new investment; bigger R&D credits | Mostly in force (C-15); remainder in Parliament |
-;; | Internal trade | One Canadian Economy Act (C-5): federal internal trade barriers and labour-mobility rules; fast-track for "national interest" projects | In force June 2025; all 53 federal exceptions to the internal trade agreement removed; **no project yet formally designated** |
+;; | Internal trade | One Canadian Economy Act (C-5): federal internal trade barriers and labour-mobility rules; fast-track for "national interest" projects | In force June 2025; all 53 federal exceptions to the internal trade agreement removed, according to the government; first national-interest project (the Pacific Link oil pipeline) announced October 1, 2026 |
 ;; | Housing | Build Canada Homes agency; GST rebate for first-time buyers of new homes; development charge deals | In force 2026; no unit counts published yet |
 ;; | Defence | NATO 2% of GDP in 2025–26; pledge of 5% (3.5% core) by 2035 | 2% met on NATO's estimates |
 ;; | Fiscal | Separate capital and operating budgets; spending review; about 40,000 fewer public service positions | Ongoing |
 ;; | Immigration | Lower levels: temporary residents under 5% of population by end-2027 | Ongoing |
-;; | Competition | Open banking law; Competition Act amendments; non-compete ban for federally regulated employers | Open banking in force; non-compete ban in Parliament |
+;; | Competition | Open banking law; non-compete ban for federally regulated employers | Open banking law passed (March 2026), phased start; non-compete ban in Parliament |
 ;; | Trade | Most counter-tariffs removed (September 2025); new surtaxes after talks broke down (September 2026); goal to double non-US exports in a decade | Ongoing |
 ;;
-;; : Major federal measures since March 2025 {#tbl-policy}[^2]
+;; : Major federal measures since March 2025[^2] {#tbl-policy}
 
 ;; ## Targets vs Actuals
 
@@ -62,16 +62,16 @@
 ;; | Goal | Target | Latest | Assessment |
 ;; | :--- | :--- | :--- | :--- |
 ;; | Defence spending | 2.0% of GDP in 2025 | 2.03% (2025), 2.13% (2026), NATO estimates | ✅ Met |
-;; | 2025–26 deficit | –\$78.3B (Budget 2025) | –\$55.3B preliminary (PBO projected –\$72.0B) | ✅ Better than planned, preliminary; helped by oil revenues |
+;; | 2025–26 deficit | –\$78.3B (Budget 2025) | –\$55.3B preliminary (PBO projected –\$72.0B) | ✅ Better than planned (preliminary) |
 ;; | Public service size | About 40,000 fewer positions by 2028–29 | 342,000 FTEs (June 2026), down from 367,000 peak (June 2024) | ↗ Moving; decline began before Budget 2025 |
-;; | Temporary residents | Under 5% of population by end-2027 | 6.65% (July 2026), from a 7.6% peak | ↗ Moving |
+;; | Temporary residents | Under 5% of population by end-2027 | 6.65% (July 2026), from a 7.2% peak (October 2024) | ↗ Moving |
 ;; | Non-US exports | Double in a decade | Non-US goods exports +17.5% in 2025 | ↗ Ahead of pace, but driven by gold and oil prices |
 ;; | Housing | "Double the pace" of homebuilding (about 500,000 starts a year) | 259,000 starts in 2025; about 244,000 a year in 2026 so far | ⚠️ Off pace |
 ;; | Build Canada Homes | — | PBO: about 26,000 extra homes over five years | ⏳ Too early |
-;; | National-interest projects | Fast-track approvals | None formally designated | ⏳ Too early |
+;; | National-interest projects | Fast-track approvals | One project (Pacific Link pipeline) designated October 2026; conditions due by September 2027 | ⏳ Too early |
 ;; | Productivity | No numeric target | Business labour productivity roughly flat | ⏳ Too early |
 ;;
-;; : Government goals and outcomes {#tbl-targets}[^3]
+;; : Government goals and outcomes[^3] {#tbl-targets}
 
 ;; ## The Indicators
 
@@ -129,11 +129,11 @@
 ;; * **Growth and productivity are flat.** Real GDP was only 1.1% higher in mid-2026 than a year earlier, with two contracting quarters in 2025.
 ;;   GDP per person and business productivity have barely moved.
 ;;   That is no worse than the previous decade's trend, and no better.
-;; * **Investment took a hit, then recovered.** Machinery and equipment investment fell 4.5–6.4% year over year through 2025 as tariff uncertainty hit,
+;; * **Investment took a hit, then recovered.** Machinery and equipment investment was below its year-earlier level for four straight quarters from mid-2025 (by as much as 6.4%) as tariff uncertainty hit,
 ;;   and was up 6.3% in the second quarter of 2026.
-;;   That is too early to attribute to the super-deduction, which became law in March 2026.
+;;   That is too early to attribute to the super-deduction, which was announced in November 2025 and became law in March 2026.
 ;; * **Unemployment rose and partly recovered**: from 6.7% at the start of 2025 to a peak of 7.1% (August–September 2025), then 6.5% in September 2026.
-;; * **Inflation picked up in 2026** because of the Middle East oil shock; inflation excluding food and energy has stayed near 2%.
+;; * **Inflation picked up in 2026** because of the Middle East oil shock, amplified from April by the end of the carbon-price base effect; inflation excluding food and energy has stayed near 2%.
 ;; * **Housing starts are flat**, at roughly half the pace the government promised.
 ;; * **Population growth has nearly stopped** as temporary residents leave, which mechanically lowers GDP growth and raises GDP per person.
 ;; * **Trade has started to diversify.** The US share of goods exports fell from about 76% in 2024 to 68% over the 12 months to August 2026,
@@ -161,8 +161,8 @@
                  :x-label "C$ billions" :y-label ""}))
 
 ;; The 2025–26 deficit is likely to come in well below Budget 2025's –\$78.3B forecast:
-;; the preliminary, unaudited figure is –\$55.3B.
-;; The improvement is mostly revenue: higher oil prices raised corporate taxes and royalties.
+;; the April–March Fiscal Monitor figure, before year-end adjustments that have recently moved the result by up to \$11B, is –\$55.3B.
+;; The improvement so far is mostly on the revenue side, from stronger-than-expected nominal GDP; the 2026 oil-price spike began only in the last month of the fiscal year.
 ;; The PBO considers the government's definition of "capital" spending (which it excludes from its operating-balance goal)
 ;; "overly expansive," about \$94B larger than the PBO's own over six years, and recommends an independent body classify it.[^5]
 
@@ -190,9 +190,9 @@
 
 ;; | Problem identified in this series | What the government has done | Assessment |
 ;; | :--- | :--- | :--- |
-;; | Weak competition, protected incumbents ([Stable and Stuck](c06_productivity.html)) | Open banking; Competition Act amendments; non-compete ban (pending); internal trade barrier removal | Real steps, but none yet targets the concentrated sectors (banking, telecom, groceries) directly |
+;; | Weak competition, protected incumbents ([Stable and Stuck](c06_productivity.html)) | Open banking; non-compete ban (pending); internal trade barrier removal (the only Competition Act change loosened greenwashing rules) | Real steps, but none yet targets the concentrated sectors (banking, telecom, groceries) directly |
 ;; | Low business investment ([The Investment Question](c09_investment_question.html)) | Productivity Super-Deduction: faster write-offs for *new* investment | Consistent with the evidence: targeted at new investment, not owners. PBO calls it largely a "revenue deferral" (\$19.4B over five years) |
-;; | Capital gains taxed lightly ([Who Pays Tax](c01_who_pays_tax.html)) | Cancelled the inclusion rate increase; raised the lifetime capital gains exemption | Moves the other way |
+;; | Capital gains taxed lightly ([Who Pays Tax](c01_who_pays_tax.html)) | Cancelled the inclusion rate increase; kept and enacted the previous government's increase in the lifetime capital gains exemption | Moves the other way |
 ;; | Housing and land ([Land](c10_land.html)) | Build Canada Homes; GST rebate for new homes; ended the Underused Housing Tax | Supply-side focus; nothing on land value or the principal residence exemption. PBO expects Build Canada Homes to add about 26,000 homes over five years |
 ;; | Wealth concentration ([Wealth Tax](c02_wealth_tax.html)) | No measure | Not on the agenda |
 ;; | Tax burden on work | Lowest bracket cut 15% → 14% | Broad but small: about \$110–200 per filer a year |
@@ -202,7 +202,7 @@
 ;; The government's growth agenda points at several of the right targets: internal trade, investment incentives aimed at new capital, and competition.
 ;; What's missing is the other half of the diagnosis.
 ;; It has made capital gains *more* lightly taxed than its predecessor planned, left land and large fortunes untouched, and not yet taken on the
-;; concentrated industries that the Bank of Canada itself calls an oligopoly.
+;; concentrated industries such as banking, which the Bank of Canada's Senior Deputy Governor has called an oligopoly.
 
 ;; ::: {.callout-note}
 ;; ## A Closer Look: How to Update This Scorecard
@@ -210,14 +210,14 @@
 ;; Every chart on this page is built from public data that is updated monthly or quarterly.
 ;; Rerun the data-preparation scripts in `data-prep/scorecard/` (Statistics Canada tables 36-10-0104, 36-10-0206, 14-10-0287, 18-10-0004,
 ;; 34-10-0158, 17-10-0121 and 12-10-0011), then rebuild the site.
-;; Items to watch: the 2025–26 Public Accounts, the first national-interest project designations, Build Canada Homes unit counts,
+;; Items to watch: the 2025–26 Public Accounts, further national-interest project designations and the Pacific Link conditions, Build Canada Homes unit counts,
 ;; and post-2025 interprovincial trade data.
 ;; :::
 
 ;; ## Conclusion
 
-;; Eighteen months in, the Carney government has passed most of its economic agenda into law, met its 2% defence target,
-;; and beaten its own deficit forecast, mostly thanks to oil.
+;; Nineteen months in, the Carney government has passed most of its economic agenda into law, met its 2% defence target,
+;; and beaten its own deficit forecast, on preliminary numbers.
 ;; The indicators that matter most for this series (productivity, investment, GDP per person, housing) are flat or off pace,
 ;; but the measures meant to move them only became law in 2026, and US tariffs dominate the data.
 ;; The fair verdict is "too early to judge," with one exception: on taxing wealth, land and capital gains, the direction is clear,

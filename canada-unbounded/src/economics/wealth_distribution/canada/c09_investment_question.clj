@@ -31,7 +31,7 @@
 
 ;; ## Canada Already Ran the Experiment
 
-;; Between 2000 and 2012, Canada cut taxes on capital about as aggressively as any rich country.
+;; Between 2000 and 2012, Canada cut taxes on capital more aggressively than most rich countries: 16 points off its combined corporate rate, against 7 for the OECD average.
 
 ;; * The combined federal–provincial corporate income tax rate fell from 42.4% to 26.1%.[^2]
 ;;   In 2000 Canada's rate was about 3 points *above* the United States; by 2012 it was about 13 points *below* it.
@@ -90,7 +90,7 @@
 
 ;; Business investment as a share of the economy did not rise.
 ;; It averaged 11.9% of GDP before the cuts, 12.0% during them, and 11.6% after.
-;; Machinery and equipment halved, from 6.3% of GDP in 2000 to 3.2% in 2025.[^3]
+;; Machinery and equipment fell by half, from 6.3% of GDP in 2000 to 3.2% in 2025, measured in current dollars; falling equipment prices explain part of that.[^3]
 
 ;; ### Where Did the Money Go?
 
@@ -115,7 +115,8 @@
 ;; "Their job is to put money to work and if they can't think of what to do with it, they should give it back to their shareholders."[^4]
 
 (def cash
-  (c/data "A3_nfc_currency_deposits_pct_gdp.csv"))
+  (-> (c/data "A3_nfc_currency_deposits_pct_gdp.csv")
+      (tc/select-rows #(= "Non-financial private corporations" (:sector %)))))
 
 ^{:kindly/options {:id :fig-dead-money
                    :caption "Currency and deposits held by non-financial private corporations at year end, as a share of GDP. A gross figure: corporate debt also rose, and firms in many countries hold more cash than they used to.[^5]"}}
@@ -128,7 +129,7 @@
                  :y-label "% of GDP"}))
 
 ;; Corporate cash and deposits rose from 11% of GDP in 2000 to 19.5% in 2012 and 29% in 2025: almost \$1 trillion.[^5]
-;; Cutting taxes on profits produced more profit, and more cash, but not more investment.
+;; After the cuts, profits and corporate cash rose, but investment did not.
 
 ;; This is not a controlled experiment.
 ;; Investment might have been weaker still without the cuts, and the evidence on corporate tax rates
@@ -155,7 +156,9 @@
 
 ;; Canada's output per hour was 87% of the American level in 2000.
 ;; After a decade of capital tax cuts it was 76%, and in 2025 it was 70%.[^6]
-;; Real business investment per worker tells the same story.
+;; Real business investment per worker tells a more complicated story.
+;; During the cuts it rose faster in Canada than in the US, driven by the oil-sands boom;
+;; since the 2014 oil peak it has fallen about 20% in Canada while rising about 35% in the US.
 
 (def inv-per-worker
   (-> (c/data "B2_business_investment_per_worker_canada_us.csv")
@@ -175,14 +178,15 @@
 
 ;; Canada's corporate tax rate is now roughly equal to America's (26.0% vs 25.6% in 2025).[^2]
 ;; Yet since 2014, real business investment per worker has risen about 35% in the United States and *fallen* about 20% in Canada.[^7]
-;; Whatever is holding back Canadian investment, it is not a tax disadvantage at the corporate level.
+;; The oil-price crash did much of the damage, but investment per worker collapsed in 2015–17, when Canada's statutory rate was 12 points *lower* than America's.
+;; That points away from corporate tax rates as the main cause (though US bonus depreciation after 2017 also lowered the tax on new American investment).
 
 ;; ## What the Experts Say Is Wrong
 
 ;; The institutions that study Canada's productivity problem point mostly at something else: **weak competition.**
 
-;; * **Bank of Canada** (Carolyn Rogers, 2024): "if I had to pick the biggest concern in this area, I'd say it's competition…
-;;   If firms have high profits, high margins and limited competition, they may not feel as much pressure to invest."
+;; * **Bank of Canada** (Carolyn Rogers, 2024), on multifactor productivity: "if I had to pick the biggest concern in this area, I'd say it's competition."
+;;   On investment: "If firms have high profits, high margins and limited competition, they may not feel as much pressure to invest."
 ;;   The speech also cites regulatory uncertainty. It does not name tax levels.[^1]
 ;; * **Statistics Canada** (Gu, 2024): investment per worker fell 20% from 2006 to 2021.
 ;;   Declining firm entry and competitive intensity explain about 30% of the decline over 2006–2019.[^8]
@@ -210,7 +214,8 @@
 ;; * Taxes on *owners* (dividend taxes, capital gains taxes, wealth taxes) show little or no effect on real investment.
 ;;   The 2003 US dividend tax cut "caused zero change in corporate investment and employee compensation."[^14]
 ;;   France's official evaluation of its 2018 capital tax reforms, which replaced its wealth tax,
-;;   found no effect on investment or wages in the firms most exposed.
+;;   found no effect on investment or wages in the firms most exposed to the new flat tax on capital income,
+;;   and could not detect that the old wealth tax had made family firms pay more dividends or invest less.
 ;;   It noted this was "in line with numerous academic studies… which fail to show that a change in capital taxation
 ;;   borne by households can have a notable effect on the real behaviour of firms."[^15]
 
@@ -231,12 +236,12 @@
 ;; | Colombia | Londoño-Vélez & Ávila-Mahecha (*AER: Insights*, 2021)[^23] | — | Evasion through offshore accounts; enforcement raised compliance |
 ;; | France | France Stratégie (2023)[^15] | No detectable investment effect from replacing the wealth tax | Fewer departures of wealthy taxpayers after repeal |
 ;;
-;; : Quasi-experimental evidence on wealth taxes {#tbl-wealth-tax-evidence}
+;; : Evidence on wealth taxes (peer-reviewed unless noted; Ring 2026 and Berzins et al. are working papers; France Stratégie is an official evaluation) {#tbl-wealth-tax-evidence}
 
 ;; The pattern is consistent.
 ;; Wealth taxes cause **avoidance, evasion, and some mobility** at the very top.
 ;; Those effects are real, and they shrink the revenue.
-;; But the studies find **little sign of lost investment or jobs**.
+;; But the studies that measure real effects (four from Norway, plus France's evaluation) mostly find **little sign of lost investment or jobs**.
 ;; The main exception is the Berzins, Bøhren and Stacescu working paper, which finds that owners of smaller private firms
 ;; who lack cash pull money out of their firms to pay the tax.
 ;; Every proposal costed by the PBO starts at \$10M or more of net worth, and the OECD recommends
@@ -256,11 +261,12 @@
 ;; * **Tax at the national level.** Spain's regional wealth tax leaked to Madrid; Switzerland's cantonal taxes leak between cantons.
 ;;   A Canadian wealth tax should be federal, not provincial.
 ;; * **Use third-party reporting.** Colombia's and Switzerland's large responses came where financial wealth wasn't reported by banks.
-;;   Canada's CRA already receives third-party slips for most financial assets.
-;; * **Keep exemptions few.** Most avoidance in Norway, Spain and Sweden ran through exempt or underassessed asset classes.
+;;   Canada's CRA already receives third-party slips on the income from, and sales of, most financial assets;
+;;   adding year-end balances to those slips would give a wealth tax a third-party base.
+;; * **Keep exemptions few.** In Norway and Spain, much of the avoidance ran through favourably valued or exempt business assets; in Sweden, through under-reported asset values.[^31]
 ;; * **Close the exit.** Canada already has a departure tax, which treats emigrants as having sold their assets on the way out.
-;; * **Be conservative about revenue.** The PBO assumes 35% of the wealth above the threshold disappears from the base,
-;;   which is cautious compared with the 7–17% a review of the evidence suggests for a well-designed 1% tax.[^27]
+;; * **Be conservative about revenue.** The PBO assumes 35% of each wealthy family's net worth is hidden or avoided, which on its own public file roughly halves the revenue;
+;;   that is cautious compared with the 7–17% a review of the evidence suggests for a well-designed 1% tax.[^27]
 ;;   Even so, it estimates a 1–3% tax above \$10M would raise \$121.5B over five years.[^24]
 
 ;; The OECD is generally lukewarm on net wealth taxes.
@@ -271,7 +277,7 @@
 ;; ## The Golden Age, Again
 
 ;; Canada's fastest productivity growth on record came in the 1960s, when Ottawa still had an estate tax
-;; and the very top of the income distribution faced much higher marginal rates.
+;; and the very highest earners (roughly the top 0.01%) faced much higher marginal rates.
 
 (def growth-by-period
   (-> (c/data "F1_business_sector_productivity_growth_by_period.csv")
@@ -288,13 +294,14 @@
                  :x-label "Period"
                  :y-label "Labour productivity growth, % per year"}))
 
-;; Labour productivity grew 3.6% a year from 1961 to 1973, and 0.9% a year after 2000.[^29]
+;; Labour productivity grew 3.6% a year from 1961 to 1973, and under 1% a year since 2000 (0.8% over 2000–2023).[^29]
 ;; This is context, not proof.
 ;; The postwar boom had many causes, including catching up to American technology, the Auto Pact, cheap energy, and heavy public investment.
 ;; And the famous "80% top rate" applied to very few people.
 ;; Saez and Veall show that someone at the 99.9th percentile faced about 45% in 1950,
-;; about the same as in 2000; only the top ~1,000 earners saw their rates fall by 10 points or more.[^30]
-;; What history does show is that a high-tax, estate-taxed Canada was compatible with the fastest productivity growth the country has ever had.
+;; and 48% in 2000; only the top ~1,000 earners saw their rates fall by 10 points or more.[^30]
+;; Since 2016 the combined top rate in Ontario has been 53.5%, higher than the rate at the 99.9th percentile in 1960.
+;; What history does show is that a high-tax, estate-taxed Canada was compatible with the fastest productivity growth in the official series, which begins in 1961.
 
 ;; ::: {.callout-note}
 ;; ## A Closer Look: What the Rebuttal Gets Right
@@ -304,7 +311,8 @@
 ;; 1. Wealth taxes lose part of their base to avoidance, evasion and emigration. Revenue estimates must be conservative.
 ;; 2. Very wealthy people do move in response to wealth taxes, especially between regions of the same country.
 ;; 3. Owners of illiquid private firms can face cash squeezes. Thresholds and instalment rules matter.
-;; 4. Taxes on *new corporate investment* do matter at the margin, so a wealth tax should not be paired with higher taxes on new investment.
+;; 4. France's evaluation found faster business creation in the sectors that gained most from its 2018 capital-tax cuts, though mostly from its flat tax and corporate rate cut rather than the wealth-tax repeal.
+;; 5. Taxes on *new corporate investment* do matter at the margin, so a wealth tax should not be paired with higher taxes on new investment.
 
 ;; None of these says a well-designed wealth tax on fortunes above \$10M would damage Canadian productivity.
 ;; The evidence says Canada's productivity problem lies in weak competition, protected incumbents, and low investment
@@ -314,7 +322,7 @@
 ;; ## Conclusion
 
 ;; The claim that a wealth tax will "kill investment" doesn't survive contact with the data.
-;; Canada spent a decade cutting capital taxes; investment did not rise, productivity fell further behind,
+;; Canada spent a decade cutting capital taxes; investment did not rise as a share of the economy, and outside the oil boom it stalled; productivity fell further behind,
 ;; and corporate cash piled up.
 ;; The institutions studying the problem blame weak competition, not taxes on large fortunes.
 ;; Where wealth taxes have been studied, the costs show up as avoidance and lost revenue, not lost investment or jobs.
@@ -352,3 +360,4 @@
 ;; [^28]: OECD, [The Role and Design of Net Wealth Taxes in the OECD](https://doi.org/10.1787/9789264290303-en), Tax Policy Studies No. 26, 2018. Applying this reasoning to Canada is my inference, not the OECD's.
 ;; [^29]: Statistics Canada, [Table 36-10-0208-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610020801), business sector labour productivity; compound annual growth between the years shown.
 ;; [^30]: Emmanuel Saez and Michael R. Veall, ["The Evolution of High Incomes in Northern America: Lessons from Canadian Evidence"](https://doi.org/10.1257/0002828054201404), *American Economic Review* 95(3), 2005; marginal rates from the [NBER working paper](https://www.nber.org/papers/w9607) appendix.
+;; [^31]: David Seim, ["Behavioral Responses to Wealth Taxes: Evidence from Sweden"](https://doi.org/10.1257/pol.20150290), *American Economic Journal: Economic Policy* 9(4), 2017.

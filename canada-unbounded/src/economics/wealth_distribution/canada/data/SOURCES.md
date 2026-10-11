@@ -24,7 +24,7 @@ are alongside. "Supporting" files back figures quoted in the text rather than a 
 | `sfs_networth_by_quintile_canada_provinces.csv`, `sfs_networth_by_age_familytype_geo.csv` | Supporting. Statistics Canada SFS tables 11-10-0049/0057-01 |
 | `statcan_sfs_median_networth_by_province_11-10-0016-01.csv` | Statistics Canada Table 11-10-0016-01 |
 | `pbo_top_tail_published.csv`, `pbo_top1_share_series.csv` | Supporting. PBO top-tail reports (2020, 2021, 2025), published tables |
-| `davies_dimatteo_wp2018_wealth_shares.csv` | Davies & Di Matteo, EPRI Working Paper 2018-1, Table 1 |
+| `davies_dimatteo_wp2018_wealth_shares.csv` | Davies & Di Matteo, Western University Department of Economics Research Report 2018-1, Table 2 (adjusted) |
 | `forbes_2026_canadian_billionaires.csv`, `forbes_canadian_billionaires_by_year.csv` | Forbes billionaires lists (forbes.com API JSON), Canadian citizens |
 | `nbsa_per_adult_selected.csv` | Supporting. Statistics Canada Tables 36-10-0580-01 and 17-10-0005-01 (computed per adult) |
 | `wid_canada_us_wealth_income_shares.csv` | Supporting. World Inequality Database (low-quality flag for Canadian wealth) |

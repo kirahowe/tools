@@ -178,9 +178,10 @@
 
 ;; Press play.
 ;; America's top ten turns over from oil, industrial and old-line firms (Exxon, GE, Chevron, IBM) to companies
-;; founded in the last fifty years: Nvidia, Alphabet, Amazon, Meta, Tesla, Broadcom.
-;; Canada's top ten is mostly the same banks, pipelines and resource companies throughout, with
-;; Shopify the one young company to break in.
+;; founded in the last fifty years: Nvidia, Alphabet, Amazon, Meta, Tesla.
+;; Canada's top ten is mostly the same banks, pipelines and resource companies throughout.
+;; A few younger firms pass through (gold miners, Potash Corp., Valeant, Constellation Software),
+;; but Shopify is the only one founded in the last fifty years to hold a place year after year.
 
 (def founded-share
   (-> top10
@@ -203,7 +204,8 @@
 ;; Simple turnover doesn't capture the difference.
 ;; Canada's top ten actually swaps members fairly often, because gold, potash and oil companies rise and fall
 ;; with commodity prices.
-;; What it lacks is *new* companies: firms founded in living memory that grew to dominate their industries.
+;; In 2011 and 2012, Canada's share of young firms in the top ten matched America's, at three in ten.
+;; What Canada lacks is young companies that *stay*: firms founded in living memory that grew to dominate their industries.
 ;; The IMF's 2025 review of Canada found the same thing in the data on all firms: "Limited turnover at the top suggests entrenched incumbents."[^7]
 
 ;; ::: {.callout-note}
@@ -211,7 +213,7 @@
 
 ;; Is Canada's top tier *always* this static? Not entirely.
 ;; A 1978 Royal Commission on Corporate Concentration tracked Canada's 100 largest non-financial companies and found that
-;; 21 of them dropped out between 1967 and 1971, and 22 between 1971 and 1975: turnover similar to the US Fortune 500 at the time.[^19]
+;; 21 of them dropped out between 1967 and 1971, and 22 between 1971 and 1975, about 5% a year, which is roughly the pace of US Fortune 500 turnover in that era.[^19]
 ;; The biggest Canadian non-financial firms in 1975 were George Weston, Ford Canada, GM Canada, Imperial Oil and Canadian Pacific,
 ;; several of them subsidiaries of American companies.
 
@@ -224,8 +226,7 @@
 ;; :::
 
 ;; The same pattern shows up in personal fortunes.
-;; Among billionaires who live in each country, the share Forbes counts as "self-made" is about the same,
-;; roughly three in four.
+;; Among Canadian-citizen billionaires who live in Canada, Forbes counts about four in five as "self-made".
 ;; What differs is *where* the money comes from.
 
 (def billionaire-industries
@@ -243,7 +244,7 @@
   :x-label "% of the country's billionaire wealth" :fmt #(format "%.0f%%" (double %))})
 
 ;; Technology accounts for 41% of American billionaire wealth and 17% of Canadian-citizen billionaire wealth;
-;; among billionaires who actually *live* in Canada, it is just 8%.[^8]
+;; among billionaires who actually *live* in Canada, it is about 10%.[^8]
 ;; Several of the Canadian citizens who made technology fortunes (in search, e-commerce and AI) built them
 ;; in the United States or Asia.
 ;; Canada produces founders; it is less good at growing their companies at home.
@@ -273,7 +274,7 @@
 ;; Either way, the bigger problem is that Canadian firms don't *grow*.
 ;; Statistics Canada finds that in 2019, small firms (under 500 employees) produced 56% of Canada's business output,
 ;; against 45% in the United States, and Canadian small firms were only 70% as productive as their American counterparts.
-;; Too many small firms that stay small explains about 60% of the productivity gap with the US.[^10]
+;; The larger share of small firms and their lower productivity together explain about 60% of the productivity gap with the US.[^10]
 ;; A healthy economy needs both new firms and a path for the best ones to become big.
 ;; Canada's path is crowded by incumbents.
 
@@ -288,7 +289,7 @@
 ;; | Groceries | Five largest grocers hold about 80% of sales | Agriculture and Agri-Food Canada (2020 data) |
 ;; | Airlines | Air Canada and WestJet carry half to three-quarters of domestic passengers at major airports | Competition Bureau (2025) |
 ;;
-;; : Concentration in key Canadian industries {#tbl-concentration}[^11]
+;; : Concentration in key Canadian industries[^11] {#tbl-concentration}
 
 ;; The Bank of Canada's Senior Deputy Governor said in 2025:
 ;; "It would also be hard to argue, on any objective measure, that Canada's banking system is anything other than an oligopoly."
@@ -319,13 +320,13 @@
 ;; In 2025, Canada spent 7.4% of GDP on residential investment and 11.2% on business investment.
 ;; The United States spent 3.8% on housing and 14.2% on business.[^13]
 ;; Canadian lending tilts the same way: credit secured on household real estate has grown from about half of
-;; household-mortgage-plus-business lending in 1990 to about two-thirds today.[^14]
+;; household-mortgage-plus-business lending in 1990 to nearly two-thirds today.[^14]
 ;; Land alone is now 36.5% of the value of Canada's non-financial assets, up from 25.5% in 2000
 ;; (see [Land](c10_land.html)).
 
 ;; This is not proof that housing "crowds out" business investment; the Bank of Canada hasn't said that,
 ;; and the two can rise together.
-;; But it shows where Canadian savings and credit have gone: into bidding up the price of existing land,
+;; But it shows where Canadian savings and credit have gone: into housing and the land under it,
 ;; which earns a return without making the economy any more productive.
 
 ;; ## Ideas: Not Enough R&D
@@ -361,7 +362,7 @@
 
 ;; | | Where Canada did well | Where it didn't |
 ;; | :--- | :--- | :--- |
-;; | **2008–09 financial crisis** | Smallest two-year output loss in the G7 (−1.9%, 2007–2009); back to its pre-crisis peak fastest (9 quarters); no systemic banking crisis and no bank bailouts; banks rated soundest in the world by the World Economic Forum's executive survey, 2008–2014 | Its single-year 2009 contraction (−2.9%) was slightly deeper than America's (−2.6%); unemployment rose more than in Germany, which kept workers on through job-sharing |
+;; | **2008–09 financial crisis** | Smallest two-year output loss in the G7 (−1.9%, 2007–2009); back to its pre-crisis peak fastest (9 quarters); no systemic banking crisis and no bank bailouts; banks rated soundest in the world by the World Economic Forum's executive survey, 2008–2014 | Its single-year 2009 contraction (−2.9%) was slightly deeper than America's (−2.6%); unemployment rose more than in Germany, Japan or France; Germany kept workers on through job-sharing |
 ;; | **COVID-19** | Second-lowest excess deaths in the G7 after Japan (about 70 per 100,000 in 2020–21, against about 290 in the US); highest first-dose vaccination rate in the G7 by the end of 2021 | GDP fell 5.0% in 2020 against 2.1% in the US, and recovered more slowly; unemployment peaked at 14.2%, among the sharpest rises in the G7 |
 ;;
 ;; : Canada's record in two crises, relative to the G7 {#tbl-crises}
@@ -385,8 +386,9 @@
 ;; Two cautions, so the argument isn't overstated.
 
 ;; * **Population growth.** Part of Canada's recent productivity slump is arithmetic: the population grew very fast in
-;;   2022–2024, mostly through temporary residents, and capital didn't keep up.
-;;   The Bank of Canada estimates this explains about 70% of the post-pandemic shortfall from trend.[^16]
+;;   2022–2024, mostly through temporary residents.
+;;   The Bank of Canada estimates that this surge, through less capital per hour worked and a shift toward newer, lower-paid workers,
+;;   explains about 70% of the post-pandemic shortfall from trend.[^16]
 ;;   The long-run gap with the US predates it by two decades.
 ;; * **Interprovincial trade.** Removing internal trade barriers could raise GDP by up to 7% over time, according to the IMF.[^17]
 ;;   But in Statistics Canada's 2026 business survey, 78% of firms that trade across provinces reported no obstacle.[^18]
@@ -409,7 +411,7 @@
 ;; [^3]: Statistics Canada, McCormack and Macdonald, ["Measuring Canada's economic performance relative to the United States"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026003/article/00004-eng.htm), *Economic and Social Reports*, March 2026.
 ;; [^4]: Nicolas Vincent, ["Toward a virtuous circle for productivity"](https://www.bankofcanada.ca/2025/11/toward-a-virtuous-circle-for-productivity/), Bank of Canada, November 19, 2025.
 ;; [^5]: Wulong Gu and Michael Willox, ["The Post-2001 Productivity Growth Divergence between Canada and the United States"](https://csls.ca/ipm-archive/ipm-issue-45/the-post-2001-productivity-growth-divergence-between-canada-and-the-united-states/), *International Productivity Monitor* 45, 2023, Table 1 and abstract.
-;; [^6]: Forbes Global 2000, 2011–2026 editions (market value in US dollars). Company identities matched across years and renamings (e.g. Google/Alphabet); where Forbes listed a company under a different country in a single year, it is assigned the country it is listed under most often. Founding years (of the company or the predecessor it names as its origin) were compiled by hand; where ambiguous, the later date is used for Canadian firms and the earlier for US firms, biasing the comparison against this essay's argument (`data/top_company_founding_years.csv`).
+;; [^6]: Forbes Global 2000, 2011–2026 editions (market value in US dollars). Company identities matched across years and renamings (e.g. Google/Alphabet); where Forbes listed a company under a different country in a single year, those listings are dropped. Founding years (of the company or the predecessor it names as its origin) were compiled by hand; where ambiguous, the later date is used for Canadian firms and the earlier for US firms, biasing the comparison against this essay's argument (`data/top_company_founding_years.csv`).
 ;; [^7]: IMF, [Canada: 2025 Article IV Consultation—Staff Report](https://www.imf.org/en/publications/cr/issues/2026/01/21/canada-2025-article-iv-consultation-press-release-and-staff-report-573340), January 2026, paragraphs 32–33 and Box 4.
 ;; [^8]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/), industry and self-made flags as assigned by Forbes; computed on this page.
 ;; [^9]: Statistics Canada, [Table 33-10-0164-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310016401), business dynamics measures.

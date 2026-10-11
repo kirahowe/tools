@@ -6,7 +6,7 @@
           :quarto {:sidebar     "unbounded-north"
                    :author      "Kira Howe"
                    :description "From Crown land grants to family holding companies: Canada's dynastic wealth, the evidence on inherited control, and political families."
-                   :abstract    "Canada began as a colony where land and office went to the well-connected. Its largest firms are still unusually likely to be family-controlled, and the evidence says heir control is bad for growth."
+                   :abstract    "Canada began as a colony where land and office went to the well-connected. Its largest firms are still unusually likely to be family-controlled, and the evidence links heir control to weaker firm performance."
                    :date        "2026-10-17"
                    :type        :post
                    :category    :economics
@@ -62,7 +62,7 @@
       (tc/order-by [:acres])))
 
 ^{:kindly/options {:id :fig-durham
-                   :caption "Land granted in Upper Canada by type of recipient, as listed in Lord Durham's 1839 report (acres). Orange: officials, the legal elite and other individuals. The clergy reserves (about one-seventh of granted land) are not included.[^3]"}}
+                   :caption "Land granted in Upper Canada by type of recipient, as listed in Lord Durham's 1839 report (acres). Orange: officials, the legal elite and other individuals. The clergy reserves (about one-seventh of all surveyed land) are not included.[^3]"}}
 (-> durham
     (pj/lay-bar :acres :group {:color {:column :elite :scale false}})
     (pj/lay-label {:text :label})
@@ -73,7 +73,7 @@
 ;; one man, Colonel Talbot, 48,520.
 ;; Together with the clergy reserves, grants had absorbed "nearly half of all the surveyed land in the Province,"
 ;; and "perhaps less than a tenth" of it was occupied by settlers.[^3]
-;; Durham's verdict was that Upper Canada's public lands had been "alienated by the Government" before settlers arrived.
+;; Durham concluded that it "may almost be said" that all of Upper Canada's public lands had been "alienated by the Government."
 
 ;; After Confederation, the pattern repeated on a continental scale.
 ;; The Canadian Pacific Railway received \$25 million and **25 million acres** in 1881.[^4]
@@ -108,7 +108,7 @@
 ;; | McCain | McCain Foods (1957) | Private |
 ;; | Richardson | James Richardson & Sons (1857) | Private |
 ;;
-;; : Selected Canadian family business dynasties {#tbl-dynasties}[^8]
+;; : Selected Canadian family business dynasties[^8] {#tbl-dynasties}
 
 (def votes-vs-shares
   "From company filings: share of votes vs share of total equity held by the controlling family."
@@ -155,7 +155,7 @@
 ;; | Anderson & Reeb (2003) | US S&P 500 | *Counter-evidence:* family firms outperform, a result later work attributes mostly to founder-led firms. |
 ;; | Jog, Zhu & Dutta (2010) | Canadian dual-class firms | *Counter-evidence:* no sign that restricted-voting firms underperform in Canada. |
 ;;
-;; : Evidence on inherited control and firm performance {#tbl-heir-studies}[^14]
+;; : Evidence on inherited control and firm performance[^14] {#tbl-heir-studies}
 
 ;; The Canadian study is the one that coined a name for the problem.
 ;; Morck, Stangeland and Yeung described "the Canadian disease" as
@@ -176,10 +176,10 @@
 ;; ## Inheritance, Untaxed
 
 ;; Canada abolished its federal estate tax in 1972, and Quebec, the last province with succession duties, abolished them in 1985.
-;; Today 24 of the 37 OECD countries tax inheritances or estates; Canada is one of the few rich countries that repealed its tax.[^16]
+;; In 2021, 24 of the then 37 OECD countries taxed inheritances or estates; Canada was among ten that had repealed theirs, along with Australia, New Zealand, Sweden and Norway.[^16]
 ;; Statistics Canada finds that inheritances are growing and unequal: the median inheritance received by homeowners rose
 ;; from \$67,000 in 2019 to \$85,100 in 2023, and 4 in 10 homeowners had some help from family in buying their home.[^17]
-;; No one has estimated what share of Canadian wealth is inherited, which is itself a gap worth closing.
+;; We found no estimate of what share of Canadian wealth is inherited, which is itself a gap worth closing.
 
 ;; ## Political Dynasties
 
@@ -187,7 +187,7 @@
 ;; Pierre and Justin Trudeau were both Prime Minister, and Paul Martin followed his father, a long-serving
 ;; Liberal cabinet minister, into Parliament before becoming Prime Minister himself.
 ;; Provinces have them too: the Johnsons in Quebec (a father and two sons as premier, for different parties),
-;; the Bennetts in British Columbia, the Ghizes in Prince Edward Island, the Mannings in Alberta, and three generations of Fords
+;; the Bennetts in British Columbia, the Ghizes in Prince Edward Island, the Mannings in Alberta (a premier and a federal party founder), and three generations of Fords
 ;; in Ontario.[^18]
 
 (def kinship
@@ -212,7 +212,7 @@
 
 ;; The trend is encouraging.
 ;; Library of Parliament data show 94 father–son entries in Parliament's first three decades and 37 between 1968 and 2011.
-;; More than 100 sons inherited their father's riding.[^19]
+;; Gagnon counts over 100 father-and-son parliamentarians where the riding passed from father to son.[^19]
 ;; Canada's political dynasties are fewer than they were, and comparative research suggests most democracies
 ;; have dynasties below 10% of legislators.[^20]
 ;; The deeper concern is the connection between economic and political power.
@@ -239,8 +239,8 @@
 
 ;; Canada's founding pattern was wealth through access: land grants, charters, contracts and tariffs.
 ;; Many of Canada's largest companies are still family-controlled, often through shares that
-;; separate votes from ownership, and the best evidence, much of it Canadian, says heir control is bad for growth.
-;; With no inheritance tax, nothing in the tax system slows the transfer of that control.
+;; separate votes from ownership, and the best evidence, including Canadian studies, links heir control to weaker firm performance and slower growth.
+;; With no inheritance tax, and estate freezes and trusts that defer the capital-gains tax due at death, the tax system does little to slow the transfer of that control.
 ;; Political dynasties are fading, but economic and political elites remain closely tied.
 ;; Old money isn't the whole story of Canada's productivity problem, but it is part of the "status quo" that keeps it in place.
 
@@ -248,7 +248,7 @@
 
 ;; [^1]: F. Roy, review of Grenier and Morissette (eds.), *Nouveaux regards en histoire seigneuriale au Québec*, [*Cahiers de géographie du Québec* 61(173), 2017](https://www.erudit.org/fr/revues/cgq/2017-v61-n173-cgq03845/1049393ar/).
 ;; [^2]: [Rupert's Land and North-Western Territory Order](https://www.justice.gc.ca/eng/rp-pr/csj-sjc/constitution/lawreg-loireg/p1t31.html), June 23, 1870, Schedule. On the 2025 closure, see [CBC News](https://www.cbc.ca/1.7551035).
-;; [^3]: Lord Durham, *Report on the Affairs of British North America* (1839), C. P. Lucas edition (Oxford, 1912), vol. 2, pp. 148, 220–223 ([full text](https://www.fadedpage.com/showbook.php?pid=20210933)).
+;; [^3]: Lord Durham, *Report on the Affairs of British North America* (1839), C. P. Lucas edition (Oxford, 1912), vol. 2, pp. 148, 219–223 ([full text](https://www.fadedpage.com/showbook.php?pid=20210933)).
 ;; [^4]: [*Statistical Year-Book of Canada 1886*](https://www66.statcan.gc.ca/eng/1886/188603150301_p.%20301.pdf), p. 301.
 ;; [^5]: Saskatchewan Archives, [Dominion Lands Act](https://www.saskarchives.com/node/82).
 ;; [^6]: Crown-Indigenous Relations and Northern Affairs Canada, [Treaty texts and summaries](https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549). Treaties 3 and 6 provided 640 acres per family of five. Treaty interpretation is contested; the comparison is illustrative.
@@ -258,7 +258,7 @@
 ;; [^10]: Yvan Allaire, Institute for Governance of Private and Public Organizations, ["Dual-class shares are hot in the U.S. again"](https://igopp.org/en/?p=10939), 2019. IGOPP supports dual-class shares with safeguards.
 ;; [^11]: Shopify, [governance structure announcement](https://news.shopify.com/shopify-announces-receipt-of-final-order-and-implementation-of-updated-governance-structure), 2022.
 ;; [^12]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/), Canadian citizens, using Forbes's self-made flag. The Weston, Irving, Rogers, Desmarais, Richardson, McCain, Sobey and Molson families are not on the list, so this understates inherited wealth.
-;; [^13]: Randall Morck, David Stangeland and Bernard Yeung, ["Inherited Wealth, Corporate Control, and Economic Growth: The Canadian Disease?"](https://www.nber.org/system/files/chapters/c9014/c9014.pdf), in R. Morck (ed.), *Concentrated Corporate Ownership*, University of Chicago Press/NBER, 2000, ch. 11, Table 11.1.
+;; [^13]: Randall Morck, David Stangeland and Bernard Yeung, ["Inherited Wealth, Corporate Control, and Economic Growth: The Canadian Disease?"](https://www.nber.org/system/files/chapters/c9014/c9014.pdf), in R. Morck (ed.), *Concentrated Corporate Ownership*, University of Chicago Press/NBER, 2000, ch. 11, Tables 11.1 and 11.3.
 ;; [^14]: Bennedsen et al., ["Inside the Family Firm"](https://www.nber.org/papers/w12356), *QJE* 122(2), 2007; Pérez-González, "Inherited Control and Firm Performance," *AER* 96(5), 2006; Villalonga and Amit, "How do family ownership, control and management affect firm value?" *Journal of Financial Economics* 80(2), 2006; Smith and Amoako-Adu, *Journal of Corporate Finance* 5(4), 1999, as summarized in Morck, Wolfenzon and Yeung, ["Corporate Governance, Economic Entrenchment, and Growth"](https://www.nber.org/papers/w10692), *Journal of Economic Literature* 43(3), 2005; Anderson and Reeb, "Founding-Family Ownership and Firm Performance," *Journal of Finance* 58(3), 2003; Jog, Zhu and Dutta, *Corporate Governance: An International Review* 18(5), 2010.
 ;; [^15]: Arash Nekoei and David Seim, "How Do Inheritances Shape Wealth Inequality? Theory and Evidence from Sweden," *Review of Economic Studies* 90(1), 2023.
 ;; [^16]: OECD, [*Inheritance Taxation in OECD Countries*](https://doi.org/10.1787/e2879a7d-en), 2021.

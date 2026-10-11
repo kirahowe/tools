@@ -26,21 +26,21 @@
 
 ;; 1. **The housing loop.** In Canada, middle-class wealth is mostly housing wealth.
 ;;    Rising home prices make owners richer, so owning stays the main way to build wealth.
-;;    That pulls in more capital and raises prices again.
+;;    That pulls in more capital and raises prices again (in the diagram, this loop runs through the Asset Stores box).
 ;;    Housing wealth is also the most lightly taxed kind, because of the principal residence exemption.
 ;; 2. **The market-power loop.** Many Canadian industries are run by a few big firms:
 ;;    banking, telecoms, groceries, airlines, rail.
 ;;    Concentration raises profits ("rents") without raising investment.
 ;;    Those profits flow to concentrated shareholdings, and shareholders who already hold
 ;;    concentrated wealth can afford to defend the arrangement.
-;; 3. **The inheritance loop.** Canada has had no estate or inheritance tax since 1972.
+;; 3. **The inheritance loop.** Canada abolished its federal estate tax in 1972, and the last provincial succession duties (Quebec's) ended in 1985.
 ;;    Several of the country's best-known fortunes (the Thomsons, Westons, Irvings, McCains and others) belong to
-;;    second-, third- and fourth-generation families, and dual-class shares let families keep control of the firms that hold them.
+;;    multi-generation families, and dual-class shares let families keep control of the firms that hold them.
 
 ;; Against these, Canada has counterweights the United States mostly lacks:
 ;; single-payer health insurance, the Canada Child Benefit, public pensions (CPP/QPP and OAS/GIS),
 ;; and, more recently, a national childcare and dental plan.
-;; These cut the cost of being alive for ordinary families, which is why Canada still has much
+;; These cut the cost of being alive for ordinary families, and help explain why Canada has
 ;; higher intergenerational mobility than the United States (see [What Makes Canada Different](c11_canadian_differences.html)).
 ;; They are funded mostly by taxes on work, which is the problem [Who Pays Tax](c01_who_pays_tax.html) describes.
 
@@ -74,7 +74,7 @@
 ;; When asset owners bid up homes, everyone else takes on more household debt to keep up.
 ;; That debt crowds out spending and squeezes living standards
 ;; (see [Labour Hours](c03_labour_hours.html)).
-;; Canadian households owe about 180% of their disposable income, nearly twice the American ratio, mostly in mortgages.
+;; Canadian households owe about 176% of their disposable income, nearly twice the American ratio, mostly in mortgages.
 
 ;; **Blue: the counterweight.**
 ;; Public services are Canada's main defence against the red loops.
@@ -109,8 +109,8 @@
 ;; wealth → assets → capital income → wealth.
 ;; Canada adds a housing loop that ties middle-class wealth to rising prices,
 ;; a market-power loop that pays incumbents without new investment,
-;; and an inheritance loop left untaxed since 1972.
-;; Canada's public services are a genuine counterweight, but they are funded by the people least able to absorb more tax.
+;; and an inheritance loop with no estate tax since 1972.
+;; Canada's public services are a genuine counterweight, but they are funded mainly by taxes on work rather than on wealth.
 
 ;; In the next part, [Wealth Concentration](c05_wealth_concentration.html), we measure how concentrated Canadian wealth has become.
 

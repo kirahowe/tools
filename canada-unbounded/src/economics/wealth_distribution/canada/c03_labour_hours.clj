@@ -47,16 +47,16 @@
                  :x-label "Year" :y-label "Index, 1970 = 100"
                  :color-label "" :legend-position :bottom}))
 
-;; Through the 1970s and 1980s, Canadian house prices tracked incomes.
+;; Through the 1970s and 1980s, Canadian house prices roughly tracked incomes, falling behind them in the mid-1980s.
 ;; From the early 2000s, they pulled away.
 ;; By 2022, a home cost more than twice as much relative to income as it did in 1970.
 ;; The United States had its own bubble and crash, but the American ratio is now back near its 1970 level.
 ;; **This is one of the sharpest differences between the two countries.**
 
 ;; The census gives a more familiar measure.
-;; In 2016, the average owner-occupied home was worth \$443,058 and the median household income was \$70,336:
+;; In 2016, the average owner-occupied home was worth \$443,058 and the median household income (for 2015) was \$70,336:
 ;; 6.3 years of income.
-;; By 2021 the average home was worth about \$618,000 against a median household income of \$84,000: about 7.4 years.[^3]
+;; By 2021 the average home was worth about \$618,000 against a median household income of \$84,000 (for 2020, raised by pandemic benefits): about 7.4 years.[^3]
 ;; In Vancouver and Toronto the ratios are far higher.
 
 ;; If a family can save 5% of its income, every year of income in the home price means 20 years of saving.
@@ -90,7 +90,7 @@
 ;; Among households led by someone aged 25–29, ownership fell from 44% to 37% in just ten years.
 ;; The Canadian Housing Survey shows the same thing more recently: ownership among households aged 25–34
 ;; fell from 53% in 2018 to 47% in 2024, and first-time buyers are getting older.[^5]
-;; In the provinces where Statistics Canada tracks it, the median first-time buyer in 2023 was 32–34 years old.[^5]
+;; In the four provinces and one territory where Statistics Canada tracks it, the median first-time buyer in 2023 was 32–34 years old.[^5]
 
 ;; Renters are squeezed hardest.
 ;; In 2024, 22% of renter households (1.2 million of them) were in core housing need:
@@ -115,9 +115,10 @@
                  :x-label "Year" :y-label "% of net disposable income"
                  :color-label "" :legend-position :bottom}))
 
-;; Canadian household debt rose from about 90% of disposable income in 1990 to a peak of 188% in 2022.
-;; It was 176% in the second quarter of 2026, according to Statistics Canada.[^7]
-;; American households deleveraged after 2008; Canadian households never did.
+;; By Statistics Canada's measure, Canadian household debt rose from about 90% of disposable income in 1990 to a peak of 188% in 2022,
+;; and was 176% in the second quarter of 2026.[^7]
+;; (The OECD measure in the chart, which includes non-profits, shows the same rise.)
+;; American households deleveraged after 2008; Canadian households didn't, and the ratio has eased only slightly since 2022.
 ;; Most of that debt is mortgages.
 ;; A Canadian family's home is often its largest asset *and* the reason for its largest debt.
 
@@ -145,11 +146,12 @@
  {:from-name "Minimum wage" :to-name "Living wage" :from-color c/w :to-color c/o :include-zero true
   :title "Living Wage vs Minimum Wage" :x-label "C$ per hour" :fmt #(format "$%.2f" (double %))})
 
-;; In every major city, a full-time minimum wage job falls about \$10 an hour short of a living wage.
+;; In each of these four cities, the minimum wage falls \$9 to \$12 an hour short of the living wage.
 ;; Calgary's minimum wage hasn't moved since 2018.
 
 ;; The median Canadian individual's employment income was \$46,100 in 2024.
 ;; In inflation-adjusted terms, that is only about 7% more than in 1976.[^9]
+;; The figure includes part-time and part-year workers; it fell through the 1980s and 1990s and has recovered since the late 1990s.
 
 (def median-employment
   (-> (c/data "income_canada_cis_annual.csv")
@@ -176,7 +178,7 @@
 ;; From 1946 to 1975, real GDP per person grew about 2.5% a year.
 ;; From 1980 to 2022 it grew about 1.4%.[^11]
 ;; In the golden age, the top federal income tax rate was 80% in 1950 and 75% in 1965, there was a federal estate tax,
-;; and capital gains were untaxed because estates were taxed instead.
+;; and capital gains were untaxed.
 
 (def top-rates
   (-> (c/data "top_marginal_tax_rate_canada_vs_us_1920_2025.csv")
@@ -192,7 +194,7 @@
                  :x-label "Year" :y-label "%"
                  :color-label "" :legend-position :bottom}))
 
-;; As in the United States, the top rate fell sharply after the 1970s: to 59% in 1972 and 46% by 1988.[^12]
+;; Canada's top rate fell sharply from 1972, earlier than America's: from 76% in 1971 to 59% in 1972, and to 46% by 1988.[^12]
 ;; Unlike the United States, Canada's top combined rate has risen again, to 53.5% in Ontario, since 2016.
 ;; But that top rate applies to *income*.
 ;; As [Who Pays Tax](c01_who_pays_tax.html) showed, the largest fortunes grow mostly through capital gains,
@@ -251,7 +253,8 @@
 ;; which is pulled up by the highest earners.
 ;; Research by the Centre for the Study of Living Standards finds that from 1976 to 2014 Canadian median wages
 ;; grew 0.09% a year while productivity grew 1.12%, and that rising inequality among earners explains about half of the gap.[^14]
-;; The rest is a falling labour share: labour compensation was 61.8% of business-sector GDP in 1961 and 56.3% in 2021.[^13]
+;; The rest is a falling labour share and consumer prices rising faster than the prices of what Canada produces.
+;; Labour compensation was 61.1% of business-sector GDP in 1976 and 56.3% in 2021.[^13]
 
 ;; Either way the result is the same as in the United States.
 ;; The typical worker's hour buys less housing than their parents' did, and the gains from growth go disproportionately
@@ -273,7 +276,7 @@
 ;; [^4]: Statistics Canada, [The Daily, September 21, 2022](https://www150.statcan.gc.ca/n1/daily-quotidien/220921/cg-b002-eng.htm), homeownership rates by age, 2011–2021.
 ;; [^5]: Statistics Canada, Canadian Housing Survey, [Table 46-10-0083-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610008301) and [Table 46-10-0085-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610008501) (core housing need); Canadian Housing Statistics Program, [Table 46-10-0099-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610009901) (age of first-time buyers in BC, Manitoba, New Brunswick, Nova Scotia and Yukon).
 ;; [^6]: Statistics Canada, [Table 18-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501), Consumer Price Index, annual average.
-;; [^7]: OECD National Accounts, household debt as % of net disposable income; Statistics Canada, [Table 11-10-0065-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110006501), household credit market debt to disposable income (176.4% in Q2 2026).
+;; [^7]: OECD National Accounts, household debt as % of net disposable income; Statistics Canada, [Table 38-10-0238-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810023801), household credit market debt to disposable income (176.4% in Q2 2026).
 ;; [^8]: Living wages: Ontario Living Wage Network (GTA, \$27.20, as reported by [CP24](https://www.cp24.com/local/toronto/2025/11/10/torontonians-should-be-making-about-10-more-than-minimum-wage-to-cover-living-expenses-in-gta-report/)); Living Wage BC (Metro Vancouver, \$27.85, as reported by [Daily Hive](https://dailyhive.com/vancouver/living-wage-bc-vancouver-2025)); Vibrant Communities Calgary/Alberta Living Wage Network (Calgary, \$26.50, as reported by [Global News](https://globalnews.ca/news/11525284/calgary-living-wage-2025)); CCPA–Nova Scotia, [Living Wages in NL, NS and PEI 2025](https://www.policyalternatives.ca/wp-content/uploads/2025/08/2025-Living-Wages-for-NL-NS-and-PEI-Too-many-workers-struggle-to-make-ends-meet-1.pdf) (Halifax, \$29.40). Minimum wages from provincial governments, in force on October 10, 2026. Alberta's network now averages across household types, so its figure is not strictly comparable.
 ;; [^9]: Statistics Canada, [Table 11-10-0239-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110023901), income of individuals, median employment income (excluding zeros), 2024 constant dollars.
 ;; [^10]: Food Banks Canada, [HungerCount 2025](https://foodbankscanada.ca/press-releases/canadas-2025-hungercount-shows-the-cost-of-inaction/). Food Banks Canada is a national charity; HungerCount is a survey of its member food banks.

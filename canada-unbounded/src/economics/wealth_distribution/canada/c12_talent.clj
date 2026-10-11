@@ -44,7 +44,7 @@
 
 ;; By headcount, it isn't close.
 ;; In 2025, Canada admitted 393,781 permanent immigrants; net emigration was 61,508.
-;; Since 2000 Canada has admitted between 4 and 10 permanent immigrants for every net emigrant.[^t1]
+;; Since 2000 Canada has admitted about 4 to 10 permanent immigrants for every net emigrant.[^t1]
 ;; Net emigration is about 0.15% of the population a year, roughly the same rate as in the 1990s,
 ;; and far below the more than 1% a year that left early in the twentieth century.[^t2]
 
@@ -152,8 +152,8 @@
 
 ;; Other flows that once alarmed Canadians have faded.
 ;; In the early 1990s Canada lost about 400 physicians a year on net; in 2023–24 the net flow was close to zero.[^t9]
-;; The AI field is the one to watch: Stanford's AI Index found Canada still gaining AI talent in 2024 (about 1 net arrival per 10,000 LinkedIn members),
-;; but listed it among countries where the net inflow is declining.[^t10]
+;; The AI field is the one to watch: Stanford's 2025 AI Index found Canada still gaining AI talent in 2024 (about 1 net arrival per 10,000 LinkedIn members),
+;; but listed it among countries where the net inflow is declining (the 2026 edition was not checked).[^t10]
 
 ;; ## Founders
 
@@ -213,7 +213,7 @@
 ;; A slope of 0 means parents' income tells you nothing about children's; a slope of 1 means children inherit their parents' rank exactly.
 
 ;; The best comparison uses tax records in both countries for children born around 1980.[^1]
-;; Canada's rank–rank slope is 0.21–0.23 across six ways of measuring it; America's is 0.31–0.34.
+;; Canada's rank–rank slope is 0.21–0.23 across five ways of measuring it; America's is 0.31–0.34.
 ;; A Canadian child's rank depends about a third less on their parents' rank.
 ;; That result is solid.
 
@@ -243,14 +243,14 @@
 ;; poor Canadian children are less likely to stay poor (29.1% versus 33.7%) and more likely to reach the middle.
 ;; In the authors' words, they are "much more likely to rise to the top half of the income distribution...
 ;; although not necessarily more likely to rise to the top fifth."[^1]
-;; At the top, Canada is less sticky than the US at the level of fifths: 29.5% of children of top-fifth parents stay there, versus 36.5%.
+;; At the top, Canada is less sticky than the US at the level of fifths: on the US income scale, 24.6% of children of top-fifth parents stay there, versus 36.5% (29.5% ranked within Canada).
 
 ;; Two cautions on the comparison.
 ;; The Canadian children's incomes were measured in 2011–12, at the height of the commodity boom,
 ;; and the most mobile Canadian regions are in Alberta, Saskatchewan and Newfoundland and Labrador, which the authors flag themselves.[^1]
 ;; And part of Canada's advantage comes from its large second generation of immigrants:
 ;; children of immigrants are very mobile in both countries,
-;; and one working paper puts the slope for Canadian-born children alone at about 0.29, still lower than the American 0.34 but much closer.[^2]
+;; and one working paper puts the slope for Canadian-born children alone at about 0.29, against 0.22 for children of immigrants (different income definitions, so not directly comparable with the American 0.34).[^2]
 
 ;; ## A Shrinking Advantage
 
@@ -281,7 +281,7 @@
 
 ;; Canadian mobility has declined steadily.
 ;; The rank–rank slope rose by about a quarter, from 0.189 for children born 1963–66 to 0.234 for children born 1982–85.[^3]
-;; Over the same cohorts, the American slope stayed close to 0.30.[^4]
+;; For American children born 1971–82, the slope stayed close to 0.30, and rank-based mobility was stable through the 1993 cohort.[^4]
 ;; The authors describe Canada as "going up the Great Gatsby Curve": as parents' incomes became more unequal
 ;; (the Gini of parental pre-tax income rose from 0.36 to 0.44), children's outcomes became more tied to them.[^3]
 
@@ -324,7 +324,7 @@
   :x-label "Rank–rank slope (higher = less mobile)" :include-zero true
   :fmt #(format "%.2f" (double %)) :height 440})
 
-;; Every province became less mobile except Yukon.
+;; Mobility fell in every province and territory except Yukon, where it rose, and Prince Edward Island, where it was unchanged (0.16).
 ;; Saskatchewan saw the largest decline (0.175 to 0.331), and Manitoba (0.315) and the Northwest Territories and Nunavut (0.350)
 ;; now look more like the least mobile parts of the United States than the rest of Canada.[^3]
 ;; A flat slope does not guarantee opportunity, either:
@@ -341,8 +341,8 @@
 
 ;; Canada's mobility is a story about the bottom and middle.
 ;; At the very top, Canadian advantage passes down strongly.
-;; Among sons of the top 1% of fathers, the income elasticity is "almost 0.8",
-;; compared with close to zero at the bottom.[^7]
+;; Among sons of the top 1% of fathers, one study found an income elasticity of "almost 0.8",
+;; compared with close to zero at the bottom;[^7] newer estimates using lifetime earnings put persistence among the top 5% at about 0.45.[^11]
 ;; Almost seven in ten sons of top-1% fathers have worked for an employer that also employed their father,
 ;; compared with about four in ten overall.[^8]
 ;; This is the labour-market face of the family firms in [Old Money](c07_old_money.html).
@@ -362,8 +362,8 @@
 ;; | Share out-earning their parents (born 1985) | **Slightly** | 57% vs 50%; Norway 74%[^10] |
 ;; | Father–son earnings elasticity | **Yes, but less than once thought** | about 0.32 vs 0.4–0.5[^11] |
 ;; | Trend | **No: Canada worsening, US flat** | slope 0.19 → 0.23 |
-;; | Indigenous children, Manitoba, the North | **No** | mobility about half the national rate |
-;; | Very top | **Strong persistence** | income elasticity near 0.8 for the top 1% |
+;; | Indigenous children, Manitoba, the North | **No** | Indigenous children: mobility "about two times lower"; Manitoba and the North: slopes 0.32–0.35 vs 0.23 nationally |
+;; | Very top | **Strong persistence** | elasticity about 0.45 (top 5%, lifetime) to 0.8 (top 1%, older study) |
 ;;
 ;; : How well Canada's mobility advantage holds up {#tbl-mobility-verdict}
 
@@ -378,7 +378,7 @@
 ;; Canada is good at the broad middle: it imports educated people at a scale no other G7 country matches,
 ;; keeps most of the graduates it trains, and keeps more poor children out of poverty than the United States does.
 ;; It is weaker at the frontier: its best graduates are the likeliest to leave, its poor children are no likelier than American ones to reach the top,
-;; and at the very top, advantage passes from parent to child almost intact.
+;; and at the very top, advantage passes strongly from parent to child.
 ;; That is the same shape as the economy described in [Stable and Stuck](c06_productivity.html):
 ;; a good floor, a low ceiling, and the top positions held by the same families and firms.
 

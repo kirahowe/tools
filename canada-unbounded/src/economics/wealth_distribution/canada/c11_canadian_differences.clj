@@ -6,7 +6,7 @@
           :quarto {:sidebar     "unbounded-north"
                    :author      "Kira Howe"
                    :description "The features of Canada's economy and society that shape its version of the wealth concentration problem."
-                   :abstract    "Canada is more equal and more mobile than the United States, thanks largely to public programs. But it has its own fault lines: housing, provinces, Indigenous communities, concentrated industries, and untaxed inheritance."
+                   :abstract    "Canada is more equal and more mobile than the United States, partly because its pre-tax incomes are less concentrated and largely because of public programs. But it has its own fault lines: housing, provinces, Indigenous communities, concentrated industries, and untaxed inheritance."
                    :date        "2026-10-21"
                    :type        :post
                    :category    :economics
@@ -45,6 +45,8 @@
 ;; (a Gini of 0.306 versus 0.394) and in line with Germany and France.[^1]
 ;; Before taxes and transfers it is far less equal: Statistics Canada's market-income Gini was 0.436 in 2024.[^2]
 ;; The difference is the work done by public programs.
+;; Canada's pre-tax incomes are also less concentrated at the top than America's to begin with:
+;; the top 10% receive about 37% of pre-tax national income in Canada, against 47% in the United States.[^14]
 
 ;; Canada also has higher intergenerational mobility, though by less than the most quoted figure suggests.
 ;; Using linked tax records for both countries, Connolly, Corak and Haeck find:[^3]
@@ -52,16 +54,15 @@
 ;; | | Canada | United States |
 ;; | :--- | ---: | ---: |
 ;; | Rank–rank slope (lower = more mobile) | 0.21–0.23 | 0.31–0.34 |
-;; | Average rank reached by children of bottom-fifth parents (regional average) | 40.6 | 35.8 |
+;; | Expected rank of children whose parents were at the 25th percentile (US ranks, population-weighted regional average) | 40.6 | 35.8 |
 ;; | Chance a bottom-fifth child stays in the bottom fifth (US income cut-offs) | 29.1% | 33.7% |
 ;; | Chance a bottom-fifth child reaches the top fifth (each country's own cut-offs) | 11.2% | 7.5% |
 ;; | Chance a bottom-fifth child reaches the top fifth (US income cut-offs) | 7.7% | 7.5% |
-;; | Chance a top-fifth child stays there | 29.5% | 36.5% |
+;; | Chance a top-fifth child stays there (each country's own cut-offs) | 29.5% | 36.5% |
 ;;
 ;; : Intergenerational income mobility, children born around 1980 {#tbl-mobility}
 
-;; In their words, "the US 'middle class' is within easier reach for low income Canadian children,
-;; than it is for low income Americans", although they are "not necessarily more likely to rise to the top fifth."
+;; In their words, the US "middle class" "is within easier reach for low-income Canadian children than it is for low-income Americans," although they are "not necessarily more likely to rise to the top fifth."
 ;; Canada's advantage is in the bottom half: fewer children stay poor, and more reach the middle.
 ;; Measured on the same dollar scale, a poor Canadian child is no more likely than a poor American one to reach the top.
 ;; Canada's mobility is also declining, it varies a lot by region, and it is much lower for Indigenous children;
@@ -138,7 +139,7 @@
                  :y-label "After-tax income Gini, 2024"}))
 
 ;; British Columbia's median family is worth \$773,500, more than two and a half times New Brunswick's \$286,200;
-;; in the Vancouver area the median is over \$1M.[^7]
+;; in the Vancouver area the median is about \$1M.[^7]
 ;; Most of that difference is home equity.
 ;; Ontario has the most unequal after-tax incomes of any province (Gini 0.318);
 ;; **Quebec**, with the most extensive social programs, including low-cost child care since 1997,
@@ -197,25 +198,26 @@
 
 ;; ## Housing as the Middle-Class Asset
 
-;; In the United States, middle-class wealth is split between homes and retirement accounts.
-;; In Canada it is overwhelmingly homes, and the principal residence is completely exempt from capital gains tax.
+;; In Canada, the principal residence is the largest single asset for most middle-class families,
+;; and it is completely exempt from capital gains tax.
 ;; That makes the housing market the main channel through which Canadian wealth inequality is produced.
 ;; Families aged 55–64 who own their home and have an employer pension had median net worth of \$1.4M in 2023;
 ;; renters without a pension had \$11,900.[^9]
-;; Owners versus renters is Canada's real class line.
+;; Home ownership and a workplace pension, or the lack of both, mark Canada's real class line.
 
 ;; ## Brain Drain and the Exodus Argument
 
 ;; Canadians often worry about losing talent to the United States.
 ;; By headcount, Canada admits several permanent immigrants for every net emigrant; the loss is concentrated among its very best graduates.
 ;; [Talent and Opportunity](c12_talent.html) looks at this in detail.
-;; Statistics Canada does not publish emigrants' incomes, so claims about the *rich* leaving should be treated with care.
+;; There is no current official data on how wealthy emigrants are, so claims about the *rich* leaving should be treated with care.
 ;; Canada already taxes accrued gains when residents leave, through the departure tax (see [Wealth Tax](c02_wealth_tax.html)).
 
 ;; ## Conclusion
 
-;; Canada is more equal and more mobile than the United States, because of public programs,
-;; not because markets distribute income more evenly.
+;; Canada is more equal and more mobile than the United States.
+;; Its pre-tax incomes are already less concentrated at the top, and public programs do a great deal of additional work,
+;; cutting Canada's own Gini from 0.44 on market income to about 0.31 after taxes and transfers.
 ;; Those programs are paid for mostly by taxes on work.
 ;; Canada's distinct fault lines (housing, provincial divides, Indigenous gaps, concentrated industries,
 ;; old family fortunes and untaxed inheritance) all run in the same direction:
@@ -233,6 +235,7 @@
 ;; [^8]: Indigenous Services Canada, ["An update on the socio-economic gaps between Indigenous Peoples and the non-Indigenous population in Canada: Highlights from the 2021 Census"](https://www.sac-isc.gc.ca/eng/1690909773300/1690909797208).
 ;; [^9]: Statistics Canada, [The Daily, October 29, 2024](https://www150.statcan.gc.ca/n1/daily-quotidien/241029/dq241029a-eng.htm), Survey of Financial Security 2023. The survey excludes people living on reserves and in other Indigenous settlements, and the territories.
 ;; [^10]: Statistics Canada, ["Trends in the wealth gap between immigrant and Canadian-born families"](https://www150.statcan.gc.ca/n1/pub/36-28-0001/2026003/article/00002-eng.htm), *Economic and Social Reports*, March 2026.
-;; [^11]: Grocery share from the Competition Bureau's 2023 retail grocery market study, as summarized by [Global News](https://globalnews.ca/news/9796699/competition-bureau-canada-grocery-study-takeaways/). I could not retrieve official market-share figures for banking and wireless, so none are given here.
+;; [^11]: Grocery share from the Competition Bureau's 2023 retail grocery market study, as summarized by [Global News](https://globalnews.ca/news/9796699/competition-bureau-canada-grocery-study-takeaways/). Banking and wireless shares are sourced in [Stable and Stuck](c06_productivity.html); none are given here.
 ;; [^12]: Competition Bureau Canada, ["Competition in Canada from 2000 to 2020: An Economy at a Crossroads"](https://ised-isde.canada.ca/site/competition-bureau-canada/en/how-we-foster-competition/education-and-outreach/competition-canada-2000-2020-economy-crossroads), 2023.
 ;; [^13]: Randall Morck, David Stangeland and Bernard Yeung, ["Inherited Wealth, Corporate Control and Economic Growth: The Canadian Disease"](https://www.nber.org/papers/w6814), NBER Working Paper 6814, 1998.
+;; [^14]: World Inequality Database, [wid.world](https://wid.world/), pre-tax national income shares of equal-split adults, 2023 (Canada 36.8%, United States 46.8% for the top 10%). Details in `data/wid_canada_us_wealth_income_shares.csv`.

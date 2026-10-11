@@ -7,7 +7,7 @@
                    :author      "Kira Howe"
                    :description "How a wealth tax could actually become law in Canada's parliamentary system."
                    :abstract    "In Canada only Cabinet can start a tax. A wealth tax needs pressure that changes what the governing party believes it must do."
-                   :date        "2026-10-23"
+                   :date        "2026-10-24"
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada]}}})
@@ -84,7 +84,7 @@
 
 ;; That leverage is not available today.
 ;; The 2025 election returned a Liberal minority with 169 seats, and the NDP fell to 7 seats, losing official party status.[^8]
-;; Through floor crossings and by-elections, the Liberals reached 173 of 343 seats in 2026: a working majority.[^9]
+;; Through floor crossings and by-elections, the Liberals won a majority in April 2026 (174 of 343 seats; 173 in October).[^9]
 ;; In March 2026 the NDP elected Avi Lewis as leader, on a platform that includes a 1/2/3% wealth tax above \$10M
 ;; and an inheritance tax on estates over \$5M.[^10]
 ;; The next fixed-date election is expected in October 2029.
@@ -153,7 +153,7 @@
 ;; costed proposals that survive scrutiny, and allies inside the party.
 ;; Public support is already there; the missing piece is pressure.
 
-;; The final part, [References](c15_references.html), lists the sources, data and research behind this series.
+;; In the next part, [So What Should Canada Do?](c15_what_should_canada_do.html), we pull the series together.
 
 ;; [^1]: House of Commons, [Vote No. 22, 43rd Parliament, 2nd Session](https://www.ourcommons.ca/members/en/votes/43/2/22), November 2020 (27 yeas, 292 nays); [CBC News](https://www.cbc.ca/news/politics/ndp-wealth-tax-opposition-day-1.5789923).
 ;; [^2]: [Prime Minister's statement, March 21, 2025](https://www.pm.gc.ca/en/news/news-releases/2025/03/21/prime-minister-mark-carney-cancels-proposed-capital-gains-tax-increase).
@@ -163,7 +163,7 @@
 ;; [^6]: Prime Minister of Canada, ["Delivering for Canadians Now"](https://www.pm.gc.ca/en/news/news-releases/2022/03/22/delivering-canadians-now), March 22, 2022.
 ;; [^7]: LEGISinfo: [Bill C-31 (2022)](https://www.parl.ca/legisinfo/en/bill/44-1/C-31) (interim dental benefit), [Bill C-64 (2024)](https://www.parl.ca/legisinfo/en/bill/44-1/C-64) (*Pharmacare Act*), [Bill C-32 (2022)](https://www.parl.ca/legisinfo/en/bill/44-1/C-32) (Canada Recovery Dividend).
 ;; [^8]: Elections Canada, [Official Voting Results, 45th General Election](https://www.elections.ca/res/rep/off/ovrGE45/62/table8E.html).
-;; [^9]: House of Commons, [current Members of Parliament](https://www.ourcommons.ca/Members/en/search), retrieved October 10, 2026: Liberal 173, Conservative 137, Bloc Québécois 21, NDP 5, Green 1.
+;; [^9]: House of Commons, [current Members of Parliament](https://www.ourcommons.ca/Members/en/search), retrieved October 10, 2026: Liberal 173, Conservative 137, Bloc Québécois 21, NDP 5, Green 1. The Liberals had 174 seats after the April 13, 2026 by-elections, as reported by Canadian news outlets.
 ;; [^10]: New Democratic Party, ["Avi Lewis elected leader"](https://www.ndp.ca/news/avi-lewis-elected-leader-ndp), March 2026; [Lewis campaign tax plan](https://lewisisleader.ca/ideas/tax-policy-full-plan/).
 ;; [^11]: Gabriel Zucman, [A blueprint for a coordinated minimum effective taxation standard for ultra-high-net-worth individuals](https://www.gov.br/g20/pt-br/trilhas/trilha-de-financas/tributacao_internacional/2-blueprint-for-a-coordinated-minimum-effective-taxation-standard-for-ultra-high-net-worth-individuals-gabriel-zucman.pdf/@@download/file), report commissioned by the Brazilian G20 presidency, 2024; [Bill C-69 (2024)](https://www.parl.ca/legisinfo/en/bill/44-1/C-69), *Global Minimum Tax Act*.
 ;; [^12]: House of Commons, [e-petitions](https://www.ourcommons.ca/petitions/en/Home/Index).
