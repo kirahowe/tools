@@ -60,19 +60,24 @@
       (tc/rename-columns {"country" :country "component" :component "2001_2019_pp" :pp})))
 
 ^{:kindly/options {:id :fig-gu-willox
-                   :caption "Sources of labour productivity growth, 2001–2019, percentage points per year: Canadian business sector vs US private business sector. Multifactor productivity is output growth not explained by more capital or more skilled labour (Gu and Willox, International Productivity Monitor, 2023, Table 1).[^5]"}}
-(-> gu-willox
-    (tc/select-rows #(and (#{"Canada" "United States"} (:country %))
-                          (#{"Labour productivity" "Capital intensity" "Labour composition" "Total factor productivity"} (:component %))))
-    (tc/update-columns {:component (partial map {"Labour productivity" "Total growth"
-                                                  "Capital intensity" "Capital per worker"
-                                                  "Labour composition" "Workforce skills"
-                                                  "Total factor productivity" "Efficiency (MFP)"})})
-    (pj/lay-bar :component :pp {:color :country :position :dodge})
-    (pj/scale :color {:values [c/red c/wd]})
-    (pj/options {:title "Why US Productivity Grew Faster, 2001–2019"
-                 :x-label "" :y-label "Percentage points per year"
-                 :color-label "" :legend-position :bottom}))
+                   :caption "How much faster labour productivity grew per year in the US private business sector than in the Canadian business sector, 2001–2019, and how much of that gap each source accounts for. The three sources add up to the total gap, allowing for rounding. Multifactor productivity is output growth not explained by more capital or more skilled labour (Gu and Willox, International Productivity Monitor, 2023, Table 1).[^5]"}}
+(let [gap (-> gu-willox
+                (tc/select-rows #(and (= "Canada minus United States" (:country %))
+                                      (#{"Labour productivity" "Capital intensity" "Labour composition" "Total factor productivity"} (:component %))))
+                (tc/map-columns :us-ahead [:pp] #(- %))
+                (tc/map-columns :label [:component] {"Labour productivity" "Total gap"
+                                                     "Capital intensity" "More capital per worker"
+                                                     "Labour composition" "More skilled workforce"
+                                                     "Total factor productivity" "Efficiency (MFP)"})
+                (tc/map-columns :c [:component] #(case % "Labour productivity" c/wd "Total factor productivity" c/red c/neutral))
+                (tc/map-columns :t [:us-ahead] #(format "%.2f" (abs (double %))))
+                (tc/order-by [:us-ahead]))]
+  (-> gap
+      (pj/lay-bar :us-ahead :label {:color {:column :c :scale false}})
+      (pj/lay-text {:text :t :align-x :left :offset-x 6})
+      (pj/scale :x {:domain [0 1.05]})
+      (pj/options {:title "Why US Productivity Grew Faster, 2001–2019"
+                   :x-label "US growth minus Canadian growth, percentage points per year" :y-label "" :height 260})))
 
 ;; Between 2001 and 2019, Canada's labour productivity grew 0.92 points a year slower than America's.
 ;; **0.87 points of that gap was multifactor productivity**: how efficiently firms combine people, equipment and ideas.
@@ -228,15 +233,14 @@
 
 ^{:kindly/options {:id :fig-billionaire-industry
                    :caption "Share of billionaire wealth by industry, billionaires who are citizens of each country, Forbes 2026. Canadian finance includes cryptocurrency fortunes held by Canadians abroad.[^8]"}}
-(-> billionaire-industries
-    (tc/select-rows #(#{"Technology" "Finance & Investments" "Media & Entertainment" "Fashion & Retail"
-                        "Real Estate" "Food & Beverage" "Energy" "Diversified"} (:industry %)))
-    (pj/lay-bar :industry :share_pct {:color :country :position :dodge})
-    (pj/scale :color {:values [c/red c/wd]})
-    (pj/coord :flip)
-    (pj/options {:title "Where Billionaire Wealth Comes From, 2026"
-                 :x-label "" :y-label "% of the country's billionaire wealth"
-                 :color-label "" :legend-position :bottom}))
+(c/dumbbell
+ (->> (c/pair-rows billionaire-industries :industry :country :share_pct "United States" "Canada")
+      (filter #(#{"Technology" "Finance & Investments" "Media & Entertainment" "Fashion & Retail"
+                  "Real Estate" "Food & Beverage" "Energy" "Diversified"} (:label %)))
+      (sort-by #(- (:from %))))
+ {:from-name "United States" :to-name "Canada" :from-color c/wd :to-color c/red :include-zero true
+  :title "Where Billionaire Wealth Comes From, 2026"
+  :x-label "% of the country's billionaire wealth" :fmt #(format "%.0f%%" (double %))})
 
 ;; Technology accounts for 41% of American billionaire wealth and 17% of Canadian-citizen billionaire wealth;
 ;; among billionaires who actually *live* in Canada, it is just 8%.[^8]

@@ -117,15 +117,14 @@
                :shares  [29.0 15.64 11.0 70.0 59.0]}))
 
 ^{:kindly/options {:id :fig-votes-vs-shares
-                   :caption "Share of votes and share of all shares held by the controlling family, from company filings (Rogers 2021; Power Corporation 2024; Bombardier 2025; Thomson Reuters 2025; George Weston 2025). Where the bars are equal, the family controls through majority ownership; where they diverge, through multiple-voting shares.[^8]"}}
-(-> votes-vs-shares
-    (tc/pivot->longer [:votes :shares] {:target-columns :measure :value-column-name :pct})
-    (tc/update-columns {:measure (partial map {:votes "Share of votes" :shares "Share of all shares"})})
-    (pj/lay-bar :company :pct {:color :measure :position :dodge})
-    (pj/scale :color {:values [c/o c/w]})
-    (pj/scale :y {:domain [0 100]})
-    (pj/options {:title "Control Without Ownership"
-                 :x-label "" :y-label "%" :color-label "" :legend-position :bottom}))
+                   :caption "Share of votes and share of all shares held by the controlling family, from company filings (Rogers 2021; Power Corporation 2024; Bombardier 2025; Thomson Reuters 2025; George Weston 2025). Where the two dots coincide, the family controls through majority ownership; where they are apart, through multiple-voting shares. The dashed line marks 50% of votes.[^8]"}}
+(-> (c/dumbbell
+     (for [r (tc/rows votes-vs-shares :as-maps)] {:label (:company r) :from (:shares r) :to (:votes r)})
+     {:from-name "Family's share of all shares" :to-name "Family's share of votes"
+      :from-color c/w :to-color c/o :height 300
+      :title "Control Without Ownership" :x-label "%" :fmt #(format "%.0f%%" (double %))})
+    (pj/lay-rule-v {:x-intercept 50 :stroke-dash :dashed})
+    (pj/scale :x {:domain [0 105]}))
 
 ;; Multiple-voting shares let a family keep control of a company long after it has sold most of the equity.
 ;; In 2021, Edward Rogers used the family trust's control to replace five directors of Rogers Communications in a single written resolution,
@@ -194,15 +193,21 @@
 (def kinship
   (-> (c/data "dyn_parliament_kinship_counts_gagnon2011.csv")
       (tc/update-columns {:relationship (partial map {"brothers" "Brothers" "fathers_and_sons" "Fathers and sons"})})
-      (tc/map-columns :period [:period] #(subs % 0 4))))
+      (tc/map-columns :era [:period] #(.indexOf ["1867" "1896" "1935" "1968"] (subs % 0 4)))))
 
 ^{:kindly/options {:id :fig-kinship
-                   :caption "Members of Parliament and senators entering Parliament who had a father/son or brother who also sat, by political era (period start shown). From Library of Parliament data compiled by Gagnon (2011).[^19]"}}
+                   :caption "Members of Parliament and senators entering Parliament who had a father/son or brother who also sat, by political era. Eras are 29 to 43 years long; the most recent ends in 2008 for brothers and 2011 for fathers and sons. From Library of Parliament data compiled by Gagnon (2011).[^19]"}}
 (-> kinship
-    (pj/lay-bar :period :n_parliamentarians_starting_career {:color :relationship :position :dodge})
+    (pj/lay-line :era :n_parliamentarians_starting_career {:color :relationship :size 2})
+    (pj/lay-point {:color :relationship :size 5})
+    (pj/lay-text {:data (-> kinship (tc/select-rows #(= 3 (:era %)))
+                            (tc/map-columns :t [:relationship :n_parliamentarians_starting_career] #(str %1 ": " %2)))
+                  :x :era :y :n_parliamentarians_starting_career :text :t :align-x :left :offset-x 10 :overlay true})
     (pj/scale :color {:values [c/w c/o]})
+    (pj/scale :x {:domain [-0.2 3.9] :breaks [0 1 2 3] :tick-labels ["1867–1896" "1896–1935" "1935–1968" "1968–2011"]})
+    (pj/scale :y {:include 0})
     (pj/options {:title "Family Ties in Parliament, by Era"
-                 :x-label "Era beginning" :y-label "Parliamentarians"
+                 :x-label "Political era" :y-label "Parliamentarians entering"
                  :color-label "" :legend-position :bottom}))
 
 ;; The trend is encouraging.

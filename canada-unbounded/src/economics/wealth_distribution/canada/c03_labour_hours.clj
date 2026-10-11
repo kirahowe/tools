@@ -11,7 +11,8 @@
                    :type        :post
                    :category    :economics
                    :tags        [:tax :economics :growth :canada :housing]}}}
-  (:require [scicloj.plotje.api :as pj]
+  (:require [clojure.string :as str]
+            [scicloj.plotje.api :as pj]
             [tablecloth.api :as tc]
             [economics.wealth-distribution.canada.common :as c]))
 
@@ -70,13 +71,19 @@
 
 ^{:kindly/options {:id :fig-young-ownership
                    :caption "Share of households that own their home, by age of the primary household maintainer (Census of Population; 2011 is from the voluntary National Household Survey).[^4]"}}
-(-> ownership
-    (pj/lay-bar :age_group :homeownership_rate_pct {:color :year :color-type :categorical :position :dodge})
-    (pj/scale :color {:values ["#c9d9ea" c/w c/wd]})
-    (pj/scale :y {:domain [0 80]})
-    (pj/options {:title "Young Canadians Are Less Likely to Own"
-                 :x-label "Age of household maintainer" :y-label "Homeownership rate (%)"
-                 :color-label "Census year" :legend-position :bottom}))
+(let [ds (tc/map-columns ownership :age [:age_group] #(str/replace % " years" ""))]
+  (-> ds
+      (pj/lay-line :year :homeownership_rate_pct {:color :age :size 2})
+      (pj/lay-point {:color :age :size 5})
+      (pj/lay-text {:data (-> ds (tc/select-rows #(= 2021 (:year %)))
+                              (tc/map-columns :t [:age :homeownership_rate_pct] #(format "Age %s: %.0f%%" %1 (double %2))))
+                    :x :year :y :homeownership_rate_pct :text :t :align-x :left :offset-x 10 :overlay true})
+      (pj/scale :color {:values [c/w "#7A9CC0" c/wd]})
+      (pj/scale :x {:domain [2010 2024.5] :breaks [2011 2016 2021] :tick-labels ["2011" "2016" "2021"]})
+      (pj/scale :y {:domain [0 80]})
+      (pj/options {:title "Young Canadians Are Less Likely to Own"
+                   :x-label "Census year" :y-label "Homeownership rate (%)"
+                   :color-label "Age of household maintainer" :legend-position :bottom})))
 
 ;; Canada's homeownership rate peaked at 69% in 2011 and has fallen in every census since.[^4]
 ;; The decline is concentrated among the young.
@@ -133,14 +140,10 @@
 
 ^{:kindly/options {:id :fig-living-wage
                    :caption "Living wage (2025 estimates by local living wage networks) and the provincial minimum wage in force in October 2026. Living wages are methodology-based estimates, not official statistics.[^8]"}}
-(-> living-wage
-    (tc/pivot->longer [:living :minimum] {:target-columns :measure :value-column-name :wage})
-    (tc/update-columns {:measure (partial map {:living "Living wage" :minimum "Minimum wage"})})
-    (pj/lay-bar :city :wage {:color :measure :position :dodge})
-    (pj/scale :color {:values [c/o c/w]})
-    (pj/options {:title "Living Wage vs Minimum Wage"
-                 :x-label "" :y-label "C$ per hour"
-                 :color-label "" :legend-position :bottom}))
+(c/dumbbell
+ (for [r (tc/rows living-wage :as-maps)] {:label (:city r) :from (:minimum r) :to (:living r)})
+ {:from-name "Minimum wage" :to-name "Living wage" :from-color c/w :to-color c/o :include-zero true
+  :title "Living Wage vs Minimum Wage" :x-label "C$ per hour" :fmt #(format "$%.2f" (double %))})
 
 ;; In every major city, a full-time minimum wage job falls about \$10 an hour short of a living wage.
 ;; Calgary's minimum wage hasn't moved since 2018.

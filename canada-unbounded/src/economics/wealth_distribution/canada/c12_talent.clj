@@ -85,16 +85,18 @@
 
 ^{:kindly/options {:id :fig-emigrant-profile
                    :caption "Characteristics of people who emigrated from Canada, compared with the Canadian population (Statistics Canada, 2021 Census linked to tax records).[^t5]"}}
-(-> emigrant-profile
-    (pj/lay-bar :label :pct {:color :who :position :dodge})
-    (pj/coord :flip)
-    (pj/scale :color {:values [c/red c/w]})
-    (pj/options {:title "Who Emigrates from Canada"
-                 :x-label "" :y-label "% of group"
-                 :color-label "" :legend-position :bottom}))
+(c/dumbbell
+ (for [k ["Immigrants" "Aged 20–44" "Bachelor's degree" "Master's or higher" "Science and engineering jobs"]
+       :let [row (fn [who] (->> (tc/rows emigrant-profile :as-maps)
+                                (filter #(and (= k (:label %)) (= who (:who %))))
+                                first :pct))]]
+   {:label k :from (row "Canadian population") :to (row "Recent emigrants")})
+ {:from-name "Canadian population" :to-name "Recent emigrants"
+  :title "Who Emigrates from Canada" :x-label "% of group" :include-zero true
+  :fmt #(format "%.0f%%" (double %))})
 
 ;; Seven in ten recent emigrants hold a university degree, and almost a third have a master's or doctorate, against 9% of Canadians.[^t5]
-;; But the most striking bar is the second one: **61% of emigrants are immigrants**, against 24% of the population.[^t5]
+;; But the most striking row is the top one: **61% of emigrants are immigrants**, against 24% of the population.[^t5]
 ;; More than 15% of immigrants leave within 20 years of landing, and over 40% of those admitted as investors do.[^t6]
 ;; Much of what Canadians call brain drain is people Canada recruited moving on, the other half of the circulation that brings them here.
 
@@ -221,24 +223,23 @@
 ;; and Canada's top fifth starts at a lower income than America's.
 ;; Placed on the US income scale, the Canadian figure is **7.7%**, essentially the same as the American one.[^1]
 
-(def bottom-outcomes
+(def top-fifth
   (tc/dataset
-   [{:outcome "Stays in bottom fifth" :group "Canada (US cut-offs)" :pct 29.1}
-    {:outcome "Stays in bottom fifth" :group "United States" :pct 33.7}
-    {:outcome "Reaches top fifth" :group "Canada (own cut-offs)" :pct 11.2}
-    {:outcome "Reaches top fifth" :group "Canada (US cut-offs)" :pct 7.7}
-    {:outcome "Reaches top fifth" :group "United States" :pct 7.5}]))
+   [{:who "United States" :pct 7.5 :c c/wd}
+    {:who "Canada, on the US scale" :pct 7.7 :c c/red}
+    {:who "Canada, ranked within Canada" :pct 11.2 :c c/neutral}]))
 
-^{:kindly/options {:id :fig-bottom-outcomes
-                   :caption "Outcomes for children whose parents were in the bottom fifth of income, children born 1980–82, incomes at about age 30–32. \"US cut-offs\" places Canadian incomes (converted at purchasing power parity) in the American distribution.[^1]"}}
-(-> bottom-outcomes
-    (pj/lay-bar :outcome :pct {:color :group :position :dodge})
-    (pj/scale :color {:values [c/red c/o c/w]})
-    (pj/options {:title "Where Children of the Poorest Fifth End Up"
-                 :x-label "" :y-label "% of children"
-                 :color-label "" :legend-position :bottom}))
+^{:kindly/options {:id :fig-top-fifth
+                   :caption "Share of children with bottom-fifth parents who reach the top fifth, children born 1980–82, incomes at about age 30–32. The grey bar ranks Canadian children against other Canadians, whose top fifth starts at a lower income; the red bar places them in the American income distribution (incomes converted at purchasing power parity).[^1]"}}
+(-> top-fifth
+    (pj/lay-bar :pct :who {:color {:column :c :scale false}})
+    (pj/lay-text {:text :t :data (tc/map-columns top-fifth :t [:pct] #(str % "%"))
+                  :x :pct :y :who :align-x :left :offset-x 6 :overlay true})
+    (pj/options {:title "From the Bottom Fifth to the Top Fifth"
+                 :x-label "% of children from the poorest fifth" :y-label "" :height 260}))
 
-;; On a common yardstick, Canada's advantage is in the bottom half:
+;; Measured on the same yardstick, the gap at the top disappears.
+;; Canada's advantage is in the bottom half:
 ;; poor Canadian children are less likely to stay poor (29.1% versus 33.7%) and more likely to reach the middle.
 ;; In the authors' words, they are "much more likely to rise to the top half of the income distribution...
 ;; although not necessarily more likely to rise to the top fifth."[^1]
@@ -313,13 +314,15 @@
 
 ^{:kindly/options {:id :fig-province-slopes
                    :caption "Rank–rank slope by province or territory, children born 1963–66 and 1982–85, ranked within each province. Higher means less mobility. Nunavut and the Northwest Territories are combined.[^3]"}}
-(-> province-slopes
-    (pj/lay-bar :province_abbr :value {:color :cohort :position :dodge})
-    (pj/coord :flip)
-    (pj/scale :color {:values [c/w c/red]})
-    (pj/options {:title "Mobility Fell in Almost Every Province"
-                 :x-label "" :y-label "Rank–rank slope (higher = less mobile)"
-                 :color-label "" :legend-position :bottom :height 420}))
+(c/dumbbell
+ (for [[abbr rs] (->> (tc/rows province-slopes :as-maps) (group-by :province_abbr)
+                      (sort-by (fn [[_ rs]] (- (:value (first (filter #(= 1982 (:cohort_label %)) rs)))))))
+       :let [v (fn [y] (:value (first (filter #(= y (:cohort_label %)) rs))))]]
+   {:label abbr :from (v 1963) :to (v 1982)})
+ {:from-name "Born 1963–66" :to-name "Born 1982–85"
+  :title "Mobility Fell in Almost Every Province"
+  :x-label "Rank–rank slope (higher = less mobile)" :include-zero true
+  :fmt #(format "%.2f" (double %)) :height 440})
 
 ;; Every province became less mobile except Yukon.
 ;; Saskatchewan saw the largest decline (0.175 to 0.331), and Manitoba (0.315) and the Northwest Territories and Nunavut (0.350)

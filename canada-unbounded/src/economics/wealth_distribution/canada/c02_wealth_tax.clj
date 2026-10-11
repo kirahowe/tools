@@ -148,17 +148,16 @@
                           :support_all_pct          (partial map #(parse-long (str %)))})))
 
 ^{:kindly/options {:id :fig-polling
-                   :caption "Support for a wealth tax in Abacus Data polls, all respondents and Conservative voters. 2019: 2% above $50M (commissioned by North 99). 2020: 1% above $20M (Abacus national survey).[^7]"}}
-(-> polls
-    (tc/add-column :poll #(map (fn [d] ({"2019" "2019: 2% above $50M" "2020" "2020: 1% above $20M"} (subs (str d) 0 4))) (:published %)))
-    (tc/pivot->longer [:support_all_pct :support_conservative_pct]
-                      {:target-columns :group :value-column-name :support})
-    (tc/update-columns {:group (partial map {:support_all_pct "All Canadians" :support_conservative_pct "Conservative voters"})})
-    (pj/lay-bar :poll :support {:color :group :position :dodge})
-    (pj/scale :color {:values [c/w c/o]})
-    (pj/scale :y {:domain [0 100]})
-    (pj/options {:title "Support for a Wealth Tax" :x-label "" :y-label "% who support"
-                 :color-label "" :legend-position :bottom}))
+                   :caption "Support for a wealth tax in Abacus Data polls, all respondents and Conservative voters. 2019: 2% above $50M (commissioned by North 99). 2020: 1% above $20M (Abacus national survey). The dashed line marks majority support.[^7]"}}
+(-> (c/dumbbell
+     (for [r (reverse (sort-by :published (tc/rows polls :as-maps)))]
+       {:label ({"2019" "2019 poll: 2% above $50M" "2020" "2020 poll: 1% above $20M"} (subs (str (:published r)) 0 4))
+        :from (:support_conservative_pct r) :to (:support_all_pct r)})
+     {:from-name "Conservative voters" :to-name "All Canadians"
+      :from-color c/wd :to-color c/o :height 240
+      :title "Support for a Wealth Tax" :x-label "% who support" :fmt #(str % "%")})
+    (pj/lay-rule-v {:x-intercept 50 :stroke-dash :dashed})
+    (pj/scale :x {:domain [0 100]}))
 
 ;; In 2020, Abacus Data found **79%** of Canadians supported a 1% tax on wealth over \$20M,
 ;; including **64% of Conservative voters** and 73% of people in the highest income bracket.[^7]
@@ -234,12 +233,11 @@
 
 ^{:kindly/options {:id :fig-g7-debt
                    :caption "General government gross and net debt, % of GDP, 2025 (IMF Fiscal Monitor, April 2026). Canada's net debt counts the assets of the Canada and Quebec Pension Plans, which are earmarked for future pensions.[^10]"}}
-(-> g7
-    (tc/order-by [:pct])
-    (pj/lay-bar :country :pct {:color :measure :position :dodge})
-    (pj/scale :color {:values [c/neutral c/wd]})
-    (pj/options {:title "G7 Government Debt, 2025" :x-label "" :y-label "% of GDP"
-                 :color-label "" :legend-position :bottom}))
+(c/dumbbell
+ (sort-by :from (c/pair-rows g7 :country :measure :pct "Net debt" "Gross debt"))
+ {:from-name "Net debt (after subtracting financial assets)" :to-name "Gross debt"
+  :from-color c/red :to-color c/neutral :include-zero true
+  :title "G7 Government Debt, 2025" :x-label "% of GDP" :fmt #(format "%.0f" (double %))})
 
 ;; The gap is mostly the Canada and Quebec Pension Plans.
 ;; Their funds hold about \$850B in net financial assets, which offset about 59% of federal and provincial net liabilities.[^11]

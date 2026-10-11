@@ -105,13 +105,12 @@
 
 ^{:kindly/options {:id :fig-capital-gains-by-income
                    :caption "Tax year 2023. Filers with total income over $250,000 filed fewer than 2 in 100 returns but reported 71% of taxable capital gains.[^3]"}}
-(-> capital-gains-by-band
-    (pj/lay-bar :band :share {:color :measure :position :dodge})
-    (pj/scale :color {:values [c/w c/o]})
-    (pj/options {:title   "Who Reports Capital Gains"
-                 :color-label "" :legend-position :bottom
-                 :x-label "Total income of tax filer"
-                 :y-label "% of Canada-wide total"}))
+(c/dumbbell
+ (c/pair-rows capital-gains-by-band :band :measure :share "Share of tax returns" "Share of taxable capital gains")
+ {:from-name "Share of tax returns" :to-name "Share of taxable capital gains"
+  :from-color c/w :to-color c/o :include-zero true
+  :title "Who Reports Capital Gains, by Income of Filer"
+  :x-label "% of Canada-wide total" :fmt #(format "%.0f%%" (double %))})
 
 ;; Capital gains are not a middle-class income source.
 ;; Most Canadians' savings sit in RRSPs, TFSAs, pension plans, and their homes,
@@ -196,13 +195,12 @@
 
 ^{:kindly/options {:id :fig-effective-rates
                    :caption "Average federal and provincial income tax paid as a share of average income, 2023. Each group is ranked on the income concept shown. The top 0.01% pay 41% of income in tax when capital gains are ignored, but 32% once their gains are counted as income.[^7]"}}
-(-> effective-rates
-    (pj/lay-bar :group :rate {:color :measure :position :dodge})
-    (pj/scale :color {:values [c/w c/o]})
-    (pj/options {:title   "Average Income Tax Rate of Top Earners, 2023"
-                 :color-label "" :legend-position :bottom
-                 :x-label "Income group"
-                 :y-label "Income tax as % of income"}))
+(c/dumbbell
+ (c/pair-rows effective-rates :group :measure :rate "Capital gains left out" "Capital gains counted")
+ {:from-name "Capital gains left out" :to-name "Capital gains counted"
+  :from-color c/w :to-color c/o :include-zero true
+  :title "Average Income Tax Rate of Top Earners, 2023"
+  :x-label "Income tax as % of income" :fmt #(format "%.0f%%" (double %))})
 
 ;; The 2023 rows tell the story:
 
