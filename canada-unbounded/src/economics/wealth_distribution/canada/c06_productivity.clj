@@ -358,6 +358,16 @@
 ;; Canadian business R&D peaked at 1.25% of GDP in 2001 and was about 1.06% in 2024,
 ;; against 2.67% in the US and about 2% across the OECD.[^15]
 ;; Firms that face little competition have less reason to invent.
+;;
+;; It isn't for lack of subsidy.
+;; The federal Scientific Research and Experimental Development (SR&ED) tax credit allowed \$4.6 billion in credits in 2025–26.
+;; Nor does most of it go to incumbents: businesses with under \$4 million in revenue filed 65% of claims and received 33% of the money,
+;; while the largest firms, with over \$250 million in revenue, filed 3% of claims and received 22%.[^21]
+;; Small Canadian-controlled private companies get a higher rate, paid in cash even if they owe no tax, and it seems to work for them:
+;; when eligibility for that rate widened in 2004, R&D at the newly eligible firms rose about 17%, most among those that received the credit as a refund.[^22]
+;; But the credit pays for doing R&D, not for growing what it produces in Canada.
+;; The higher rate phases out as firms grow, the Canada Revenue Agency does not track whether claimants are foreign-owned, and critics question how much of the resulting intellectual property stays Canadian.[^21]
+;; Making research cheaper does little when firms have little competitive reason to do it.
 
 ;; ## Stability, the Good Kind and the Other Kind
 
@@ -434,3 +444,5 @@
 ;; [^18]: Statistics Canada, [Table 33-10-1118-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310111801), Canadian Survey on Business Conditions, first quarter 2026.
 ;; [^19]: Royal Commission on Corporate Concentration, [*Report*](https://publications.gc.ca/collections/collection_2014/bcp-pco/Z1-1975-1-1-eng.pdf), 1978, Tables 2.3–2.4 and the lists of the largest non-financial and financial corporations, 1975.
 ;; [^20]: GDP: IMF World Economic Outlook and OECD quarterly national accounts; banking crises: Laeven and Valencia, IMF systemic banking crises database; excess deaths: WHO estimates for 2020–21; vaccination: Our World in Data; unemployment: OECD; CMHC Insured Mortgage Purchase Program: Office of the Parliamentary Budget Officer (2020); Bank of Canada term liquidity: *Bank of Canada Review*, 2009; World Economic Forum, *Global Competitiveness Report* (executive opinion survey), 2008–2014. Full sources in `data-prep/topco_longrun/NOTES.md`.
+;; [^21]: Canada Revenue Agency, [SR&ED annual program statistics](https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/annual-program-statistics.html), fiscal year 2025–26 (claims processed and investment tax credits allowed, by business size); on foreign ownership and intellectual property, [The Logic](https://thelogic.co/news/the-big-read/flagship-rd-tax-credit-still-rewards-large-firms-disproportionately-though-new-data-shows-gap-is-narrowing/) (2024).
+;; [^22]: Ajay Agrawal, Carlos Rosell and Timothy Simcoe, ["Tax Credits and Small Firm R&D Spending"](https://doi.org/10.1257/pol.20140467), *American Economic Journal: Economic Policy* 12(2), 2020.
