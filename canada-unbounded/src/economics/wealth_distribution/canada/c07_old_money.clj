@@ -190,6 +190,12 @@
 ;; ## Inheritance, Untaxed
 
 ;; Canada abolished its federal estate tax in 1972, and Quebec, the last province with succession duties, abolished them in 1985.
+;; Ottawa's stated reason was that it was "no longer possible to establish a uniform national system of death duties through federal legislation," since several provinces already levied their own.
+;; The same reform began taxing capital gains, including gains on assets held at death, which partly took the estate tax's place.
+;; The provinces then dropped their duties one by one, from 1974 to 1985.
+;; The constitutional scholar Peter Hogg summed up why: the taxes were hard to draft, costly to collect relative to what they raised,
+;; and fed "an avoidance industry, often including shifting assets out of the province."[^25]
+;; Each province that kept its tax risked losing wealthy residents to one that didn't: a race to the bottom between provinces.
 ;; In 2021, 24 of the then 37 OECD countries taxed inheritances or estates; Canada was among ten that had repealed theirs, along with Australia, New Zealand, Sweden and Norway.[^16]
 ;; Statistics Canada finds that inheritances are growing and unequal: the median inheritance received by homeowners rose
 ;; from \$67,000 in 2019 to \$85,100 in 2023, and 4 in 10 homeowners had some help from family in buying their home.[^17]
@@ -284,3 +290,4 @@
 ;; [^22]: Morck, Wolfenzon and Yeung (2005), above.
 ;; [^23]: *R. v. K.C. Irving Ltd.*, [1978] 1 S.C.R. 408; see J. P. Cairns, [*Alberta Law Review*](https://albertalawreview.com/index.php/ALR/article/download/1854/1843/1966). Sale to Postmedia as reported by CTV News, 2022.
 ;; [^24]: Sweden: Oxford Business Law Blog, ["Equal Treatment of Shareholders – Can There be Too Much of it?"](https://blogs.law.ox.ac.uk/business-law-blog/blog/2017/02/equal-treatment-shareholders-%E2%80%93-can-there-be-too-much-it) (2017). United States: Jay R. Ritter, ["IPOs with dual-class shares"](https://site.warrington.ufl.edu/ritter/files/IPOs-Dual-Class.pdf), University of Florida, updated December 2025 (16 of 72 operating-company IPOs in 2024; 6 of 14 technology IPOs). TSX coattail requirement: Institute for Governance of Private and Public Organizations (IGOPP), ["Do your shares have the power?"](https://igopp.org/do-your-shares-have-the-power/); companies listed before 1987 were exempted.
+;; [^25]: E. J. Benson, Budget Speech, June 18, 1971, p. 33, and Peter Hogg as quoted in LeBreux (1999), p. 1162, both as cited in [History of wealth taxes in Canada](https://en.wikipedia.org/wiki/History_of_wealth_taxes_in_Canada) (Wikipedia), which also gives the provincial repeal dates. See also Richard M. Bird, ["Canada's Vanishing Death Taxes"](https://digitalcommons.osgoode.yorku.ca/ohlj/vol16/iss1/5), *Osgoode Hall Law Journal* 16(1), 1978.
