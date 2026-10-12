@@ -334,6 +334,12 @@
 ;; Several of the country's best-known dynasties (the Westons, Irvings, Rogers, Desmarais, McCains and Sobeys)
 ;; do not appear on Forbes's 2026 list, even though Canadian rich lists put several of them among the
 ;; country's wealthiest families.
+;; Forbes does not explain individual omissions, but its method points to the reasons.
+;; Its billionaires list focuses on "individual or nuclear-family wealth";
+;; large multigenerational families who share a fortune appear only on a separate list, which Forbes publishes for American families.[^13]
+;; These families' wealth is mostly held through private companies (the Irvings and McCains), family holding companies and trusts,
+;; and divided among many heirs across several generations, so no single person may clear Forbes's US\$1B bar,
+;; and private holdings are hard to value from the outside.
 ;; The PBO supplements Forbes with the Canadian Business/Maclean's rich list for exactly this reason.[^4]
 
 ;; ## The Long View
@@ -427,3 +433,4 @@
 ;; [^10]: René Morissette and Xuelin Zhang, ["Revisiting wealth inequality"](https://www150.statcan.gc.ca/pub/75-001-x/11206/9543-eng.htm), Statistics Canada, *Perspectives on Labour and Income* 7(12), December 2006, [Table 1](https://www150.statcan.gc.ca/pub/75-001-x/11206/4096770-eng.htm). The 1984 survey was re-weighted to be consistent with the 1999 and 2005 surveys. Data in `data/mz2006_wealth_decile_shares_1984_2005.csv`.
 ;; [^11]: Statistics Canada, Survey of Financial Security, [Table 11-10-0075-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007501), net worth by decile, 1999–2023; shares computed from decile totals. Data in `data/sfs_networth_by_decile.csv`.
 ;; [^12]: Canada Revenue Agency, [Determining your residency status](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/determining-your-residency-status.html); *Income Tax Act*, [section 128.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html) (deemed disposition on emigration); US Internal Revenue Service, [U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad) and [Expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax).
+;; [^13]: Forbes methodology for *America's Richest Families*: "Unlike our flagship Forbes 400 list of America's richest and our World Billionaires ranks, which focus on individual or nuclear-family wealth, America's Richest Families includes multigenerational families of all sizes," as quoted by [Philadelphia Magazine](https://phillymag.com/?p=2778321). See also [CFA Institute, "Generational Wealth: Does the Apple Fall Far from the Tree?"](https://rpc.cfainstitute.org/blogs/enterprising-investor/2024/generational-wealth-does-the-apple-fall-far-from-the-tree) (2024).
