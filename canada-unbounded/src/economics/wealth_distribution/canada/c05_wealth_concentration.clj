@@ -391,7 +391,7 @@
 ;; | Bermuda crude-buying subsidiary (IrvCal); deductions the government tried to disallow | 1971–1975 | \$141.9M; Irving Oil won in court (1991) | *Irving Oil Ltd. v. M.N.R.*, Federal Court of Appeal |
 ;; | Bermuda trust holding K.C. Irving's estate | 1972–2010 | About \$3B when split in 2010 | Bermuda court filings, via CBC/Radio-Canada |
 ;;
-;; : Documented tax arrangements benefiting the Irving family and companies {#tbl-irving}[^17]
+;; : Documented tax arrangements benefiting the Irving family and companies[^17] {#tbl-irving}
 
 ;; Through its forestry arm, J.D. Irving Ltd. also holds licences to about a third of New Brunswick's licensed Crown forest (1.05 million hectares),
 ;; the only large licensee based in the province.[^18]
