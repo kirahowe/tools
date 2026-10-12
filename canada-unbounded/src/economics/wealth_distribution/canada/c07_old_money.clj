@@ -139,6 +139,11 @@
 ;; In 2021, Edward Rogers used the family trust's control to replace five directors of Rogers Communications in a single written resolution,
 ;; and the BC Supreme Court upheld it.[^9]
 ;; About 100 TSX companies had dual-class shares in 2005 and about 69 in 2019.[^10]
+;; The structure isn't uniquely Canadian.
+;; About half of Sweden's listed companies have it, often controlled by old families like the Wallenbergs,
+;; and in the US 22% of 2024 IPOs used it, including 43% of technology IPOs.[^24]
+;; Canada does add one protection: since 1987 the TSX has required new dual-class listings to include a "coattail," so that if someone bids for the family's voting shares, ordinary shareholders must get the same offer.[^24]
+;; What stands out in Canada is who holds the extra votes in its best-known cases: long-established families passing control to the next generation, rather than founders.
 ;; Founder-led structures can be different.
 ;; Shopify's 2022 founder share gives Tobi Lütke about 40% of the votes, but it ends if he leaves his role:
 ;; it cannot be inherited.[^11]
@@ -278,3 +283,4 @@
 ;; [^21]: Ernesto Dal Bó, Pedro Dal Bó and Jason Snyder, ["Political Dynasties"](https://www.nber.org/papers/w13122), *Review of Economic Studies* 76(1), 2009.
 ;; [^22]: Morck, Wolfenzon and Yeung (2005), above.
 ;; [^23]: *R. v. K.C. Irving Ltd.*, [1978] 1 S.C.R. 408; see J. P. Cairns, [*Alberta Law Review*](https://albertalawreview.com/index.php/ALR/article/download/1854/1843/1966). Sale to Postmedia as reported by CTV News, 2022.
+;; [^24]: Sweden: Oxford Business Law Blog, ["Equal Treatment of Shareholders – Can There be Too Much of it?"](https://blogs.law.ox.ac.uk/business-law-blog/blog/2017/02/equal-treatment-shareholders-%E2%80%93-can-there-be-too-much-it) (2017). United States: Jay R. Ritter, ["IPOs with dual-class shares"](https://site.warrington.ufl.edu/ritter/files/IPOs-Dual-Class.pdf), University of Florida, updated December 2025 (16 of 72 operating-company IPOs in 2024; 6 of 14 technology IPOs). TSX coattail requirement: Institute for Governance of Private and Public Organizations (IGOPP), ["Do your shares have the power?"](https://igopp.org/do-your-shares-have-the-power/); companies listed before 1987 were exempted.
