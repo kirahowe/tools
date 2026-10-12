@@ -381,10 +381,16 @@
 ;; | | Where Canada did well | Where it didn't |
 ;; | :--- | :--- | :--- |
 ;; | **2008–09 financial crisis** | Smallest two-year output loss in the G7 (−1.9%, 2007–2009); back to its pre-crisis peak fastest (9 quarters); no systemic banking crisis and no bank bailouts; banks rated soundest in the world by the World Economic Forum's executive survey, 2008–2014 | Its single-year 2009 contraction (−2.9%) was slightly deeper than America's (−2.6%); unemployment rose more than in Germany, Japan or France; Germany kept workers on through job-sharing |
-;; | **COVID-19** | Second-lowest excess deaths in the G7 after Japan (about 70 per 100,000 in 2020–21, against about 290 in the US); highest first-dose vaccination rate in the G7 by the end of 2021 | GDP fell 5.0% in 2020 against 2.1% in the US, and recovered more slowly; unemployment peaked at 14.2%, among the sharpest rises in the G7 |
+;; | **COVID-19** | Second-lowest excess deaths in the G7 after Japan (about 70 per 100,000 in 2020–21, against about 290 in the US); highest first-dose vaccination rate in the G7 by the end of 2021 | GDP fell 5.0% in 2020 against 2.1% in the US, and recovered more slowly; unemployment peaked at 14.2%, among the sharpest rises in the G7, partly because Canada paid laid-off workers directly while Europe paid employers to keep staff on the payroll |
 ;;
 ;; : Canada's record in two crises, relative to the G7 {#tbl-crises}
 
+;; The unemployment peak says as much about policy design as about lockdowns.
+;; Germany, France and Italy paid employers to keep idle workers on the payroll (Germany's *Kurzarbeit* covered about six million people at its peak), so those workers never counted as unemployed.
+;; Canada and the US mostly paid laid-off workers directly; Canada's wage subsidy came later, and the Canada Emergency Response Benefit went to people who had already lost their jobs.
+;; It worked as income support: in 2020 the poorest tenth of Canadians lost about a quarter of their market income but ended the year with about a quarter more after taxes and transfers,
+;; and the poverty rate fell from 10.5% to 6.5% before rising again as the benefits ended.[^23]
+;;
 ;; So Canada's stability is genuine where it matters most for ordinary people: its banks didn't fail, and fewer Canadians died.
 ;; But stability is not dynamism.
 ;; The same economy that rides out crises well grows slowly between them.
@@ -446,3 +452,4 @@
 ;; [^20]: GDP: IMF World Economic Outlook and OECD quarterly national accounts; banking crises: Laeven and Valencia, IMF systemic banking crises database; excess deaths: WHO estimates for 2020–21; vaccination: Our World in Data; unemployment: OECD; CMHC Insured Mortgage Purchase Program: Office of the Parliamentary Budget Officer (2020); Bank of Canada term liquidity: *Bank of Canada Review*, 2009; World Economic Forum, *Global Competitiveness Report* (executive opinion survey), 2008–2014. Full sources in `data-prep/topco_longrun/NOTES.md`.
 ;; [^21]: Canada Revenue Agency, [SR&ED annual program statistics](https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/annual-program-statistics.html), fiscal year 2025–26 (claims processed and investment tax credits allowed, by business size); on foreign ownership and intellectual property, [The Logic](https://thelogic.co/news/the-big-read/flagship-rd-tax-credit-still-rewards-large-firms-disproportionately-though-new-data-shows-gap-is-narrowing/) (2024).
 ;; [^22]: Ajay Agrawal, Carlos Rosell and Timothy Simcoe, ["Tax Credits and Small Firm R&D Spending"](https://doi.org/10.1257/pol.20140467), *American Economic Journal: Economic Policy* 12(2), 2020.
+;; [^23]: Statistics Canada, [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301) (adjusted market and after-tax income by decile, 2024 dollars: lowest decile \$2,200 and \$18,500 in 2019, \$1,700 and \$23,000 in 2020) and [Table 11-10-0135-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501) (Market Basket Measure, 2018 base). Unemployment: OECD harmonised rates, as in note 20. Kurzarbeit: Germany's Federal Employment Agency (Bundesagentur für Arbeit), short-time work in April 2020.
