@@ -232,6 +232,46 @@
 ;; Canada had its own golden age.
 ;; From 1946 to 1975, real GDP per person grew about 2.5% a year.
 ;; From 1980 to 2022 it grew about 1.4%.[^11]
+;; Those two numbers sound close, but compounding makes the difference enormous.
+;; At 2.5% a year, living standards double every 28 years; at 1.4%, doubling takes 50.
+
+;; Slower growth was still growth: real GDP per person rose about 78% from 1976 to 2024.
+;; Very little of it reached the typical paycheque.
+
+(def growth-vs-pay
+  (let [gdp (-> (c/data "real_gdp_per_capita_canada_long_run.csv")
+                (tc/select-rows #(and (<= 1976 (:year %) 2024) (:statcan_real_gdp_per_capita_2017dollars %)))
+                (tc/select-columns [:year :statcan_real_gdp_per_capita_2017dollars])
+                (tc/rename-columns {:statcan_real_gdp_per_capita_2017dollars :value})
+                (tc/add-column :series "Real GDP per person"))
+        inc (-> (c/data "income_canada_cis_annual.csv")
+                (tc/select-rows #(and (= "Individuals 15+" (:population %))
+                                      (#{"Employment income - Average income (excluding zeros)"
+                                         "Employment income - Median income (excluding zeros)"} (:measure %))))
+                (tc/map-columns :series [:measure] #(if (str/includes? % "Average") "Average employment income" "Median employment income"))
+                (tc/select-columns [:year :value :series]))
+        ds  (tc/concat gdp inc)
+        base (into {} (for [r (tc/rows (tc/select-rows ds #(= 1976 (:year %))) :as-maps)] [(:series r) (:value r)]))]
+    (tc/map-columns ds :index [:series :value] #(* 100.0 (/ %2 (base %1))))))
+
+^{:kindly/options {:id :fig-growth-vs-pay
+                   :caption "Real GDP per person (Statistics Canada, 2017 dollars) and the average and median employment income of people with employment income (2024 dollars), 1976 = 100. Employment income leaves out employer-paid benefits and pensions, and includes part-time and part-year work.[^9][^16]"}}
+(-> growth-vs-pay
+    (pj/lay-line :year :index {:color :series :size 2})
+    (pj/lay-text {:data (-> growth-vs-pay (tc/select-rows #(= 2024 (:year %)))
+                            (tc/map-columns :t [:index] #(format "+%.0f%%" (- % 100))))
+                  :x :year :y :index :text :t :align-x :left :offset-x 6 :overlay true})
+    (pj/scale :color {:values [c/o c/w c/wd]})
+    (pj/scale :x {:domain [1975 2028]})
+    (pj/options {:title "The Economy Grew. Paycheques Didn't."
+                 :x-label "Year" :y-label "Index, 1976 = 100"
+                 :color-label "" :legend-position :bottom}))
+
+;; From 1976 to 2024, average employment income rose about 18% after inflation, and the median about 7%.[^9]
+;; The gap between the average and the median is growth that went to the highest earners.
+;; The gap between pay and GDP went partly to employer-paid benefits and pensions, which these figures leave out,
+;; partly to consumer prices rising faster than the prices of what Canada produces,
+;; and partly to profits and the owners of assets (see [Where the Gains Went](#where-the-gains-went) above, and [What Changed](#what-changed) below).
 ;; In the golden age, the top federal income tax rate was 80% in 1950 and 75% in 1965, there was a federal estate tax,
 ;; and capital gains were untaxed.
 
@@ -256,7 +296,7 @@
 ;; which are half-taxed when sold and untaxed until then.
 ;; A high top income tax rate is not the same as a high tax on the very rich.
 
-;; Saez and Veall caution that the mid-century top rates applied to very few people.
+;; [Saez and Veall](https://doi.org/10.1257/0002828054201404) caution that the mid-century top rates applied to very few people.[^12]
 ;; Even so, the very top faced much higher rates, and the estate tax caught what income tax missed.
 
 ;; ## What Changed
@@ -340,3 +380,4 @@
 ;; [^13]: Statistics Canada, archived [Table 36-10-0305-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610030501) (1946–2001), [Table 36-10-0206-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610020601), [Table 36-10-0208-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610020801) (labour share), [Table 14-10-0064-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006401) (Labour Force Survey wages), all deflated by CPI ([Table 18-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501)). Deflating by the GDP deflator instead would show a smaller gap.
 ;; [^14]: James Uguccioni, ["Explaining the Gap between Productivity and Median Wage Growth in Canada, 1976–2014"](https://csls.ca/ipm-archive/ipm-issue-31/explaining-the-gap-between-productivity-and-median-wage-growth-in-canada-1976-2014.md), *International Productivity Monitor* 31, 2016. See also Sharpe, Arsenault and Harrison, ["Why Have Real Wages Lagged Labour Productivity Growth in Canada?"](https://csls.ca/ipm-archive/ipm-issue-17/why-have-real-wages-lagged-labour-productivity-growth-in-canada.md), *International Productivity Monitor* 17, 2008.
 ;; [^15]: Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601), net worth by age group, 1999–2023, in 2023 dollars; shares and increases computed from family counts and mean net worth. Details in `data/sfs_networth_by_age_familytype_geo.csv`.
+;; [^16]: Statistics Canada, real GDP from [Table 36-10-0104-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401) (chained 2017 dollars) divided by population from [Table 17-10-0009-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901). Details in `data/real_gdp_per_capita_canada_long_run.csv`.
