@@ -406,8 +406,25 @@
 ;; with silviculture prices set "with no competitive open market influence."[^18]
 
 ;; All of this was legal, and the companies say they pay all the tax they owe in Canada and are among the region's largest employers.
-;; But it is a clear Canadian example of how old fortunes and public policy interact:
-;; elected governments, over decades, gave a few powerful families terms that let the region benefit less from their success than it might have.
+;; Jobs were the usual reason for the breaks; the tank farm exemption, for example, was adopted in 1980 to help Irving Oil through the oil crisis, and was still being applied four decades later.[^17]
+;; But none of these assets could have gone anywhere else.
+;; The refinery sits on Saint John's deepwater port, where tankers deliver crude, and exports about 80% of what it makes to the United States.
+;; The tank farm exists only to supply the refinery, and the Crown forest is in New Brunswick.
+;; A tax break on something that cannot move doesn't buy new jobs or new investment; it moves money from the public to the owner.
+;;
+;; The refinery shows how that adds up.
+;; In 2020, New Brunswick and Saint John collected about \$6 million in property tax on the refinery and its marine terminals; by CBC's estimate, a US refinery of the same size would have paid its community about US\$23 million.
+;; The main refinery property's assessment rose only \$7.6 million (8%) from 2012 to 2022, less than a third of inflation, while Irving Oil spent more than \$500 million on its upgrades; the province cancelled a promised review of the assessment in 2022.[^21]
+;; (Irving Oil says its taxes per barrel are higher than its competitors' and similar to those of refineries in Quebec and Ontario.)
+;; A Saint John city councillor has complained for years that flat industrial assessments shift the city's tax burden onto homeowners.[^21]
+;; Whatever the companies didn't pay, other New Brunswickers made up in higher taxes or fewer services, in the province with the lowest median family wealth in Canada.
+;; In 2019, the province's finance minister told the legislature that the government had "no way of finding" out how much revenue the Irvings' offshore arrangements had cost it.[^21]
+;;
+;; This is the same pattern the rest of the series finds nationally.
+;; Deep cuts to capital taxes didn't raise business investment (see [The Investment Question](c09_investment_question.html)),
+;; and the owners of land and resources collect rents that exist whether or not they are taxed (see [Land](c10_land.html)).
+;; "Business-friendly" breaks for assets that can't leave buy nothing except more wealth for the people who already own them.
+;; Elected governments of both parties, over decades, gave a few powerful families those terms, and the province's working people paid for them.
 
 
 ;; ## The Long View
@@ -562,3 +579,4 @@
 ;; [^18]: Auditor General of New Brunswick, [2015 Report, Volume II, Chapter 3](https://www.agnb-vgnb.ca/uploads/volume_section_translations/147/file/Chap3e.pdf) (Crown forest management: financial results, Exhibit 3.3, silviculture pricing) and 2020 Report, Volume I, Chapter 4 (licensee areas, Exhibit 4.2). Details in `data/mar_nb_crown_licensees.csv` and `data/mar_nb_crown_forest_operations.csv`.
 ;; [^19]: Statistics Canada, [Table 11-10-0135-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501), Market Basket Measure poverty rates (2018 base), persons under 18; [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301), adjusted after-tax income by decile, 2024 dollars. Wealth shares from the quarterly series in Table 36-10-0660-01 (top 20%: 67.7% at the end of 2015, 68.2% at the end of 2019, 65.0% at the end of 2020).
 ;; [^20]: Statistics Canada, ["The Wealth of Unattached Men and Women Aged 50 and Older, 1999 to 2016"](https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2021004-eng.htm) (Survey of Financial Security net worth excludes entitlements to future CPP/QPP and OAS benefits). The Canadian Dental Care Plan began paying claims in May 2024.
+;; [^21]: CBC News reporting on the Saint John refinery's property assessment, [July 4, 2022](https://www.cbc.ca/lite/story/1.6509171) and [December 2, 2022](https://www.cbc.ca/lite/story/1.6671058) (cancelled review); the US comparison is CBC's, based on Resources for the Future's study of US refinery property taxes (\$71.86 US per barrel a day of capacity in 2020, times the refinery's 320,000 barrels a day); Irving Oil's per-barrel response is from its presentation to a legislative committee, as quoted by CBC. Export share: CBC News, [January 14, 2025](https://www.cbc.ca/lite/story/1.7431218). Tank farm exemption origin: CBC News, [December 12, 2016](https://www.cbc.ca/lite/story/1.3889095). Finance minister's 2019 statement: CBC News/Radio-Canada, [November 2022](https://www.cbc.ca/lite/story/1.6639615).
