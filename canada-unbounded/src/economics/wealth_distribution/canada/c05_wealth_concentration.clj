@@ -348,6 +348,16 @@
 ;; Using estate tax records, Davies and Di Matteo estimate the top 1% of Ontario families held about 41% of wealth in 1892.
 ;; By the late 1960s, the top 1% of Canadian adults held about 20%.
 ;; Since 1970 it has stayed in the low-to-mid twenties; the published version of the study finds a modest upward trend after 1984.[^7]
+;; These points come from three different kinds of record, so they are not strictly comparable.
+;; * **1892 and 1902: Ontario only.** There is no Canada-wide wealth data this early.
+;;   Davies and Di Matteo use Ontario estate records, treating the people who died each year as a sample of the living
+;;   (the "estate multiplier" method), and measure families.
+;; * **1946–1970: Canada, from estate tax returns.** The federal estate tax (1941–1971) produced the first national records.
+;;   The same method applies, but the unit is individual adults, not families. Because couples pool wealth, a top 1% of families
+;;   and a top 1% of adults are different groups.
+;; * **1970 onward: Canada, from Statistics Canada surveys of families,** adjusted upward to account for rich lists, since surveys miss the very richest.
+;; The broad shape (very high concentration before the First World War, a mid-century low, a modest rise since) is robust to these differences;
+;; the exact level in any one year is not.
 
 (def long-run
   (tc/concat
