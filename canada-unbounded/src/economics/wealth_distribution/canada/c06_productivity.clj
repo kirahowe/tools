@@ -293,7 +293,7 @@
 ;; | Industry | Concentration | Source |
 ;; | :--- | :--- | :--- |
 ;; | Banking | Six largest banks hold about 93–94% of banking assets | IMF (2025); Bank of Canada (2025) |
-;; | Wireless | Bell, Rogers and TELUS earn 89% of retail mobile revenue; wireless EBITDA margin 48% | CRTC (2024 data) |
+;; | Wireless | Bell, Rogers and TELUS earn 89% of retail mobile revenue; wireless EBITDA margin 48%, up from 41% in 2014 | CRTC (2024 data) |
 ;; | Groceries | Five largest grocers hold about 80% of sales | Agriculture and Agri-Food Canada (2020 data) |
 ;; | Airlines | Air Canada and WestJet carry half to three-quarters of domestic passengers at major airports | Competition Bureau (2025) |
 ;;
@@ -424,7 +424,7 @@
 ;; [^8]: [Forbes World's Billionaires List 2026](https://www.forbes.com/billionaires/), industry and self-made flags as assigned by Forbes; computed on this page.
 ;; [^9]: Statistics Canada, [Table 33-10-0164-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310016401), business dynamics measures.
 ;; [^10]: Statistics Canada, Gu and Lesica, "The role of firm size in the Canada–U.S. labour productivity gap since 2000," *Economic and Social Reports*, December 2025; [The Daily](https://www150.statcan.gc.ca/n1/daily-quotidien/251222/dq251222c-eng.htm).
-;; [^11]: Banking: IMF, *Canada: Financial System Stability Assessment*, Country Report 25/220, August 2025, and the Bank of Canada speech below. Wireless: CRTC, Canadian Telecommunications Market Report 2025, [open data](https://open.canada.ca/data/dataset/bd41f23a-6dbc), Figure 14. Groceries: Agriculture and Agri-Food Canada, as cited by the Competition Bureau. Airlines: Competition Bureau Canada, market study, June 2025.
+;; [^11]: Banking: IMF, *Canada: Financial System Stability Assessment*, Country Report 25/220, August 2025, and the Bank of Canada speech below. Wireless: CRTC, Canadian Telecommunications Market Report 2025, [open data](https://open.canada.ca/data/dataset/bd41f23a-6dbc), Figures 13 (EBITDA margins, 2024 data) and 14 (revenue shares). Wireless margins are high everywhere because networks are mostly fixed costs: T-Mobile US reported 48% of service revenue in 2024 and Telstra's mobile EBITDA was about 47% of mobile income in FY2024. On the same service-revenue basis, Rogers reported 65% for its wireless business in the second quarter of 2024. Groceries: Agriculture and Agri-Food Canada, as cited by the Competition Bureau. Airlines: Competition Bureau Canada, market study, June 2025.
 ;; [^12]: Carolyn Rogers, ["Productivity's competitive edge"](https://www.bankofcanada.ca/2025/10/productivitys-competitive-edge/), Bank of Canada, Toronto, October 9, 2025. She also notes that bank concentration supports financial stability.
 ;; [^13]: Statistics Canada, [Table 36-10-0108-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010801) and [36-10-0104-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401); US Bureau of Economic Analysis National Income and Product Accounts (via FRED: PRFI, PNFI, GDP).
 ;; [^14]: Statistics Canada, [Tables 36-10-0639-01 and 36-10-0640-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610063901), credit measures.
