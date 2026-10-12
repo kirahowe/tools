@@ -54,3 +54,4 @@ format:
       dark: darkly
     toc: true
     reference-location: margin
+    include-after-body: footnotes.html

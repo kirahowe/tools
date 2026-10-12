@@ -3,3 +3,5 @@ site/
 .cpcache/
 .clj-kondo/.cache/
 .lsp/
+review/out/
+review/urls.json

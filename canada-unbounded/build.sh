@@ -5,6 +5,6 @@ set -euo pipefail
 cd "$(dirname "$0")"
 notebooks=(src/economics/wealth_distribution/canada/c*_*.clj)
 clojure -M:clay -A:markdown "${notebooks[@]}"
-cp _quarto.yml index.qmd site/
+cp _quarto.yml index.qmd footnotes.html site/
 quarto render site
 echo "Site built in site/_site"

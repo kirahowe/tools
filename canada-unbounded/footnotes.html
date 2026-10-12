@@ -1,0 +1,62 @@
+<!-- Footnotes sit in the margin on wide screens; on narrow screens, where Quarto
+     would otherwise drop them inline, they are collected into a Notes section
+     at the end of the post. -->
+<style>
+#end-notes { display: none; }
+@media (max-width: 991.98px) {
+  .column-margin > div[id^="fn"] { display: none !important; }
+  .column-margin:not(:has(> :not([id^="fn"]))) { display: none !important; }
+  #end-notes { display: block; margin-top: 3rem; border-top: 1px solid rgba(127,127,127,.3); padding-top: 1rem; font-size: .9em; }
+  #end-notes ol { padding-left: 1.4em; }
+  #end-notes li { margin-bottom: .6em; }
+  #end-notes li p { margin: 0; display: inline; }
+  #end-notes .fn-back { margin-left: .35em; text-decoration: none; }
+}
+</style>
+<script>
+(function () {
+  var narrow = window.matchMedia("(max-width: 991.98px)");
+  var notes = Array.prototype.slice.call(document.querySelectorAll('.column-margin > div[id^="fn"]'))
+    .filter(function (el) { return /^fn\d+$/.test(el.id); });
+  if (!notes.length) return;
+  notes.sort(function (a, b) { return +a.id.slice(2) - +b.id.slice(2); });
+  var section = document.createElement("section");
+  section.id = "end-notes";
+  section.setAttribute("aria-label", "Notes");
+  var h = document.createElement("h2");
+  h.textContent = "Notes";
+  section.appendChild(h);
+  var ol = document.createElement("ol");
+  notes.forEach(function (el) {
+    var n = el.id.slice(2);
+    var li = document.createElement("li");
+    li.id = "end-fn" + n;
+    li.value = +n;
+    var body = el.cloneNode(true);
+    body.removeAttribute("id");
+    var sup = body.querySelector("p > sup:first-child");
+    if (sup) {
+      var next = sup.nextSibling;
+      if (next && next.nodeType === 3) next.textContent = next.textContent.replace(/^ /, "");
+      sup.remove();
+    }
+    while (body.firstChild) li.appendChild(body.firstChild);
+    var back = document.createElement("a");
+    back.href = "#fnref" + n;
+    back.className = "fn-back";
+    back.setAttribute("aria-label", "Back to text");
+    back.textContent = "↩";
+    (li.lastElementChild || li).appendChild(back);
+    ol.appendChild(li);
+  });
+  section.appendChild(ol);
+  var main = document.querySelector("main") || document.body;
+  main.appendChild(section);
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a.footnote-ref');
+    if (!a || !narrow.matches) return;
+    var target = document.getElementById("end-" + a.hash.slice(1));
+    if (target) { e.preventDefault(); e.stopPropagation(); target.scrollIntoView({ block: "center" }); }
+  }, true);
+})();
+</script>
