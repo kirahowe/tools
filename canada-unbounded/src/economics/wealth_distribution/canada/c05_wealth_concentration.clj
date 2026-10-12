@@ -319,6 +319,14 @@
 ;; In 2010, Forbes counted 24 Canadian billionaires, worth a combined US\$75B.
 ;; In 2026 it counted 82, worth US\$457B.[^5]
 ;; Fifty of them live in Canada, holding US\$202B.
+;; The other 32 matter for tax.
+;; Canada, like most countries, taxes people on where they live, not on their citizenship:
+;; a Canadian who moves abroad stops paying Canadian tax on future income and gains.
+;; The United States is the main exception. It taxes its citizens on their worldwide income wherever they live,
+;; and charges an exit tax on large fortunes when someone gives up citizenship.[^12]
+;; Canada does have a departure tax, which treats emigrants as having sold their assets on the way out,
+;; but it reaches only the gains built up before they leave (see [Wealth Tax](c02_wealth_tax.html)).
+;; For a Canadian billionaire, moving away ends Canadian tax on everything that comes after; for an American, it doesn't.
 ;; Over the same period, total Canadian household net worth grew about 2.7-fold in Canadian dollars,
 ;; while the wealth of billionaires living in Canada grew roughly fourfold.
 
@@ -418,3 +426,4 @@
 ;; [^9]: Statistics Canada, [Table 36-10-0580-01, National Balance Sheet Accounts](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610058001), second quarter 2026; adults from [Table 17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501).
 ;; [^10]: René Morissette and Xuelin Zhang, ["Revisiting wealth inequality"](https://www150.statcan.gc.ca/pub/75-001-x/11206/9543-eng.htm), Statistics Canada, *Perspectives on Labour and Income* 7(12), December 2006, [Table 1](https://www150.statcan.gc.ca/pub/75-001-x/11206/4096770-eng.htm). The 1984 survey was re-weighted to be consistent with the 1999 and 2005 surveys. Data in `data/mz2006_wealth_decile_shares_1984_2005.csv`.
 ;; [^11]: Statistics Canada, Survey of Financial Security, [Table 11-10-0075-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007501), net worth by decile, 1999–2023; shares computed from decile totals. Data in `data/sfs_networth_by_decile.csv`.
+;; [^12]: Canada Revenue Agency, [Determining your residency status](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/determining-your-residency-status.html); *Income Tax Act*, [section 128.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html) (deemed disposition on emigration); US Internal Revenue Service, [U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad) and [Expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax).
