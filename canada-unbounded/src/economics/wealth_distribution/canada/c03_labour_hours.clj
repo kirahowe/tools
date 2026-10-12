@@ -141,10 +141,17 @@
 
 ^{:kindly/options {:id :fig-living-wage
                    :caption "Living wage (2025 estimates by local living wage networks) and the provincial minimum wage in force in October 2026. Living wages are methodology-based estimates, not official statistics.[^8]"}}
-(c/dumbbell
- (for [r (tc/rows living-wage :as-maps)] {:label (:city r) :from (:minimum r) :to (:living r)})
- {:from-name "Minimum wage" :to-name "Living wage" :from-color c/w :to-color c/o :include-zero true
-  :title "Living Wage vs Minimum Wage" :x-label "C$ per hour" :fmt #(format "$%.2f" (double %))})
+(-> living-wage
+    (tc/pivot->longer [:minimum :living] {:target-columns :measure :value-column-name :wage})
+    (tc/update-columns {:measure (partial map {:minimum "Minimum wage" :living "Living wage"})})
+    (tc/map-columns :t [:wage] #(format "$%.2f" (double %)))
+    (pj/lay-bar :city :wage {:color :measure :position :dodge})
+    (pj/lay-text {:text :t :position :dodge :group :measure :align-x :center :align-y :bottom :offset-y -4})
+    (pj/scale :color {:values [c/w c/o]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "Living Wage vs Minimum Wage"
+                 :x-label "" :y-label "C$ per hour"
+                 :color-label "" :legend-position :bottom}))
 
 ;; In each of these four cities, the minimum wage falls \$9 to \$12 an hour short of the living wage.
 ;; Calgary's minimum wage hasn't moved since 2018.
