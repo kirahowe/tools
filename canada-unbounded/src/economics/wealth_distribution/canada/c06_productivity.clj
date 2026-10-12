@@ -33,15 +33,22 @@
 (-> gdp-gap
     (pj/lay-line :year :can_pct_of_usa {:color c/red :size 2})
     (pj/scale :y {:domain [60 100]})
-    (pj/options {:title "Canadian Living Standards, % of US"
+    (pj/options {:title "Canada's GDP per Person, % of US"
                  :x-label "Year" :y-label "GDP per person, Canada as % of US"}))
 
 ;; In 2025, Canada's GDP per person was 74% of America's: about US\$23,000 (roughly C\$27,000) less per person.[^2]
 ;; Canadians don't work less: they actually work slightly more hours per person than Americans.
 ;; The entire gap is output per hour.
+
 ;; Statistics Canada puts it plainly: Canada's productivity relative to the US "has fallen 26% since the late 1990s,"
 ;; and "the relative decline in productivity growth is the principal reason why Canada is falling behind,
 ;; regardless of how economic performance is measured."[^3]
+;;
+;; GDP per person is the usual shorthand for "living standards," but it measures average output, not what a typical family takes home.
+;; Because US incomes are so unequal, the typical Canadian household does much better than the averages suggest:
+;; the median Canadian household's disposable income was about 97% of the American median in 2023, up from 85% in 2000, though down from slightly above 100% in 2014.[^25]
+;; Public health insurance and cheaper tuition aren't counted in that figure, and they probably favour Canadians further.
+;; So the gap is not yet a gap in what typical families have; it is a gap in the economy's capacity to keep raising it.
 
 ;; The Bank of Canada estimates that if Canadian productivity had grown like the rest of the G7's since 2000,
 ;; GDP would be "about 9% higher, which translates to almost \$7,000 per person."[^4]
@@ -428,7 +435,7 @@
 
 ;; ## Conclusion
 
-;; Canada's living standards have fallen from about 85% of America's to about 74% in a generation,
+;; Canada's GDP per person has fallen from about 85% of America's to about 74% in a generation,
 ;; and almost all of the gap is productivity.
 ;; The gap is mostly about efficiency, not equipment, and the evidence points to weak competition, protected incumbents,
 ;; firms that don't scale, too little R&D, and capital that flows into land.
@@ -461,3 +468,4 @@
 ;; [^22]: Ajay Agrawal, Carlos Rosell and Timothy Simcoe, ["Tax Credits and Small Firm R&D Spending"](https://doi.org/10.1257/pol.20140467), *American Economic Journal: Economic Policy* 12(2), 2020.
 ;; [^23]: Statistics Canada, [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301) (adjusted market and after-tax income by decile, 2024 dollars: lowest decile \$2,200 and \$18,500 in 2019, \$1,700 and \$23,000 in 2020) and [Table 11-10-0135-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501) (Market Basket Measure, 2018 base). Unemployment: OECD harmonised rates, as in note 20. Kurzarbeit: Germany's Federal Employment Agency (Bundesagentur für Arbeit), short-time work in April 2020.
 ;; [^24]: Ethan Lewis, ["Immigration, Skill Mix, and Capital Skill Complementarity"](https://doi.org/10.1093/qje/qjr011), *Quarterly Journal of Economics* 126(2), 2011; Michael Clemens, Ethan Lewis and Hannah Postel, ["Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion"](https://doi.org/10.1257/aer.20170765), *American Economic Review* 108(6), 2018; Pierre Brochu, Till Gross and Christopher Worswick, "Temporary foreign workers and firms: Theory and Canadian evidence," *Canadian Journal of Economics* 53(3), 2020 ([summary](https://crdcn.ca/?p=26136)); Employment and Social Development Canada, [Question Period Note on TFW program tightening measures](https://search.open.canada.ca/qpnotes/record/esdc-edsc,EWDOL_Dec2024_017), December 2024 (changes effective September 26, 2024, with exceptions for health care, construction and food processing).
+;; [^25]: CIBC Economics (Avery Shenfeld and Helen Lao), ["How bad is it? Productivity and prosperity in Canada versus the US"](https://thoughtleadership.cibc.com/article/how-bad-is-it-productivity-and-prosperity-in-canada-versus-the-us/), July 21, 2026, Chart 5 (OECD and World Bank data). See also Centre for the Study of Living Standards, [Report 2019-01](https://bac-lac.wayback.archive-it.org/web/20200116072917/http://www.csls.ca/reports/csls2019-01.pdf), which found Canada slightly ahead on median household income in 2016 despite GDP per person about 18% lower.

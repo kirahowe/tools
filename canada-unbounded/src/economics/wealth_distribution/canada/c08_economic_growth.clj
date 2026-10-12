@@ -36,7 +36,7 @@
 (-> maddison
     (pj/lay-line :year :ratio {:color c/red :size 2})
     (pj/scale :y {:domain [50 100]})
-    (pj/options {:title "Canadian Living Standards, % of US"
+    (pj/options {:title "Canada's GDP per Person, % of US"
                  :x-label "Year" :y-label "Canada's GDP per person, % of US"}))
 
 (defn cagr [ds k from to]
