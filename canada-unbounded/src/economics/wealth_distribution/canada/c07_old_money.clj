@@ -20,8 +20,9 @@
 ;; Canada began as a set of colonies where the Crown owned the land, and handed it out.
 ;; How it handed it out shaped who got rich.
 
-;; **New France** was organised under the seigneurial system: large grants to seigneurs, who collected rents from the
-;; farmers (*censitaires*) who worked them.
+;; **New France** was organised under the seigneurial system.
+;; The French Crown granted large tracts of land (*seigneuries*) to landlords called *seigneurs*, usually nobles, military officers, merchants or religious orders.
+;; The seigneur divided the land among tenant farmers (*censitaires*), who owed him annual dues and fees, such as a share of the grain they had ground at his mill, for as long as they held it.
 ;; Quebec abolished the system in 1854, but the remaining rents were only finally bought out in the 20th century,
 ;; and the buy-out was repaid through a local property tax until 1981.[^1]
 
