@@ -1,0 +1,589 @@
+year,geo,median_after_tax_income,uom,pct_of_canada,statcan_status,source
+1976,Alberta,66300.0,2024 constant dollars,103.0,,StatCan Table 11-10-0190-01
+1976,Atlantic provinces,54400.0,2024 constant dollars,84.5,,StatCan Table 11-10-0190-01
+1976,British Columbia,68800.0,2024 constant dollars,106.8,,StatCan Table 11-10-0190-01
+1976,Canada,64400.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1976,Manitoba,57000.0,2024 constant dollars,88.5,,StatCan Table 11-10-0190-01
+1976,New Brunswick,55800.0,2024 constant dollars,86.6,,StatCan Table 11-10-0190-01
+1976,Newfoundland and Labrador,54900.0,2024 constant dollars,85.2,,StatCan Table 11-10-0190-01
+1976,Nova Scotia,52400.0,2024 constant dollars,81.4,,StatCan Table 11-10-0190-01
+1976,Ontario,68600.0,2024 constant dollars,106.5,,StatCan Table 11-10-0190-01
+1976,Prince Edward Island,51200.0,2024 constant dollars,79.5,,StatCan Table 11-10-0190-01
+1976,Quebec,62400.0,2024 constant dollars,96.9,,StatCan Table 11-10-0190-01
+1976,Saskatchewan,58200.0,2024 constant dollars,90.4,,StatCan Table 11-10-0190-01
+1977,Alberta,68600.0,2024 constant dollars,104.7,,StatCan Table 11-10-0190-01
+1977,Atlantic provinces,55900.0,2024 constant dollars,85.3,,StatCan Table 11-10-0190-01
+1977,British Columbia,68000.0,2024 constant dollars,103.8,,StatCan Table 11-10-0190-01
+1977,Canada,65500.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1977,Manitoba,58800.0,2024 constant dollars,89.8,,StatCan Table 11-10-0190-01
+1977,New Brunswick,56100.0,2024 constant dollars,85.6,,StatCan Table 11-10-0190-01
+1977,Newfoundland and Labrador,58200.0,2024 constant dollars,88.9,,StatCan Table 11-10-0190-01
+1977,Nova Scotia,54300.0,2024 constant dollars,82.9,,StatCan Table 11-10-0190-01
+1977,Ontario,69700.0,2024 constant dollars,106.4,,StatCan Table 11-10-0190-01
+1977,Prince Edward Island,55500.0,2024 constant dollars,84.7,,StatCan Table 11-10-0190-01
+1977,Quebec,63200.0,2024 constant dollars,96.5,,StatCan Table 11-10-0190-01
+1977,Saskatchewan,57400.0,2024 constant dollars,87.6,,StatCan Table 11-10-0190-01
+1978,Alberta,69800.0,2024 constant dollars,106.6,,StatCan Table 11-10-0190-01
+1978,Atlantic provinces,56900.0,2024 constant dollars,86.9,,StatCan Table 11-10-0190-01
+1978,British Columbia,66500.0,2024 constant dollars,101.5,,StatCan Table 11-10-0190-01
+1978,Canada,65500.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1978,Manitoba,58500.0,2024 constant dollars,89.3,,StatCan Table 11-10-0190-01
+1978,New Brunswick,59600.0,2024 constant dollars,91.0,,StatCan Table 11-10-0190-01
+1978,Newfoundland and Labrador,57800.0,2024 constant dollars,88.2,,StatCan Table 11-10-0190-01
+1978,Nova Scotia,55500.0,2024 constant dollars,84.7,,StatCan Table 11-10-0190-01
+1978,Ontario,69800.0,2024 constant dollars,106.6,,StatCan Table 11-10-0190-01
+1978,Prince Edward Island,47400.0,2024 constant dollars,72.4,,StatCan Table 11-10-0190-01
+1978,Quebec,63300.0,2024 constant dollars,96.6,,StatCan Table 11-10-0190-01
+1978,Saskatchewan,57200.0,2024 constant dollars,87.3,,StatCan Table 11-10-0190-01
+1979,Alberta,67600.0,2024 constant dollars,104.3,,StatCan Table 11-10-0190-01
+1979,Atlantic provinces,56700.0,2024 constant dollars,87.5,,StatCan Table 11-10-0190-01
+1979,British Columbia,66900.0,2024 constant dollars,103.2,,StatCan Table 11-10-0190-01
+1979,Canada,64800.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1979,Manitoba,59500.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1979,New Brunswick,57600.0,2024 constant dollars,88.9,,StatCan Table 11-10-0190-01
+1979,Newfoundland and Labrador,58000.0,2024 constant dollars,89.5,,StatCan Table 11-10-0190-01
+1979,Nova Scotia,55700.0,2024 constant dollars,86.0,,StatCan Table 11-10-0190-01
+1979,Ontario,69200.0,2024 constant dollars,106.8,,StatCan Table 11-10-0190-01
+1979,Prince Edward Island,53600.0,2024 constant dollars,82.7,,StatCan Table 11-10-0190-01
+1979,Quebec,61700.0,2024 constant dollars,95.2,,StatCan Table 11-10-0190-01
+1979,Saskatchewan,57900.0,2024 constant dollars,89.4,,StatCan Table 11-10-0190-01
+1980,Alberta,71500.0,2024 constant dollars,107.7,,StatCan Table 11-10-0190-01
+1980,Atlantic provinces,56200.0,2024 constant dollars,84.6,,StatCan Table 11-10-0190-01
+1980,British Columbia,71300.0,2024 constant dollars,107.4,,StatCan Table 11-10-0190-01
+1980,Canada,66400.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1980,Manitoba,59200.0,2024 constant dollars,89.2,,StatCan Table 11-10-0190-01
+1980,New Brunswick,56300.0,2024 constant dollars,84.8,,StatCan Table 11-10-0190-01
+1980,Newfoundland and Labrador,54300.0,2024 constant dollars,81.8,,StatCan Table 11-10-0190-01
+1980,Nova Scotia,57000.0,2024 constant dollars,85.8,,StatCan Table 11-10-0190-01
+1980,Ontario,71300.0,2024 constant dollars,107.4,,StatCan Table 11-10-0190-01
+1980,Prince Edward Island,53300.0,2024 constant dollars,80.3,,StatCan Table 11-10-0190-01
+1980,Quebec,61200.0,2024 constant dollars,92.2,,StatCan Table 11-10-0190-01
+1980,Saskatchewan,62600.0,2024 constant dollars,94.3,,StatCan Table 11-10-0190-01
+1981,Alberta,71400.0,2024 constant dollars,110.4,,StatCan Table 11-10-0190-01
+1981,Atlantic provinces,55600.0,2024 constant dollars,85.9,,StatCan Table 11-10-0190-01
+1981,British Columbia,68900.0,2024 constant dollars,106.5,,StatCan Table 11-10-0190-01
+1981,Canada,64700.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1981,Manitoba,57400.0,2024 constant dollars,88.7,,StatCan Table 11-10-0190-01
+1981,New Brunswick,54100.0,2024 constant dollars,83.6,,StatCan Table 11-10-0190-01
+1981,Newfoundland and Labrador,61100.0,2024 constant dollars,94.4,,StatCan Table 11-10-0190-01
+1981,Nova Scotia,55100.0,2024 constant dollars,85.2,,StatCan Table 11-10-0190-01
+1981,Ontario,69800.0,2024 constant dollars,107.9,,StatCan Table 11-10-0190-01
+1981,Prince Edward Island,52000.0,2024 constant dollars,80.4,,StatCan Table 11-10-0190-01
+1981,Quebec,59400.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1981,Saskatchewan,59800.0,2024 constant dollars,92.4,,StatCan Table 11-10-0190-01
+1982,Alberta,71000.0,2024 constant dollars,113.2,,StatCan Table 11-10-0190-01
+1982,Atlantic provinces,54400.0,2024 constant dollars,86.8,,StatCan Table 11-10-0190-01
+1982,British Columbia,65300.0,2024 constant dollars,104.1,,StatCan Table 11-10-0190-01
+1982,Canada,62700.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1982,Manitoba,57400.0,2024 constant dollars,91.5,,StatCan Table 11-10-0190-01
+1982,New Brunswick,52900.0,2024 constant dollars,84.4,,StatCan Table 11-10-0190-01
+1982,Newfoundland and Labrador,58200.0,2024 constant dollars,92.8,,StatCan Table 11-10-0190-01
+1982,Nova Scotia,53800.0,2024 constant dollars,85.8,,StatCan Table 11-10-0190-01
+1982,Ontario,66000.0,2024 constant dollars,105.3,,StatCan Table 11-10-0190-01
+1982,Prince Edward Island,52600.0,2024 constant dollars,83.9,,StatCan Table 11-10-0190-01
+1982,Quebec,58400.0,2024 constant dollars,93.1,,StatCan Table 11-10-0190-01
+1982,Saskatchewan,58700.0,2024 constant dollars,93.6,,StatCan Table 11-10-0190-01
+1983,Alberta,65800.0,2024 constant dollars,109.1,,StatCan Table 11-10-0190-01
+1983,Atlantic provinces,50600.0,2024 constant dollars,83.9,,StatCan Table 11-10-0190-01
+1983,British Columbia,62100.0,2024 constant dollars,103.0,,StatCan Table 11-10-0190-01
+1983,Canada,60300.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1983,Manitoba,58500.0,2024 constant dollars,97.0,,StatCan Table 11-10-0190-01
+1983,New Brunswick,48900.0,2024 constant dollars,81.1,,StatCan Table 11-10-0190-01
+1983,Newfoundland and Labrador,51600.0,2024 constant dollars,85.6,,StatCan Table 11-10-0190-01
+1983,Nova Scotia,51100.0,2024 constant dollars,84.7,,StatCan Table 11-10-0190-01
+1983,Ontario,63600.0,2024 constant dollars,105.5,,StatCan Table 11-10-0190-01
+1983,Prince Edward Island,52800.0,2024 constant dollars,87.6,,StatCan Table 11-10-0190-01
+1983,Quebec,57400.0,2024 constant dollars,95.2,,StatCan Table 11-10-0190-01
+1983,Saskatchewan,55300.0,2024 constant dollars,91.7,,StatCan Table 11-10-0190-01
+1984,Alberta,63300.0,2024 constant dollars,103.8,,StatCan Table 11-10-0190-01
+1984,Atlantic provinces,54100.0,2024 constant dollars,88.7,,StatCan Table 11-10-0190-01
+1984,British Columbia,59200.0,2024 constant dollars,97.0,,StatCan Table 11-10-0190-01
+1984,Canada,61000.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1984,Manitoba,58500.0,2024 constant dollars,95.9,,StatCan Table 11-10-0190-01
+1984,New Brunswick,54200.0,2024 constant dollars,88.9,,StatCan Table 11-10-0190-01
+1984,Newfoundland and Labrador,53200.0,2024 constant dollars,87.2,,StatCan Table 11-10-0190-01
+1984,Nova Scotia,54700.0,2024 constant dollars,89.7,,StatCan Table 11-10-0190-01
+1984,Ontario,65800.0,2024 constant dollars,107.9,,StatCan Table 11-10-0190-01
+1984,Prince Edward Island,52600.0,2024 constant dollars,86.2,,StatCan Table 11-10-0190-01
+1984,Quebec,57200.0,2024 constant dollars,93.8,,StatCan Table 11-10-0190-01
+1984,Saskatchewan,55800.0,2024 constant dollars,91.5,,StatCan Table 11-10-0190-01
+1985,Alberta,64600.0,2024 constant dollars,105.7,,StatCan Table 11-10-0190-01
+1985,Atlantic provinces,53800.0,2024 constant dollars,88.1,,StatCan Table 11-10-0190-01
+1985,British Columbia,58300.0,2024 constant dollars,95.4,,StatCan Table 11-10-0190-01
+1985,Canada,61100.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1985,Manitoba,57600.0,2024 constant dollars,94.3,,StatCan Table 11-10-0190-01
+1985,New Brunswick,54400.0,2024 constant dollars,89.0,,StatCan Table 11-10-0190-01
+1985,Newfoundland and Labrador,52700.0,2024 constant dollars,86.3,,StatCan Table 11-10-0190-01
+1985,Nova Scotia,54300.0,2024 constant dollars,88.9,,StatCan Table 11-10-0190-01
+1985,Ontario,67200.0,2024 constant dollars,110.0,,StatCan Table 11-10-0190-01
+1985,Prince Edward Island,52500.0,2024 constant dollars,85.9,,StatCan Table 11-10-0190-01
+1985,Quebec,57500.0,2024 constant dollars,94.1,,StatCan Table 11-10-0190-01
+1985,Saskatchewan,56800.0,2024 constant dollars,93.0,,StatCan Table 11-10-0190-01
+1986,Alberta,63700.0,2024 constant dollars,104.8,,StatCan Table 11-10-0190-01
+1986,Atlantic provinces,53700.0,2024 constant dollars,88.3,,StatCan Table 11-10-0190-01
+1986,British Columbia,61300.0,2024 constant dollars,100.8,,StatCan Table 11-10-0190-01
+1986,Canada,60800.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1986,Manitoba,58000.0,2024 constant dollars,95.4,,StatCan Table 11-10-0190-01
+1986,New Brunswick,56000.0,2024 constant dollars,92.1,,StatCan Table 11-10-0190-01
+1986,Newfoundland and Labrador,50900.0,2024 constant dollars,83.7,,StatCan Table 11-10-0190-01
+1986,Nova Scotia,53500.0,2024 constant dollars,88.0,,StatCan Table 11-10-0190-01
+1986,Ontario,67700.0,2024 constant dollars,111.3,,StatCan Table 11-10-0190-01
+1986,Prince Edward Island,52900.0,2024 constant dollars,87.0,,StatCan Table 11-10-0190-01
+1986,Quebec,55800.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1986,Saskatchewan,52900.0,2024 constant dollars,87.0,,StatCan Table 11-10-0190-01
+1987,Alberta,61200.0,2024 constant dollars,101.2,,StatCan Table 11-10-0190-01
+1987,Atlantic provinces,54500.0,2024 constant dollars,90.1,,StatCan Table 11-10-0190-01
+1987,British Columbia,57300.0,2024 constant dollars,94.7,,StatCan Table 11-10-0190-01
+1987,Canada,60500.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1987,Manitoba,55200.0,2024 constant dollars,91.2,,StatCan Table 11-10-0190-01
+1987,New Brunswick,52400.0,2024 constant dollars,86.6,,StatCan Table 11-10-0190-01
+1987,Newfoundland and Labrador,54900.0,2024 constant dollars,90.7,,StatCan Table 11-10-0190-01
+1987,Nova Scotia,56700.0,2024 constant dollars,93.7,,StatCan Table 11-10-0190-01
+1987,Ontario,68900.0,2024 constant dollars,113.9,,StatCan Table 11-10-0190-01
+1987,Prince Edward Island,54600.0,2024 constant dollars,90.2,,StatCan Table 11-10-0190-01
+1987,Quebec,55300.0,2024 constant dollars,91.4,,StatCan Table 11-10-0190-01
+1987,Saskatchewan,54300.0,2024 constant dollars,89.8,,StatCan Table 11-10-0190-01
+1988,Alberta,64100.0,2024 constant dollars,103.2,,StatCan Table 11-10-0190-01
+1988,Atlantic provinces,55900.0,2024 constant dollars,90.0,,StatCan Table 11-10-0190-01
+1988,British Columbia,61900.0,2024 constant dollars,99.7,,StatCan Table 11-10-0190-01
+1988,Canada,62100.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1988,Manitoba,56600.0,2024 constant dollars,91.1,,StatCan Table 11-10-0190-01
+1988,New Brunswick,54800.0,2024 constant dollars,88.2,,StatCan Table 11-10-0190-01
+1988,Newfoundland and Labrador,57000.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1988,Nova Scotia,56800.0,2024 constant dollars,91.5,,StatCan Table 11-10-0190-01
+1988,Ontario,70200.0,2024 constant dollars,113.0,,StatCan Table 11-10-0190-01
+1988,Prince Edward Island,52700.0,2024 constant dollars,84.9,,StatCan Table 11-10-0190-01
+1988,Quebec,55700.0,2024 constant dollars,89.7,,StatCan Table 11-10-0190-01
+1988,Saskatchewan,52800.0,2024 constant dollars,85.0,,StatCan Table 11-10-0190-01
+1989,Alberta,64000.0,2024 constant dollars,101.4,,StatCan Table 11-10-0190-01
+1989,Atlantic provinces,56500.0,2024 constant dollars,89.5,,StatCan Table 11-10-0190-01
+1989,British Columbia,62800.0,2024 constant dollars,99.5,,StatCan Table 11-10-0190-01
+1989,Canada,63100.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1989,Manitoba,57300.0,2024 constant dollars,90.8,,StatCan Table 11-10-0190-01
+1989,New Brunswick,55700.0,2024 constant dollars,88.3,,StatCan Table 11-10-0190-01
+1989,Newfoundland and Labrador,58800.0,2024 constant dollars,93.2,,StatCan Table 11-10-0190-01
+1989,Nova Scotia,56200.0,2024 constant dollars,89.1,,StatCan Table 11-10-0190-01
+1989,Ontario,71000.0,2024 constant dollars,112.5,,StatCan Table 11-10-0190-01
+1989,Prince Edward Island,52200.0,2024 constant dollars,82.7,,StatCan Table 11-10-0190-01
+1989,Quebec,57800.0,2024 constant dollars,91.6,,StatCan Table 11-10-0190-01
+1989,Saskatchewan,54700.0,2024 constant dollars,86.7,,StatCan Table 11-10-0190-01
+1990,Alberta,62200.0,2024 constant dollars,102.8,,StatCan Table 11-10-0190-01
+1990,Atlantic provinces,54700.0,2024 constant dollars,90.4,,StatCan Table 11-10-0190-01
+1990,British Columbia,60200.0,2024 constant dollars,99.5,,StatCan Table 11-10-0190-01
+1990,Canada,60500.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1990,Manitoba,56900.0,2024 constant dollars,94.0,,StatCan Table 11-10-0190-01
+1990,New Brunswick,54200.0,2024 constant dollars,89.6,,StatCan Table 11-10-0190-01
+1990,Newfoundland and Labrador,55200.0,2024 constant dollars,91.2,,StatCan Table 11-10-0190-01
+1990,Nova Scotia,55000.0,2024 constant dollars,90.9,,StatCan Table 11-10-0190-01
+1990,Ontario,68000.0,2024 constant dollars,112.4,,StatCan Table 11-10-0190-01
+1990,Prince Edward Island,53400.0,2024 constant dollars,88.3,,StatCan Table 11-10-0190-01
+1990,Quebec,53900.0,2024 constant dollars,89.1,,StatCan Table 11-10-0190-01
+1990,Saskatchewan,52400.0,2024 constant dollars,86.6,,StatCan Table 11-10-0190-01
+1991,Alberta,59600.0,2024 constant dollars,104.0,,StatCan Table 11-10-0190-01
+1991,Atlantic provinces,52600.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1991,British Columbia,57800.0,2024 constant dollars,100.9,,StatCan Table 11-10-0190-01
+1991,Canada,57300.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1991,Manitoba,52600.0,2024 constant dollars,91.8,,StatCan Table 11-10-0190-01
+1991,New Brunswick,51400.0,2024 constant dollars,89.7,,StatCan Table 11-10-0190-01
+1991,Newfoundland and Labrador,53300.0,2024 constant dollars,93.0,,StatCan Table 11-10-0190-01
+1991,Nova Scotia,53200.0,2024 constant dollars,92.8,,StatCan Table 11-10-0190-01
+1991,Ontario,63700.0,2024 constant dollars,111.2,,StatCan Table 11-10-0190-01
+1991,Prince Edward Island,51800.0,2024 constant dollars,90.4,,StatCan Table 11-10-0190-01
+1991,Quebec,52100.0,2024 constant dollars,90.9,,StatCan Table 11-10-0190-01
+1991,Saskatchewan,50800.0,2024 constant dollars,88.7,,StatCan Table 11-10-0190-01
+1992,Alberta,56800.0,2024 constant dollars,98.3,,StatCan Table 11-10-0190-01
+1992,Atlantic provinces,52800.0,2024 constant dollars,91.3,,StatCan Table 11-10-0190-01
+1992,British Columbia,58400.0,2024 constant dollars,101.0,,StatCan Table 11-10-0190-01
+1992,Canada,57800.0,2024 constant dollars,100.0,,StatCan Table 11-10-0190-01
+1992,Manitoba,52400.0,2024 constant dollars,90.7,,StatCan Table 11-10-0190-01
+1992,New Brunswick,52000.0,2024 constant dollars,90.0,,StatCan Table 11-10-0190-01
+1992,Newfoundland and Labrador,53100.0,2024 constant dollars,91.9,,StatCan Table 11-10-0190-01
+1992,Nova Scotia,53100.0,2024 constant dollars,91.9,,StatCan Table 11-10-0190-01
+1992,Ontario,64700.0,2024 constant dollars,111.9,,StatCan Table 11-10-0190-01
+1992,Prince Edward Island,53600.0,2024 constant dollars,92.7,,StatCan Table 11-10-0190-01
+1992,Quebec,52200.0,2024 constant dollars,90.3,,StatCan Table 11-10-0190-01
+1992,Saskatchewan,51900.0,2024 constant dollars,89.8,,StatCan Table 11-10-0190-01
+1993,Alberta,59900.0,2024 constant dollars,106.2,A,StatCan Table 11-10-0190-01
+1993,Atlantic provinces,52400.0,2024 constant dollars,92.9,A,StatCan Table 11-10-0190-01
+1993,British Columbia,58200.0,2024 constant dollars,103.2,A,StatCan Table 11-10-0190-01
+1993,Canada,56400.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1993,Manitoba,52600.0,2024 constant dollars,93.3,A,StatCan Table 11-10-0190-01
+1993,New Brunswick,52100.0,2024 constant dollars,92.4,A,StatCan Table 11-10-0190-01
+1993,Newfoundland and Labrador,52000.0,2024 constant dollars,92.2,A,StatCan Table 11-10-0190-01
+1993,Nova Scotia,52600.0,2024 constant dollars,93.3,A,StatCan Table 11-10-0190-01
+1993,Ontario,62600.0,2024 constant dollars,111.0,A,StatCan Table 11-10-0190-01
+1993,Prince Edward Island,52300.0,2024 constant dollars,92.7,A,StatCan Table 11-10-0190-01
+1993,Quebec,50100.0,2024 constant dollars,88.8,A,StatCan Table 11-10-0190-01
+1993,Saskatchewan,49500.0,2024 constant dollars,87.8,A,StatCan Table 11-10-0190-01
+1994,Alberta,60500.0,2024 constant dollars,106.5,A,StatCan Table 11-10-0190-01
+1994,Atlantic provinces,51800.0,2024 constant dollars,91.2,A,StatCan Table 11-10-0190-01
+1994,British Columbia,57700.0,2024 constant dollars,101.6,A,StatCan Table 11-10-0190-01
+1994,Canada,56800.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1994,Manitoba,53600.0,2024 constant dollars,94.4,A,StatCan Table 11-10-0190-01
+1994,New Brunswick,52400.0,2024 constant dollars,92.3,A,StatCan Table 11-10-0190-01
+1994,Newfoundland and Labrador,51800.0,2024 constant dollars,91.2,A,StatCan Table 11-10-0190-01
+1994,Nova Scotia,51200.0,2024 constant dollars,90.1,A,StatCan Table 11-10-0190-01
+1994,Ontario,62600.0,2024 constant dollars,110.2,A,StatCan Table 11-10-0190-01
+1994,Prince Edward Island,52200.0,2024 constant dollars,91.9,A,StatCan Table 11-10-0190-01
+1994,Quebec,51100.0,2024 constant dollars,90.0,A,StatCan Table 11-10-0190-01
+1994,Saskatchewan,50800.0,2024 constant dollars,89.4,A,StatCan Table 11-10-0190-01
+1995,Alberta,59100.0,2024 constant dollars,104.2,A,StatCan Table 11-10-0190-01
+1995,Atlantic provinces,51200.0,2024 constant dollars,90.3,A,StatCan Table 11-10-0190-01
+1995,British Columbia,57400.0,2024 constant dollars,101.2,A,StatCan Table 11-10-0190-01
+1995,Canada,56700.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1995,Manitoba,53500.0,2024 constant dollars,94.4,A,StatCan Table 11-10-0190-01
+1995,New Brunswick,51200.0,2024 constant dollars,90.3,A,StatCan Table 11-10-0190-01
+1995,Newfoundland and Labrador,51400.0,2024 constant dollars,90.7,A,StatCan Table 11-10-0190-01
+1995,Nova Scotia,50500.0,2024 constant dollars,89.1,A,StatCan Table 11-10-0190-01
+1995,Ontario,62800.0,2024 constant dollars,110.8,A,StatCan Table 11-10-0190-01
+1995,Prince Edward Island,54000.0,2024 constant dollars,95.2,B,StatCan Table 11-10-0190-01
+1995,Quebec,50700.0,2024 constant dollars,89.4,A,StatCan Table 11-10-0190-01
+1995,Saskatchewan,50600.0,2024 constant dollars,89.2,A,StatCan Table 11-10-0190-01
+1996,Alberta,58400.0,2024 constant dollars,104.7,A,StatCan Table 11-10-0190-01
+1996,Atlantic provinces,50200.0,2024 constant dollars,90.0,A,StatCan Table 11-10-0190-01
+1996,British Columbia,56200.0,2024 constant dollars,100.7,A,StatCan Table 11-10-0190-01
+1996,Canada,55800.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1996,Manitoba,53400.0,2024 constant dollars,95.7,A,StatCan Table 11-10-0190-01
+1996,New Brunswick,50200.0,2024 constant dollars,90.0,A,StatCan Table 11-10-0190-01
+1996,Newfoundland and Labrador,49800.0,2024 constant dollars,89.2,A,StatCan Table 11-10-0190-01
+1996,Nova Scotia,49700.0,2024 constant dollars,89.1,A,StatCan Table 11-10-0190-01
+1996,Ontario,62000.0,2024 constant dollars,111.1,A,StatCan Table 11-10-0190-01
+1996,Prince Edward Island,52700.0,2024 constant dollars,94.4,A,StatCan Table 11-10-0190-01
+1996,Quebec,49500.0,2024 constant dollars,88.7,A,StatCan Table 11-10-0190-01
+1996,Saskatchewan,50700.0,2024 constant dollars,90.9,A,StatCan Table 11-10-0190-01
+1997,Alberta,61500.0,2024 constant dollars,110.6,A,StatCan Table 11-10-0190-01
+1997,Atlantic provinces,49700.0,2024 constant dollars,89.4,A,StatCan Table 11-10-0190-01
+1997,British Columbia,55800.0,2024 constant dollars,100.4,A,StatCan Table 11-10-0190-01
+1997,Canada,55600.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1997,Manitoba,53100.0,2024 constant dollars,95.5,A,StatCan Table 11-10-0190-01
+1997,New Brunswick,50100.0,2024 constant dollars,90.1,A,StatCan Table 11-10-0190-01
+1997,Newfoundland and Labrador,48500.0,2024 constant dollars,87.2,A,StatCan Table 11-10-0190-01
+1997,Nova Scotia,49500.0,2024 constant dollars,89.0,A,StatCan Table 11-10-0190-01
+1997,Ontario,62500.0,2024 constant dollars,112.4,A,StatCan Table 11-10-0190-01
+1997,Prince Edward Island,50900.0,2024 constant dollars,91.5,A,StatCan Table 11-10-0190-01
+1997,Quebec,48700.0,2024 constant dollars,87.6,A,StatCan Table 11-10-0190-01
+1997,Saskatchewan,51000.0,2024 constant dollars,91.7,A,StatCan Table 11-10-0190-01
+1998,Alberta,61600.0,2024 constant dollars,107.9,A,StatCan Table 11-10-0190-01
+1998,Atlantic provinces,50300.0,2024 constant dollars,88.1,A,StatCan Table 11-10-0190-01
+1998,British Columbia,57400.0,2024 constant dollars,100.5,A,StatCan Table 11-10-0190-01
+1998,Canada,57100.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1998,Manitoba,54600.0,2024 constant dollars,95.6,B,StatCan Table 11-10-0190-01
+1998,New Brunswick,51100.0,2024 constant dollars,89.5,A,StatCan Table 11-10-0190-01
+1998,Newfoundland and Labrador,48900.0,2024 constant dollars,85.6,B,StatCan Table 11-10-0190-01
+1998,Nova Scotia,50300.0,2024 constant dollars,88.1,A,StatCan Table 11-10-0190-01
+1998,Ontario,65000.0,2024 constant dollars,113.8,A,StatCan Table 11-10-0190-01
+1998,Prince Edward Island,50200.0,2024 constant dollars,87.9,B,StatCan Table 11-10-0190-01
+1998,Quebec,49600.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+1998,Saskatchewan,51000.0,2024 constant dollars,89.3,A,StatCan Table 11-10-0190-01
+1999,Alberta,63800.0,2024 constant dollars,107.0,A,StatCan Table 11-10-0190-01
+1999,Atlantic provinces,52500.0,2024 constant dollars,88.1,A,StatCan Table 11-10-0190-01
+1999,British Columbia,58300.0,2024 constant dollars,97.8,A,StatCan Table 11-10-0190-01
+1999,Canada,59600.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+1999,Manitoba,56300.0,2024 constant dollars,94.5,A,StatCan Table 11-10-0190-01
+1999,New Brunswick,53200.0,2024 constant dollars,89.3,A,StatCan Table 11-10-0190-01
+1999,Newfoundland and Labrador,51100.0,2024 constant dollars,85.7,B,StatCan Table 11-10-0190-01
+1999,Nova Scotia,53500.0,2024 constant dollars,89.8,A,StatCan Table 11-10-0190-01
+1999,Ontario,68300.0,2024 constant dollars,114.6,A,StatCan Table 11-10-0190-01
+1999,Prince Edward Island,49600.0,2024 constant dollars,83.2,B,StatCan Table 11-10-0190-01
+1999,Quebec,52500.0,2024 constant dollars,88.1,A,StatCan Table 11-10-0190-01
+1999,Saskatchewan,53200.0,2024 constant dollars,89.3,A,StatCan Table 11-10-0190-01
+2000,Alberta,65600.0,2024 constant dollars,109.3,A,StatCan Table 11-10-0190-01
+2000,Atlantic provinces,52900.0,2024 constant dollars,88.2,A,StatCan Table 11-10-0190-01
+2000,British Columbia,57100.0,2024 constant dollars,95.2,A,StatCan Table 11-10-0190-01
+2000,Canada,60000.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2000,Manitoba,55900.0,2024 constant dollars,93.2,A,StatCan Table 11-10-0190-01
+2000,New Brunswick,54200.0,2024 constant dollars,90.3,A,StatCan Table 11-10-0190-01
+2000,Newfoundland and Labrador,51200.0,2024 constant dollars,85.3,B,StatCan Table 11-10-0190-01
+2000,Nova Scotia,53000.0,2024 constant dollars,88.3,A,StatCan Table 11-10-0190-01
+2000,Ontario,69000.0,2024 constant dollars,115.0,A,StatCan Table 11-10-0190-01
+2000,Prince Edward Island,51400.0,2024 constant dollars,85.7,B,StatCan Table 11-10-0190-01
+2000,Quebec,52500.0,2024 constant dollars,87.5,A,StatCan Table 11-10-0190-01
+2000,Saskatchewan,53500.0,2024 constant dollars,89.2,A,StatCan Table 11-10-0190-01
+2001,Alberta,70800.0,2024 constant dollars,113.5,A,StatCan Table 11-10-0190-01
+2001,Atlantic provinces,53900.0,2024 constant dollars,86.4,A,StatCan Table 11-10-0190-01
+2001,British Columbia,59800.0,2024 constant dollars,95.8,A,StatCan Table 11-10-0190-01
+2001,Canada,62400.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2001,Manitoba,57400.0,2024 constant dollars,92.0,A,StatCan Table 11-10-0190-01
+2001,New Brunswick,55400.0,2024 constant dollars,88.8,A,StatCan Table 11-10-0190-01
+2001,Newfoundland and Labrador,52000.0,2024 constant dollars,83.3,B,StatCan Table 11-10-0190-01
+2001,Nova Scotia,54700.0,2024 constant dollars,87.7,A,StatCan Table 11-10-0190-01
+2001,Ontario,70400.0,2024 constant dollars,112.8,A,StatCan Table 11-10-0190-01
+2001,Prince Edward Island,50900.0,2024 constant dollars,81.6,B,StatCan Table 11-10-0190-01
+2001,Quebec,54500.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2001,Saskatchewan,56900.0,2024 constant dollars,91.2,A,StatCan Table 11-10-0190-01
+2002,Alberta,69700.0,2024 constant dollars,111.7,A,StatCan Table 11-10-0190-01
+2002,Atlantic provinces,53400.0,2024 constant dollars,85.6,A,StatCan Table 11-10-0190-01
+2002,British Columbia,59800.0,2024 constant dollars,95.8,A,StatCan Table 11-10-0190-01
+2002,Canada,62400.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2002,Manitoba,57100.0,2024 constant dollars,91.5,A,StatCan Table 11-10-0190-01
+2002,New Brunswick,54000.0,2024 constant dollars,86.5,B,StatCan Table 11-10-0190-01
+2002,Newfoundland and Labrador,52400.0,2024 constant dollars,84.0,B,StatCan Table 11-10-0190-01
+2002,Nova Scotia,53700.0,2024 constant dollars,86.1,A,StatCan Table 11-10-0190-01
+2002,Ontario,70300.0,2024 constant dollars,112.7,A,StatCan Table 11-10-0190-01
+2002,Prince Edward Island,52700.0,2024 constant dollars,84.5,B,StatCan Table 11-10-0190-01
+2002,Quebec,54900.0,2024 constant dollars,88.0,A,StatCan Table 11-10-0190-01
+2002,Saskatchewan,55900.0,2024 constant dollars,89.6,A,StatCan Table 11-10-0190-01
+2003,Alberta,68500.0,2024 constant dollars,110.0,A,StatCan Table 11-10-0190-01
+2003,Atlantic provinces,53300.0,2024 constant dollars,85.6,A,StatCan Table 11-10-0190-01
+2003,British Columbia,58900.0,2024 constant dollars,94.5,B,StatCan Table 11-10-0190-01
+2003,Canada,62300.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2003,Manitoba,57600.0,2024 constant dollars,92.5,A,StatCan Table 11-10-0190-01
+2003,New Brunswick,54500.0,2024 constant dollars,87.5,A,StatCan Table 11-10-0190-01
+2003,Newfoundland and Labrador,53200.0,2024 constant dollars,85.4,B,StatCan Table 11-10-0190-01
+2003,Nova Scotia,52800.0,2024 constant dollars,84.8,A,StatCan Table 11-10-0190-01
+2003,Ontario,70900.0,2024 constant dollars,113.8,A,StatCan Table 11-10-0190-01
+2003,Prince Edward Island,55000.0,2024 constant dollars,88.3,B,StatCan Table 11-10-0190-01
+2003,Quebec,55200.0,2024 constant dollars,88.6,A,StatCan Table 11-10-0190-01
+2003,Saskatchewan,56000.0,2024 constant dollars,89.9,A,StatCan Table 11-10-0190-01
+2004,Alberta,71100.0,2024 constant dollars,113.4,A,StatCan Table 11-10-0190-01
+2004,Atlantic provinces,54700.0,2024 constant dollars,87.2,A,StatCan Table 11-10-0190-01
+2004,British Columbia,61600.0,2024 constant dollars,98.2,A,StatCan Table 11-10-0190-01
+2004,Canada,62700.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2004,Manitoba,59000.0,2024 constant dollars,94.1,B,StatCan Table 11-10-0190-01
+2004,New Brunswick,54700.0,2024 constant dollars,87.2,A,StatCan Table 11-10-0190-01
+2004,Newfoundland and Labrador,52900.0,2024 constant dollars,84.4,A,StatCan Table 11-10-0190-01
+2004,Nova Scotia,55300.0,2024 constant dollars,88.2,A,StatCan Table 11-10-0190-01
+2004,Ontario,71100.0,2024 constant dollars,113.4,A,StatCan Table 11-10-0190-01
+2004,Prince Edward Island,56900.0,2024 constant dollars,90.7,B,StatCan Table 11-10-0190-01
+2004,Quebec,56000.0,2024 constant dollars,89.3,A,StatCan Table 11-10-0190-01
+2004,Saskatchewan,57400.0,2024 constant dollars,91.5,A,StatCan Table 11-10-0190-01
+2005,Alberta,74300.0,2024 constant dollars,115.7,A,StatCan Table 11-10-0190-01
+2005,Atlantic provinces,55900.0,2024 constant dollars,87.1,A,StatCan Table 11-10-0190-01
+2005,British Columbia,63500.0,2024 constant dollars,98.9,A,StatCan Table 11-10-0190-01
+2005,Canada,64200.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2005,Manitoba,60200.0,2024 constant dollars,93.8,B,StatCan Table 11-10-0190-01
+2005,New Brunswick,55800.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+2005,Newfoundland and Labrador,53800.0,2024 constant dollars,83.8,B,StatCan Table 11-10-0190-01
+2005,Nova Scotia,56400.0,2024 constant dollars,87.9,A,StatCan Table 11-10-0190-01
+2005,Ontario,72400.0,2024 constant dollars,112.8,A,StatCan Table 11-10-0190-01
+2005,Prince Edward Island,57700.0,2024 constant dollars,89.9,A,StatCan Table 11-10-0190-01
+2005,Quebec,55900.0,2024 constant dollars,87.1,A,StatCan Table 11-10-0190-01
+2005,Saskatchewan,57100.0,2024 constant dollars,88.9,B,StatCan Table 11-10-0190-01
+2006,Alberta,80000.0,2024 constant dollars,122.0,A,StatCan Table 11-10-0190-01
+2006,Atlantic provinces,57000.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+2006,British Columbia,64900.0,2024 constant dollars,98.9,A,StatCan Table 11-10-0190-01
+2006,Canada,65600.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2006,Manitoba,59800.0,2024 constant dollars,91.2,A,StatCan Table 11-10-0190-01
+2006,New Brunswick,55300.0,2024 constant dollars,84.3,A,StatCan Table 11-10-0190-01
+2006,Newfoundland and Labrador,57300.0,2024 constant dollars,87.3,B,StatCan Table 11-10-0190-01
+2006,Nova Scotia,57300.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2006,Ontario,72500.0,2024 constant dollars,110.5,A,StatCan Table 11-10-0190-01
+2006,Prince Edward Island,59600.0,2024 constant dollars,90.9,B,StatCan Table 11-10-0190-01
+2006,Quebec,57600.0,2024 constant dollars,87.8,A,StatCan Table 11-10-0190-01
+2006,Saskatchewan,60200.0,2024 constant dollars,91.8,A,StatCan Table 11-10-0190-01
+2007,Alberta,81800.0,2024 constant dollars,121.5,A,StatCan Table 11-10-0190-01
+2007,Atlantic provinces,59200.0,2024 constant dollars,88.0,A,StatCan Table 11-10-0190-01
+2007,British Columbia,67900.0,2024 constant dollars,100.9,A,StatCan Table 11-10-0190-01
+2007,Canada,67300.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2007,Manitoba,64100.0,2024 constant dollars,95.2,A,StatCan Table 11-10-0190-01
+2007,New Brunswick,58800.0,2024 constant dollars,87.4,A,StatCan Table 11-10-0190-01
+2007,Newfoundland and Labrador,59800.0,2024 constant dollars,88.9,A,StatCan Table 11-10-0190-01
+2007,Nova Scotia,58800.0,2024 constant dollars,87.4,B,StatCan Table 11-10-0190-01
+2007,Ontario,73600.0,2024 constant dollars,109.4,A,StatCan Table 11-10-0190-01
+2007,Prince Edward Island,60900.0,2024 constant dollars,90.5,B,StatCan Table 11-10-0190-01
+2007,Quebec,58500.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+2007,Saskatchewan,62600.0,2024 constant dollars,93.0,A,StatCan Table 11-10-0190-01
+2008,Alberta,85000.0,2024 constant dollars,124.5,A,StatCan Table 11-10-0190-01
+2008,Atlantic provinces,59300.0,2024 constant dollars,86.8,A,StatCan Table 11-10-0190-01
+2008,British Columbia,71000.0,2024 constant dollars,104.0,A,StatCan Table 11-10-0190-01
+2008,Canada,68300.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2008,Manitoba,67400.0,2024 constant dollars,98.7,B,StatCan Table 11-10-0190-01
+2008,New Brunswick,59200.0,2024 constant dollars,86.7,A,StatCan Table 11-10-0190-01
+2008,Newfoundland and Labrador,60000.0,2024 constant dollars,87.8,A,StatCan Table 11-10-0190-01
+2008,Nova Scotia,58300.0,2024 constant dollars,85.4,B,StatCan Table 11-10-0190-01
+2008,Ontario,74600.0,2024 constant dollars,109.2,A,StatCan Table 11-10-0190-01
+2008,Prince Edward Island,61900.0,2024 constant dollars,90.6,B,StatCan Table 11-10-0190-01
+2008,Quebec,57800.0,2024 constant dollars,84.6,A,StatCan Table 11-10-0190-01
+2008,Saskatchewan,66400.0,2024 constant dollars,97.2,A,StatCan Table 11-10-0190-01
+2009,Alberta,84400.0,2024 constant dollars,123.9,A,StatCan Table 11-10-0190-01
+2009,Atlantic provinces,60400.0,2024 constant dollars,88.7,A,StatCan Table 11-10-0190-01
+2009,British Columbia,67300.0,2024 constant dollars,98.8,B,StatCan Table 11-10-0190-01
+2009,Canada,68100.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2009,Manitoba,66700.0,2024 constant dollars,97.9,B,StatCan Table 11-10-0190-01
+2009,New Brunswick,60100.0,2024 constant dollars,88.3,A,StatCan Table 11-10-0190-01
+2009,Newfoundland and Labrador,62800.0,2024 constant dollars,92.2,A,StatCan Table 11-10-0190-01
+2009,Nova Scotia,59300.0,2024 constant dollars,87.1,B,StatCan Table 11-10-0190-01
+2009,Ontario,73600.0,2024 constant dollars,108.1,A,StatCan Table 11-10-0190-01
+2009,Prince Edward Island,63300.0,2024 constant dollars,93.0,B,StatCan Table 11-10-0190-01
+2009,Quebec,60000.0,2024 constant dollars,88.1,A,StatCan Table 11-10-0190-01
+2009,Saskatchewan,68800.0,2024 constant dollars,101.0,A,StatCan Table 11-10-0190-01
+2010,Alberta,82800.0,2024 constant dollars,122.7,A,StatCan Table 11-10-0190-01
+2010,Atlantic provinces,60400.0,2024 constant dollars,89.5,A,StatCan Table 11-10-0190-01
+2010,British Columbia,66500.0,2024 constant dollars,98.5,B,StatCan Table 11-10-0190-01
+2010,Canada,67500.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2010,Manitoba,66100.0,2024 constant dollars,97.9,A,StatCan Table 11-10-0190-01
+2010,New Brunswick,60400.0,2024 constant dollars,89.5,B,StatCan Table 11-10-0190-01
+2010,Newfoundland and Labrador,61500.0,2024 constant dollars,91.1,B,StatCan Table 11-10-0190-01
+2010,Nova Scotia,59700.0,2024 constant dollars,88.4,A,StatCan Table 11-10-0190-01
+2010,Ontario,73100.0,2024 constant dollars,108.3,A,StatCan Table 11-10-0190-01
+2010,Prince Edward Island,62000.0,2024 constant dollars,91.9,B,StatCan Table 11-10-0190-01
+2010,Quebec,59300.0,2024 constant dollars,87.9,A,StatCan Table 11-10-0190-01
+2010,Saskatchewan,68800.0,2024 constant dollars,101.9,A,StatCan Table 11-10-0190-01
+2011,Alberta,82700.0,2024 constant dollars,123.1,B,StatCan Table 11-10-0190-01
+2011,Atlantic provinces,61400.0,2024 constant dollars,91.4,A,StatCan Table 11-10-0190-01
+2011,British Columbia,65300.0,2024 constant dollars,97.2,A,StatCan Table 11-10-0190-01
+2011,Canada,67200.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2011,Manitoba,66200.0,2024 constant dollars,98.5,A,StatCan Table 11-10-0190-01
+2011,New Brunswick,60600.0,2024 constant dollars,90.2,A,StatCan Table 11-10-0190-01
+2011,Newfoundland and Labrador,62000.0,2024 constant dollars,92.3,B,StatCan Table 11-10-0190-01
+2011,Nova Scotia,61700.0,2024 constant dollars,91.8,A,StatCan Table 11-10-0190-01
+2011,Ontario,72300.0,2024 constant dollars,107.6,A,StatCan Table 11-10-0190-01
+2011,Prince Edward Island,61300.0,2024 constant dollars,91.2,B,StatCan Table 11-10-0190-01
+2011,Quebec,59300.0,2024 constant dollars,88.2,A,StatCan Table 11-10-0190-01
+2011,Saskatchewan,70800.0,2024 constant dollars,105.4,A,StatCan Table 11-10-0190-01
+2012,Alberta,88400.0,2024 constant dollars,127.9,A,StatCan Table 11-10-0190-01
+2012,Atlantic provinces,62400.0,2024 constant dollars,90.3,A,StatCan Table 11-10-0190-01
+2012,British Columbia,67200.0,2024 constant dollars,97.3,A,StatCan Table 11-10-0190-01
+2012,Canada,69100.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2012,Manitoba,67100.0,2024 constant dollars,97.1,A,StatCan Table 11-10-0190-01
+2012,New Brunswick,61300.0,2024 constant dollars,88.7,B,StatCan Table 11-10-0190-01
+2012,Newfoundland and Labrador,64500.0,2024 constant dollars,93.3,B,StatCan Table 11-10-0190-01
+2012,Nova Scotia,61000.0,2024 constant dollars,88.3,B,StatCan Table 11-10-0190-01
+2012,Ontario,72700.0,2024 constant dollars,105.2,A,StatCan Table 11-10-0190-01
+2012,Prince Edward Island,63400.0,2024 constant dollars,91.8,B,StatCan Table 11-10-0190-01
+2012,Quebec,61000.0,2024 constant dollars,88.3,A,StatCan Table 11-10-0190-01
+2012,Saskatchewan,73500.0,2024 constant dollars,106.4,A,StatCan Table 11-10-0190-01
+2013,Alberta,90500.0,2024 constant dollars,130.2,A,StatCan Table 11-10-0190-01
+2013,Atlantic provinces,63500.0,2024 constant dollars,91.4,A,StatCan Table 11-10-0190-01
+2013,British Columbia,70000.0,2024 constant dollars,100.7,B,StatCan Table 11-10-0190-01
+2013,Canada,69500.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2013,Manitoba,70100.0,2024 constant dollars,100.9,A,StatCan Table 11-10-0190-01
+2013,New Brunswick,61400.0,2024 constant dollars,88.3,A,StatCan Table 11-10-0190-01
+2013,Newfoundland and Labrador,70100.0,2024 constant dollars,100.9,B,StatCan Table 11-10-0190-01
+2013,Nova Scotia,62100.0,2024 constant dollars,89.4,A,StatCan Table 11-10-0190-01
+2013,Ontario,72000.0,2024 constant dollars,103.6,A,StatCan Table 11-10-0190-01
+2013,Prince Edward Island,63800.0,2024 constant dollars,91.8,B,StatCan Table 11-10-0190-01
+2013,Quebec,61700.0,2024 constant dollars,88.8,A,StatCan Table 11-10-0190-01
+2013,Saskatchewan,75400.0,2024 constant dollars,108.5,B,StatCan Table 11-10-0190-01
+2014,Alberta,92000.0,2024 constant dollars,129.4,A,StatCan Table 11-10-0190-01
+2014,Atlantic provinces,63900.0,2024 constant dollars,89.9,A,StatCan Table 11-10-0190-01
+2014,British Columbia,69400.0,2024 constant dollars,97.6,A,StatCan Table 11-10-0190-01
+2014,Canada,71100.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2014,Manitoba,70200.0,2024 constant dollars,98.7,A,StatCan Table 11-10-0190-01
+2014,New Brunswick,62100.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2014,Newfoundland and Labrador,71400.0,2024 constant dollars,100.4,B,StatCan Table 11-10-0190-01
+2014,Nova Scotia,62400.0,2024 constant dollars,87.8,A,StatCan Table 11-10-0190-01
+2014,Ontario,74200.0,2024 constant dollars,104.4,A,StatCan Table 11-10-0190-01
+2014,Prince Edward Island,63300.0,2024 constant dollars,89.0,B,StatCan Table 11-10-0190-01
+2014,Quebec,61300.0,2024 constant dollars,86.2,A,StatCan Table 11-10-0190-01
+2014,Saskatchewan,80500.0,2024 constant dollars,113.2,A,StatCan Table 11-10-0190-01
+2015,Alberta,93100.0,2024 constant dollars,131.3,A,StatCan Table 11-10-0190-01
+2015,Atlantic provinces,63700.0,2024 constant dollars,89.8,A,StatCan Table 11-10-0190-01
+2015,British Columbia,67600.0,2024 constant dollars,95.3,B,StatCan Table 11-10-0190-01
+2015,Canada,70900.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2015,Manitoba,70600.0,2024 constant dollars,99.6,A,StatCan Table 11-10-0190-01
+2015,New Brunswick,63800.0,2024 constant dollars,90.0,A,StatCan Table 11-10-0190-01
+2015,Newfoundland and Labrador,68500.0,2024 constant dollars,96.6,B,StatCan Table 11-10-0190-01
+2015,Nova Scotia,60700.0,2024 constant dollars,85.6,A,StatCan Table 11-10-0190-01
+2015,Ontario,74200.0,2024 constant dollars,104.7,A,StatCan Table 11-10-0190-01
+2015,Prince Edward Island,65300.0,2024 constant dollars,92.1,B,StatCan Table 11-10-0190-01
+2015,Quebec,61400.0,2024 constant dollars,86.6,A,StatCan Table 11-10-0190-01
+2015,Saskatchewan,77600.0,2024 constant dollars,109.4,A,StatCan Table 11-10-0190-01
+2016,Alberta,89100.0,2024 constant dollars,125.7,A,StatCan Table 11-10-0190-01
+2016,Atlantic provinces,63900.0,2024 constant dollars,90.1,A,StatCan Table 11-10-0190-01
+2016,British Columbia,68900.0,2024 constant dollars,97.2,B,StatCan Table 11-10-0190-01
+2016,Canada,70900.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2016,Manitoba,71400.0,2024 constant dollars,100.7,A,StatCan Table 11-10-0190-01
+2016,New Brunswick,62400.0,2024 constant dollars,88.0,B,StatCan Table 11-10-0190-01
+2016,Newfoundland and Labrador,70500.0,2024 constant dollars,99.4,B,StatCan Table 11-10-0190-01
+2016,Nova Scotia,62200.0,2024 constant dollars,87.7,B,StatCan Table 11-10-0190-01
+2016,Ontario,73700.0,2024 constant dollars,103.9,A,StatCan Table 11-10-0190-01
+2016,Prince Edward Island,62400.0,2024 constant dollars,88.0,B,StatCan Table 11-10-0190-01
+2016,Quebec,61900.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2016,Saskatchewan,77000.0,2024 constant dollars,108.6,A,StatCan Table 11-10-0190-01
+2017,Alberta,88500.0,2024 constant dollars,121.7,A,StatCan Table 11-10-0190-01
+2017,Atlantic provinces,63200.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+2017,British Columbia,74000.0,2024 constant dollars,101.8,A,StatCan Table 11-10-0190-01
+2017,Canada,72700.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2017,Manitoba,72600.0,2024 constant dollars,99.9,A,StatCan Table 11-10-0190-01
+2017,New Brunswick,63700.0,2024 constant dollars,87.6,A,StatCan Table 11-10-0190-01
+2017,Newfoundland and Labrador,66900.0,2024 constant dollars,92.0,B,StatCan Table 11-10-0190-01
+2017,Nova Scotia,61800.0,2024 constant dollars,85.0,A,StatCan Table 11-10-0190-01
+2017,Ontario,75700.0,2024 constant dollars,104.1,A,StatCan Table 11-10-0190-01
+2017,Prince Edward Island,61400.0,2024 constant dollars,84.5,A,StatCan Table 11-10-0190-01
+2017,Quebec,63200.0,2024 constant dollars,86.9,A,StatCan Table 11-10-0190-01
+2017,Saskatchewan,77100.0,2024 constant dollars,106.1,A,StatCan Table 11-10-0190-01
+2018,Alberta,87000.0,2024 constant dollars,119.7,A,StatCan Table 11-10-0190-01
+2018,Atlantic provinces,64100.0,2024 constant dollars,88.2,A,StatCan Table 11-10-0190-01
+2018,British Columbia,71200.0,2024 constant dollars,97.9,A,StatCan Table 11-10-0190-01
+2018,Canada,72700.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2018,Manitoba,71300.0,2024 constant dollars,98.1,A,StatCan Table 11-10-0190-01
+2018,New Brunswick,64200.0,2024 constant dollars,88.3,A,StatCan Table 11-10-0190-01
+2018,Newfoundland and Labrador,67900.0,2024 constant dollars,93.4,A,StatCan Table 11-10-0190-01
+2018,Nova Scotia,61600.0,2024 constant dollars,84.7,A,StatCan Table 11-10-0190-01
+2018,Ontario,77900.0,2024 constant dollars,107.2,A,StatCan Table 11-10-0190-01
+2018,Prince Edward Island,66600.0,2024 constant dollars,91.6,A,StatCan Table 11-10-0190-01
+2018,Quebec,63000.0,2024 constant dollars,86.7,A,StatCan Table 11-10-0190-01
+2018,Saskatchewan,74800.0,2024 constant dollars,102.9,A,StatCan Table 11-10-0190-01
+2019,Alberta,85300.0,2024 constant dollars,117.7,A,StatCan Table 11-10-0190-01
+2019,Atlantic provinces,63500.0,2024 constant dollars,87.6,A,StatCan Table 11-10-0190-01
+2019,British Columbia,72800.0,2024 constant dollars,100.4,A,StatCan Table 11-10-0190-01
+2019,Canada,72500.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2019,Manitoba,70600.0,2024 constant dollars,97.4,A,StatCan Table 11-10-0190-01
+2019,New Brunswick,64100.0,2024 constant dollars,88.4,A,StatCan Table 11-10-0190-01
+2019,Newfoundland and Labrador,63900.0,2024 constant dollars,88.1,B,StatCan Table 11-10-0190-01
+2019,Nova Scotia,62200.0,2024 constant dollars,85.8,A,StatCan Table 11-10-0190-01
+2019,Ontario,76100.0,2024 constant dollars,105.0,A,StatCan Table 11-10-0190-01
+2019,Prince Edward Island,67400.0,2024 constant dollars,93.0,B,StatCan Table 11-10-0190-01
+2019,Quebec,64700.0,2024 constant dollars,89.2,A,StatCan Table 11-10-0190-01
+2019,Saskatchewan,74400.0,2024 constant dollars,102.6,A,StatCan Table 11-10-0190-01
+2020,Alberta,88100.0,2024 constant dollars,113.8,A,StatCan Table 11-10-0190-01
+2020,Atlantic provinces,66600.0,2024 constant dollars,86.0,A,StatCan Table 11-10-0190-01
+2020,British Columbia,77800.0,2024 constant dollars,100.5,A,StatCan Table 11-10-0190-01
+2020,Canada,77400.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2020,Manitoba,73300.0,2024 constant dollars,94.7,A,StatCan Table 11-10-0190-01
+2020,New Brunswick,66400.0,2024 constant dollars,85.8,A,StatCan Table 11-10-0190-01
+2020,Newfoundland and Labrador,67300.0,2024 constant dollars,87.0,A,StatCan Table 11-10-0190-01
+2020,Nova Scotia,66300.0,2024 constant dollars,85.7,A,StatCan Table 11-10-0190-01
+2020,Ontario,81700.0,2024 constant dollars,105.6,A,StatCan Table 11-10-0190-01
+2020,Prince Edward Island,69200.0,2024 constant dollars,89.4,A,StatCan Table 11-10-0190-01
+2020,Quebec,69500.0,2024 constant dollars,89.8,A,StatCan Table 11-10-0190-01
+2020,Saskatchewan,78300.0,2024 constant dollars,101.2,A,StatCan Table 11-10-0190-01
+2021,Alberta,84400.0,2024 constant dollars,109.9,A,StatCan Table 11-10-0190-01
+2021,Atlantic provinces,67600.0,2024 constant dollars,88.0,A,StatCan Table 11-10-0190-01
+2021,British Columbia,77000.0,2024 constant dollars,100.3,A,StatCan Table 11-10-0190-01
+2021,Canada,76800.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2021,Manitoba,73000.0,2024 constant dollars,95.1,A,StatCan Table 11-10-0190-01
+2021,New Brunswick,68100.0,2024 constant dollars,88.7,A,StatCan Table 11-10-0190-01
+2021,Newfoundland and Labrador,68900.0,2024 constant dollars,89.7,B,StatCan Table 11-10-0190-01
+2021,Nova Scotia,66700.0,2024 constant dollars,86.8,A,StatCan Table 11-10-0190-01
+2021,Ontario,82000.0,2024 constant dollars,106.8,A,StatCan Table 11-10-0190-01
+2021,Prince Edward Island,70200.0,2024 constant dollars,91.4,B,StatCan Table 11-10-0190-01
+2021,Quebec,69400.0,2024 constant dollars,90.4,A,StatCan Table 11-10-0190-01
+2021,Saskatchewan,76200.0,2024 constant dollars,99.2,A,StatCan Table 11-10-0190-01
+2022,Alberta,84100.0,2024 constant dollars,113.8,A,StatCan Table 11-10-0190-01
+2022,Atlantic provinces,63000.0,2024 constant dollars,85.3,A,StatCan Table 11-10-0190-01
+2022,British Columbia,74100.0,2024 constant dollars,100.3,A,StatCan Table 11-10-0190-01
+2022,Canada,73900.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2022,Manitoba,70600.0,2024 constant dollars,95.5,A,StatCan Table 11-10-0190-01
+2022,New Brunswick,63300.0,2024 constant dollars,85.7,A,StatCan Table 11-10-0190-01
+2022,Newfoundland and Labrador,64500.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2022,Nova Scotia,61100.0,2024 constant dollars,82.7,A,StatCan Table 11-10-0190-01
+2022,Ontario,78100.0,2024 constant dollars,105.7,A,StatCan Table 11-10-0190-01
+2022,Prince Edward Island,65800.0,2024 constant dollars,89.0,A,StatCan Table 11-10-0190-01
+2022,Quebec,68200.0,2024 constant dollars,92.3,A,StatCan Table 11-10-0190-01
+2022,Saskatchewan,75900.0,2024 constant dollars,102.7,A,StatCan Table 11-10-0190-01
+2023,Alberta,86300.0,2024 constant dollars,114.9,A,StatCan Table 11-10-0190-01
+2023,Atlantic provinces,63900.0,2024 constant dollars,85.1,A,StatCan Table 11-10-0190-01
+2023,British Columbia,74700.0,2024 constant dollars,99.5,A,StatCan Table 11-10-0190-01
+2023,Canada,75100.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2023,Manitoba,71800.0,2024 constant dollars,95.6,A,StatCan Table 11-10-0190-01
+2023,New Brunswick,64700.0,2024 constant dollars,86.2,A,StatCan Table 11-10-0190-01
+2023,Newfoundland and Labrador,65500.0,2024 constant dollars,87.2,A,StatCan Table 11-10-0190-01
+2023,Nova Scotia,62700.0,2024 constant dollars,83.5,A,StatCan Table 11-10-0190-01
+2023,Ontario,79400.0,2024 constant dollars,105.7,A,StatCan Table 11-10-0190-01
+2023,Prince Edward Island,65700.0,2024 constant dollars,87.5,A,StatCan Table 11-10-0190-01
+2023,Quebec,68300.0,2024 constant dollars,90.9,A,StatCan Table 11-10-0190-01
+2023,Saskatchewan,74800.0,2024 constant dollars,99.6,A,StatCan Table 11-10-0190-01
+2024,Alberta,85300.0,2024 constant dollars,113.0,A,StatCan Table 11-10-0190-01
+2024,Atlantic provinces,65200.0,2024 constant dollars,86.4,A,StatCan Table 11-10-0190-01
+2024,British Columbia,75800.0,2024 constant dollars,100.4,A,StatCan Table 11-10-0190-01
+2024,Canada,75500.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01
+2024,Manitoba,72000.0,2024 constant dollars,95.4,A,StatCan Table 11-10-0190-01
+2024,New Brunswick,65100.0,2024 constant dollars,86.2,A,StatCan Table 11-10-0190-01
+2024,Newfoundland and Labrador,68000.0,2024 constant dollars,90.1,A,StatCan Table 11-10-0190-01
+2024,Nova Scotia,64200.0,2024 constant dollars,85.0,A,StatCan Table 11-10-0190-01
+2024,Ontario,79500.0,2024 constant dollars,105.3,A,StatCan Table 11-10-0190-01
+2024,Prince Edward Island,65900.0,2024 constant dollars,87.3,A,StatCan Table 11-10-0190-01
+2024,Quebec,68800.0,2024 constant dollars,91.1,A,StatCan Table 11-10-0190-01
+2024,Saskatchewan,75500.0,2024 constant dollars,100.0,A,StatCan Table 11-10-0190-01

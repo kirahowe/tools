@@ -342,6 +342,67 @@
 ;; and private holdings are hard to value from the outside.
 ;; The PBO supplements Forbes with the Canadian Business/Maclean's rich list for exactly this reason.[^4]
 
+;; ### Rich Families, Poor Provinces
+
+;; Several of these fortunes come from Canada's poorest region.
+;; On the Maclean's/Canadian Business rich list, the Irving family (about C\$15.8B) and the McCain family (about C\$13.9B)
+;; rank among the country's five richest families; both come from New Brunswick, and the Sobeys from Nova Scotia.[^16]
+;; New Brunswick now has the lowest median family wealth of any province.
+
+(def province-wealth
+  (let [rows (-> (c/data "mar_sfs_net_worth_by_province.csv")
+                 (tc/select-rows #(and (str/starts-with? (:statistic %) "Median")
+                                       (#{1999 2023} (:year %))
+                                       (not (#{"Canada" "Atlantic"} (:geo %)))))
+                 (tc/rows :as-maps))
+        abbr {"Newfoundland and Labrador" "N.L." "Prince Edward Island" "P.E.I." "Nova Scotia" "N.S." "New Brunswick" "N.B."
+              "Quebec" "Que." "Ontario" "Ont." "Manitoba" "Man." "Saskatchewan" "Sask." "Alberta" "Alta." "British Columbia" "B.C."}
+        order ["N.L." "P.E.I." "N.S." "N.B." "Que." "Ont." "Man." "Sask." "Alta." "B.C."]]
+    (-> (tc/dataset (for [r rows] {:province (abbr (:geo r)) :year (str (:year r)) :pct (:pct_of_canada r)
+                                   :t (format "%.0f" (double (:pct_of_canada r)))}))
+        (tc/order-by [#(.indexOf order (:province %)) :year]))))
+
+^{:kindly/options {:id :fig-province-wealth
+                   :caption "Median family net worth by province as a percentage of the Canadian median, 1999 and 2023 (2023 dollars). Statistics Canada, Survey of Financial Security, Table 11-10-0016-01. The territories are not covered.[^16]"}}
+(-> province-wealth
+    (pj/lay-bar :province :pct {:color :year :position :dodge})
+    (pj/lay-text {:text :t :position :dodge :group :year :align-x :center :align-y :bottom :offset-y -3})
+    (pj/lay-rule-h {:y-intercept 100 :stroke-dash :dashed})
+    (pj/scale :color {:values [c/w c/wd]})
+    (pj/options {:title "Median Wealth by Province, % of Canada"
+                 :x-label "" :y-label "% of Canadian median"
+                 :color-label "" :legend-position :bottom}))
+
+;; The median New Brunswick family was worth 78% of the Canadian median in 1999 and 55% in 2023.[^16]
+;; Much of that widening reflects house prices soaring in Ontario and British Columbia rather than anything happening in New Brunswick
+;; (see [Is Home Equity Really Wealth?](#is-home-equity-really-wealth) below), and the Maritimes have actually gained on the rest of Canada in GDP per person since the 1980s.
+;; The region has been Canada's poorest for about a century, and no credible study blames its families' fortunes for that.
+
+;; What the public record does show is how much one family's arrangements have cost the public over time.
+;; The Irving companies are headquartered in Saint John, but for decades much of the family's wealth sat beyond Canadian tax.
+;; K.C. Irving began registering holding companies in Bermuda in 1968 and moved there at the end of 1971, days before a New Brunswick estate tax took effect.
+;; A Bermuda trust holding much of his estate was worth about \$3 billion when Bermuda's courts approved splitting it in 2010.[^17]
+;; Successive New Brunswick governments of both parties also granted Irving-specific breaks:
+
+;; | Arrangement | Period | Value | Source |
+;; | :--- | :--- | :--- | :--- |
+;; | Provincial property tax exemption on Irving Oil's Canaport crude tank farm | 1981–2022 | \$674,929 in 2021; over \$20M over 42 years | NB Finance, via CBC |
+;; | Saint John tax cap on the Canaport LNG terminal (co-owned by Irving Oil) | 2005–2016 | About \$112M estimated over 25 years; repealed early | CBC |
+;; | Bermuda crude-buying subsidiary (IrvCal); deductions the government tried to disallow | 1971–1975 | \$141.9M; Irving Oil won in court (1991) | *Irving Oil Ltd. v. M.N.R.*, Federal Court of Appeal |
+;; | Bermuda trust holding K.C. Irving's estate | 1972–2010 | About \$3B when split in 2010 | Bermuda court filings, via CBC/Radio-Canada |
+;;
+;; : Documented tax arrangements benefiting the Irving family and companies {#tbl-irving}[^17]
+
+;; Through its forestry arm, J.D. Irving Ltd. also holds licences to about a third of New Brunswick's licensed Crown forest (1.05 million hectares),
+;; the only large licensee based in the province.[^18]
+;; New Brunswick's Auditor General found the province's Crown forest management ran deficits of \$5 million to \$21 million a year from 2009 to 2013,
+;; with silviculture prices set "with no competitive open market influence."[^18]
+
+;; All of this was legal, and the companies say they pay all the tax they owe in Canada and are among the region's largest employers.
+;; But it is a clear Canadian example of how old fortunes and public policy interact:
+;; elected governments, over decades, gave a few powerful families terms that let the region benefit less from their success than it might have.
+
+
 ;; ## The Long View
 
 ;; Over the long run, Canadian wealth concentration traces a U shape, like most rich countries.
@@ -489,3 +550,6 @@
 ;; [^13]: Forbes methodology for *America's Richest Families*: "Unlike our flagship Forbes 400 list of America's richest and our World Billionaires ranks, which focus on individual or nuclear-family wealth, America's Richest Families includes multigenerational families of all sizes," as quoted by [Philadelphia Magazine](https://phillymag.com/?p=2778321). See also [CFA Institute, "Generational Wealth: Does the Apple Fall Far from the Tree?"](https://rpc.cfainstitute.org/blogs/enterprising-investor/2024/generational-wealth-does-the-apple-fall-far-from-the-tree) (2024).
 ;; [^14]: Willem H. Buiter, ["Housing Wealth Isn't Wealth"](https://doi.org/10.3386/w14204), NBER Working Paper 14204, 2008; published in [*Economics: The Open-Access, Open-Assessment E-Journal*](https://doi.org/10.5018/economics-ejournal.ja.2010-22), 2010.
 ;; [^15]: Statistics Canada, [Table 36-10-0660-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066001), Distributions of household economic accounts, wealth, by characteristic, Canada, quarterly; real estate equity computed as real estate minus mortgage liabilities. Extract in `data/dhea_wealth_components_by_quintile_36-10-0660-01.csv`.
+;; [^16]: Maclean's/Canadian Business Rich List 2025 (published November 2025; Maclean's calls its figures conservative estimates), as summarized by [Narcity](https://www.narcity.com/richest-canadian-billionaires-2025); Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601). GDP per person by province: Statistics Canada Tables 36-10-0222-01 and 17-10-0005-01. Data in `data/mar_*.csv`.
+;; [^17]: CBC News/Radio-Canada, Jacques Poitras and Frédéric Zalac, ["Tax-free Irving trust in Bermuda was worth $3 billion"](https://www.cbc.ca/news/canada/new-brunswick/irving-trust-bermuda-1.6639780) (November 2022), and the series drawing on the Paradise Papers and Bermuda court filings; Robert Jones, ["Government won't say what killed tax exemption at Canaport oil tank farm"](https://www.cbc.ca/news/canada/new-brunswick/irving-oil-tank-farm-tax-1.6772467), CBC News, March 9, 2023, citing New Brunswick's tax expenditure report; CBC News on the [Canaport LNG tax cap](https://www.cbc.ca/news/canada/new-brunswick/canaport-lng-1.6646387) (2022); *Irving Oil Ltd. v. M.N.R.*, (1991) 126 N.R. 47 (F.C.A.), 91 DTC 5106. See also Jacques Poitras, *Irving vs. Irving* (Penguin, 2014). Details in `data/mar_irving_tax_concessions_documented.csv`.
+;; [^18]: Auditor General of New Brunswick, [2015 Report, Volume II, Chapter 3](https://www.agnb-vgnb.ca/uploads/volume_section_translations/147/file/Chap3e.pdf) (Crown forest management: financial results, Exhibit 3.3, silviculture pricing) and 2020 Report, Volume I, Chapter 4 (licensee areas, Exhibit 4.2). Details in `data/mar_nb_crown_licensees.csv` and `data/mar_nb_crown_forest_operations.csv`.

@@ -1,0 +1,145 @@
+year,geo,statistic,net_worth,uom,scalar,pct_of_canada,statcan_status,source
+1999,Alberta,Average value for those holding asset or debt,452200.0,2023 constant dollars,units,109.7,,StatCan Table 11-10-0016-01
+1999,Alberta,Median value for those holding asset or debt,201400.0,2023 constant dollars,units,113.9,,StatCan Table 11-10-0016-01
+1999,Atlantic,Average value for those holding asset or debt,284800.0,2023 constant dollars,units,69.1,,StatCan Table 11-10-0016-01
+1999,Atlantic,Median value for those holding asset or debt,140500.0,2023 constant dollars,units,79.5,,StatCan Table 11-10-0016-01
+1999,British Columbia,Average value for those holding asset or debt,483700.0,2023 constant dollars,units,117.3,,StatCan Table 11-10-0016-01
+1999,British Columbia,Median value for those holding asset or debt,194500.0,2023 constant dollars,units,110.0,,StatCan Table 11-10-0016-01
+1999,Canada,Average value for those holding asset or debt,412400.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+1999,Canada,Median value for those holding asset or debt,176800.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+1999,Manitoba,Average value for those holding asset or debt,352400.0,2023 constant dollars,units,85.5,,StatCan Table 11-10-0016-01
+1999,Manitoba,Median value for those holding asset or debt,175400.0,2023 constant dollars,units,99.2,,StatCan Table 11-10-0016-01
+1999,New Brunswick,Average value for those holding asset or debt,298200.0,2023 constant dollars,units,72.3,,StatCan Table 11-10-0016-01
+1999,New Brunswick,Median value for those holding asset or debt,137100.0,2023 constant dollars,units,77.5,,StatCan Table 11-10-0016-01
+1999,Newfoundland and Labrador,Average value for those holding asset or debt,211100.0,2023 constant dollars,units,51.2,,StatCan Table 11-10-0016-01
+1999,Newfoundland and Labrador,Median value for those holding asset or debt,109000.0,2023 constant dollars,units,61.7,,StatCan Table 11-10-0016-01
+1999,Nova Scotia,Average value for those holding asset or debt,305700.0,2023 constant dollars,units,74.1,,StatCan Table 11-10-0016-01
+1999,Nova Scotia,Median value for those holding asset or debt,162100.0,2023 constant dollars,units,91.7,,StatCan Table 11-10-0016-01
+1999,Ontario,Average value for those holding asset or debt,461000.0,2023 constant dollars,units,111.8,,StatCan Table 11-10-0016-01
+1999,Ontario,Median value for those holding asset or debt,216500.0,2023 constant dollars,units,122.5,,StatCan Table 11-10-0016-01
+1999,Prince Edward Island,Average value for those holding asset or debt,334300.0,2023 constant dollars,units,81.1,,StatCan Table 11-10-0016-01
+1999,Prince Edward Island,Median value for those holding asset or debt,139100.0,2023 constant dollars,units,78.7,,StatCan Table 11-10-0016-01
+1999,Quebec,Average value for those holding asset or debt,336700.0,2023 constant dollars,units,81.6,,StatCan Table 11-10-0016-01
+1999,Quebec,Median value for those holding asset or debt,129400.0,2023 constant dollars,units,73.2,,StatCan Table 11-10-0016-01
+1999,Saskatchewan,Average value for those holding asset or debt,406600.0,2023 constant dollars,units,98.6,,StatCan Table 11-10-0016-01
+1999,Saskatchewan,Median value for those holding asset or debt,217300.0,2023 constant dollars,units,122.9,,StatCan Table 11-10-0016-01
+2005,Alberta,Average value for those holding asset or debt,571800.0,2023 constant dollars,units,106.9,,StatCan Table 11-10-0016-01
+2005,Alberta,Median value for those holding asset or debt,185000.0,2023 constant dollars,units,84.9,,StatCan Table 11-10-0016-01
+2005,Atlantic,Average value for those holding asset or debt,352500.0,2023 constant dollars,units,65.9,,StatCan Table 11-10-0016-01
+2005,Atlantic,Median value for those holding asset or debt,163600.0,2023 constant dollars,units,75.1,,StatCan Table 11-10-0016-01
+2005,British Columbia,Average value for those holding asset or debt,731500.0,2023 constant dollars,units,136.8,,StatCan Table 11-10-0016-01
+2005,British Columbia,Median value for those holding asset or debt,293300.0,2023 constant dollars,units,134.7,,StatCan Table 11-10-0016-01
+2005,Canada,Average value for those holding asset or debt,534900.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2005,Canada,Median value for those holding asset or debt,217800.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2005,Manitoba,Average value for those holding asset or debt,428800.0,2023 constant dollars,units,80.2,,StatCan Table 11-10-0016-01
+2005,Manitoba,Median value for those holding asset or debt,257400.0,2023 constant dollars,units,118.2,,StatCan Table 11-10-0016-01
+2005,New Brunswick,Average value for those holding asset or debt,289300.0,2023 constant dollars,units,54.1,E,StatCan Table 11-10-0016-01
+2005,New Brunswick,Median value for those holding asset or debt,152100.0,2023 constant dollars,units,69.8,E,StatCan Table 11-10-0016-01
+2005,Newfoundland and Labrador,Average value for those holding asset or debt,284100.0,2023 constant dollars,units,53.1,,StatCan Table 11-10-0016-01
+2005,Newfoundland and Labrador,Median value for those holding asset or debt,136500.0,2023 constant dollars,units,62.7,E,StatCan Table 11-10-0016-01
+2005,Nova Scotia,Average value for those holding asset or debt,414400.0,2023 constant dollars,units,77.5,,StatCan Table 11-10-0016-01
+2005,Nova Scotia,Median value for those holding asset or debt,182900.0,2023 constant dollars,units,84.0,E,StatCan Table 11-10-0016-01
+2005,Ontario,Average value for those holding asset or debt,592400.0,2023 constant dollars,units,110.7,,StatCan Table 11-10-0016-01
+2005,Ontario,Median value for those holding asset or debt,282100.0,2023 constant dollars,units,129.5,,StatCan Table 11-10-0016-01
+2005,Prince Edward Island,Average value for those holding asset or debt,513000.0,2023 constant dollars,units,95.9,E,StatCan Table 11-10-0016-01
+2005,Prince Edward Island,Median value for those holding asset or debt,184900.0,2023 constant dollars,units,84.9,E,StatCan Table 11-10-0016-01
+2005,Quebec,Average value for those holding asset or debt,411100.0,2023 constant dollars,units,76.9,,StatCan Table 11-10-0016-01
+2005,Quebec,Median value for those holding asset or debt,152300.0,2023 constant dollars,units,69.9,,StatCan Table 11-10-0016-01
+2005,Saskatchewan,Average value for those holding asset or debt,422600.0,2023 constant dollars,units,79.0,,StatCan Table 11-10-0016-01
+2005,Saskatchewan,Median value for those holding asset or debt,229900.0,2023 constant dollars,units,105.6,E,StatCan Table 11-10-0016-01
+2012,Alberta,Average value for those holding asset or debt,794000.0,2023 constant dollars,units,111.0,,StatCan Table 11-10-0016-01
+2012,Alberta,Median value for those holding asset or debt,345300.0,2023 constant dollars,units,109.7,,StatCan Table 11-10-0016-01
+2012,Atlantic,Average value for those holding asset or debt,479700.0,2023 constant dollars,units,67.1,,StatCan Table 11-10-0016-01
+2012,Atlantic,Median value for those holding asset or debt,228000.0,2023 constant dollars,units,72.4,,StatCan Table 11-10-0016-01
+2012,British Columbia,Average value for those holding asset or debt,892300.0,2023 constant dollars,units,124.7,,StatCan Table 11-10-0016-01
+2012,British Columbia,Median value for those holding asset or debt,444100.0,2023 constant dollars,units,141.1,,StatCan Table 11-10-0016-01
+2012,Canada,Average value for those holding asset or debt,715300.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2012,Canada,Median value for those holding asset or debt,314700.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2012,Manitoba,Average value for those holding asset or debt,610900.0,2023 constant dollars,units,85.4,,StatCan Table 11-10-0016-01
+2012,Manitoba,Median value for those holding asset or debt,290200.0,2023 constant dollars,units,92.2,,StatCan Table 11-10-0016-01
+2012,New Brunswick,Average value for those holding asset or debt,481800.0,2023 constant dollars,units,67.4,,StatCan Table 11-10-0016-01
+2012,New Brunswick,Median value for those holding asset or debt,226000.0,2023 constant dollars,units,71.8,,StatCan Table 11-10-0016-01
+2012,Newfoundland and Labrador,Average value for those holding asset or debt,461700.0,2023 constant dollars,units,64.5,,StatCan Table 11-10-0016-01
+2012,Newfoundland and Labrador,Median value for those holding asset or debt,216700.0,2023 constant dollars,units,68.9,,StatCan Table 11-10-0016-01
+2012,Nova Scotia,Average value for those holding asset or debt,501300.0,2023 constant dollars,units,70.1,,StatCan Table 11-10-0016-01
+2012,Nova Scotia,Median value for those holding asset or debt,248200.0,2023 constant dollars,units,78.9,,StatCan Table 11-10-0016-01
+2012,Ontario,Average value for those holding asset or debt,743200.0,2023 constant dollars,units,103.9,,StatCan Table 11-10-0016-01
+2012,Ontario,Median value for those holding asset or debt,342900.0,2023 constant dollars,units,109.0,,StatCan Table 11-10-0016-01
+2012,Prince Edward Island,Average value for those holding asset or debt,385800.0,2023 constant dollars,units,53.9,,StatCan Table 11-10-0016-01
+2012,Prince Edward Island,Median value for those holding asset or debt,194100.0,2023 constant dollars,units,61.7,E,StatCan Table 11-10-0016-01
+2012,Quebec,Average value for those holding asset or debt,614000.0,2023 constant dollars,units,85.8,,StatCan Table 11-10-0016-01
+2012,Quebec,Median value for those holding asset or debt,255600.0,2023 constant dollars,units,81.2,,StatCan Table 11-10-0016-01
+2012,Saskatchewan,Average value for those holding asset or debt,783700.0,2023 constant dollars,units,109.6,,StatCan Table 11-10-0016-01
+2012,Saskatchewan,Median value for those holding asset or debt,350300.0,2023 constant dollars,units,111.3,,StatCan Table 11-10-0016-01
+2016,Alberta,Average value for those holding asset or debt,882800.0,2023 constant dollars,units,107.8,,StatCan Table 11-10-0016-01
+2016,Alberta,Median value for those holding asset or debt,355400.0,2023 constant dollars,units,98.4,,StatCan Table 11-10-0016-01
+2016,Atlantic,Average value for those holding asset or debt,537900.0,2023 constant dollars,units,65.7,,StatCan Table 11-10-0016-01
+2016,Atlantic,Median value for those holding asset or debt,239300.0,2023 constant dollars,units,66.3,,StatCan Table 11-10-0016-01
+2016,British Columbia,Average value for those holding asset or debt,1076800.0,2023 constant dollars,units,131.5,,StatCan Table 11-10-0016-01
+2016,British Columbia,Median value for those holding asset or debt,525400.0,2023 constant dollars,units,145.5,,StatCan Table 11-10-0016-01
+2016,Canada,Average value for those holding asset or debt,818800.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2016,Canada,Median value for those holding asset or debt,361000.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2016,Manitoba,Average value for those holding asset or debt,715600.0,2023 constant dollars,units,87.4,,StatCan Table 11-10-0016-01
+2016,Manitoba,Median value for those holding asset or debt,392500.0,2023 constant dollars,units,108.7,,StatCan Table 11-10-0016-01
+2016,New Brunswick,Average value for those holding asset or debt,496400.0,2023 constant dollars,units,60.6,,StatCan Table 11-10-0016-01
+2016,New Brunswick,Median value for those holding asset or debt,193800.0,2023 constant dollars,units,53.7,,StatCan Table 11-10-0016-01
+2016,Newfoundland and Labrador,Average value for those holding asset or debt,535100.0,2023 constant dollars,units,65.4,,StatCan Table 11-10-0016-01
+2016,Newfoundland and Labrador,Median value for those holding asset or debt,259100.0,2023 constant dollars,units,71.8,,StatCan Table 11-10-0016-01
+2016,Nova Scotia,Average value for those holding asset or debt,563400.0,2023 constant dollars,units,68.8,,StatCan Table 11-10-0016-01
+2016,Nova Scotia,Median value for those holding asset or debt,275600.0,2023 constant dollars,units,76.3,,StatCan Table 11-10-0016-01
+2016,Ontario,Average value for those holding asset or debt,902600.0,2023 constant dollars,units,110.2,,StatCan Table 11-10-0016-01
+2016,Ontario,Median value for those holding asset or debt,447400.0,2023 constant dollars,units,123.9,,StatCan Table 11-10-0016-01
+2016,Prince Edward Island,Average value for those holding asset or debt,594600.0,2023 constant dollars,units,72.6,,StatCan Table 11-10-0016-01
+2016,Prince Edward Island,Median value for those holding asset or debt,249600.0,2023 constant dollars,units,69.1,,StatCan Table 11-10-0016-01
+2016,Quebec,Average value for those holding asset or debt,612000.0,2023 constant dollars,units,74.7,,StatCan Table 11-10-0016-01
+2016,Quebec,Median value for those holding asset or debt,255600.0,2023 constant dollars,units,70.8,,StatCan Table 11-10-0016-01
+2016,Saskatchewan,Average value for those holding asset or debt,832100.0,2023 constant dollars,units,101.6,,StatCan Table 11-10-0016-01
+2016,Saskatchewan,Median value for those holding asset or debt,359100.0,2023 constant dollars,units,99.5,,StatCan Table 11-10-0016-01
+2019,Alberta,Average value for those holding asset or debt,875800.0,2023 constant dollars,units,102.7,,StatCan Table 11-10-0016-01
+2019,Alberta,Median value for those holding asset or debt,366500.0,2023 constant dollars,units,96.2,,StatCan Table 11-10-0016-01
+2019,Atlantic,Average value for those holding asset or debt,541500.0,2023 constant dollars,units,63.5,,StatCan Table 11-10-0016-01
+2019,Atlantic,Median value for those holding asset or debt,253300.0,2023 constant dollars,units,66.5,,StatCan Table 11-10-0016-01
+2019,British Columbia,Average value for those holding asset or debt,1036900.0,2023 constant dollars,units,121.6,,StatCan Table 11-10-0016-01
+2019,British Columbia,Median value for those holding asset or debt,489400.0,2023 constant dollars,units,128.4,,StatCan Table 11-10-0016-01
+2019,Canada,Average value for those holding asset or debt,852800.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2019,Canada,Median value for those holding asset or debt,381100.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2019,Manitoba,Average value for those holding asset or debt,753100.0,2023 constant dollars,units,88.3,,StatCan Table 11-10-0016-01
+2019,Manitoba,Median value for those holding asset or debt,341600.0,2023 constant dollars,units,89.6,,StatCan Table 11-10-0016-01
+2019,New Brunswick,Average value for those holding asset or debt,437600.0,2023 constant dollars,units,51.3,,StatCan Table 11-10-0016-01
+2019,New Brunswick,Median value for those holding asset or debt,213700.0,2023 constant dollars,units,56.1,,StatCan Table 11-10-0016-01
+2019,Newfoundland and Labrador,Average value for those holding asset or debt,539100.0,2023 constant dollars,units,63.2,,StatCan Table 11-10-0016-01
+2019,Newfoundland and Labrador,Median value for those holding asset or debt,285700.0,2023 constant dollars,units,75.0,,StatCan Table 11-10-0016-01
+2019,Nova Scotia,Average value for those holding asset or debt,618400.0,2023 constant dollars,units,72.5,,StatCan Table 11-10-0016-01
+2019,Nova Scotia,Median value for those holding asset or debt,297900.0,2023 constant dollars,units,78.2,,StatCan Table 11-10-0016-01
+2019,Ontario,Average value for those holding asset or debt,982800.0,2023 constant dollars,units,115.2,,StatCan Table 11-10-0016-01
+2019,Ontario,Median value for those holding asset or debt,501900.0,2023 constant dollars,units,131.7,,StatCan Table 11-10-0016-01
+2019,Prince Edward Island,Average value for those holding asset or debt,583400.0,2023 constant dollars,units,68.4,,StatCan Table 11-10-0016-01
+2019,Prince Edward Island,Median value for those holding asset or debt,244200.0,2023 constant dollars,units,64.1,,StatCan Table 11-10-0016-01
+2019,Quebec,Average value for those holding asset or debt,627900.0,2023 constant dollars,units,73.6,,StatCan Table 11-10-0016-01
+2019,Quebec,Median value for those holding asset or debt,274700.0,2023 constant dollars,units,72.1,,StatCan Table 11-10-0016-01
+2019,Saskatchewan,Average value for those holding asset or debt,911000.0,2023 constant dollars,units,106.8,,StatCan Table 11-10-0016-01
+2019,Saskatchewan,Median value for those holding asset or debt,381800.0,2023 constant dollars,units,100.2,,StatCan Table 11-10-0016-01
+2023,Alberta,Average value for those holding asset or debt,942800.0,2023 constant dollars,units,94.7,,StatCan Table 11-10-0016-01
+2023,Alberta,Median value for those holding asset or debt,457100.0,2023 constant dollars,units,88.0,,StatCan Table 11-10-0016-01
+2023,Atlantic,Average value for those holding asset or debt,621800.0,2023 constant dollars,units,62.4,,StatCan Table 11-10-0016-01
+2023,Atlantic,Median value for those holding asset or debt,329500.0,2023 constant dollars,units,63.4,,StatCan Table 11-10-0016-01
+2023,British Columbia,Average value for those holding asset or debt,1265400.0,2023 constant dollars,units,127.1,,StatCan Table 11-10-0016-01
+2023,British Columbia,Median value for those holding asset or debt,773500.0,2023 constant dollars,units,148.8,,StatCan Table 11-10-0016-01
+2023,Canada,Average value for those holding asset or debt,995900.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2023,Canada,Median value for those holding asset or debt,519700.0,2023 constant dollars,units,100.0,,StatCan Table 11-10-0016-01
+2023,Manitoba,Average value for those holding asset or debt,746400.0,2023 constant dollars,units,74.9,,StatCan Table 11-10-0016-01
+2023,Manitoba,Median value for those holding asset or debt,386300.0,2023 constant dollars,units,74.3,,StatCan Table 11-10-0016-01
+2023,New Brunswick,Average value for those holding asset or debt,506400.0,2023 constant dollars,units,50.8,,StatCan Table 11-10-0016-01
+2023,New Brunswick,Median value for those holding asset or debt,286200.0,2023 constant dollars,units,55.1,,StatCan Table 11-10-0016-01
+2023,Newfoundland and Labrador,Average value for those holding asset or debt,664800.0,2023 constant dollars,units,66.8,,StatCan Table 11-10-0016-01
+2023,Newfoundland and Labrador,Median value for those holding asset or debt,333500.0,2023 constant dollars,units,64.2,,StatCan Table 11-10-0016-01
+2023,Nova Scotia,Average value for those holding asset or debt,681700.0,2023 constant dollars,units,68.5,,StatCan Table 11-10-0016-01
+2023,Nova Scotia,Median value for those holding asset or debt,354600.0,2023 constant dollars,units,68.2,,StatCan Table 11-10-0016-01
+2023,Ontario,Average value for those holding asset or debt,1165400.0,2023 constant dollars,units,117.0,,StatCan Table 11-10-0016-01
+2023,Ontario,Median value for those holding asset or debt,665600.0,2023 constant dollars,units,128.1,,StatCan Table 11-10-0016-01
+2023,Prince Edward Island,Average value for those holding asset or debt,681100.0,2023 constant dollars,units,68.4,,StatCan Table 11-10-0016-01
+2023,Prince Edward Island,Median value for those holding asset or debt,399800.0,2023 constant dollars,units,76.9,,StatCan Table 11-10-0016-01
+2023,Quebec,Average value for those holding asset or debt,752400.0,2023 constant dollars,units,75.5,,StatCan Table 11-10-0016-01
+2023,Quebec,Median value for those holding asset or debt,371000.0,2023 constant dollars,units,71.4,,StatCan Table 11-10-0016-01
+2023,Saskatchewan,Average value for those holding asset or debt,824800.0,2023 constant dollars,units,82.8,,StatCan Table 11-10-0016-01
+2023,Saskatchewan,Median value for those holding asset or debt,394600.0,2023 constant dollars,units,75.9,,StatCan Table 11-10-0016-01
