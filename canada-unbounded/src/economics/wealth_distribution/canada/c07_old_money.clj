@@ -103,7 +103,7 @@
 ;; often through holding companies and shares that carry extra votes.
 ;; In 1988, only 53 of 246 large public Canadian companies in the Financial Post 500 were *widely held*,
 ;; meaning no single shareholder or family controlled as much as 20% of the votes, so the company answered to many owners rather than one.
-;; In 44, heirs of the founding family were in control, and in most of the rest a single owner or group held a controlling stake; the average largest stake was about half the votes.[^13]
+;; Every other company had a single owner or group with at least 20% of the votes: in 44 of them, the heirs of a founding family. The average largest stake was about half the votes.[^13]
 
 ;; | Family | Business (founded) | How control is held |
 ;; | :--- | :--- | :--- |
