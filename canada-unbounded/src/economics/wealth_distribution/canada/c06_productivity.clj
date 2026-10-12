@@ -247,7 +247,7 @@
       (pj/lay-text {:text :t :position :dodge :group :country :align-x :center :align-y :bottom :offset-y -3})
       (pj/scale :color {:values [c/wd c/red]})
       (pj/scale :y {:include 0})
-      (pj/options {:title "US Billionaire Wealth Is Mostly Tech; Canada's Is Mostly Finance"
+      (pj/options {:title "US Billionaire Wealth Leads With Tech; Canada's With Finance"
                    :x-label "" :y-label "% of the country's billionaire wealth"
                    :color-label "" :legend-position :bottom})))
 
