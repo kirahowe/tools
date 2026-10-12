@@ -134,3 +134,8 @@ are alongside. "Supporting" files back figures quoted in the text rather than a 
 | `mob_canada_mobility_by_group.csv` | Adnan, Zhang & Zheng (2023); Aydemir, Chen & Corak (2009); Chen, Ostrovsky & Piraino (2016); Corak & Heisz (1999); Corak (2013); Connolly & Haeck (2026) |
 | `mob_oecd_broken_elevator_2018.csv` | OECD (2018), A Broken Social Elevator?, Figures 1.5 and 4.8 (StatLink files) |
 | `mob_canada_homeownership_by_parent_properties.csv` | Statistics Canada Canadian Housing Statistics Program (2023) |
+
+## Income by decile
+| File | Source |
+| --- | --- |
+| `statcan_income_by_decile_11-10-0193-01.csv` | Statistics Canada 11-10-0193-01 (adjusted market, total and after-tax income by decile, Canada, 2024 dollars) |

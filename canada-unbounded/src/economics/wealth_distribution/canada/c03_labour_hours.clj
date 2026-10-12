@@ -351,6 +351,47 @@
 ;; The rest is a falling labour share and consumer prices rising faster than the prices of what Canada produces.
 ;; Labour compensation was 61.1% of business-sector GDP in 1976 and 56.3% in 2021.[^13]
 
+;; ### A K-Shaped Economy, Before Taxes
+
+;; Rising inequality among earners shows up clearly in what families earn in the market, before taxes and transfers.
+
+(def decile-growth
+  (let [ds   (-> (c/data "statcan_income_by_decile_11-10-0193-01.csv")
+                 (tc/select-rows #(and (#{1976 2024} (:year %))
+                                       (#{"Adjusted market income" "Adjusted after-tax income"} (:income_concept %)))))
+        rows (tc/rows ds :as-maps)
+        v    (fn [yr ic d] (some #(when (and (= yr (:year %)) (= ic (:income_concept %)) (= d (:decile_num %))) (:average_income_2024cad %)) rows))
+        names ["Bottom" "2" "3" "4" "5" "6" "7" "8" "9" "Top"]]
+    (tc/dataset
+     (for [d (range 1 11)
+           [ic label] [["Adjusted market income" "Market income (before taxes and transfers)"]
+                       ["Adjusted after-tax income" "After-tax income (after taxes and transfers)"]]
+           :let [g (* 100.0 (- (/ (v 2024 ic d) (v 1976 ic d)) 1))]]
+       {:decile (names (dec d)) :measure label :growth g :t (format "%.0f%%" g)}))))
+
+^{:kindly/options {:id :fig-decile-growth
+                   :caption "Growth in real average income by tenth (decile) of Canadians ranked by income, 1976 to 2024, in 2024 dollars. Incomes are family incomes adjusted for family size. Statistics Canada, Table 11-10-0193-01.[^17]"}}
+(-> decile-growth
+    (pj/lay-bar :decile :growth {:color :measure :position :dodge})
+    (pj/lay-text {:text :t :position :dodge :group :measure :align-x :center :align-y :bottom :offset-y -3})
+    (pj/scale :color {:values [c/o c/wd]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "Income Growth by Tenth, 1976–2024"
+                 :x-label "Tenth of Canadians, by income" :y-label "Real growth (%)"
+                 :color-label "" :legend-position :bottom}))
+
+;; Before taxes and transfers, the economy is K-shaped.
+;; From 1976 to 2024, real market income grew 15–30% for the lower-middle tenths of Canadians and 69% for the top tenth,
+;; whose average rose by about \$90,000 a year.[^17]
+;; After taxes and transfers the picture is very different: every tenth grew by roughly the same 51–59%.
+;; Canada's tax and benefit system has done exactly the job described in [What Makes Canada Different](c11_canadian_differences.html).
+;; Most of the divergence in market incomes happened before 2000; since then, they have grown at similar rates across most of the distribution.
+
+;; These are household incomes, so they grew much faster than the typical paycheque above:
+;; more families have two earners, families are smaller, and benefits are larger.
+;; Households have kept up mostly by working more hours between them, not because each hour of work buys more.
+;; These figures also stop at the top tenth; the fastest gains, at the very top, are in [Who Pays Tax](c01_who_pays_tax.html) and [Wealth Concentration](c05_wealth_concentration.html).
+
 ;; Either way the result is the same as in the United States.
 ;; The typical worker's hour buys less housing than their parents' did, and the gains from growth go disproportionately
 ;; to the top earners and to asset owners.
@@ -381,3 +422,4 @@
 ;; [^14]: James Uguccioni, ["Explaining the Gap between Productivity and Median Wage Growth in Canada, 1976–2014"](https://csls.ca/ipm-archive/ipm-issue-31/explaining-the-gap-between-productivity-and-median-wage-growth-in-canada-1976-2014.md), *International Productivity Monitor* 31, 2016. See also Sharpe, Arsenault and Harrison, ["Why Have Real Wages Lagged Labour Productivity Growth in Canada?"](https://csls.ca/ipm-archive/ipm-issue-17/why-have-real-wages-lagged-labour-productivity-growth-in-canada.md), *International Productivity Monitor* 17, 2008.
 ;; [^15]: Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601), net worth by age group, 1999–2023, in 2023 dollars; shares and increases computed from family counts and mean net worth. Details in `data/sfs_networth_by_age_familytype_geo.csv`.
 ;; [^16]: Statistics Canada, real GDP from [Table 36-10-0104-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401) (chained 2017 dollars) divided by population from [Table 17-10-0009-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901). Details in `data/real_gdp_per_capita_canada_long_run.csv`.
+;; [^17]: Statistics Canada, [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301), upper income limit, income share and average of adjusted market, total and after-tax income by income decile, Canada, 2024 constant dollars. Extract in `data/statcan_income_by_decile_11-10-0193-01.csv`.
