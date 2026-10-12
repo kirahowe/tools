@@ -234,14 +234,22 @@
 
 ^{:kindly/options {:id :fig-billionaire-industry
                    :caption "Share of billionaire wealth by industry, billionaires who are citizens of each country, Forbes 2026. Canadian finance includes cryptocurrency fortunes held by Canadians abroad.[^8]"}}
-(c/dumbbell
- (->> (c/pair-rows billionaire-industries :industry :country :share_pct "United States" "Canada")
-      (filter #(#{"Technology" "Finance & Investments" "Media & Entertainment" "Fashion & Retail"
-                  "Real Estate" "Food & Beverage" "Energy" "Diversified"} (:label %)))
-      (sort-by #(- (:from %))))
- {:from-name "United States" :to-name "Canada" :from-color c/wd :to-color c/red :include-zero true
-  :title "Where Billionaire Wealth Comes From, 2026"
-  :x-label "% of the country's billionaire wealth" :fmt #(format "%.0f%%" (double %))})
+(let [short {"Technology" "Tech" "Finance & Investments" "Finance" "Media & Entertainment" "Media"
+             "Fashion & Retail" "Retail" "Real Estate" "Real estate" "Food & Beverage" "Food"
+             "Energy" "Energy" "Diversified" "Diversified"}
+      order ["Tech" "Finance" "Media" "Retail" "Real estate" "Food" "Energy" "Diversified"]]
+  (-> billionaire-industries
+      (tc/select-rows #(short (:industry %)))
+      (tc/map-columns :sector [:industry] short)
+      (tc/map-columns :t [:share_pct] #(format "%.0f" (double %)))
+      (tc/order-by [#(.indexOf ^java.util.List order (:sector %)) #(if (= "Canada" (:country %)) 1 0)])
+      (pj/lay-bar :sector :share_pct {:color :country :position :dodge})
+      (pj/lay-text {:text :t :position :dodge :group :country :align-x :center :align-y :bottom :offset-y -3})
+      (pj/scale :color {:values [c/wd c/red]})
+      (pj/scale :y {:include 0})
+      (pj/options {:title "US Billionaire Wealth Is Mostly Tech; Canada's Is Mostly Finance"
+                   :x-label "" :y-label "% of the country's billionaire wealth"
+                   :color-label "" :legend-position :bottom})))
 
 ;; Technology accounts for 41% of American billionaire wealth and 17% of Canadian-citizen billionaire wealth;
 ;; among billionaires who actually *live* in Canada, it is about 10%.[^8]
