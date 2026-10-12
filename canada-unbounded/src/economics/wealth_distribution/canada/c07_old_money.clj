@@ -86,9 +86,16 @@
 ;; and the Hudson's Bay Company itself filed for creditor protection and closed its last stores in 2025.[^2]
 ;; But it set a pattern that Canada has never fully broken:
 ;; wealth that comes from *access* (to land, licences, charters, tariffs and protected markets) more than from competition.
-;; John Redpath, who opened Canada's first sugar refinery in 1855, is a documented example:
-;; his fortune came from public-works contracts on the Lachine and Rideau canals, land bought from the Sulpicians
-;; (Montreal's seigneurs), and tariffs "conveniently established by the Canadian government in 1855 – the year Redpath's factory opened."[^7]
+;; John Redpath, who opened Canada's first sugar refinery in 1855, shows how the pieces fit together.[^7]
+;;
+;; * **Public contracts made his first fortune.** A stonemason by training, he grew rich building locks on the Lachine and Rideau canals, two of the largest public works of the time.
+;; * **A public decision made his land valuable.** He bought land along the Lachine Canal from the Sulpicians, the religious order that was Montreal's seigneur,
+;;   shortly after the provincial government allowed the canal's water to be used to power factories.
+;; * **A public tariff protected his market.** The refinery opened "under the protection of favourable tariffs conveniently established by the Canadian government in 1855 – the year Redpath's factory opened."
+;;   Its first Montreal competitor didn't appear until the mid-1860s.
+;;
+;; Redpath took real risks: he put £40,000 of his own money into the plant.
+;; But at each step, what made it pay was a public decision: who got the contract, whose land could use the canal's water, and what competing sugar would cost.
 
 ;; ## Canada's Family Firms
 
