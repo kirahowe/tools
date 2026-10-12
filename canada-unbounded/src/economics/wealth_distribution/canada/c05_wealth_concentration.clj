@@ -396,11 +396,11 @@
 ;; The original series noted that the U.S. federal balance sheet is more than \$40T in the red,
 ;; around \$156,000 per adult.[^2]
 ;; Canada's federal government also has a negative net worth: \$910B, or about \$26,600 per adult.
-;; But Canada's *combined* general government (federal, provincial, local, and the CPP/QPP funds)
-;; has a **positive** net worth of \$1.53T, about \$44,800 per adult,
+;; But Canada's governments *combined* (federal, provincial, local, and the CPP/QPP funds)
+;; have a **positive** net worth of \$1.53T, about \$44,800 per adult,
 ;; because public assets, including over \$1T in public pension funds, exceed public debts.[^9]
 ;; Canadians collectively still own their public sector.
-;; Canada also has the lowest general-government net debt in the G7 (about 10% of GDP, IMF), and that is worth protecting.
+;; Canada's governments also have the lowest combined net debt in the G7 (about 10% of GDP, IMF), and that is worth protecting.
 
 ;; ::: {.callout-note}
 ;; ## A Closer Look: Who Are Canada's Billionaires?

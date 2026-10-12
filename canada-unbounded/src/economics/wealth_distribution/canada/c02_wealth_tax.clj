@@ -222,7 +222,7 @@
 ;; ### Canada's Hidden Fiscal Strength
 
 ;; One genuinely Canadian difference is the public balance sheet.
-;; Canada's *gross* general government debt (113.5% of GDP in 2025) is a little below the G7 average of 123%.
+;; Canada's *gross* government debt, counting all levels of government together (113.5% of GDP in 2025), is a little below the G7 average of 123%.
 ;; Its *net* debt is the lowest in the G7 by far: 10.2% of GDP.[^10]
 
 (def g7
@@ -234,7 +234,7 @@
       (tc/update-columns {:measure (partial map {:gg_gross_debt_pct_gdp "Gross debt" :gg_net_debt_pct_gdp "Net debt"})})))
 
 ^{:kindly/options {:id :fig-g7-debt
-                   :caption "General government gross and net debt, % of GDP, 2025 (IMF Fiscal Monitor, April 2026). Canada's net debt counts the assets of the Canada and Quebec Pension Plans, which are earmarked for future pensions.[^10]"}}
+                   :caption "Gross and net debt of all levels of government combined, % of GDP, 2025 (IMF Fiscal Monitor, April 2026). Canada's net debt counts the assets of the Canada and Quebec Pension Plans, which are earmarked for future pensions.[^10]"}}
 (c/dumbbell
  (sort-by :from (c/pair-rows g7 :country :measure :pct "Net debt" "Gross debt"))
  {:from-name "Net debt (after subtracting financial assets)" :to-name "Gross debt"
