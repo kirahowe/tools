@@ -47,7 +47,25 @@
 ;; GDP per person is the usual shorthand for "living standards," but it measures average output, not what a typical family takes home.
 ;; Because US incomes are so unequal, the typical Canadian household does much better than the averages suggest:
 ;; the median Canadian household's disposable income was about 97% of the American median in 2023, up from 85% in 2000, though down from slightly above 100% in 2014.[^25]
-;; Public health insurance and cheaper tuition aren't counted in that figure, and they probably favour Canadians further.
+;; Disposable income is what's left after taxes, so it also leaves out what those taxes buy.
+;; Where Canadians get through taxes what Americans pay for out of pocket, the comparison understates how Canadians live:
+;;
+;; | | Canada | United States |
+;; | :--- | :--- | :--- |
+;; | Health spending per person, all sources (2024) | \$7,301 | \$14,885 |
+;; | Life expectancy at birth (2023) | 82.6 years | 79.3 years |
+;; | Paid parental leave | About a year at 55% of earnings through Employment Insurance, or 18 months at a lower rate | No federal paid leave (12 weeks unpaid; some states pay) |
+;; | Child care | \$10-a-day average target; reached in six provinces and territories, not yet in Ontario, BC or Alberta | No national program |
+;; | Public university tuition (2025–26) | C\$7,734 average | US\$11,950 in-state list price; about US\$2,300 after grants for first-time students |
+;;
+;; : What the income comparison leaves out (health spending in US dollars at purchasing power parity)[^27] {#tbl-not-counted}
+;;
+;; Health care is the biggest item.
+;; Americans spend about US\$7,600 more per person on it than Canadians, roughly a third of the US\$23,000 gap in GDP per person, and live about three years less.[^27]
+;; GDP counts that spending as output; it doesn't ask whether it buys better health.
+;; Not everything on the list is as clear-cut: American grants bring many students' tuition below Canada's, both countries have public pensions, and Canada's dental care and pharmacare programs are still partial.
+;; Most of the GDP gap is real, and the rest of this part is about why.
+;; But part of what the US "produces" is costlier versions of things Canadians get for less.
 ;; So the gap is not yet a gap in what typical families have; it is a gap in the economy's capacity to keep raising it.
 
 ;; The Bank of Canada estimates that if Canadian productivity had grown like the rest of the G7's since 2000,
@@ -486,3 +504,4 @@
 ;; [^24]: Ethan Lewis, ["Immigration, Skill Mix, and Capital Skill Complementarity"](https://doi.org/10.1093/qje/qjr011), *Quarterly Journal of Economics* 126(2), 2011; Michael Clemens, Ethan Lewis and Hannah Postel, ["Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion"](https://doi.org/10.1257/aer.20170765), *American Economic Review* 108(6), 2018; Pierre Brochu, Till Gross and Christopher Worswick, "Temporary foreign workers and firms: Theory and Canadian evidence," *Canadian Journal of Economics* 53(3), 2020 ([summary](https://crdcn.ca/?p=26136)); Employment and Social Development Canada, [Question Period Note on TFW program tightening measures](https://search.open.canada.ca/qpnotes/record/esdc-edsc,EWDOL_Dec2024_017), December 2024 (changes effective September 26, 2024, with exceptions for health care, construction and food processing).
 ;; [^25]: CIBC Economics (Avery Shenfeld and Helen Lao), ["How bad is it? Productivity and prosperity in Canada versus the US"](https://thoughtleadership.cibc.com/article/how-bad-is-it-productivity-and-prosperity-in-canada-versus-the-us/), July 21, 2026, Chart 5 (OECD and World Bank data). See also Centre for the Study of Living Standards, [Report 2019-01](https://bac-lac.wayback.archive-it.org/web/20200116072917/http://www.csls.ca/reports/csls2019-01.pdf), which found Canada slightly ahead on median household income in 2016 despite GDP per person about 18% lower.
 ;; [^26]: ISED, [Universal Broadband Fund](https://ised-isde.canada.ca/site/high-speed-internet-canada/en/universal-broadband-fund) (coverage as of May 2026); CRTC, [Broadband Fund](https://crtc.gc.ca/eng/internet/select.htm); Northwestel: [Telecom Decision CRTC 2015-78](https://crtc.gc.ca/eng/archive/2015/2015-78.htm), March 2015; Competition Bureau, [backgrounder on northern and remote air travel](https://www.canada.ca/en/competition-bureau/news/2025/06/backgrounder-unique-air-travel-challenges-for-northern-and-remote-communities.html), June 2025; Air Canada route suspensions: [CBC News](https://www.cbc.ca/lite/story/1.5632874), June 30, 2020; Telstra, [Universal Service Obligation](https://www.telstra.com.au/consumer-advice/customer-service/universal-service-obligation).
+;; [^27]: Health spending: OECD Health Statistics, total current health expenditure per capita, PPP international dollars, 2024 (as tabulated in [List of countries by total health expenditure per capita](https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita)). Life expectancy: United Nations, *World Population Prospects* (Statistics Canada's own estimate for Canada in 2023 is 81.7). Parental leave: Employment Insurance maternity and parental benefits (15 weeks of maternity plus up to 35 weeks of standard parental benefits at 55%, or 61 weeks of extended parental benefits at 33%); US Family and Medical Leave Act. Child care: Canadian Centre for Policy Alternatives, ["The \$10-a-day divide: child care fees in Canada in 2026"](https://www.policyalternatives.ca/news-research/the-10-a-day-divide-child-care-fees-in-canada-in-2026/). Tuition: Statistics Canada, [The Daily, September 10, 2025](https://www150.statcan.gc.ca/n1/daily-quotidien/250910/dq250910d-eng.htm); College Board, [*Trends in College Pricing and Student Aid 2025*](https://research.collegeboard.org/trends/college-pricing/highlights).
