@@ -252,7 +252,17 @@
 ;; Federal prosecutors charged the newspaper consolidation as an illegal combine; in 1976 the Supreme Court of Canada upheld the
 ;; Irvings' acquittal, a ruling the government's own competition director said ended hopes for the criminal prohibition of
 ;; mergers as an effective tool.[^23]
-;; The papers were sold to Postmedia in 2022.
+;;
+;; Owning a province's newspapers matters most when the owner is also its largest private employer and landowner.
+;; A study of coverage of the 1994–96 strike at the Irving refinery argued that it "reinforced an ideology of defeatism."[^26]
+;; The journalist Jacques Poitras, who wrote a history of the family, found the main effect was usually not orders from the owners
+;; but "the newsroom itself anticipating what might alarm the owners and making decisions on that basis."
+;; And because the Canadian Press wire service relies on New Brunswick papers for local news, those choices shaped what the rest of Canada heard about the province.[^26]
+;;
+;; In 2022 the Irvings sold the papers to Postmedia for about \$16 million in cash and shares.
+;; Postmedia is majority-owned by Chatham Asset Management, a New Jersey hedge fund, though Canadian ownership rules let it elect only a third of the board.
+;; Jamie Irving, who had run the Irving papers, joined Postmedia's board and served as its executive chair for the first half of 2023.[^26]
+;; New Brunswick's main English-language papers went from a local owner with interests to protect to a national chain majority-owned by a US hedge fund.
 ;; :::
 
 ;; ## Conclusion
@@ -291,3 +301,4 @@
 ;; [^23]: *R. v. K.C. Irving Ltd.*, [1978] 1 S.C.R. 408; see J. P. Cairns, [*Alberta Law Review*](https://albertalawreview.com/index.php/ALR/article/download/1854/1843/1966). Sale to Postmedia as reported by CTV News, 2022.
 ;; [^24]: Sweden: Oxford Business Law Blog, ["Equal Treatment of Shareholders – Can There be Too Much of it?"](https://blogs.law.ox.ac.uk/business-law-blog/blog/2017/02/equal-treatment-shareholders-%E2%80%93-can-there-be-too-much-it) (2017). United States: Jay R. Ritter, ["IPOs with dual-class shares"](https://site.warrington.ufl.edu/ritter/files/IPOs-Dual-Class.pdf), University of Florida, updated December 2025 (16 of 72 operating-company IPOs in 2024; 6 of 14 technology IPOs). TSX coattail requirement: Institute for Governance of Private and Public Organizations (IGOPP), ["Do your shares have the power?"](https://igopp.org/do-your-shares-have-the-power/); companies listed before 1987 were exempted.
 ;; [^25]: E. J. Benson, Budget Speech, June 18, 1971, p. 33, and Peter Hogg as quoted in LeBreux (1999), p. 1162, both as cited in [History of wealth taxes in Canada](https://en.wikipedia.org/wiki/History_of_wealth_taxes_in_Canada) (Wikipedia), which also gives the provincial repeal dates. See also Richard M. Bird, ["Canada's Vanishing Death Taxes"](https://digitalcommons.osgoode.yorku.ca/ohlj/vol16/iss1/5), *Osgoode Hall Law Journal* 16(1), 1978.
+;; [^26]: Strike coverage: study of the four New Brunswick English-language dailies and other Canadian papers, [*Canadian Journal of Communication* 26(1), 2001](https://doi.org/10.22230/cjc.2001v26n1a1192) (quoted from the abstract). Poitras: [J-Source interview](https://j-source.ca/jacques-poitras-on-the-irvings-relationship-with-journalism/), November 5, 2014, on *Irving vs. Irving* (Penguin, 2014). Sale terms (\$7.5 million cash plus \$8.6 million in Postmedia shares, closed March 25, 2022): CTV News and McCarthy Tétrault, 2022. Chatham's stake and board limit: [Postmedia Network](https://en.wikipedia.org/wiki/Postmedia_Network) (Wikipedia). Jamie Irving: [Postmedia announcement](https://www.businesswire.com/news/home/20220728005609/en), July 28, 2022, and [CTV Atlantic](https://atlantic.ctvnews.ca/executive-chair-jamie-irving-resigns-from-postmedia-board-1.6453119), June 2023.
