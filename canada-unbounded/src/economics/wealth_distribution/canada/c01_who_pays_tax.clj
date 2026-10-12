@@ -106,12 +106,12 @@
 
 ^{:kindly/options {:id :fig-capital-gains-by-income
                    :caption "Tax year 2023. Filers with total income over $250,000 filed fewer than 2 in 100 returns but reported 71% of taxable capital gains.[^3]"}}
-(c/dumbbell
- (c/pair-rows capital-gains-by-band :band :measure :share "Share of tax returns" "Share of taxable capital gains")
- {:from-name "Share of tax returns" :to-name "Share of taxable capital gains"
-  :from-color c/w :to-color c/o :include-zero true
+(c/grouped-bars
+ (for [r (tc/rows capital-gains-by-band :as-maps)]
+   {:x (:band r) :group (:measure r) :value (:share r)})
+ {:colors [c/w c/o]
   :title "Who Reports Capital Gains, by Income of Filer"
-  :x-label "% of Canada-wide total" :fmt #(format "%.0f%%" (double %))})
+  :y-label "% of Canada-wide total"})
 
 ;; Capital gains are not a middle-class income source.
 ;; Most Canadians' savings sit in RRSPs, TFSAs, pension plans, and their homes,

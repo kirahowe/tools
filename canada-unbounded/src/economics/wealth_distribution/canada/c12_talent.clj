@@ -85,18 +85,18 @@
 
 ^{:kindly/options {:id :fig-emigrant-profile
                    :caption "Characteristics of people who emigrated from Canada, compared with the Canadian population (Statistics Canada, 2021 Census linked to tax records).[^t5]"}}
-(c/dumbbell
- (for [k ["Immigrants" "Aged 20–44" "Bachelor's degree" "Master's or higher" "Science and engineering jobs"]
-       :let [row (fn [who] (->> (tc/rows emigrant-profile :as-maps)
-                                (filter #(and (= k (:label %)) (= who (:who %))))
-                                first :pct))]]
-   {:label k :from (row "Canadian population") :to (row "Recent emigrants")})
- {:from-name "Canadian population" :to-name "Recent emigrants"
-  :title "Who Emigrates from Canada" :x-label "% of group" :include-zero true
-  :fmt #(format "%.0f%%" (double %))})
+(c/grouped-bars
+ (for [[k short] [["Immigrants" "Immigrants"] ["Aged 20–44" "Aged 20–44"] ["Bachelor's degree" "Bachelor's"]
+                  ["Master's or higher" "Master's+"] ["Science and engineering jobs" "Sci. & eng. jobs"]]
+       who ["Canadian population" "Recent emigrants"]]
+   {:x short :group who
+    :value (->> (tc/rows emigrant-profile :as-maps)
+                (filter #(and (= k (:label %)) (= who (:who %))))
+                first :pct)})
+ {:colors [c/neutral c/red] :title "Who Emigrates from Canada" :y-label "% of group"})
 
 ;; Seven in ten recent emigrants hold a university degree, and almost a third have a master's or doctorate, against 9% of Canadians.[^t5]
-;; But the most striking row is the top one: **61% of emigrants are immigrants**, against 24% of the population.[^t5]
+;; But the most striking pair is the first: **61% of emigrants are immigrants**, against 24% of the population.[^t5]
 ;; More than 15% of immigrants leave within 20 years of landing, and over 40% of those admitted as investors do.[^t6]
 ;; Much of what Canadians call brain drain is people Canada recruited moving on, the other half of the circulation that brings them here.
 

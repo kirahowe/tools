@@ -48,6 +48,21 @@
     (for [label (distinct (map label-k rows))]
       {:label label :from (v label from-series) :to (v label to-series)})))
 
+(defn grouped-bars
+  "Vertical grouped bars with a value label on each bar.
+  `rows` is a seq of maps with `:x`, `:group` and `:value`, in display order
+  (categories left to right, groups within each category)."
+  [rows {:keys [colors title y-label fmt y-max height]
+         :or   {fmt #(format "%.0f%%" (double %))}}]
+  (-> (tc/dataset (for [r rows] (assoc r :t (fmt (:value r)))))
+      (pj/lay-bar :x :value {:color :group :position :dodge})
+      (pj/lay-text {:text :t :position :dodge :group :group :align-x :center :align-y :bottom :offset-y -3})
+      (pj/scale :color {:values colors})
+      (pj/scale :y (if y-max {:domain [0 y-max]} {:include 0}))
+      (pj/options (cond-> {:title title :x-label "" :y-label y-label
+                           :color-label "" :legend-position :bottom}
+                    height (assoc :height height)))))
+
 (defn dumbbell
   "Dot plot comparing two values per category, joined by a thin line.
   `rows` is a seq of maps with `:label`, `:from` and `:to`, listed top to bottom.

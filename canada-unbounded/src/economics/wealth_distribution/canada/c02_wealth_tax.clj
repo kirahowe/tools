@@ -151,15 +151,13 @@
 
 ^{:kindly/options {:id :fig-polling
                    :caption "Support for a wealth tax in Abacus Data polls, all respondents and Conservative voters. 2019: 2% above $50M (commissioned by North 99). 2020: 1% above $20M (Abacus national survey). The dashed line marks majority support.[^7]"}}
-(-> (c/dumbbell
-     (for [r (reverse (sort-by :published (tc/rows polls :as-maps)))]
-       {:label ({"2019" "2019 poll: 2% above $50M" "2020" "2020 poll: 1% above $20M"} (subs (str (:published r)) 0 4))
-        :from (:support_conservative_pct r) :to (:support_all_pct r)})
-     {:from-name "Conservative voters" :to-name "All Canadians"
-      :from-color c/wd :to-color c/o :height 240
-      :title "Support for a Wealth Tax" :x-label "% who support" :fmt #(str % "%")})
-    (pj/lay-rule-v {:x-intercept 50 :stroke-dash :dashed})
-    (pj/scale :x {:domain [0 100]}))
+(-> (c/grouped-bars
+     (for [r (sort-by :published (tc/rows polls :as-maps))
+           :let [poll ({"2019" "2019: 2% above $50M" "2020" "2020: 1% above $20M"} (subs (str (:published r)) 0 4))]
+           [g v] [["Conservative voters" (:support_conservative_pct r)] ["All Canadians" (:support_all_pct r)]]]
+       {:x poll :group g :value v})
+     {:colors [c/wd c/o] :title "Support for a Wealth Tax" :y-label "% who support" :y-max 100})
+    (pj/lay-rule-h {:y-intercept 50 :stroke-dash :dashed}))
 
 ;; In 2020, Abacus Data found **79%** of Canadians supported a 1% tax on wealth over \$20M,
 ;; including **64% of Conservative voters** and 73% of people in the highest income bracket.[^7]
