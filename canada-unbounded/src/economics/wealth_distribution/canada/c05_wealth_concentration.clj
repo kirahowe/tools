@@ -243,6 +243,56 @@
 ;; Since 2021, the gap between the top 20% and the bottom 40% has widened again, from 60.8 to 62.7 percentage points, and in 2025 the top grew its wealth fastest (+6.0%) and the bottom slowest (+2.1%),
 ;; "mainly from equity markets".[^1]
 
+;; ### Before 2010
+
+;; The quarterly series starts in 2010, but Statistics Canada's wealth surveys go back further.
+;; Its 1984 Assets and Debts Survey, re-weighted to match the later Survey of Financial Security, lets us follow the top tenth's share from 1984.
+
+(def long-survey-shares
+  (let [mz  (-> (c/data "mz2006_wealth_decile_shares_1984_2005.csv") (tc/rows :as-maps))
+        mzs (for [y [1984 1999 2005]
+                  :let [rs (filter #(= y (:year %)) mz)
+                        top (:share_pct (first (filter #(= "Top 10%" (:decile %)) rs)))
+                        bot (reduce + (map :share_pct (filter #(#{"Bottom 10%" "Second" "Third" "Fourth" "Fifth"} (:decile %)) rs)))]
+                  [g v] [["Top 10%" top] ["Bottom 50%" bot]]]
+              {:year y :group g :share v :measure "Excluding employer pensions (1984–2005)"})
+        sfs (-> (c/data "sfs_networth_by_decile.csv")
+                (tc/select-rows #(= "Canada" (:geo %)))
+                (tc/rows :as-maps))
+        sfss (for [y [1999 2005 2012 2016 2019 2023]
+                   :let [rs (filter #(= y (:sfs_year %)) sfs)
+                         top (:share_of_total_net_worth_pct_computed (first (filter #(str/starts-with? (:net_worth_deciles %) "Highest") rs)))
+                         bot (reduce + (map :share_of_total_net_worth_pct_computed
+                                            (filter #(some (fn [p] (str/starts-with? (:net_worth_deciles %) p)) ["Lowest" "Second" "Third" "Fourth" "Fifth"]) rs)))]
+                   [g v] [["Top 10%" top] ["Bottom 50%" bot]]]
+               {:year y :group g :share v :measure "Including employer pensions (1999–2023)"})]
+    (tc/dataset (concat mzs sfss))))
+
+^{:kindly/options {:id :fig-long-survey-shares
+                   :caption "Share of family net worth held by the wealthiest 10% and the bottom 50% of families. Dashed: 1984 Assets and Debts Survey and 1999 and 2005 Survey of Financial Security, excluding employer pension plans (Morissette and Zhang, 2006). Solid: Survey of Financial Security 1999–2023, including employer pension plans. Surveys miss the very top, so these shares understate concentration.[^10][^11]"}}
+(-> long-survey-shares
+    (tc/select-rows #(str/starts-with? (:measure %) "Including"))
+    (pj/lay-line :year :share {:color :group :size 2})
+    (pj/lay-point {:color :group :size 5})
+    (pj/lay-line {:data (tc/select-rows long-survey-shares #(str/starts-with? (:measure %) "Excluding"))
+                  :x :year :y :share :color :group :size 2 :stroke-dash :dashed :overlay true})
+    (pj/lay-point {:data (tc/select-rows long-survey-shares #(str/starts-with? (:measure %) "Excluding"))
+                   :x :year :y :share :color :group :size 5 :overlay true})
+    (pj/scale :color {:values [c/o c/wd]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "Wealth Shares Since 1984 (dashed: excluding pensions)"
+                 :x-label "Year" :y-label "Share of total net worth (%)"
+                 :color-label "" :legend-position :bottom}))
+
+;; The longer view has two phases.
+;; From 1984 to 2005, wealth became more concentrated: the top 10%'s share rose from 52% to 58%,
+;; and the bottom half's fell from 5.3% to 3.2% (excluding employer pensions, which the 1984 survey did not measure).[^10]
+;; After 2005, on the broader measure that includes pensions, the trend reversed: the top 10%'s share fell from 51% to 44% by 2023,
+;; and the bottom half's rose from 5.3% to 8.1%.[^11]
+;; Rising house prices spread wealth to middle-class owners, and pandemic savings helped in 2020–21.
+;; Surveys miss the very richest families, though, which is why the PBO's adjusted estimates (above) put the top 1% alone at about 24%.
+
+
 ;; Quintiles can't see the very top, though.
 ;; The top 20% is 3.4 million households; a wealth tax starting at \$10M would reach about 108,000 families, and most of its revenue would come from a few thousand.
 ;; For them, the clearest signal is the billionaire count.
@@ -366,3 +416,5 @@
 ;; [^7]: James B. Davies and Livio Di Matteo, ["Filling the Gap: Long Run Canadian Wealth Inequality in International Context"](https://uwo.scholaris.ca/server/api/core/bitstreams/776c2e67-0e98-4464-b759-88ef4cfe9573/content), Western University Department of Economics Research Report 2018-1, Table 2 (adjusted series); revised and published as "Long Run Canadian Wealth Inequality in International Context," *Review of Income and Wealth* 67(1), 2021.
 ;; [^8]: [World Inequality Database](https://wid.world/country/canada/), net personal wealth, top 1% share (2024). WID rates its Canadian wealth series as low quality (mostly imputed).
 ;; [^9]: Statistics Canada, [Table 36-10-0580-01, National Balance Sheet Accounts](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610058001), second quarter 2026; adults from [Table 17-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501).
+;; [^10]: René Morissette and Xuelin Zhang, ["Revisiting wealth inequality"](https://www150.statcan.gc.ca/pub/75-001-x/11206/9543-eng.htm), Statistics Canada, *Perspectives on Labour and Income* 7(12), December 2006, [Table 1](https://www150.statcan.gc.ca/pub/75-001-x/11206/4096770-eng.htm). The 1984 survey was re-weighted to be consistent with the 1999 and 2005 surveys. Data in `data/mz2006_wealth_decile_shares_1984_2005.csv`.
+;; [^11]: Statistics Canada, Survey of Financial Security, [Table 11-10-0075-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007501), net worth by decile, 1999–2023; shares computed from decile totals. Data in `data/sfs_networth_by_decile.csv`.

@@ -139,3 +139,4 @@ are alongside. "Supporting" files back figures quoted in the text rather than a 
 | File | Source |
 | --- | --- |
 | `statcan_income_by_decile_11-10-0193-01.csv` | Statistics Canada 11-10-0193-01 (adjusted market, total and after-tax income by decile, Canada, 2024 dollars) |
+| `mz2006_wealth_decile_shares_1984_2005.csv` | Morissette & Zhang (2006), Statistics Canada Perspectives on Labour and Income 7(12), Table 1 |
