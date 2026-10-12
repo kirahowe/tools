@@ -178,6 +178,54 @@
 ;; Food Banks Canada recorded 2.17 million visits in March 2025, up 99% from March 2019,
 ;; and 19.4% of clients had a job, up from 12.2% in 2019.[^10]
 ;; Work no longer guarantees you can afford to eat.
+;; ### Where the Gains Went
+
+;; If wages didn't capture the growth, where did it go?
+;; Much of it went into the value of assets, above all homes, and so to the people who already owned them.
+
+(def wealth-by-age
+  (let [rows (-> (c/data "sfs_networth_by_age_familytype_geo.csv")
+                 (tc/select-rows #(and (= "Canada" (:geo %))
+                                       (= "Economic families and persons not in an economic family" (:economic_family_type %))
+                                       (#{1999 2023} (:sfs_year %))))
+                 (tc/rows :as-maps))
+        v      (fn [age yr k] (some #(when (and (= age (:age_group %)) (= yr (:sfs_year %))) (k %)) rows))
+        ages   ["Under 35 years" "35 to 44 years" "45 to 54 years" "55 to 64 years" "65 years and older"]
+        gain   (fn [age] (- (v age 2023 :total_net_worth_2023cad_millions) (v age 1999 :total_net_worth_2023cad_millions)))
+        total  (reduce + (map gain ages))
+        fams   (v "All ages" 2023 :number_of_family_units_thousands)]
+    (tc/dataset
+     (for [age ages
+           [measure pct] [["Share of families (2023)" (* 100.0 (/ (v age 2023 :number_of_family_units_thousands) fams))]
+                          ["Share of the growth in wealth, 1999–2023" (* 100.0 (/ (gain age) total))]]]
+       {:age (str/replace age #" years( and older)?" #(if (second %) "+" ""))
+        :measure measure :pct pct :t (format "%.0f%%" pct)}))))
+
+^{:kindly/options {:id :fig-wealth-gain-by-age
+                   :caption "Share of all families in 2023, and share of the increase in Canadian families' total net worth from 1999 to 2023 (in 2023 dollars), by age of the family's major income earner. Statistics Canada, Survey of Financial Security.[^15]"}}
+(-> wealth-by-age
+    (pj/lay-bar :age :pct {:color :measure :position :dodge})
+    (pj/lay-text {:text :t :position :dodge :group :measure :align-x :center :align-y :bottom :offset-y -4})
+    (pj/scale :color {:values [c/neutral c/o]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "Who Got the Growth in Wealth"
+                 :x-label "Age of major income earner" :y-label "%"
+                 :color-label "" :legend-position :bottom}))
+
+;; Between 1999 and 2023, Canadian families' combined net worth rose by about \$11.7 trillion after inflation.
+;; Families headed by someone 55 or older received about 64% of that increase, though they are 46% of families.
+;; Families under 35 received about 9%, though they are 19% of families.[^15]
+;; Part of the difference is simply that Canada is aging: older families went from 30% of all families to 46%.
+;; But the gains per family were also far larger at older ages:
+;; average net worth rose by about \$590,000 for families aged 55–64 and \$650,000 for those 65 and older,
+;; against about \$330,000 for families under 35.
+
+;; This was mostly not wealth taken from younger people's paycheques.
+;; It came from owning assets, above all homes, that rose in value faster than incomes,
+;; a windfall that went to whoever owned property before the boom, and that the next generation pays for in house prices and rent.
+;; The most recent survey shows the gap narrowing: the median net worth of families under 35 rose from about \$56,000 in 2019
+;; to \$159,000 in 2023, and the ratio of the median 65-and-older family's wealth to the median under-35 family's fell from about 11 to 5.[^15]
+
 
 ;; ## The Golden Age
 
@@ -291,3 +339,4 @@
 ;; [^12]: Emmanuel Saez and Michael Veall, [Canadian top income and marginal tax rate series](https://eml.berkeley.edu/~saez/) (to 1999; published as ["The Evolution of High Incomes in Northern America"](https://doi.org/10.1257/0002828054201404), *American Economic Review* 95(3), 2005), and the [OECD Tax Database](https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.CTP.TPS&df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_TAX_PIT%40DF_PIT_TOP_EARN_THRESH), top statutory personal income tax rates (2000 onward).
 ;; [^13]: Statistics Canada, archived [Table 36-10-0305-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610030501) (1946–2001), [Table 36-10-0206-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610020601), [Table 36-10-0208-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610020801) (labour share), [Table 14-10-0064-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006401) (Labour Force Survey wages), all deflated by CPI ([Table 18-10-0005-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501)). Deflating by the GDP deflator instead would show a smaller gap.
 ;; [^14]: James Uguccioni, ["Explaining the Gap between Productivity and Median Wage Growth in Canada, 1976–2014"](https://csls.ca/ipm-archive/ipm-issue-31/explaining-the-gap-between-productivity-and-median-wage-growth-in-canada-1976-2014.md), *International Productivity Monitor* 31, 2016. See also Sharpe, Arsenault and Harrison, ["Why Have Real Wages Lagged Labour Productivity Growth in Canada?"](https://csls.ca/ipm-archive/ipm-issue-17/why-have-real-wages-lagged-labour-productivity-growth-in-canada.md), *International Productivity Monitor* 17, 2008.
+;; [^15]: Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601), net worth by age group, 1999–2023, in 2023 dollars; shares and increases computed from family counts and mean net worth. Details in `data/sfs_networth_by_age_familytype_geo.csv`.
