@@ -101,8 +101,9 @@
 
 ;; Some of Canada's largest companies are still controlled by the families that founded them,
 ;; often through holding companies and shares that carry extra votes.
-;; In 1988, only 53 of 246 large public Canadian companies in the Financial Post 500 were widely held;
-;; 44 were controlled by heirs.[^13]
+;; In 1988, only 53 of 246 large public Canadian companies in the Financial Post 500 were *widely held*,
+;; meaning no single shareholder or family controlled as much as 20% of the votes, so the company answered to many owners rather than one.
+;; In 44, heirs of the founding family were in control, and in most of the rest a single owner or group held a controlling stake; the average largest stake was about half the votes.[^13]
 
 ;; | Family | Business (founded) | How control is held |
 ;; | :--- | :--- | :--- |
