@@ -418,6 +418,49 @@
 ;; which treats emigrants as having sold their assets on the way out (see [Wealth Tax](c02_wealth_tax.html)).
 ;; :::
 
+;; ## Is Home Equity Really Wealth?
+
+;; Most of the broad middle's wealth is the value of the home it lives in, and there is a strong case that this overstates how well off it is.
+;; If your home doubles in value, so has every comparable home: selling it buys you nothing better, because you still need somewhere to live.
+;; The gain is real only if you can move somewhere cheaper, downsize, borrow against it, or leave it to your children.
+;; The economist Willem Buiter made exactly this argument: for owners who stay housed, a rise in house prices is offset by the higher cost of the housing they will always need,
+;; and in aggregate it is a transfer from future buyers to current owners rather than new wealth.[^14]
+;; It still matters to the people who have it: owners pay no rent, can borrow against their homes, and can pass them on, which is why ownership divides Canadians so sharply (see [What Makes Canada Different](c11_canadian_differences.html)).
+
+(def without-housing
+  (let [rows (-> (c/data "dhea_wealth_components_by_quintile_36-10-0660-01.csv")
+                 (tc/select-rows #(= "2025-10" (:ref_date %)))
+                 (tc/rows :as-maps))
+        v    (fn [g item] (some #(when (and (= g (:wealth_quintile %)) (= item (:item %))) (:value_cad_millions %)) rows))
+        ex   (fn [g] (- (v g "Net worth (wealth)") (- (v g "Real estate") (v g "Mortgage liabilities"))))
+        tot  (v "All households" "Net worth (wealth)")
+        tex  (ex "All households")
+        qs   [["Lowest wealth quintile" "Bottom fifth"] ["Second wealth quintile" "Second"] ["Third wealth quintile" "Middle"]
+              ["Fourth wealth quintile" "Fourth"] ["Highest wealth quintile" "Top fifth"]]]
+    (tc/dataset
+     (for [[g label] qs
+           [measure x] [["Share of net worth" (* 100.0 (/ (v g "Net worth (wealth)") tot))]
+                        ["Share of net worth excluding real estate equity" (* 100.0 (/ (ex g) tex))]]]
+       {:quintile label :measure measure :share x :t (format "%.1f%%" x)}))))
+
+^{:kindly/options {:id :fig-without-housing
+                   :caption "Share of household net worth by wealth quintile, fourth quarter of 2025, with and without real estate equity (real estate minus mortgages). Real estate here includes rental and recreational property as well as homes, so excluding it also removes some investment wealth at the top. Statistics Canada, Distributions of Household Economic Accounts, Table 36-10-0660-01.[^15]"}}
+(-> without-housing
+    (pj/lay-bar :quintile :share {:color :measure :position :dodge})
+    (pj/lay-text {:text :t :position :dodge :group :measure :align-x :center :align-y :bottom :offset-y -3})
+    (pj/scale :color {:values [c/w c/o]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "Wealth With and Without Real Estate, 2025"
+                 :x-label "Households ranked by wealth" :y-label "% of total"
+                 :color-label "" :legend-position :bottom}))
+
+;; Take real estate out and Canadian wealth looks more concentrated, not less.
+;; Real estate equity makes up about 39–44% of the middle three-fifths' net worth but about 31% of the top fifth's.[^15]
+;; Without it, the top fifth holds about 69% of what remains, against 66% of all net worth,
+;; and the middle fifth's share falls from 9.8% to 8.3%.
+;; Because "real estate" here also includes rental and vacation properties, which the top owns more of, this understates the effect.
+;; If home equity is only partly wealth, as Buiter argued, the right-angle shape of Canadian wealth is sharper than the headline numbers show.
+
 ;; ## Conclusion
 
 ;; Canada's wealth distribution has the same basic shape as America's: a right angle.
@@ -444,3 +487,5 @@
 ;; [^11]: Statistics Canada, Survey of Financial Security, [Table 11-10-0075-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007501), net worth by decile, 1999–2023; shares computed from decile totals. Data in `data/sfs_networth_by_decile.csv`.
 ;; [^12]: Canada Revenue Agency, [Determining your residency status](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/determining-your-residency-status.html); *Income Tax Act*, [section 128.1](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html) (deemed disposition on emigration); US Internal Revenue Service, [U.S. citizens and resident aliens abroad](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad) and [Expatriation tax](https://www.irs.gov/individuals/international-taxpayers/expatriation-tax).
 ;; [^13]: Forbes methodology for *America's Richest Families*: "Unlike our flagship Forbes 400 list of America's richest and our World Billionaires ranks, which focus on individual or nuclear-family wealth, America's Richest Families includes multigenerational families of all sizes," as quoted by [Philadelphia Magazine](https://phillymag.com/?p=2778321). See also [CFA Institute, "Generational Wealth: Does the Apple Fall Far from the Tree?"](https://rpc.cfainstitute.org/blogs/enterprising-investor/2024/generational-wealth-does-the-apple-fall-far-from-the-tree) (2024).
+;; [^14]: Willem H. Buiter, ["Housing Wealth Isn't Wealth"](https://doi.org/10.3386/w14204), NBER Working Paper 14204, 2008; published in [*Economics: The Open-Access, Open-Assessment E-Journal*](https://doi.org/10.5018/economics-ejournal.ja.2010-22), 2010.
+;; [^15]: Statistics Canada, [Table 36-10-0660-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610066001), Distributions of household economic accounts, wealth, by characteristic, Canada, quarterly; real estate equity computed as real estate minus mortgage liabilities. Extract in `data/dhea_wealth_components_by_quintile_36-10-0660-01.csv`.
