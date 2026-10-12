@@ -289,7 +289,14 @@
 ;; and the bottom half's fell from 5.3% to 3.2% (excluding employer pensions, which the 1984 survey did not measure).[^10]
 ;; After 2005, on the broader measure that includes pensions, the trend reversed: the top 10%'s share fell from 51% to 44% by 2023,
 ;; and the bottom half's rose from 5.3% to 8.1%.[^11]
-;; Rising house prices spread wealth to middle-class owners, and pandemic savings helped in 2020–21.
+;; Most of that change came late.
+;; The top 10%'s share fell to 48% by 2012 as the financial crisis cut stock wealth, then held steady through 2019; the drop to 44% came between 2019 and 2023.
+;; The quarterly series above puts nearly all of it in 2020, when house prices jumped, spending stopped and emergency benefits replaced lost pay.
+;;
+;; The Child Benefit introduced in 2016 shows up in incomes rather than wealth: from 2015 to 2019, child poverty fell from 16.3% to 9.4%,
+;; and after-tax income grew 10% for the poorest tenth of Canadians against 4% for the middle, while wealth shares barely moved.[^19]
+;; Other programs from that era are invisible here: dental care and pharmacare arrived after the 2023 survey,
+;; and the survey leaves out the value of future Canada Pension Plan and Old Age Security benefits, so the enhanced CPP isn't counted as anyone's wealth.[^20]
 ;; Surveys miss the very richest families, though, which is why the PBO's adjusted estimates (above) put the top 1% alone at about 24%.
 
 
@@ -553,3 +560,5 @@
 ;; [^16]: Maclean's/Canadian Business Rich List 2025 (published November 2025; Maclean's calls its figures conservative estimates), as summarized by [Narcity](https://www.narcity.com/richest-canadian-billionaires-2025); Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601). GDP per person by province: Statistics Canada Tables 36-10-0222-01 and 17-10-0005-01. Data in `data/mar_*.csv`.
 ;; [^17]: CBC News/Radio-Canada, Jacques Poitras and Frédéric Zalac, ["Tax-free Irving trust in Bermuda was worth $3 billion"](https://www.cbc.ca/news/canada/new-brunswick/irving-trust-bermuda-1.6639780) (November 2022), and the series drawing on the Paradise Papers and Bermuda court filings; Robert Jones, ["Government won't say what killed tax exemption at Canaport oil tank farm"](https://www.cbc.ca/news/canada/new-brunswick/irving-oil-tank-farm-tax-1.6772467), CBC News, March 9, 2023, citing New Brunswick's tax expenditure report; CBC News on the [Canaport LNG tax cap](https://www.cbc.ca/news/canada/new-brunswick/canaport-lng-1.6646387) (2022); *Irving Oil Ltd. v. M.N.R.*, (1991) 126 N.R. 47 (F.C.A.), 91 DTC 5106. See also Jacques Poitras, *Irving vs. Irving* (Penguin, 2014). Details in `data/mar_irving_tax_concessions_documented.csv`.
 ;; [^18]: Auditor General of New Brunswick, [2015 Report, Volume II, Chapter 3](https://www.agnb-vgnb.ca/uploads/volume_section_translations/147/file/Chap3e.pdf) (Crown forest management: financial results, Exhibit 3.3, silviculture pricing) and 2020 Report, Volume I, Chapter 4 (licensee areas, Exhibit 4.2). Details in `data/mar_nb_crown_licensees.csv` and `data/mar_nb_crown_forest_operations.csv`.
+;; [^19]: Statistics Canada, [Table 11-10-0135-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501), Market Basket Measure poverty rates (2018 base), persons under 18; [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301), adjusted after-tax income by decile, 2024 dollars. Wealth shares from the quarterly series in Table 36-10-0660-01 (top 20%: 67.7% at the end of 2015, 68.2% at the end of 2019, 65.0% at the end of 2020).
+;; [^20]: Statistics Canada, ["The Wealth of Unattached Men and Women Aged 50 and Older, 1999 to 2016"](https://www150.statcan.gc.ca/n1/pub/11f0019m/11f0019m2021004-eng.htm) (Survey of Financial Security net worth excludes entitlements to future CPP/QPP and OAS benefits). The Canadian Dental Care Plan began paying claims in May 2024.
