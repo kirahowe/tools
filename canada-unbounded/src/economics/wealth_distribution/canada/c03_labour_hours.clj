@@ -390,7 +390,38 @@
 ;; These are household incomes, so they grew much faster than the typical paycheque above:
 ;; more families have two earners, families are smaller, and benefits are larger.
 ;; Households have kept up mostly by working more hours between them, not because each hour of work buys more.
-;; These figures also stop at the top tenth; the fastest gains, at the very top, are in [Who Pays Tax](c01_who_pays_tax.html) and [Wealth Concentration](c05_wealth_concentration.html).
+;; These figures also stop at the top tenth, about three million people.
+;; The fastest gains were further up.
+
+(def top-shares
+  (-> (c/data "statcan_top_income_shares_11-10-0055-01.csv")
+      (tc/select-rows #(and (#{"Total income" "Total income with capital gains"} (:income_concept %))
+                            (#{"Top 1 percent income group" "Top 0.1 percent income group"} (:income_group %))))
+      (tc/map-columns :series [:income_group :income_concept]
+                      #(str (if (str/starts-with? %1 "Top 1 ") "Top 1%" "Top 0.1%")
+                            (if (str/ends-with? %2 "capital gains") " with gains" " no gains")))))
+
+^{:kindly/options {:id :fig-top-income-shares
+                   :caption "Share of all income received by the top 1% and top 0.1% of tax filers, 1982–2023, with and without realized capital gains. Total income includes government transfers. These are individual tax filers, not families adjusted for size as in the chart above. Statistics Canada, Table 11-10-0055-01.[^18]"}}
+(-> top-shares
+    (pj/lay-line :year :share_of_income_pct {:color :series :size 2})
+    (pj/lay-text {:data (-> top-shares (tc/select-rows #(= 2023 (:year %)))
+                            (tc/map-columns :t [:share_of_income_pct] #(str % "%")))
+                  :x :year :y :share_of_income_pct :text :t :align-x :left :offset-x 6 :overlay true})
+    (pj/scale :color {:values [c/od c/o c/wd c/w]})
+    (pj/scale :x {:domain [1981 2027]})
+    (pj/scale :y {:include 0})
+    (pj/options {:title "The Top 1% and Top 0.1% Pulled Away in the 1990s"
+                 :x-label "Year" :y-label "% of all income"
+                 :color-label "" :legend-position :bottom}))
+
+;; Counting capital gains, the top 1% of tax filers received 7.4% of all income in 1982, a peak of 13.7% in 2007, and 12.4% in 2023.
+;; The top 0.1%, about 30,000 people, more than doubled their share, from 2.2% to 4.7%.[^18]
+;; Most of the rise came in the 1990s; since 2000 the shares have moved with the stock market, dipping after 2008 and spiking with the capital gains of 2021,
+;; but they have not returned to where they were.
+;; Taxes and transfers keep the bulk of Canadians growing together; they have not stopped the very top from pulling away.
+;; And income is only part of it: the largest fortunes grow mostly through gains that are never sold, so never appear here at all
+;; (see [Who Pays Tax](c01_who_pays_tax.html) and [Wealth Concentration](c05_wealth_concentration.html)).
 
 ;; Either way the result is the same as in the United States.
 ;; The typical worker's hour buys less housing than their parents' did, and the gains from growth go disproportionately
@@ -423,3 +454,4 @@
 ;; [^15]: Statistics Canada, Survey of Financial Security, [Table 11-10-0016-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110001601), net worth by age group, 1999–2023, in 2023 dollars; shares and increases computed from family counts and mean net worth. Details in `data/sfs_networth_by_age_familytype_geo.csv`.
 ;; [^16]: Statistics Canada, real GDP from [Table 36-10-0104-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610010401) (chained 2017 dollars) divided by population from [Table 17-10-0009-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901). Details in `data/real_gdp_per_capita_canada_long_run.csv`.
 ;; [^17]: Statistics Canada, [Table 11-10-0193-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110019301), upper income limit, income share and average of adjusted market, total and after-tax income by income decile, Canada, 2024 constant dollars. Extract in `data/statcan_income_by_decile_11-10-0193-01.csv`.
+;; [^18]: Statistics Canada, [Table 11-10-0055-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110005501), High income tax filers in Canada, share of income, Canada, 1982–2023. Extract in `data/statcan_top_income_shares_11-10-0055-01.csv`.

@@ -1,0 +1,1261 @@
+year,income_concept,income_group,share_of_income_pct
+1982,Market income,Top 0.01 percent income group,0.6
+1982,Market income,Top 0.1 percent income group,2.1
+1982,Market income,Top 1 percent income group,7.6
+1982,Market income,Top 10 percent income group,32.2
+1982,Market income,Bottom 50 percent income group,14.1
+1982,Total income,Top 0.01 percent income group,0.6
+1982,Total income,Top 0.1 percent income group,2.0
+1982,Total income,Top 1 percent income group,7.1
+1982,Total income,Top 10 percent income group,30.2
+1982,Total income,Bottom 50 percent income group,17.8
+1982,After tax income,Top 0.01 percent income group,0.5
+1982,After tax income,Top 0.1 percent income group,1.5
+1982,After tax income,Top 1 percent income group,5.8
+1982,After tax income,Top 10 percent income group,27.4
+1982,After tax income,Bottom 50 percent income group,20.3
+1982,Market income with capital gains,Top 0.01 percent income group,0.7
+1982,Market income with capital gains,Top 0.1 percent income group,2.3
+1982,Market income with capital gains,Top 1 percent income group,8.0
+1982,Market income with capital gains,Top 10 percent income group,32.6
+1982,Market income with capital gains,Bottom 50 percent income group,14.1
+1982,Total income with capital gains,Top 0.01 percent income group,0.7
+1982,Total income with capital gains,Top 0.1 percent income group,2.2
+1982,Total income with capital gains,Top 1 percent income group,7.4
+1982,Total income with capital gains,Top 10 percent income group,30.6
+1982,Total income with capital gains,Bottom 50 percent income group,17.8
+1982,After tax income with capital gains,Top 0.01 percent income group,0.6
+1982,After tax income with capital gains,Top 0.1 percent income group,1.8
+1982,After tax income with capital gains,Top 1 percent income group,6.3
+1982,After tax income with capital gains,Top 10 percent income group,27.8
+1982,After tax income with capital gains,Bottom 50 percent income group,20.3
+1983,Market income,Top 0.01 percent income group,0.5
+1983,Market income,Top 0.1 percent income group,1.9
+1983,Market income,Top 1 percent income group,7.4
+1983,Market income,Top 10 percent income group,32.4
+1983,Market income,Bottom 50 percent income group,13.5
+1983,Total income,Top 0.01 percent income group,0.5
+1983,Total income,Top 0.1 percent income group,1.8
+1983,Total income,Top 1 percent income group,6.9
+1983,Total income,Top 10 percent income group,30.1
+1983,Total income,Bottom 50 percent income group,17.6
+1983,After tax income,Top 0.01 percent income group,0.4
+1983,After tax income,Top 0.1 percent income group,1.4
+1983,After tax income,Top 1 percent income group,5.7
+1983,After tax income,Top 10 percent income group,27.3
+1983,After tax income,Bottom 50 percent income group,20.1
+1983,Market income with capital gains,Top 0.01 percent income group,0.6
+1983,Market income with capital gains,Top 0.1 percent income group,2.2
+1983,Market income with capital gains,Top 1 percent income group,7.9
+1983,Market income with capital gains,Top 10 percent income group,32.8
+1983,Market income with capital gains,Bottom 50 percent income group,13.5
+1983,Total income with capital gains,Top 0.01 percent income group,0.6
+1983,Total income with capital gains,Top 0.1 percent income group,2.0
+1983,Total income with capital gains,Top 1 percent income group,7.3
+1983,Total income with capital gains,Top 10 percent income group,30.6
+1983,Total income with capital gains,Bottom 50 percent income group,17.5
+1983,After tax income with capital gains,Top 0.01 percent income group,0.5
+1983,After tax income with capital gains,Top 0.1 percent income group,1.7
+1983,After tax income with capital gains,Top 1 percent income group,6.2
+1983,After tax income with capital gains,Top 10 percent income group,27.9
+1983,After tax income with capital gains,Bottom 50 percent income group,20.0
+1984,Market income,Top 0.01 percent income group,0.6
+1984,Market income,Top 0.1 percent income group,2.1
+1984,Market income,Top 1 percent income group,7.6
+1984,Market income,Top 10 percent income group,32.2
+1984,Market income,Bottom 50 percent income group,13.9
+1984,Total income,Top 0.01 percent income group,0.6
+1984,Total income,Top 0.1 percent income group,1.9
+1984,Total income,Top 1 percent income group,7.0
+1984,Total income,Top 10 percent income group,30.1
+1984,Total income,Bottom 50 percent income group,17.8
+1984,After tax income,Top 0.01 percent income group,0.5
+1984,After tax income,Top 0.1 percent income group,1.5
+1984,After tax income,Top 1 percent income group,5.8
+1984,After tax income,Top 10 percent income group,27.2
+1984,After tax income,Bottom 50 percent income group,20.3
+1984,Market income with capital gains,Top 0.01 percent income group,0.7
+1984,Market income with capital gains,Top 0.1 percent income group,2.3
+1984,Market income with capital gains,Top 1 percent income group,7.9
+1984,Market income with capital gains,Top 10 percent income group,32.6
+1984,Market income with capital gains,Bottom 50 percent income group,13.9
+1984,Total income with capital gains,Top 0.01 percent income group,0.6
+1984,Total income with capital gains,Top 0.1 percent income group,2.1
+1984,Total income with capital gains,Top 1 percent income group,7.4
+1984,Total income with capital gains,Top 10 percent income group,30.5
+1984,Total income with capital gains,Bottom 50 percent income group,17.7
+1984,After tax income with capital gains,Top 0.01 percent income group,0.6
+1984,After tax income with capital gains,Top 0.1 percent income group,1.8
+1984,After tax income with capital gains,Top 1 percent income group,6.3
+1984,After tax income with capital gains,Top 10 percent income group,27.7
+1984,After tax income with capital gains,Bottom 50 percent income group,20.2
+1985,Market income,Top 0.01 percent income group,0.6
+1985,Market income,Top 0.1 percent income group,2.1
+1985,Market income,Top 1 percent income group,7.6
+1985,Market income,Top 10 percent income group,32.2
+1985,Market income,Bottom 50 percent income group,14.2
+1985,Total income,Top 0.01 percent income group,0.6
+1985,Total income,Top 0.1 percent income group,1.9
+1985,Total income,Top 1 percent income group,7.1
+1985,Total income,Top 10 percent income group,30.0
+1985,Total income,Bottom 50 percent income group,18.0
+1985,After tax income,Top 0.01 percent income group,0.4
+1985,After tax income,Top 0.1 percent income group,1.5
+1985,After tax income,Top 1 percent income group,5.8
+1985,After tax income,Top 10 percent income group,27.2
+1985,After tax income,Bottom 50 percent income group,20.6
+1985,Market income with capital gains,Top 0.01 percent income group,0.8
+1985,Market income with capital gains,Top 0.1 percent income group,2.4
+1985,Market income with capital gains,Top 1 percent income group,8.2
+1985,Market income with capital gains,Top 10 percent income group,32.8
+1985,Market income with capital gains,Bottom 50 percent income group,14.1
+1985,Total income with capital gains,Top 0.01 percent income group,0.7
+1985,Total income with capital gains,Top 0.1 percent income group,2.3
+1985,Total income with capital gains,Top 1 percent income group,7.6
+1985,Total income with capital gains,Top 10 percent income group,30.7
+1985,Total income with capital gains,Bottom 50 percent income group,17.9
+1985,After tax income with capital gains,Top 0.01 percent income group,0.6
+1985,After tax income with capital gains,Top 0.1 percent income group,1.9
+1985,After tax income with capital gains,Top 1 percent income group,6.5
+1985,After tax income with capital gains,Top 10 percent income group,28.1
+1985,After tax income with capital gains,Bottom 50 percent income group,20.3
+1986,Market income,Top 0.01 percent income group,0.6
+1986,Market income,Top 0.1 percent income group,2.1
+1986,Market income,Top 1 percent income group,7.8
+1986,Market income,Top 10 percent income group,32.8
+1986,Market income,Bottom 50 percent income group,13.4
+1986,Total income,Top 0.01 percent income group,0.5
+1986,Total income,Top 0.1 percent income group,1.9
+1986,Total income,Top 1 percent income group,7.1
+1986,Total income,Top 10 percent income group,30.1
+1986,Total income,Bottom 50 percent income group,18.5
+1986,After tax income,Top 0.01 percent income group,0.4
+1986,After tax income,Top 0.1 percent income group,1.5
+1986,After tax income,Top 1 percent income group,5.8
+1986,After tax income,Top 10 percent income group,27.2
+1986,After tax income,Bottom 50 percent income group,21.2
+1986,Market income with capital gains,Top 0.01 percent income group,0.8
+1986,Market income with capital gains,Top 0.1 percent income group,2.5
+1986,Market income with capital gains,Top 1 percent income group,8.6
+1986,Market income with capital gains,Top 10 percent income group,33.8
+1986,Market income with capital gains,Bottom 50 percent income group,13.2
+1986,Total income with capital gains,Top 0.01 percent income group,0.7
+1986,Total income with capital gains,Top 0.1 percent income group,2.3
+1986,Total income with capital gains,Top 1 percent income group,7.9
+1986,Total income with capital gains,Top 10 percent income group,31.1
+1986,Total income with capital gains,Bottom 50 percent income group,18.2
+1986,After tax income with capital gains,Top 0.01 percent income group,0.6
+1986,After tax income with capital gains,Top 0.1 percent income group,1.9
+1986,After tax income with capital gains,Top 1 percent income group,6.8
+1986,After tax income with capital gains,Top 10 percent income group,28.6
+1986,After tax income with capital gains,Bottom 50 percent income group,20.8
+1987,Market income,Top 0.01 percent income group,0.7
+1987,Market income,Top 0.1 percent income group,2.3
+1987,Market income,Top 1 percent income group,8.0
+1987,Market income,Top 10 percent income group,32.9
+1987,Market income,Bottom 50 percent income group,13.6
+1987,Total income,Top 0.01 percent income group,0.6
+1987,Total income,Top 0.1 percent income group,2.1
+1987,Total income,Top 1 percent income group,7.3
+1987,Total income,Top 10 percent income group,30.2
+1987,Total income,Bottom 50 percent income group,18.8
+1987,After tax income,Top 0.01 percent income group,0.4
+1987,After tax income,Top 0.1 percent income group,1.6
+1987,After tax income,Top 1 percent income group,6.0
+1987,After tax income,Top 10 percent income group,27.2
+1987,After tax income,Bottom 50 percent income group,21.5
+1987,Market income with capital gains,Top 0.01 percent income group,0.9
+1987,Market income with capital gains,Top 0.1 percent income group,2.9
+1987,Market income with capital gains,Top 1 percent income group,9.4
+1987,Market income with capital gains,Top 10 percent income group,34.6
+1987,Market income with capital gains,Bottom 50 percent income group,13.2
+1987,Total income with capital gains,Top 0.01 percent income group,0.8
+1987,Total income with capital gains,Top 0.1 percent income group,2.6
+1987,Total income with capital gains,Top 1 percent income group,8.6
+1987,Total income with capital gains,Top 10 percent income group,31.8
+1987,Total income with capital gains,Bottom 50 percent income group,18.3
+1987,After tax income with capital gains,Top 0.01 percent income group,0.7
+1987,After tax income with capital gains,Top 0.1 percent income group,2.2
+1987,After tax income with capital gains,Top 1 percent income group,7.7
+1987,After tax income with capital gains,Top 10 percent income group,29.4
+1987,After tax income with capital gains,Bottom 50 percent income group,20.9
+1988,Market income,Top 0.01 percent income group,1.0
+1988,Market income,Top 0.1 percent income group,2.9
+1988,Market income,Top 1 percent income group,8.9
+1988,Market income,Top 10 percent income group,33.7
+1988,Market income,Bottom 50 percent income group,13.7
+1988,Total income,Top 0.01 percent income group,0.9
+1988,Total income,Top 0.1 percent income group,2.6
+1988,Total income,Top 1 percent income group,8.1
+1988,Total income,Top 10 percent income group,30.8
+1988,Total income,Bottom 50 percent income group,19.1
+1988,After tax income,Top 0.01 percent income group,0.6
+1988,After tax income,Top 0.1 percent income group,2.0
+1988,After tax income,Top 1 percent income group,6.6
+1988,After tax income,Top 10 percent income group,27.5
+1988,After tax income,Bottom 50 percent income group,21.9
+1988,Market income with capital gains,Top 0.01 percent income group,1.1
+1988,Market income with capital gains,Top 0.1 percent income group,3.5
+1988,Market income with capital gains,Top 1 percent income group,10.2
+1988,Market income with capital gains,Top 10 percent income group,35.1
+1988,Market income with capital gains,Bottom 50 percent income group,13.4
+1988,Total income with capital gains,Top 0.01 percent income group,1.0
+1988,Total income with capital gains,Top 0.1 percent income group,3.1
+1988,Total income with capital gains,Top 1 percent income group,9.3
+1988,Total income with capital gains,Top 10 percent income group,32.2
+1988,Total income with capital gains,Bottom 50 percent income group,18.7
+1988,After tax income with capital gains,Top 0.01 percent income group,0.8
+1988,After tax income with capital gains,Top 0.1 percent income group,2.7
+1988,After tax income with capital gains,Top 1 percent income group,8.2
+1988,After tax income with capital gains,Top 10 percent income group,29.4
+1988,After tax income with capital gains,Bottom 50 percent income group,21.3
+1989,Market income,Top 0.01 percent income group,1.2
+1989,Market income,Top 0.1 percent income group,3.3
+1989,Market income,Top 1 percent income group,9.6
+1989,Market income,Top 10 percent income group,34.3
+1989,Market income,Bottom 50 percent income group,13.4
+1989,Total income,Top 0.01 percent income group,1.5
+1989,Total income,Top 0.1 percent income group,3.4
+1989,Total income,Top 1 percent income group,9.1
+1989,Total income,Top 10 percent income group,31.6
+1989,Total income,Bottom 50 percent income group,18.9
+1989,After tax income,Top 0.01 percent income group,1.3
+1989,After tax income,Top 0.1 percent income group,2.7
+1989,After tax income,Top 1 percent income group,7.4
+1989,After tax income,Top 10 percent income group,28.1
+1989,After tax income,Bottom 50 percent income group,21.8
+1989,Market income with capital gains,Top 0.01 percent income group,1.5
+1989,Market income with capital gains,Top 0.1 percent income group,4.2
+1989,Market income with capital gains,Top 1 percent income group,11.3
+1989,Market income with capital gains,Top 10 percent income group,36.2
+1989,Market income with capital gains,Bottom 50 percent income group,13.1
+1989,Total income with capital gains,Top 0.01 percent income group,1.8
+1989,Total income with capital gains,Top 0.1 percent income group,4.2
+1989,Total income with capital gains,Top 1 percent income group,10.7
+1989,Total income with capital gains,Top 10 percent income group,33.4
+1989,Total income with capital gains,Bottom 50 percent income group,18.4
+1989,After tax income with capital gains,Top 0.01 percent income group,1.6
+1989,After tax income with capital gains,Top 0.1 percent income group,3.7
+1989,After tax income with capital gains,Top 1 percent income group,9.5
+1989,After tax income with capital gains,Top 10 percent income group,30.4
+1989,After tax income with capital gains,Bottom 50 percent income group,21.1
+1990,Market income,Top 0.01 percent income group,1.0
+1990,Market income,Top 0.1 percent income group,2.9
+1990,Market income,Top 1 percent income group,9.1
+1990,Market income,Top 10 percent income group,34.4
+1990,Market income,Bottom 50 percent income group,12.8
+1990,Total income,Top 0.01 percent income group,0.9
+1990,Total income,Top 0.1 percent income group,2.6
+1990,Total income,Top 1 percent income group,8.1
+1990,Total income,Top 10 percent income group,30.8
+1990,Total income,Bottom 50 percent income group,19.3
+1990,After tax income,Top 0.01 percent income group,0.6
+1990,After tax income,Top 0.1 percent income group,1.9
+1990,After tax income,Top 1 percent income group,6.4
+1990,After tax income,Top 10 percent income group,27.2
+1990,After tax income,Bottom 50 percent income group,22.4
+1990,Market income with capital gains,Top 0.01 percent income group,1.0
+1990,Market income with capital gains,Top 0.1 percent income group,3.2
+1990,Market income with capital gains,Top 1 percent income group,10.0
+1990,Market income with capital gains,Top 10 percent income group,35.3
+1990,Market income with capital gains,Bottom 50 percent income group,12.7
+1990,Total income with capital gains,Top 0.01 percent income group,0.9
+1990,Total income with capital gains,Top 0.1 percent income group,2.9
+1990,Total income with capital gains,Top 1 percent income group,8.9
+1990,Total income with capital gains,Top 10 percent income group,31.8
+1990,Total income with capital gains,Bottom 50 percent income group,19.0
+1990,After tax income with capital gains,Top 0.01 percent income group,0.7
+1990,After tax income with capital gains,Top 0.1 percent income group,2.4
+1990,After tax income with capital gains,Top 1 percent income group,7.6
+1990,After tax income with capital gains,Top 10 percent income group,28.5
+1990,After tax income with capital gains,Bottom 50 percent income group,22.0
+1991,Market income,Top 0.01 percent income group,1.0
+1991,Market income,Top 0.1 percent income group,2.9
+1991,Market income,Top 1 percent income group,9.1
+1991,Market income,Top 10 percent income group,35.2
+1991,Market income,Bottom 50 percent income group,11.6
+1991,Total income,Top 0.01 percent income group,0.9
+1991,Total income,Top 0.1 percent income group,2.5
+1991,Total income,Top 1 percent income group,8.0
+1991,Total income,Top 10 percent income group,31.0
+1991,Total income,Bottom 50 percent income group,18.9
+1991,After tax income,Top 0.01 percent income group,0.6
+1991,After tax income,Top 0.1 percent income group,1.8
+1991,After tax income,Top 1 percent income group,6.3
+1991,After tax income,Top 10 percent income group,27.4
+1991,After tax income,Bottom 50 percent income group,22.0
+1991,Market income with capital gains,Top 0.01 percent income group,1.1
+1991,Market income with capital gains,Top 0.1 percent income group,3.2
+1991,Market income with capital gains,Top 1 percent income group,10.0
+1991,Market income with capital gains,Top 10 percent income group,36.1
+1991,Market income with capital gains,Bottom 50 percent income group,11.4
+1991,Total income with capital gains,Top 0.01 percent income group,0.9
+1991,Total income with capital gains,Top 0.1 percent income group,2.8
+1991,Total income with capital gains,Top 1 percent income group,8.8
+1991,Total income with capital gains,Top 10 percent income group,31.8
+1991,Total income with capital gains,Bottom 50 percent income group,18.7
+1991,After tax income with capital gains,Top 0.01 percent income group,0.7
+1991,After tax income with capital gains,Top 0.1 percent income group,2.3
+1991,After tax income with capital gains,Top 1 percent income group,7.4
+1991,After tax income with capital gains,Top 10 percent income group,28.6
+1991,After tax income with capital gains,Bottom 50 percent income group,21.6
+1992,Market income,Top 0.01 percent income group,0.9
+1992,Market income,Top 0.1 percent income group,2.8
+1992,Market income,Top 1 percent income group,9.1
+1992,Market income,Top 10 percent income group,35.7
+1992,Market income,Bottom 50 percent income group,10.5
+1992,Total income,Top 0.01 percent income group,0.8
+1992,Total income,Top 0.1 percent income group,2.4
+1992,Total income,Top 1 percent income group,7.8
+1992,Total income,Top 10 percent income group,31.0
+1992,Total income,Bottom 50 percent income group,18.6
+1992,After tax income,Top 0.01 percent income group,0.6
+1992,After tax income,Top 0.1 percent income group,1.7
+1992,After tax income,Top 1 percent income group,6.2
+1992,After tax income,Top 10 percent income group,27.4
+1992,After tax income,Bottom 50 percent income group,21.6
+1992,Market income with capital gains,Top 0.01 percent income group,1.0
+1992,Market income with capital gains,Top 0.1 percent income group,3.2
+1992,Market income with capital gains,Top 1 percent income group,10.2
+1992,Market income with capital gains,Top 10 percent income group,36.8
+1992,Market income with capital gains,Bottom 50 percent income group,10.3
+1992,Total income with capital gains,Top 0.01 percent income group,0.9
+1992,Total income with capital gains,Top 0.1 percent income group,2.8
+1992,Total income with capital gains,Top 1 percent income group,8.8
+1992,Total income with capital gains,Top 10 percent income group,32.0
+1992,Total income with capital gains,Bottom 50 percent income group,18.3
+1992,After tax income with capital gains,Top 0.01 percent income group,0.7
+1992,After tax income with capital gains,Top 0.1 percent income group,2.3
+1992,After tax income with capital gains,Top 1 percent income group,7.5
+1992,After tax income with capital gains,Top 10 percent income group,28.8
+1992,After tax income with capital gains,Bottom 50 percent income group,21.2
+1993,Market income,Top 0.01 percent income group,1.0
+1993,Market income,Top 0.1 percent income group,2.9
+1993,Market income,Top 1 percent income group,9.4
+1993,Market income,Top 10 percent income group,36.6
+1993,Market income,Bottom 50 percent income group,9.6
+1993,Total income,Top 0.01 percent income group,0.8
+1993,Total income,Top 0.1 percent income group,2.5
+1993,Total income,Top 1 percent income group,8.0
+1993,Total income,Top 10 percent income group,31.5
+1993,Total income,Bottom 50 percent income group,18.1
+1993,After tax income,Top 0.01 percent income group,0.6
+1993,After tax income,Top 0.1 percent income group,1.8
+1993,After tax income,Top 1 percent income group,6.3
+1993,After tax income,Top 10 percent income group,27.7
+1993,After tax income,Bottom 50 percent income group,21.1
+1993,Market income with capital gains,Top 0.01 percent income group,1.1
+1993,Market income with capital gains,Top 0.1 percent income group,3.6
+1993,Market income with capital gains,Top 1 percent income group,11.0
+1993,Market income with capital gains,Top 10 percent income group,38.2
+1993,Market income with capital gains,Bottom 50 percent income group,9.4
+1993,Total income with capital gains,Top 0.01 percent income group,1.0
+1993,Total income with capital gains,Top 0.1 percent income group,3.1
+1993,Total income with capital gains,Top 1 percent income group,9.5
+1993,Total income with capital gains,Top 10 percent income group,33.1
+1993,Total income with capital gains,Bottom 50 percent income group,17.7
+1993,After tax income with capital gains,Top 0.01 percent income group,0.7
+1993,After tax income with capital gains,Top 0.1 percent income group,2.6
+1993,After tax income with capital gains,Top 1 percent income group,8.3
+1993,After tax income with capital gains,Top 10 percent income group,29.9
+1993,After tax income with capital gains,Bottom 50 percent income group,20.5
+1994,Market income,Top 0.01 percent income group,0.9
+1994,Market income,Top 0.1 percent income group,2.9
+1994,Market income,Top 1 percent income group,9.4
+1994,Market income,Top 10 percent income group,36.7
+1994,Market income,Bottom 50 percent income group,9.5
+1994,Total income,Top 0.01 percent income group,0.8
+1994,Total income,Top 0.1 percent income group,2.5
+1994,Total income,Top 1 percent income group,8.1
+1994,Total income,Top 10 percent income group,31.7
+1994,Total income,Bottom 50 percent income group,17.9
+1994,After tax income,Top 0.01 percent income group,0.6
+1994,After tax income,Top 0.1 percent income group,1.8
+1994,After tax income,Top 1 percent income group,6.3
+1994,After tax income,Top 10 percent income group,27.8
+1994,After tax income,Bottom 50 percent income group,20.9
+1994,Market income with capital gains,Top 0.01 percent income group,1.0
+1994,Market income with capital gains,Top 0.1 percent income group,3.3
+1994,Market income with capital gains,Top 1 percent income group,11.1
+1994,Market income with capital gains,Top 10 percent income group,40.3
+1994,Market income with capital gains,Bottom 50 percent income group,8.9
+1994,Total income with capital gains,Top 0.01 percent income group,0.8
+1994,Total income with capital gains,Top 0.1 percent income group,2.8
+1994,Total income with capital gains,Top 1 percent income group,9.7
+1994,Total income with capital gains,Top 10 percent income group,35.5
+1994,Total income with capital gains,Bottom 50 percent income group,16.5
+1994,After tax income with capital gains,Top 0.01 percent income group,0.6
+1994,After tax income with capital gains,Top 0.1 percent income group,2.4
+1994,After tax income with capital gains,Top 1 percent income group,8.9
+1994,After tax income with capital gains,Top 10 percent income group,33.8
+1994,After tax income with capital gains,Bottom 50 percent income group,18.9
+1995,Market income,Top 0.01 percent income group,1.0
+1995,Market income,Top 0.1 percent income group,3.1
+1995,Market income,Top 1 percent income group,9.8
+1995,Market income,Top 10 percent income group,37.0
+1995,Market income,Bottom 50 percent income group,9.7
+1995,Total income,Top 0.01 percent income group,0.9
+1995,Total income,Top 0.1 percent income group,2.6
+1995,Total income,Top 1 percent income group,8.4
+1995,Total income,Top 10 percent income group,32.1
+1995,Total income,Bottom 50 percent income group,17.7
+1995,After tax income,Top 0.01 percent income group,0.6
+1995,After tax income,Top 0.1 percent income group,1.9
+1995,After tax income,Top 1 percent income group,6.5
+1995,After tax income,Top 10 percent income group,28.2
+1995,After tax income,Bottom 50 percent income group,20.8
+1995,Market income with capital gains,Top 0.01 percent income group,1.1
+1995,Market income with capital gains,Top 0.1 percent income group,3.4
+1995,Market income with capital gains,Top 1 percent income group,10.6
+1995,Market income with capital gains,Top 10 percent income group,37.7
+1995,Market income with capital gains,Bottom 50 percent income group,9.6
+1995,Total income with capital gains,Top 0.01 percent income group,0.9
+1995,Total income with capital gains,Top 0.1 percent income group,3.0
+1995,Total income with capital gains,Top 1 percent income group,9.2
+1995,Total income with capital gains,Top 10 percent income group,32.9
+1995,Total income with capital gains,Bottom 50 percent income group,17.5
+1995,After tax income with capital gains,Top 0.01 percent income group,0.7
+1995,After tax income with capital gains,Top 0.1 percent income group,2.4
+1995,After tax income with capital gains,Top 1 percent income group,7.5
+1995,After tax income with capital gains,Top 10 percent income group,29.2
+1995,After tax income with capital gains,Bottom 50 percent income group,20.6
+1996,Market income,Top 0.01 percent income group,1.1
+1996,Market income,Top 0.1 percent income group,3.4
+1996,Market income,Top 1 percent income group,10.3
+1996,Market income,Top 10 percent income group,37.5
+1996,Market income,Bottom 50 percent income group,9.6
+1996,Total income,Top 0.01 percent income group,1.0
+1996,Total income,Top 0.1 percent income group,2.9
+1996,Total income,Top 1 percent income group,8.9
+1996,Total income,Top 10 percent income group,32.7
+1996,Total income,Bottom 50 percent income group,17.4
+1996,After tax income,Top 0.01 percent income group,0.7
+1996,After tax income,Top 0.1 percent income group,2.1
+1996,After tax income,Top 1 percent income group,6.9
+1996,After tax income,Top 10 percent income group,28.7
+1996,After tax income,Bottom 50 percent income group,20.4
+1996,Market income with capital gains,Top 0.01 percent income group,1.3
+1996,Market income with capital gains,Top 0.1 percent income group,3.8
+1996,Market income with capital gains,Top 1 percent income group,11.2
+1996,Market income with capital gains,Top 10 percent income group,38.3
+1996,Market income with capital gains,Bottom 50 percent income group,9.5
+1996,Total income with capital gains,Top 0.01 percent income group,1.1
+1996,Total income with capital gains,Top 0.1 percent income group,3.3
+1996,Total income with capital gains,Top 1 percent income group,9.7
+1996,Total income with capital gains,Top 10 percent income group,33.6
+1996,Total income with capital gains,Bottom 50 percent income group,17.2
+1996,After tax income with capital gains,Top 0.01 percent income group,0.8
+1996,After tax income with capital gains,Top 0.1 percent income group,2.6
+1996,After tax income with capital gains,Top 1 percent income group,7.9
+1996,After tax income with capital gains,Top 10 percent income group,29.7
+1996,After tax income with capital gains,Bottom 50 percent income group,20.2
+1997,Market income,Top 0.01 percent income group,1.3
+1997,Market income,Top 0.1 percent income group,3.8
+1997,Market income,Top 1 percent income group,11.1
+1997,Market income,Top 10 percent income group,38.2
+1997,Market income,Bottom 50 percent income group,9.6
+1997,Total income,Top 0.01 percent income group,1.1
+1997,Total income,Top 0.1 percent income group,3.3
+1997,Total income,Top 1 percent income group,9.7
+1997,Total income,Top 10 percent income group,33.5
+1997,Total income,Bottom 50 percent income group,17.1
+1997,After tax income,Top 0.01 percent income group,0.8
+1997,After tax income,Top 0.1 percent income group,2.4
+1997,After tax income,Top 1 percent income group,7.4
+1997,After tax income,Top 10 percent income group,29.4
+1997,After tax income,Bottom 50 percent income group,20.1
+1997,Market income with capital gains,Top 0.01 percent income group,1.5
+1997,Market income with capital gains,Top 0.1 percent income group,4.4
+1997,Market income with capital gains,Top 1 percent income group,12.2
+1997,Market income with capital gains,Top 10 percent income group,39.1
+1997,Market income with capital gains,Bottom 50 percent income group,9.5
+1997,Total income with capital gains,Top 0.01 percent income group,1.3
+1997,Total income with capital gains,Top 0.1 percent income group,3.8
+1997,Total income with capital gains,Top 1 percent income group,10.7
+1997,Total income with capital gains,Top 10 percent income group,34.5
+1997,Total income with capital gains,Bottom 50 percent income group,16.9
+1997,After tax income with capital gains,Top 0.01 percent income group,1.0
+1997,After tax income with capital gains,Top 0.1 percent income group,3.0
+1997,After tax income with capital gains,Top 1 percent income group,8.6
+1997,After tax income with capital gains,Top 10 percent income group,30.6
+1997,After tax income with capital gains,Bottom 50 percent income group,19.9
+1998,Market income,Top 0.01 percent income group,1.4
+1998,Market income,Top 0.1 percent income group,4.1
+1998,Market income,Top 1 percent income group,11.6
+1998,Market income,Top 10 percent income group,38.6
+1998,Market income,Bottom 50 percent income group,9.7
+1998,Total income,Top 0.01 percent income group,1.2
+1998,Total income,Top 0.1 percent income group,3.6
+1998,Total income,Top 1 percent income group,10.2
+1998,Total income,Top 10 percent income group,34.0
+1998,Total income,Bottom 50 percent income group,17.1
+1998,After tax income,Top 0.01 percent income group,0.9
+1998,After tax income,Top 0.1 percent income group,2.6
+1998,After tax income,Top 1 percent income group,7.8
+1998,After tax income,Top 10 percent income group,29.8
+1998,After tax income,Bottom 50 percent income group,20.1
+1998,Market income with capital gains,Top 0.01 percent income group,1.6
+1998,Market income with capital gains,Top 0.1 percent income group,4.7
+1998,Market income with capital gains,Top 1 percent income group,12.7
+1998,Market income with capital gains,Top 10 percent income group,39.6
+1998,Market income with capital gains,Bottom 50 percent income group,9.6
+1998,Total income with capital gains,Top 0.01 percent income group,1.4
+1998,Total income with capital gains,Top 0.1 percent income group,4.1
+1998,Total income with capital gains,Top 1 percent income group,11.2
+1998,Total income with capital gains,Top 10 percent income group,35.0
+1998,Total income with capital gains,Bottom 50 percent income group,16.9
+1998,After tax income with capital gains,Top 0.01 percent income group,1.1
+1998,After tax income with capital gains,Top 0.1 percent income group,3.2
+1998,After tax income with capital gains,Top 1 percent income group,9.0
+1998,After tax income with capital gains,Top 10 percent income group,31.0
+1998,After tax income with capital gains,Bottom 50 percent income group,19.9
+1999,Market income,Top 0.01 percent income group,1.6
+1999,Market income,Top 0.1 percent income group,4.3
+1999,Market income,Top 1 percent income group,11.8
+1999,Market income,Top 10 percent income group,38.6
+1999,Market income,Bottom 50 percent income group,10.1
+1999,Total income,Top 0.01 percent income group,1.4
+1999,Total income,Top 0.1 percent income group,3.8
+1999,Total income,Top 1 percent income group,10.4
+1999,Total income,Top 10 percent income group,34.2
+1999,Total income,Bottom 50 percent income group,17.1
+1999,After tax income,Top 0.01 percent income group,1.1
+1999,After tax income,Top 0.1 percent income group,2.8
+1999,After tax income,Top 1 percent income group,8.1
+1999,After tax income,Top 10 percent income group,30.0
+1999,After tax income,Bottom 50 percent income group,20.1
+1999,Market income with capital gains,Top 0.01 percent income group,1.7
+1999,Market income with capital gains,Top 0.1 percent income group,4.8
+1999,Market income with capital gains,Top 1 percent income group,12.9
+1999,Market income with capital gains,Top 10 percent income group,39.6
+1999,Market income with capital gains,Bottom 50 percent income group,10.0
+1999,Total income with capital gains,Top 0.01 percent income group,1.5
+1999,Total income with capital gains,Top 0.1 percent income group,4.2
+1999,Total income with capital gains,Top 1 percent income group,11.4
+1999,Total income with capital gains,Top 10 percent income group,35.2
+1999,Total income with capital gains,Bottom 50 percent income group,16.9
+1999,After tax income with capital gains,Top 0.01 percent income group,1.2
+1999,After tax income with capital gains,Top 0.1 percent income group,3.4
+1999,After tax income with capital gains,Top 1 percent income group,9.3
+1999,After tax income with capital gains,Top 10 percent income group,31.2
+1999,After tax income with capital gains,Bottom 50 percent income group,19.9
+2000,Market income,Top 0.01 percent income group,1.8
+2000,Market income,Top 0.1 percent income group,4.9
+2000,Market income,Top 1 percent income group,12.6
+2000,Market income,Top 10 percent income group,39.2
+2000,Market income,Bottom 50 percent income group,10.1
+2000,Total income,Top 0.01 percent income group,1.6
+2000,Total income,Top 0.1 percent income group,4.3
+2000,Total income,Top 1 percent income group,11.2
+2000,Total income,Top 10 percent income group,35.0
+2000,Total income,Bottom 50 percent income group,16.8
+2000,After tax income,Top 0.01 percent income group,1.2
+2000,After tax income,Top 0.1 percent income group,3.3
+2000,After tax income,Top 1 percent income group,8.7
+2000,After tax income,Top 10 percent income group,30.8
+2000,After tax income,Bottom 50 percent income group,19.7
+2000,Market income with capital gains,Top 0.01 percent income group,2.2
+2000,Market income with capital gains,Top 0.1 percent income group,6.0
+2000,Market income with capital gains,Top 1 percent income group,14.9
+2000,Market income with capital gains,Top 10 percent income group,41.3
+2000,Market income with capital gains,Bottom 50 percent income group,9.9
+2000,Total income with capital gains,Top 0.01 percent income group,1.9
+2000,Total income with capital gains,Top 0.1 percent income group,5.3
+2000,Total income with capital gains,Top 1 percent income group,13.3
+2000,Total income with capital gains,Top 10 percent income group,37.2
+2000,Total income with capital gains,Bottom 50 percent income group,16.3
+2000,After tax income with capital gains,Top 0.01 percent income group,1.7
+2000,After tax income with capital gains,Top 0.1 percent income group,4.5
+2000,After tax income with capital gains,Top 1 percent income group,11.4
+2000,After tax income with capital gains,Top 10 percent income group,33.4
+2000,After tax income with capital gains,Bottom 50 percent income group,19.1
+2001,Market income,Top 0.01 percent income group,1.7
+2001,Market income,Top 0.1 percent income group,4.7
+2001,Market income,Top 1 percent income group,12.6
+2001,Market income,Top 10 percent income group,39.2
+2001,Market income,Bottom 50 percent income group,10.3
+2001,Total income,Top 0.01 percent income group,1.5
+2001,Total income,Top 0.1 percent income group,4.2
+2001,Total income,Top 1 percent income group,11.1
+2001,Total income,Top 10 percent income group,35.0
+2001,Total income,Bottom 50 percent income group,17.0
+2001,After tax income,Top 0.01 percent income group,1.2
+2001,After tax income,Top 0.1 percent income group,3.2
+2001,After tax income,Top 1 percent income group,8.9
+2001,After tax income,Top 10 percent income group,31.1
+2001,After tax income,Bottom 50 percent income group,19.8
+2001,Market income with capital gains,Top 0.01 percent income group,1.9
+2001,Market income with capital gains,Top 0.1 percent income group,5.3
+2001,Market income with capital gains,Top 1 percent income group,13.6
+2001,Market income with capital gains,Top 10 percent income group,40.1
+2001,Market income with capital gains,Bottom 50 percent income group,10.3
+2001,Total income with capital gains,Top 0.01 percent income group,1.7
+2001,Total income with capital gains,Top 0.1 percent income group,4.7
+2001,Total income with capital gains,Top 1 percent income group,12.1
+2001,Total income with capital gains,Top 10 percent income group,35.9
+2001,Total income with capital gains,Bottom 50 percent income group,16.8
+2001,After tax income with capital gains,Top 0.01 percent income group,1.4
+2001,After tax income with capital gains,Top 0.1 percent income group,3.8
+2001,After tax income with capital gains,Top 1 percent income group,10.1
+2001,After tax income with capital gains,Top 10 percent income group,32.3
+2001,After tax income with capital gains,Bottom 50 percent income group,19.5
+2002,Market income,Top 0.01 percent income group,1.5
+2002,Market income,Top 0.1 percent income group,4.5
+2002,Market income,Top 1 percent income group,12.2
+2002,Market income,Top 10 percent income group,39.2
+2002,Market income,Bottom 50 percent income group,10.1
+2002,Total income,Top 0.01 percent income group,1.3
+2002,Total income,Top 0.1 percent income group,3.9
+2002,Total income,Top 1 percent income group,10.8
+2002,Total income,Top 10 percent income group,34.8
+2002,Total income,Bottom 50 percent income group,17.0
+2002,After tax income,Top 0.01 percent income group,1.0
+2002,After tax income,Top 0.1 percent income group,3.0
+2002,After tax income,Top 1 percent income group,8.6
+2002,After tax income,Top 10 percent income group,31.0
+2002,After tax income,Bottom 50 percent income group,19.7
+2002,Market income with capital gains,Top 0.01 percent income group,1.7
+2002,Market income with capital gains,Top 0.1 percent income group,4.9
+2002,Market income with capital gains,Top 1 percent income group,13.1
+2002,Market income with capital gains,Top 10 percent income group,39.9
+2002,Market income with capital gains,Bottom 50 percent income group,10.0
+2002,Total income with capital gains,Top 0.01 percent income group,1.5
+2002,Total income with capital gains,Top 0.1 percent income group,4.4
+2002,Total income with capital gains,Top 1 percent income group,11.6
+2002,Total income with capital gains,Top 10 percent income group,35.6
+2002,Total income with capital gains,Bottom 50 percent income group,16.8
+2002,After tax income with capital gains,Top 0.01 percent income group,1.3
+2002,After tax income with capital gains,Top 0.1 percent income group,3.6
+2002,After tax income with capital gains,Top 1 percent income group,9.6
+2002,After tax income with capital gains,Top 10 percent income group,32.0
+2002,After tax income with capital gains,Bottom 50 percent income group,19.4
+2003,Market income,Top 0.01 percent income group,1.5
+2003,Market income,Top 0.1 percent income group,4.4
+2003,Market income,Top 1 percent income group,12.2
+2003,Market income,Top 10 percent income group,39.2
+2003,Market income,Bottom 50 percent income group,10.0
+2003,Total income,Top 0.01 percent income group,1.4
+2003,Total income,Top 0.1 percent income group,3.9
+2003,Total income,Top 1 percent income group,10.8
+2003,Total income,Top 10 percent income group,34.8
+2003,Total income,Bottom 50 percent income group,16.9
+2003,After tax income,Top 0.01 percent income group,1.0
+2003,After tax income,Top 0.1 percent income group,3.0
+2003,After tax income,Top 1 percent income group,8.6
+2003,After tax income,Top 10 percent income group,31.0
+2003,After tax income,Bottom 50 percent income group,19.5
+2003,Market income with capital gains,Top 0.01 percent income group,1.7
+2003,Market income with capital gains,Top 0.1 percent income group,4.8
+2003,Market income with capital gains,Top 1 percent income group,13.0
+2003,Market income with capital gains,Top 10 percent income group,39.9
+2003,Market income with capital gains,Bottom 50 percent income group,9.9
+2003,Total income with capital gains,Top 0.01 percent income group,1.5
+2003,Total income with capital gains,Top 0.1 percent income group,4.3
+2003,Total income with capital gains,Top 1 percent income group,11.5
+2003,Total income with capital gains,Top 10 percent income group,35.6
+2003,Total income with capital gains,Bottom 50 percent income group,16.7
+2003,After tax income with capital gains,Top 0.01 percent income group,1.2
+2003,After tax income with capital gains,Top 0.1 percent income group,3.5
+2003,After tax income with capital gains,Top 1 percent income group,9.6
+2003,After tax income with capital gains,Top 10 percent income group,32.0
+2003,After tax income with capital gains,Bottom 50 percent income group,19.3
+2004,Market income,Top 0.01 percent income group,1.6
+2004,Market income,Top 0.1 percent income group,4.7
+2004,Market income,Top 1 percent income group,12.5
+2004,Market income,Top 10 percent income group,39.5
+2004,Market income,Bottom 50 percent income group,10.0
+2004,Total income,Top 0.01 percent income group,1.5
+2004,Total income,Top 0.1 percent income group,4.1
+2004,Total income,Top 1 percent income group,11.1
+2004,Total income,Top 10 percent income group,35.2
+2004,Total income,Bottom 50 percent income group,16.8
+2004,After tax income,Top 0.01 percent income group,1.1
+2004,After tax income,Top 0.1 percent income group,3.2
+2004,After tax income,Top 1 percent income group,8.9
+2004,After tax income,Top 10 percent income group,31.4
+2004,After tax income,Bottom 50 percent income group,19.4
+2004,Market income with capital gains,Top 0.01 percent income group,1.9
+2004,Market income with capital gains,Top 0.1 percent income group,5.3
+2004,Market income with capital gains,Top 1 percent income group,13.7
+2004,Market income with capital gains,Top 10 percent income group,40.5
+2004,Market income with capital gains,Bottom 50 percent income group,9.9
+2004,Total income with capital gains,Top 0.01 percent income group,1.7
+2004,Total income with capital gains,Top 0.1 percent income group,4.7
+2004,Total income with capital gains,Top 1 percent income group,12.2
+2004,Total income with capital gains,Top 10 percent income group,36.3
+2004,Total income with capital gains,Bottom 50 percent income group,16.5
+2004,After tax income with capital gains,Top 0.01 percent income group,1.4
+2004,After tax income with capital gains,Top 0.1 percent income group,3.9
+2004,After tax income with capital gains,Top 1 percent income group,10.3
+2004,After tax income with capital gains,Top 10 percent income group,32.8
+2004,After tax income with capital gains,Bottom 50 percent income group,19.1
+2005,Market income,Top 0.01 percent income group,1.8
+2005,Market income,Top 0.1 percent income group,5.0
+2005,Market income,Top 1 percent income group,13.0
+2005,Market income,Top 10 percent income group,39.9
+2005,Market income,Bottom 50 percent income group,10.1
+2005,Total income,Top 0.01 percent income group,1.6
+2005,Total income,Top 0.1 percent income group,4.4
+2005,Total income,Top 1 percent income group,11.5
+2005,Total income,Top 10 percent income group,35.6
+2005,Total income,Bottom 50 percent income group,16.8
+2005,After tax income,Top 0.01 percent income group,1.2
+2005,After tax income,Top 0.1 percent income group,3.4
+2005,After tax income,Top 1 percent income group,9.3
+2005,After tax income,Top 10 percent income group,31.6
+2005,After tax income,Bottom 50 percent income group,19.5
+2005,Market income with capital gains,Top 0.01 percent income group,2.1
+2005,Market income with capital gains,Top 0.1 percent income group,5.7
+2005,Market income with capital gains,Top 1 percent income group,14.5
+2005,Market income with capital gains,Top 10 percent income group,41.2
+2005,Market income with capital gains,Bottom 50 percent income group,10.0
+2005,Total income with capital gains,Top 0.01 percent income group,1.8
+2005,Total income with capital gains,Top 0.1 percent income group,5.1
+2005,Total income with capital gains,Top 1 percent income group,12.9
+2005,Total income with capital gains,Top 10 percent income group,37.0
+2005,Total income with capital gains,Bottom 50 percent income group,16.4
+2005,After tax income with capital gains,Top 0.01 percent income group,1.6
+2005,After tax income with capital gains,Top 0.1 percent income group,4.3
+2005,After tax income with capital gains,Top 1 percent income group,10.9
+2005,After tax income with capital gains,Top 10 percent income group,33.4
+2005,After tax income with capital gains,Bottom 50 percent income group,19.1
+2006,Market income,Top 0.01 percent income group,1.9
+2006,Market income,Top 0.1 percent income group,5.4
+2006,Market income,Top 1 percent income group,13.6
+2006,Market income,Top 10 percent income group,40.4
+2006,Market income,Bottom 50 percent income group,10.1
+2006,Total income,Top 0.01 percent income group,1.7
+2006,Total income,Top 0.1 percent income group,4.8
+2006,Total income,Top 1 percent income group,12.1
+2006,Total income,Top 10 percent income group,36.1
+2006,Total income,Bottom 50 percent income group,16.8
+2006,After tax income,Top 0.01 percent income group,1.3
+2006,After tax income,Top 0.1 percent income group,3.7
+2006,After tax income,Top 1 percent income group,9.7
+2006,After tax income,Top 10 percent income group,32.1
+2006,After tax income,Bottom 50 percent income group,19.4
+2006,Market income with capital gains,Top 0.01 percent income group,2.1
+2006,Market income with capital gains,Top 0.1 percent income group,6.2
+2006,Market income with capital gains,Top 1 percent income group,15.2
+2006,Market income with capital gains,Top 10 percent income group,41.9
+2006,Market income with capital gains,Bottom 50 percent income group,9.9
+2006,Total income with capital gains,Top 0.01 percent income group,1.9
+2006,Total income with capital gains,Top 0.1 percent income group,5.5
+2006,Total income with capital gains,Top 1 percent income group,13.6
+2006,Total income with capital gains,Top 10 percent income group,37.6
+2006,Total income with capital gains,Bottom 50 percent income group,16.3
+2006,After tax income with capital gains,Top 0.01 percent income group,1.6
+2006,After tax income with capital gains,Top 0.1 percent income group,4.6
+2006,After tax income with capital gains,Top 1 percent income group,11.6
+2006,After tax income with capital gains,Top 10 percent income group,34.0
+2006,After tax income with capital gains,Bottom 50 percent income group,19.0
+2007,Market income,Top 0.01 percent income group,1.8
+2007,Market income,Top 0.1 percent income group,5.3
+2007,Market income,Top 1 percent income group,13.6
+2007,Market income,Top 10 percent income group,40.3
+2007,Market income,Bottom 50 percent income group,10.3
+2007,Total income,Top 0.01 percent income group,1.6
+2007,Total income,Top 0.1 percent income group,4.7
+2007,Total income,Top 1 percent income group,12.1
+2007,Total income,Top 10 percent income group,36.1
+2007,Total income,Bottom 50 percent income group,16.8
+2007,After tax income,Top 0.01 percent income group,1.3
+2007,After tax income,Top 0.1 percent income group,3.7
+2007,After tax income,Top 1 percent income group,9.7
+2007,After tax income,Top 10 percent income group,32.1
+2007,After tax income,Bottom 50 percent income group,19.3
+2007,Market income with capital gains,Top 0.01 percent income group,2.1
+2007,Market income with capital gains,Top 0.1 percent income group,6.1
+2007,Market income with capital gains,Top 1 percent income group,15.3
+2007,Market income with capital gains,Top 10 percent income group,42.0
+2007,Market income with capital gains,Bottom 50 percent income group,10.1
+2007,Total income with capital gains,Top 0.01 percent income group,1.9
+2007,Total income with capital gains,Top 0.1 percent income group,5.5
+2007,Total income with capital gains,Top 1 percent income group,13.7
+2007,Total income with capital gains,Top 10 percent income group,37.8
+2007,Total income with capital gains,Bottom 50 percent income group,16.4
+2007,After tax income with capital gains,Top 0.01 percent income group,1.7
+2007,After tax income with capital gains,Top 0.1 percent income group,4.7
+2007,After tax income with capital gains,Top 1 percent income group,11.7
+2007,After tax income with capital gains,Top 10 percent income group,34.2
+2007,After tax income with capital gains,Bottom 50 percent income group,18.9
+2008,Market income,Top 0.01 percent income group,1.7
+2008,Market income,Top 0.1 percent income group,4.9
+2008,Market income,Top 1 percent income group,12.9
+2008,Market income,Top 10 percent income group,40.0
+2008,Market income,Bottom 50 percent income group,10.3
+2008,Total income,Top 0.01 percent income group,1.5
+2008,Total income,Top 0.1 percent income group,4.3
+2008,Total income,Top 1 percent income group,11.5
+2008,Total income,Top 10 percent income group,35.7
+2008,Total income,Bottom 50 percent income group,16.9
+2008,After tax income,Top 0.01 percent income group,1.2
+2008,After tax income,Top 0.1 percent income group,3.4
+2008,After tax income,Top 1 percent income group,9.3
+2008,After tax income,Top 10 percent income group,31.8
+2008,After tax income,Bottom 50 percent income group,19.4
+2008,Market income with capital gains,Top 0.01 percent income group,1.9
+2008,Market income with capital gains,Top 0.1 percent income group,5.5
+2008,Market income with capital gains,Top 1 percent income group,14.1
+2008,Market income with capital gains,Top 10 percent income group,41.0
+2008,Market income with capital gains,Bottom 50 percent income group,10.2
+2008,Total income with capital gains,Top 0.01 percent income group,1.7
+2008,Total income with capital gains,Top 0.1 percent income group,4.9
+2008,Total income with capital gains,Top 1 percent income group,12.5
+2008,Total income with capital gains,Top 10 percent income group,36.8
+2008,Total income with capital gains,Bottom 50 percent income group,16.6
+2008,After tax income with capital gains,Top 0.01 percent income group,1.5
+2008,After tax income with capital gains,Top 0.1 percent income group,4.1
+2008,After tax income with capital gains,Top 1 percent income group,10.6
+2008,After tax income with capital gains,Top 10 percent income group,33.1
+2008,After tax income with capital gains,Bottom 50 percent income group,19.1
+2009,Market income,Top 0.01 percent income group,1.5
+2009,Market income,Top 0.1 percent income group,4.3
+2009,Market income,Top 1 percent income group,12.2
+2009,Market income,Top 10 percent income group,39.7
+2009,Market income,Bottom 50 percent income group,9.9
+2009,Total income,Top 0.01 percent income group,1.3
+2009,Total income,Top 0.1 percent income group,3.8
+2009,Total income,Top 1 percent income group,10.7
+2009,Total income,Top 10 percent income group,35.0
+2009,Total income,Bottom 50 percent income group,17.1
+2009,After tax income,Top 0.01 percent income group,1.0
+2009,After tax income,Top 0.1 percent income group,3.0
+2009,After tax income,Top 1 percent income group,8.6
+2009,After tax income,Top 10 percent income group,31.3
+2009,After tax income,Bottom 50 percent income group,19.5
+2009,Market income with capital gains,Top 0.01 percent income group,1.6
+2009,Market income with capital gains,Top 0.1 percent income group,4.7
+2009,Market income with capital gains,Top 1 percent income group,13.0
+2009,Market income with capital gains,Top 10 percent income group,40.4
+2009,Market income with capital gains,Bottom 50 percent income group,9.8
+2009,Total income with capital gains,Top 0.01 percent income group,1.4
+2009,Total income with capital gains,Top 0.1 percent income group,4.1
+2009,Total income with capital gains,Top 1 percent income group,11.4
+2009,Total income with capital gains,Top 10 percent income group,35.8
+2009,Total income with capital gains,Bottom 50 percent income group,16.8
+2009,After tax income with capital gains,Top 0.01 percent income group,1.2
+2009,After tax income with capital gains,Top 0.1 percent income group,3.4
+2009,After tax income with capital gains,Top 1 percent income group,9.6
+2009,After tax income with capital gains,Top 10 percent income group,32.3
+2009,After tax income with capital gains,Bottom 50 percent income group,19.2
+2010,Market income,Top 0.01 percent income group,1.5
+2010,Market income,Top 0.1 percent income group,4.3
+2010,Market income,Top 1 percent income group,12.1
+2010,Market income,Top 10 percent income group,39.7
+2010,Market income,Bottom 50 percent income group,9.8
+2010,Total income,Top 0.01 percent income group,1.3
+2010,Total income,Top 0.1 percent income group,3.8
+2010,Total income,Top 1 percent income group,10.6
+2010,Total income,Top 10 percent income group,35.0
+2010,Total income,Bottom 50 percent income group,17.1
+2010,After tax income,Top 0.01 percent income group,1.0
+2010,After tax income,Top 0.1 percent income group,2.9
+2010,After tax income,Top 1 percent income group,8.6
+2010,After tax income,Top 10 percent income group,31.3
+2010,After tax income,Bottom 50 percent income group,19.5
+2010,Market income with capital gains,Top 0.01 percent income group,1.7
+2010,Market income with capital gains,Top 0.1 percent income group,4.9
+2010,Market income with capital gains,Top 1 percent income group,13.3
+2010,Market income with capital gains,Top 10 percent income group,40.8
+2010,Market income with capital gains,Bottom 50 percent income group,9.7
+2010,Total income with capital gains,Top 0.01 percent income group,1.5
+2010,Total income with capital gains,Top 0.1 percent income group,4.3
+2010,Total income with capital gains,Top 1 percent income group,11.7
+2010,Total income with capital gains,Top 10 percent income group,36.2
+2010,Total income with capital gains,Bottom 50 percent income group,16.7
+2010,After tax income with capital gains,Top 0.01 percent income group,1.2
+2010,After tax income with capital gains,Top 0.1 percent income group,3.6
+2010,After tax income with capital gains,Top 1 percent income group,10.0
+2010,After tax income with capital gains,Top 10 percent income group,32.7
+2010,After tax income with capital gains,Bottom 50 percent income group,19.1
+2011,Market income,Top 0.01 percent income group,1.5
+2011,Market income,Top 0.1 percent income group,4.3
+2011,Market income,Top 1 percent income group,12.0
+2011,Market income,Top 10 percent income group,39.6
+2011,Market income,Bottom 50 percent income group,9.9
+2011,Total income,Top 0.01 percent income group,1.3
+2011,Total income,Top 0.1 percent income group,3.7
+2011,Total income,Top 1 percent income group,10.6
+2011,Total income,Top 10 percent income group,35.1
+2011,Total income,Bottom 50 percent income group,17.0
+2011,After tax income,Top 0.01 percent income group,1.0
+2011,After tax income,Top 0.1 percent income group,3.0
+2011,After tax income,Top 1 percent income group,8.6
+2011,After tax income,Top 10 percent income group,31.3
+2011,After tax income,Bottom 50 percent income group,19.5
+2011,Market income with capital gains,Top 0.01 percent income group,1.7
+2011,Market income with capital gains,Top 0.1 percent income group,4.9
+2011,Market income with capital gains,Top 1 percent income group,13.2
+2011,Market income with capital gains,Top 10 percent income group,40.7
+2011,Market income with capital gains,Bottom 50 percent income group,9.8
+2011,Total income with capital gains,Top 0.01 percent income group,1.5
+2011,Total income with capital gains,Top 0.1 percent income group,4.3
+2011,Total income with capital gains,Top 1 percent income group,11.7
+2011,Total income with capital gains,Top 10 percent income group,36.2
+2011,Total income with capital gains,Bottom 50 percent income group,16.7
+2011,After tax income with capital gains,Top 0.01 percent income group,1.3
+2011,After tax income with capital gains,Top 0.1 percent income group,3.7
+2011,After tax income with capital gains,Top 1 percent income group,10.0
+2011,After tax income with capital gains,Top 10 percent income group,32.7
+2011,After tax income with capital gains,Bottom 50 percent income group,19.1
+2012,Market income,Top 0.01 percent income group,1.4
+2012,Market income,Top 0.1 percent income group,4.1
+2012,Market income,Top 1 percent income group,11.7
+2012,Market income,Top 10 percent income group,39.4
+2012,Market income,Bottom 50 percent income group,10.0
+2012,Total income,Top 0.01 percent income group,1.2
+2012,Total income,Top 0.1 percent income group,3.6
+2012,Total income,Top 1 percent income group,10.3
+2012,Total income,Top 10 percent income group,34.9
+2012,Total income,Bottom 50 percent income group,17.1
+2012,After tax income,Top 0.01 percent income group,1.0
+2012,After tax income,Top 0.1 percent income group,2.8
+2012,After tax income,Top 1 percent income group,8.4
+2012,After tax income,Top 10 percent income group,31.2
+2012,After tax income,Bottom 50 percent income group,19.6
+2012,Market income with capital gains,Top 0.01 percent income group,1.6
+2012,Market income with capital gains,Top 0.1 percent income group,4.6
+2012,Market income with capital gains,Top 1 percent income group,12.8
+2012,Market income with capital gains,Top 10 percent income group,40.4
+2012,Market income with capital gains,Bottom 50 percent income group,9.9
+2012,Total income with capital gains,Top 0.01 percent income group,1.4
+2012,Total income with capital gains,Top 0.1 percent income group,4.0
+2012,Total income with capital gains,Top 1 percent income group,11.3
+2012,Total income with capital gains,Top 10 percent income group,35.9
+2012,Total income with capital gains,Bottom 50 percent income group,16.8
+2012,After tax income with capital gains,Top 0.01 percent income group,1.2
+2012,After tax income with capital gains,Top 0.1 percent income group,3.4
+2012,After tax income with capital gains,Top 1 percent income group,9.6
+2012,After tax income with capital gains,Top 10 percent income group,32.4
+2012,After tax income with capital gains,Bottom 50 percent income group,19.3
+2013,Market income,Top 0.01 percent income group,1.4
+2013,Market income,Top 0.1 percent income group,4.0
+2013,Market income,Top 1 percent income group,11.7
+2013,Market income,Top 10 percent income group,39.5
+2013,Market income,Bottom 50 percent income group,10.0
+2013,Total income,Top 0.01 percent income group,1.2
+2013,Total income,Top 0.1 percent income group,3.6
+2013,Total income,Top 1 percent income group,10.3
+2013,Total income,Top 10 percent income group,35.0
+2013,Total income,Bottom 50 percent income group,17.0
+2013,After tax income,Top 0.01 percent income group,1.0
+2013,After tax income,Top 0.1 percent income group,2.8
+2013,After tax income,Top 1 percent income group,8.4
+2013,After tax income,Top 10 percent income group,31.3
+2013,After tax income,Bottom 50 percent income group,19.4
+2013,Market income with capital gains,Top 0.01 percent income group,1.7
+2013,Market income with capital gains,Top 0.1 percent income group,4.7
+2013,Market income with capital gains,Top 1 percent income group,12.8
+2013,Market income with capital gains,Top 10 percent income group,40.5
+2013,Market income with capital gains,Bottom 50 percent income group,9.9
+2013,Total income with capital gains,Top 0.01 percent income group,1.5
+2013,Total income with capital gains,Top 0.1 percent income group,4.1
+2013,Total income with capital gains,Top 1 percent income group,11.4
+2013,Total income with capital gains,Top 10 percent income group,36.1
+2013,Total income with capital gains,Bottom 50 percent income group,16.7
+2013,After tax income with capital gains,Top 0.01 percent income group,1.3
+2013,After tax income with capital gains,Top 0.1 percent income group,3.5
+2013,After tax income with capital gains,Top 1 percent income group,9.7
+2013,After tax income with capital gains,Top 10 percent income group,32.6
+2013,After tax income with capital gains,Bottom 50 percent income group,19.1
+2014,Market income,Top 0.01 percent income group,1.4
+2014,Market income,Top 0.1 percent income group,4.0
+2014,Market income,Top 1 percent income group,11.7
+2014,Market income,Top 10 percent income group,39.4
+2014,Market income,Bottom 50 percent income group,10.1
+2014,Total income,Top 0.01 percent income group,1.2
+2014,Total income,Top 0.1 percent income group,3.6
+2014,Total income,Top 1 percent income group,10.3
+2014,Total income,Top 10 percent income group,34.9
+2014,Total income,Bottom 50 percent income group,17.1
+2014,After tax income,Top 0.01 percent income group,1.0
+2014,After tax income,Top 0.1 percent income group,2.8
+2014,After tax income,Top 1 percent income group,8.3
+2014,After tax income,Top 10 percent income group,31.2
+2014,After tax income,Bottom 50 percent income group,19.5
+2014,Market income with capital gains,Top 0.01 percent income group,1.7
+2014,Market income with capital gains,Top 0.1 percent income group,4.8
+2014,Market income with capital gains,Top 1 percent income group,13.1
+2014,Market income with capital gains,Top 10 percent income group,40.7
+2014,Market income with capital gains,Bottom 50 percent income group,10.0
+2014,Total income with capital gains,Top 0.01 percent income group,1.5
+2014,Total income with capital gains,Top 0.1 percent income group,4.3
+2014,Total income with capital gains,Top 1 percent income group,11.6
+2014,Total income with capital gains,Top 10 percent income group,36.3
+2014,Total income with capital gains,Bottom 50 percent income group,16.7
+2014,After tax income with capital gains,Top 0.01 percent income group,1.3
+2014,After tax income with capital gains,Top 0.1 percent income group,3.7
+2014,After tax income with capital gains,Top 1 percent income group,10.0
+2014,After tax income with capital gains,Top 10 percent income group,32.9
+2014,After tax income with capital gains,Bottom 50 percent income group,19.1
+2015,Market income,Top 0.01 percent income group,1.8
+2015,Market income,Top 0.1 percent income group,4.9
+2015,Market income,Top 1 percent income group,12.8
+2015,Market income,Top 10 percent income group,40.1
+2015,Market income,Bottom 50 percent income group,10.1
+2015,Total income,Top 0.01 percent income group,1.6
+2015,Total income,Top 0.1 percent income group,4.3
+2015,Total income,Top 1 percent income group,11.3
+2015,Total income,Top 10 percent income group,35.5
+2015,Total income,Bottom 50 percent income group,17.2
+2015,After tax income,Top 0.01 percent income group,1.3
+2015,After tax income,Top 0.1 percent income group,3.4
+2015,After tax income,Top 1 percent income group,9.0
+2015,After tax income,Top 10 percent income group,31.6
+2015,After tax income,Bottom 50 percent income group,19.7
+2015,Market income with capital gains,Top 0.01 percent income group,2.0
+2015,Market income with capital gains,Top 0.1 percent income group,5.6
+2015,Market income with capital gains,Top 1 percent income group,14.2
+2015,Market income with capital gains,Top 10 percent income group,41.3
+2015,Market income with capital gains,Bottom 50 percent income group,10.0
+2015,Total income with capital gains,Top 0.01 percent income group,1.8
+2015,Total income with capital gains,Top 0.1 percent income group,4.9
+2015,Total income with capital gains,Top 1 percent income group,12.5
+2015,Total income with capital gains,Top 10 percent income group,36.8
+2015,Total income with capital gains,Bottom 50 percent income group,16.9
+2015,After tax income with capital gains,Top 0.01 percent income group,1.5
+2015,After tax income with capital gains,Top 0.1 percent income group,4.1
+2015,After tax income with capital gains,Top 1 percent income group,10.6
+2015,After tax income with capital gains,Top 10 percent income group,33.1
+2015,After tax income with capital gains,Bottom 50 percent income group,19.3
+2016,Market income,Top 0.01 percent income group,1.1
+2016,Market income,Top 0.1 percent income group,3.4
+2016,Market income,Top 1 percent income group,10.7
+2016,Market income,Top 10 percent income group,38.5
+2016,Market income,Bottom 50 percent income group,10.4
+2016,Total income,Top 0.01 percent income group,0.9
+2016,Total income,Top 0.1 percent income group,2.9
+2016,Total income,Top 1 percent income group,9.3
+2016,Total income,Top 10 percent income group,33.8
+2016,Total income,Bottom 50 percent income group,17.8
+2016,After tax income,Top 0.01 percent income group,0.7
+2016,After tax income,Top 0.1 percent income group,2.2
+2016,After tax income,Top 1 percent income group,7.3
+2016,After tax income,Top 10 percent income group,30.0
+2016,After tax income,Bottom 50 percent income group,20.3
+2016,Market income with capital gains,Top 0.01 percent income group,1.3
+2016,Market income with capital gains,Top 0.1 percent income group,4.1
+2016,Market income with capital gains,Top 1 percent income group,12.1
+2016,Market income with capital gains,Top 10 percent income group,39.8
+2016,Market income with capital gains,Bottom 50 percent income group,10.3
+2016,Total income with capital gains,Top 0.01 percent income group,1.2
+2016,Total income with capital gains,Top 0.1 percent income group,3.6
+2016,Total income with capital gains,Top 1 percent income group,10.6
+2016,Total income with capital gains,Top 10 percent income group,35.1
+2016,Total income with capital gains,Bottom 50 percent income group,17.4
+2016,After tax income with capital gains,Top 0.01 percent income group,1.0
+2016,After tax income with capital gains,Top 0.1 percent income group,3.0
+2016,After tax income with capital gains,Top 1 percent income group,8.9
+2016,After tax income with capital gains,Top 10 percent income group,31.6
+2016,After tax income with capital gains,Bottom 50 percent income group,19.9
+2017,Market income,Top 0.01 percent income group,1.3
+2017,Market income,Top 0.1 percent income group,3.9
+2017,Market income,Top 1 percent income group,11.4
+2017,Market income,Top 10 percent income group,39.0
+2017,Market income,Bottom 50 percent income group,10.4
+2017,Total income,Top 0.01 percent income group,1.2
+2017,Total income,Top 0.1 percent income group,3.4
+2017,Total income,Top 1 percent income group,9.9
+2017,Total income,Top 10 percent income group,34.2
+2017,Total income,Bottom 50 percent income group,17.8
+2017,After tax income,Top 0.01 percent income group,0.9
+2017,After tax income,Top 0.1 percent income group,2.5
+2017,After tax income,Top 1 percent income group,7.7
+2017,After tax income,Top 10 percent income group,30.3
+2017,After tax income,Bottom 50 percent income group,20.2
+2017,Market income with capital gains,Top 0.01 percent income group,1.7
+2017,Market income with capital gains,Top 0.1 percent income group,4.8
+2017,Market income with capital gains,Top 1 percent income group,13.2
+2017,Market income with capital gains,Top 10 percent income group,40.6
+2017,Market income with capital gains,Bottom 50 percent income group,10.2
+2017,Total income with capital gains,Top 0.01 percent income group,1.4
+2017,Total income with capital gains,Top 0.1 percent income group,4.2
+2017,Total income with capital gains,Top 1 percent income group,11.6
+2017,Total income with capital gains,Top 10 percent income group,35.9
+2017,Total income with capital gains,Bottom 50 percent income group,17.3
+2017,After tax income with capital gains,Top 0.01 percent income group,1.2
+2017,After tax income with capital gains,Top 0.1 percent income group,3.5
+2017,After tax income with capital gains,Top 1 percent income group,9.7
+2017,After tax income with capital gains,Top 10 percent income group,32.4
+2017,After tax income with capital gains,Bottom 50 percent income group,19.8
+2018,Market income,Top 0.01 percent income group,1.3
+2018,Market income,Top 0.1 percent income group,3.9
+2018,Market income,Top 1 percent income group,11.5
+2018,Market income,Top 10 percent income group,38.9
+2018,Market income,Bottom 50 percent income group,10.7
+2018,Total income,Top 0.01 percent income group,1.1
+2018,Total income,Top 0.1 percent income group,3.4
+2018,Total income,Top 1 percent income group,10.0
+2018,Total income,Top 10 percent income group,34.2
+2018,Total income,Bottom 50 percent income group,18.0
+2018,After tax income,Top 0.01 percent income group,0.9
+2018,After tax income,Top 0.1 percent income group,2.5
+2018,After tax income,Top 1 percent income group,7.8
+2018,After tax income,Top 10 percent income group,30.2
+2018,After tax income,Bottom 50 percent income group,20.4
+2018,Market income with capital gains,Top 0.01 percent income group,1.7
+2018,Market income with capital gains,Top 0.1 percent income group,4.9
+2018,Market income with capital gains,Top 1 percent income group,13.3
+2018,Market income with capital gains,Top 10 percent income group,40.5
+2018,Market income with capital gains,Bottom 50 percent income group,10.6
+2018,Total income with capital gains,Top 0.01 percent income group,1.5
+2018,Total income with capital gains,Top 0.1 percent income group,4.3
+2018,Total income with capital gains,Top 1 percent income group,11.7
+2018,Total income with capital gains,Top 10 percent income group,35.9
+2018,Total income with capital gains,Bottom 50 percent income group,17.5
+2018,After tax income with capital gains,Top 0.01 percent income group,1.3
+2018,After tax income with capital gains,Top 0.1 percent income group,3.6
+2018,After tax income with capital gains,Top 1 percent income group,9.8
+2018,After tax income with capital gains,Top 10 percent income group,32.2
+2018,After tax income with capital gains,Bottom 50 percent income group,20.0
+2019,Market income,Top 0.01 percent income group,1.5
+2019,Market income,Top 0.1 percent income group,4.0
+2019,Market income,Top 1 percent income group,11.6
+2019,Market income,Top 10 percent income group,38.9
+2019,Market income,Bottom 50 percent income group,10.8
+2019,Total income,Top 0.01 percent income group,1.3
+2019,Total income,Top 0.1 percent income group,3.5
+2019,Total income,Top 1 percent income group,10.1
+2019,Total income,Top 10 percent income group,34.2
+2019,Total income,Bottom 50 percent income group,18.0
+2019,After tax income,Top 0.01 percent income group,1.0
+2019,After tax income,Top 0.1 percent income group,2.6
+2019,After tax income,Top 1 percent income group,7.9
+2019,After tax income,Top 10 percent income group,30.3
+2019,After tax income,Bottom 50 percent income group,20.5
+2019,Market income with capital gains,Top 0.01 percent income group,1.9
+2019,Market income with capital gains,Top 0.1 percent income group,5.1
+2019,Market income with capital gains,Top 1 percent income group,13.4
+2019,Market income with capital gains,Top 10 percent income group,40.6
+2019,Market income with capital gains,Bottom 50 percent income group,10.6
+2019,Total income with capital gains,Top 0.01 percent income group,1.7
+2019,Total income with capital gains,Top 0.1 percent income group,4.4
+2019,Total income with capital gains,Top 1 percent income group,11.8
+2019,Total income with capital gains,Top 10 percent income group,35.9
+2019,Total income with capital gains,Bottom 50 percent income group,17.5
+2019,After tax income with capital gains,Top 0.01 percent income group,1.4
+2019,After tax income with capital gains,Top 0.1 percent income group,3.7
+2019,After tax income with capital gains,Top 1 percent income group,9.9
+2019,After tax income with capital gains,Top 10 percent income group,32.3
+2019,After tax income with capital gains,Bottom 50 percent income group,20.1
+2020,Market income,Top 0.01 percent income group,1.4
+2020,Market income,Top 0.1 percent income group,3.9
+2020,Market income,Top 1 percent income group,11.6
+2020,Market income,Top 10 percent income group,39.6
+2020,Market income,Bottom 50 percent income group,9.4
+2020,Total income,Top 0.01 percent income group,1.1
+2020,Total income,Top 0.1 percent income group,3.2
+2020,Total income,Top 1 percent income group,9.5
+2020,Total income,Top 10 percent income group,32.7
+2020,Total income,Bottom 50 percent income group,20.2
+2020,After tax income,Top 0.01 percent income group,0.8
+2020,After tax income,Top 0.1 percent income group,2.3
+2020,After tax income,Top 1 percent income group,7.3
+2020,After tax income,Top 10 percent income group,28.9
+2020,After tax income,Bottom 50 percent income group,22.6
+2020,Market income with capital gains,Top 0.01 percent income group,2.0
+2020,Market income with capital gains,Top 0.1 percent income group,5.3
+2020,Market income with capital gains,Top 1 percent income group,13.9
+2020,Market income with capital gains,Top 10 percent income group,41.7
+2020,Market income with capital gains,Bottom 50 percent income group,9.2
+2020,Total income with capital gains,Top 0.01 percent income group,1.6
+2020,Total income with capital gains,Top 0.1 percent income group,4.3
+2020,Total income with capital gains,Top 1 percent income group,11.5
+2020,Total income with capital gains,Top 10 percent income group,34.8
+2020,Total income with capital gains,Bottom 50 percent income group,19.5
+2020,After tax income with capital gains,Top 0.01 percent income group,1.4
+2020,After tax income with capital gains,Top 0.1 percent income group,3.6
+2020,After tax income with capital gains,Top 1 percent income group,9.6
+2020,After tax income with capital gains,Top 10 percent income group,31.2
+2020,After tax income with capital gains,Bottom 50 percent income group,22.1
+2021,Market income,Top 0.01 percent income group,1.6
+2021,Market income,Top 0.1 percent income group,4.4
+2021,Market income,Top 1 percent income group,12.2
+2021,Market income,Top 10 percent income group,39.6
+2021,Market income,Bottom 50 percent income group,10.0
+2021,Total income,Top 0.01 percent income group,1.4
+2021,Total income,Top 0.1 percent income group,3.7
+2021,Total income,Top 1 percent income group,10.4
+2021,Total income,Top 10 percent income group,34.0
+2021,Total income,Bottom 50 percent income group,18.9
+2021,After tax income,Top 0.01 percent income group,1.0
+2021,After tax income,Top 0.1 percent income group,2.7
+2021,After tax income,Top 1 percent income group,7.9
+2021,After tax income,Top 10 percent income group,29.9
+2021,After tax income,Bottom 50 percent income group,21.2
+2021,Market income with capital gains,Top 0.01 percent income group,2.4
+2021,Market income with capital gains,Top 0.1 percent income group,6.2
+2021,Market income with capital gains,Top 1 percent income group,15.6
+2021,Market income with capital gains,Top 10 percent income group,42.8
+2021,Market income with capital gains,Bottom 50 percent income group,9.6
+2021,Total income with capital gains,Top 0.01 percent income group,2.1
+2021,Total income with capital gains,Top 0.1 percent income group,5.3
+2021,Total income with capital gains,Top 1 percent income group,13.4
+2021,Total income with capital gains,Top 10 percent income group,37.3
+2021,Total income with capital gains,Bottom 50 percent income group,17.9
+2021,After tax income with capital gains,Top 0.01 percent income group,1.8
+2021,After tax income with capital gains,Top 0.1 percent income group,4.5
+2021,After tax income with capital gains,Top 1 percent income group,11.5
+2021,After tax income with capital gains,Top 10 percent income group,33.6
+2021,After tax income with capital gains,Bottom 50 percent income group,20.4
+2022,Market income,Top 0.01 percent income group,1.5
+2022,Market income,Top 0.1 percent income group,4.1
+2022,Market income,Top 1 percent income group,11.7
+2022,Market income,Top 10 percent income group,39.1
+2022,Market income,Bottom 50 percent income group,10.7
+2022,Total income,Top 0.01 percent income group,1.3
+2022,Total income,Top 0.1 percent income group,3.6
+2022,Total income,Top 1 percent income group,10.2
+2022,Total income,Top 10 percent income group,34.3
+2022,Total income,Bottom 50 percent income group,18.0
+2022,After tax income,Top 0.01 percent income group,0.9
+2022,After tax income,Top 0.1 percent income group,2.6
+2022,After tax income,Top 1 percent income group,7.8
+2022,After tax income,Top 10 percent income group,30.1
+2022,After tax income,Bottom 50 percent income group,20.5
+2022,Market income with capital gains,Top 0.01 percent income group,2.2
+2022,Market income with capital gains,Top 0.1 percent income group,5.6
+2022,Market income with capital gains,Top 1 percent income group,14.4
+2022,Market income with capital gains,Top 10 percent income group,41.5
+2022,Market income with capital gains,Bottom 50 percent income group,10.3
+2022,Total income with capital gains,Top 0.01 percent income group,1.9
+2022,Total income with capital gains,Top 0.1 percent income group,4.9
+2022,Total income with capital gains,Top 1 percent income group,12.6
+2022,Total income with capital gains,Top 10 percent income group,36.7
+2022,Total income with capital gains,Bottom 50 percent income group,17.3
+2022,After tax income with capital gains,Top 0.01 percent income group,1.6
+2022,After tax income with capital gains,Top 0.1 percent income group,4.1
+2022,After tax income with capital gains,Top 1 percent income group,10.6
+2022,After tax income with capital gains,Top 10 percent income group,32.8
+2022,After tax income with capital gains,Bottom 50 percent income group,20.0
+2023,Market income,Top 0.01 percent income group,1.5
+2023,Market income,Top 0.1 percent income group,4.1
+2023,Market income,Top 1 percent income group,11.6
+2023,Market income,Top 10 percent income group,38.9
+2023,Market income,Bottom 50 percent income group,10.8
+2023,Total income,Top 0.01 percent income group,1.3
+2023,Total income,Top 0.1 percent income group,3.6
+2023,Total income,Top 1 percent income group,10.1
+2023,Total income,Top 10 percent income group,34.2
+2023,Total income,Bottom 50 percent income group,17.9
+2023,After tax income,Top 0.01 percent income group,0.9
+2023,After tax income,Top 0.1 percent income group,2.6
+2023,After tax income,Top 1 percent income group,7.7
+2023,After tax income,Top 10 percent income group,30.1
+2023,After tax income,Bottom 50 percent income group,20.3
+2023,Market income with capital gains,Top 0.01 percent income group,2.0
+2023,Market income with capital gains,Top 0.1 percent income group,5.4
+2023,Market income with capital gains,Top 1 percent income group,14.1
+2023,Market income with capital gains,Top 10 percent income group,41.2
+2023,Market income with capital gains,Bottom 50 percent income group,10.4
+2023,Total income with capital gains,Top 0.01 percent income group,1.7
+2023,Total income with capital gains,Top 0.1 percent income group,4.7
+2023,Total income with capital gains,Top 1 percent income group,12.4
+2023,Total income with capital gains,Top 10 percent income group,36.5
+2023,Total income with capital gains,Bottom 50 percent income group,17.3
+2023,After tax income with capital gains,Top 0.01 percent income group,1.4
+2023,After tax income with capital gains,Top 0.1 percent income group,3.9
+2023,After tax income with capital gains,Top 1 percent income group,10.3
+2023,After tax income with capital gains,Top 10 percent income group,32.6
+2023,After tax income with capital gains,Bottom 50 percent income group,19.9
